@@ -32,7 +32,6 @@ This document outlines the preprocessing pipeline for the Mojo manual documentat
 │   └── config/
 │       └── processing_config.yaml  # Configuration settings
 ├── pixi.toml                       # Project dependencies
-└── pyproject.toml                  # Python package configuration
 ```
 
 ## Processing Pipeline

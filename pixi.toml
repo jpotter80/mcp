@@ -1,37 +1,17 @@
-[project]
-name = "mojo-manual-preprocessing"
-version = "0.1.0"
-description = "Preprocessing pipeline for Mojo manual documentation"
-authors = ["James <james@example.com>"]
-channels = ["conda-forge"]
+[workspace]
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+name = "mcp"
 platforms = ["linux-64"]
-
-[dependencies]
-python = "3.12.*"
-pip = ">=24.0"
+version = "0.1.0"
 
 [tasks]
-# Initialize the preprocessing environment
-init = "python -c 'from preprocessing.src.pipeline import init_directories; init_directories()'"
 
-# Run the preprocessing pipeline
-process = "python -m preprocessing.src.pipeline"
-
-# Validate the processed output
-validate = "python -m preprocessing.src.pipeline --validate-only"
-
-# Clean processed output (keeps originals)
-clean = "rm -rf processed_docs/"
-
-# Run tests
-test = "python -m pytest tests/ -v"
-
-# Show statistics about processed documents
-stats = "python -m preprocessing.src.pipeline --stats-only"
-
-[pypi-dependencies]
-python-frontmatter = ">=1.0.0"
-pyyaml = ">=6.0"
-tiktoken = ">=0.5.0"
-tqdm = ">=4.65.0"
-pytest = ">=7.0.0"
+[dependencies]
+openai = ">=2.3.0,<3"
+duckdb = ">=1.4.1,<2"
+modular = "==25.6"
+tiktoken = ">=0.12.0,<0.13"
+python-frontmatter = ">=1.1.0,<2"
+pyyaml = ">=6.0.3,<7"
+regex = ">=2025.9.18,<2026"
+pathlib = ">=1.0.1,<2"

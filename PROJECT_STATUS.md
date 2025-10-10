@@ -23,7 +23,6 @@ This document provides a complete overview of the Mojo manual preprocessing syst
 │   │   └── processing_config.yaml   # Configuration settings
 │   └── README.md                    # Module documentation
 ├── pixi.toml                        # Pixi project configuration
-├── pyproject.toml                   # Python package metadata
 ├── PREPROCESSING_PLAN.md            # Detailed implementation plan
 └── PROJECT_STATUS.md                # This file
 ```
