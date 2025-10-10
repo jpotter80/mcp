@@ -1,0 +1,64 @@
+{
+  "title": "Introduction to layouts",
+  "sidebar_position": 1,
+  "description": "Using layouts to describe multidimensional data.",
+  "file_name": "layouts.mdx",
+  "file_stem": "layouts",
+  "file_path": "layout/layouts.mdx",
+  "file_size": 16957,
+  "document_id": "layout-layouts",
+  "url": "https://docs.modular.com/mojo/manual/layout/layouts",
+  "content_hash": "168440354ede9224861c7785919e4a4c",
+  "statistics": {
+    "char_count": 16496,
+    "word_count": 2570,
+    "line_count": 467,
+    "paragraph_count": 108,
+    "header_count": 8,
+    "code_block_count": 16,
+    "code_lines": 103
+  },
+  "processed_at": "2025-10-10T13:44:57.690371",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What’s a Layout?",
+      "anchor": "whats-a-layout"
+    },
+    {
+      "level": 3,
+      "title": "IntTuple: representing hierarchical shapes and strides",
+      "anchor": "inttuple-representing-hierarchical-shapes-and-strides"
+    },
+    {
+      "level": 3,
+      "title": "Modes",
+      "anchor": "modes"
+    },
+    {
+      "level": 3,
+      "title": "Coordinates",
+      "anchor": "coordinates"
+    },
+    {
+      "level": 2,
+      "title": "Making layouts",
+      "anchor": "making-layouts"
+    },
+    {
+      "level": 1,
+      "title": "Define 2x3 tile",
+      "anchor": "define-2x3-tile"
+    },
+    {
+      "level": 1,
+      "title": "Define a 2x5 tiler",
+      "anchor": "define-a-2x5-tiler"
+    },
+    {
+      "level": 2,
+      "title": "Non-contiguous layouts",
+      "anchor": "non-contiguous-layouts"
+    }
+  ]
+}

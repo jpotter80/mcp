@@ -1,0 +1,34 @@
+{
+  "title": "Value semantics",
+  "sidebar_position": 2,
+  "description": "An explanation of Mojo's value-semantic defaults.",
+  "file_name": "value-semantics.mdx",
+  "file_stem": "value-semantics",
+  "file_path": "values/value-semantics.mdx",
+  "file_size": 3960,
+  "document_id": "values-value-semantics",
+  "url": "https://docs.modular.com/mojo/manual/values/value-semantics",
+  "content_hash": "09e57b8c85cce628ca3468952d0aca22",
+  "statistics": {
+    "char_count": 3804,
+    "word_count": 622,
+    "line_count": 101,
+    "paragraph_count": 22,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 22
+  },
+  "processed_at": "2025-10-10T13:44:57.799333",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Intro to value semantics",
+      "anchor": "intro-to-value-semantics"
+    },
+    {
+      "level": 2,
+      "title": "Value semantics in Mojo functions",
+      "anchor": "value-semantics-in-mojo-functions"
+    }
+  ]
+}

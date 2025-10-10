@@ -1,0 +1,44 @@
+{
+  "title": "Mojo Manual",
+  "sidebar_label": "Introduction",
+  "description": "A comprehensive guide to the Mojo programming language.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "index.mdx",
+  "file_size": 5065,
+  "document_id": "index",
+  "url": "https://docs.modular.com/mojo/manual/index",
+  "content_hash": "0b9426066a60a182b111912e82696b9f",
+  "statistics": {
+    "char_count": 4573,
+    "word_count": 612,
+    "line_count": 112,
+    "paragraph_count": 22,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-10-10T13:44:57.685623",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What is Mojo",
+      "anchor": "what-is-mojo"
+    },
+    {
+      "level": 2,
+      "title": "Key features",
+      "anchor": "key-features"
+    },
+    {
+      "level": 2,
+      "title": "Get started",
+      "anchor": "get-started"
+    },
+    {
+      "level": 2,
+      "title": "More resources",
+      "anchor": "more-resources"
+    }
+  ]
+}

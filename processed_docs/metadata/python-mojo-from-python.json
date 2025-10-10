@@ -1,0 +1,120 @@
+{
+  "title": "Calling Mojo from Python",
+  "sidebar_position": 3,
+  "description": "How to import and use Mojo modules in Python code.",
+  "show_languages": true,
+  "file_name": "mojo-from-python.mdx",
+  "file_stem": "mojo-from-python",
+  "file_path": "python/mojo-from-python.mdx",
+  "file_size": 22912,
+  "document_id": "python-mojo-from-python",
+  "url": "https://docs.modular.com/mojo/manual/python/mojo-from-python",
+  "content_hash": "a5aee9ae163b6109e0ae543cf5fa808e",
+  "statistics": {
+    "char_count": 21940,
+    "word_count": 2743,
+    "line_count": 666,
+    "paragraph_count": 167,
+    "header_count": 19,
+    "code_block_count": 32,
+    "code_lines": 230
+  },
+  "processed_at": "2025-10-10T13:44:57.760818",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Import a Mojo module in Python",
+      "anchor": "import-a-mojo-module-in-python"
+    },
+    {
+      "level": 3,
+      "title": "How it works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 2,
+      "title": "Bindings features",
+      "anchor": "bindings-features"
+    },
+    {
+      "level": 3,
+      "title": "Binding Mojo types",
+      "anchor": "binding-mojo-types"
+    },
+    {
+      "level": 3,
+      "title": "Constructing Mojo objects in Python",
+      "anchor": "constructing-mojo-objects-in-python"
+    },
+    {
+      "level": 3,
+      "title": "Returning Mojo objects to Python",
+      "anchor": "returning-mojo-objects-to-python"
+    },
+    {
+      "level": 3,
+      "title": "`PythonObject` to Mojo values",
+      "anchor": "pythonobject-to-mojo-values"
+    },
+    {
+      "level": 4,
+      "title": "`PythonObject` conversions",
+      "anchor": "pythonobject-conversions"
+    },
+    {
+      "level": 1,
+      "title": "Given a person, clone them and give them a different name.",
+      "anchor": "given-a-person-clone-them-and-give-them-a-different-name"
+    },
+    {
+      "level": 4,
+      "title": "`PythonObject` downcasts",
+      "anchor": "pythonobject-downcasts"
+    },
+    {
+      "level": 3,
+      "title": "Methods",
+      "anchor": "methods"
+    },
+    {
+      "level": 3,
+      "title": "Static methods",
+      "anchor": "static-methods"
+    },
+    {
+      "level": 3,
+      "title": "Keyword arguments",
+      "anchor": "keyword-arguments"
+    },
+    {
+      "level": 1,
+      "title": "Pass hours and minutes, missing \"seconds\"",
+      "anchor": "pass-hours-and-minutes-missing-seconds"
+    },
+    {
+      "level": 3,
+      "title": "Variadic arguments",
+      "anchor": "variadic-arguments"
+    },
+    {
+      "level": 2,
+      "title": "Strategies for porting Python to Mojo",
+      "anchor": "strategies-for-porting-python-to-mojo"
+    },
+    {
+      "level": 3,
+      "title": "Writing Pythonic code in Mojo",
+      "anchor": "writing-pythonic-code-in-mojo"
+    },
+    {
+      "level": 2,
+      "title": "Building Mojo extension modules",
+      "anchor": "building-mojo-extension-modules"
+    },
+    {
+      "level": 2,
+      "title": "Known limitations",
+      "anchor": "known-limitations"
+    }
+  ]
+}

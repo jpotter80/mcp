@@ -1,0 +1,33 @@
+{
+  "title": "Intro to GPUs",
+  "description": "An overview of GPU architecture and terminology.",
+  "file_name": "architecture.mdx",
+  "file_stem": "architecture",
+  "file_path": "gpu/architecture.mdx",
+  "file_size": 9996,
+  "document_id": "gpu-architecture",
+  "url": "https://docs.modular.com/mojo/manual/gpu/architecture",
+  "content_hash": "c604e4a63e4a55d28a1eeb16b920eb5d",
+  "statistics": {
+    "char_count": 9869,
+    "word_count": 1419,
+    "line_count": 191,
+    "paragraph_count": 38,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-10-10T13:44:57.655902",
+  "sections": [
+    {
+      "level": 2,
+      "title": "GPU architecture overview",
+      "anchor": "gpu-architecture-overview"
+    },
+    {
+      "level": 2,
+      "title": "GPU execution model",
+      "anchor": "gpu-execution-model"
+    }
+  ]
+}

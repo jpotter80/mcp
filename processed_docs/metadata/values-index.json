@@ -1,0 +1,34 @@
+{
+  "title": "Intro to value ownership",
+  "sidebar_position": 1,
+  "description": "Introduction to Mojo value ownership.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "values/index.mdx",
+  "file_size": 6027,
+  "document_id": "values-index",
+  "url": "https://docs.modular.com/mojo/manual/values",
+  "content_hash": "699785b1e8e2fee0260e33dd31c5eec4",
+  "statistics": {
+    "char_count": 5889,
+    "word_count": 903,
+    "line_count": 102,
+    "paragraph_count": 18,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-10-10T13:44:57.789347",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Stack and heap overview",
+      "anchor": "stack-and-heap-overview"
+    },
+    {
+      "level": 2,
+      "title": "Memory management strategies",
+      "anchor": "memory-management-strategies"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "@register_passable",
+  "description": "Declares that a type should be passed in machine registers.",
+  "codeTitle": true,
+  "file_name": "register-passable.mdx",
+  "file_stem": "register-passable",
+  "file_path": "decorators/register-passable.mdx",
+  "file_size": 4110,
+  "document_id": "decorators-register-passable",
+  "url": "https://docs.modular.com/mojo/manual/decorators/register-passable",
+  "content_hash": "9416de48f3c4868e1aa3eeb78f8b22c7",
+  "statistics": {
+    "char_count": 3887,
+    "word_count": 557,
+    "line_count": 115,
+    "paragraph_count": 28,
+    "header_count": 1,
+    "code_block_count": 4,
+    "code_lines": 29
+  },
+  "processed_at": "2025-10-10T13:44:57.621486",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`@register_passable(\"trivial\")`",
+      "anchor": "register_passabletrivial"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Python interoperability",
+  "sidebar_label": "Introduction",
+  "sidebar_position": 1,
+  "description": "Using Python and Mojo together.",
+  "show_languages": true,
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "python/index.mdx",
+  "file_size": 2145,
+  "document_id": "python-index",
+  "url": "https://docs.modular.com/mojo/manual/python",
+  "content_hash": "fe7247d93a545bda297baafb70a85881",
+  "statistics": {
+    "char_count": 1853,
+    "word_count": 253,
+    "line_count": 41,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-10-10T13:44:57.758660",
+  "sections": []
+}

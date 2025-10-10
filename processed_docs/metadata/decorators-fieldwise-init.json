@@ -1,0 +1,23 @@
+{
+  "title": "@fieldwise_init",
+  "description": "Generates fieldwise constructor for a struct.",
+  "codeTitle": true,
+  "file_name": "fieldwise-init.mdx",
+  "file_stem": "fieldwise-init",
+  "file_path": "decorators/fieldwise-init.mdx",
+  "file_size": 893,
+  "document_id": "decorators-fieldwise-init",
+  "url": "https://docs.modular.com/mojo/manual/decorators/fieldwise-init",
+  "content_hash": "ad30e52861366df64adf75facccc3f81",
+  "statistics": {
+    "char_count": 753,
+    "word_count": 110,
+    "line_count": 28,
+    "paragraph_count": 7,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 11
+  },
+  "processed_at": "2025-10-10T13:44:57.616847",
+  "sections": []
+}

@@ -1,0 +1,143 @@
+{
+  "title": "Traits",
+  "description": "Define shared behavior for types.",
+  "file_name": "traits.mdx",
+  "file_stem": "traits",
+  "file_path": "traits.mdx",
+  "file_size": 25865,
+  "document_id": "traits",
+  "url": "https://docs.modular.com/mojo/manual/traits",
+  "content_hash": "1d0b102ac59ad1a0ff035989d237d416",
+  "statistics": {
+    "char_count": 25252,
+    "word_count": 3325,
+    "line_count": 765,
+    "paragraph_count": 176,
+    "header_count": 24,
+    "code_block_count": 35,
+    "code_lines": 391
+  },
+  "processed_at": "2025-10-10T13:44:57.775253",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Background",
+      "anchor": "background"
+    },
+    {
+      "level": 2,
+      "title": "Using traits",
+      "anchor": "using-traits"
+    },
+    {
+      "level": 3,
+      "title": "Defining a trait",
+      "anchor": "defining-a-trait"
+    },
+    {
+      "level": 3,
+      "title": "Adding traits to structs",
+      "anchor": "adding-traits-to-structs"
+    },
+    {
+      "level": 3,
+      "title": "Using a trait as a type bound",
+      "anchor": "using-a-trait-as-a-type-bound"
+    },
+    {
+      "level": 3,
+      "title": "Putting it all together",
+      "anchor": "putting-it-all-together"
+    },
+    {
+      "level": 3,
+      "title": "Traits can require static methods",
+      "anchor": "traits-can-require-static-methods"
+    },
+    {
+      "level": 2,
+      "title": "Default method implementations",
+      "anchor": "default-method-implementations"
+    },
+    {
+      "level": 2,
+      "title": "Trait compositions",
+      "anchor": "trait-compositions"
+    },
+    {
+      "level": 2,
+      "title": "Trait inheritance",
+      "anchor": "trait-inheritance"
+    },
+    {
+      "level": 1,
+      "title": "Bird inherits from Animal",
+      "anchor": "bird-inherits-from-animal"
+    },
+    {
+      "level": 2,
+      "title": "Traits and lifecycle methods",
+      "anchor": "traits-and-lifecycle-methods"
+    },
+    {
+      "level": 1,
+      "title": "trait Defaultable",
+      "anchor": "trait-defaultable"
+    },
+    {
+      "level": 1,
+      "title": "fn __init__(out self): ...",
+      "anchor": "fn-__init__out-self-"
+    },
+    {
+      "level": 1,
+      "title": "trait Movable",
+      "anchor": "trait-movable"
+    },
+    {
+      "level": 1,
+      "title": "fn __moveinit__(out self, deinit existing: Self): ...",
+      "anchor": "fn-__moveinit__out-self-deinit-existing-self-"
+    },
+    {
+      "level": 3,
+      "title": "Register-passable traits",
+      "anchor": "register-passable-traits"
+    },
+    {
+      "level": 2,
+      "title": "Built-in traits",
+      "anchor": "built-in-traits"
+    },
+    {
+      "level": 3,
+      "title": "The `Sized` trait",
+      "anchor": "the-sized-trait"
+    },
+    {
+      "level": 3,
+      "title": "The `Intable` and `IntableRaising` traits",
+      "anchor": "the-intable-and-intableraising-traits"
+    },
+    {
+      "level": 3,
+      "title": "The `Stringable`, `Representable`, and `Writable` traits",
+      "anchor": "the-stringable-representable-and-writable-traits"
+    },
+    {
+      "level": 3,
+      "title": "The `AnyType` trait",
+      "anchor": "the-anytype-trait"
+    },
+    {
+      "level": 2,
+      "title": "Generic structs with traits",
+      "anchor": "generic-structs-with-traits"
+    },
+    {
+      "level": 3,
+      "title": "Associated aliases for generics",
+      "anchor": "associated-aliases-for-generics"
+    }
+  ]
+}

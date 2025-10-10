@@ -1,0 +1,23 @@
+{
+  "title": "@no_inline",
+  "description": "Prevents a function from being inlined.",
+  "codeTitle": true,
+  "file_name": "no-inline.mdx",
+  "file_stem": "no-inline",
+  "file_path": "decorators/no-inline.mdx",
+  "file_size": 726,
+  "document_id": "decorators-no-inline",
+  "url": "https://docs.modular.com/mojo/manual/decorators/no-inline",
+  "content_hash": "9112d7c88e0382eec4245c79146a3819",
+  "statistics": {
+    "char_count": 623,
+    "word_count": 84,
+    "line_count": 18,
+    "paragraph_count": 4,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 3
+  },
+  "processed_at": "2025-10-10T13:44:57.618466",
+  "sections": []
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Errors, error handling, and context managers",
+  "sidebar_label": "Errors and context managers",
+  "file_name": "errors.mdx",
+  "file_stem": "errors",
+  "file_path": "errors.mdx",
+  "file_size": 22694,
+  "document_id": "errors",
+  "url": "https://docs.modular.com/mojo/manual/errors",
+  "content_hash": "eb1cbf25508469dc2c3defff7a930377",
+  "statistics": {
+    "char_count": 21840,
+    "word_count": 2696,
+    "line_count": 604,
+    "paragraph_count": 118,
+    "header_count": 13,
+    "code_block_count": 34,
+    "code_lines": 192
+  },
+  "processed_at": "2025-10-10T13:44:57.624767",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Raise an error",
+      "anchor": "raise-an-error"
+    },
+    {
+      "level": 2,
+      "title": "Enable stack trace generation for errors",
+      "anchor": "enable-stack-trace-generation-for-errors"
+    },
+    {
+      "level": 2,
+      "title": "Declare a raising function",
+      "anchor": "declare-a-raising-function"
+    },
+    {
+      "level": 1,
+      "title": "This function doesn't compile because of the unhandled error",
+      "anchor": "this-function-doesnt-compile-because-of-the-unhandled-error"
+    },
+    {
+      "level": 1,
+      "title": "This function compiles because it handles the possible error",
+      "anchor": "this-function-compiles-because-it-handles-the-possible-error"
+    },
+    {
+      "level": 2,
+      "title": "Handle an error",
+      "anchor": "handle-an-error"
+    },
+    {
+      "level": 2,
+      "title": "Use a context manager",
+      "anchor": "use-a-context-manager"
+    },
+    {
+      "level": 1,
+      "title": "Obtain a file handle to read from storage",
+      "anchor": "obtain-a-file-handle-to-read-from-storage"
+    },
+    {
+      "level": 1,
+      "title": "Process the content as needed",
+      "anchor": "process-the-content-as-needed"
+    },
+    {
+      "level": 1,
+      "title": "Close the file handle",
+      "anchor": "close-the-file-handle"
+    },
+    {
+      "level": 1,
+      "title": "Obtain a file handle to read from storage",
+      "anchor": "obtain-a-file-handle-to-read-from-storage"
+    },
+    {
+      "level": 2,
+      "title": "Write a custom context manager",
+      "anchor": "write-a-custom-context-manager"
+    },
+    {
+      "level": 3,
+      "title": "Define a conditional `__exit__()` method",
+      "anchor": "define-a-conditional-__exit__-method"
+    }
+  ]
+}

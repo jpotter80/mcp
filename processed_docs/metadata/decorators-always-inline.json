@@ -1,0 +1,34 @@
+{
+  "title": "@always_inline",
+  "description": "Copies the body of a function directly into the body of the calling function.",
+  "codeTitle": true,
+  "file_name": "always-inline.mdx",
+  "file_stem": "always-inline",
+  "file_path": "decorators/always-inline.mdx",
+  "file_size": 2638,
+  "document_id": "decorators-always-inline",
+  "url": "https://docs.modular.com/mojo/manual/decorators/always-inline",
+  "content_hash": "3ff43e2e25965ea7550d5cff2497cff0",
+  "statistics": {
+    "char_count": 2483,
+    "word_count": 363,
+    "line_count": 61,
+    "paragraph_count": 16,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 6
+  },
+  "processed_at": "2025-10-10T13:44:57.613231",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`@always_inline(\"nodebug\")`",
+      "anchor": "always_inlinenodebug"
+    },
+    {
+      "level": 2,
+      "title": "`@always_inline(\"builtin\")`",
+      "anchor": "always_inlinebuiltin"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "title": "Using LayoutTensor",
+  "sidebar_position": 2,
+  "description": "Using LayoutTensor to manipulate multidimensional data.",
+  "file_name": "tensors.mdx",
+  "file_stem": "tensors",
+  "file_path": "layout/tensors.mdx",
+  "file_size": 26808,
+  "document_id": "layout-tensors",
+  "url": "https://docs.modular.com/mojo/manual/layout/tensors",
+  "content_hash": "15981434c8836efc48db61faef3ae0a2",
+  "statistics": {
+    "char_count": 25822,
+    "word_count": 3624,
+    "line_count": 680,
+    "paragraph_count": 156,
+    "header_count": 20,
+    "code_block_count": 18,
+    "code_lines": 181
+  },
+  "processed_at": "2025-10-10T13:44:57.697709",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Accessing tensor elements",
+      "anchor": "accessing-tensor-elements"
+    },
+    {
+      "level": 1,
+      "title": "Indexing into a 2D tensor requires two indices",
+      "anchor": "indexing-into-a-2d-tensor-requires-two-indices"
+    },
+    {
+      "level": 3,
+      "title": "Tensor indexing and nested layouts",
+      "anchor": "tensor-indexing-and-nested-layouts"
+    },
+    {
+      "level": 1,
+      "title": "retrieve the value at ((1, 0), (0, 1))",
+      "anchor": "retrieve-the-value-at-1-0-0-1"
+    },
+    {
+      "level": 2,
+      "title": "Creating a LayoutTensor",
+      "anchor": "creating-a-layouttensor"
+    },
+    {
+      "level": 3,
+      "title": "Creating a `LayoutTensor` on the CPU",
+      "anchor": "creating-a-layouttensor-on-the-cpu"
+    },
+    {
+      "level": 3,
+      "title": "Creating a `LayoutTensor` on the GPU",
+      "anchor": "creating-a-layouttensor-on-the-gpu"
+    },
+    {
+      "level": 4,
+      "title": "Creating a `LayoutTensor` in global memory",
+      "anchor": "creating-a-layouttensor-in-global-memory"
+    },
+    {
+      "level": 4,
+      "title": "Creating a `LayoutTensor` in shared or local memory",
+      "anchor": "creating-a-layouttensor-in-shared-or-local-memory"
+    },
+    {
+      "level": 2,
+      "title": "Tiling tensors",
+      "anchor": "tiling-tensors"
+    },
+    {
+      "level": 3,
+      "title": "Extracting a tile",
+      "anchor": "extracting-a-tile"
+    },
+    {
+      "level": 3,
+      "title": "Tiled iterators",
+      "anchor": "tiled-iterators"
+    },
+    {
+      "level": 4,
+      "title": "Tiling a memory buffer",
+      "anchor": "tiling-a-memory-buffer"
+    },
+    {
+      "level": 3,
+      "title": "Tiling a `LayoutTensor`",
+      "anchor": "tiling-a-layouttensor"
+    },
+    {
+      "level": 1,
+      "title": "given a tensor of size rows x cols",
+      "anchor": "given-a-tensor-of-size-rows-x-cols"
+    },
+    {
+      "level": 2,
+      "title": "Vectorizing tensors",
+      "anchor": "vectorizing-tensors"
+    },
+    {
+      "level": 2,
+      "title": "Partitioning a tensor across threads",
+      "anchor": "partitioning-a-tensor-across-threads"
+    },
+    {
+      "level": 2,
+      "title": "Copying tensors",
+      "anchor": "copying-tensors"
+    },
+    {
+      "level": 3,
+      "title": "Thread-aware copy functions",
+      "anchor": "thread-aware-copy-functions"
+    },
+    {
+      "level": 2,
+      "title": "Summary",
+      "anchor": "summary"
+    }
+  ]
+}

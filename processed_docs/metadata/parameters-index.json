@@ -1,0 +1,193 @@
+{
+  "title": "Parameterization: compile-time metaprogramming",
+  "description": "An introduction to parameters and compile-time metaprogramming.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "parameters/index.mdx",
+  "file_size": 44515,
+  "document_id": "parameters-index",
+  "url": "https://docs.modular.com/mojo/manual/parameters",
+  "content_hash": "a1c8d288f32d35447f599590bc71d202",
+  "statistics": {
+    "char_count": 43315,
+    "word_count": 6176,
+    "line_count": 1336,
+    "paragraph_count": 307,
+    "header_count": 34,
+    "code_block_count": 87,
+    "code_lines": 443
+  },
+  "processed_at": "2025-10-10T13:44:57.739371",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Parameterized functions",
+      "anchor": "parameterized-functions"
+    },
+    {
+      "level": 2,
+      "title": "Anatomy of a parameter list",
+      "anchor": "anatomy-of-a-parameter-list"
+    },
+    {
+      "level": 2,
+      "title": "Parameters and generics",
+      "anchor": "parameters-and-generics"
+    },
+    {
+      "level": 2,
+      "title": "Parameterized structs",
+      "anchor": "parameterized-structs"
+    },
+    {
+      "level": 3,
+      "title": "Conditional conformance",
+      "anchor": "conditional-conformance"
+    },
+    {
+      "level": 3,
+      "title": "Case study: the SIMD type",
+      "anchor": "case-study-the-simd-type"
+    },
+    {
+      "level": 2,
+      "title": "Overloading on parameters",
+      "anchor": "overloading-on-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Using parameterized types and functions",
+      "anchor": "using-parameterized-types-and-functions"
+    },
+    {
+      "level": 3,
+      "title": "Parameter inference",
+      "anchor": "parameter-inference"
+    },
+    {
+      "level": 2,
+      "title": "Optional parameters and keyword parameters",
+      "anchor": "optional-parameters-and-keyword-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Infer-only parameters",
+      "anchor": "infer-only-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Variadic parameters",
+      "anchor": "variadic-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Parameter expressions are just Mojo code",
+      "anchor": "parameter-expressions-are-just-mojo-code"
+    },
+    {
+      "level": 3,
+      "title": "Powerful compile-time programming",
+      "anchor": "powerful-compile-time-programming"
+    },
+    {
+      "level": 2,
+      "title": "`alias`: named parameter expressions",
+      "anchor": "alias-named-parameter-expressions"
+    },
+    {
+      "level": 3,
+      "title": "Parametric aliases",
+      "anchor": "parametric-aliases"
+    },
+    {
+      "level": 1,
+      "title": "Does not work—-dynamic type values not permitted",
+      "anchor": "does-not-work-dynamic-type-values-not-permitted"
+    },
+    {
+      "level": 1,
+      "title": "Works",
+      "anchor": "works"
+    },
+    {
+      "level": 2,
+      "title": "Fully-bound, partially-bound, and unbound types",
+      "anchor": "fully-bound-partially-bound-and-unbound-types"
+    },
+    {
+      "level": 1,
+      "title": "These two types are equivalent",
+      "anchor": "these-two-types-are-equivalent"
+    },
+    {
+      "level": 1,
+      "title": "Unbind both pos_or_kw and kw_only parameters",
+      "anchor": "unbind-both-pos_or_kw-and-kw_only-parameters"
+    },
+    {
+      "level": 3,
+      "title": "Omitted parameters",
+      "anchor": "omitted-parameters"
+    },
+    {
+      "level": 1,
+      "title": "Partially bound",
+      "anchor": "partially-bound"
+    },
+    {
+      "level": 1,
+      "title": "Unbound",
+      "anchor": "unbound"
+    },
+    {
+      "level": 1,
+      "title": "equivalent to",
+      "anchor": "equivalent-to"
+    },
+    {
+      "level": 2,
+      "title": "Automatic parameterization",
+      "anchor": "automatic-parameterization"
+    },
+    {
+      "level": 3,
+      "title": "Automatic parameterization of parameters",
+      "anchor": "automatic-parameterization-of-parameters"
+    },
+    {
+      "level": 1,
+      "title": "Equivalent to:",
+      "anchor": "equivalent-to"
+    },
+    {
+      "level": 1,
+      "title": "Equivalent to:",
+      "anchor": "equivalent-to"
+    },
+    {
+      "level": 3,
+      "title": "Automatic parameterization with partially-bound types",
+      "anchor": "automatic-parameterization-with-partially-bound-types"
+    },
+    {
+      "level": 1,
+      "title": "ERROR: invalid call to 'eat': argument #0 cannot be converted from 'Fudge[12, 5, 7]' to 'Fudge[5, 5, 7]'",
+      "anchor": "error-invalid-call-to-eat-argument-0-cannot-be-converted-from-fudge12-5-7-to-fudge5-5-7"
+    },
+    {
+      "level": 3,
+      "title": "Legacy syntax (omitted parameters)",
+      "anchor": "legacy-syntax-omitted-parameters"
+    },
+    {
+      "level": 1,
+      "title": "ERROR: invalid call to 'nibble': argument #0 cannot be converted from 'Fudge[5, 5, 9]' to 'Fudge[5, 5, 7]'",
+      "anchor": "error-invalid-call-to-nibble-argument-0-cannot-be-converted-from-fudge5-5-9-to-fudge5-5-7"
+    },
+    {
+      "level": 2,
+      "title": "The `rebind()` builtin",
+      "anchor": "the-rebind-builtin"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Mojo language basics",
+  "sidebar_position": 1,
+  "sidebar_label": "Overview",
+  "description": "An overview of the Mojo language.",
+  "file_name": "basics.mdx",
+  "file_stem": "basics",
+  "file_path": "basics.mdx",
+  "file_size": 12242,
+  "document_id": "basics",
+  "url": "https://docs.modular.com/mojo/manual/basics",
+  "content_hash": "8ca821aadab29fcef14b75dcf75cc72d",
+  "statistics": {
+    "char_count": 11859,
+    "word_count": 1800,
+    "line_count": 396,
+    "paragraph_count": 103,
+    "header_count": 11,
+    "code_block_count": 24,
+    "code_lines": 88
+  },
+  "processed_at": "2025-10-10T13:44:57.578684",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Hello world",
+      "anchor": "hello-world"
+    },
+    {
+      "level": 2,
+      "title": "Variables",
+      "anchor": "variables"
+    },
+    {
+      "level": 2,
+      "title": "Blocks and statements",
+      "anchor": "blocks-and-statements"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 2,
+      "title": "Code comments",
+      "anchor": "code-comments"
+    },
+    {
+      "level": 1,
+      "title": "This is a comment. The Mojo compiler ignores this line.",
+      "anchor": "this-is-a-comment-the-mojo-compiler-ignores-this-line"
+    },
+    {
+      "level": 2,
+      "title": "Structs",
+      "anchor": "structs"
+    },
+    {
+      "level": 3,
+      "title": "Traits",
+      "anchor": "traits"
+    },
+    {
+      "level": 2,
+      "title": "Parameterization",
+      "anchor": "parameterization"
+    },
+    {
+      "level": 2,
+      "title": "Python integration",
+      "anchor": "python-integration"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

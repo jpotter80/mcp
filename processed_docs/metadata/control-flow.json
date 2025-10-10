@@ -1,0 +1,73 @@
+{
+  "title": "Control flow",
+  "description": "Mojo control flow statements.",
+  "file_name": "control-flow.mdx",
+  "file_stem": "control-flow",
+  "file_path": "control-flow.mdx",
+  "file_size": 11189,
+  "document_id": "control-flow",
+  "url": "https://docs.modular.com/mojo/manual/control-flow",
+  "content_hash": "2a0d8e8a00208576bc059ee6de225cba",
+  "statistics": {
+    "char_count": 10843,
+    "word_count": 1601,
+    "line_count": 494,
+    "paragraph_count": 108,
+    "header_count": 10,
+    "code_block_count": 52,
+    "code_lines": 191
+  },
+  "processed_at": "2025-10-10T13:44:57.609784",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The `if` statement",
+      "anchor": "the-if-statement"
+    },
+    {
+      "level": 3,
+      "title": "Short-circuit evaluation",
+      "anchor": "short-circuit-evaluation"
+    },
+    {
+      "level": 3,
+      "title": "Conditional expressions",
+      "anchor": "conditional-expressions"
+    },
+    {
+      "level": 2,
+      "title": "The `while` statement",
+      "anchor": "the-while-statement"
+    },
+    {
+      "level": 2,
+      "title": "The `for` statement",
+      "anchor": "the-for-statement"
+    },
+    {
+      "level": 3,
+      "title": "Iterating over Mojo collections",
+      "anchor": "iterating-over-mojo-collections"
+    },
+    {
+      "level": 4,
+      "title": "Iterating using references",
+      "anchor": "iterating-using-references"
+    },
+    {
+      "level": 3,
+      "title": "Iterating ranges",
+      "anchor": "iterating-ranges"
+    },
+    {
+      "level": 3,
+      "title": "`for` loop control statements",
+      "anchor": "for-loop-control-statements"
+    },
+    {
+      "level": 3,
+      "title": "Iterating over Python collections",
+      "anchor": "iterating-over-python-collections"
+    }
+  ]
+}
