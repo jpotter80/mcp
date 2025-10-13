@@ -5,6 +5,9 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
+process = "cd /home/james/mcp && python -m preprocessing.src.pipeline"
+
+
 
 [dependencies]
 openai = ">=2.3.0,<3"
@@ -15,3 +18,5 @@ python-frontmatter = ">=1.1.0,<2"
 pyyaml = ">=6.0.3,<7"
 regex = ">=2025.9.18,<2026"
 pathlib = ">=1.0.1,<2"
+numpy = ">=2.3.3,<3"
+requests = ">=2.32.5,<3"

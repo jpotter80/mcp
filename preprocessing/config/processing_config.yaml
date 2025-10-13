@@ -17,8 +17,8 @@ output:
 
 chunking:
   strategy: "recursive"
-  chunk_size: 400
-  chunk_overlap: 80
+  chunk_size: 256
+  chunk_overlap: 50
   min_chunk_size: 100
   preserve_code_blocks: true
   code_block_threshold: 50  # tokens

@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List
 from tqdm import tqdm  # type: ignore
+import shutil
 
 from .utils import (
     load_config,
@@ -24,7 +25,7 @@ from .metadata_extractor import MetadataExtractor
 
 
 def init_directories(config: Dict | None = None) -> None:
-    """Initialize output directory structure."""
+    """Initialize output directory structure, cleaning it first."""
     if config is None:
         config = load_config()
     
@@ -34,9 +35,16 @@ def init_directories(config: Dict | None = None) -> None:
         config["output"]["metadata_dir"],
         config["output"]["chunks_dir"],
     ]
+
+    # Clean existing output directories to prevent stale files
+    for subdir_name in subdirs:
+        subdir_path = base_dir / subdir_name
+        if subdir_path.exists():
+            print(f"🧹 Cleaning stale output from {subdir_path}...")
+            shutil.rmtree(subdir_path)
     
     create_directory_structure(base_dir, subdirs)
-    print(f"✓ Created output directories in {base_dir}")
+    print(f"✓ Created fresh output directories in {base_dir}")
 
 
 class DocumentProcessingPipeline:
