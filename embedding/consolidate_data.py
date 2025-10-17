@@ -4,9 +4,10 @@ import pandas as pd
 from tqdm import tqdm
 
 # --- Configuration ---
-CHUNKS_DIR = "../processed_docs/chunks"
-EMBEDDINGS_DIR = "../processed_docs/embeddings"
-OUTPUT_FILE = "../processed_docs/mojo_manual_embeddings.parquet"
+CHUNKS_DIR = "processed_docs/chunks"
+EMBEDDINGS_DIR = "processed_docs/embeddings"
+OUTPUT_FILE = "processed_docs/mojo_manual_embeddings.parquet"
+MIN_CHUNK_LENGTH = 200
 # --- End Configuration ---
 
 def load_jsonl(file_path):
@@ -45,6 +46,13 @@ def main():
             if not chunk_id:
                 continue
 
+            # --- Quality Filter ---
+            # Only include chunks with a meaningful length to avoid noise.
+            MIN_CHUNK_LENGTH = 200
+            content = chunk_data.get("content")
+            if not content or len(content) < MIN_CHUNK_LENGTH:
+                continue
+
             # Get the corresponding embedding
             embedding = embeddings_map.get(chunk_id)
             if not embedding:
@@ -58,7 +66,7 @@ def main():
             record = {
                 "chunk_id": chunk_id,
                 "document_id": chunk_data.get("document_id"),
-                "content": chunk_data.get("content"),
+                "content": content,
                 "embedding": embedding,
                 "title": metadata.get("title"),
                 "url": metadata.get("url"),

@@ -2,8 +2,8 @@ import duckdb
 import os
 
 # --- Configuration ---
-DUCKLAKE_CATALOG_PATH = "../mojo_catalog.ducklake"
-PARQUET_INPUT_FILE = "../processed_docs/mojo_manual_embeddings.parquet"
+DUCKLAKE_CATALOG_PATH = "mojo_catalog.ducklake"
+PARQUET_INPUT_FILE = "processed_docs/mojo_manual_embeddings.parquet"
 TABLE_NAME = "mojo_docs"
 # --- End Configuration ---
 

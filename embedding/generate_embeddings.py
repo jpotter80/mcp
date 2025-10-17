@@ -6,8 +6,8 @@ from tqdm import tqdm
 # --- Configuration ---
 MAX_SERVER_URL = "http://localhost:8000/v1"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
-INPUT_DIR = "../processed_docs/chunks"
-OUTPUT_DIR = "../processed_docs/embeddings"
+INPUT_DIR = "processed_docs/chunks"
+OUTPUT_DIR = "processed_docs/embeddings"
 BATCH_SIZE = 64
 # --- End Configuration ---
 

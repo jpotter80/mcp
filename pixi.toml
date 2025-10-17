@@ -5,9 +5,14 @@ platforms = ["linux-64"]
 version = "0.1.0"
 
 [tasks]
-process = "cd /home/james/mcp && python -m preprocessing.src.pipeline"
-consolidate = "cd /home/james/mcp/embedding && python consolidate_data.py"
-load = "cd /home/james/mcp/embedding && python load_to_ducklake.py"
+process = "python -m preprocessing.src.pipeline"
+generate-embeddings = "python embedding/generate_embeddings.py"
+consolidate = "python embedding/consolidate_data.py"
+load = "python embedding/load_to_ducklake.py"
+index = "python embedding/create_indexes.py"
+search = "python search.py"
+
+
 
 
 
