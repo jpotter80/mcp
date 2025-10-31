@@ -1,12 +1,12 @@
 {
-  "processing_date": "2025-10-17T12:55:32.397324",
+  "processing_date": "2025-10-30T18:15:04.973844",
   "source_directory": "/home/james/mcp/manual",
   "output_directory": "/home/james/mcp/processed_docs",
   "total_documents": 45,
-  "total_chunks": 871,
-  "total_tokens": 160751,
-  "average_tokens_per_chunk": 184.56,
-  "chunks_with_code": 578,
+  "total_chunks": 1155,
+  "total_tokens": 186106,
+  "average_tokens_per_chunk": 161.13,
+  "chunks_with_code": 752,
   "configuration": {
     "chunk_size": 256,
     "chunk_overlap": 50,
@@ -16,25 +16,25 @@
     {
       "file_path": "basics.mdx",
       "document_id": "basics",
-      "chunks_generated": 16,
+      "chunks_generated": 17,
       "content_hash": "8ca821aadab29fcef14b75dcf75cc72d"
     },
     {
       "file_path": "control-flow.mdx",
       "document_id": "control-flow",
-      "chunks_generated": 16,
+      "chunks_generated": 21,
       "content_hash": "2a0d8e8a00208576bc059ee6de225cba"
     },
     {
       "file_path": "decorators/always-inline.mdx",
       "document_id": "decorators-always-inline",
-      "chunks_generated": 3,
+      "chunks_generated": 4,
       "content_hash": "3ff43e2e25965ea7550d5cff2497cff0"
     },
     {
       "file_path": "decorators/compiler-register.mdx",
       "document_id": "decorators-compiler-register",
-      "chunks_generated": 5,
+      "chunks_generated": 8,
       "content_hash": "d6ad80942be87a0452dd289c47f96a03"
     },
     {
@@ -46,7 +46,7 @@
     {
       "file_path": "decorators/export.mdx",
       "document_id": "decorators-export",
-      "chunks_generated": 4,
+      "chunks_generated": 2,
       "content_hash": "7ecc102b5398204743b6509408f5548a"
     },
     {
@@ -58,7 +58,7 @@
     {
       "file_path": "decorators/implicit.mdx",
       "document_id": "decorators-implicit",
-      "chunks_generated": 1,
+      "chunks_generated": 2,
       "content_hash": "9541edf09412062034a5ae6a6491070d"
     },
     {
@@ -76,7 +76,7 @@
     {
       "file_path": "decorators/nonmaterializable.mdx",
       "document_id": "decorators-nonmaterializable",
-      "chunks_generated": 2,
+      "chunks_generated": 4,
       "content_hash": "9fa2198477ae7d78f1c7c739fa00e675"
     },
     {
@@ -88,7 +88,7 @@
     {
       "file_path": "decorators/register-passable.mdx",
       "document_id": "decorators-register-passable",
-      "chunks_generated": 4,
+      "chunks_generated": 6,
       "content_hash": "9416de48f3c4868e1aa3eeb78f8b22c7"
     },
     {
@@ -100,43 +100,43 @@
     {
       "file_path": "errors.mdx",
       "document_id": "errors",
-      "chunks_generated": 27,
+      "chunks_generated": 52,
       "content_hash": "eb1cbf25508469dc2c3defff7a930377"
     },
     {
       "file_path": "functions.mdx",
       "document_id": "functions",
-      "chunks_generated": 37,
+      "chunks_generated": 49,
       "content_hash": "4b088986dda67a38fc0849411c2e19dd"
     },
     {
       "file_path": "get-started.mdx",
       "document_id": "get-started",
-      "chunks_generated": 68,
+      "chunks_generated": 91,
       "content_hash": "c5b431206092444aa63e913a893c6375"
     },
     {
       "file_path": "gpu/architecture.mdx",
       "document_id": "gpu-architecture",
-      "chunks_generated": 9,
+      "chunks_generated": 12,
       "content_hash": "c604e4a63e4a55d28a1eeb16b920eb5d"
     },
     {
       "file_path": "gpu/basics.mdx",
       "document_id": "gpu-basics",
-      "chunks_generated": 39,
+      "chunks_generated": 43,
       "content_hash": "a68b33d13c4970083d983cb1b9e484a1"
     },
     {
       "file_path": "gpu/fundamentals.mdx",
       "document_id": "gpu-fundamentals",
-      "chunks_generated": 42,
+      "chunks_generated": 58,
       "content_hash": "594950ba6869cbb66c9f9226858b819b"
     },
     {
       "file_path": "gpu/intro-tutorial.mdx",
       "document_id": "gpu-intro-tutorial",
-      "chunks_generated": 47,
+      "chunks_generated": 58,
       "content_hash": "b9ad9378c4fd0375491bfa03323b169c"
     },
     {
@@ -148,91 +148,91 @@
     {
       "file_path": "install.mdx",
       "document_id": "install",
-      "chunks_generated": 8,
+      "chunks_generated": 10,
       "content_hash": "c69db48cc6c49ff17a45cedd1d19b3d0"
     },
     {
       "file_path": "layout/layouts.mdx",
       "document_id": "layout-layouts",
-      "chunks_generated": 24,
+      "chunks_generated": 40,
       "content_hash": "168440354ede9224861c7785919e4a4c"
     },
     {
       "file_path": "layout/tensors.mdx",
       "document_id": "layout-tensors",
-      "chunks_generated": 33,
+      "chunks_generated": 49,
       "content_hash": "15981434c8836efc48db61faef3ae0a2"
     },
     {
       "file_path": "lifecycle/death.mdx",
       "document_id": "lifecycle-death",
-      "chunks_generated": 19,
+      "chunks_generated": 23,
       "content_hash": "ae2f8153182d445b3c52c7ea7bd78ea0"
     },
     {
       "file_path": "lifecycle/index.mdx",
       "document_id": "lifecycle-index",
-      "chunks_generated": 5,
+      "chunks_generated": 6,
       "content_hash": "19d5ac9ba574b4890ac8c4f06b582ded"
     },
     {
       "file_path": "lifecycle/life.mdx",
       "document_id": "lifecycle-life",
-      "chunks_generated": 32,
+      "chunks_generated": 40,
       "content_hash": "2dc1c5d1e33a0c05ba98b889a0260b70"
     },
     {
       "file_path": "operators.mdx",
       "document_id": "operators",
-      "chunks_generated": 80,
+      "chunks_generated": 115,
       "content_hash": "a1458da1bc2223e2fd6ce1146128138a"
     },
     {
       "file_path": "packages.md",
       "document_id": "packages",
-      "chunks_generated": 8,
+      "chunks_generated": 11,
       "content_hash": "fd32b7a0770c09a9a663c5bf3d7fe5ec"
     },
     {
       "file_path": "parameters/index.mdx",
       "document_id": "parameters-index",
-      "chunks_generated": 63,
+      "chunks_generated": 84,
       "content_hash": "a1c8d288f32d35447f599590bc71d202"
     },
     {
       "file_path": "pointers/index.mdx",
       "document_id": "pointers-index",
-      "chunks_generated": 14,
+      "chunks_generated": 19,
       "content_hash": "f74d60d721297c0188c361512eb15cc3"
     },
     {
       "file_path": "pointers/unsafe-pointers.mdx",
       "document_id": "pointers-unsafe-pointers",
-      "chunks_generated": 33,
+      "chunks_generated": 37,
       "content_hash": "9811d8bd7818d1552e691252dfb653d8"
     },
     {
       "file_path": "python/index.mdx",
       "document_id": "python-index",
-      "chunks_generated": 2,
+      "chunks_generated": 3,
       "content_hash": "fe7247d93a545bda297baafb70a85881"
     },
     {
       "file_path": "python/mojo-from-python.mdx",
       "document_id": "python-mojo-from-python",
-      "chunks_generated": 30,
+      "chunks_generated": 43,
       "content_hash": "a5aee9ae163b6109e0ae543cf5fa808e"
     },
     {
       "file_path": "python/python-from-mojo.mdx",
       "document_id": "python-python-from-mojo",
-      "chunks_generated": 7,
+      "chunks_generated": 9,
       "content_hash": "9e88fe4eacd493ed0e39f8e714f0c73c"
     },
     {
       "file_path": "python/types.mdx",
       "document_id": "python-types",
-      "chunks_generated": 9,
+      "chunks_generated": 13,
       "content_hash": "4b873b34e48d511fdc4e7925d7774237"
     },
     {
@@ -244,13 +244,13 @@
     {
       "file_path": "traits.mdx",
       "document_id": "traits",
-      "chunks_generated": 37,
+      "chunks_generated": 48,
       "content_hash": "1d0b102ac59ad1a0ff035989d237d416"
     },
     {
       "file_path": "types.mdx",
       "document_id": "types",
-      "chunks_generated": 42,
+      "chunks_generated": 57,
       "content_hash": "6971c60617daeb1f058a1323cc9e182f"
     },
     {
@@ -262,25 +262,25 @@
     {
       "file_path": "values/lifetimes.mdx",
       "document_id": "values-lifetimes",
-      "chunks_generated": 19,
+      "chunks_generated": 26,
       "content_hash": "66b46418e394d864f4f177754ab57e13"
     },
     {
       "file_path": "values/ownership.mdx",
       "document_id": "values-ownership",
-      "chunks_generated": 18,
+      "chunks_generated": 22,
       "content_hash": "3359a026fd6f29bfae69af3d1d5267e1"
     },
     {
       "file_path": "values/value-semantics.mdx",
       "document_id": "values-value-semantics",
-      "chunks_generated": 4,
+      "chunks_generated": 5,
       "content_hash": "09e57b8c85cce628ca3468952d0aca22"
     },
     {
       "file_path": "variables.mdx",
       "document_id": "variables",
-      "chunks_generated": 18,
+      "chunks_generated": 22,
       "content_hash": "de78676ede14e40da639376b9b54f40e"
     }
   ]

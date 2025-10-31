@@ -20,7 +20,7 @@ from .utils import (
     generate_document_id,
 )
 from .mdx_processor import MDXProcessor
-from .chunker import TechnicalDocChunker, DocumentChunk
+from .chunker import LangchainMarkdownChunker, DocumentChunk
 from .metadata_extractor import MetadataExtractor
 
 
@@ -66,7 +66,7 @@ class DocumentProcessingPipeline:
         
         # Initialize processors
         self.mdx_processor = MDXProcessor(self.config)
-        self.chunker = TechnicalDocChunker(self.config)
+        self.chunker = LangchainMarkdownChunker(self.config)
         self.metadata_extractor = MetadataExtractor(self.config)
         
         # Initialize output directories

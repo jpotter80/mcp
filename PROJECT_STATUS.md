@@ -1,8 +1,8 @@
 # Mojo Documentation Search Engine - Project Summary
 
-## Project Status: Complete - Awaiting Final Quality Assurance
+## Project Status: In Progress - Chunking Strategy Upgrade
 
-This document provides a complete overview of the end-to-end hybrid search engine built for the Mojo manual. The system processes raw documentation, generates vector embeddings, versions the data, builds a high-performance search index, and provides a command-line interface for hybrid (semantic + keyword) search.
+This document provides a complete overview of the end-to-end hybrid search engine built for the Mojo manual. The system is currently undergoing a significant upgrade to its core document preprocessing and chunking strategy to improve search result quality.
 
 ## System Architecture
 
@@ -17,9 +17,10 @@ The system is a multi-stage pipeline that transforms raw documentation into a qu
 
 ## What Has Been Created
 
-### 1. Preprocessing Pipeline ✅
+### 1. Preprocessing Pipeline (Under Upgrade) ⚠️
 - **Source**: `preprocessing/`
-- **Function**: Parses MDX files, cleans content, and splits documents into semantically coherent chunks (`~200` character minimum).
+- **Function**: Parses MDX files, cleans content, and splits documents.
+- **New Strategy**: The original chunker (`TechnicalDocChunker`) has been replaced with `LangchainMarkdownChunker`. This new approach is "tokenizer-aware." It uses `langchain`'s `MarkdownHeaderTextSplitter` to preserve semantic structure and `RecursiveCharacterTextSplitter` with the `sentence-transformers/all-mpnet-base-v2` tokenizer to create chunks that do not exceed the model's 384 token limit. This prevents silent truncation of input and is expected to significantly improve embedding quality.
 - **Output**: `processed_docs/chunks/`
 
 ### 2. Embedding Generation ✅
@@ -27,9 +28,9 @@ The system is a multi-stage pipeline that transforms raw documentation into a qu
 - **Function**: Uses a `max serve` instance with `all-mpnet-base-v2` to generate 768-dimensional vector embeddings for each chunk.
 - **Output**: `processed_docs/embeddings/`
 
-### 3. Data Consolidation & Quality Filtering ✅
+### 3. Data Consolidation & Quality Filtering (Review Required) ⚠️
 - **Source**: `embedding/consolidate_data.py`
-- **Function**: Merges chunks, metadata, and embeddings. Filters out low-quality chunks (less than 200 characters) to improve search relevance.
+- **Function**: Merges chunks, metadata, and embeddings. The previous filtering logic (e.g., `MIN_CHUNK_LENGTH`) may need to be re-evaluated based on the output of the new chunking strategy.
 - **Output**: `processed_docs/mojo_manual_embeddings.parquet`
 
 ### 4. Versioned Data Lake (DuckLake) ✅
@@ -89,20 +90,32 @@ pixi run load
 pixi run index
 ```
 
-## Next Steps: Final QA
+## Next Steps: Validation and Quality Assurance
 
-The entire system is now implemented and debugged. The final step is to perform a quality assurance check on the search results.
+The chunking strategy has been upgraded. The next steps are to validate the new pipeline and assess the impact on search quality.
 
-### 1. Run a Test Search
+### 1. Run the Full Pipeline
 
-Execute a search query to see the final, ranked results.
+Execute the entire data processing pipeline to regenerate all artifacts using the new chunking logic.
+
+```bash
+pixi run process && \
+pixi run generate-embeddings && \
+pixi run consolidate && \
+pixi run load && \
+pixi run index
+```
+
+### 2. Run a Test Search
+
+Execute a search query to see the new, ranked results.
 
 ```bash
 # Use -- to pass arguments to the script
 pixi run search -- -q "How do I declare a variable in Mojo?"
 ```
 
-### 2. Experiment with Weights
+### 3. Experiment with Weights
 
 Tune the FTS (keyword) and VSS (semantic) weights to see how they affect the results.
 
@@ -129,14 +142,14 @@ pixi run search -- -q "How do I declare a variable in Mojo?" --fts-weight 0.2 --
     ```
 
 - **Problem**: Search results are still poor.
-  - **Solution**: Adjust the `MIN_CHUNK_LENGTH` in `embedding/consolidate_data.py` and re-run the pipeline from `consolidate` onwards.
+  - **Solution**: The new `LangchainMarkdownChunker` has tunable parameters (`chunk_size`, `chunk_overlap`) in `preprocessing/config/processing_config.yaml`. Adjust these and re-run the pipeline from `process` onwards.
 
 ## Conclusion
 
-The project has successfully evolved from a simple preprocessing script into a complete, end-to-end hybrid search engine. It includes data versioning, a materialized indexing layer for performance, and a tunable hybrid search algorithm. The system is robust and ready for final quality assurance testing.
+The project has successfully evolved from a simple preprocessing script into a complete, end-to-end hybrid search engine. It is currently undergoing a significant enhancement to its chunking logic to improve search relevance by aligning the chunking process with the embedding model's tokenization. The system is robust and ready for validation of the new strategy.
 
 ---
 
-**Status**: ✅ Complete
-**Next Action**: Perform final search quality analysis.
-**Estimated Time**: 10 minutes to review search results.
+**Status**: ⚠️ In Progress
+**Next Action**: Validate the new chunking pipeline and assess search quality.
+**Estimated Time**: 30 minutes to run the pipeline and review results.
