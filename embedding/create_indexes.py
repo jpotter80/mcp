@@ -5,7 +5,7 @@ import os
 DUCKLAKE_CATALOG_PATH = "mojo_catalog.ducklake"
 DUCKLAKE_TABLE_NAME = "mojo_docs"
 INDEXED_TABLE_NAME = "mojo_docs_indexed"
-MAIN_DB_PATH = "../main.db"
+MAIN_DB_PATH = "main.db"
 # --- End Configuration ---
 
 def main():
@@ -57,14 +57,23 @@ def main():
         con.execute("LOAD vss;")
         # Enable experimental persistence for HNSW indexes
         con.execute("SET hnsw_enable_experimental_persistence = true;")
-        con.execute(f"CREATE INDEX IF NOT EXISTS mojo_hnsw_idx ON {INDEXED_TABLE_NAME} USING HNSW (embedding);")
+        # Recreate the index to ensure the desired metric is applied
+        con.execute("DROP INDEX IF EXISTS mojo_hnsw_idx;")
+        con.execute(
+            f"CREATE INDEX mojo_hnsw_idx ON {INDEXED_TABLE_NAME} USING HNSW (embedding) WITH (metric = 'cosine');"
+        )
         print("✓ HNSW index created or already exists.")
 
         # 3. Create FTS index for Full-Text Search on the native table
         print("\nCreating FTS index for full-text search...")
         con.execute("INSTALL fts;")
         con.execute("LOAD fts;")
-        con.execute(f"PRAGMA create_fts_index('{INDEXED_TABLE_NAME}', 'chunk_id', 'content', 'title', overwrite=1);")
+        # Index only textual fields relevant for BM25 ranking
+        # According to DuckDB FTS docs, the 2nd arg is the document identifier column
+        # Here we use 'chunk_id' as the document identifier, and index 'title' and 'content' fields
+        con.execute(
+            f"PRAGMA create_fts_index('{INDEXED_TABLE_NAME}', 'chunk_id', 'title', 'content', overwrite=1);"
+        )
         print("✓ FTS index created successfully.")
 
         # Verify the final table

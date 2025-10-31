@@ -44,20 +44,20 @@ The system is a multi-stage pipeline that transforms raw documentation into a qu
 ### 5. Indexed Search Database (DuckDB) ✅
 - **Source**: `embedding/create_indexes.py`
 - **Function**: Implements a "materialized view" pattern. It copies the latest data from the versioned DuckLake table into a native DuckDB table (`mojo_docs_indexed`) and builds high-performance search indexes (HNSW for vectors, FTS for keywords).
-- **Planned Upgrade (audit action)**:
-  - Create FTS index on `content, title` only; query FTS using `rowid` in `match_bm25(rowid, ?)`.
-  - Use cosine similarity and the vss operator/function that engages HNSW; normalize vectors if required.
+- Recent update (doc-driven):
+  - HNSW index now uses the cosine metric as per the Vector Similarity Search docs. We leverage `ORDER BY array_cosine_distance(embedding, ?::FLOAT[768]) LIMIT k` to ensure HNSW acceleration.
+  - FTS index is built with `chunk_id` as the document identifier and indexes the `title` and `content` columns. Queries use `fts_main_<table>.match_bm25(input_id := chunk_id, query_string := ?[, fields := 'title'|'content'])` with a title/content weighted combination.
+  - Persistence: `hnsw_enable_experimental_persistence=true` is enabled to persist the HNSW index in `main.db` (experimental; safe for local dev, not production).
 - **Output**: `main.db`
 
 ### 6. Hybrid Search Application ✅
 - **Source**: `search.py`
 - **Function**: A command-line tool that performs a hybrid search. It uses Reciprocal Rank Fusion (RRF) to intelligently combine results from vector search (semantic meaning) and full-text search (keywords). The search weights are tunable.
-- **Planned Upgrade (audit action)**:
-  - Fix FTS query to use `rowid` with `match_bm25`.
-  - Switch vector search to cosine with HNSW-backed search.
-  - Honor the `-k` CLI parameter when limiting results.
-  - Enrich embeddings by prepending Title/Section context to chunk text.
-  - Improve result rendering with section hierarchy, `section_url`, and a short snippet.
+- Recent update (doc-driven):
+  - Vector search now uses `array_cosine_distance` to align with the cosine HNSW index and benefit from index acceleration.
+  - FTS calls now pass `chunk_id` as `input_id` to `match_bm25` and compute a weighted score: `2.0 * BM25(title) + 1.0 * BM25(content)` (tunable). A robust LIKE-based fallback remains for environments where FTS macros behave differently.
+  - Added optional debug flags to print `EXPLAIN` for VSS (to check for `HNSW_INDEX_SCAN`) and log which FTS path was used.
+  - CLI continues to honor `-k`; output includes section hierarchy and snippet.
 
 ### 7. Project & Task Management (Pixi) ✅
 - **Source**: `pixi.toml`
@@ -149,6 +149,60 @@ pixi run search -- -q "How do I declare a variable in Mojo?" --fts-weight 0.2 --
 ```
 
 Optionally compare RRF vs. weighted score fusion if exposed in the CLI.
+
+---
+
+## Recent fixes and compatibility findings
+
+These issues were uncovered during end-to-end validation and have been addressed in code. They’re recorded here to keep a durable reference of behavior across environments.
+
+- DuckDB FTS API alignment
+  - Observation: The FTS docs specify an identifier column (input_id) and vararg text fields. Our index now uses `chunk_id` as `input_id` and indexes `title` and `content`. At query time we call `match_bm25(input_id := chunk_id, query_string := ?, fields := 'title'|'content')` and combine per-field scores with a title boost.
+  - Result: Simpler, spec-compliant FTS usage. We kept a LIKE-based fallback for resilience.
+
+- Materialized DB path mismatch
+  - Observation: Indexer wrote to `../main.db` while the search app expected `main.db`.
+  - Fix: Unified on `main.db` at the repository root.
+
+- Upsert correctness
+  - Observation: Deleting by `chunk_id` left stale rows when chunk IDs changed with a new chunking strategy.
+  - Fix: Upsert now deletes by `document_id` before insert.
+
+- Vector similarity and HNSW
+  - Observation: To benefit from HNSW acceleration with cosine metric, queries must order by `array_cosine_distance` and limit k.
+  - Fix: Use `array_cosine_distance(embedding, ?::FLOAT[768]) ORDER BY ... LIMIT k`. Added optional `EXPLAIN` to verify `HNSW_INDEX_SCAN`.
+
+- Embedding input enrichment
+  - Fix: Prepend Title/Section context to chunk text before embedding to improve semantic recall.
+
+- Consolidation filtering
+  - Fix: Relaxed minimum content length and preserved short, high-signal chunks (headers, intros). Persisted useful features (token_count, has_code, section data).
+
+---
+
+## Current observations (relevance)
+
+- Query: “How do I declare a variable in Mojo?”
+  - Returned results were valid pages but not the most relevant (“Variables” section). Likely causes:
+    - Terminology mismatch: docs prefer “let” and “binding” vs. “declare variable”.
+    - FTS treats title and content equally; a title-boost would help.
+    - Fusion weights may overweight VSS when FTS has exact-title matches.
+
+---
+
+## Planned relevance improvements (scoped, low risk)
+
+1) Title-boosted BM25 (FTS)
+   - Compute separate BM25 scores over title-only and content-only, then combine: `score = 2.0 * title + 1.0 * content` (tunable). Use the same robust FTS fallbacks already implemented.
+
+2) Lightweight query expansion (FTS-only)
+   - Maintain a small synonym map for common terms (e.g., variable → [let, var, binding, assign]). Apply only to the FTS query string to improve lexical recall; keep VSS input unchanged.
+
+3) Fusion tuning
+   - Start with `--fts-weight 0.7 --vss-weight 0.3` for intent-led queries. Optionally add a “weighted fusion” mode (normalize and sum) later if needed.
+
+4) Optional follow-up
+   - Implement the two-phase, section-preserving chunker with code-fence awareness for another quality lift.
 
 ---
 

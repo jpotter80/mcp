@@ -34,7 +34,21 @@ def process_file(client, input_path, output_path):
                 content = data.get("content")
                 # Only process chunks that have non-empty content
                 if content and content.strip():
-                    chunks_to_process.append(content)
+                    # Prepend Title/Section context to help embeddings
+                    meta = data.get("metadata", {})
+                    title = meta.get("title") or ""
+                    section = meta.get("section_hierarchy") or []
+                    section_path = " > ".join(section) if section else ""
+                    if title and section_path:
+                        text = f"Title: {title}\nSection: {section_path}\n\n{content}"
+                    elif title:
+                        text = f"Title: {title}\n\n{content}"
+                    elif section_path:
+                        text = f"Section: {section_path}\n\n{content}"
+                    else:
+                        text = content
+
+                    chunks_to_process.append(text)
                     chunk_ids.append(data.get("chunk_id", ""))
 
     if not chunks_to_process:

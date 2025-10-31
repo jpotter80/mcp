@@ -47,9 +47,12 @@ def main():
             # Begin a transaction for the upsert
             con.begin()
             
-            # Delete old versions of chunks that are present in the new data
+            # Delete old records for documents present in the new data
+            # Using document_id ensures we replace the entire document's chunk set
             print("Deleting old records...")
-            con.execute(f"DELETE FROM {TABLE_NAME} WHERE chunk_id IN (SELECT chunk_id FROM new_mojo_docs);")
+            con.execute(
+                f"DELETE FROM {TABLE_NAME} WHERE document_id IN (SELECT DISTINCT document_id FROM new_mojo_docs);"
+            )
             
             # Insert the new data
             print("Inserting new records...")

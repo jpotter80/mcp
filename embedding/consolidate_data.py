@@ -7,7 +7,7 @@ from tqdm import tqdm
 CHUNKS_DIR = "processed_docs/chunks"
 EMBEDDINGS_DIR = "processed_docs/embeddings"
 OUTPUT_FILE = "processed_docs/mojo_manual_embeddings.parquet"
-MIN_CHUNK_LENGTH = 200
+MIN_CHUNK_LENGTH = 80  # Relaxed threshold; consider token-based threshold downstream
 # --- End Configuration ---
 
 def load_jsonl(file_path):
@@ -47,11 +47,14 @@ def main():
                 continue
 
             # --- Quality Filter ---
-            # Only include chunks with a meaningful length to avoid noise.
-            MIN_CHUNK_LENGTH = 200
+            # Only include chunks with a minimal length to avoid extreme noise.
             content = chunk_data.get("content")
             if not content or len(content) < MIN_CHUNK_LENGTH:
-                continue
+                # Keep short chunks if they look like headers or intros
+                meta = chunk_data.get("metadata", {})
+                section_h = meta.get("section_hierarchy", [])
+                if not section_h:
+                    continue
 
             # Get the corresponding embedding
             embedding = embeddings_map.get(chunk_id)
@@ -71,6 +74,11 @@ def main():
                 "title": metadata.get("title"),
                 "url": metadata.get("url"),
                 "section_hierarchy": metadata.get("section_hierarchy", []),
+                # Persist a section_url if present; else fall back to url at read time
+                "section_url": metadata.get("section_url"),
+                # Persist useful quality features when present
+                "token_count": chunk_data.get("token_count"),
+                "has_code": chunk_data.get("has_code"),
             }
             consolidated_data.append(record)
 
