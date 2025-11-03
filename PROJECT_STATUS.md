@@ -1,6 +1,6 @@
 # Mojo Documentation Search Engine - Project Summary
 
-## Project Status: In Progress — Quality Fixes After Audit
+## Project Status: In Progress — Hybrid Search Stable, MCP Server Added
 
 This document provides a complete overview of the end-to-end hybrid search engine built for the Mojo manual. The system is currently undergoing a significant upgrade to its core document preprocessing and chunking strategy to improve search result quality.
 
@@ -58,26 +58,43 @@ The system is a multi-stage pipeline that transforms raw documentation into a qu
   - FTS calls now pass `chunk_id` as `input_id` to `match_bm25` and compute a weighted score: `2.0 * BM25(title) + 1.0 * BM25(content)` (tunable). A robust LIKE-based fallback remains for environments where FTS macros behave differently.
   - Added optional debug flags to print `EXPLAIN` for VSS (to check for `HNSW_INDEX_SCAN`) and log which FTS path was used.
   - CLI continues to honor `-k`; output includes section hierarchy and snippet.
+  - Runtime configuration via env vars: `MOJO_DB_PATH`, `MOJO_TABLE_NAME`, `MAX_SERVER_URL`, `EMBED_MODEL_NAME`, `EMBED_CACHE_SIZE`.
+  - Added lightweight in-memory LRU cache for query embeddings to reduce redundant MAX calls.
 
 ### 7. Project & Task Management (Pixi) ✅
 - **Source**: `pixi.toml`
 - **Function**: Manages all dependencies and provides a single interface for running the entire pipeline via `pixi run <task>`.
 
+### 8. MCP Server (Runtime Distribution) ✅
+- **Source**: `mcp_server/server.py`
+- **Function**: Exposes the Mojo manual as MCP resources and a search tool for LLM hosts (e.g., VS Code MCP client, MCP Inspector).
+- **Interface**:
+  - Tool: `search(query: str, k: int=5)` → structured results with `chunk_id`, `title`, `url`, `section_hierarchy`, `snippet`
+  - Resources: `mojo://search/{q}` (markdown results), `mojo://chunk/{chunk_id}` (single chunk markdown)
+- **Runtime**: Uses the same `search.py` hybrid engine with DuckDB and MAX embeddings. Requires local MAX server (`max serve`).
+- **Dev/Run**:
+  - `pixi run mcp-dev` (MCP Inspector)
+  - Direct execution supported: `python mcp_server/server.py`
+- **Docs**: `README_MCP.md` contains end-user steps (MAX serve, MCP dev/run, VS Code host wiring, env vars).
+
 ## Final Project Structure
 
 ```
 /home/james/mcp/
-├── embedding/                      # Scripts for embeddings, consolidation, loading
+├── embedding/                      # Build-time only: embeddings, consolidation, loading
 │   ├── generate_embeddings.py
 │   ├── consolidate_data.py
 │   ├── load_to_ducklake.py
 │   └── create_indexes.py
 ├── manual/                         # Original Mojo documentation (READ-ONLY)
-├── preprocessing/                  # Preprocessing pipeline
-├── processed_docs/                 # Intermediate processed files
-├── main.db                         # Indexed DuckDB search database
-├── mojo_catalog.ducklake           # DuckLake versioning catalog
-├── search.py                       # Hybrid search CLI application
+├── preprocessing/                  # Build-time only
+├── processed_docs/                 # Build-time only
+├── mcp_server/
+│   └── server.py                   # MCP server (runtime)
+├── main.db                         # Indexed DuckDB search database (runtime)
+├── search.py                       # Hybrid search engine (runtime)
+├── README_MCP.md                   # How to run MAX + MCP (runtime docs)
+├── mojo_catalog.ducklake           # Build-time catalog (versioned lake)
 └── pixi.toml                       # Project configuration and tasks
 ```
 
@@ -100,6 +117,12 @@ pixi run load
 
 # 5. Create the materialized, indexed search database
 pixi run index
+
+# 6. Start local MAX server for embeddings (runtime)
+pixi run max-serve
+
+# 7. Launch MCP Inspector for the runtime server
+pixi run mcp-dev
 ```
 
 ## Next Steps: Validation and Quality Assurance

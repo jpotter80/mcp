@@ -11,6 +11,8 @@ consolidate = "python embedding/consolidate_data.py"
 load = "python embedding/load_to_ducklake.py"
 index = "python embedding/create_indexes.py"
 search = "python search.py"
+mcp-dev = "mcp dev mcp_server/server.py"
+max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
 
 
@@ -34,3 +36,6 @@ pandas = ">=2.3.3,<3"
 tqdm = ">=4.67.1,<5"
 langchain-text-splitters = ">=1.0.0,<2"
 sentence-transformers = ">=5.1.2,<6"
+
+[pypi-dependencies]
+mcp = { version = ">=1.20.0, <2", extras = ["cli"] }

@@ -1,13 +1,15 @@
 import duckdb
 import os
 import argparse
+from collections import OrderedDict
 from openai import OpenAI
+import sys
 
 # --- Configuration ---
-DB_PATH = "main.db"
-TABLE_NAME = "mojo_docs_indexed"
-MAX_SERVER_URL = "http://localhost:8000/v1"
-MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
+DB_PATH = os.getenv("MOJO_DB_PATH", "main.db")
+TABLE_NAME = os.getenv("MOJO_TABLE_NAME", "mojo_docs_indexed")
+MAX_SERVER_URL = os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1")
+MODEL_NAME = os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2")
 TOP_K = 5  # Default number of results to return
 # FTS scoring weights (title boosted)
 FTS_TITLE_WEIGHT = 2.0
@@ -15,16 +17,37 @@ FTS_CONTENT_WEIGHT = 1.0
 # Debug/verification flags
 DEBUG_EXPLAIN_VSS = False  # when True, prints EXPLAIN of VSS query to confirm HNSW_INDEX_SCAN
 DEBUG_LOG_FTS_PATH = False  # when True, prints which FTS path was used
+EMBED_CACHE_SIZE = int(os.getenv("EMBED_CACHE_SIZE", "512"))
 # --- End Configuration ---
+
+
+class _LRUCache:
+    def __init__(self, capacity: int = 512):
+        self.capacity = max(1, capacity)
+        self._store: OrderedDict[str, list[float]] = OrderedDict()
+
+    def get(self, key: str):
+        if key in self._store:
+            self._store.move_to_end(key)
+            return self._store[key]
+        return None
+
+    def set(self, key: str, value: list[float]):
+        if key in self._store:
+            self._store.move_to_end(key)
+        self._store[key] = value
+        if len(self._store) > self.capacity:
+            self._store.popitem(last=False)
 
 class HybridSearcher:
     """
     A class to perform hybrid search (vector + full-text) on the DuckDB database.
     """
-    def __init__(self, db_path="main.db", table_name="mojo_docs_indexed"):
+    def __init__(self, db_path=DB_PATH, table_name=TABLE_NAME):
         self.db_path = db_path
         self.table_name = table_name
         self.openai_client = OpenAI(base_url=MAX_SERVER_URL, api_key="EMPTY")
+        self._embed_cache = _LRUCache(capacity=EMBED_CACHE_SIZE)
         self.db_connection = self._connect()
 
     def _connect(self):
@@ -57,11 +80,25 @@ class HybridSearcher:
 
     def get_query_embedding(self, query_text: str):
         """Generates an embedding for the user's query."""
-        response = self.openai_client.embeddings.create(
-            model=MODEL_NAME,
-            input=[query_text],
-        )
-        return response.data[0].embedding
+        cached = self._embed_cache.get(query_text)
+        if cached is not None:
+            return cached
+        try:
+            response = self.openai_client.embeddings.create(
+                model=MODEL_NAME,
+                input=[query_text],
+            )
+            emb = response.data[0].embedding
+            self._embed_cache.set(query_text, emb)
+            return emb
+        except Exception as e:
+            # Graceful fallback: if embeddings aren't available (e.g., MAX not running),
+            # return None and let callers skip vector search.
+            try:
+                print(f"[WARN] Embedding generation failed, falling back to FTS only: {e}")
+            except Exception:
+                pass
+            return None
 
     def vector_search(self, query_vector, limit: int):
         """Performs vector similarity search using HNSW-backed operator when available.
@@ -78,9 +115,10 @@ class HybridSearcher:
             if DEBUG_EXPLAIN_VSS:
                 plan = self.db_connection.execute("EXPLAIN " + query, [query_vector]).fetchall()
                 try:
-                    print("[DEBUG] VSS EXPLAIN plan:")
+                    sys.stderr.write("[DEBUG] VSS EXPLAIN plan:\n")
                     for row in plan:
-                        print(row[0])
+                        sys.stderr.write(str(row[0]) + "\n")
+                    sys.stderr.flush()
                 except Exception:
                     pass
             return self.db_connection.execute(query, [query_vector]).fetchall()
@@ -126,7 +164,11 @@ class HybridSearcher:
         try:
             rows = self.db_connection.execute(query_weighted, [expanded, expanded]).fetchall()
             if DEBUG_LOG_FTS_PATH:
-                print("[DEBUG] FTS path: match_bm25 per-field weighted")
+                try:
+                    sys.stderr.write("[DEBUG] FTS path: match_bm25 per-field weighted\n")
+                    sys.stderr.flush()
+                except Exception:
+                    pass
             return rows
         except Exception:
             # Attempt 2: default fields only
@@ -144,7 +186,11 @@ class HybridSearcher:
             try:
                 rows = self.db_connection.execute(query_default, [expanded]).fetchall()
                 if DEBUG_LOG_FTS_PATH:
-                    print("[DEBUG] FTS path: match_bm25 default fields")
+                    try:
+                        sys.stderr.write("[DEBUG] FTS path: match_bm25 default fields\n")
+                        sys.stderr.flush()
+                    except Exception:
+                        pass
                 return rows
             except Exception:
                 # Attempt 3: version-agnostic keyword fallback using LIKE presence scoring
@@ -171,7 +217,11 @@ class HybridSearcher:
                 params = tokens + tokens  # first for title LIKEs, then for content LIKEs
                 rows = self.db_connection.execute(query_kw, params).fetchall()
                 if DEBUG_LOG_FTS_PATH:
-                    print("[DEBUG] FTS path: LIKE-based fallback")
+                    try:
+                        sys.stderr.write("[DEBUG] FTS path: LIKE-based fallback\n")
+                        sys.stderr.flush()
+                    except Exception:
+                        pass
                 return rows
 
     def hybrid_search(self, query_text: str, k: int = TOP_K, fts_weight: float = 0.4, vss_weight: float = 0.6):
@@ -179,7 +229,10 @@ class HybridSearcher:
         query_vector = self.get_query_embedding(query_text)
 
         # Get results from both search methods
-        vector_results = self.vector_search(query_vector, limit=k * 2)
+        if query_vector is None:
+            vector_results = []
+        else:
+            vector_results = self.vector_search(query_vector, limit=k * 2)
         fts_results = self.full_text_search(query_text, limit=k * 2)
 
         # --- Reciprocal Rank Fusion (RRF) ---
