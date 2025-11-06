@@ -1,11 +1,9 @@
 {
-  "mcp.servers": {
+  "github.copilot.chat.mcpServers": {
     "mojo-docs": {
       "type": "stdio",
       "command": "/home/james/mcp/.pixi/envs/default/bin/python",
-      "args": [
-        "mcp_server/server.py"
-      ],
+      "args": ["-u", "/home/james/mcp/runtime/mcp_server/server.py"],
       "cwd": "/home/james/mcp/runtime",
       "env": {
         "MOJO_DB_PATH": "/home/james/mcp/runtime/main.db",
