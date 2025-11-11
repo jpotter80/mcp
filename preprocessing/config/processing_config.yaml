@@ -1,5 +1,6 @@
 source:
   directory: "/home/james/mcp/manual"
+  format: "mdx"
   file_patterns:
     - "*.mdx"
     - "*.md"

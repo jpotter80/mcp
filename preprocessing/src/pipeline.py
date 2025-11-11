@@ -19,7 +19,7 @@ from .utils import (
     get_file_list,
     generate_document_id,
 )
-from .mdx_processor import MDXProcessor
+from shared.preprocessing.src.processor_factory import ProcessorFactory
 from .chunker import LangchainMarkdownChunker, DocumentChunk
 from .metadata_extractor import MetadataExtractor
 
@@ -64,8 +64,9 @@ class DocumentProcessingPipeline:
         self.base_dir = Path(self.config["output"]["base_directory"])
         self.source_dir = Path(self.config["source"]["directory"])
         
-        # Initialize processors
-        self.mdx_processor = MDXProcessor(self.config)
+        # Initialize processors using factory
+        format_type = self.config["source"].get("format", "mdx")
+        self.processor = ProcessorFactory.get_processor(self.config, format_type)
         self.chunker = LangchainMarkdownChunker(self.config)
         self.metadata_extractor = MetadataExtractor(self.config)
         
@@ -96,7 +97,7 @@ class DocumentProcessingPipeline:
         for file_path in tqdm(files, desc="Processing files"):
             try:
                 # Process the file
-                document = self.mdx_processor.process_file(file_path)
+                document = self.processor.process_file(file_path)
                 
                 # Add document ID
                 document["document_id"] = generate_document_id(

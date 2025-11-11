@@ -1,5 +1,7 @@
 """
 MDX document processor for cleaning and extracting content.
+
+Handles MDX files (Markdown with JSX components) with optional frontmatter.
 """
 
 import re
@@ -7,16 +9,21 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 import frontmatter  # type: ignore
 
+from .base_processor import BaseDocumentProcessor
 from .utils import calculate_content_hash, normalize_whitespace
-from shared.preprocessing.src.base_processor import BaseDocumentProcessor
 
 
 class MDXProcessor(BaseDocumentProcessor):
     """Processes MDX files and extracts content with metadata."""
 
     def __init__(self, config: Dict):
+        """Initialize MDX processor with configuration.
+        
+        Args:
+            config: Configuration dictionary with processing settings
+        """
         super().__init__(config)
-        self.processing_config = config["processing"]
+        self.processing_config = config.get("processing", {})
         
         # Compile regex patterns for efficiency
         self.jsx_component_pattern = re.compile(
@@ -30,6 +37,9 @@ class MDXProcessor(BaseDocumentProcessor):
     def process_file(self, file_path: Path) -> Dict:
         """
         Process a single MDX file and extract all relevant information.
+        
+        Args:
+            file_path: Path to the MDX file to process
         
         Returns:
             Dictionary containing processed content and metadata
@@ -58,7 +68,15 @@ class MDXProcessor(BaseDocumentProcessor):
         }
 
     def _extract_metadata(self, post: frontmatter.Post, file_path: Path) -> Dict:
-        """Extract frontmatter metadata from document."""
+        """Extract frontmatter metadata from document.
+        
+        Args:
+            post: Loaded frontmatter post object
+            file_path: Path to the source file
+            
+        Returns:
+            Dictionary of metadata fields
+        """
         metadata = dict(post.metadata) if post.metadata else {}
         
         # Add computed metadata
@@ -68,7 +86,14 @@ class MDXProcessor(BaseDocumentProcessor):
         return metadata
 
     def _clean_content(self, content: str) -> str:
-        """Remove JSX components and imports while preserving text."""
+        """Remove JSX components and imports while preserving text.
+        
+        Args:
+            content: Raw MDX content
+            
+        Returns:
+            Cleaned content
+        """
         cleaned = content
         
         # Remove imports
@@ -92,7 +117,14 @@ class MDXProcessor(BaseDocumentProcessor):
         return cleaned
 
     def _extract_jsx_text(self, content: str) -> str:
-        """Extract text content from JSX components before removal."""
+        """Extract text content from JSX components before removal.
+        
+        Args:
+            content: MDX content with JSX components
+            
+        Returns:
+            Content with text extracted from JSX components
+        """
         # Handle Button components with text
         content = re.sub(
             r"<Button[^>]*>(.*?)</Button>",
@@ -112,7 +144,14 @@ class MDXProcessor(BaseDocumentProcessor):
         return content
 
     def _extract_headers(self, content: str) -> List[Dict]:
-        """Extract document structure from headers."""
+        """Extract document structure from headers.
+        
+        Args:
+            content: MDX content
+            
+        Returns:
+            List of header dictionaries with level, text, anchor, position
+        """
         headers = []
         for match in self.header_pattern.finditer(content):
             level = len(match.group(1))
@@ -131,7 +170,14 @@ class MDXProcessor(BaseDocumentProcessor):
         return headers
 
     def _extract_code_blocks(self, content: str) -> List[Dict]:
-        """Extract code blocks with their language and content."""
+        """Extract code blocks with their language and content.
+        
+        Args:
+            content: MDX content
+            
+        Returns:
+            List of code block dictionaries
+        """
         code_blocks = []
         for match in self.code_block_pattern.finditer(content):
             language = match.group(1) or "text"
@@ -149,7 +195,12 @@ class MDXProcessor(BaseDocumentProcessor):
         """
         Get the section hierarchy for a given position in the document.
         
-        Returns list of header texts from H1 to current level.
+        Args:
+            headers: List of header dictionaries
+            position: Character position in document
+        
+        Returns:
+            List of header texts from H1 to current level.
         """
         hierarchy = []
         current_levels = {}
@@ -175,7 +226,17 @@ class MDXProcessor(BaseDocumentProcessor):
     def extract_surrounding_context(
         self, content: str, start_pos: int, end_pos: int, context_chars: int = 200
     ) -> Tuple[str, str]:
-        """Extract text before and after a given position for context."""
+        """Extract text before and after a given position for context.
+        
+        Args:
+            content: Document content
+            start_pos: Start position
+            end_pos: End position
+            context_chars: Number of characters to extract for context
+            
+        Returns:
+            Tuple of (before_text, after_text)
+        """
         before_start = max(0, start_pos - context_chars)
         before_text = content[before_start:start_pos].strip()
         
