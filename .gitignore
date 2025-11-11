@@ -1,3 +1,31 @@
-# pixi environments
-.pixi/*
-!.pixi/config.toml
+# Build artifacts (ephemeral, generated at dev time)
+shared/build/
+*.pyc
+__pycache__/
+*.egg-info/
+.pixi/
+
+# Runtime databases (large, generated)
+*.db
+*.ducklake
+*.ducklake.files/
+
+# Environment files
+.env
+.env.local
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary
+*.tmp
+*.log
+
+# OS
+.DS_Store
+.vs/
