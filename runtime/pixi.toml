@@ -1,0 +1,26 @@
+[project]
+name = "mojo-docs-mcp-server"
+version = "0.1.0"
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+platforms = ["linux-64"]
+description = "MCP server for Mojo documentation search"
+
+[dependencies]
+python = "==3.12.3"
+duckdb = ">=1.4.1,<2"
+openai = ">=2.3.0,<3"
+requests = ">=2.32.5,<3"
+modular = "==25.6"  # For MAX server
+
+[pypi-dependencies]
+mcp = { version = ">=1.20.0, <2", extras = ["cli"] }
+pydantic = ">=2.0.0,<3"
+
+[tasks]
+serve = "python server.py"
+max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
+
+[activation.env]
+MOJO_DB_PATH = "main.db"
+MAX_SERVER_URL = "http://localhost:8000/v1"
+EMBED_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"

@@ -5,11 +5,6 @@ __pycache__/
 *.egg-info/
 .pixi/
 
-# Runtime databases (large, generated)
-*.db
-*.ducklake
-*.ducklake.files/
-
 # Environment files
 .env
 .env.local

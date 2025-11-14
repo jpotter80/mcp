@@ -1,5 +1,7 @@
 # MCP Multi-Server Restructuring Plan
 
+**Status: PHASES 1-2 VERIFIED COMPLETE & ALIGNED ✅ | Phase 3 Ready for Execution**
+
 ## Executive Summary
 
 This plan restructures the project to support multiple independently-deployable MCP servers (Mojo, DuckDB, etc.) that can be:
@@ -15,11 +17,148 @@ Key design principles:
 - Documentation sources support **multiple formats** (MDX, MD, other)
 - **Automation scripts** exist for documentation sync from upstream sources
 
+### Current Implementation Status
+
+| Phase | Status | Description |
+|-------|--------|-------------|
+| **Phase 1** | ✅ COMPLETE & VERIFIED | Directory structure, `.gitignore`, config templates, `requirements.txt` |
+| **Phase 2** | ✅ COMPLETE & VERIFIED | `ProcessorFactory`, `BaseDocumentProcessor`, multi-format support, config loading |
+| **Phase 3** | 🔄 READY FOR EXECUTION | Parameterize embedding scripts, update pixi.toml, integrate config loader |
+| **Phases 4-8** | ⏳ PENDING | Move infrastructure, organize servers, tooling, automation, cleanup |
+
+### Alignment Confirmed ✅
+
+The project architecture and vision are **fully cohesive and well-organized**. Phases 1-2 have been properly executed with no corruption detected. All foundational elements are correctly in place.
+
 ---
 
-## Current State vs. Target State
+## 📋 Key Reference Documents
 
-### Current Organization
+For next session, refer to these companion documents:
+
+1. **`PHASE_3_EXECUTION_GUIDE.md`** — Step-by-step Phase 3 implementation guide
+   - Detailed checklist for parameterizing embedding scripts
+   - Expected outcomes and success criteria
+   - Debugging tips if issues arise
+
+2. **`PHASE_1_2_VERIFICATION.md`** — Comprehensive integrity check results
+   - Detailed verification of all Phase 1-2 components
+   - Confirmation that architecture is sound
+   - No corruption detected - safe to proceed
+   - Testing & validation results
+
+3. **`RESTRUCTURING_PLAN.md`** (this file) — Overall restructuring plan with 8 phases
+
+---
+
+---
+
+## Actual Current State (After Phase 2)
+
+### ✅ What Has Been Successfully Implemented
+
+```
+/home/james/mcp/
+│
+├── shared/                                 # NEW: Build-time infrastructure
+│   ├── preprocessing/                      # Moved from /preprocessing
+│   │   ├── src/
+│   │   │   ├── __init__.py
+│   │   │   ├── base_processor.py          # NEW: Abstract base class (Phase 2)
+│   │   │   ├── mdx_processor.py           # Inherited from BaseDocumentProcessor
+│   │   │   ├── markdown_processor.py      # NEW: Markdown format support (Phase 2)
+│   │   │   ├── processor_factory.py       # NEW: Pluggable processor selection (Phase 2)
+│   │   │   ├── config_loader.py           # NEW: Variable substitution (Phase 3 prep)
+│   │   │   ├── chunker.py
+│   │   │   ├── metadata_extractor.py
+│   │   │   ├── utils.py
+│   │   │   └── pipeline.py                # Supports --config CLI argument (Phase 3 prep)
+│   │   ├── config/
+│   │   │   └── processing_config.yaml
+│   │   └── README.md
+│   │
+│   ├── embedding/                          # Location prepared (scripts still at root)
+│   │
+│   ├── templates/                          # NEW: Reusable code templates
+│   │   ├── search_template.py              # Moved from /search.py
+│   │   ├── mcp_server_template.py          # Future reference
+│   │   └── README.md
+│   │
+│   └── build/                              # NEW: Generated/ephemeral artifacts
+│       ├── logs/
+│       ├── processed_docs/
+│       └── embeddings/
+│
+├── servers/
+│   └── mojo-manual-mcp/                    # NEW: Mojo MCP server (self-contained)
+│       ├── runtime/
+│       │   ├── search.py                   # Local copy of search implementation
+│       │   ├── mojo_manual_mcp_server.py   # MCP server (renamed from server.py)
+│       │   └── [database files when built]
+│       ├── config/
+│       │   ├── processing_config.yaml      # ✅ Complete, parameterized
+│       │   └── server_config.yaml          # ✅ Complete, with ${VAR} substitution
+│       ├── requirements.txt                # ✅ For pip installation
+│       └── README.md
+│
+├── source-documentation/
+│   ├── mojo/
+│   │   └── manual/                         # Original docs source (MDX files)
+│   └── [room for other doc sources]
+│
+├── preprocessing/                          # OLD: Still exists (Phase 4 will move)
+│   ├── src/
+│   └── config/
+│
+├── embedding/                              # OLD: Still exists (scripts, not yet parameterized)
+│   ├── generate_embeddings.py              # 🔄 Needs --mcp-name and --config args
+│   ├── consolidate_data.py                 # 🔄 Needs --mcp-name arg
+│   ├── load_to_ducklake.py                 # 🔄 Needs --mcp-name arg
+│   ├── create_indexes.py                   # 🔄 Needs --mcp-name arg
+│   └── README.md
+│
+├── processed_docs/                         # Generated artifacts (will move to shared/build/ in Phase 4)
+├── runtime/                                # OLD: Still exists with original structure
+├── server.py                               # ROOT: Working MCP server (will be organized in Phase 5)
+├── search.py                               # ROOT: Hybrid search implementation
+├── pixi.toml                               # Root workspace config
+│
+└── [other files]
+```
+
+### 🔄 What's in Progress (Phase 3 Preparation)
+
+1. **config_loader.py** — ✅ Exists and working with `${SERVER_ROOT}` and `${PROJECT_ROOT}` substitution
+2. **Processing config** — ✅ Exists with all necessary parameters for Mojo server
+3. **Server config** — ✅ Exists with database paths, embedding settings, search params
+4. **processor_factory.py** — ✅ Supports dynamic processor selection (mdx, markdown, etc.)
+5. **Embedding scripts** — 🔄 Still at root `/embedding/`, need parameterization
+
+### ❌ What Still Needs to Happen
+
+**Phase 3 (Next)**: Parameterize embedding scripts
+- Move scripts from `/embedding/` to `/shared/embedding/`
+- Add `--mcp-name` argument to all scripts
+- Add `--config` argument for config file path
+- Update scripts to use config_loader for path resolution
+- Update root `pixi.toml` with parameterized task definitions
+
+**Phase 4**: Move build infrastructure
+- Finalize migration of embedding scripts to `/shared/embedding/`
+- Move `/preprocessing/` completely (currently in both places)
+- Organize `/processed_docs/` artifacts to `/shared/build/`
+
+**Phase 5**: Create Mojo MCP server structure
+- This will be mostly moving/renaming existing files
+- Database files move to server runtime directory
+
+**Phases 6-8**: Tooling, docs, cleanup
+
+---
+
+## Current State vs. Target State (Original Plan)
+
+### Current Organization (Before Phase 1)
 
 ```
 /home/james/mcp/
