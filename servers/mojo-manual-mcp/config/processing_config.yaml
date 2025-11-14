@@ -4,7 +4,7 @@
 
 source:
   # Source documentation directory
-  directory: "${SERVER_ROOT}/../../../source-documentation/mojo/manual"
+  directory: "${PROJECT_ROOT}/source-documentation/mojo/manual"
   # Format of source files: mdx, markdown, rst, etc.
   format: "mdx"
   file_patterns:

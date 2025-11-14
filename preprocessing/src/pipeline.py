@@ -12,7 +12,6 @@ from tqdm import tqdm  # type: ignore
 import shutil
 
 from .utils import (
-    load_config,
     save_json,
     save_jsonl,
     create_directory_structure,
@@ -20,14 +19,15 @@ from .utils import (
     generate_document_id,
 )
 from shared.preprocessing.src.processor_factory import ProcessorFactory
+from shared.config_loader import load_config_with_substitution
 from .chunker import LangchainMarkdownChunker, DocumentChunk
 from .metadata_extractor import MetadataExtractor
 
 
-def init_directories(config: Dict | None = None) -> None:
+def init_directories(config: Dict | None = None, config_path: str = "preprocessing/config/processing_config.yaml") -> None:
     """Initialize output directory structure, cleaning it first."""
     if config is None:
-        config = load_config()
+        config = load_config_with_substitution(config_path)
     
     base_dir = Path(config["output"]["base_directory"])
     subdirs = [
@@ -60,7 +60,8 @@ class DocumentProcessingPipeline:
     """
 
     def __init__(self, config_path: str = "preprocessing/config/processing_config.yaml"):
-        self.config = load_config(config_path)
+        # Use shared config loader so ${PROJECT_ROOT}/${SERVER_ROOT} are substituted
+        self.config = load_config_with_substitution(config_path)
         self.base_dir = Path(self.config["output"]["base_directory"])
         self.source_dir = Path(self.config["source"]["directory"])
         
@@ -70,8 +71,8 @@ class DocumentProcessingPipeline:
         self.chunker = LangchainMarkdownChunker(self.config)
         self.metadata_extractor = MetadataExtractor(self.config)
         
-        # Initialize output directories
-        init_directories(self.config)
+        # Initialize output directories with substituted config
+        init_directories(self.config, config_path)
 
     def process_all_documents(self) -> Dict:
         """
