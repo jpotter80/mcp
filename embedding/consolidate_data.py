@@ -1,14 +1,14 @@
 import os
 import json
+import argparse
 import pandas as pd
 from tqdm import tqdm
 
-# --- Configuration ---
-CHUNKS_DIR = "processed_docs/chunks"
-EMBEDDINGS_DIR = "processed_docs/embeddings"
-OUTPUT_FILE = "processed_docs/mojo_manual_embeddings.parquet"
+from shared.preprocessing.src.config_loader import load_config_with_substitution
+
+# --- Defaults ---
 MIN_CHUNK_LENGTH = 80  # Relaxed threshold; consider token-based threshold downstream
-# --- End Configuration ---
+# --- End Defaults ---
 
 def load_jsonl(file_path):
     """Loads a .jsonl file and returns a list of dictionaries."""
@@ -20,17 +20,38 @@ def load_jsonl(file_path):
     return data
 
 def main():
-    """
-    Consolidates chunks, metadata, and embeddings into a single Parquet file.
-    """
+    """Consolidates chunks, metadata, and embeddings into a single Parquet file."""
+
+    parser = argparse.ArgumentParser(description="Consolidate chunks and embeddings into Parquet")
+    parser.add_argument(
+        "--mcp-name",
+        default="mojo",
+        help="MCP server name (e.g., 'mojo', 'duckdb')",
+    )
+    parser.add_argument(
+        "--config",
+        type=str,
+        required=False,
+        help="Optional path to processing_config.yaml for variable substitution",
+    )
+    args = parser.parse_args()
+
+    if args.config:
+        _ = load_config_with_substitution(args.config)
+
+    mcp_name = args.mcp_name
+    chunks_dir = os.path.join("shared", "build", "processed_docs", mcp_name, "chunks")
+    embeddings_dir = os.path.join("shared", "build", "embeddings", mcp_name)
+    output_file = os.path.join("shared", "build", f"{mcp_name}_embeddings.parquet")
+
     print("🔥 Starting data consolidation process...")
 
     # 1. Load all embeddings into a dictionary for quick lookup
     print("Loading embeddings...")
     embeddings_map = {}
-    embedding_files = [f for f in os.listdir(EMBEDDINGS_DIR) if f.endswith("_embeddings.jsonl")]
+    embedding_files = [f for f in os.listdir(embeddings_dir) if f.endswith("_embeddings.jsonl")]
     for file_name in tqdm(embedding_files, desc="Reading embedding files"):
-        file_path = os.path.join(EMBEDDINGS_DIR, file_name)
+        file_path = os.path.join(embeddings_dir, file_name)
         for item in load_jsonl(file_path):
             embeddings_map[item["chunk_id"]] = item["embedding"]
     print(f"✓ Loaded {len(embeddings_map)} embeddings.")
@@ -38,9 +59,9 @@ def main():
     # 2. Load all chunks and join with embeddings and metadata
     print("\nLoading chunks and metadata...")
     consolidated_data = []
-    chunk_files = [f for f in os.listdir(CHUNKS_DIR) if f.endswith(".jsonl")]
+    chunk_files = [f for f in os.listdir(chunks_dir) if f.endswith(".jsonl")]
     for file_name in tqdm(chunk_files, desc="Reading chunk files"):
-        file_path = os.path.join(CHUNKS_DIR, file_name)
+        file_path = os.path.join(chunks_dir, file_name)
         for chunk_data in load_jsonl(file_path):
             chunk_id = chunk_data.get("chunk_id")
             if not chunk_id:
@@ -93,12 +114,12 @@ def main():
     df = pd.DataFrame(consolidated_data)
 
     # Ensure the output directory exists
-    output_dir = os.path.dirname(OUTPUT_FILE)
+    output_dir = os.path.dirname(output_file)
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
-    df.to_parquet(OUTPUT_FILE, index=False)
-    print(f"✅ Successfully saved consolidated data to {OUTPUT_FILE}")
+    df.to_parquet(output_file, index=False)
+    print(f"✅ Successfully saved consolidated data to {output_file}")
 
 if __name__ == "__main__":
     main()

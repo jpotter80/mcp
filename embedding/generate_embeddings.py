@@ -1,15 +1,16 @@
 import os
 import json
+import argparse
 from openai import OpenAI
 from tqdm import tqdm
 
-# --- Configuration ---
+from shared.preprocessing.src.config_loader import load_config_with_substitution
+
+# --- Defaults ---
 MAX_SERVER_URL = "http://localhost:8000/v1"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
-INPUT_DIR = "processed_docs/chunks"
-OUTPUT_DIR = "processed_docs/embeddings"
 BATCH_SIZE = 64
-# --- End Configuration ---
+# --- End Defaults ---
 
 def get_jsonl_files(directory):
     """Find all .jsonl files in the specified directory."""
@@ -86,14 +87,41 @@ def process_file(client, input_path, output_path):
                 # Optionally, add error handling here, like skipping the batch or stopping.
 
 def main():
-    """Main function to generate embeddings for all chunk files."""
+    """Main function to generate embeddings for all chunk files.
+
+    Uses a config file with variable substitution to determine input/output paths.
+    """
+
+    parser = argparse.ArgumentParser(description="Generate embeddings for chunked docs")
+    parser.add_argument(
+        "--mcp-name",
+        default="mojo",
+        help="MCP server name (e.g., 'mojo', 'duckdb')",
+    )
+    parser.add_argument(
+        "--config",
+        type=str,
+        required=False,
+        help="Path to processing_config.yaml; used for variable substitution",
+    )
+    args = parser.parse_args()
+
+    # Load config (optional) to resolve project/server roots; paths themselves are
+    # currently convention-based under shared/build.
+    if args.config:
+        _ = load_config_with_substitution(args.config)
+
+    mcp_name = args.mcp_name
+    input_dir = os.path.join("shared", "build", "processed_docs", mcp_name, "chunks")
+    output_dir = os.path.join("shared", "build", "embeddings", mcp_name)
+
     client = OpenAI(base_url=MAX_SERVER_URL, api_key="EMPTY")
 
     # Ensure output directory exists
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
 
-    print(f"Searching for .jsonl files in: {INPUT_DIR}")
-    jsonl_files = list(get_jsonl_files(INPUT_DIR))
+    print(f"Searching for .jsonl files in: {input_dir}")
+    jsonl_files = list(get_jsonl_files(input_dir))
 
     if not jsonl_files:
         print("No .jsonl files found. Exiting.")
@@ -103,7 +131,7 @@ def main():
 
     for input_path in jsonl_files:
         file_name = os.path.basename(input_path)
-        output_path = os.path.join(OUTPUT_DIR, file_name.replace('.jsonl', '_embeddings.jsonl'))
+        output_path = os.path.join(output_dir, file_name.replace(".jsonl", "_embeddings.jsonl"))
         
         print(f"\nProcessing {input_path} -> {output_path}")
         process_file(client, input_path, output_path)

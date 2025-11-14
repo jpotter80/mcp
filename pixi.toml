@@ -14,6 +14,25 @@ search = "python search.py"
 mcp-dev = "mcp dev mcp_server/server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
+# Phase 3: MCP-specific build tasks (Mojo)
+mojo-process = "python -m preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml"
+mojo-generate-embeddings = "python embedding/generate_embeddings.py --mcp-name mojo --config servers/mojo-manual-mcp/config/processing_config.yaml"
+mojo-consolidate = "python embedding/consolidate_data.py --mcp-name mojo"
+mojo-load = "python embedding/load_to_ducklake.py --mcp-name mojo"
+mojo-index = "python embedding/create_indexes.py --mcp-name mojo"
+
+mojo-build = """
+pixi run mojo-process && \
+pixi run mojo-generate-embeddings && \
+pixi run mojo-consolidate && \
+pixi run mojo-load && \
+pixi run mojo-index
+"""
+
+# Demonstration: generic tasks with explicit mcp-name
+process-mojo = "python -m preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml --mcp-name mojo"
+generate-embeddings-mojo = "python embedding/generate_embeddings.py --mcp-name mojo"
+
 
 
 
