@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import argparse
+import requests
 from pathlib import Path
 from openai import OpenAI
 from tqdm import tqdm
@@ -17,6 +18,22 @@ MAX_SERVER_URL = "http://localhost:8000/v1"
 MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 BATCH_SIZE = 64
 # --- End Defaults ---
+
+def check_max_server(server_url):
+    """Check if MAX server is running and accessible.
+    
+    Args:
+        server_url: Base URL of the MAX server
+        
+    Returns:
+        True if server is accessible, False otherwise
+    """
+    try:
+        # Try to reach the models endpoint
+        response = requests.get(f"{server_url}/models", timeout=5)
+        return response.status_code == 200
+    except requests.exceptions.RequestException:
+        return False
 
 def get_jsonl_files(directory):
     """Find all .jsonl files in the specified directory."""
@@ -120,6 +137,20 @@ def main():
     mcp_name = args.mcp_name
     input_dir = os.path.join("shared", "build", "processed_docs", mcp_name, "chunks")
     output_dir = os.path.join("shared", "build", "embeddings", mcp_name)
+
+    # Check if MAX server is running
+    print(f"Checking MAX server at {MAX_SERVER_URL}...")
+    if not check_max_server(MAX_SERVER_URL):
+        print(f"\n❌ ERROR: MAX server is not running at {MAX_SERVER_URL}")
+        print("\nPlease start the MAX server before running this script:")
+        print(f"  max serve --model {MODEL_NAME}")
+        print("\nOr run it via pixi:")
+        print("  pixi run max-serve")
+        print("\nIn MCP environments, the server is typically started automatically by the host.")
+        print("In test/development, you must start it manually.\n")
+        sys.exit(1)
+    
+    print(f"✓ MAX server is running at {MAX_SERVER_URL}")
 
     client = OpenAI(base_url=MAX_SERVER_URL, api_key="EMPTY")
 
