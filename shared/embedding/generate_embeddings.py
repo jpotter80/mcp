@@ -1,8 +1,14 @@
 import os
+import sys
 import json
 import argparse
+from pathlib import Path
 from openai import OpenAI
 from tqdm import tqdm
+
+# Add project root to path to import shared module
+project_root = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(project_root))
 
 from shared.config_loader import load_config_with_substitution
 
