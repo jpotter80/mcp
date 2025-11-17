@@ -4,7 +4,7 @@ import argparse
 from openai import OpenAI
 from tqdm import tqdm
 
-from shared.preprocessing.src.config_loader import load_config_with_substitution
+from shared.config_loader import load_config_with_substitution
 
 # --- Defaults ---
 MAX_SERVER_URL = "http://localhost:8000/v1"

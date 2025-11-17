@@ -18,7 +18,7 @@ from .utils import (
     get_file_list,
     generate_document_id,
 )
-from shared.preprocessing.src.processor_factory import ProcessorFactory
+from .processor_factory import ProcessorFactory
 from shared.config_loader import load_config_with_substitution
 from .chunker import LangchainMarkdownChunker, DocumentChunk
 from .metadata_extractor import MetadataExtractor

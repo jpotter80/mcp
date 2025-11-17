@@ -4,7 +4,7 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 
-from shared.preprocessing.src.config_loader import load_config_with_substitution
+from shared.config_loader import load_config_with_substitution
 
 # --- Defaults ---
 MIN_CHUNK_LENGTH = 80  # Relaxed threshold; consider token-based threshold downstream
