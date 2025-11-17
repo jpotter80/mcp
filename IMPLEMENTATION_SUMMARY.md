@@ -214,7 +214,17 @@ search:
 - Move build code to `/shared/`
 - Organize Mojo server in `/servers/mojo-manual-mcp/`
 
-### Phase 6-7: Tooling & Documentation
+### Phase 6: Organize Mojo Server Structure (✅ Complete)
+- **Branch**: `feature/phase-6-server-structure`
+- **Goal**: Organize Mojo server files and cleanup root.
+- **Tasks**:
+  - Move `search.py` and `server.py` to `servers/mojo-manual-mcp/runtime/`.
+  - Rename `server.py` to `mojo_manual_mcp_server.py`.
+  - Update `mojo_manual_mcp_server.py` to use `shared.config_loader` and fix imports.
+  - Clean up root-level artifacts (`main.db`, `mojo_catalog.ducklake`, etc.).
+  - Verify search and server functionality.
+
+### 7. **Phase 7: Tooling & Automation** (Next)
 - Create helper scripts (build, scaffold, sync)
 - Move docs, create guides
 
