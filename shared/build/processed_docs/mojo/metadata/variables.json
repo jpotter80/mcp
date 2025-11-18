@@ -1,0 +1,74 @@
+{
+  "title": "Variables",
+  "sidebar_position": 3,
+  "description": "Introduction to Mojo variables.",
+  "file_name": "variables.mdx",
+  "file_stem": "variables",
+  "file_path": "variables.mdx",
+  "file_size": 13845,
+  "document_id": "variables",
+  "url": "https://docs.modular.com/mojo/manual/variables",
+  "content_hash": "de78676ede14e40da639376b9b54f40e",
+  "statistics": {
+    "char_count": 13515,
+    "word_count": 2092,
+    "line_count": 437,
+    "paragraph_count": 111,
+    "header_count": 10,
+    "code_block_count": 30,
+    "code_lines": 210
+  },
+  "processed_at": "2025-11-17T14:45:50.238923",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Variable declarations",
+      "anchor": "variable-declarations"
+    },
+    {
+      "level": 2,
+      "title": "Implicitly-declared variables",
+      "anchor": "implicitly-declared-variables"
+    },
+    {
+      "level": 2,
+      "title": "Explicitly-declared variables",
+      "anchor": "explicitly-declared-variables"
+    },
+    {
+      "level": 2,
+      "title": "Type annotations",
+      "anchor": "type-annotations"
+    },
+    {
+      "level": 1,
+      "title": "Or",
+      "anchor": "or"
+    },
+    {
+      "level": 3,
+      "title": "Late initialization",
+      "anchor": "late-initialization"
+    },
+    {
+      "level": 3,
+      "title": "Implicit type conversion",
+      "anchor": "implicit-type-conversion"
+    },
+    {
+      "level": 2,
+      "title": "Variable scopes",
+      "anchor": "variable-scopes"
+    },
+    {
+      "level": 2,
+      "title": "Copying and moving values",
+      "anchor": "copying-and-moving-values"
+    },
+    {
+      "level": 2,
+      "title": "Reference bindings",
+      "anchor": "reference-bindings"
+    }
+  ]
+}

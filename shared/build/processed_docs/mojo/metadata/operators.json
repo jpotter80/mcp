@@ -1,0 +1,239 @@
+{
+  "title": "Operators, expressions, and dunder methods",
+  "sidebar_label": "Operators and expressions",
+  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/operators",
+  "file_name": "operators.mdx",
+  "file_stem": "operators",
+  "file_path": "operators.mdx",
+  "file_size": 54485,
+  "document_id": "operators",
+  "url": "https://docs.modular.com/mojo/manual/operators",
+  "content_hash": "a1458da1bc2223e2fd6ce1146128138a",
+  "statistics": {
+    "char_count": 52758,
+    "word_count": 7853,
+    "line_count": 1618,
+    "paragraph_count": 337,
+    "header_count": 43,
+    "code_block_count": 102,
+    "code_lines": 610
+  },
+  "processed_at": "2025-11-17T14:45:49.563067",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Operators and expressions",
+      "anchor": "operators-and-expressions"
+    },
+    {
+      "level": 3,
+      "title": "Operator precedence and associativity",
+      "anchor": "operator-precedence-and-associativity"
+    },
+    {
+      "level": 3,
+      "title": "Arithmetic and bitwise operators",
+      "anchor": "arithmetic-and-bitwise-operators"
+    },
+    {
+      "level": 4,
+      "title": "`Int` and `UInt` values",
+      "anchor": "int-and-uint-values"
+    },
+    {
+      "level": 4,
+      "title": "`SIMD` values",
+      "anchor": "simd-values"
+    },
+    {
+      "level": 4,
+      "title": "`IntLiteral` and `FloatLiteral` values",
+      "anchor": "intliteral-and-floatliteral-values"
+    },
+    {
+      "level": 3,
+      "title": "Comparison operators",
+      "anchor": "comparison-operators"
+    },
+    {
+      "level": 4,
+      "title": "`Bool`-returning comparisons",
+      "anchor": "bool-returning-comparisons"
+    },
+    {
+      "level": 4,
+      "title": "Elementwise comparisons",
+      "anchor": "elementwise-comparisons"
+    },
+    {
+      "level": 3,
+      "title": "String operators",
+      "anchor": "string-operators"
+    },
+    {
+      "level": 1,
+      "title": "Mutate the original `message` String",
+      "anchor": "mutate-the-original-message-string"
+    },
+    {
+      "level": 4,
+      "title": "String concatenation",
+      "anchor": "string-concatenation"
+    },
+    {
+      "level": 1,
+      "title": "Compile-time StringLiteral alias",
+      "anchor": "compile-time-stringliteral-alias"
+    },
+    {
+      "level": 1,
+      "title": "Compile-time concatenation before materializing to a run-time `String`",
+      "anchor": "compile-time-concatenation-before-materializing-to-a-run-time-string"
+    },
+    {
+      "level": 4,
+      "title": "String replication",
+      "anchor": "string-replication"
+    },
+    {
+      "level": 1,
+      "title": "You must define the following function using `fn` because an alias",
+      "anchor": "you-must-define-the-following-function-using-fn-because-an-alias"
+    },
+    {
+      "level": 1,
+      "title": "initializer cannot call a function that can potentially raise an error.",
+      "anchor": "initializer-cannot-call-a-function-that-can-potentially-raise-an-error"
+    },
+    {
+      "level": 4,
+      "title": "String comparison",
+      "anchor": "string-comparison"
+    },
+    {
+      "level": 4,
+      "title": "Substring testing",
+      "anchor": "substring-testing"
+    },
+    {
+      "level": 4,
+      "title": "String indexing and slicing",
+      "anchor": "string-indexing-and-slicing"
+    },
+    {
+      "level": 1,
+      "title": "The following would produce a run-time error",
+      "anchor": "the-following-would-produce-a-run-time-error"
+    },
+    {
+      "level": 1,
+      "title": "print(alphabet[45])",
+      "anchor": "printalphabet45"
+    },
+    {
+      "level": 3,
+      "title": "In-place assignment operators",
+      "anchor": "in-place-assignment-operators"
+    },
+    {
+      "level": 3,
+      "title": "Assignment expressions",
+      "anchor": "assignment-expressions"
+    },
+    {
+      "level": 3,
+      "title": "Type merging",
+      "anchor": "type-merging"
+    },
+    {
+      "level": 2,
+      "title": "Implement operators for custom types",
+      "anchor": "implement-operators-for-custom-types"
+    },
+    {
+      "level": 3,
+      "title": "Unary operator dunder methods",
+      "anchor": "unary-operator-dunder-methods"
+    },
+    {
+      "level": 3,
+      "title": "Binary arithmetic, shift, and bitwise operator dunder methods",
+      "anchor": "binary-arithmetic-shift-and-bitwise-operator-dunder-methods"
+    },
+    {
+      "level": 3,
+      "title": "Comparison operator dunder methods",
+      "anchor": "comparison-operator-dunder-methods"
+    },
+    {
+      "level": 3,
+      "title": "Membership operator dunder methods",
+      "anchor": "membership-operator-dunder-methods"
+    },
+    {
+      "level": 3,
+      "title": "Subscript and slicing dunder methods",
+      "anchor": "subscript-and-slicing-dunder-methods"
+    },
+    {
+      "level": 4,
+      "title": "Subscripting",
+      "anchor": "subscripting"
+    },
+    {
+      "level": 4,
+      "title": "Slicing",
+      "anchor": "slicing"
+    },
+    {
+      "level": 2,
+      "title": "An example of implementing operators for a custom type",
+      "anchor": "an-example-of-implementing-operators-for-a-custom-type"
+    },
+    {
+      "level": 3,
+      "title": "Implement lifecycle methods",
+      "anchor": "implement-lifecycle-methods"
+    },
+    {
+      "level": 3,
+      "title": "Implement the `Writable` and `Stringable` traits",
+      "anchor": "implement-the-writable-and-stringable-traits"
+    },
+    {
+      "level": 3,
+      "title": "Implement basic indexing",
+      "anchor": "implement-basic-indexing"
+    },
+    {
+      "level": 3,
+      "title": "Implement arithmetic operators",
+      "anchor": "implement-arithmetic-operators"
+    },
+    {
+      "level": 4,
+      "title": "Implement basic operators for `Complex` values",
+      "anchor": "implement-basic-operators-for-complex-values"
+    },
+    {
+      "level": 1,
+      "title": "...",
+      "anchor": ""
+    },
+    {
+      "level": 4,
+      "title": "Implement overloaded arithmetic operators for `Float64` values",
+      "anchor": "implement-overloaded-arithmetic-operators-for-float64-values"
+    },
+    {
+      "level": 4,
+      "title": "Implement in-place assignment operators",
+      "anchor": "implement-in-place-assignment-operators"
+    },
+    {
+      "level": 3,
+      "title": "Implement equality operators",
+      "anchor": "implement-equality-operators"
+    }
+  ]
+}

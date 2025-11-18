@@ -1,0 +1,134 @@
+{
+  "title": "Functions",
+  "sidebar_position": 2,
+  "description": "Introduction to Mojo `fn` and `def` functions.",
+  "file_name": "functions.mdx",
+  "file_stem": "functions",
+  "file_path": "functions.mdx",
+  "file_size": 27200,
+  "document_id": "functions",
+  "url": "https://docs.modular.com/mojo/manual/functions",
+  "content_hash": "4b088986dda67a38fc0849411c2e19dd",
+  "statistics": {
+    "char_count": 26622,
+    "word_count": 3766,
+    "line_count": 806,
+    "paragraph_count": 195,
+    "header_count": 22,
+    "code_block_count": 39,
+    "code_lines": 218
+  },
+  "processed_at": "2025-11-17T14:45:48.896215",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Anatomy of a function",
+      "anchor": "anatomy-of-a-function"
+    },
+    {
+      "level": 3,
+      "title": "Arguments and parameters",
+      "anchor": "arguments-and-parameters"
+    },
+    {
+      "level": 1,
+      "title": "positional",
+      "anchor": "positional"
+    },
+    {
+      "level": 1,
+      "title": "keyword",
+      "anchor": "keyword"
+    },
+    {
+      "level": 1,
+      "title": "mixed",
+      "anchor": "mixed"
+    },
+    {
+      "level": 2,
+      "title": "`def` and `fn` comparison",
+      "anchor": "def-and-fn-comparison"
+    },
+    {
+      "level": 2,
+      "title": "Function arguments",
+      "anchor": "function-arguments"
+    },
+    {
+      "level": 3,
+      "title": "Optional arguments",
+      "anchor": "optional-arguments"
+    },
+    {
+      "level": 3,
+      "title": "Keyword arguments",
+      "anchor": "keyword-arguments"
+    },
+    {
+      "level": 3,
+      "title": "Variadic arguments",
+      "anchor": "variadic-arguments"
+    },
+    {
+      "level": 4,
+      "title": "Homogeneous variadic arguments",
+      "anchor": "homogeneous-variadic-arguments"
+    },
+    {
+      "level": 4,
+      "title": "Heterogeneous variadic arguments",
+      "anchor": "heterogeneous-variadic-arguments"
+    },
+    {
+      "level": 4,
+      "title": "Variadic keyword arguments",
+      "anchor": "variadic-keyword-arguments"
+    },
+    {
+      "level": 3,
+      "title": "Positional-only and keyword-only arguments",
+      "anchor": "positional-only-and-keyword-only-arguments"
+    },
+    {
+      "level": 2,
+      "title": "Overloaded functions",
+      "anchor": "overloaded-functions"
+    },
+    {
+      "level": 3,
+      "title": "Overload resolution",
+      "anchor": "overload-resolution"
+    },
+    {
+      "level": 2,
+      "title": "Return values",
+      "anchor": "return-values"
+    },
+    {
+      "level": 3,
+      "title": "Named results",
+      "anchor": "named-results"
+    },
+    {
+      "level": 2,
+      "title": "Raising and non-raising functions",
+      "anchor": "raising-and-non-raising-functions"
+    },
+    {
+      "level": 1,
+      "title": "This function will not compile",
+      "anchor": "this-function-will-not-compile"
+    },
+    {
+      "level": 1,
+      "title": "Explicitly handle the error",
+      "anchor": "explicitly-handle-the-error"
+    },
+    {
+      "level": 1,
+      "title": "Explicitly propagate the error",
+      "anchor": "explicitly-propagate-the-error"
+    }
+  ]
+}

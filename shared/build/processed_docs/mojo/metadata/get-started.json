@@ -1,0 +1,130 @@
+{
+  "title": "Get started with Mojo",
+  "description": "Install Mojo and learn the language basics by building a complete Mojo program",
+  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/life",
+  "image": "/images/artwork/mojo-get-started.jpg",
+  "file_name": "get-started.mdx",
+  "file_stem": "get-started",
+  "file_path": "get-started.mdx",
+  "file_size": 53424,
+  "document_id": "get-started",
+  "url": "https://docs.modular.com/mojo/manual/get-started",
+  "content_hash": "c5b431206092444aa63e913a893c6375",
+  "statistics": {
+    "char_count": 50471,
+    "word_count": 7752,
+    "line_count": 1400,
+    "paragraph_count": 275,
+    "header_count": 21,
+    "code_block_count": 59,
+    "code_lines": 670
+  },
+  "processed_at": "2025-11-17T14:45:48.970029",
+  "sections": [
+    {
+      "level": 2,
+      "title": "1. Create a Mojo project",
+      "anchor": "1-create-a-mojo-project"
+    },
+    {
+      "level": 2,
+      "title": "2. Create a \"Hello, world\" program",
+      "anchor": "2-create-a-hello-world-program"
+    },
+    {
+      "level": 1,
+      "title": "My first Mojo program!",
+      "anchor": "my-first-mojo-program"
+    },
+    {
+      "level": 2,
+      "title": "3. Create and use variables",
+      "anchor": "3-create-and-use-variables"
+    },
+    {
+      "level": 2,
+      "title": "4. Use Mojo `Int` and `List` types to represent the game state",
+      "anchor": "4-use-mojo-int-and-list-types-to-represent-the-game-state"
+    },
+    {
+      "level": 1,
+      "title": "The List in row can contain only Int values",
+      "anchor": "the-list-in-row-can-contain-only-int-values"
+    },
+    {
+      "level": 1,
+      "title": "The List in names can contain only String values",
+      "anchor": "the-list-in-names-can-contain-only-string-values"
+    },
+    {
+      "level": 1,
+      "title": "Create a List[Int] with the List constructor, inferring the type",
+      "anchor": "create-a-listint-with-the-list-constructor-inferring-the-type"
+    },
+    {
+      "level": 1,
+      "title": "Create a List[Int] with the list literal syntax, inferring the type",
+      "anchor": "create-a-listint-with-the-list-literal-syntax-inferring-the-type"
+    },
+    {
+      "level": 3,
+      "title": "Copying values in Mojo",
+      "anchor": "copying-values-in-mojo"
+    },
+    {
+      "level": 2,
+      "title": "5. Create and use a function to print the grid",
+      "anchor": "5-create-and-use-a-function-to-print-the-grid"
+    },
+    {
+      "level": 2,
+      "title": "6. Create a module and define a custom type",
+      "anchor": "6-create-a-module-and-define-a-custom-type"
+    },
+    {
+      "level": 2,
+      "title": "7. Import a module and use our custom `Grid` type",
+      "anchor": "7-import-a-module-and-use-our-custom-grid-type"
+    },
+    {
+      "level": 2,
+      "title": "8. Implement `grid_str()` as a method",
+      "anchor": "8-implement-grid_str-as-a-method"
+    },
+    {
+      "level": 2,
+      "title": "9. Implement support for the `Stringable` trait",
+      "anchor": "9-implement-support-for-the-stringable-trait"
+    },
+    {
+      "level": 2,
+      "title": "10. Implement methods to support indexing",
+      "anchor": "10-implement-methods-to-support-indexing"
+    },
+    {
+      "level": 2,
+      "title": "11. Define a static method to generate random grids",
+      "anchor": "11-define-a-static-method-to-generate-random-grids"
+    },
+    {
+      "level": 2,
+      "title": "12. Implement a method to evolve the grid",
+      "anchor": "12-implement-a-method-to-evolve-the-grid"
+    },
+    {
+      "level": 2,
+      "title": "13. Import and use a Python package",
+      "anchor": "13-import-and-use-a-python-package"
+    },
+    {
+      "level": 2,
+      "title": "Summary",
+      "anchor": "summary"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

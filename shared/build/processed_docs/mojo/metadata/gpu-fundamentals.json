@@ -1,0 +1,129 @@
+{
+  "title": "GPU programming fundamentals",
+  "sidebar_label": "Programming fundamentals",
+  "description": "A description of the fundamental GPU APIs in Mojo.",
+  "file_name": "fundamentals.mdx",
+  "file_stem": "fundamentals",
+  "file_path": "gpu/fundamentals.mdx",
+  "file_size": 31173,
+  "document_id": "gpu-fundamentals",
+  "url": "https://docs.modular.com/mojo/manual/gpu/fundamentals",
+  "content_hash": "594950ba6869cbb66c9f9226858b819b",
+  "statistics": {
+    "char_count": 30185,
+    "word_count": 3977,
+    "line_count": 720,
+    "paragraph_count": 142,
+    "header_count": 21,
+    "code_block_count": 15,
+    "code_lines": 390
+  },
+  "processed_at": "2025-11-17T14:45:49.163491",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Overview of GPU Programming in Mojo",
+      "anchor": "overview-of-gpu-programming-in-mojo"
+    },
+    {
+      "level": 3,
+      "title": "GPU support in the Mojo Standard Library",
+      "anchor": "gpu-support-in-the-mojo-standard-library"
+    },
+    {
+      "level": 3,
+      "title": "GPU programming model",
+      "anchor": "gpu-programming-model"
+    },
+    {
+      "level": 2,
+      "title": "Accessing and managing GPUs with `DeviceContext`",
+      "anchor": "accessing-and-managing-gpus-with-devicecontext"
+    },
+    {
+      "level": 3,
+      "title": "Creating an instance of `DeviceContext` to access a GPU",
+      "anchor": "creating-an-instance-of-devicecontext-to-access-a-gpu"
+    },
+    {
+      "level": 3,
+      "title": "Asynchronous operation and synchronizing the CPU and GPU",
+      "anchor": "asynchronous-operation-and-synchronizing-the-cpu-and-gpu"
+    },
+    {
+      "level": 2,
+      "title": "Kernel functions",
+      "anchor": "kernel-functions"
+    },
+    {
+      "level": 3,
+      "title": "Multidimensional grids and thread organization",
+      "anchor": "multidimensional-grids-and-thread-organization"
+    },
+    {
+      "level": 1,
+      "title": "Enqueue the print_threads() kernel function",
+      "anchor": "enqueue-the-print_threads-kernel-function"
+    },
+    {
+      "level": 3,
+      "title": "Writing a kernel function",
+      "anchor": "writing-a-kernel-function"
+    },
+    {
+      "level": 3,
+      "title": "Passing data between CPU and GPU",
+      "anchor": "passing-data-between-cpu-and-gpu"
+    },
+    {
+      "level": 3,
+      "title": "`DeviceBuffer` and `HostBuffer`",
+      "anchor": "devicebuffer-and-hostbuffer"
+    },
+    {
+      "level": 4,
+      "title": "Creating a `DeviceBuffer`",
+      "anchor": "creating-a-devicebuffer"
+    },
+    {
+      "level": 4,
+      "title": "Creating a `HostBuffer`",
+      "anchor": "creating-a-hostbuffer"
+    },
+    {
+      "level": 1,
+      "title": "Synchronize to wait until buffer is created before attempting to write to it",
+      "anchor": "synchronize-to-wait-until-buffer-is-created-before-attempting-to-write-to-it"
+    },
+    {
+      "level": 1,
+      "title": "Now it's safe to write to the buffer",
+      "anchor": "now-its-safe-to-write-to-the-buffer"
+    },
+    {
+      "level": 4,
+      "title": "Copying data between host and device memory",
+      "anchor": "copying-data-between-host-and-device-memory"
+    },
+    {
+      "level": 1,
+      "title": "Equivalent to:",
+      "anchor": "equivalent-to"
+    },
+    {
+      "level": 1,
+      "title": "Initialize the input",
+      "anchor": "initialize-the-input"
+    },
+    {
+      "level": 4,
+      "title": "Deallocating memory buffers",
+      "anchor": "deallocating-memory-buffers"
+    },
+    {
+      "level": 3,
+      "title": "Compiling and enqueuing a kernel function for execution",
+      "anchor": "compiling-and-enqueuing-a-kernel-function-for-execution"
+    }
+  ]
+}

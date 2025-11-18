@@ -1,0 +1,116 @@
+{
+  "title": "Get started with GPU programming",
+  "sidebar_label": "Get started with GPUs",
+  "description": "Learn the basics of GPU programming with Mojo",
+  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/gpu-intro",
+  "image": "/images/artwork/mojo-motorcycle.jpg",
+  "file_name": "intro-tutorial.mdx",
+  "file_stem": "intro-tutorial",
+  "file_path": "gpu/intro-tutorial.mdx",
+  "file_size": 36487,
+  "document_id": "gpu-intro-tutorial",
+  "url": "https://docs.modular.com/mojo/manual/gpu/intro-tutorial",
+  "content_hash": "b9ad9378c4fd0375491bfa03323b169c",
+  "statistics": {
+    "char_count": 34578,
+    "word_count": 4769,
+    "line_count": 911,
+    "paragraph_count": 185,
+    "header_count": 18,
+    "code_block_count": 32,
+    "code_lines": 414
+  },
+  "processed_at": "2025-11-17T14:45:49.237576",
+  "sections": [
+    {
+      "level": 2,
+      "title": "1. Create a Mojo project",
+      "anchor": "1-create-a-mojo-project"
+    },
+    {
+      "level": 2,
+      "title": "2. Get a reference to the GPU device",
+      "anchor": "2-get-a-reference-to-the-gpu-device"
+    },
+    {
+      "level": 2,
+      "title": "3. Define a simple kernel",
+      "anchor": "3-define-a-simple-kernel"
+    },
+    {
+      "level": 2,
+      "title": "4. Compile and run the kernel",
+      "anchor": "4-compile-and-run-the-kernel"
+    },
+    {
+      "level": 2,
+      "title": "5. Manage grid dimensions",
+      "anchor": "5-manage-grid-dimensions"
+    },
+    {
+      "level": 2,
+      "title": "6. Allocate host memory for the input vectors",
+      "anchor": "6-allocate-host-memory-for-the-input-vectors"
+    },
+    {
+      "level": 1,
+      "title": "Vector data type and size",
+      "anchor": "vector-data-type-and-size"
+    },
+    {
+      "level": 2,
+      "title": "7. Copy the input vectors to GPU memory and allocate an output vector",
+      "anchor": "7-copy-the-input-vectors-to-gpu-memory-and-allocate-an-output-vector"
+    },
+    {
+      "level": 2,
+      "title": "8. Create `LayoutTensor` views",
+      "anchor": "8-create-layouttensor-views"
+    },
+    {
+      "level": 2,
+      "title": "9. Define the vector addition kernel function",
+      "anchor": "9-define-the-vector-addition-kernel-function"
+    },
+    {
+      "level": 1,
+      "title": "Calculate the number of thread blocks needed by dividing the vector size",
+      "anchor": "calculate-the-number-of-thread-blocks-needed-by-dividing-the-vector-size"
+    },
+    {
+      "level": 1,
+      "title": "by the block size and rounding up.",
+      "anchor": "by-the-block-size-and-rounding-up"
+    },
+    {
+      "level": 2,
+      "title": "10. Invoke the kernel function and copy the output back to the CPU",
+      "anchor": "10-invoke-the-kernel-function-and-copy-the-output-back-to-the-cpu"
+    },
+    {
+      "level": 1,
+      "title": "Vector data type and size",
+      "anchor": "vector-data-type-and-size"
+    },
+    {
+      "level": 1,
+      "title": "Calculate the number of thread blocks needed by dividing the vector size",
+      "anchor": "calculate-the-number-of-thread-blocks-needed-by-dividing-the-vector-size"
+    },
+    {
+      "level": 1,
+      "title": "by the block size and rounding up.",
+      "anchor": "by-the-block-size-and-rounding-up"
+    },
+    {
+      "level": 2,
+      "title": "Summary",
+      "anchor": "summary"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

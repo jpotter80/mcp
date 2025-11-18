@@ -1,0 +1,64 @@
+{
+  "title": "Intro to pointers",
+  "sidebar_position": 1,
+  "description": "An overview of accessing memory using Mojo's pointer types.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "pointers/index.mdx",
+  "file_size": 10548,
+  "document_id": "pointers-index",
+  "url": "https://docs.modular.com/mojo/manual/pointers",
+  "content_hash": "f74d60d721297c0188c361512eb15cc3",
+  "statistics": {
+    "char_count": 10308,
+    "word_count": 1489,
+    "line_count": 265,
+    "paragraph_count": 68,
+    "header_count": 8,
+    "code_block_count": 8,
+    "code_lines": 35
+  },
+  "processed_at": "2025-11-17T14:45:49.842307",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Update an initialized value",
+      "anchor": "update-an-initialized-value"
+    },
+    {
+      "level": 1,
+      "title": "Access an initialized value",
+      "anchor": "access-an-initialized-value"
+    },
+    {
+      "level": 2,
+      "title": "Pointer terminology",
+      "anchor": "pointer-terminology"
+    },
+    {
+      "level": 2,
+      "title": "Pointer types",
+      "anchor": "pointer-types"
+    },
+    {
+      "level": 2,
+      "title": "`Pointer`",
+      "anchor": "pointer"
+    },
+    {
+      "level": 2,
+      "title": "`OwnedPointer`",
+      "anchor": "ownedpointer"
+    },
+    {
+      "level": 2,
+      "title": "`ArcPointer`",
+      "anchor": "arcpointer"
+    },
+    {
+      "level": 2,
+      "title": "UnsafePointer",
+      "anchor": "unsafepointer"
+    }
+  ]
+}

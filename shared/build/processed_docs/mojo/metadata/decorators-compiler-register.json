@@ -1,0 +1,34 @@
+{
+  "title": "@compiler.register",
+  "description": "Registers a custom operation for use with the MAX Graph API.",
+  "codeTitle": true,
+  "file_name": "compiler-register.mdx",
+  "file_stem": "compiler-register",
+  "file_path": "decorators/compiler-register.mdx",
+  "file_size": 4481,
+  "document_id": "decorators-compiler-register",
+  "url": "https://docs.modular.com/mojo/manual/decorators/compiler-register",
+  "content_hash": "d6ad80942be87a0452dd289c47f96a03",
+  "statistics": {
+    "char_count": 4179,
+    "word_count": 536,
+    "line_count": 126,
+    "paragraph_count": 30,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-17T14:45:48.785396",
+  "sections": [
+    {
+      "level": 3,
+      "title": "`execute()` function",
+      "anchor": "execute-function"
+    },
+    {
+      "level": 3,
+      "title": "`shape()` function",
+      "anchor": "shape-function"
+    }
+  ]
+}

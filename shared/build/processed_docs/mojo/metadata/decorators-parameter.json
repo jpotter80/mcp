@@ -1,0 +1,39 @@
+{
+  "title": "@parameter",
+  "description": "Executes a function or if statement at compile time.",
+  "codeTitle": true,
+  "file_name": "parameter.mdx",
+  "file_stem": "parameter",
+  "file_path": "decorators/parameter.mdx",
+  "file_size": 3599,
+  "document_id": "decorators-parameter",
+  "url": "https://docs.modular.com/mojo/manual/decorators/parameter",
+  "content_hash": "f26eb48d9d3bd37cedf380136f6825c7",
+  "statistics": {
+    "char_count": 3406,
+    "word_count": 515,
+    "line_count": 111,
+    "paragraph_count": 30,
+    "header_count": 3,
+    "code_block_count": 6,
+    "code_lines": 39
+  },
+  "processed_at": "2025-11-17T14:45:48.810970",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Parametric `if` statement",
+      "anchor": "parametric-if-statement"
+    },
+    {
+      "level": 2,
+      "title": "Parametric `for` statement",
+      "anchor": "parametric-for-statement"
+    },
+    {
+      "level": 2,
+      "title": "Parametric closure",
+      "anchor": "parametric-closure"
+    }
+  ]
+}

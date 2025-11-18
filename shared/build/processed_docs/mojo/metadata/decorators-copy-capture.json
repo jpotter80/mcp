@@ -1,0 +1,23 @@
+{
+  "title": "@__copy_capture",
+  "description": "Captures register-passable typed values by copy.",
+  "codeTitle": true,
+  "file_name": "copy-capture.mdx",
+  "file_stem": "copy-capture",
+  "file_path": "decorators/copy-capture.mdx",
+  "file_size": 699,
+  "document_id": "decorators-copy-capture",
+  "url": "https://docs.modular.com/mojo/manual/decorators/copy-capture",
+  "content_hash": "b43f00fe69edb3becdd611c6b73a1f34",
+  "statistics": {
+    "char_count": 539,
+    "word_count": 84,
+    "line_count": 20,
+    "paragraph_count": 4,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-17T14:45:48.794173",
+  "sections": []
+}

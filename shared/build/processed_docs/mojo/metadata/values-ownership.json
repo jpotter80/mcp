@@ -1,0 +1,69 @@
+{
+  "title": "Ownership",
+  "sidebar_position": 3,
+  "description": "How Mojo shares references through function arguments.",
+  "file_name": "ownership.mdx",
+  "file_stem": "ownership",
+  "file_path": "values/ownership.mdx",
+  "file_size": 14874,
+  "document_id": "values-ownership",
+  "url": "https://docs.modular.com/mojo/manual/values/ownership",
+  "content_hash": "3359a026fd6f29bfae69af3d1d5267e1",
+  "statistics": {
+    "char_count": 14547,
+    "word_count": 2255,
+    "line_count": 405,
+    "paragraph_count": 96,
+    "header_count": 9,
+    "code_block_count": 18,
+    "code_lines": 94
+  },
+  "processed_at": "2025-11-17T14:45:50.202541",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Ownership summary",
+      "anchor": "ownership-summary"
+    },
+    {
+      "level": 3,
+      "title": "Variables and references",
+      "anchor": "variables-and-references"
+    },
+    {
+      "level": 2,
+      "title": "Argument conventions",
+      "anchor": "argument-conventions"
+    },
+    {
+      "level": 2,
+      "title": "Immutable arguments (`read`)",
+      "anchor": "immutable-arguments-read"
+    },
+    {
+      "level": 3,
+      "title": "Compared to C++ and Rust",
+      "anchor": "compared-to-c-and-rust"
+    },
+    {
+      "level": 2,
+      "title": "Mutable arguments (`mut`)",
+      "anchor": "mutable-arguments-mut"
+    },
+    {
+      "level": 3,
+      "title": "Argument exclusivity",
+      "anchor": "argument-exclusivity"
+    },
+    {
+      "level": 2,
+      "title": "Transfer arguments (`var` and `^`)",
+      "anchor": "transfer-arguments-var-and-"
+    },
+    {
+      "level": 3,
+      "title": "Transfer implementation details",
+      "anchor": "transfer-implementation-details"
+    }
+  ]
+}

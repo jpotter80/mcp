@@ -1,0 +1,94 @@
+{
+  "title": "Structs",
+  "sidebar_position": 4,
+  "description": "Introduction to Mojo structures (structs).",
+  "file_name": "structs.mdx",
+  "file_stem": "structs",
+  "file_path": "structs.mdx",
+  "file_size": 13521,
+  "document_id": "structs",
+  "url": "https://docs.modular.com/mojo/manual/structs",
+  "content_hash": "532fb8d61b3e8eca852434ab31689e0d",
+  "statistics": {
+    "char_count": 13259,
+    "word_count": 2028,
+    "line_count": 368,
+    "paragraph_count": 90,
+    "header_count": 14,
+    "code_block_count": 17,
+    "code_lines": 66
+  },
+  "processed_at": "2025-11-17T14:45:49.997881",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Struct definition",
+      "anchor": "struct-definition"
+    },
+    {
+      "level": 2,
+      "title": "Making a struct copyable and movable",
+      "anchor": "making-a-struct-copyable-and-movable"
+    },
+    {
+      "level": 1,
+      "title": "Implicit copy",
+      "anchor": "implicit-copy"
+    },
+    {
+      "level": 1,
+      "title": "Explicit copy",
+      "anchor": "explicit-copy"
+    },
+    {
+      "level": 1,
+      "title": "Move",
+      "anchor": "move"
+    },
+    {
+      "level": 3,
+      "title": "Copyability",
+      "anchor": "copyability"
+    },
+    {
+      "level": 3,
+      "title": "Implicit copyability",
+      "anchor": "implicit-copyability"
+    },
+    {
+      "level": 3,
+      "title": "Movability",
+      "anchor": "movability"
+    },
+    {
+      "level": 3,
+      "title": "A movable, copyable `MyPair`",
+      "anchor": "a-movable-copyable-mypair"
+    },
+    {
+      "level": 2,
+      "title": "Methods",
+      "anchor": "methods"
+    },
+    {
+      "level": 3,
+      "title": "`fn` versus `def` in struct methods",
+      "anchor": "fn-versus-def-in-struct-methods"
+    },
+    {
+      "level": 3,
+      "title": "Static methods",
+      "anchor": "static-methods"
+    },
+    {
+      "level": 2,
+      "title": "Structs compared to classes",
+      "anchor": "structs-compared-to-classes"
+    },
+    {
+      "level": 2,
+      "title": "Special methods",
+      "anchor": "special-methods"
+    }
+  ]
+}

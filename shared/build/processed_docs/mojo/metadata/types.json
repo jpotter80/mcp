@@ -1,0 +1,169 @@
+{
+  "title": "Types",
+  "sidebar_position": 1,
+  "description": "Standard Mojo data types.",
+  "file_name": "types.mdx",
+  "file_stem": "types",
+  "file_path": "types.mdx",
+  "file_size": 29585,
+  "document_id": "types",
+  "url": "https://docs.modular.com/mojo/manual/types",
+  "content_hash": "6971c60617daeb1f058a1323cc9e182f",
+  "statistics": {
+    "char_count": 28520,
+    "word_count": 4145,
+    "line_count": 840,
+    "paragraph_count": 192,
+    "header_count": 29,
+    "code_block_count": 56,
+    "code_lines": 167
+  },
+  "processed_at": "2025-11-17T14:45:50.090667",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Numeric types",
+      "anchor": "numeric-types"
+    },
+    {
+      "level": 3,
+      "title": "Signed and unsigned integers",
+      "anchor": "signed-and-unsigned-integers"
+    },
+    {
+      "level": 3,
+      "title": "Floating-point numbers",
+      "anchor": "floating-point-numbers"
+    },
+    {
+      "level": 3,
+      "title": "Numeric literals",
+      "anchor": "numeric-literals"
+    },
+    {
+      "level": 1,
+      "title": "use a variable to force the following calculation to occur at runtime",
+      "anchor": "use-a-variable-to-force-the-following-calculation-to-occur-at-runtime"
+    },
+    {
+      "level": 3,
+      "title": "`SIMD` and `DType`",
+      "anchor": "simd-and-dtype"
+    },
+    {
+      "level": 3,
+      "title": "Scalar values",
+      "anchor": "scalar-values"
+    },
+    {
+      "level": 4,
+      "title": "The `DType` type",
+      "anchor": "the-dtype-type"
+    },
+    {
+      "level": 3,
+      "title": "Numeric type conversion",
+      "anchor": "numeric-type-conversion"
+    },
+    {
+      "level": 2,
+      "title": "Strings",
+      "anchor": "strings"
+    },
+    {
+      "level": 3,
+      "title": "String literals",
+      "anchor": "string-literals"
+    },
+    {
+      "level": 2,
+      "title": "Booleans",
+      "anchor": "booleans"
+    },
+    {
+      "level": 2,
+      "title": "Tuples",
+      "anchor": "tuples"
+    },
+    {
+      "level": 1,
+      "title": "Tuples are immutable and can hold multiple types",
+      "anchor": "tuples-are-immutable-and-can-hold-multiple-types"
+    },
+    {
+      "level": 1,
+      "title": "Assign multiple variables at once",
+      "anchor": "assign-multiple-variables-at-once"
+    },
+    {
+      "level": 1,
+      "title": "Get individual values with an index",
+      "anchor": "get-individual-values-with-an-index"
+    },
+    {
+      "level": 2,
+      "title": "Collection types",
+      "anchor": "collection-types"
+    },
+    {
+      "level": 1,
+      "title": "l.append(3.14) # error: FloatLiteral cannot be converted to Int",
+      "anchor": "lappend314-error-floatliteral-cannot-be-converted-to-int"
+    },
+    {
+      "level": 1,
+      "title": "Inferred type == List[Int]",
+      "anchor": "inferred-type-listint"
+    },
+    {
+      "level": 3,
+      "title": "List",
+      "anchor": "list"
+    },
+    {
+      "level": 3,
+      "title": "Dict",
+      "anchor": "dict"
+    },
+    {
+      "level": 1,
+      "title": "Empty dictionary",
+      "anchor": "empty-dictionary"
+    },
+    {
+      "level": 1,
+      "title": "Dictionary with initial key-value pairs",
+      "anchor": "dictionary-with-initial-key-value-pairs"
+    },
+    {
+      "level": 3,
+      "title": "Set",
+      "anchor": "set"
+    },
+    {
+      "level": 3,
+      "title": "Optional",
+      "anchor": "optional"
+    },
+    {
+      "level": 1,
+      "title": "Two ways to initialize an Optional with a value",
+      "anchor": "two-ways-to-initialize-an-optional-with-a-value"
+    },
+    {
+      "level": 1,
+      "title": "Two ways to initialize an Optional with no value",
+      "anchor": "two-ways-to-initialize-an-optional-with-no-value"
+    },
+    {
+      "level": 2,
+      "title": "Register-passable, memory-only, and trivial types",
+      "anchor": "register-passable-memory-only-and-trivial-types"
+    },
+    {
+      "level": 2,
+      "title": "`AnyType` and `AnyTrivialRegType`",
+      "anchor": "anytype-and-anytrivialregtype"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Death of a value",
+  "sidebar_position": 3,
+  "description": "An explanation of when and how Mojo destroys values.",
+  "file_name": "death.mdx",
+  "file_stem": "death",
+  "file_path": "lifecycle/death.mdx",
+  "file_size": 14773,
+  "document_id": "lifecycle-death",
+  "url": "https://docs.modular.com/mojo/manual/lifecycle/death",
+  "content_hash": "ae2f8153182d445b3c52c7ea7bd78ea0",
+  "statistics": {
+    "char_count": 14208,
+    "word_count": 2070,
+    "line_count": 386,
+    "paragraph_count": 86,
+    "header_count": 10,
+    "code_block_count": 11,
+    "code_lines": 144
+  },
+  "processed_at": "2025-11-17T14:45:49.456755",
+  "sections": [
+    {
+      "level": 3,
+      "title": "Default destruction behavior",
+      "anchor": "default-destruction-behavior"
+    },
+    {
+      "level": 3,
+      "title": "Benefits of ASAP destruction",
+      "anchor": "benefits-of-asap-destruction"
+    },
+    {
+      "level": 2,
+      "title": "Destructor",
+      "anchor": "destructor"
+    },
+    {
+      "level": 2,
+      "title": "Field lifetimes",
+      "anchor": "field-lifetimes"
+    },
+    {
+      "level": 3,
+      "title": "Field lifetimes during destruct and move",
+      "anchor": "field-lifetimes-during-destruct-and-move"
+    },
+    {
+      "level": 2,
+      "title": "Explicit lifetime extension",
+      "anchor": "explicit-lifetime-extension"
+    },
+    {
+      "level": 1,
+      "title": "Without explicit extension: s is last used in the print() call, so it is",
+      "anchor": "without-explicit-extension-s-is-last-used-in-the-print-call-so-it-is"
+    },
+    {
+      "level": 1,
+      "title": "destroyed immediately afterwards.",
+      "anchor": "destroyed-immediately-afterwards"
+    },
+    {
+      "level": 1,
+      "title": "With explicit extension: push last-use to the discard line.",
+      "anchor": "with-explicit-extension-push-last-use-to-the-discard-line"
+    },
+    {
+      "level": 1,
+      "title": "... some time later",
+      "anchor": "-some-time-later"
+    }
+  ]
+}

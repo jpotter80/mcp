@@ -1,0 +1,94 @@
+{
+  "title": "Life of a value",
+  "sidebar_position": 2,
+  "description": "An explanation of when and how Mojo creates values.",
+  "file_name": "life.mdx",
+  "file_stem": "life",
+  "file_path": "lifecycle/life.mdx",
+  "file_size": 24393,
+  "document_id": "lifecycle-life",
+  "url": "https://docs.modular.com/mojo/manual/lifecycle/life",
+  "content_hash": "2dc1c5d1e33a0c05ba98b889a0260b70",
+  "statistics": {
+    "char_count": 23573,
+    "word_count": 3515,
+    "line_count": 663,
+    "paragraph_count": 150,
+    "header_count": 14,
+    "code_block_count": 28,
+    "code_lines": 181
+  },
+  "processed_at": "2025-11-17T14:45:49.501007",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Constructor",
+      "anchor": "constructor"
+    },
+    {
+      "level": 3,
+      "title": "Overloading the constructor",
+      "anchor": "overloading-the-constructor"
+    },
+    {
+      "level": 3,
+      "title": "Field initialization",
+      "anchor": "field-initialization"
+    },
+    {
+      "level": 3,
+      "title": "Constructors and implicit conversion",
+      "anchor": "constructors-and-implicit-conversion"
+    },
+    {
+      "level": 2,
+      "title": "Copy constructor",
+      "anchor": "copy-constructor"
+    },
+    {
+      "level": 1,
+      "title": "Explicit copy",
+      "anchor": "explicit-copy"
+    },
+    {
+      "level": 1,
+      "title": "Implicit copy",
+      "anchor": "implicit-copy"
+    },
+    {
+      "level": 3,
+      "title": "Custom copy constructor",
+      "anchor": "custom-copy-constructor"
+    },
+    {
+      "level": 3,
+      "title": "Implicitly-copyable types",
+      "anchor": "implicitly-copyable-types"
+    },
+    {
+      "level": 2,
+      "title": "Move constructor",
+      "anchor": "move-constructor"
+    },
+    {
+      "level": 3,
+      "title": "Custom move constructor",
+      "anchor": "custom-move-constructor"
+    },
+    {
+      "level": 2,
+      "title": "Move-only and immovable types",
+      "anchor": "move-only-and-immovable-types"
+    },
+    {
+      "level": 2,
+      "title": "Trivial types",
+      "anchor": "trivial-types"
+    },
+    {
+      "level": 3,
+      "title": "Trivial lifecycle methods",
+      "anchor": "trivial-lifecycle-methods"
+    }
+  ]
+}

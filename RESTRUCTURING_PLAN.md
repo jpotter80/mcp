@@ -36,7 +36,7 @@ The project architecture and vision are **fully cohesive and well-organized**. P
 
 For next session, refer to these companion documents:
 
-1. **`PHASE_3_EXECUTION_GUIDE.md`** — Step-by-step Phase 3 implementation guide
+1. **`PHASE_3_IMPLEMENTATION_PROMPT.md`** — Step-by-step Phase 3 implementation guide
    - Detailed checklist for parameterizing embedding scripts
    - Expected outcomes and success criteria
    - Debugging tips if issues arise

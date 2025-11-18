@@ -1,0 +1,89 @@
+{
+  "title": "Lifetimes, origins, and references",
+  "sidebar_position": 4,
+  "description": "Working with origins and references.",
+  "file_name": "lifetimes.mdx",
+  "file_stem": "lifetimes",
+  "file_path": "values/lifetimes.mdx",
+  "file_size": 14218,
+  "document_id": "values-lifetimes",
+  "url": "https://docs.modular.com/mojo/manual/values/lifetimes",
+  "content_hash": "66b46418e394d864f4f177754ab57e13",
+  "statistics": {
+    "char_count": 13793,
+    "word_count": 1985,
+    "line_count": 443,
+    "paragraph_count": 114,
+    "header_count": 13,
+    "code_block_count": 21,
+    "code_lines": 106
+  },
+  "processed_at": "2025-11-17T14:45:50.170037",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Working with origins",
+      "anchor": "working-with-origins"
+    },
+    {
+      "level": 3,
+      "title": "Origin types",
+      "anchor": "origin-types"
+    },
+    {
+      "level": 3,
+      "title": "Origin sets",
+      "anchor": "origin-sets"
+    },
+    {
+      "level": 3,
+      "title": "Origin values",
+      "anchor": "origin-values"
+    },
+    {
+      "level": 4,
+      "title": "Static origins",
+      "anchor": "static-origins"
+    },
+    {
+      "level": 4,
+      "title": "Derived origins",
+      "anchor": "derived-origins"
+    },
+    {
+      "level": 4,
+      "title": "Inferred origins",
+      "anchor": "inferred-origins"
+    },
+    {
+      "level": 4,
+      "title": "Origin unions",
+      "anchor": "origin-unions"
+    },
+    {
+      "level": 2,
+      "title": "Working with references",
+      "anchor": "working-with-references"
+    },
+    {
+      "level": 3,
+      "title": "`ref` arguments",
+      "anchor": "ref-arguments"
+    },
+    {
+      "level": 3,
+      "title": "`ref` return values",
+      "anchor": "ref-return-values"
+    },
+    {
+      "level": 4,
+      "title": "Parametric mutability of return values",
+      "anchor": "parametric-mutability-of-return-values"
+    },
+    {
+      "level": 4,
+      "title": "Return values with union origins",
+      "anchor": "return-values-with-union-origins"
+    }
+  ]
+}

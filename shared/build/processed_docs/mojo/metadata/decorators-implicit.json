@@ -1,0 +1,23 @@
+{
+  "title": "@implicit",
+  "description": "Marks a constructor as eligible for implicit conversion.",
+  "codeTitle": true,
+  "file_name": "implicit.mdx",
+  "file_stem": "implicit",
+  "file_path": "decorators/implicit.mdx",
+  "file_size": 1039,
+  "document_id": "decorators-implicit",
+  "url": "https://docs.modular.com/mojo/manual/decorators/implicit",
+  "content_hash": "9541edf09412062034a5ae6a6491070d",
+  "statistics": {
+    "char_count": 865,
+    "word_count": 125,
+    "line_count": 32,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-17T14:45:48.799815",
+  "sections": []
+}

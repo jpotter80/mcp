@@ -1,0 +1,138 @@
+{
+  "title": "Unsafe pointers",
+  "description": "Using unsafe pointers to access dynamically-allocated memory.",
+  "file_name": "unsafe-pointers.mdx",
+  "file_stem": "unsafe-pointers",
+  "file_path": "pointers/unsafe-pointers.mdx",
+  "file_size": 19755,
+  "document_id": "pointers-unsafe-pointers",
+  "url": "https://docs.modular.com/mojo/manual/pointers/unsafe-pointers",
+  "content_hash": "9811d8bd7818d1552e691252dfb653d8",
+  "statistics": {
+    "char_count": 19359,
+    "word_count": 2671,
+    "line_count": 549,
+    "paragraph_count": 126,
+    "header_count": 23,
+    "code_block_count": 30,
+    "code_lines": 106
+  },
+  "processed_at": "2025-11-17T14:45:49.866564",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Unsafe pointer basics",
+      "anchor": "unsafe-pointer-basics"
+    },
+    {
+      "level": 1,
+      "title": "Allocate memory to hold a value",
+      "anchor": "allocate-memory-to-hold-a-value"
+    },
+    {
+      "level": 1,
+      "title": "Initialize the allocated memory",
+      "anchor": "initialize-the-allocated-memory"
+    },
+    {
+      "level": 1,
+      "title": "Update an initialized value",
+      "anchor": "update-an-initialized-value"
+    },
+    {
+      "level": 1,
+      "title": "Access an initialized value",
+      "anchor": "access-an-initialized-value"
+    },
+    {
+      "level": 2,
+      "title": "Lifecycle of a pointer",
+      "anchor": "lifecycle-of-a-pointer"
+    },
+    {
+      "level": 3,
+      "title": "Allocating memory",
+      "anchor": "allocating-memory"
+    },
+    {
+      "level": 3,
+      "title": "Initializing the pointee",
+      "anchor": "initializing-the-pointee"
+    },
+    {
+      "level": 3,
+      "title": "Dereferencing pointers",
+      "anchor": "dereferencing-pointers"
+    },
+    {
+      "level": 1,
+      "title": "Read from pointee",
+      "anchor": "read-from-pointee"
+    },
+    {
+      "level": 1,
+      "title": "mutate pointee",
+      "anchor": "mutate-pointee"
+    },
+    {
+      "level": 1,
+      "title": "str_ptr[] = \"Testing\" # Undefined behavior!",
+      "anchor": "str_ptr-testing-undefined-behavior"
+    },
+    {
+      "level": 3,
+      "title": "Destroying or removing values",
+      "anchor": "destroying-or-removing-values"
+    },
+    {
+      "level": 3,
+      "title": "Freeing memory",
+      "anchor": "freeing-memory"
+    },
+    {
+      "level": 2,
+      "title": "Storing multiple values",
+      "anchor": "storing-multiple-values"
+    },
+    {
+      "level": 1,
+      "title": "Advance the pointer one element:",
+      "anchor": "advance-the-pointer-one-element"
+    },
+    {
+      "level": 2,
+      "title": "`UnsafePointer` and origins",
+      "anchor": "unsafepointer-and-origins"
+    },
+    {
+      "level": 2,
+      "title": "Working with foreign pointers",
+      "anchor": "working-with-foreign-pointers"
+    },
+    {
+      "level": 3,
+      "title": "Creating a Mojo pointer from a Python pointer",
+      "anchor": "creating-a-mojo-pointer-from-a-python-pointer"
+    },
+    {
+      "level": 3,
+      "title": "Working with C/C++ pointers",
+      "anchor": "working-with-cc-pointers"
+    },
+    {
+      "level": 2,
+      "title": "Converting data: bitcasting and byte order",
+      "anchor": "converting-data-bitcasting-and-byte-order"
+    },
+    {
+      "level": 2,
+      "title": "Working with SIMD vectors",
+      "anchor": "working-with-simd-vectors"
+    },
+    {
+      "level": 2,
+      "title": "Safety",
+      "anchor": "safety"
+    }
+  ]
+}

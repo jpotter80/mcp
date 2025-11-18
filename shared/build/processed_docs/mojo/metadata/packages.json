@@ -1,0 +1,40 @@
+{
+  "title": "Modules and packages",
+  "sidebar_position": 5,
+  "sidebar_label": "Modules and packages",
+  "description": "Learn how to package Mojo code for distribution and importing.",
+  "file_name": "packages.md",
+  "file_stem": "packages",
+  "file_path": "packages.md",
+  "file_size": 6985,
+  "document_id": "packages",
+  "url": "https://docs.modular.com/mojo/manual/packages",
+  "content_hash": "fd32b7a0770c09a9a663c5bf3d7fe5ec",
+  "statistics": {
+    "char_count": 6701,
+    "word_count": 1023,
+    "line_count": 234,
+    "paragraph_count": 59,
+    "header_count": 3,
+    "code_block_count": 18,
+    "code_lines": 106
+  },
+  "processed_at": "2025-11-17T14:45:49.718081",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Mojo modules",
+      "anchor": "mojo-modules"
+    },
+    {
+      "level": 2,
+      "title": "Mojo packages",
+      "anchor": "mojo-packages"
+    },
+    {
+      "level": 3,
+      "title": "The `__init__` file",
+      "anchor": "the-__init__-file"
+    }
+  ]
+}

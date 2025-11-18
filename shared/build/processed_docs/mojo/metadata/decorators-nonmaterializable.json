@@ -1,0 +1,23 @@
+{
+  "title": "@nonmaterializable",
+  "description": "Declares that a type should exist only in the parameter domain.",
+  "codeTitle": true,
+  "file_name": "nonmaterializable.mdx",
+  "file_stem": "nonmaterializable",
+  "file_path": "decorators/nonmaterializable.mdx",
+  "file_size": 2175,
+  "document_id": "decorators-nonmaterializable",
+  "url": "https://docs.modular.com/mojo/manual/decorators/nonmaterializable",
+  "content_hash": "9fa2198477ae7d78f1c7c739fa00e675",
+  "statistics": {
+    "char_count": 1977,
+    "word_count": 266,
+    "line_count": 53,
+    "paragraph_count": 10,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 29
+  },
+  "processed_at": "2025-11-17T14:45:48.805959",
+  "sections": []
+}

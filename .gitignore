@@ -1,5 +1,5 @@
 # Build artifacts (ephemeral, generated at dev time)
-shared/build/
+# shared/build/
 *.pyc
 __pycache__/
 *.egg-info/

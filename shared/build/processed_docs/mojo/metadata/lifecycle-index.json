@@ -1,0 +1,29 @@
+{
+  "title": "Intro to value lifecycle",
+  "sidebar_position": 1,
+  "description": "An introduction to the value lifecycle.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "lifecycle/index.mdx",
+  "file_size": 4360,
+  "document_id": "lifecycle-index",
+  "url": "https://docs.modular.com/mojo/manual/lifecycle",
+  "content_hash": "19d5ac9ba574b4890ac8c4f06b582ded",
+  "statistics": {
+    "char_count": 4223,
+    "word_count": 604,
+    "line_count": 76,
+    "paragraph_count": 14,
+    "header_count": 1,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-17T14:45:49.491306",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Lifecycles and lifetimes",
+      "anchor": "lifecycles-and-lifetimes"
+    }
+  ]
+}

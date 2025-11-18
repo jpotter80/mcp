@@ -1,0 +1,40 @@
+{
+  "title": "Calling Python from Mojo",
+  "sidebar_position": 2,
+  "description": "How to import and use Python modules in Mojo code.",
+  "show_languages": true,
+  "file_name": "python-from-mojo.mdx",
+  "file_stem": "python-from-mojo",
+  "file_path": "python/python-from-mojo.mdx",
+  "file_size": 5432,
+  "document_id": "python-python-from-mojo",
+  "url": "https://docs.modular.com/mojo/manual/python/python-from-mojo",
+  "content_hash": "9e88fe4eacd493ed0e39f8e714f0c73c",
+  "statistics": {
+    "char_count": 5207,
+    "word_count": 751,
+    "line_count": 152,
+    "paragraph_count": 39,
+    "header_count": 3,
+    "code_block_count": 9,
+    "code_lines": 26
+  },
+  "processed_at": "2025-11-17T14:45:49.970793",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Specify your Python version",
+      "anchor": "specify-your-python-version"
+    },
+    {
+      "level": 2,
+      "title": "Import a Python module in Mojo",
+      "anchor": "import-a-python-module-in-mojo"
+    },
+    {
+      "level": 3,
+      "title": "Import a local Python module",
+      "anchor": "import-a-local-python-module"
+    }
+  ]
+}

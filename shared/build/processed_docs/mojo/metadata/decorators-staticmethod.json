@@ -1,0 +1,23 @@
+{
+  "title": "@staticmethod",
+  "description": "Declares a struct method as static.",
+  "codeTitle": true,
+  "file_name": "staticmethod.mdx",
+  "file_stem": "staticmethod",
+  "file_path": "decorators/staticmethod.mdx",
+  "file_size": 900,
+  "document_id": "decorators-staticmethod",
+  "url": "https://docs.modular.com/mojo/manual/decorators/staticmethod",
+  "content_hash": "e1edab4411d5284828378b685296c3ae",
+  "statistics": {
+    "char_count": 750,
+    "word_count": 99,
+    "line_count": 30,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-17T14:45:48.828263",
+  "sections": []
+}

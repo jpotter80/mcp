@@ -1,0 +1,44 @@
+{
+  "title": "Python types",
+  "sidebar_position": 4,
+  "description": "Using Mojo types in Python, and Python types in Mojo.",
+  "file_name": "types.mdx",
+  "file_stem": "types",
+  "file_path": "python/types.mdx",
+  "file_size": 6287,
+  "document_id": "python-types",
+  "url": "https://docs.modular.com/mojo/manual/python/types",
+  "content_hash": "4b873b34e48d511fdc4e7925d7774237",
+  "statistics": {
+    "char_count": 6022,
+    "word_count": 803,
+    "line_count": 208,
+    "paragraph_count": 43,
+    "header_count": 4,
+    "code_block_count": 13,
+    "code_lines": 98
+  },
+  "processed_at": "2025-11-17T14:45:49.982559",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Mojo types in Python",
+      "anchor": "mojo-types-in-python"
+    },
+    {
+      "level": 2,
+      "title": "Python types in Mojo",
+      "anchor": "python-types-in-mojo"
+    },
+    {
+      "level": 3,
+      "title": "Mojo wrapper objects",
+      "anchor": "mojo-wrapper-objects"
+    },
+    {
+      "level": 3,
+      "title": "Comparing Python types in Mojo",
+      "anchor": "comparing-python-types-in-mojo"
+    }
+  ]
+}

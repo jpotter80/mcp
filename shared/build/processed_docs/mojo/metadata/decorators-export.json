@@ -1,0 +1,39 @@
+{
+  "title": "@export",
+  "description": "Marks a function for export.",
+  "codeTitle": true,
+  "file_name": "export.mdx",
+  "file_stem": "export",
+  "file_path": "decorators/export.mdx",
+  "file_size": 1243,
+  "document_id": "decorators-export",
+  "url": "https://docs.modular.com/mojo/manual/decorators/export",
+  "content_hash": "7ecc102b5398204743b6509408f5548a",
+  "statistics": {
+    "char_count": 1142,
+    "word_count": 154,
+    "line_count": 36,
+    "paragraph_count": 8,
+    "header_count": 3,
+    "code_block_count": 2,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-17T14:45:48.795751",
+  "sections": [
+    {
+      "level": 1,
+      "title": "This function is internal - not callable from Python",
+      "anchor": "this-function-is-internal-not-callable-from-python"
+    },
+    {
+      "level": 1,
+      "title": "This function can be called from Python as \"my_exported_function\"",
+      "anchor": "this-function-can-be-called-from-python-as-my_exported_function"
+    },
+    {
+      "level": 1,
+      "title": "This function can be called from Python as \"my_renamed_function\"",
+      "anchor": "this-function-can-be-called-from-python-as-my_renamed_function"
+    }
+  ]
+}

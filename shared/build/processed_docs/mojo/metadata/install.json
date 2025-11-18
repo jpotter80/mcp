@@ -1,0 +1,78 @@
+{
+  "title": "Install Mojo",
+  "description": "You can install Mojo using pixi, uv, conda, pip, or other Python/Conda package managers.",
+  "file_name": "install.mdx",
+  "file_stem": "install",
+  "file_path": "install.mdx",
+  "file_size": 13226,
+  "document_id": "install",
+  "url": "https://docs.modular.com/mojo/manual/install",
+  "content_hash": "c69db48cc6c49ff17a45cedd1d19b3d0",
+  "statistics": {
+    "char_count": 5670,
+    "word_count": 785,
+    "line_count": 209,
+    "paragraph_count": 64,
+    "header_count": 11,
+    "code_block_count": 41,
+    "code_lines": 99
+  },
+  "processed_at": "2025-11-17T14:45:49.326607",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Install",
+      "anchor": "install"
+    },
+    {
+      "level": 3,
+      "title": "Add the VS Code extension",
+      "anchor": "add-the-vs-code-extension"
+    },
+    {
+      "level": 3,
+      "title": "Print \"Hello world\"",
+      "anchor": "print-hello-world"
+    },
+    {
+      "level": 3,
+      "title": "Try some examples",
+      "anchor": "try-some-examples"
+    },
+    {
+      "level": 2,
+      "title": "Update",
+      "anchor": "update"
+    },
+    {
+      "level": 2,
+      "title": "Uninstall",
+      "anchor": "uninstall"
+    },
+    {
+      "level": 2,
+      "title": "What's included",
+      "anchor": "whats-included"
+    },
+    {
+      "level": 3,
+      "title": "`mojo`",
+      "anchor": "mojo"
+    },
+    {
+      "level": 3,
+      "title": "`mojo-compiler`",
+      "anchor": "mojo-compiler"
+    },
+    {
+      "level": 2,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "GPU compatibility",
+      "anchor": "gpu-compatibility"
+    }
+  ]
+}
