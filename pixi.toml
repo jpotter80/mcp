@@ -10,8 +10,8 @@ generate-embeddings = "python embedding/generate_embeddings.py"
 consolidate = "python embedding/consolidate_data.py"
 load = "python embedding/load_to_ducklake.py"
 index = "python embedding/create_indexes.py"
-search = "python search.py"
-mcp-dev = "mcp dev mcp_server/server.py"
+search = "python servers/mojo-manual-mcp/runtime/search.py"
+mcp-dev = "mcp dev servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
 # Phase 5: MCP-specific build tasks (Mojo) - Updated paths to shared/

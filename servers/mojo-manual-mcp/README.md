@@ -9,15 +9,13 @@ Searchable Mojo documentation via MCP (Model Context Protocol).
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-cd runtime
-python mojo_manual_mcp_server.py
+# Run the server
+mcp dev runtime/mojo_manual_mcp_server.py
 ```
 
 ### Option 2: With pixi
 ```bash
-pixi run mojo-build  # Rebuild database if needed
-cd runtime
-python mojo_manual_mcp_server.py
+pixi run mcp-dev
 ```
 
 ## Configure in VS Code
@@ -27,25 +25,26 @@ Add to VS Code settings.json:
 {
   "mcp.servers": {
     "mojo-docs": {
-      "type": "stdio",
       "command": "python3",
-      "args": ["/absolute/path/to/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"],
-      "cwd": "/absolute/path/to/mojo-manual-mcp/runtime",
+      "args": ["/absolute/path/to/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"],
+      "cwd": "/absolute/path/to/servers/mojo-manual-mcp/runtime",
       "env": {
-        "MOJO_DB_PATH": "/absolute/path/to/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
         "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-        "AUTO_START_MAX": "1"
+        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2"
       }
     }
   }
 }
 ```
 
-## Configuration Files
+## Configuration
 
-- `config/processing_config.yaml` — Document processing parameters (for rebuilding)
-- `config/server_config.yaml` — MCP server runtime parameters
+The server is configured via `config/server_config.yaml`.
+You can override settings using environment variables:
+- `MOJO_DB_PATH`: Path to the DuckDB database
+- `MAX_SERVER_URL`: URL for the MAX embeddings server
+- `EMBED_MODEL_NAME`: Model name for embeddings
+- `AUTO_START_MAX`: Set to "1" or "true" to auto-start MAX server
 
 ## Rebuilding the Database
 
