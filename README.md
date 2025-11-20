@@ -1,214 +1,275 @@
-# Documentation-to-MCP Pipeline
+# Multi-Server MCP Documentation Search
 
-A general-purpose system for converting technical documentation (Markdown/MDX) into searchable, vectorized MCP servers with hybrid search capabilities.
+A framework for building self-contained, searchable MCP servers from technical documentation. Create independent documentation servers with hybrid vector + keyword search, ready to distribute and deploy.
 
 ## 🎯 Project Overview
 
-This framework builds an end-to-end, reusable pipeline that:
+This framework enables you to:
 
-1. **Preprocesses** technical documentation (Markdown/MDX → clean, semantic chunks)
-2. **Generates** vector embeddings using sentence-transformers
-3. **Consolidates** data with quality filtering
-4. **Indexes** content using DuckDB with HNSW (vector) + FTS (keyword) search
-5. **Exposes** search via MCP for integration with LLM hosts (VS Code, MCP Inspector, etc.)
+1. **Build** searchable MCP servers from any Markdown/MDX documentation source
+2. **Search** with hybrid semantic (vector) + keyword (FTS) search via Reciprocal Rank Fusion
+3. **Distribute** self-contained servers as standalone repositories or packages
+4. **Deploy** to VS Code, Claude Desktop, or any MCP-compatible host
+5. **Scale** to multiple documentation sources with automated tooling
 
 ### Core Value Proposition
 
-- 🔍 **Hybrid Search**: Combines semantic (vector) and keyword (FTS) search via Reciprocal Rank Fusion
-- 📦 **MCP Native**: Exposes documentation as resources and tools for AI agents
-- 🚀 **Lightweight Runtime**: No heavy preprocessing needed to run the server
-- 🎛️ **Tunable Weights**: Adjust FTS/vector search weights for different query profiles
-- 💾 **Versioned Data**: DuckLake provides full history of document changes
-- 🔄 **Reusable Framework**: Apply to any Markdown/MDX documentation source
+- 🔍 **Hybrid Search**: Combines semantic similarity (HNSW) and keyword matching (BM25) intelligently
+- 📦 **Self-Contained Servers**: Each MCP server is fully standalone and distributable
+- 🚀 **Multi-Format Support**: Works with MDX, Markdown, and other documentation formats
+- 🎛️ **Config-Driven**: All paths and parameters controlled via YAML configuration
+- 💾 **Versioned Data**: DuckLake provides reproducible documentation snapshots
+- 🔄 **Automated Tooling**: Scripts for syncing, scaffolding, and building new servers
 
-## 📐 System Architecture
+## 📐 Multi-Server Architecture
+
+This project supports multiple independent MCP servers, each serving different documentation sources:
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    BUILD-TIME PIPELINE (Generic)                         │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  1. Preprocessing      2. Embeddings       3. Consolidation              │
-│  (MDX/MD → Chunks) →   (Chunks → Vectors) →  (Merge → Parquet)          │
-│                                                                           │
-│       ↓                      ↓                      ↓                     │
-│  processed_docs/        embeddings/          {project}_embeddings.parquet
-│  chunks/               *.jsonl                                           │
-│                                                                           │
-│  4. Data Lake          5. Indexing                                       │
-│  (Versioning)    →     (DB Materialization)                             │
-│       ↓                      ↓                                           │
-│  {project}_              main.db                                        │
-│  catalog.ducklake        (HNSW + FTS indexes)                           │
-│                                                                           │
-└─────────────────────────────────────────────────────────────────────────┘
-                                 ↓
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    RUNTIME INFRASTRUCTURE (Generic)                      │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                           │
-│  Embedding Server       Search Engine        MCP Server                  │
-│  (Local LLM/MAX)   ←→   (Hybrid Search)  ←→  (Resource/Tool API)        │
-│  localhost:8000         search.py            mcp_server/server.py       │
-│  [openai-compat]        [DuckDB + RRF]       [stdio or inspect]         │
-│                                                                           │
-└─────────────────────────────────────────────────────────────────────────┘
+/home/james/mcp/
+├── servers/                          # Standalone MCP servers
+│   ├── mojo-manual-mcp/              # Mojo documentation server
+│   │   ├── runtime/                  # Server code + indexed database
+│   │   │   ├── mojo_manual_mcp_server.py
+│   │   │   ├── search.py
+│   │   │   └── mojo_manual_mcp.db
+│   │   ├── config/                   # YAML configuration
+│   │   │   ├── processing_config.yaml
+│   │   │   └── server_config.yaml
+│   │   ├── requirements.txt
+│   │   └── README.md
+│   │
+│   └── [future-servers]/             # DuckDB, Python, etc.
+│
+├── shared/                           # Build-time infrastructure (dev only)
+│   ├── preprocessing/                # Document processing pipeline
+│   ├── embedding/                    # Embedding generation scripts
+│   ├── templates/                    # Templates for new servers
+│   └── build/                        # Ephemeral build artifacts
+│
+├── source-documentation/             # Documentation sources
+│   ├── mojo/manual/                  # Mojo docs (MDX files)
+│   └── [other-sources]/
+│
+└── tools/                            # Automation scripts
+    ├── sync_documentation.sh         # Sync from upstream repos
+    ├── scaffold_new_mcp.sh           # Create new server structure
+    └── build_mcp.sh                  # Build server database
 ```
 
-**Example**: The Mojo documentation instantiation uses this same pipeline with `manual/*.mdx` as input.
+**Key Design Principles**:
+- Each server in `/servers/{name}/` is completely self-contained and distributable
+- Shared build infrastructure in `/shared/` is for development only (not packaged with servers)
+- All configuration is YAML-based with variable substitution (no hardcoded paths)
+- Multi-format support via pluggable processor architecture
+- Works with or without pixi (pip + venv supported)
 
 ## 🚀 Quick Start
 
-### Minimal Runtime Setup (No Preprocessing)
+Get the Mojo documentation MCP server running in 3 steps:
 
-If you have a pre-built search database (`main.db`):
+### Option 1: Using Pixi (Recommended)
 
 ```bash
-# 1. Start embedding server (MAX or compatible OpenAI-like endpoint)
+# 1. Clone and install dependencies
+git clone <your-repo-url>
+cd mcp
+pixi install
+
+# 2. Start MAX embedding server (if not already running)
 pixi run max-serve
 
-# 2. In another terminal, run MCP server
-pixi run mcp-dev
-# or
-python mcp_server/server.py
+# 3. Use the MCP server
+pixi run mcp-dev  # Opens MCP Inspector
+# or add to VS Code config (see Configuration section below)
 ```
 
-See **[RUNTIME.md](RUNTIME.md)** for detailed setup.
-
-### Full Pipeline (Build from Documentation)
-
-Example with Mojo documentation:
+### Option 2: Using Python venv
 
 ```bash
-pixi run process                # Step 1: Clean & chunk MDX/MD
-pixi run generate-embeddings    # Step 2: Create embeddings
-pixi run consolidate            # Step 3: Merge & filter
-pixi run load                   # Step 4: Version in DuckLake
-pixi run index                  # Step 5: Materialize & index
+# 1. Clone and setup
+git clone <your-repo-url>
+cd mcp
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r servers/mojo-manual-mcp/requirements.txt
+
+# 2. Run the MCP server
+python servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py
 ```
 
-See **[PREPROCESSING.md](PREPROCESSING.md)** for detailed pipeline info and configuration.
+**Note**: Pre-built databases are included in the repository. No build step required to run the server.
 
-## 📋 Documentation
+📖 **Detailed guides**: See [`docs/QUICKSTART.md`](docs/QUICKSTART.md) for complete setup instructions.
+
+## ⚙️ VS Code Configuration
+
+Add the Mojo MCP server to your VS Code settings:
+
+```json
+{
+  "mcpServers": {
+    "mojo-docs": {
+      "command": "python",
+      "args": [
+        "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
+      ],
+      "env": {
+        "MOJO_DB_PATH": "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
+        "MAX_SERVER_URL": "http://localhost:8000/v1",
+        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
+        "AUTO_START_MAX": "1"
+      }
+    }
+  }
+}
+```
+
+**Environment Variables**:
+- `MOJO_DB_PATH`: Path to the indexed database
+- `MAX_SERVER_URL`: Embedding server endpoint (automatically started if `AUTO_START_MAX=1`)
+- `EMBED_MODEL_NAME`: Sentence transformer model name
+- `AUTO_START_MAX`: Set to `1` to auto-start MAX server (recommended)
+
+📖 **More details**: See [`docs/USING_MCP_SERVER.md`](docs/USING_MCP_SERVER.md)
+
+## 🏗️ Building from Source
+
+If you want to rebuild the database from scratch or create a new MCP server:
+
+### Rebuild Mojo Server
+
+```bash
+# Full pipeline (all steps)
+pixi run mojo-build
+
+# Or step-by-step
+pixi run mojo-process              # Process documentation
+pixi run mojo-generate-embeddings  # Generate vectors
+pixi run mojo-consolidate          # Consolidate data
+pixi run mojo-load                 # Load to DuckLake
+pixi run mojo-index                # Create indexes
+```
+
+### Create a New MCP Server
+
+```bash
+# 1. Scaffold new server structure
+./tools/scaffold_new_mcp.sh --name duckdb --doc-type docs --format markdown
+
+# 2. Add documentation to source-documentation/duckdb/docs/
+
+# 3. Build the server
+./tools/build_mcp.sh --mcp-name duckdb
+
+# 4. Test the server
+python servers/duckdb-docs-mcp/runtime/duckdb_docs_mcp_server.py
+```
+
+📖 **Developer guides**: 
+- [`docs/SETUP_PIXI.md`](docs/SETUP_PIXI.md) - Full pixi-based development setup
+- [`docs/SETUP_VENV.md`](docs/SETUP_VENV.md) - Setup without pixi
+- [`docs/CREATING_NEW_MCP.md`](docs/CREATING_NEW_MCP.md) - Create new servers
+
+## 📋 Available Servers
+
+Currently implemented:
+
+| Server | Documentation Source | Format | Status |
+|--------|---------------------|--------|--------|
+| **mojo-manual-mcp** | [Mojo Manual](https://docs.modular.com/mojo/manual) | MDX | ✅ Production |
+
+Coming soon:
+- **duckdb-docs-mcp** - DuckDB documentation
+- **python-docs-mcp** - Python standard library
+- **vscode-api-mcp** - VS Code extension API
+
+## 📚 Documentation
+
+### For Users
 
 | Document | Purpose |
 |----------|---------|
-| [README.md](README.md) | **You are here** — Project overview & quick links |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Deep dive into design, components, data formats, and principles |
-| [PREPROCESSING.md](PREPROCESSING.md) | Build-time: chunking strategy, configuration, quality assurance |
-| [RUNTIME.md](RUNTIME.md) | Deployment: MCP server setup, MAX embeddings, environment config |
-| [DEVELOPMENT.md](DEVELOPMENT.md) | Dev workflows: full task reference, testing, troubleshooting |
+| [QUICKSTART.md](docs/QUICKSTART.md) | Get started in 5 minutes |
+| [SETUP_PIXI.md](docs/SETUP_PIXI.md) | Complete setup with pixi |
+| [SETUP_VENV.md](docs/SETUP_VENV.md) | Setup without pixi (venv) |
+| [USING_MCP_SERVER.md](docs/USING_MCP_SERVER.md) | Using servers in VS Code/IDEs |
+
+### For Developers
+
+| Document | Purpose |
+|----------|---------|
+| [CREATING_NEW_MCP.md](docs/CREATING_NEW_MCP.md) | Create new MCP servers |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design and architecture |
+| [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Contribution guidelines |
+| [tools/README.md](tools/README.md) | Automation scripts reference |
 
 ## 🛠️ Key Technologies
 
-- **Python 3.12+** — Preprocessing and runtime
-- **DuckDB** — Vector similarity search (HNSW) + full-text search (FTS)
-- **DuckLake** — Versioned data lake for reproducibility
-- **MAX** — Local sentence-transformers embeddings server
+- **Python 3.10+** — Core language for preprocessing and runtime
+- **DuckDB** — Vector similarity search (HNSW) + full-text search (BM25)
+- **DuckLake** — Versioned data lake for reproducible builds
+- **MAX** — Local sentence-transformers embedding server
 - **MCP** — Model Context Protocol for AI agent integration
-- **Pixi** — Python package and task management
+- **Pixi** — Package management and task automation (optional)
 
-## 💾 Storage Architecture
+## 🎓 How It Works
+
+### Build Pipeline
+
+1. **Preprocessing**: MDX/Markdown → cleaned chunks (~350-400 tokens, preserving structure)
+2. **Embeddings**: Chunks → 768-dimensional vectors via sentence-transformers
+3. **Consolidation**: Merge chunks + embeddings into consolidated Parquet dataset
+4. **Versioning**: Load into DuckLake for version-controlled data lake
+5. **Indexing**: Materialize into DuckDB with HNSW (vector) + FTS (keyword) indexes
+
+### Runtime Search
+
+- **Vector Search (HNSW)**: Semantic similarity matching via cosine distance
+- **Keyword Search (FTS/BM25)**: Exact phrase and term matching with field weighting
+- **Hybrid Fusion (RRF)**: Reciprocal Rank Fusion combines both rankings intelligently
+- **Graceful Fallback**: If MAX server unavailable, falls back to keyword-only search
+
+### Example Query Flow
 
 ```
-Runtime Artifacts:
-├── main.db                          # DuckDB with HNSW + FTS indexes
-├── search.py                        # Hybrid search engine
-├── mcp_server/server.py             # MCP resource/tool interface
-└── requirements.txt (via pixi)      # Dependencies
-
-Build Artifacts (processed_docs/):
-├── chunks/                          # JSONL per document
-├── embeddings/                      # Vector embeddings
-├── metadata/                        # Document metadata
-├── raw/                             # Clean text
-└── manifest.json                    # Processing summary
-
-Versioning:
-└── {project}_catalog.ducklake       # DuckLake versioned tables
+User: "How do I declare a variable in Mojo?"
+  ↓
+1. Query embedding generated via MAX server
+2. Vector search finds semantically similar chunks
+3. Keyword search finds chunks with "declare" + "variable"
+4. RRF fusion combines results
+5. Top 5 chunks returned with snippets + URLs
+  ↓
+Response: Relevant documentation sections with context
 ```
 
-**Note**: Each documentation source gets its own `processed_docs/` and DuckLake catalog. The Mojo example uses `mojo_catalog.ducklake`.
+## 🤝 Contributing
 
-## 🎓 Understanding the System
-
-### Data Flow Example (Mojo Documentation)
-
-1. **Input**: `manual/basics.mdx` (MDX with frontmatter, JSX, code blocks)
-2. **After Preprocessing**: 12 chunks (~350–400 tokens each) with section hierarchy
-3. **After Embeddings**: Each chunk has a 768-dimensional vector
-4. **After Indexing**: DuckDB table `mojo_docs_indexed` with HNSW + FTS indexes ready for search
-5. **Query Time**: "How do I declare a variable?" → hybrid search → top 5 results with snippets + URLs
-
-### Search Behavior
-
-- **Vector Search**: Finds semantically similar content (e.g., "variable declaration" ≈ "how to define a variable")
-- **Keyword Search**: Matches exact phrases and terms (e.g., "declare" + "variable")
-- **RRF Fusion**: Combines rankings intelligently; tunable weights favor one or the other
-- **Fallback**: If embeddings unavailable, gracefully falls back to keyword-only search
-
-### Generic Adaptation
-
-To use this pipeline with different documentation:
-
-1. Update `preprocessing/config/processing_config.yaml` to point to your source directory
-2. Adjust chunking parameters for your documentation style
-3. Run the full pipeline (`pixi run process` → `pixi run index`)
-4. Create a project-specific `mcp_server/server.py` or adapt the generic one
-
-## 🔄 Workflow Overview
-
-| Phase | Input | Output | Time | Repeatability |
-|-------|-------|--------|------|---------------|
-| Preprocessing | Markdown/MDX files | `processed_docs/chunks/` | 1–2 min | Always deterministic |
-| Embeddings | Chunks | Vector embeddings | 5–10 min | Deterministic (same model) |
-| Consolidation | Embeddings + chunks | Parquet dataset | <1 min | Deterministic |
-| Data Lake | Parquet | Versioned table | <1 min | Append/upsert |
-| Indexing | Versioned table | Indexed DuckDB | 1–2 min | Full refresh each time |
-| **Runtime** | **main.db** | **Search results** | **<100ms** | **Stable** |
-
-## 🎛️ Configuration & Tuning
-
-All major components are configurable:
-
-- **Preprocessing**: `preprocessing/config/processing_config.yaml` — chunk size, overlap, JSX handling
-- **Embeddings**: `MAX_SERVER_URL`, `EMBED_MODEL_NAME` environment variables
-- **Search Weights**: `--fts-weight` and `--vss-weight` CLI flags in `search.py`
-- **Runtime**: `MOJO_DB_PATH`, `MOJO_TABLE_NAME` environment variables
-
-See **[DEVELOPMENT.md](DEVELOPMENT.md)** for complete reference.
-
-## ✅ Status & Next Steps
-
-### Current State
-- ✅ Generic preprocessing pipeline established and tested (with Mojo as proof-of-concept)
-- ✅ Embedding generation with MAX/OpenAI-compatible servers working
-- ✅ DuckDB indexing with HNSW + FTS functional
-- ✅ MCP server exposing resources and tools
-- ✅ Hybrid search with RRF fusion implemented
-
-### Known Improvements (Future)
-- 📋 Enhanced code-fence–aware chunking (preserve code blocks better)
-- 📋 Richer section hierarchy and URL generation
-- 📋 Token-based quality filtering in consolidation
-- 📋 Optional full-refresh mode for DuckLake upserts
-- 📋 Multi-documentation support (simultaneous MCP servers for different docs)
-
-## 📚 Learning More
-
-- **System deep dive**: Read [ARCHITECTURE.md](ARCHITECTURE.md)
-- **Set up build pipeline**: Follow [PREPROCESSING.md](PREPROCESSING.md)
-- **Deploy to production**: Follow [RUNTIME.md](RUNTIME.md)
-- **Development & debugging**: See [DEVELOPMENT.md](DEVELOPMENT.md)
+We welcome contributions! Please see [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for:
+- Code of conduct
+- Development workflow
+- Pull request process
+- Adding new MCP servers
+- Reporting issues
 
 ## 🔗 External Resources
 
-- [DuckDB Documentation](https://duckdb.org/docs)
-- [DuckDB Vector Similarity Search (VSS)](https://duckdb.org/docs/extensions/vss)
-- [Model Context Protocol](https://modelcontextprotocol.io)
-- [Mojo Documentation](https://docs.modular.com/mojo/manual)
+- [Model Context Protocol](https://modelcontextprotocol.io) - MCP specification
+- [DuckDB Documentation](https://duckdb.org/docs) - Database engine docs
+- [DuckDB VSS Extension](https://duckdb.org/docs/extensions/vss) - Vector similarity search
+- [MAX Documentation](https://github.com/modularml/max) - Embedding server
+- [Mojo Documentation](https://docs.modular.com/mojo/manual) - Example documentation source
+
+## 📄 License
+
+[Add your license here]
+
+## 🙏 Acknowledgments
+
+Built with inspiration from the Model Context Protocol community and powered by open-source tools.
 
 ---
 
 **Last Updated**: November 2025  
-**Status**: Stable (build pipeline complete, runtime ready)
+**Status**: Production Ready (v2.0 - Multi-Server Architecture)
