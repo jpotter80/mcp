@@ -1,0 +1,35 @@
+# MCP Server Runtime Configuration for {{DOC_TYPE_TITLE}}
+# This file defines database paths, embedding server, and search parameters
+
+server:
+  # MCP server identifier and description
+  name: "{{TOOL_NAME}}-docs"
+  description: "{{DOC_TYPE_TITLE}} documentation search via hybrid semantic/keyword search"
+
+database:
+  # Path to indexed DuckDB database (relative to runtime directory)
+  path: "${SERVER_ROOT}/runtime/{{MCP_NAME}}.db"
+  table_name: "{{MCP_NAME}}_indexed"
+  # DuckLake catalog for versioning (if using version history)
+  ducklake_catalog: "${SERVER_ROOT}/runtime/{{MCP_NAME}}_catalog.ducklake"
+
+embedding:
+  # Embedding server endpoint (MAX or OpenAI-compatible)
+  max_server_url: "http://localhost:8000/v1"
+  model_name: "sentence-transformers/all-mpnet-base-v2"
+  # Auto-start MAX if endpoint unavailable
+  auto_start: true
+  auto_start_timeout: 30
+
+search:
+  # Number of results to return by default
+  top_k: 5
+  # Full-text search field weights (title boosted)
+  fts_title_weight: 2.0
+  fts_content_weight: 1.0
+  # LRU cache size for query embeddings
+  embed_cache_size: 512
+
+  # Debug flags (set to false in production)
+  debug_explain_vss: false
+  debug_log_fts_path: false
