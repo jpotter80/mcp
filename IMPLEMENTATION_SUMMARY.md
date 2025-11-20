@@ -199,38 +199,54 @@ search:
 
 ## Implementation Phases (8 Total)
 
-### Phase 1: Directory Structure & Config
+### Phase 1: Directory Structure & Config ✅ Complete
 - Create directory hierarchy
 - Add .gitignore patterns
 - Create config templates
 - **Branch**: `restructure/01-directory-structure-and-config`
 
-### Phases 2-3: Multi-Format & Parameterization
+### Phase 2: Multi-Format Support ✅ Complete
 - Create pluggable processor factory
-- Add CLI arguments to scripts
+- BaseDocumentProcessor and format-specific processors
+- **Branch**: `restructure/02-multi-format-doc-support`
+
+### Phase 3: Parameterization ✅ Complete
+- Add CLI arguments to embedding scripts
 - YAML config loading with variable substitution
+- **Branch**: `restructure/03-parameterize-build-scripts`
 
-### Phase 4-5: Move Infrastructure & Organize Mojo
+### Phase 4: Config Loader Integration ✅ Complete
+- Integrate config_loader into preprocessing pipeline
+- Variable substitution working
+- **Branch**: `restructure/04-config-loader-integration`
+
+### Phase 5: Move Build Infrastructure ✅ Complete
 - Move build code to `/shared/`
-- Organize Mojo server in `/servers/mojo-manual-mcp/`
+- Update all imports and paths
+- **Branch**: `restructure/05-move-build-infrastructure`
 
-### Phase 6: Organize Mojo Server Structure (✅ Complete)
+### Phase 6: Organize Mojo Server ✅ Complete
+- Move runtime files to `servers/mojo-manual-mcp/runtime/`
+- Clean up root-level artifacts
+- Verify search and server functionality
 - **Branch**: `feature/phase-6-server-structure`
-- **Goal**: Organize Mojo server files and cleanup root.
-- **Tasks**:
-  - Move `search.py` and `server.py` to `servers/mojo-manual-mcp/runtime/`.
-  - Rename `server.py` to `mojo_manual_mcp_server.py`.
-  - Update `mojo_manual_mcp_server.py` to use `shared.config_loader` and fix imports.
-  - Clean up root-level artifacts (`main.db`, `mojo_catalog.ducklake`, etc.).
-  - Verify search and server functionality.
 
-### 7. **Phase 7: Tooling & Automation** (Next)
-- Create helper scripts (build, scaffold, sync)
-- Move docs, create guides
+### Phase 7: Tooling & Automation ✅ Complete
+- **Branch**: `restructure/07-tooling-and-automation`
+- **Deliverables**:
+  - Templates in `shared/templates/` (search, server, configs, requirements, README)
+  - Automation scripts in `tools/`:
+    - `sync_documentation.sh` — Sync docs from upstream repos
+    - `scaffold_new_mcp.sh` — Generate new MCP server structure
+    - `build_mcp.sh` — Build MCP server database pipeline
+  - Comprehensive documentation for all tools
+  - All scripts tested and working
 
-### Phase 8: Cleanup & Testing
-- Final validation
-- Test both pixi and non-pixi workflows
+### Phase 8: Final Documentation & Cleanup (Next)
+- Update main README.md
+- Create user guides (QUICKSTART, SETUP_PIXI, SETUP_VENV)
+- Final validation of all components
+- Test non-pixi workflows
 
 ---
 
