@@ -4,7 +4,7 @@ Searchable Mojo documentation via MCP (Model Context Protocol). This server is s
 
 ## Quick Start
 
-### Option 1: With Pixi (Recommended)
+### With Pixi (Recommended)
 
 ```bash
 # Clone the repo and navigate to the server directory
