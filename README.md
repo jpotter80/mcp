@@ -96,7 +96,7 @@ Add the Mojo-Manual MCP server, by adding the config to your VS Code settings vi
 ```
 
 # 3. From the mcp.json file in VS Code, if properly configured, the server will show a start button to launch the server. From then on, VS Code will manage starting/stopping the server as needed.
-```
+
 
 
 **Note**: Pre-built databases are included in the repository. No build step required to run the server.
@@ -184,7 +184,7 @@ Coming soon:
 
 ### Example Query Flow
 
-```
+
 User: "How do I declare a variable in Mojo?"
   ↓
 1. Query embedding generated via MAX server
@@ -194,7 +194,7 @@ User: "How do I declare a variable in Mojo?"
 5. Top 5 chunks returned with snippets + URLs
   ↓
 Response: Relevant documentation sections with context
-```
+
 
 ## 🔗 External Resources
 
@@ -207,7 +207,7 @@ Response: Relevant documentation sections with context
 ## 📄 License
 
  Copyright 2025 James Potter
-
+ 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
