@@ -16,10 +16,10 @@ max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
 # Phase 5: MCP-specific build tasks (Mojo) - Updated paths to shared/
 mojo-process = "python -m shared.preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml"
-mojo-generate-embeddings = "python shared/embedding/generate_embeddings.py --mcp-name mojo --config servers/mojo-manual-mcp/config/processing_config.yaml"
-mojo-consolidate = "python shared/embedding/consolidate_data.py --mcp-name mojo"
-mojo-load = "python shared/embedding/load_to_ducklake.py --mcp-name mojo"
-mojo-index = "python shared/embedding/create_indexes.py --mcp-name mojo"
+mojo-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name mojo --config servers/mojo-manual-mcp/config/processing_config.yaml"
+mojo-consolidate = "python -m shared.embedding.consolidate_data --mcp-name mojo"
+mojo-load = "python -m shared.embedding.load_to_ducklake --mcp-name mojo"
+mojo-index = "python -m shared.embedding.create_indexes --mcp-name mojo"
 
 mojo-build = """
 pixi run mojo-process && \
@@ -43,7 +43,7 @@ generate-embeddings-mojo = "python shared/embedding/generate_embeddings.py --mcp
 python = "==3.12.3"
 openai = ">=2.3.0,<3"
 duckdb = ">=1.4.1,<2"
-modular = "==25.6"
+modular = ">=26.1.0.dev2025112105,<27"
 tiktoken = ">=0.12.0,<0.13"
 python-frontmatter = ">=1.1.0,<2"
 pyyaml = ">=6.0.3,<7"

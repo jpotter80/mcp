@@ -5,20 +5,20 @@
   "file_name": "life.mdx",
   "file_stem": "life",
   "file_path": "lifecycle/life.mdx",
-  "file_size": 24393,
+  "file_size": 24385,
   "document_id": "lifecycle-life",
   "url": "https://docs.modular.com/mojo/manual/lifecycle/life",
-  "content_hash": "2dc1c5d1e33a0c05ba98b889a0260b70",
+  "content_hash": "f2f50123c78f13e21c0383c42ecf9cc9",
   "statistics": {
-    "char_count": 23573,
-    "word_count": 3515,
+    "char_count": 23565,
+    "word_count": 3516,
     "line_count": 663,
     "paragraph_count": 150,
     "header_count": 14,
     "code_block_count": 28,
     "code_lines": 181
   },
-  "processed_at": "2025-11-17T14:45:49.501007",
+  "processed_at": "2025-11-21T13:24:16.701218",
   "sections": [
     {
       "level": 2,

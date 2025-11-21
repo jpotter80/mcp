@@ -4,20 +4,20 @@
   "file_name": "traits.mdx",
   "file_stem": "traits",
   "file_path": "traits.mdx",
-  "file_size": 25865,
+  "file_size": 25852,
   "document_id": "traits",
   "url": "https://docs.modular.com/mojo/manual/traits",
-  "content_hash": "1d0b102ac59ad1a0ff035989d237d416",
+  "content_hash": "51cd8f3e1d539c449384bd433d02fbbe",
   "statistics": {
-    "char_count": 25252,
-    "word_count": 3325,
+    "char_count": 25239,
+    "word_count": 3329,
     "line_count": 765,
     "paragraph_count": 176,
     "header_count": 24,
     "code_block_count": 35,
     "code_lines": 391
   },
-  "processed_at": "2025-11-17T14:45:50.028567",
+  "processed_at": "2025-11-21T13:24:17.228475",
   "sections": [
     {
       "level": 2,

@@ -5,20 +5,20 @@
   "file_name": "operators.mdx",
   "file_stem": "operators",
   "file_path": "operators.mdx",
-  "file_size": 54485,
+  "file_size": 54486,
   "document_id": "operators",
   "url": "https://docs.modular.com/mojo/manual/operators",
-  "content_hash": "a1458da1bc2223e2fd6ce1146128138a",
+  "content_hash": "08033743fa361090d12f957e84e2ffe2",
   "statistics": {
-    "char_count": 52758,
-    "word_count": 7853,
-    "line_count": 1618,
-    "paragraph_count": 337,
+    "char_count": 52800,
+    "word_count": 7866,
+    "line_count": 1610,
+    "paragraph_count": 334,
     "header_count": 43,
     "code_block_count": 102,
-    "code_lines": 610
+    "code_lines": 598
   },
-  "processed_at": "2025-11-17T14:45:49.563067",
+  "processed_at": "2025-11-21T13:24:16.761625",
   "sections": [
     {
       "level": 2,

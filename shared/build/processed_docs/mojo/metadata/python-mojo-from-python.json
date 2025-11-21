@@ -6,20 +6,20 @@
   "file_name": "mojo-from-python.mdx",
   "file_stem": "mojo-from-python",
   "file_path": "python/mojo-from-python.mdx",
-  "file_size": 22912,
+  "file_size": 22951,
   "document_id": "python-mojo-from-python",
   "url": "https://docs.modular.com/mojo/manual/python/mojo-from-python",
-  "content_hash": "a5aee9ae163b6109e0ae543cf5fa808e",
+  "content_hash": "640efb174d3d657054a773460b92ecbc",
   "statistics": {
-    "char_count": 21940,
-    "word_count": 2743,
-    "line_count": 666,
+    "char_count": 21961,
+    "word_count": 2747,
+    "line_count": 670,
     "paragraph_count": 167,
     "header_count": 19,
     "code_block_count": 32,
     "code_lines": 230
   },
-  "processed_at": "2025-11-17T14:45:49.915829",
+  "processed_at": "2025-11-21T13:24:17.117540",
   "sections": [
     {
       "level": 2,

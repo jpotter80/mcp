@@ -5,20 +5,20 @@
   "file_name": "tensors.mdx",
   "file_stem": "tensors",
   "file_path": "layout/tensors.mdx",
-  "file_size": 26808,
+  "file_size": 27643,
   "document_id": "layout-tensors",
   "url": "https://docs.modular.com/mojo/manual/layout/tensors",
-  "content_hash": "15981434c8836efc48db61faef3ae0a2",
+  "content_hash": "56279d1fbe8f0298f0feee4c78c3739f",
   "statistics": {
-    "char_count": 25822,
-    "word_count": 3624,
-    "line_count": 680,
-    "paragraph_count": 156,
+    "char_count": 26528,
+    "word_count": 3733,
+    "line_count": 698,
+    "paragraph_count": 154,
     "header_count": 20,
-    "code_block_count": 18,
-    "code_lines": 181
+    "code_block_count": 17,
+    "code_lines": 200
   },
-  "processed_at": "2025-11-17T14:45:49.388564",
+  "processed_at": "2025-11-21T13:24:16.590701",
   "sections": [
     {
       "level": 2,

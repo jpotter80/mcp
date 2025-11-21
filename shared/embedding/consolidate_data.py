@@ -1,16 +1,17 @@
 import os
 import sys
+from pathlib import Path
+
+# Add project root to path BEFORE any shared imports
+_project_root = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(_project_root))
+
 import json
 import argparse
 import pandas as pd
-from pathlib import Path
 from tqdm import tqdm
 
 from shared.config_loader import load_config_with_substitution
-
-# Add project root to path to import shared module
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(project_root))
 
 
 

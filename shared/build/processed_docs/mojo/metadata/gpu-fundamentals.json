@@ -5,29 +5,29 @@
   "file_name": "fundamentals.mdx",
   "file_stem": "fundamentals",
   "file_path": "gpu/fundamentals.mdx",
-  "file_size": 31173,
+  "file_size": 31575,
   "document_id": "gpu-fundamentals",
   "url": "https://docs.modular.com/mojo/manual/gpu/fundamentals",
-  "content_hash": "594950ba6869cbb66c9f9226858b819b",
+  "content_hash": "7168e10655b11b69eb696219d1a03c52",
   "statistics": {
-    "char_count": 30185,
-    "word_count": 3977,
-    "line_count": 720,
+    "char_count": 30528,
+    "word_count": 4005,
+    "line_count": 722,
     "paragraph_count": 142,
     "header_count": 21,
-    "code_block_count": 15,
-    "code_lines": 390
+    "code_block_count": 14,
+    "code_lines": 399
   },
-  "processed_at": "2025-11-17T14:45:49.163491",
+  "processed_at": "2025-11-21T13:24:16.367750",
   "sections": [
     {
       "level": 2,
-      "title": "Overview of GPU Programming in Mojo",
+      "title": "Overview of GPU programming in Mojo",
       "anchor": "overview-of-gpu-programming-in-mojo"
     },
     {
       "level": 3,
-      "title": "GPU support in the Mojo Standard Library",
+      "title": "GPU support in the Mojo standard library",
       "anchor": "gpu-support-in-the-mojo-standard-library"
     },
     {

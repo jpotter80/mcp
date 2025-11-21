@@ -105,7 +105,7 @@ keyword. Note that the `quack()` method signature is followed three dots
 (`...`), which indicates it isn't implemented. This is a *required method*
 that must be implemented by any conforming struct.
 
-A trait can also supply a default implementations for a required method, so
+A trait can also supply a default implementation for a required method, so
 that conforming structs don't need to implement it. For more information, see
 [Default method implementations](#default-method-implementations).
 
@@ -242,11 +242,11 @@ that you *must* implement listed as *required methods*, and methods that have
 default implementations listed as *provided methods*.
 
 The
-[`EqualityComparable`](/mojo/stdlib/builtin/equality_comparable/EqualityComparable/)
+[`Equatable`](/mojo/stdlib/builtin/equality_comparable/Equatable/)
 trait is a good example of the use case for default implementations. The trait
 includes two methods: `__eq__()` (corresponding to the `==` operator) and
 `__ne__()` (corresponding to the `!=` operator). Every type that conforms to
-`EqualityComparable` needs to define the `__eq__()` method for itself, but the
+`Equatable` needs to define the `__eq__()` method for itself, but the
 trait supplies a default implementation for `__ne__()`. Given an `__eq__()`
 method, the definition of `__ne__()` is trivial for most types:
 
@@ -630,7 +630,7 @@ needs to copy a value, the compiler needs to verify that the type can be copied.
 
 The [`List`](/mojo/stdlib/collections/list) type is an example of a
 generic container. A single `List` can only hold a single type of data.
-The list elments must conform to the `Copyable` and `Movable` traits:
+The list elements must conform to the `Copyable` and `Movable` traits:
 
 ```mojo
 struct List[T: Copyable & Movable]:
@@ -680,7 +680,7 @@ struct Doublespeak(Repeater):
  alias count: Int = 2
 
 struct Multispeak[verbosity: Int](Repeater):
- alias count: Int = verbosity*2+1
+ alias count: Int = Self.verbosity * 2 + 1
 ```
 
 The `Doublespeak` struct has a constant value for the alias, but the `Multispeak`
@@ -719,7 +719,7 @@ underlying storage:
 ```mojo
 struct MyStack[type: Copyable & Movable](Stacklike):
  """A simple Stack built using a List."""
- alias EltType = type
+ alias EltType = Self.type
  alias list_type = List[Self.EltType]
 
  var list: Self.list_type

@@ -5,25 +5,25 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "index.mdx",
-  "file_size": 5065,
+  "file_size": 5063,
   "document_id": "index",
   "url": "https://docs.modular.com/mojo/manual/index",
-  "content_hash": "0b9426066a60a182b111912e82696b9f",
+  "content_hash": "736ac5abbd40ae22ba236cfec2537c1e",
   "statistics": {
-    "char_count": 4573,
-    "word_count": 612,
+    "char_count": 4571,
+    "word_count": 611,
     "line_count": 112,
     "paragraph_count": 22,
     "header_count": 4,
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-11-17T14:45:49.318339",
+  "processed_at": "2025-11-21T13:24:16.523663",
   "sections": [
     {
       "level": 2,
-      "title": "What is Mojo",
-      "anchor": "what-is-mojo"
+      "title": "About Mojo",
+      "anchor": "about-mojo"
     },
     {
       "level": 2,

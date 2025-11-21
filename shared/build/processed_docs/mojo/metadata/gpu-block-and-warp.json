@@ -1,0 +1,230 @@
+{
+  "title": "GPU block and warp operations and synchronization",
+  "sidebar_label": "Block and warp operations and synchronization",
+  "description": "A description of GPU block and warp operations and synchronization.",
+  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/gpu-block-and-warp",
+  "file_name": "block-and-warp.mdx",
+  "file_stem": "block-and-warp",
+  "file_path": "gpu/block-and-warp.mdx",
+  "file_size": 46678,
+  "document_id": "gpu-block-and-warp",
+  "url": "https://docs.modular.com/mojo/manual/gpu/block-and-warp",
+  "content_hash": "e47a1783cd9cab1dc5b3ec3c64a2df4b",
+  "statistics": {
+    "char_count": 45563,
+    "word_count": 5846,
+    "line_count": 957,
+    "paragraph_count": 191,
+    "header_count": 41,
+    "code_block_count": 5,
+    "code_lines": 484
+  },
+  "processed_at": "2025-11-21T13:24:16.264248",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Block-level synchronization and operations",
+      "anchor": "block-level-synchronization-and-operations"
+    },
+    {
+      "level": 3,
+      "title": "The `barrier()` primitive",
+      "anchor": "the-barrier-primitive"
+    },
+    {
+      "level": 3,
+      "title": "Block-level reduction operations",
+      "anchor": "block-level-reduction-operations"
+    },
+    {
+      "level": 3,
+      "title": "Using block operations in practice",
+      "anchor": "using-block-operations-in-practice"
+    },
+    {
+      "level": 3,
+      "title": "Block synchronization example: tiled matrix multiplication",
+      "anchor": "block-synchronization-example-tiled-matrix-multiplication"
+    },
+    {
+      "level": 1,
+      "title": "GPU programming imports from open source stdlib",
+      "anchor": "gpu-programming-imports-from-open-source-stdlib"
+    },
+    {
+      "level": 1,
+      "title": "Layout tensor support from open source layout package",
+      "anchor": "layout-tensor-support-from-open-source-layout-package"
+    },
+    {
+      "level": 1,
+      "title": "Data type selection: float32 provides good balance of precision and performance",
+      "anchor": "data-type-selection-float32-provides-good-balance-of-precision-and-performance"
+    },
+    {
+      "level": 1,
+      "title": "Matrix dimensions: chosen to be small enough for easy understanding",
+      "anchor": "matrix-dimensions-chosen-to-be-small-enough-for-easy-understanding"
+    },
+    {
+      "level": 1,
+      "title": "while still demonstrating tiling concepts effectively",
+      "anchor": "while-still-demonstrating-tiling-concepts-effectively"
+    },
+    {
+      "level": 1,
+      "title": "Tile dimensions: chosen to fit comfortably in GPU shared memory",
+      "anchor": "tile-dimensions-chosen-to-fit-comfortably-in-gpu-shared-memory"
+    },
+    {
+      "level": 1,
+      "title": "and demonstrate clear blocking behavior",
+      "anchor": "and-demonstrate-clear-blocking-behavior"
+    },
+    {
+      "level": 1,
+      "title": "Derived constants",
+      "anchor": "derived-constants"
+    },
+    {
+      "level": 1,
+      "title": "LayoutTensor provides type-safe multi-dimensional data access with automatic memory layout handling",
+      "anchor": "layouttensor-provides-type-safe-multi-dimensional-data-access-with-automatic-memory-layout-handling"
+    },
+    {
+      "level": 1,
+      "title": "Layout definitions using example matrix dimensions",
+      "anchor": "layout-definitions-using-example-matrix-dimensions"
+    },
+    {
+      "level": 1,
+      "title": "Layout definitions for tile access",
+      "anchor": "layout-definitions-for-tile-access"
+    },
+    {
+      "level": 2,
+      "title": "Warp-level operations",
+      "anchor": "warp-level-operations"
+    },
+    {
+      "level": 3,
+      "title": "Warp-level synchronization",
+      "anchor": "warp-level-synchronization"
+    },
+    {
+      "level": 3,
+      "title": "Warp-level data exchange",
+      "anchor": "warp-level-data-exchange"
+    },
+    {
+      "level": 4,
+      "title": "Warp shuffle operations",
+      "anchor": "warp-shuffle-operations"
+    },
+    {
+      "level": 4,
+      "title": "Choosing the right shuffle primitive",
+      "anchor": "choosing-the-right-shuffle-primitive"
+    },
+    {
+      "level": 3,
+      "title": "Warp-level reduction operations",
+      "anchor": "warp-level-reduction-operations"
+    },
+    {
+      "level": 3,
+      "title": "Using warp operations in practice",
+      "anchor": "using-warp-operations-in-practice"
+    },
+    {
+      "level": 2,
+      "title": "Advanced synchronization mechanisms",
+      "anchor": "advanced-synchronization-mechanisms"
+    },
+    {
+      "level": 2,
+      "title": "Best practices and common pitfalls",
+      "anchor": "best-practices-and-common-pitfalls"
+    },
+    {
+      "level": 3,
+      "title": "Writing correct synchronized code",
+      "anchor": "writing-correct-synchronized-code"
+    },
+    {
+      "level": 4,
+      "title": "Understanding and avoiding race conditions",
+      "anchor": "understanding-and-avoiding-race-conditions"
+    },
+    {
+      "level": 1,
+      "title": "INCORRECT: Race condition",
+      "anchor": "incorrect-race-condition"
+    },
+    {
+      "level": 1,
+      "title": "CORRECT: Atomic increment",
+      "anchor": "correct-atomic-increment"
+    },
+    {
+      "level": 4,
+      "title": "Avoiding deadlocks with `barrier()`",
+      "anchor": "avoiding-deadlocks-with-barrier"
+    },
+    {
+      "level": 4,
+      "title": "When to use `syncwarp()`",
+      "anchor": "when-to-use-syncwarp"
+    },
+    {
+      "level": 1,
+      "title": "syncwarp() needed here because threads diverged before writing to shared memory",
+      "anchor": "syncwarp-needed-here-because-threads-diverged-before-writing-to-shared-memory"
+    },
+    {
+      "level": 1,
+      "title": "No syncwarp() needed - shuffle_down() synchronizes automatically via its mask",
+      "anchor": "no-syncwarp-needed-shuffle_down-synchronizes-automatically-via-its-mask"
+    },
+    {
+      "level": 4,
+      "title": "Handling shuffle boundary conditions",
+      "anchor": "handling-shuffle-boundary-conditions"
+    },
+    {
+      "level": 3,
+      "title": "Choosing the right synchronization level",
+      "anchor": "choosing-the-right-synchronization-level"
+    },
+    {
+      "level": 3,
+      "title": "Writing portable GPU code",
+      "anchor": "writing-portable-gpu-code"
+    },
+    {
+      "level": 3,
+      "title": "Debugging synchronization issues",
+      "anchor": "debugging-synchronization-issues"
+    },
+    {
+      "level": 2,
+      "title": "Conclusion and key takeaways",
+      "anchor": "conclusion-and-key-takeaways"
+    },
+    {
+      "level": 3,
+      "title": "Summary of primitives and patterns",
+      "anchor": "summary-of-primitives-and-patterns"
+    },
+    {
+      "level": 3,
+      "title": "The core mental model",
+      "anchor": "the-core-mental-model"
+    },
+    {
+      "level": 3,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

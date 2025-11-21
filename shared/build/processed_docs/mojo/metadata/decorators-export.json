@@ -5,20 +5,20 @@
   "file_name": "export.mdx",
   "file_stem": "export",
   "file_path": "decorators/export.mdx",
-  "file_size": 1243,
+  "file_size": 1274,
   "document_id": "decorators-export",
   "url": "https://docs.modular.com/mojo/manual/decorators/export",
-  "content_hash": "7ecc102b5398204743b6509408f5548a",
+  "content_hash": "f6063b1e26ce2ec2424ed3971462354a",
   "statistics": {
-    "char_count": 1142,
-    "word_count": 154,
-    "line_count": 36,
+    "char_count": 1167,
+    "word_count": 156,
+    "line_count": 39,
     "paragraph_count": 8,
     "header_count": 3,
     "code_block_count": 2,
-    "code_lines": 17
+    "code_lines": 20
   },
-  "processed_at": "2025-11-17T14:45:48.795751",
+  "processed_at": "2025-11-21T13:24:15.965935",
   "sections": [
     {
       "level": 1,

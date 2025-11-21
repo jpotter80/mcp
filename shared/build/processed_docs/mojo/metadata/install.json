@@ -4,10 +4,10 @@
   "file_name": "install.mdx",
   "file_stem": "install",
   "file_path": "install.mdx",
-  "file_size": 13226,
+  "file_size": 12792,
   "document_id": "install",
   "url": "https://docs.modular.com/mojo/manual/install",
-  "content_hash": "c69db48cc6c49ff17a45cedd1d19b3d0",
+  "content_hash": "4e67091b7891ef66351ab042eba9fd7c",
   "statistics": {
     "char_count": 5670,
     "word_count": 785,
@@ -17,7 +17,7 @@
     "code_block_count": 41,
     "code_lines": 99
   },
-  "processed_at": "2025-11-17T14:45:49.326607",
+  "processed_at": "2025-11-21T13:24:16.531387",
   "sections": [
     {
       "level": 2,

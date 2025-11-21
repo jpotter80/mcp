@@ -5,20 +5,20 @@
   "file_name": "lifetimes.mdx",
   "file_stem": "lifetimes",
   "file_path": "values/lifetimes.mdx",
-  "file_size": 14218,
+  "file_size": 16299,
   "document_id": "values-lifetimes",
   "url": "https://docs.modular.com/mojo/manual/values/lifetimes",
-  "content_hash": "66b46418e394d864f4f177754ab57e13",
+  "content_hash": "8730dfc7a6ae646c3a893a48581ae336",
   "statistics": {
-    "char_count": 13793,
-    "word_count": 1985,
-    "line_count": 443,
-    "paragraph_count": 114,
-    "header_count": 13,
-    "code_block_count": 21,
-    "code_lines": 106
+    "char_count": 15951,
+    "word_count": 2336,
+    "line_count": 463,
+    "paragraph_count": 118,
+    "header_count": 15,
+    "code_block_count": 18,
+    "code_lines": 89
   },
-  "processed_at": "2025-11-17T14:45:50.170037",
+  "processed_at": "2025-11-21T13:24:17.370840",
   "sections": [
     {
       "level": 2,
@@ -52,13 +52,23 @@
     },
     {
       "level": 4,
+      "title": "Origin unions",
+      "anchor": "origin-unions"
+    },
+    {
+      "level": 4,
       "title": "Inferred origins",
       "anchor": "inferred-origins"
     },
     {
       "level": 4,
-      "title": "Origin unions",
-      "anchor": "origin-unions"
+      "title": "External origins",
+      "anchor": "external-origins"
+    },
+    {
+      "level": 4,
+      "title": "Wildcard origins",
+      "anchor": "wildcard-origins"
     },
     {
       "level": 2,

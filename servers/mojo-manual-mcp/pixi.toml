@@ -1,0 +1,21 @@
+[project]
+name = "mojo-manual-mcp"
+version = "0.1.0"
+description = "MCP server for Mojo documentation with hybrid search"
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+serve = "cd runtime && python mojo_manual_mcp_server.py"
+
+[dependencies]
+python = ">=3.11,<3.13"
+duckdb = ">=1.4.1,<2"
+openai = ">=2.3.0,<3"
+numpy = ">=2.3.3,<3"
+requests = ">=2.32.5,<3"
+pyyaml = ">=6.0.3,<7"
+modular = ">=26.1.0.dev2025112105,<27"
+
+[pypi-dependencies]
+mcp = { version = ">=1.20.0, <2", extras = ["cli"] }

@@ -5,19 +5,19 @@
   "file_name": "nonmaterializable.mdx",
   "file_stem": "nonmaterializable",
   "file_path": "decorators/nonmaterializable.mdx",
-  "file_size": 2175,
+  "file_size": 2184,
   "document_id": "decorators-nonmaterializable",
   "url": "https://docs.modular.com/mojo/manual/decorators/nonmaterializable",
-  "content_hash": "9fa2198477ae7d78f1c7c739fa00e675",
+  "content_hash": "b68ee3215fe809e0b6567fd7527d9510",
   "statistics": {
-    "char_count": 1977,
+    "char_count": 1979,
     "word_count": 266,
-    "line_count": 53,
+    "line_count": 54,
     "paragraph_count": 10,
     "header_count": 0,
     "code_block_count": 1,
-    "code_lines": 29
+    "code_lines": 30
   },
-  "processed_at": "2025-11-17T14:45:48.805959",
+  "processed_at": "2025-11-21T13:24:15.974029",
   "sections": []
 }

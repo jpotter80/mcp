@@ -4,20 +4,20 @@
   "file_name": "unsafe-pointers.mdx",
   "file_stem": "unsafe-pointers",
   "file_path": "pointers/unsafe-pointers.mdx",
-  "file_size": 19755,
+  "file_size": 22879,
   "document_id": "pointers-unsafe-pointers",
   "url": "https://docs.modular.com/mojo/manual/pointers/unsafe-pointers",
-  "content_hash": "9811d8bd7818d1552e691252dfb653d8",
+  "content_hash": "268701bab1dcb4f03d4db9f659ae57cb",
   "statistics": {
-    "char_count": 19359,
-    "word_count": 2671,
-    "line_count": 549,
-    "paragraph_count": 126,
-    "header_count": 23,
-    "code_block_count": 30,
-    "code_lines": 106
+    "char_count": 22468,
+    "word_count": 3109,
+    "line_count": 617,
+    "paragraph_count": 143,
+    "header_count": 26,
+    "code_block_count": 32,
+    "code_lines": 115
   },
-  "processed_at": "2025-11-17T14:45:49.866564",
+  "processed_at": "2025-11-21T13:24:17.063463",
   "sections": [
     {
       "level": 2,
@@ -111,6 +111,11 @@
     },
     {
       "level": 3,
+      "title": "Creating a Mojo pointer from a raw memory address",
+      "anchor": "creating-a-mojo-pointer-from-a-raw-memory-address"
+    },
+    {
+      "level": 3,
       "title": "Creating a Mojo pointer from a Python pointer",
       "anchor": "creating-a-mojo-pointer-from-a-python-pointer"
     },
@@ -118,6 +123,16 @@
       "level": 3,
       "title": "Working with C/C++ pointers",
       "anchor": "working-with-cc-pointers"
+    },
+    {
+      "level": 3,
+      "title": "Opaque pointers",
+      "anchor": "opaque-pointers"
+    },
+    {
+      "level": 1,
+      "title": "... call some foreign function that takes a void pointer",
+      "anchor": "-call-some-foreign-function-that-takes-a-void-pointer"
     },
     {
       "level": 2,

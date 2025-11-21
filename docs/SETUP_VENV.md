@@ -182,15 +182,7 @@ You should see search results with snippets from Mojo documentation.
 
 ### 4. Configure for VS Code
 
-1. Get absolute paths:
-
-```bash
-cd mcp
-echo "$(pwd)/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
-echo "$(pwd)/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db"
-```
-
-2. Get Python interpreter path from your venv:
+1. Get Python interpreter path from your venv:
 
 ```bash
 # With venv activated
@@ -198,33 +190,35 @@ which python  # macOS/Linux
 where python  # Windows
 ```
 
-3. Add to VS Code settings (`.vscode/settings.json` or user settings):
+2. Get absolute path to server:
+
+```bash
+cd mcp && pwd  # This is your base path
+```
+
+3. Add to VS Code `mcp.json` (open via Settings → Settings JSON):
 
 ```json
 {
-  "mcpServers": {
-    "mojo-docs": {
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
       "command": "/absolute/path/to/mcp/venv/bin/python",
-      "args": [
-        "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
-      ],
+      "args": ["runtime/mojo_manual_mcp_server.py"],
+      "cwd": "/absolute/path/to/mcp/servers/mojo-manual-mcp",
       "env": {
-        "MOJO_DB_PATH": "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
-        "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-        "AUTO_START_MAX": "0"
+        "PYTHONPATH": "/absolute/path/to/mcp/servers/mojo-manual-mcp"
       }
     }
   }
 }
 ```
 
-**Important**: 
-- Use **absolute paths** for everything
-- Use the Python from your venv (not system Python)
-- Set `AUTO_START_MAX=0` since you'll start MAX manually
+Replace both `/absolute/path/to/mcp` paths with your actual paths.
 
-4. Start MAX server manually:
+**Important**: Use the **Python from your venv**, not system Python.
+
+4. Start MAX server manually (if needed for searches):
 
 ```bash
 source venv/bin/activate

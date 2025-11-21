@@ -55,28 +55,22 @@ This opens the MCP Inspector in your browser where you can:
 
 **Step 5**: Configure for VS Code (optional)
 
-Add to your VS Code settings (`.vscode/settings.json` or user settings):
+Add to your VS Code user settings (`~/.config/Code/User/mcp.json` on Linux, or via Settings GUI):
 
 ```json
 {
-  "mcpServers": {
-    "mojo-docs": {
-      "command": "python",
-      "args": [
-        "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
-      ],
-      "env": {
-        "MOJO_DB_PATH": "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
-        "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-        "AUTO_START_MAX": "1"
-      }
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
+      "command": "pixi",
+      "args": ["run", "serve"],
+      "cwd": "/path/to/mojo-manual-mcp"
     }
   }
 }
 ```
 
-**Replace `/absolute/path/to/mcp`** with your actual path. Get it with:
+Replace `/path/to/mojo-manual-mcp` with your actual server path. Get it with:
 ```bash
 cd mcp && pwd
 ```

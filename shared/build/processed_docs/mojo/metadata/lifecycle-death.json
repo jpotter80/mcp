@@ -5,20 +5,20 @@
   "file_name": "death.mdx",
   "file_stem": "death",
   "file_path": "lifecycle/death.mdx",
-  "file_size": 14773,
+  "file_size": 14779,
   "document_id": "lifecycle-death",
   "url": "https://docs.modular.com/mojo/manual/lifecycle/death",
-  "content_hash": "ae2f8153182d445b3c52c7ea7bd78ea0",
+  "content_hash": "807df744159a04d14917fba9072ad2d4",
   "statistics": {
-    "char_count": 14208,
-    "word_count": 2070,
+    "char_count": 14214,
+    "word_count": 2071,
     "line_count": 386,
     "paragraph_count": 86,
     "header_count": 10,
     "code_block_count": 11,
     "code_lines": 144
   },
-  "processed_at": "2025-11-17T14:45:49.456755",
+  "processed_at": "2025-11-21T13:24:16.658468",
   "sections": [
     {
       "level": 3,

@@ -4,20 +4,20 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "parameters/index.mdx",
-  "file_size": 44515,
+  "file_size": 45772,
   "document_id": "parameters-index",
   "url": "https://docs.modular.com/mojo/manual/parameters",
-  "content_hash": "a1c8d288f32d35447f599590bc71d202",
+  "content_hash": "11389822d506935be8cbefd13d7e6357",
   "statistics": {
-    "char_count": 43315,
-    "word_count": 6176,
-    "line_count": 1336,
-    "paragraph_count": 307,
+    "char_count": 44528,
+    "word_count": 6318,
+    "line_count": 1372,
+    "paragraph_count": 317,
     "header_count": 34,
     "code_block_count": 87,
-    "code_lines": 443
+    "code_lines": 455
   },
-  "processed_at": "2025-11-17T14:45:49.735053",
+  "processed_at": "2025-11-21T13:24:16.930444",
   "sections": [
     {
       "level": 2,
@@ -131,17 +131,17 @@
     },
     {
       "level": 1,
-      "title": "Partially bound",
-      "anchor": "partially-bound"
-    },
-    {
-      "level": 1,
       "title": "Unbound",
       "anchor": "unbound"
     },
     {
       "level": 1,
-      "title": "equivalent to",
+      "title": "Partially bound",
+      "anchor": "partially-bound"
+    },
+    {
+      "level": 1,
+      "title": "Equivalent to",
       "anchor": "equivalent-to"
     },
     {

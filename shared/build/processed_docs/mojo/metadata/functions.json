@@ -5,20 +5,20 @@
   "file_name": "functions.mdx",
   "file_stem": "functions",
   "file_path": "functions.mdx",
-  "file_size": 27200,
+  "file_size": 27178,
   "document_id": "functions",
   "url": "https://docs.modular.com/mojo/manual/functions",
-  "content_hash": "4b088986dda67a38fc0849411c2e19dd",
+  "content_hash": "327a4b606222e2c63b5d801bea4624c1",
   "statistics": {
-    "char_count": 26622,
-    "word_count": 3766,
+    "char_count": 26600,
+    "word_count": 3763,
     "line_count": 806,
     "paragraph_count": 195,
     "header_count": 22,
     "code_block_count": 39,
     "code_lines": 218
   },
-  "processed_at": "2025-11-17T14:45:48.896215",
+  "processed_at": "2025-11-21T13:24:16.053791",
   "sections": [
     {
       "level": 2,

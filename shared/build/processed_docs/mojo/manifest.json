@@ -1,12 +1,12 @@
 {
-  "processing_date": "2025-11-17T14:45:50.265969",
+  "processing_date": "2025-11-21T13:24:17.472346",
   "source_directory": "/home/james/mcp/source-documentation/mojo/manual",
   "output_directory": "/home/james/mcp/shared/build/processed_docs/mojo",
   "total_documents": 45,
-  "total_chunks": 1155,
-  "total_tokens": 186106,
-  "average_tokens_per_chunk": 161.13,
-  "chunks_with_code": 752,
+  "total_chunks": 1193,
+  "total_tokens": 192731,
+  "average_tokens_per_chunk": 161.55,
+  "chunks_with_code": 727,
   "configuration": {
     "chunk_size": 256,
     "chunk_overlap": 50,
@@ -29,13 +29,13 @@
       "file_path": "decorators/always-inline.mdx",
       "document_id": "decorators-always-inline",
       "chunks_generated": 4,
-      "content_hash": "3ff43e2e25965ea7550d5cff2497cff0"
+      "content_hash": "29df07a802d05cd8df55434754a728ea"
     },
     {
       "file_path": "decorators/compiler-register.mdx",
       "document_id": "decorators-compiler-register",
       "chunks_generated": 8,
-      "content_hash": "d6ad80942be87a0452dd289c47f96a03"
+      "content_hash": "a2e598b2aa3ce6b24968cf1864d7b324"
     },
     {
       "file_path": "decorators/copy-capture.mdx",
@@ -47,7 +47,7 @@
       "file_path": "decorators/export.mdx",
       "document_id": "decorators-export",
       "chunks_generated": 2,
-      "content_hash": "7ecc102b5398204743b6509408f5548a"
+      "content_hash": "f6063b1e26ce2ec2424ed3971462354a"
     },
     {
       "file_path": "decorators/fieldwise-init.mdx",
@@ -77,7 +77,7 @@
       "file_path": "decorators/nonmaterializable.mdx",
       "document_id": "decorators-nonmaterializable",
       "chunks_generated": 4,
-      "content_hash": "9fa2198477ae7d78f1c7c739fa00e675"
+      "content_hash": "b68ee3215fe809e0b6567fd7527d9510"
     },
     {
       "file_path": "decorators/parameter.mdx",
@@ -101,13 +101,13 @@
       "file_path": "errors.mdx",
       "document_id": "errors",
       "chunks_generated": 52,
-      "content_hash": "eb1cbf25508469dc2c3defff7a930377"
+      "content_hash": "09434e9ce5741431ceea75f061dd26fa"
     },
     {
       "file_path": "functions.mdx",
       "document_id": "functions",
-      "chunks_generated": 49,
-      "content_hash": "4b088986dda67a38fc0849411c2e19dd"
+      "chunks_generated": 48,
+      "content_hash": "327a4b606222e2c63b5d801bea4624c1"
     },
     {
       "file_path": "get-started.mdx",
@@ -122,34 +122,34 @@
       "content_hash": "c604e4a63e4a55d28a1eeb16b920eb5d"
     },
     {
-      "file_path": "gpu/basics.mdx",
-      "document_id": "gpu-basics",
-      "chunks_generated": 43,
-      "content_hash": "a68b33d13c4970083d983cb1b9e484a1"
+      "file_path": "gpu/block-and-warp.mdx",
+      "document_id": "gpu-block-and-warp",
+      "chunks_generated": 69,
+      "content_hash": "e47a1783cd9cab1dc5b3ec3c64a2df4b"
     },
     {
       "file_path": "gpu/fundamentals.mdx",
       "document_id": "gpu-fundamentals",
-      "chunks_generated": 58,
-      "content_hash": "594950ba6869cbb66c9f9226858b819b"
+      "chunks_generated": 59,
+      "content_hash": "7168e10655b11b69eb696219d1a03c52"
     },
     {
       "file_path": "gpu/intro-tutorial.mdx",
       "document_id": "gpu-intro-tutorial",
       "chunks_generated": 58,
-      "content_hash": "b9ad9378c4fd0375491bfa03323b169c"
+      "content_hash": "c497f11ffede64e5e84afe094c7f8dc4"
     },
     {
       "file_path": "index.mdx",
       "document_id": "index",
       "chunks_generated": 7,
-      "content_hash": "0b9426066a60a182b111912e82696b9f"
+      "content_hash": "736ac5abbd40ae22ba236cfec2537c1e"
     },
     {
       "file_path": "install.mdx",
       "document_id": "install",
       "chunks_generated": 10,
-      "content_hash": "c69db48cc6c49ff17a45cedd1d19b3d0"
+      "content_hash": "4e67091b7891ef66351ab042eba9fd7c"
     },
     {
       "file_path": "layout/layouts.mdx",
@@ -160,14 +160,14 @@
     {
       "file_path": "layout/tensors.mdx",
       "document_id": "layout-tensors",
-      "chunks_generated": 49,
-      "content_hash": "15981434c8836efc48db61faef3ae0a2"
+      "chunks_generated": 50,
+      "content_hash": "56279d1fbe8f0298f0feee4c78c3739f"
     },
     {
       "file_path": "lifecycle/death.mdx",
       "document_id": "lifecycle-death",
       "chunks_generated": 23,
-      "content_hash": "ae2f8153182d445b3c52c7ea7bd78ea0"
+      "content_hash": "807df744159a04d14917fba9072ad2d4"
     },
     {
       "file_path": "lifecycle/index.mdx",
@@ -179,13 +179,13 @@
       "file_path": "lifecycle/life.mdx",
       "document_id": "lifecycle-life",
       "chunks_generated": 40,
-      "content_hash": "2dc1c5d1e33a0c05ba98b889a0260b70"
+      "content_hash": "f2f50123c78f13e21c0383c42ecf9cc9"
     },
     {
       "file_path": "operators.mdx",
       "document_id": "operators",
-      "chunks_generated": 115,
-      "content_hash": "a1458da1bc2223e2fd6ce1146128138a"
+      "chunks_generated": 116,
+      "content_hash": "08033743fa361090d12f957e84e2ffe2"
     },
     {
       "file_path": "packages.md",
@@ -196,8 +196,8 @@
     {
       "file_path": "parameters/index.mdx",
       "document_id": "parameters-index",
-      "chunks_generated": 84,
-      "content_hash": "a1c8d288f32d35447f599590bc71d202"
+      "chunks_generated": 85,
+      "content_hash": "11389822d506935be8cbefd13d7e6357"
     },
     {
       "file_path": "pointers/index.mdx",
@@ -208,8 +208,8 @@
     {
       "file_path": "pointers/unsafe-pointers.mdx",
       "document_id": "pointers-unsafe-pointers",
-      "chunks_generated": 37,
-      "content_hash": "9811d8bd7818d1552e691252dfb653d8"
+      "chunks_generated": 42,
+      "content_hash": "268701bab1dcb4f03d4db9f659ae57cb"
     },
     {
       "file_path": "python/index.mdx",
@@ -221,7 +221,7 @@
       "file_path": "python/mojo-from-python.mdx",
       "document_id": "python-mojo-from-python",
       "chunks_generated": 43,
-      "content_hash": "a5aee9ae163b6109e0ae543cf5fa808e"
+      "content_hash": "640efb174d3d657054a773460b92ecbc"
     },
     {
       "file_path": "python/python-from-mojo.mdx",
@@ -245,7 +245,7 @@
       "file_path": "traits.mdx",
       "document_id": "traits",
       "chunks_generated": 48,
-      "content_hash": "1d0b102ac59ad1a0ff035989d237d416"
+      "content_hash": "51cd8f3e1d539c449384bd433d02fbbe"
     },
     {
       "file_path": "types.mdx",
@@ -262,8 +262,8 @@
     {
       "file_path": "values/lifetimes.mdx",
       "document_id": "values-lifetimes",
-      "chunks_generated": 26,
-      "content_hash": "66b46418e394d864f4f177754ab57e13"
+      "chunks_generated": 30,
+      "content_hash": "8730dfc7a6ae646c3a893a48581ae336"
     },
     {
       "file_path": "values/ownership.mdx",
@@ -275,13 +275,13 @@
       "file_path": "values/value-semantics.mdx",
       "document_id": "values-value-semantics",
       "chunks_generated": 5,
-      "content_hash": "09e57b8c85cce628ca3468952d0aca22"
+      "content_hash": "8c5f4f51c06c28d9589d2773ce93c5c8"
     },
     {
       "file_path": "variables.mdx",
       "document_id": "variables",
       "chunks_generated": 22,
-      "content_hash": "de78676ede14e40da639376b9b54f40e"
+      "content_hash": "48d9137f1ee2632c99f2c0d9980c69bb"
     }
   ]
 }

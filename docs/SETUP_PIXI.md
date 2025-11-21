@@ -128,27 +128,40 @@ You should see search results with snippets from the Mojo documentation.
 cd mcp && pwd
 ```
 
-2. Add to VS Code settings (`.vscode/settings.json` or user settings):
+2. Add to VS Code `mcp.json` (open via Settings → Settings JSON):
 ```json
 {
-  "mcpServers": {
-    "mojo-docs": {
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
+      "command": "pixi",
+      "args": ["run", "serve"],
+      "cwd": "/your/absolute/path/mojo-manual-mcp"
+    }
+  }
+}
+```
+
+Replace `/your/absolute/path/mojo-manual-mcp` with the full path to the server directory.
+
+**Alternative (if not using pixi):**
+```json
+{
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
       "command": "python",
-      "args": [
-        "/your/absolute/path/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
-      ],
+      "args": ["runtime/mojo_manual_mcp_server.py"],
+      "cwd": "/your/absolute/path/mojo-manual-mcp",
       "env": {
-        "MOJO_DB_PATH": "/your/absolute/path/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
-        "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-        "AUTO_START_MAX": "1"
+        "PYTHONPATH": "/your/absolute/path/mojo-manual-mcp"
       }
     }
   }
 }
 ```
 
-3. Restart VS Code or reload window
+3. Reload VS Code window
 
 4. Test by asking Copilot: "What is ownership in Mojo?"
 
