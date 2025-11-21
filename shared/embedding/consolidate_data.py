@@ -6,11 +6,13 @@ import pandas as pd
 from pathlib import Path
 from tqdm import tqdm
 
+from shared.config_loader import load_config_with_substitution
+
 # Add project root to path to import shared module
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(project_root))
 
-from shared.config_loader import load_config_with_substitution
+
 
 # --- Defaults ---
 MIN_CHUNK_LENGTH = 80  # Relaxed threshold; consider token-based threshold downstream
