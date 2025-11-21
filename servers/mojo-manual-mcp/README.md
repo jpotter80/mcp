@@ -7,29 +7,13 @@ Searchable Mojo documentation via MCP (Model Context Protocol). This server is s
 ### Option 1: With Pixi (Recommended)
 
 ```bash
-# Install dependencies
+# Clone the repo and navigate to the server directory
+git clone jpotter80/mcp
+cd /path/to/mcp/servers/mojo-manual-mcp
+
+# Install dependencies in servers/mojo-manual-mcp
 pixi install
-
-# Start the server
-pixi run serve
 ```
-
-### Option 2: With Python venv
-
-```bash
-# Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start the server
-cd runtime
-python mojo_manual_mcp_server.py
-```
-
-## Configure in VS Code
 
 Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 
@@ -83,19 +67,6 @@ pixi run mcp-dev
 ```
 
 Opens an interactive inspector in your browser to test search and explore resources.
-
-### Testing with Python
-
-```python
-import requests
-import json
-
-# Search for documentation
-response = requests.post(
-    "http://localhost:3000/search",  # Adjust port/endpoint as needed
-    json={"q": "ownership", "k": 5}
-)
-print(json.dumps(response.json(), indent=2))
 ```
 
 ## Rebuilding the Database

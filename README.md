@@ -68,70 +68,46 @@ This project supports multiple independent MCP servers, each serving different d
 
 Get the Mojo documentation MCP server running in 3 steps:
 
-### Option 1: Using Pixi (Recommended)
+### Using Pixi (Recommended)
 
-```bash
 # 1. Clone and install dependencies
-git clone <your-repo-url>
-cd mcp
-pixi install
-
-# 2. Start MAX embedding server (if not already running)
-pixi run max-serve
-
-# 3. Use the MCP server
-pixi run mcp-dev  # Opens MCP Inspector
-# or add to VS Code config (see Configuration section below)
-```
-
-### Option 2: Using Python venv
 
 ```bash
-# 1. Clone and setup
-git clone <your-repo-url>
-cd mcp
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r servers/mojo-manual-mcp/requirements.txt
-
-# 2. Run the MCP server
-python servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py
+git clone jpotter80/mcp
+cd mcp/servers/mojo-manual-mcp
+pixi install
 ```
 
-**Note**: Pre-built databases are included in the repository. No build step required to run the server.
+# 2. Configure VS Code
 
-📖 **Detailed guides**: See [`docs/QUICKSTART.md`](docs/QUICKSTART.md) for complete setup instructions.
-
-## ⚙️ VS Code Configuration
-
-Add the Mojo MCP server to your VS Code settings:
+Add the Mojo-Manual MCP server, by adding the config to your VS Code settings via mcp.json for global settings. Replace `/absolute/path/to/mojo-manual-mcp` with your actual server path.
 
 ```json
 {
-  "mcpServers": {
-    "mojo-docs": {
-      "command": "python",
-      "args": [
-        "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
-      ],
-      "env": {
-        "MOJO_DB_PATH": "/absolute/path/to/mcp/servers/mojo-manual-mcp/runtime/mojo_manual_mcp.db",
-        "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-        "AUTO_START_MAX": "1"
-      }
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
+      "command": "pixi",
+      "args": ["run", "serve"],
+      "cwd": "/absolute/path/to/mojo-manual-mcp"
     }
   }
 }
 ```
+
+# 3. From the mcp.json file in VS Code, if properly configured, the server will show a start button to launch the server. From then on, VS Code will manage starting/stopping the server as needed.
+```
+
+
+**Note**: Pre-built databases are included in the repository. No build step required to run the server.
+
+📖 **Detailed guides**: See [`docs/QUICKSTART.md`](docs/QUICKSTART.md) for complete setup instructions.
 
 **Environment Variables**:
 - `MOJO_DB_PATH`: Path to the indexed database
 - `MAX_SERVER_URL`: Embedding server endpoint (automatically started if `AUTO_START_MAX=1`)
 - `EMBED_MODEL_NAME`: Sentence transformer model name
 - `AUTO_START_MAX`: Set to `1` to auto-start MAX server (recommended)
-
-📖 **More details**: See [`docs/USING_MCP_SERVER.md`](docs/USING_MCP_SERVER.md)
 
 ## 🏗️ Building from Source
 
@@ -167,8 +143,6 @@ python servers/duckdb-docs-mcp/runtime/duckdb_docs_mcp_server.py
 ```
 
 📖 **Developer guides**: 
-- [`docs/SETUP_PIXI.md`](docs/SETUP_PIXI.md) - Full pixi-based development setup
-- [`docs/SETUP_VENV.md`](docs/SETUP_VENV.md) - Setup without pixi
 - [`docs/CREATING_NEW_MCP.md`](docs/CREATING_NEW_MCP.md) - Create new servers
 
 ## 📋 Available Servers
@@ -181,32 +155,10 @@ Currently implemented:
 
 Coming soon:
 - **duckdb-docs-mcp** - DuckDB documentation
-- **python-docs-mcp** - Python standard library
-- **vscode-api-mcp** - VS Code extension API
-
-## 📚 Documentation
-
-### For Users
-
-| Document | Purpose |
-|----------|---------|
-| [QUICKSTART.md](docs/QUICKSTART.md) | Get started in 5 minutes |
-| [SETUP_PIXI.md](docs/SETUP_PIXI.md) | Complete setup with pixi |
-| [SETUP_VENV.md](docs/SETUP_VENV.md) | Setup without pixi (venv) |
-| [USING_MCP_SERVER.md](docs/USING_MCP_SERVER.md) | Using servers in VS Code/IDEs |
-
-### For Developers
-
-| Document | Purpose |
-|----------|---------|
-| [CREATING_NEW_MCP.md](docs/CREATING_NEW_MCP.md) | Create new MCP servers |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design and architecture |
-| [CONTRIBUTING.md](docs/CONTRIBUTING.md) | Contribution guidelines |
-| [tools/README.md](tools/README.md) | Automation scripts reference |
 
 ## 🛠️ Key Technologies
 
-- **Python 3.10+** — Core language for preprocessing and runtime
+- **Python 3.12+** — Core language for preprocessing and runtime
 - **DuckDB** — Vector similarity search (HNSW) + full-text search (BM25)
 - **DuckLake** — Versioned data lake for reproducible builds
 - **MAX** — Local sentence-transformers embedding server
@@ -244,32 +196,32 @@ User: "How do I declare a variable in Mojo?"
 Response: Relevant documentation sections with context
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for:
-- Code of conduct
-- Development workflow
-- Pull request process
-- Adding new MCP servers
-- Reporting issues
-
 ## 🔗 External Resources
 
 - [Model Context Protocol](https://modelcontextprotocol.io) - MCP specification
 - [DuckDB Documentation](https://duckdb.org/docs) - Database engine docs
 - [DuckDB VSS Extension](https://duckdb.org/docs/extensions/vss) - Vector similarity search
-- [MAX Documentation](https://github.com/modularml/max) - Embedding server
+- [MAX Documentation](https://docs.modular.com/max/intro) - Embedding server
 - [Mojo Documentation](https://docs.modular.com/mojo/manual) - Example documentation source
 
 ## 📄 License
 
-[Add your license here]
+ Copyright 2025 James Potter
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
 
 ## 🙏 Acknowledgments
 
-Built with inspiration from the Model Context Protocol community and powered by open-source tools.
+Built with inspiration from Modular, DuckDB, and the Model Context Protocol communities - powered by open-source tools.
 
 ---
-
-**Last Updated**: November 2025  
-**Status**: Production Ready (v2.0 - Multi-Server Architecture)

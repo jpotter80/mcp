@@ -315,8 +315,6 @@ This runs the full pipeline:
 4. Load → DuckLake versioning
 5. Create indexes → Final database
 
-**Time**: 10-20 minutes depending on documentation size
-
 ### Step-by-Step Build (Manual)
 
 If you need more control:
@@ -419,7 +417,7 @@ Add to VS Code settings:
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "mytool-docs": {
       "command": "python",
       "args": [
@@ -466,83 +464,6 @@ if __name__ == "__main__":
     test_search()
     print("✅ All tests passed")
 ```
-
-## Distribution
-
-### Option 1: Standalone Repository
-
-Create a new repository with just the server:
-
-```bash
-# Copy server to new repo
-cp -r servers/mytool-docs-mcp/* /path/to/new/repo/
-
-# Add README with installation instructions
-# Commit and push to GitHub
-```
-
-**Users can then**:
-```bash
-git clone https://github.com/you/mytool-docs-mcp
-cd mytool-docs-mcp
-pip install -r requirements.txt
-python runtime/mytool_docs_mcp_server.py
-```
-
-### Option 2: Git Submodule
-
-Add your server as a submodule to this repository:
-
-```bash
-git submodule add https://github.com/you/mytool-docs-mcp servers/mytool-docs-mcp
-```
-
-### Option 3: Python Package
-
-Create `servers/mytool-docs-mcp/setup.py`:
-
-```python
-from setuptools import setup, find_packages
-
-setup(
-    name="mytool-docs-mcp",
-    version="1.0.0",
-    packages=find_packages(),
-    package_data={
-        "": ["runtime/*.db", "runtime/*.py", "config/*.yaml"]
-    },
-    install_requires=[
-        "fastmcp",
-        "duckdb",
-        "numpy",
-        # ... other dependencies
-    ],
-    entry_points={
-        "console_scripts": [
-            "mytool-docs-mcp=runtime.mytool_docs_mcp_server:main"
-        ]
-    }
-)
-```
-
-**Users can install**:
-```bash
-pip install mytool-docs-mcp
-mytool-docs-mcp  # Run server
-```
-
-### Distribution Checklist
-
-Before distributing:
-
-- [ ] Database file included (`runtime/*.db`)
-- [ ] `requirements.txt` up to date
-- [ ] `README.md` explains installation and usage
-- [ ] Configuration files included
-- [ ] License file added (if open source)
-- [ ] Tested on clean environment
-- [ ] Documentation covers common issues
-
 ## Example: Creating a Python Docs Server
 
 Let's create a complete example for Python documentation.
@@ -603,11 +524,11 @@ cd servers/python-stdlib-mcp/runtime
 python search.py -q "How to use pathlib?" -k 5
 ```
 
-### 6. Configure in VS Code
+### 6. Configure in VS Code mcp.json
 
 ```json
 {
-  "mcpServers": {
+  "servers": {
     "python-stdlib": {
       "command": "python",
       "args": [
@@ -707,7 +628,6 @@ ls -lh servers/*/runtime/*.db
 ## Next Steps
 
 - **Understand architecture**: See [ARCHITECTURE.md](ARCHITECTURE.md)
-- **Contribute**: See [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Advanced features**: Add custom processors or search ranking
 
 ## Additional Resources
@@ -719,7 +639,3 @@ ls -lh servers/*/runtime/*.db
 - [Tools README](../tools/README.md)
 
 ---
-
-**Difficulty**: Intermediate to Advanced  
-**Time**: 1-2 hours to create and test a new server  
-**Prerequisites**: Understanding of Python, documentation formats, MCP concepts

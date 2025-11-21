@@ -24,3 +24,6 @@ env/
 # OS
 .DS_Store
 .vs/
+
+# Archives
+archive/

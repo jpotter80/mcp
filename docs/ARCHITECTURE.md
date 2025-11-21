@@ -51,7 +51,7 @@ Documentation Sources                Embedding Server (MAX)
 - **Separation of Concerns**: Build infrastructure (`/shared/`) vs. runtime servers (`/servers/`)
 - **Self-Contained Servers**: Each server is fully standalone and distributable
 - **Config-Driven**: All paths and parameters controlled via YAML
-- **Multi-Format**: Pluggable processors for MDX, Markdown, RST, etc.
+- **Multi-Format**: Pluggable processors for MDX, Markdown, etc.
 - **Hybrid Search**: Vector similarity (HNSW) + keyword matching (FTS/BM25)
 - **Versioned Data**: DuckLake provides reproducible builds
 
@@ -104,31 +104,6 @@ Documentation Sources                Embedding Server (MAX)
     ├── scaffold_new_mcp.sh
     └── build_mcp.sh
 ```
-
-### Distribution Model
-
-Each server in `/servers/{name}/` can be:
-
-1. **Distributed as standalone repository**:
-   ```bash
-   git clone https://github.com/you/mojo-manual-mcp
-   cd mojo-manual-mcp
-   pip install -r requirements.txt
-   python runtime/mojo_manual_mcp_server.py
-   ```
-
-2. **Used as git submodule**:
-   ```bash
-   git submodule add https://github.com/you/mojo-manual-mcp servers/mojo-manual-mcp
-   ```
-
-3. **Packaged as Python package**:
-   ```bash
-   pip install mojo-manual-mcp
-   mojo-manual-mcp  # Run server
-   ```
-
-**Key Point**: The `/shared/` directory is **never** included in distributions. It's build-time infrastructure only.
 
 ## Build Pipeline
 
@@ -397,7 +372,6 @@ max serve --model sentence-transformers/all-mpnet-base-v2
 **Capabilities**:
 - Generate embeddings for queries
 - 768-dimensional vectors
-- GPU acceleration (if available)
 - Batch processing support
 
 **Alternative**: Any OpenAI-compatible embedding API (OpenAI, Azure OpenAI, etc.)
@@ -578,7 +552,7 @@ server:
 - Search engine
 - Indexed database
 
-**Benefit**: Servers are lightweight and self-contained
+**Benefit**: Servers are self-contained
 
 ### 2. Config-Driven Architecture
 
@@ -594,7 +568,7 @@ server:
 **ProcessorFactory pattern**:
 ```python
 processor = ProcessorFactory.create_processor(
-    format="mdx",  # or "markdown", "rst"
+    format="mdx",  # or "markdown", "md"
     config=config
 )
 ```
@@ -627,43 +601,11 @@ Each server is:
 
 **Benefit**: Easy to distribute and deploy
 
-## Performance Characteristics
-
-### Build Time
-
-| Phase | Time (Mojo docs) | Bottleneck |
-|-------|------------------|------------|
-| Preprocessing | 1-2 min | I/O, parsing |
-| Embeddings | 5-10 min | MAX inference |
-| Consolidation | <1 min | Memory merge |
-| DuckLake load | <1 min | I/O |
-| Index creation | 1-2 min | HNSW build |
-| **Total** | **10-15 min** | Embeddings |
-
-### Runtime Performance
-
-| Operation | Typical Time | Notes |
-|-----------|--------------|-------|
-| Server startup | 2-3 sec | Load database |
-| Query embedding | 20-50 ms | MAX server |
-| Vector search | 10-30 ms | HNSW index |
-| Keyword search | 5-15 ms | FTS index |
-| RRF fusion | <5 ms | In-memory |
-| **Total query** | **50-100 ms** | End-to-end |
-
-### Scale Characteristics
-
-- **Documents**: Tested up to 1000+ documents
-- **Chunks**: Handles 10,000+ chunks efficiently
-- **Database size**: 50-200MB typical
-- **Memory usage**: ~100-200MB runtime
-- **Query throughput**: 10-20 queries/sec (single-threaded)
-
 ## Technology Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|----------|
-| **Language** | Python 3.10+ | Core implementation |
+| **Language** | Python 3.12+ | Core implementation |
 | **MCP Framework** | FastMCP | Server protocol |
 | **Database** | DuckDB | Vector + keyword search |
 | **Vector Index** | HNSW (DuckDB VSS) | Approximate NN search |
@@ -688,46 +630,7 @@ Each server is:
 2. Override `_fusion_rankings()` method
 3. Implement custom scoring algorithm
 
-### Alternative Embedding Models
-
-1. Update `server_config.yaml`:
-   ```yaml
-   embedding:
-     model_name: "your-model-name"
-   ```
-2. Restart MAX with new model
-3. Regenerate embeddings
-
-### Additional MCP Tools
-
-1. Edit server file (`{mcp}_mcp_server.py`)
-2. Add `@mcp.tool()` decorated function
-3. Implement tool logic
-4. Restart server
-
 ## Troubleshooting
-
-### Common Issues
-
-**Slow embedding generation**:
-- Use GPU for MAX if available
-- Reduce batch size
-- Use smaller/faster model
-
-**Large database files**:
-- Expected for large documentation sets
-- Typical: 50-200MB
-- Optimize: Adjust chunking (larger chunks = fewer embeddings)
-
-**Search returns no results**:
-- Check database exists and has content
-- Verify MAX server is running
-- Check search query syntax
-
-**Out of memory during build**:
-- Process documents in smaller batches
-- Increase system memory
-- Use streaming consolidation
 
 ### Debug Mode
 
@@ -746,12 +649,6 @@ export LOG_LEVEL=DEBUG
 ## Further Reading
 
 - [QUICKSTART.md](QUICKSTART.md) - Get started quickly
-- [SETUP_PIXI.md](SETUP_PIXI.md) - Full development setup
 - [CREATING_NEW_MCP.md](CREATING_NEW_MCP.md) - Create new servers
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution guidelines
 
 ---
-
-**Last Updated**: November 2025  
-**Architecture Version**: 2.0 (Multi-Server)  
-**Status**: Production Ready
