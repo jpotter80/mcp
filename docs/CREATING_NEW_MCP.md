@@ -12,7 +12,6 @@ Step-by-step guide for developers to create new MCP servers for different docume
 - [Configuration](#configuration)
 - [Building the Server](#building-the-server)
 - [Testing](#testing)
-- [Distribution](#distribution)
 - [Example: Creating a Python Docs Server](#example-creating-a-python-docs-server)
 
 ## Overview
