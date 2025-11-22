@@ -168,7 +168,7 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppState]:
     search_config = config.get("search", {})
     
     # Resolve DB path relative to runtime dir if not absolute
-    raw_db_path = db_config.get("path", os.getenv("DUCKDB_DOCS_MCP_DB_PATH", "duckdb-docs-mcp.db"))
+    raw_db_path = db_config.get("path", os.getenv("DUCKDB_DOCS_MCP_DB_PATH", "duckdb_docs_mcp.db"))
     if not os.path.isabs(raw_db_path):
         if str(raw_db_path).startswith(str(_SERVER_ROOT)):
              db_path = raw_db_path
@@ -177,7 +177,7 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppState]:
     else:
         db_path = raw_db_path
 
-    table_name = db_config.get("table_name", os.getenv("DUCKDB_DOCS_MCP_TABLE_NAME", "duckdb-docs-mcp_indexed"))
+    table_name = db_config.get("table_name", os.getenv("DUCKDB_DOCS_MCP_TABLE_NAME", "duckdb_docs_indexed"))
     
     base_url = embed_config.get("max_server_url", os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1"))
     model_name = embed_config.get("model_name", os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2"))

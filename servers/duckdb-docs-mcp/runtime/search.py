@@ -19,7 +19,7 @@ _RUNTIME_DIR = os.path.dirname(os.path.abspath(__file__))
 _DEFAULT_DB_PATH = os.path.join(_RUNTIME_DIR, "duckdb_docs_mcp.db")
 
 DB_PATH = os.getenv("DUCKDB_DOCS_MCP_DB_PATH", _DEFAULT_DB_PATH)
-TABLE_NAME = os.getenv("DUCKDB_DOCS_MCP_TABLE_NAME", "duckdb_docs_mcp_indexed")
+TABLE_NAME = os.getenv("DUCKDB_DOCS_MCP_TABLE_NAME", "duckdb_docs_indexed")
 MAX_SERVER_URL = os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1")
 MODEL_NAME = os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2")
 TOP_K = 5  # Default number of results to return

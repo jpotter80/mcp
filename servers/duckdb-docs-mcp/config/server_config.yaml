@@ -9,7 +9,7 @@ server:
 database:
   # Path to indexed DuckDB database (relative to runtime directory)
   path: "${SERVER_ROOT}/runtime/duckdb_docs_mcp.db"
-  table_name: "duckdb_docs_mcp_indexed"
+  table_name: "duckdb_docs_indexed"
   # DuckLake catalog for versioning (if using version history)
   ducklake_catalog: "${SERVER_ROOT}/runtime/duckdb_docs_mcp_catalog.ducklake"
 
