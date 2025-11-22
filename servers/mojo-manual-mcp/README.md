@@ -24,7 +24,12 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
       "type": "stdio",
       "command": "pixi",
       "args": ["run", "serve"],
-      "cwd": "/absolute/path/to/mojo-manual-mcp"
+      "cwd": "/home/james/mcp/servers/mojo-manual-mcp",
+      "env": {
+        "MAX_SERVER_URL": "http://localhost:8000/v1",
+        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
+        "AUTO_START_MAX": "1"
+      }
     }
   }
 }
@@ -42,7 +47,10 @@ Replace `/absolute/path/to/mojo-manual-mcp` with your actual path.
       "args": ["runtime/mojo_manual_mcp_server.py"],
       "cwd": "/absolute/path/to/mojo-manual-mcp",
       "env": {
-        "PYTHONPATH": "/absolute/path/to/mojo-manual-mcp"
+        "PYTHONPATH": "/absolute/path/to/mojo-manual-mcp",
+        "MAX_SERVER_URL": "http://localhost:8000/v1",
+        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
+        "AUTO_START_MAX": "1"
       }
     }
   }

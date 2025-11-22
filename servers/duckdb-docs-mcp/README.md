@@ -20,13 +20,18 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 ```json
 {
   "servers": {
-    "mojo-manual": {
+    "duckdb-docs": {
       "type": "stdio",
       "command": "pixi",
       "args": ["run", "serve"],
-      "cwd": "/absolute/path/to/duckdb-docs-mcp"
+      "cwd": "/home/james/mcp/servers/duckdb-docs-mcp",
+      "env": {
+        "MAX_SERVER_URL": "http://localhost:8000/v1",
+        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
+		    "AUTO_START_MAX": "1"
+      }
     }
-  }
+	}
 }
 ```
 
