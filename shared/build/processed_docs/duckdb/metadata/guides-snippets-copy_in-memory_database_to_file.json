@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/snippets/copy_in-memory_database_to_file"
+  ],
+  "title": "Copying an In-Memory Database to a File",
+  "file_name": "copy_in-memory_database_to_file.md",
+  "file_stem": "copy_in-memory_database_to_file",
+  "file_path": "guides/snippets/copy_in-memory_database_to_file.md",
+  "file_size": 635,
+  "document_id": "guides-snippets-copy_in-memory_database_to_file",
+  "url": "/guides/snippets/copy_in-memory_database_to_file",
+  "content_hash": "000b0daf44e1f3acec58ba81fdece43c",
+  "statistics": {
+    "char_count": 492,
+    "word_count": 70,
+    "line_count": 10,
+    "paragraph_count": 3,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:11.857219",
+  "sections": []
+}

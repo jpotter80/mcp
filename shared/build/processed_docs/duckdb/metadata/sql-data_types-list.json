@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/list"
+  ],
+  "title": "List Type",
+  "file_name": "list.md",
+  "file_stem": "list",
+  "file_path": "sql/data_types/list.md",
+  "file_size": 4112,
+  "document_id": "sql-data_types-list",
+  "url": "/sql/data_types/list",
+  "content_hash": "fe6f0aa8bdb43c15d8f294f4b1386d2c",
+  "statistics": {
+    "char_count": 3771,
+    "word_count": 546,
+    "line_count": 105,
+    "paragraph_count": 35,
+    "header_count": 4,
+    "code_block_count": 11,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:12.448972",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Creating Lists",
+      "anchor": "creating-lists"
+    },
+    {
+      "level": 2,
+      "title": "Retrieving from Lists",
+      "anchor": "retrieving-from-lists"
+    },
+    {
+      "level": 2,
+      "title": "Comparison and Ordering",
+      "anchor": "comparison-and-ordering"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

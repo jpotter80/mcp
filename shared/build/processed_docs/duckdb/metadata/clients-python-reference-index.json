@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/reference/index",
+    "/docs/api/python/reference/index/",
+    "/docs/clients/python/reference/index"
+  ],
+  "title": "Python Client API",
+  "file_name": "index.md",
+  "file_stem": "index",
+  "file_path": "clients/python/reference/index.md",
+  "file_size": 402650,
+  "document_id": "clients-python-reference-index",
+  "url": "/clients/python/reference",
+  "content_hash": "21043966a1d5399aec9528a1f6dc5461",
+  "statistics": {
+    "char_count": 49495,
+    "word_count": 5684,
+    "line_count": 1311,
+    "paragraph_count": 573,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.960314",
+  "sections": []
+}

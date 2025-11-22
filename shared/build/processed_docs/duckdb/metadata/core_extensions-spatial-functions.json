@@ -1,0 +1,2562 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/spatial/functions",
+    "/docs/stable/extensions/spatial/functions/"
+  ],
+  "title": "Spatial Functions",
+  "file_name": "functions.md",
+  "file_stem": "functions",
+  "file_path": "core_extensions/spatial/functions.md",
+  "file_size": 84393,
+  "document_id": "core_extensions-spatial-functions",
+  "url": "/core_extensions/spatial/functions",
+  "content_hash": "91dafe824f7016a175ad644845b66cf1",
+  "statistics": {
+    "char_count": 81001,
+    "word_count": 11128,
+    "line_count": 3234,
+    "paragraph_count": 1120,
+    "header_count": 507,
+    "code_block_count": 209,
+    "code_lines": 615
+  },
+  "processed_at": "2025-11-22T10:32:08.799116",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Function Index",
+      "anchor": "function-index"
+    },
+    {
+      "level": 2,
+      "title": "Scalar Functions",
+      "anchor": "scalar-functions"
+    },
+    {
+      "level": 3,
+      "title": "DuckDB_PROJ_Compiled_Version",
+      "anchor": "duckdb_proj_compiled_version"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "DuckDB_Proj_Version",
+      "anchor": "duckdb_proj_version"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Affine",
+      "anchor": "st_affine"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Area",
+      "anchor": "st_area"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Area_Spheroid",
+      "anchor": "st_area_spheroid"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_AsGeoJSON",
+      "anchor": "st_asgeojson"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_AsHEXWKB",
+      "anchor": "st_ashexwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_AsSVG",
+      "anchor": "st_assvg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_AsText",
+      "anchor": "st_astext"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_AsWKB",
+      "anchor": "st_aswkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Azimuth",
+      "anchor": "st_azimuth"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Boundary",
+      "anchor": "st_boundary"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Buffer",
+      "anchor": "st_buffer"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_BuildArea",
+      "anchor": "st_buildarea"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Centroid",
+      "anchor": "st_centroid"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Collect",
+      "anchor": "st_collect"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_CollectionExtract",
+      "anchor": "st_collectionextract"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ConcaveHull",
+      "anchor": "st_concavehull"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Contains",
+      "anchor": "st_contains"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_ContainsProperly",
+      "anchor": "st_containsproperly"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_ConvexHull",
+      "anchor": "st_convexhull"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageInvalidEdges",
+      "anchor": "st_coverageinvalidedges"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageSimplify",
+      "anchor": "st_coveragesimplify"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageUnion",
+      "anchor": "st_coverageunion"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoveredBy",
+      "anchor": "st_coveredby"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Covers",
+      "anchor": "st_covers"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Crosses",
+      "anchor": "st_crosses"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_DWithin",
+      "anchor": "st_dwithin"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_DWithin_GEOS",
+      "anchor": "st_dwithin_geos"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_DWithin_Spheroid",
+      "anchor": "st_dwithin_spheroid"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Difference",
+      "anchor": "st_difference"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Dimension",
+      "anchor": "st_dimension"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Disjoint",
+      "anchor": "st_disjoint"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Distance",
+      "anchor": "st_distance"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Distance_GEOS",
+      "anchor": "st_distance_geos"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Distance_Sphere",
+      "anchor": "st_distance_sphere"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Distance_Spheroid",
+      "anchor": "st_distance_spheroid"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Dump",
+      "anchor": "st_dump"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_EndPoint",
+      "anchor": "st_endpoint"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Envelope",
+      "anchor": "st_envelope"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Equals",
+      "anchor": "st_equals"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Extent",
+      "anchor": "st_extent"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Extent_Approx",
+      "anchor": "st_extent_approx"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_ExteriorRing",
+      "anchor": "st_exteriorring"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_FlipCoordinates",
+      "anchor": "st_flipcoordinates"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Force2D",
+      "anchor": "st_force2d"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Force3DM",
+      "anchor": "st_force3dm"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Force3DZ",
+      "anchor": "st_force3dz"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Force4D",
+      "anchor": "st_force4d"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeomFromGeoJSON",
+      "anchor": "st_geomfromgeojson"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeomFromHEXEWKB",
+      "anchor": "st_geomfromhexewkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeomFromHEXWKB",
+      "anchor": "st_geomfromhexwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeomFromText",
+      "anchor": "st_geomfromtext"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeomFromWKB",
+      "anchor": "st_geomfromwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeometryType",
+      "anchor": "st_geometrytype"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_HasM",
+      "anchor": "st_hasm"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_HasZ",
+      "anchor": "st_hasz"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Hilbert",
+      "anchor": "st_hilbert"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Intersection",
+      "anchor": "st_intersection"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Intersects",
+      "anchor": "st_intersects"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Intersects_Extent",
+      "anchor": "st_intersects_extent"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_IsClosed",
+      "anchor": "st_isclosed"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_IsEmpty",
+      "anchor": "st_isempty"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_IsRing",
+      "anchor": "st_isring"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_IsSimple",
+      "anchor": "st_issimple"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_IsValid",
+      "anchor": "st_isvalid"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Length",
+      "anchor": "st_length"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Length_Spheroid",
+      "anchor": "st_length_spheroid"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_LineInterpolatePoint",
+      "anchor": "st_lineinterpolatepoint"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_LineInterpolatePoints",
+      "anchor": "st_lineinterpolatepoints"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_LineMerge",
+      "anchor": "st_linemerge"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_LineString2DFromWKB",
+      "anchor": "st_linestring2dfromwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_LineSubstring",
+      "anchor": "st_linesubstring"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_M",
+      "anchor": "st_m"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MMax",
+      "anchor": "st_mmax"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MMin",
+      "anchor": "st_mmin"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MakeEnvelope",
+      "anchor": "st_makeenvelope"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_MakeLine",
+      "anchor": "st_makeline"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MakePolygon",
+      "anchor": "st_makepolygon"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MakeValid",
+      "anchor": "st_makevalid"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_MaximumInscribedCircle",
+      "anchor": "st_maximuminscribedcircle"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_MinimumRotatedRectangle",
+      "anchor": "st_minimumrotatedrectangle"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Multi",
+      "anchor": "st_multi"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_NGeometries",
+      "anchor": "st_ngeometries"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_NInteriorRings",
+      "anchor": "st_ninteriorrings"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_NPoints",
+      "anchor": "st_npoints"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Node",
+      "anchor": "st_node"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Normalize",
+      "anchor": "st_normalize"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_NumGeometries",
+      "anchor": "st_numgeometries"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_NumInteriorRings",
+      "anchor": "st_numinteriorrings"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_NumPoints",
+      "anchor": "st_numpoints"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Overlaps",
+      "anchor": "st_overlaps"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Perimeter",
+      "anchor": "st_perimeter"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Perimeter_Spheroid",
+      "anchor": "st_perimeter_spheroid"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Point",
+      "anchor": "st_point"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Point2D",
+      "anchor": "st_point2d"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Point2DFromWKB",
+      "anchor": "st_point2dfromwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Point3D",
+      "anchor": "st_point3d"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Point4D",
+      "anchor": "st_point4d"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_PointN",
+      "anchor": "st_pointn"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_PointOnSurface",
+      "anchor": "st_pointonsurface"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Points",
+      "anchor": "st_points"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Polygon2DFromWKB",
+      "anchor": "st_polygon2dfromwkb"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Polygonize",
+      "anchor": "st_polygonize"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_QuadKey",
+      "anchor": "st_quadkey"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ReducePrecision",
+      "anchor": "st_reduceprecision"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_RemoveRepeatedPoints",
+      "anchor": "st_removerepeatedpoints"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Reverse",
+      "anchor": "st_reverse"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_ShortestLine",
+      "anchor": "st_shortestline"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Simplify",
+      "anchor": "st_simplify"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_SimplifyPreserveTopology",
+      "anchor": "st_simplifypreservetopology"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_StartPoint",
+      "anchor": "st_startpoint"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_TileEnvelope",
+      "anchor": "st_tileenvelope"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Touches",
+      "anchor": "st_touches"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Transform",
+      "anchor": "st_transform"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Union",
+      "anchor": "st_union"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_VoronoiDiagram",
+      "anchor": "st_voronoidiagram"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Within",
+      "anchor": "st_within"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_WithinProperly",
+      "anchor": "st_withinproperly"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_X",
+      "anchor": "st_x"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_XMax",
+      "anchor": "st_xmax"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_XMin",
+      "anchor": "st_xmin"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Y",
+      "anchor": "st_y"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_YMax",
+      "anchor": "st_ymax"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_YMin",
+      "anchor": "st_ymin"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Z",
+      "anchor": "st_z"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ZMFlag",
+      "anchor": "st_zmflag"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ZMax",
+      "anchor": "st_zmax"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ZMin",
+      "anchor": "st_zmin"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "Aggregate Functions",
+      "anchor": "aggregate-functions"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageInvalidEdges_Agg",
+      "anchor": "st_coverageinvalidedges_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageSimplify_Agg",
+      "anchor": "st_coveragesimplify_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_CoverageUnion_Agg",
+      "anchor": "st_coverageunion_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Envelope_Agg",
+      "anchor": "st_envelope_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Extent_Agg",
+      "anchor": "st_extent_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Intersection_Agg",
+      "anchor": "st_intersection_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_MemUnion_Agg",
+      "anchor": "st_memunion_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Union_Agg",
+      "anchor": "st_union_agg"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 2,
+      "title": "Macro Functions",
+      "anchor": "macro-functions"
+    },
+    {
+      "level": 3,
+      "title": "ST_Rotate",
+      "anchor": "st_rotate"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_RotateX",
+      "anchor": "st_rotatex"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_RotateY",
+      "anchor": "st_rotatey"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_RotateZ",
+      "anchor": "st_rotatez"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Scale",
+      "anchor": "st_scale"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 3,
+      "title": "ST_TransScale",
+      "anchor": "st_transscale"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Translate",
+      "anchor": "st_translate"
+    },
+    {
+      "level": 4,
+      "title": "Signatures",
+      "anchor": "signatures"
+    },
+    {
+      "level": 2,
+      "title": "Table Functions",
+      "anchor": "table-functions"
+    },
+    {
+      "level": 3,
+      "title": "ST_Drivers",
+      "anchor": "st_drivers"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_GeneratePoints",
+      "anchor": "st_generatepoints"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_Read",
+      "anchor": "st_read"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ReadOSM",
+      "anchor": "st_readosm"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "ST_ReadSHP",
+      "anchor": "st_readshp"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 3,
+      "title": "ST_Read_Meta",
+      "anchor": "st_read_meta"
+    },
+    {
+      "level": 4,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "Example",
+      "anchor": "example"
+    }
+  ]
+}

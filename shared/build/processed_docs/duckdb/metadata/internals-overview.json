@@ -1,0 +1,83 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/internals/overview",
+    "/internals/overview/",
+    "/docs/internals/overview"
+  ],
+  "title": "Overview of DuckDB Internals",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "internals/overview.md",
+  "file_size": 5337,
+  "document_id": "internals-overview",
+  "url": "/internals/overview",
+  "content_hash": "14d33ab2547ab5962e7885a4aeb205a8",
+  "statistics": {
+    "char_count": 5183,
+    "word_count": 556,
+    "line_count": 73,
+    "paragraph_count": 30,
+    "header_count": 11,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.081540",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Parser",
+      "anchor": "parser"
+    },
+    {
+      "level": 3,
+      "title": "ParsedExpression",
+      "anchor": "parsedexpression"
+    },
+    {
+      "level": 3,
+      "title": "TableRef",
+      "anchor": "tableref"
+    },
+    {
+      "level": 3,
+      "title": "QueryNode",
+      "anchor": "querynode"
+    },
+    {
+      "level": 3,
+      "title": "SQL Statement",
+      "anchor": "sql-statement"
+    },
+    {
+      "level": 2,
+      "title": "Binder",
+      "anchor": "binder"
+    },
+    {
+      "level": 2,
+      "title": "Logical Planner",
+      "anchor": "logical-planner"
+    },
+    {
+      "level": 2,
+      "title": "Optimizer",
+      "anchor": "optimizer"
+    },
+    {
+      "level": 2,
+      "title": "Column Binding Resolver",
+      "anchor": "column-binding-resolver"
+    },
+    {
+      "level": 2,
+      "title": "Physical Plan Generator",
+      "anchor": "physical-plan-generator"
+    },
+    {
+      "level": 2,
+      "title": "Execution",
+      "anchor": "execution"
+    }
+  ]
+}

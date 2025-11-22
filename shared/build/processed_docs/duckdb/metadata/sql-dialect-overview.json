@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/dialect/overview"
+  ],
+  "title": "Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "sql/dialect/overview.md",
+  "file_size": 484,
+  "document_id": "sql-dialect-overview",
+  "url": "/sql/dialect/overview",
+  "content_hash": "3012341a2a72b25c0d97e17031173815",
+  "statistics": {
+    "char_count": 401,
+    "word_count": 50,
+    "line_count": 4,
+    "paragraph_count": 1,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.994053",
+  "sections": []
+}

@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/collate.js",
+  "redirect_from": [
+    "/docs/sql/expressions/collations"
+  ],
+  "title": "Collations",
+  "file_name": "collations.md",
+  "file_stem": "collations",
+  "file_path": "sql/expressions/collations.md",
+  "file_size": 6229,
+  "document_id": "sql-expressions-collations",
+  "url": "/sql/expressions/collations",
+  "content_hash": "d8eab19803bb4ef8e64b7dc0d58a1382",
+  "statistics": {
+    "char_count": 6055,
+    "word_count": 914,
+    "line_count": 165,
+    "paragraph_count": 46,
+    "header_count": 3,
+    "code_block_count": 29,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-22T10:32:13.089837",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Using Collations",
+      "anchor": "using-collations"
+    },
+    {
+      "level": 2,
+      "title": "Default Collations",
+      "anchor": "default-collations"
+    },
+    {
+      "level": 2,
+      "title": "ICU Collations",
+      "anchor": "icu-collations"
+    }
+  ]
+}

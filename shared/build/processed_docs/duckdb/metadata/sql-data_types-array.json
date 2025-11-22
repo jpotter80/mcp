@@ -1,0 +1,61 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/array"
+  ],
+  "title": "Array Type",
+  "file_name": "array.md",
+  "file_stem": "array",
+  "file_path": "sql/data_types/array.md",
+  "file_size": 3840,
+  "document_id": "sql-data_types-array",
+  "url": "/sql/data_types/array",
+  "content_hash": "a2c91e304deadb00266a5fc6521ba180",
+  "statistics": {
+    "char_count": 3731,
+    "word_count": 508,
+    "line_count": 118,
+    "paragraph_count": 40,
+    "header_count": 7,
+    "code_block_count": 11,
+    "code_lines": 21
+  },
+  "processed_at": "2025-11-22T10:32:12.352927",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Creating Arrays",
+      "anchor": "creating-arrays"
+    },
+    {
+      "level": 2,
+      "title": "Defining an Array Field",
+      "anchor": "defining-an-array-field"
+    },
+    {
+      "level": 2,
+      "title": "Retrieving Values from Arrays",
+      "anchor": "retrieving-values-from-arrays"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Ordering",
+      "anchor": "ordering"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

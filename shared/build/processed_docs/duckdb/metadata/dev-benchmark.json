@@ -1,0 +1,88 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/benchmark",
+    "/dev/benchmark/",
+    "/docs/dev/benchmark"
+  ],
+  "title": "Benchmark Suite",
+  "file_name": "benchmark.md",
+  "file_stem": "benchmark",
+  "file_path": "dev/benchmark.md",
+  "file_size": 5553,
+  "document_id": "dev-benchmark",
+  "url": "/dev/benchmark",
+  "content_hash": "e15aa0a00a30b04669e45edd608f14c5",
+  "statistics": {
+    "char_count": 5435,
+    "word_count": 764,
+    "line_count": 188,
+    "paragraph_count": 50,
+    "header_count": 12,
+    "code_block_count": 17,
+    "code_lines": 50
+  },
+  "processed_at": "2025-11-22T10:32:10.194769",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Getting Started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 2,
+      "title": "Listing Benchmarks",
+      "anchor": "listing-benchmarks"
+    },
+    {
+      "level": 2,
+      "title": "Running Benchmarks",
+      "anchor": "running-benchmarks"
+    },
+    {
+      "level": 3,
+      "title": "Running a Single Benchmark",
+      "anchor": "running-a-single-benchmark"
+    },
+    {
+      "level": 3,
+      "title": "Running Multiple Benchmark Using a Regular Expression",
+      "anchor": "running-multiple-benchmark-using-a-regular-expression"
+    },
+    {
+      "level": 4,
+      "title": "Running All Benchmarks",
+      "anchor": "running-all-benchmarks"
+    },
+    {
+      "level": 4,
+      "title": "Other Options",
+      "anchor": "other-options"
+    },
+    {
+      "level": 2,
+      "title": "Creating Benchmarks",
+      "anchor": "creating-benchmarks"
+    },
+    {
+      "level": 3,
+      "title": "Benchmark Example",
+      "anchor": "benchmark-example"
+    },
+    {
+      "level": 1,
+      "title": "name: benchmark/micro/window/window_fill.benchmark",
+      "anchor": "name-benchmarkmicrowindowwindow_fillbenchmark"
+    },
+    {
+      "level": 1,
+      "title": "description: Measure the perfomance of FILL",
+      "anchor": "description-measure-the-perfomance-of-fill"
+    },
+    {
+      "level": 1,
+      "title": "group: [window]",
+      "anchor": "group-window"
+    }
+  ]
+}

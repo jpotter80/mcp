@@ -1,0 +1,121 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/build_configuration"
+  ],
+  "title": "Building Configuration",
+  "file_name": "build_configuration.md",
+  "file_stem": "build_configuration",
+  "file_path": "dev/building/build_configuration.md",
+  "file_size": 4563,
+  "document_id": "dev-building-build_configuration",
+  "url": "/dev/building/build_configuration",
+  "content_hash": "ea48eee2f51b365e0fb278c760779dc8",
+  "statistics": {
+    "char_count": 4454,
+    "word_count": 630,
+    "line_count": 111,
+    "paragraph_count": 46,
+    "header_count": 19,
+    "code_block_count": 4,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:10.233226",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Build Types",
+      "anchor": "build-types"
+    },
+    {
+      "level": 3,
+      "title": "`release`",
+      "anchor": "release"
+    },
+    {
+      "level": 3,
+      "title": "`debug`",
+      "anchor": "debug"
+    },
+    {
+      "level": 3,
+      "title": "`relassert`",
+      "anchor": "relassert"
+    },
+    {
+      "level": 3,
+      "title": "`reldebug`",
+      "anchor": "reldebug"
+    },
+    {
+      "level": 3,
+      "title": "`benchmark`",
+      "anchor": "benchmark"
+    },
+    {
+      "level": 3,
+      "title": "`tidy-check`",
+      "anchor": "tidy-check"
+    },
+    {
+      "level": 3,
+      "title": "`format-fix` | `format-changes` | `format-main`",
+      "anchor": "format-fix-format-changes-format-main"
+    },
+    {
+      "level": 2,
+      "title": "Extension Selection",
+      "anchor": "extension-selection"
+    },
+    {
+      "level": 2,
+      "title": "Package Flags",
+      "anchor": "package-flags"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_PYTHON`",
+      "anchor": "build_python"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_SHELL`",
+      "anchor": "build_shell"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_BENCHMARK`",
+      "anchor": "build_benchmark"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_JDBC`",
+      "anchor": "build_jdbc"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_ODBC`",
+      "anchor": "build_odbc"
+    },
+    {
+      "level": 2,
+      "title": "Miscellaneous Flags",
+      "anchor": "miscellaneous-flags"
+    },
+    {
+      "level": 3,
+      "title": "`DISABLE_UNITY`",
+      "anchor": "disable_unity"
+    },
+    {
+      "level": 3,
+      "title": "`DISABLE_SANITIZER`",
+      "anchor": "disable_sanitizer"
+    },
+    {
+      "level": 2,
+      "title": "Overriding Git Hash and Version",
+      "anchor": "overriding-git-hash-and-version"
+    }
+  ]
+}

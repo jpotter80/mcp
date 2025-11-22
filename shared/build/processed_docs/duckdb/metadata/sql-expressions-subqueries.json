@@ -1,0 +1,82 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/subqueries.js",
+  "redirect_from": [
+    "/docs/sql/expressions/subqueries"
+  ],
+  "title": "Subqueries",
+  "file_name": "subqueries.md",
+  "file_stem": "subqueries",
+  "file_path": "sql/expressions/subqueries.md",
+  "file_size": 8124,
+  "document_id": "sql-expressions-subqueries",
+  "url": "/sql/expressions/subqueries",
+  "content_hash": "17959f44f962b8fb2d844cbefd9a6ea6",
+  "statistics": {
+    "char_count": 7535,
+    "word_count": 1221,
+    "line_count": 201,
+    "paragraph_count": 66,
+    "header_count": 11,
+    "code_block_count": 14,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:13.184915",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Scalar Subquery",
+      "anchor": "scalar-subquery"
+    },
+    {
+      "level": 3,
+      "title": "Grades",
+      "anchor": "grades"
+    },
+    {
+      "level": 2,
+      "title": "`ARRAY` Subqueries",
+      "anchor": "array-subqueries"
+    },
+    {
+      "level": 2,
+      "title": "Subquery Comparisons: `ALL`, `ANY` and `SOME`",
+      "anchor": "subquery-comparisons-all-any-and-some"
+    },
+    {
+      "level": 3,
+      "title": "`ALL`",
+      "anchor": "all"
+    },
+    {
+      "level": 3,
+      "title": "`ANY`",
+      "anchor": "any"
+    },
+    {
+      "level": 2,
+      "title": "`EXISTS`",
+      "anchor": "exists"
+    },
+    {
+      "level": 3,
+      "title": "`NOT EXISTS`",
+      "anchor": "not-exists"
+    },
+    {
+      "level": 2,
+      "title": "`IN` Operator",
+      "anchor": "in-operator"
+    },
+    {
+      "level": 2,
+      "title": "Correlated Subqueries",
+      "anchor": "correlated-subqueries"
+    },
+    {
+      "level": 2,
+      "title": "Returning Each Row of the Subquery as a Struct",
+      "anchor": "returning-each-row-of-the-subquery-as-a-struct"
+    }
+  ]
+}

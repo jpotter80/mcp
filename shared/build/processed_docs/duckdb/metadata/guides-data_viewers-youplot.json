@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/data_viewers/youplot"
+  ],
+  "title": "CLI Charting with YouPlot",
+  "file_name": "youplot.md",
+  "file_stem": "youplot",
+  "file_path": "guides/data_viewers/youplot.md",
+  "file_size": 3646,
+  "document_id": "guides-data_viewers-youplot",
+  "url": "/guides/data_viewers/youplot",
+  "content_hash": "20aaa4960b1180f56dd4e7688492e64c",
+  "statistics": {
+    "char_count": 3495,
+    "word_count": 525,
+    "line_count": 72,
+    "paragraph_count": 28,
+    "header_count": 4,
+    "code_block_count": 7,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:10.862497",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing YouPlot",
+      "anchor": "installing-youplot"
+    },
+    {
+      "level": 2,
+      "title": "Piping DuckDB Queries to stdout",
+      "anchor": "piping-duckdb-queries-to-stdout"
+    },
+    {
+      "level": 2,
+      "title": "Connecting DuckDB to YouPlot",
+      "anchor": "connecting-duckdb-to-youplot"
+    },
+    {
+      "level": 2,
+      "title": "Bonus Round! stdin + stdout",
+      "anchor": "bonus-round-stdin-stdout"
+    }
+  ]
+}

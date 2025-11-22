@@ -1,0 +1,534 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "docs/sql/functions/char",
+    "docs/sql/functions/char/",
+    "docs/stable/sql/functions/char",
+    "docs/stable/sql/functions/char/"
+  ],
+  "title": "Text Functions",
+  "file_name": "text.md",
+  "file_stem": "text",
+  "file_path": "sql/functions/text.md",
+  "file_size": 56789,
+  "document_id": "sql-functions-text",
+  "url": "/sql/functions/text",
+  "content_hash": "b982df04d60727e483a8b3da47672986",
+  "statistics": {
+    "char_count": 50365,
+    "word_count": 6432,
+    "line_count": 921,
+    "paragraph_count": 249,
+    "header_count": 101,
+    "code_block_count": 29,
+    "code_lines": 44
+  },
+  "processed_at": "2025-11-22T10:32:14.254348",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Text Functions and Operators",
+      "anchor": "text-functions-and-operators"
+    },
+    {
+      "level": 4,
+      "title": "`string[index]`",
+      "anchor": "stringindex"
+    },
+    {
+      "level": 4,
+      "title": "`string[begin:end]`",
+      "anchor": "stringbeginend"
+    },
+    {
+      "level": 4,
+      "title": "`string LIKE target`",
+      "anchor": "string-like-target"
+    },
+    {
+      "level": 4,
+      "title": "`string SIMILAR TO regex`",
+      "anchor": "string-similar-to-regex"
+    },
+    {
+      "level": 4,
+      "title": "`arg1 || arg2`",
+      "anchor": "arg1-arg2"
+    },
+    {
+      "level": 4,
+      "title": "`array_extract(string, index)`",
+      "anchor": "array_extractstring-index"
+    },
+    {
+      "level": 4,
+      "title": "`array_slice(list, begin, end)`",
+      "anchor": "array_slicelist-begin-end"
+    },
+    {
+      "level": 4,
+      "title": "`ascii(string)`",
+      "anchor": "asciistring"
+    },
+    {
+      "level": 4,
+      "title": "`bar(x, min, max[, width])`",
+      "anchor": "barx-min-max-width"
+    },
+    {
+      "level": 4,
+      "title": "`bin(string)`",
+      "anchor": "binstring"
+    },
+    {
+      "level": 4,
+      "title": "`bit_length(string)`",
+      "anchor": "bit_lengthstring"
+    },
+    {
+      "level": 4,
+      "title": "`chr(code_point)`",
+      "anchor": "chrcode_point"
+    },
+    {
+      "level": 4,
+      "title": "`concat(value, ...)`",
+      "anchor": "concatvalue-"
+    },
+    {
+      "level": 4,
+      "title": "`concat_ws(separator, string, ...)`",
+      "anchor": "concat_wsseparator-string-"
+    },
+    {
+      "level": 4,
+      "title": "`contains(string, search_string)`",
+      "anchor": "containsstring-search_string"
+    },
+    {
+      "level": 4,
+      "title": "`format(format, ...)`",
+      "anchor": "formatformat-"
+    },
+    {
+      "level": 4,
+      "title": "`formatReadableDecimalSize(integer)`",
+      "anchor": "formatreadabledecimalsizeinteger"
+    },
+    {
+      "level": 4,
+      "title": "`format_bytes(integer)`",
+      "anchor": "format_bytesinteger"
+    },
+    {
+      "level": 4,
+      "title": "`from_base64(string)`",
+      "anchor": "from_base64string"
+    },
+    {
+      "level": 4,
+      "title": "`greatest(arg1, ...)`",
+      "anchor": "greatestarg1-"
+    },
+    {
+      "level": 4,
+      "title": "`hash(value, ...)`",
+      "anchor": "hashvalue-"
+    },
+    {
+      "level": 4,
+      "title": "`hex(string)`",
+      "anchor": "hexstring"
+    },
+    {
+      "level": 4,
+      "title": "`ilike_escape(string, like_specifier, escape_character)`",
+      "anchor": "ilike_escapestring-like_specifier-escape_character"
+    },
+    {
+      "level": 4,
+      "title": "`instr(string, search_string)`",
+      "anchor": "instrstring-search_string"
+    },
+    {
+      "level": 4,
+      "title": "`least(arg1, ...)`",
+      "anchor": "leastarg1-"
+    },
+    {
+      "level": 4,
+      "title": "`left(string, count)`",
+      "anchor": "leftstring-count"
+    },
+    {
+      "level": 4,
+      "title": "`left_grapheme(string, count)`",
+      "anchor": "left_graphemestring-count"
+    },
+    {
+      "level": 4,
+      "title": "`length(string)`",
+      "anchor": "lengthstring"
+    },
+    {
+      "level": 4,
+      "title": "`length_grapheme(string)`",
+      "anchor": "length_graphemestring"
+    },
+    {
+      "level": 4,
+      "title": "`like_escape(string, like_specifier, escape_character)`",
+      "anchor": "like_escapestring-like_specifier-escape_character"
+    },
+    {
+      "level": 4,
+      "title": "`lower(string)`",
+      "anchor": "lowerstring"
+    },
+    {
+      "level": 4,
+      "title": "`lpad(string, count, character)`",
+      "anchor": "lpadstring-count-character"
+    },
+    {
+      "level": 4,
+      "title": "`ltrim(string[, characters])`",
+      "anchor": "ltrimstring-characters"
+    },
+    {
+      "level": 4,
+      "title": "`md5(string)`",
+      "anchor": "md5string"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number(string)`",
+      "anchor": "md5_numberstring"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number_lower(string)`",
+      "anchor": "md5_number_lowerstring"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number_upper(string)`",
+      "anchor": "md5_number_upperstring"
+    },
+    {
+      "level": 4,
+      "title": "`nfc_normalize(string)`",
+      "anchor": "nfc_normalizestring"
+    },
+    {
+      "level": 4,
+      "title": "`not_ilike_escape(string, like_specifier, escape_character)`",
+      "anchor": "not_ilike_escapestring-like_specifier-escape_character"
+    },
+    {
+      "level": 4,
+      "title": "`not_like_escape(string, like_specifier, escape_character)`",
+      "anchor": "not_like_escapestring-like_specifier-escape_character"
+    },
+    {
+      "level": 4,
+      "title": "`parse_dirname(path[, separator])`",
+      "anchor": "parse_dirnamepath-separator"
+    },
+    {
+      "level": 4,
+      "title": "`parse_dirpath(path[, separator])`",
+      "anchor": "parse_dirpathpath-separator"
+    },
+    {
+      "level": 4,
+      "title": "`parse_filename(string[, trim_extension][, separator])`",
+      "anchor": "parse_filenamestring-trim_extension-separator"
+    },
+    {
+      "level": 4,
+      "title": "`parse_path(path[, separator])`",
+      "anchor": "parse_pathpath-separator"
+    },
+    {
+      "level": 4,
+      "title": "`position(search_string IN string)`",
+      "anchor": "positionsearch_string-in-string"
+    },
+    {
+      "level": 4,
+      "title": "`prefix(string, search_string)`",
+      "anchor": "prefixstring-search_string"
+    },
+    {
+      "level": 4,
+      "title": "`printf(format, ...)`",
+      "anchor": "printfformat-"
+    },
+    {
+      "level": 4,
+      "title": "`read_text(source)`",
+      "anchor": "read_textsource"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_escape(string)`",
+      "anchor": "regexp_escapestring"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract(string, regex[, group][, options])`",
+      "anchor": "regexp_extractstring-regex-group-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract(string, regex, name_list[, options])`",
+      "anchor": "regexp_extractstring-regex-name_list-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract_all(string, regex[, group][, options])`",
+      "anchor": "regexp_extract_allstring-regex-group-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_full_match(string, regex[, col2])`",
+      "anchor": "regexp_full_matchstring-regex-col2"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_matches(string, regex[, options])`",
+      "anchor": "regexp_matchesstring-regex-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_replace(string, regex, replacement[, options])`",
+      "anchor": "regexp_replacestring-regex-replacement-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_split_to_table(string, regex)`",
+      "anchor": "regexp_split_to_tablestring-regex"
+    },
+    {
+      "level": 4,
+      "title": "`repeat(string, count)`",
+      "anchor": "repeatstring-count"
+    },
+    {
+      "level": 4,
+      "title": "`replace(string, source, target)`",
+      "anchor": "replacestring-source-target"
+    },
+    {
+      "level": 4,
+      "title": "`reverse(string)`",
+      "anchor": "reversestring"
+    },
+    {
+      "level": 4,
+      "title": "`right(string, count)`",
+      "anchor": "rightstring-count"
+    },
+    {
+      "level": 4,
+      "title": "`right_grapheme(string, count)`",
+      "anchor": "right_graphemestring-count"
+    },
+    {
+      "level": 4,
+      "title": "`rpad(string, count, character)`",
+      "anchor": "rpadstring-count-character"
+    },
+    {
+      "level": 4,
+      "title": "`rtrim(string[, characters])`",
+      "anchor": "rtrimstring-characters"
+    },
+    {
+      "level": 4,
+      "title": "`sha1(value)`",
+      "anchor": "sha1value"
+    },
+    {
+      "level": 4,
+      "title": "`sha256(value)`",
+      "anchor": "sha256value"
+    },
+    {
+      "level": 4,
+      "title": "`split_part(string, separator, index)`",
+      "anchor": "split_partstring-separator-index"
+    },
+    {
+      "level": 4,
+      "title": "`starts_with(string, search_string)`",
+      "anchor": "starts_withstring-search_string"
+    },
+    {
+      "level": 4,
+      "title": "`string_split(string, separator)`",
+      "anchor": "string_splitstring-separator"
+    },
+    {
+      "level": 4,
+      "title": "`string_split_regex(string, regex[, options])`",
+      "anchor": "string_split_regexstring-regex-options"
+    },
+    {
+      "level": 4,
+      "title": "`strip_accents(string)`",
+      "anchor": "strip_accentsstring"
+    },
+    {
+      "level": 4,
+      "title": "`strlen(string)`",
+      "anchor": "strlenstring"
+    },
+    {
+      "level": 4,
+      "title": "`substring(string, start[, length])`",
+      "anchor": "substringstring-start-length"
+    },
+    {
+      "level": 4,
+      "title": "`substring_grapheme(string, start[, length])`",
+      "anchor": "substring_graphemestring-start-length"
+    },
+    {
+      "level": 4,
+      "title": "`suffix(string, search_string)`",
+      "anchor": "suffixstring-search_string"
+    },
+    {
+      "level": 4,
+      "title": "`to_base(number, radix[, min_length])`",
+      "anchor": "to_basenumber-radix-min_length"
+    },
+    {
+      "level": 4,
+      "title": "`to_base64(blob)`",
+      "anchor": "to_base64blob"
+    },
+    {
+      "level": 4,
+      "title": "`translate(string, from, to)`",
+      "anchor": "translatestring-from-to"
+    },
+    {
+      "level": 4,
+      "title": "`trim(string[, characters])`",
+      "anchor": "trimstring-characters"
+    },
+    {
+      "level": 4,
+      "title": "`unbin(value)`",
+      "anchor": "unbinvalue"
+    },
+    {
+      "level": 4,
+      "title": "`unhex(value)`",
+      "anchor": "unhexvalue"
+    },
+    {
+      "level": 4,
+      "title": "`unicode(string)`",
+      "anchor": "unicodestring"
+    },
+    {
+      "level": 4,
+      "title": "`upper(string)`",
+      "anchor": "upperstring"
+    },
+    {
+      "level": 4,
+      "title": "`url_decode(string)`",
+      "anchor": "url_decodestring"
+    },
+    {
+      "level": 4,
+      "title": "`url_encode(string)`",
+      "anchor": "url_encodestring"
+    },
+    {
+      "level": 2,
+      "title": "Text Similarity Functions",
+      "anchor": "text-similarity-functions"
+    },
+    {
+      "level": 4,
+      "title": "`damerau_levenshtein(s1, s2)`",
+      "anchor": "damerau_levenshteins1-s2"
+    },
+    {
+      "level": 4,
+      "title": "`hamming(s1, s2)`",
+      "anchor": "hammings1-s2"
+    },
+    {
+      "level": 4,
+      "title": "`jaccard(s1, s2)`",
+      "anchor": "jaccards1-s2"
+    },
+    {
+      "level": 4,
+      "title": "`jaro_similarity(s1, s2[, score_cutoff])`",
+      "anchor": "jaro_similaritys1-s2-score_cutoff"
+    },
+    {
+      "level": 4,
+      "title": "`jaro_winkler_similarity(s1, s2[, score_cutoff])`",
+      "anchor": "jaro_winkler_similaritys1-s2-score_cutoff"
+    },
+    {
+      "level": 4,
+      "title": "`levenshtein(s1, s2)`",
+      "anchor": "levenshteins1-s2"
+    },
+    {
+      "level": 2,
+      "title": "Formatters",
+      "anchor": "formatters"
+    },
+    {
+      "level": 3,
+      "title": "`fmt` Syntax",
+      "anchor": "fmt-syntax"
+    },
+    {
+      "level": 4,
+      "title": "Format Specifiers",
+      "anchor": "format-specifiers"
+    },
+    {
+      "level": 4,
+      "title": "Formatting Types",
+      "anchor": "formatting-types"
+    },
+    {
+      "level": 4,
+      "title": "Print Numbers with Thousand Separators",
+      "anchor": "print-numbers-with-thousand-separators"
+    },
+    {
+      "level": 3,
+      "title": "`printf` Syntax",
+      "anchor": "printf-syntax"
+    },
+    {
+      "level": 4,
+      "title": "Format Specifiers",
+      "anchor": "format-specifiers"
+    },
+    {
+      "level": 4,
+      "title": "Formatting Types",
+      "anchor": "formatting-types"
+    },
+    {
+      "level": 4,
+      "title": "Thousand Separators",
+      "anchor": "thousand-separators"
+    }
+  ]
+}

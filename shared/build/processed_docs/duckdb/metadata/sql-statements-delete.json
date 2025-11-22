@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "statements/delete.js",
+  "redirect_from": [
+    "/docs/sql/statements/delete"
+  ],
+  "title": "DELETE Statement",
+  "file_name": "delete.md",
+  "file_stem": "delete",
+  "file_path": "sql/statements/delete.md",
+  "file_size": 1756,
+  "document_id": "sql-statements-delete",
+  "url": "/sql/statements/delete",
+  "content_hash": "75d528da262b68457e63c184217f7520",
+  "statistics": {
+    "char_count": 1592,
+    "word_count": 244,
+    "line_count": 49,
+    "paragraph_count": 18,
+    "header_count": 6,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:15.759842",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "`USING` Clause",
+      "anchor": "using-clause"
+    },
+    {
+      "level": 3,
+      "title": "`RETURNING` Clause",
+      "anchor": "returning-clause"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "The`TRUNCATE` Statement",
+      "anchor": "thetruncate-statement"
+    },
+    {
+      "level": 2,
+      "title": "Limitations on Reclaiming Memory and Disk Space",
+      "anchor": "limitations-on-reclaiming-memory-and-disk-space"
+    }
+  ]
+}

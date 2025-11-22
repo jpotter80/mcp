@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/query_mysql",
+    "/docs/guides/import/query_mysql/",
+    "/docs/guides/database_integration/mysql"
+  ],
+  "title": "MySQL Import",
+  "file_name": "mysql.md",
+  "file_stem": "mysql",
+  "file_path": "guides/database_integration/mysql.md",
+  "file_size": 1612,
+  "document_id": "guides-database_integration-mysql",
+  "url": "/guides/database_integration/mysql",
+  "content_hash": "2c0d9cd9ce40dd2470a880e0121159bb",
+  "statistics": {
+    "char_count": 1386,
+    "word_count": 209,
+    "line_count": 44,
+    "paragraph_count": 14,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:10.872224",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation and Loading",
+      "anchor": "installation-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    }
+  ]
+}

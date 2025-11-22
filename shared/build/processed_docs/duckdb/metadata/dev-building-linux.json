@@ -1,0 +1,111 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/linux"
+  ],
+  "title": "Linux",
+  "file_name": "linux.md",
+  "file_stem": "linux",
+  "file_path": "dev/building/linux.md",
+  "file_size": 4771,
+  "document_id": "dev-building-linux",
+  "url": "/dev/building/linux",
+  "content_hash": "1912bf3b05108612bd453d29e5be6c30",
+  "statistics": {
+    "char_count": 4685,
+    "word_count": 626,
+    "line_count": 160,
+    "paragraph_count": 49,
+    "header_count": 17,
+    "code_block_count": 14,
+    "code_lines": 39
+  },
+  "processed_at": "2025-11-22T10:32:10.266747",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 3,
+      "title": "Ubuntu and Debian",
+      "anchor": "ubuntu-and-debian"
+    },
+    {
+      "level": 4,
+      "title": "CLI Client",
+      "anchor": "cli-client"
+    },
+    {
+      "level": 3,
+      "title": "Fedora, CentOS and Red Hat",
+      "anchor": "fedora-centos-and-red-hat"
+    },
+    {
+      "level": 4,
+      "title": "CLI Client",
+      "anchor": "cli-client"
+    },
+    {
+      "level": 3,
+      "title": "Arch, Omarchy and Manjaro",
+      "anchor": "arch-omarchy-and-manjaro"
+    },
+    {
+      "level": 4,
+      "title": "CLI Client",
+      "anchor": "cli-client"
+    },
+    {
+      "level": 3,
+      "title": "Alpine Linux",
+      "anchor": "alpine-linux"
+    },
+    {
+      "level": 4,
+      "title": "CLI Client",
+      "anchor": "cli-client"
+    },
+    {
+      "level": 4,
+      "title": "Performance with musl libc",
+      "anchor": "performance-with-musl-libc"
+    },
+    {
+      "level": 4,
+      "title": "Distribution for the `linux_*_musl` Platforms",
+      "anchor": "distribution-for-the-linux__musl-platforms"
+    },
+    {
+      "level": 4,
+      "title": "Python Client on Alpine Linux",
+      "anchor": "python-client-on-alpine-linux"
+    },
+    {
+      "level": 2,
+      "title": "Using the DuckDB CLI Client on Linux",
+      "anchor": "using-the-duckdb-cli-client-on-linux"
+    },
+    {
+      "level": 2,
+      "title": "Building Using Extension Flags",
+      "anchor": "building-using-extension-flags"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "R Package on Linux AArch64: `too many GOT entries` Build Error",
+      "anchor": "r-package-on-linux-aarch64-too-many-got-entries-build-error"
+    },
+    {
+      "level": 3,
+      "title": "Building the httpfs Extension Fails",
+      "anchor": "building-the-httpfs-extension-fails"
+    }
+  ]
+}

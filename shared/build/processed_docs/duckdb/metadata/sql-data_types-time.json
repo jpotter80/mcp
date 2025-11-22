@@ -1,0 +1,26 @@
+{
+  "blurb": "A time instance represents the time of a day (hour, minute, second, microsecond).",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/time"
+  ],
+  "title": "Time Types",
+  "file_name": "time.md",
+  "file_stem": "time",
+  "file_path": "sql/data_types/time.md",
+  "file_size": 1681,
+  "document_id": "sql-data_types-time",
+  "url": "/sql/data_types/time",
+  "content_hash": "701b7b7133b700c7e27f69f75eaefbff",
+  "statistics": {
+    "char_count": 1407,
+    "word_count": 186,
+    "line_count": 54,
+    "paragraph_count": 15,
+    "header_count": 0,
+    "code_block_count": 10,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:12.636580",
+  "sections": []
+}

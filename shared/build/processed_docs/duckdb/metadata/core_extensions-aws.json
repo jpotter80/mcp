@@ -1,0 +1,70 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-aws",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/aws",
+    "/docs/stable/extensions/aws/",
+    "/docs/extensions/aws",
+    "/docs/extensions/aws/"
+  ],
+  "title": "AWS Extension",
+  "file_name": "aws.md",
+  "file_stem": "aws",
+  "file_path": "core_extensions/aws.md",
+  "file_size": 6627,
+  "document_id": "core_extensions-aws",
+  "url": "/core_extensions/aws",
+  "content_hash": "a4bea09deb04fff982b3cf50fe367b7f",
+  "statistics": {
+    "char_count": 6085,
+    "word_count": 657,
+    "line_count": 161,
+    "paragraph_count": 47,
+    "header_count": 8,
+    "code_block_count": 11,
+    "code_lines": 39
+  },
+  "processed_at": "2025-11-22T10:32:07.616250",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Configuration and Authentication",
+      "anchor": "configuration-and-authentication"
+    },
+    {
+      "level": 3,
+      "title": "`config` Provider",
+      "anchor": "config-provider"
+    },
+    {
+      "level": 3,
+      "title": "`credential_chain` Provider",
+      "anchor": "credential_chain-provider"
+    },
+    {
+      "level": 3,
+      "title": "Validation",
+      "anchor": "validation"
+    },
+    {
+      "level": 3,
+      "title": "Auto-Refresh",
+      "anchor": "auto-refresh"
+    },
+    {
+      "level": 2,
+      "title": "Legacy Features",
+      "anchor": "legacy-features"
+    },
+    {
+      "level": 3,
+      "title": "Load AWS Credentials (Legacy)",
+      "anchor": "load-aws-credentials-legacy"
+    }
+  ]
+}

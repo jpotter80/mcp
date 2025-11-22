@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/import_arrow"
+  ],
+  "title": "Import from Apache Arrow",
+  "file_name": "import_arrow.md",
+  "file_stem": "import_arrow",
+  "file_path": "guides/python/import_arrow.md",
+  "file_size": 929,
+  "document_id": "guides-python-import_arrow",
+  "url": "/guides/python/import_arrow",
+  "content_hash": "4dd51c0675ff31a5d690e98ef469b6d1",
+  "statistics": {
+    "char_count": 824,
+    "word_count": 114,
+    "line_count": 15,
+    "paragraph_count": 5,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:11.560916",
+  "sections": [
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "create the table \"my_table\" from the DataFrame \"my_arrow\"",
+      "anchor": "create-the-table-my_table-from-the-dataframe-my_arrow"
+    },
+    {
+      "level": 1,
+      "title": "insert into the table \"my_table\" from the DataFrame \"my_arrow\"",
+      "anchor": "insert-into-the-table-my_table-from-the-dataframe-my_arrow"
+    }
+  ]
+}

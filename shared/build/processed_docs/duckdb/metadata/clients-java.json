@@ -1,0 +1,106 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-java",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/java",
+    "/docs/api/java/",
+    "/docs/api/scala",
+    "/docs/api/scala/",
+    "/docs/clients/java"
+  ],
+  "title": "Java JDBC Client",
+  "file_name": "java.md",
+  "file_stem": "java",
+  "file_path": "clients/java.md",
+  "file_size": 11632,
+  "document_id": "clients-java",
+  "url": "/clients/java",
+  "content_hash": "959a2c9ed745cc4e785d2833d33717eb",
+  "statistics": {
+    "char_count": 11182,
+    "word_count": 1223,
+    "line_count": 298,
+    "paragraph_count": 80,
+    "header_count": 15,
+    "code_block_count": 17,
+    "code_lines": 158
+  },
+  "processed_at": "2025-11-22T10:32:04.170611",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Basic API Usage",
+      "anchor": "basic-api-usage"
+    },
+    {
+      "level": 3,
+      "title": "Startup & Shutdown",
+      "anchor": "startup-shutdown"
+    },
+    {
+      "level": 3,
+      "title": "Configuring Connections",
+      "anchor": "configuring-connections"
+    },
+    {
+      "level": 3,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 3,
+      "title": "Arrow Methods",
+      "anchor": "arrow-methods"
+    },
+    {
+      "level": 4,
+      "title": "Arrow Export",
+      "anchor": "arrow-export"
+    },
+    {
+      "level": 4,
+      "title": "Arrow Import",
+      "anchor": "arrow-import"
+    },
+    {
+      "level": 3,
+      "title": "Streaming Results",
+      "anchor": "streaming-results"
+    },
+    {
+      "level": 3,
+      "title": "Appender",
+      "anchor": "appender"
+    },
+    {
+      "level": 3,
+      "title": "Batch Writer",
+      "anchor": "batch-writer"
+    },
+    {
+      "level": 4,
+      "title": "Batch Writer with Prepared Statements",
+      "anchor": "batch-writer-with-prepared-statements"
+    },
+    {
+      "level": 4,
+      "title": "Batch Writer with Vanilla Statements",
+      "anchor": "batch-writer-with-vanilla-statements"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Driver Class Not Found",
+      "anchor": "driver-class-not-found"
+    }
+  ]
+}

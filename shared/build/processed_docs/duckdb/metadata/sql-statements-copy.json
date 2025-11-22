@@ -1,0 +1,102 @@
+{
+  "layout": "docu",
+  "railroad": "statements/copy.js",
+  "redirect_from": [
+    "/docs/sql/statements/copy"
+  ],
+  "title": "COPY Statement",
+  "file_name": "copy.md",
+  "file_stem": "copy",
+  "file_path": "sql/statements/copy.md",
+  "file_size": 21889,
+  "document_id": "sql-statements-copy",
+  "url": "/sql/statements/copy",
+  "content_hash": "e0975999aa98f20743a50b4af8162846",
+  "statistics": {
+    "char_count": 21389,
+    "word_count": 3322,
+    "line_count": 491,
+    "paragraph_count": 145,
+    "header_count": 15,
+    "code_block_count": 52,
+    "code_lines": 107
+  },
+  "processed_at": "2025-11-22T10:32:15.599811",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "level": 2,
+      "title": "`COPY ... FROM`",
+      "anchor": "copy-from"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`COPY ... TO`",
+      "anchor": "copy-to"
+    },
+    {
+      "level": 3,
+      "title": "`COPY ... TO` Options",
+      "anchor": "copy-to-options"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`COPY FROM DATABASE ... TO`",
+      "anchor": "copy-from-database-to"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Format-Specific Options",
+      "anchor": "format-specific-options"
+    },
+    {
+      "level": 3,
+      "title": "CSV Options",
+      "anchor": "csv-options"
+    },
+    {
+      "level": 3,
+      "title": "Parquet Options",
+      "anchor": "parquet-options"
+    },
+    {
+      "level": 3,
+      "title": "JSON Options",
+      "anchor": "json-options"
+    },
+    {
+      "level": 3,
+      "title": "BLOB Options",
+      "anchor": "blob-options"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

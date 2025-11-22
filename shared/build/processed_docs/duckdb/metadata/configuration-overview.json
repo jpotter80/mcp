@@ -1,0 +1,55 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/configuration",
+    "/docs/configuration/",
+    "/docs/sql/configuration",
+    "/docs/sql/configuration/",
+    "/docs/configuration/overview"
+  ],
+  "title": "Configuration",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "configuration/overview.md",
+  "file_size": 59725,
+  "document_id": "configuration-overview",
+  "url": "/configuration/overview",
+  "content_hash": "828055c0dd212a8241fd8c6625f20795",
+  "statistics": {
+    "char_count": 21712,
+    "word_count": 3159,
+    "line_count": 281,
+    "paragraph_count": 45,
+    "header_count": 5,
+    "code_block_count": 16,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:07.384408",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Secrets Manager",
+      "anchor": "secrets-manager"
+    },
+    {
+      "level": 2,
+      "title": "Configuration Reference",
+      "anchor": "configuration-reference"
+    },
+    {
+      "level": 3,
+      "title": "Global Configuration Options",
+      "anchor": "global-configuration-options"
+    },
+    {
+      "level": 3,
+      "title": "Local Configuration Options",
+      "anchor": "local-configuration-options"
+    }
+  ]
+}

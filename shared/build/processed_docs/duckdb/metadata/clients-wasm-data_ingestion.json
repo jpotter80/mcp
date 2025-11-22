@@ -1,0 +1,68 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/wasm/data_ingestion",
+    "/docs/api/wasm/data_ingestion/",
+    "/docs/clients/wasm/data_ingestion"
+  ],
+  "title": "Data Ingestion",
+  "file_name": "data_ingestion.md",
+  "file_stem": "data_ingestion",
+  "file_path": "clients/wasm/data_ingestion.md",
+  "file_size": 5719,
+  "document_id": "clients-wasm-data_ingestion",
+  "url": "/clients/wasm/data_ingestion",
+  "content_hash": "04a3e0d9d8b943baea55ad84aeba6d98",
+  "statistics": {
+    "char_count": 5349,
+    "word_count": 560,
+    "line_count": 176,
+    "paragraph_count": 33,
+    "header_count": 8,
+    "code_block_count": 8,
+    "code_lines": 125
+  },
+  "processed_at": "2025-11-22T10:32:07.217553",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Data Import",
+      "anchor": "data-import"
+    },
+    {
+      "level": 3,
+      "title": "Open & Close Connection",
+      "anchor": "open-close-connection"
+    },
+    {
+      "level": 3,
+      "title": "Apache Arrow",
+      "anchor": "apache-arrow"
+    },
+    {
+      "level": 3,
+      "title": "CSV",
+      "anchor": "csv"
+    },
+    {
+      "level": 3,
+      "title": "JSON",
+      "anchor": "json"
+    },
+    {
+      "level": 3,
+      "title": "Parquet",
+      "anchor": "parquet"
+    },
+    {
+      "level": 3,
+      "title": "httpfs (Wasm-Flavored)",
+      "anchor": "httpfs-wasm-flavored"
+    },
+    {
+      "level": 3,
+      "title": "Insert Statement",
+      "anchor": "insert-statement"
+    }
+  ]
+}

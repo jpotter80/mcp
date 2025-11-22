@@ -1,0 +1,22 @@
+{
+  "layout": "docu",
+  "title": "Working with Huge Databases",
+  "file_name": "working_with_huge_databases.md",
+  "file_stem": "working_with_huge_databases",
+  "file_path": "guides/performance/working_with_huge_databases.md",
+  "file_size": 1274,
+  "document_id": "guides-performance-working_with_huge_databases",
+  "url": "/guides/performance/working_with_huge_databases",
+  "content_hash": "1ec4fd7a7f2ddde361afa9c601a6d8e4",
+  "statistics": {
+    "char_count": 1216,
+    "word_count": 173,
+    "line_count": 13,
+    "paragraph_count": 6,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.394524",
+  "sections": []
+}

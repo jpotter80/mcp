@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_features/friendly_sql",
+    "/docs/guides/sql_features/friendly_sql/",
+    "/docs/sql/dialect/friendly_sql"
+  ],
+  "title": "Friendly SQL",
+  "file_name": "friendly_sql.md",
+  "file_stem": "friendly_sql",
+  "file_path": "sql/dialect/friendly_sql.md",
+  "file_size": 11686,
+  "document_id": "sql-dialect-friendly_sql",
+  "url": "/sql/dialect/friendly_sql",
+  "content_hash": "c4c720775b9050f33a2e4fc854b23f25",
+  "statistics": {
+    "char_count": 10799,
+    "word_count": 1260,
+    "line_count": 171,
+    "paragraph_count": 33,
+    "header_count": 10,
+    "code_block_count": 7,
+    "code_lines": 38
+  },
+  "processed_at": "2025-11-22T10:32:12.930046",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Clauses",
+      "anchor": "clauses"
+    },
+    {
+      "level": 2,
+      "title": "Query Features",
+      "anchor": "query-features"
+    },
+    {
+      "level": 2,
+      "title": "Literals and Identifiers",
+      "anchor": "literals-and-identifiers"
+    },
+    {
+      "level": 2,
+      "title": "Data Types",
+      "anchor": "data-types"
+    },
+    {
+      "level": 2,
+      "title": "Data Import",
+      "anchor": "data-import"
+    },
+    {
+      "level": 2,
+      "title": "Functions and Expressions",
+      "anchor": "functions-and-expressions"
+    },
+    {
+      "level": 2,
+      "title": "Join Types",
+      "anchor": "join-types"
+    },
+    {
+      "level": 2,
+      "title": "Trailing Commas",
+      "anchor": "trailing-commas"
+    },
+    {
+      "level": 2,
+      "title": "\"Top-N in Group\" Queries",
+      "anchor": "top-n-in-group-queries"
+    },
+    {
+      "level": 2,
+      "title": "Related Blog Posts",
+      "anchor": "related-blog-posts"
+    }
+  ]
+}

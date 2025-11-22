@@ -1,0 +1,157 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli",
+    "/docs/api/cli/",
+    "/docs/clients/cli",
+    "/docs/clients/cli/",
+    "/docs/api/cli/overview",
+    "/docs/api/cli/overview/",
+    "/docs/clients/cli/overview"
+  ],
+  "title": "Command Line Client",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/cli/overview.md",
+  "file_size": 15353,
+  "document_id": "clients-cli-overview",
+  "url": "/clients/cli/overview",
+  "content_hash": "36745a39a6fb00480b219fd769f1a4f9",
+  "statistics": {
+    "char_count": 14857,
+    "word_count": 2177,
+    "line_count": 345,
+    "paragraph_count": 114,
+    "header_count": 25,
+    "code_block_count": 27,
+    "code_lines": 59
+  },
+  "processed_at": "2025-11-22T10:32:04.016785",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Getting Started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "Options",
+      "anchor": "options"
+    },
+    {
+      "level": 3,
+      "title": "In-Memory vs. Persistent Database",
+      "anchor": "in-memory-vs-persistent-database"
+    },
+    {
+      "level": 3,
+      "title": "Running SQL Statements in the CLI",
+      "anchor": "running-sql-statements-in-the-cli"
+    },
+    {
+      "level": 3,
+      "title": "Editor Features",
+      "anchor": "editor-features"
+    },
+    {
+      "level": 3,
+      "title": "Exiting the CLI",
+      "anchor": "exiting-the-cli"
+    },
+    {
+      "level": 3,
+      "title": "Dot Commands",
+      "anchor": "dot-commands"
+    },
+    {
+      "level": 4,
+      "title": "Opening Database Files",
+      "anchor": "opening-database-files"
+    },
+    {
+      "level": 4,
+      "title": "Output Formats",
+      "anchor": "output-formats"
+    },
+    {
+      "level": 4,
+      "title": "Writing Results to a File",
+      "anchor": "writing-results-to-a-file"
+    },
+    {
+      "level": 4,
+      "title": "Reading SQL from a File",
+      "anchor": "reading-sql-from-a-file"
+    },
+    {
+      "level": 2,
+      "title": "Configuring the CLI",
+      "anchor": "configuring-the-cli"
+    },
+    {
+      "level": 3,
+      "title": "Setting a Custom Prompt",
+      "anchor": "setting-a-custom-prompt"
+    },
+    {
+      "level": 2,
+      "title": "Non-Interactive Usage",
+      "anchor": "non-interactive-usage"
+    },
+    {
+      "level": 2,
+      "title": "Loading Extensions",
+      "anchor": "loading-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Reading from stdin and Writing to stdout",
+      "anchor": "reading-from-stdin-and-writing-to-stdout"
+    },
+    {
+      "level": 2,
+      "title": "Reading Environment Variables",
+      "anchor": "reading-environment-variables"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Restrictions for Reading Environment Variables",
+      "anchor": "restrictions-for-reading-environment-variables"
+    },
+    {
+      "level": 2,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 2,
+      "title": "Query Completion ETA",
+      "anchor": "query-completion-eta"
+    },
+    {
+      "level": 3,
+      "title": "How It Works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 3,
+      "title": "Factors Affecting The Accuracy of Query Completion ETA",
+      "anchor": "factors-affecting-the-accuracy-of-query-completion-eta"
+    }
+  ]
+}

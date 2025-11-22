@@ -1,0 +1,54 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-rs",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/rust",
+    "/docs/api/rust/",
+    "/docs/clients/rust"
+  ],
+  "title": "Rust Client",
+  "file_name": "rust.md",
+  "file_stem": "rust",
+  "file_path": "clients/rust.md",
+  "file_size": 2608,
+  "document_id": "clients-rust",
+  "url": "/clients/rust",
+  "content_hash": "93dc3d50b77c3d2247ce61992314b99b",
+  "statistics": {
+    "char_count": 2374,
+    "word_count": 332,
+    "line_count": 63,
+    "paragraph_count": 18,
+    "header_count": 5,
+    "code_block_count": 3,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:07.167432",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Basic API Usage",
+      "anchor": "basic-api-usage"
+    },
+    {
+      "level": 3,
+      "title": "Startup & Shutdown",
+      "anchor": "startup-shutdown"
+    },
+    {
+      "level": 3,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 2,
+      "title": "Appender",
+      "anchor": "appender"
+    }
+  ]
+}

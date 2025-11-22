@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/wasm/instantiation",
+    "/docs/api/wasm/instantiation/",
+    "/docs/clients/wasm/instantiation"
+  ],
+  "title": "Instantiation",
+  "file_name": "instantiation.md",
+  "file_stem": "instantiation",
+  "file_path": "clients/wasm/instantiation.md",
+  "file_size": 3660,
+  "document_id": "clients-wasm-instantiation",
+  "url": "/clients/wasm/instantiation",
+  "content_hash": "d81d2ade84b6cca55cc5e54892aaa2e4",
+  "statistics": {
+    "char_count": 3326,
+    "word_count": 321,
+    "line_count": 102,
+    "paragraph_count": 16,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 79
+  },
+  "processed_at": "2025-11-22T10:32:07.277116",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`cdn(jsdelivr)`",
+      "anchor": "cdnjsdelivr"
+    },
+    {
+      "level": 2,
+      "title": "`webpack`",
+      "anchor": "webpack"
+    },
+    {
+      "level": 2,
+      "title": "`vite`",
+      "anchor": "vite"
+    },
+    {
+      "level": 2,
+      "title": "Statically Served",
+      "anchor": "statically-served"
+    }
+  ]
+}

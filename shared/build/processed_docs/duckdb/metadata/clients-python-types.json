@@ -1,0 +1,103 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/types",
+    "/docs/api/python/types/",
+    "/docs/clients/python/types"
+  ],
+  "title": "Types API",
+  "file_name": "types.md",
+  "file_stem": "types",
+  "file_path": "clients/python/types.md",
+  "file_size": 4036,
+  "document_id": "clients-python-types",
+  "url": "/clients/python/types",
+  "content_hash": "eb22111ec78517065a2505facf0e197c",
+  "statistics": {
+    "char_count": 3408,
+    "word_count": 526,
+    "line_count": 173,
+    "paragraph_count": 52,
+    "header_count": 15,
+    "code_block_count": 8,
+    "code_lines": 18
+  },
+  "processed_at": "2025-11-22T10:32:07.128973",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Converting from Other Types",
+      "anchor": "converting-from-other-types"
+    },
+    {
+      "level": 3,
+      "title": "Python Built-Ins",
+      "anchor": "python-built-ins"
+    },
+    {
+      "level": 3,
+      "title": "Numpy DTypes",
+      "anchor": "numpy-dtypes"
+    },
+    {
+      "level": 3,
+      "title": "Nested Types",
+      "anchor": "nested-types"
+    },
+    {
+      "level": 4,
+      "title": "`list[child_type]`",
+      "anchor": "listchild_type"
+    },
+    {
+      "level": 4,
+      "title": "`dict[key_type, value_type]`",
+      "anchor": "dictkey_type-value_type"
+    },
+    {
+      "level": 4,
+      "title": "`{'a': field_one, 'b': field_two, ..., 'n': field_n}`",
+      "anchor": "a-field_one-b-field_two-n-field_n"
+    },
+    {
+      "level": 4,
+      "title": "`Union[type_1, ... type_n]`",
+      "anchor": "uniontype_1-type_n"
+    },
+    {
+      "level": 3,
+      "title": "Creation Functions",
+      "anchor": "creation-functions"
+    },
+    {
+      "level": 4,
+      "title": "`list_type` | `array_type`",
+      "anchor": "list_type-array_type"
+    },
+    {
+      "level": 4,
+      "title": "`struct_type` | `row_type`",
+      "anchor": "struct_type-row_type"
+    },
+    {
+      "level": 4,
+      "title": "`map_type`",
+      "anchor": "map_type"
+    },
+    {
+      "level": 4,
+      "title": "`decimal_type`",
+      "anchor": "decimal_type"
+    },
+    {
+      "level": 4,
+      "title": "`union_type`",
+      "anchor": "union_type"
+    },
+    {
+      "level": 4,
+      "title": "`string_type`",
+      "anchor": "string_type"
+    }
+  ]
+}

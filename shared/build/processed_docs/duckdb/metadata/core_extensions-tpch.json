@@ -1,0 +1,85 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb/tree/main/extension/tpch",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/tpch",
+    "/docs/stable/extensions/tpch/",
+    "/docs/extensions/tpch",
+    "/docs/extensions/tpch/"
+  ],
+  "title": "TPC-H Extension",
+  "file_name": "tpch.md",
+  "file_stem": "tpch",
+  "file_path": "core_extensions/tpch.md",
+  "file_size": 5836,
+  "document_id": "core_extensions-tpch",
+  "url": "/core_extensions/tpch",
+  "content_hash": "a94156dbdfdb6dd8b0bf4d4d40b0dc25",
+  "statistics": {
+    "char_count": 4613,
+    "word_count": 686,
+    "line_count": 138,
+    "paragraph_count": 40,
+    "header_count": 11,
+    "code_block_count": 9,
+    "code_lines": 20
+  },
+  "processed_at": "2025-11-22T10:32:09.221006",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "Generating Data",
+      "anchor": "generating-data"
+    },
+    {
+      "level": 3,
+      "title": "Running a Query",
+      "anchor": "running-a-query"
+    },
+    {
+      "level": 3,
+      "title": "Listing Queries",
+      "anchor": "listing-queries"
+    },
+    {
+      "level": 3,
+      "title": "Listing Expected Answers",
+      "anchor": "listing-expected-answers"
+    },
+    {
+      "level": 2,
+      "title": "Generating the Schema",
+      "anchor": "generating-the-schema"
+    },
+    {
+      "level": 2,
+      "title": "Data Generator Parameters",
+      "anchor": "data-generator-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Pre-Generated Datasets",
+      "anchor": "pre-generated-datasets"
+    },
+    {
+      "level": 2,
+      "title": "Resource Usage of the Data Generator",
+      "anchor": "resource-usage-of-the-data-generator"
+    },
+    {
+      "level": 2,
+      "title": "Limitation",
+      "anchor": "limitation"
+    }
+  ]
+}

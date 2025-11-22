@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/query_parquet",
+    "/docs/guides/import/query_parquet/",
+    "/docs/guides/file_formats/query_parquet"
+  ],
+  "title": "Querying Parquet Files",
+  "file_name": "query_parquet.md",
+  "file_stem": "query_parquet",
+  "file_path": "guides/file_formats/query_parquet.md",
+  "file_size": 657,
+  "document_id": "guides-file_formats-query_parquet",
+  "url": "/guides/file_formats/query_parquet",
+  "content_hash": "3e86075cfdd9dafd5b528e0043458d24",
+  "statistics": {
+    "char_count": 470,
+    "word_count": 69,
+    "line_count": 9,
+    "paragraph_count": 4,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:10.953075",
+  "sections": []
+}

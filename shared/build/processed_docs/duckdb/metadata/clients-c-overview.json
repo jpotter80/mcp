@@ -1,0 +1,35 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c",
+    "/docs/api/c/",
+    "/docs/api/c/overview",
+    "/docs/api/c/overview/",
+    "/docs/clients/c/overview"
+  ],
+  "title": "Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/c/overview.md",
+  "file_size": 1060,
+  "document_id": "clients-c-overview",
+  "url": "/clients/c/overview",
+  "content_hash": "f383b9b9a70f414d8a02a15d6fbb33ba",
+  "statistics": {
+    "char_count": 903,
+    "word_count": 122,
+    "line_count": 9,
+    "paragraph_count": 5,
+    "header_count": 1,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:03.243624",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    }
+  ]
+}

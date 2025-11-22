@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/official_extensions",
+    "/docs/extensions/official_extensions/"
+  ],
+  "title": "Core Extensions",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "core_extensions/overview.md",
+  "file_size": 9069,
+  "document_id": "core_extensions-overview",
+  "url": "/core_extensions/overview",
+  "content_hash": "adb997dfbace797ab5defb63386f2d1d",
+  "statistics": {
+    "char_count": 5606,
+    "word_count": 671,
+    "line_count": 46,
+    "paragraph_count": 7,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:08.427776",
+  "sections": [
+    {
+      "level": 2,
+      "title": "List of Core Extensions",
+      "anchor": "list-of-core-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Default Extensions",
+      "anchor": "default-extensions"
+    }
+  ]
+}

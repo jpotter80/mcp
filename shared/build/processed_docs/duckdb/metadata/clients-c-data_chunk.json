@@ -1,0 +1,158 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/data_chunk",
+    "/docs/api/c/data_chunk/",
+    "/docs/clients/c/data_chunk"
+  ],
+  "title": "Data Chunks",
+  "file_name": "data_chunk.md",
+  "file_stem": "data_chunk",
+  "file_path": "clients/c/data_chunk.md",
+  "file_size": 7771,
+  "document_id": "clients-c-data_chunk",
+  "url": "/clients/c/data_chunk",
+  "content_hash": "60b65816007e762aa698dfc63b091d45",
+  "statistics": {
+    "char_count": 4345,
+    "word_count": 573,
+    "line_count": 145,
+    "paragraph_count": 58,
+    "header_count": 26,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:03.232778",
+  "sections": [
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_data_chunk`",
+      "anchor": "duckdb_create_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_data_chunk`",
+      "anchor": "duckdb_destroy_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_reset`",
+      "anchor": "duckdb_data_chunk_reset"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_column_count`",
+      "anchor": "duckdb_data_chunk_get_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_vector`",
+      "anchor": "duckdb_data_chunk_get_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_size`",
+      "anchor": "duckdb_data_chunk_get_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_set_size`",
+      "anchor": "duckdb_data_chunk_set_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

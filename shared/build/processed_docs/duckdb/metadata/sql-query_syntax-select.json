@@ -1,0 +1,73 @@
+{
+  "blurb": "The SELECT clause specifies the list of columns that will be returned by the query.",
+  "layout": "docu",
+  "railroad": "query_syntax/select.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/select"
+  ],
+  "title": "SELECT Clause",
+  "file_name": "select.md",
+  "file_stem": "select",
+  "file_path": "sql/query_syntax/select.md",
+  "file_size": 6637,
+  "document_id": "sql-query_syntax-select",
+  "url": "/sql/query_syntax/select",
+  "content_hash": "edb44c0a5c85c609ea8279a57c35e9d4",
+  "statistics": {
+    "char_count": 6382,
+    "word_count": 956,
+    "line_count": 172,
+    "paragraph_count": 60,
+    "header_count": 9,
+    "code_block_count": 20,
+    "code_lines": 33
+  },
+  "processed_at": "2025-11-22T10:32:15.292405",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`SELECT` List",
+      "anchor": "select-list"
+    },
+    {
+      "level": 3,
+      "title": "Star Expressions",
+      "anchor": "star-expressions"
+    },
+    {
+      "level": 3,
+      "title": "`DISTINCT` Clause",
+      "anchor": "distinct-clause"
+    },
+    {
+      "level": 3,
+      "title": "`DISTINCT ON` Clause",
+      "anchor": "distinct-on-clause"
+    },
+    {
+      "level": 3,
+      "title": "Aggregates",
+      "anchor": "aggregates"
+    },
+    {
+      "level": 3,
+      "title": "Window Functions",
+      "anchor": "window-functions"
+    },
+    {
+      "level": 3,
+      "title": "`unnest` Function",
+      "anchor": "unnest-function"
+    }
+  ]
+}

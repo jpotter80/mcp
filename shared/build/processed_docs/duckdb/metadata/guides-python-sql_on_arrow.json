@@ -1,0 +1,116 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/sql_on_arrow"
+  ],
+  "title": "SQL on Apache Arrow",
+  "file_name": "sql_on_arrow.md",
+  "file_stem": "sql_on_arrow",
+  "file_path": "guides/python/sql_on_arrow.md",
+  "file_size": 4499,
+  "document_id": "guides-python-sql_on_arrow",
+  "url": "/guides/python/sql_on_arrow",
+  "content_hash": "46209a456c64bf4cfd92b8d65338ddfc",
+  "statistics": {
+    "char_count": 4241,
+    "word_count": 530,
+    "line_count": 108,
+    "paragraph_count": 32,
+    "header_count": 18,
+    "code_block_count": 4,
+    "code_lines": 77
+  },
+  "processed_at": "2025-11-22T10:32:11.793203",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Apache Arrow Tables",
+      "anchor": "apache-arrow-tables"
+    },
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow Table \"my_arrow_table\" and return as an Arrow Table",
+      "anchor": "query-the-apache-arrow-table-my_arrow_table-and-return-as-an-arrow-table"
+    },
+    {
+      "level": 2,
+      "title": "Apache Arrow Datasets",
+      "anchor": "apache-arrow-datasets"
+    },
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "create example Parquet files and save in a folder",
+      "anchor": "create-example-parquet-files-and-save-in-a-folder"
+    },
+    {
+      "level": 1,
+      "title": "link to Parquet files using an Arrow Dataset",
+      "anchor": "link-to-parquet-files-using-an-arrow-dataset"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow Dataset \"my_arrow_dataset\" and return as an Arrow Table",
+      "anchor": "query-the-apache-arrow-dataset-my_arrow_dataset-and-return-as-an-arrow-table"
+    },
+    {
+      "level": 2,
+      "title": "Apache Arrow Scanners",
+      "anchor": "apache-arrow-scanners"
+    },
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "create example Parquet files and save in a folder",
+      "anchor": "create-example-parquet-files-and-save-in-a-folder"
+    },
+    {
+      "level": 1,
+      "title": "link to Parquet files using an Arrow Dataset",
+      "anchor": "link-to-parquet-files-using-an-arrow-dataset"
+    },
+    {
+      "level": 1,
+      "title": "define the filter to be applied while scanning",
+      "anchor": "define-the-filter-to-be-applied-while-scanning"
+    },
+    {
+      "level": 1,
+      "title": "equivalent to \"WHERE i = 2\"",
+      "anchor": "equivalent-to-where-i-2"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow scanner \"arrow_scanner\" and return as an Arrow Table",
+      "anchor": "query-the-apache-arrow-scanner-arrow_scanner-and-return-as-an-arrow-table"
+    },
+    {
+      "level": 2,
+      "title": "Apache Arrow RecordBatchReaders",
+      "anchor": "apache-arrow-recordbatchreaders"
+    },
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow RecordBatchReader \"my_recordbatchreader\" and return as an Arrow Table",
+      "anchor": "query-the-apache-arrow-recordbatchreader-my_recordbatchreader-and-return-as-an-arrow-table"
+    }
+  ]
+}

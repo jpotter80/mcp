@@ -1,0 +1,53 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/internals/repositories",
+    "/internals/repositories/",
+    "/docs/dev/repositories"
+  ],
+  "title": "DuckDB Repositories",
+  "file_name": "repositories.md",
+  "file_stem": "repositories",
+  "file_path": "dev/repositories.md",
+  "file_size": 2218,
+  "document_id": "dev-repositories",
+  "url": "/dev/repositories",
+  "content_hash": "f4e10838b9c9d038651cd0be281a0ae2",
+  "statistics": {
+    "char_count": 2075,
+    "word_count": 152,
+    "line_count": 39,
+    "paragraph_count": 11,
+    "header_count": 5,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.576690",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Main Repositories",
+      "anchor": "main-repositories"
+    },
+    {
+      "level": 2,
+      "title": "Clients",
+      "anchor": "clients"
+    },
+    {
+      "level": 2,
+      "title": "Connectors",
+      "anchor": "connectors"
+    },
+    {
+      "level": 2,
+      "title": "Extensions",
+      "anchor": "extensions"
+    },
+    {
+      "level": 2,
+      "title": "Specifications",
+      "anchor": "specifications"
+    }
+  ]
+}

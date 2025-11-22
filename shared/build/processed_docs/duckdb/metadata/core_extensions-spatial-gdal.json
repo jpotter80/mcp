@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/spatial/gdal",
+    "/docs/stable/extensions/spatial/gdal/"
+  ],
+  "title": "GDAL Integration",
+  "file_name": "gdal.md",
+  "file_stem": "gdal",
+  "file_path": "core_extensions/spatial/gdal.md",
+  "file_size": 2427,
+  "document_id": "core_extensions-spatial-gdal",
+  "url": "/core_extensions/spatial/gdal",
+  "content_hash": "24e97e5447f5738743feb6124c16d561",
+  "statistics": {
+    "char_count": 2282,
+    "word_count": 344,
+    "line_count": 25,
+    "paragraph_count": 10,
+    "header_count": 2,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:09.098788",
+  "sections": [
+    {
+      "level": 2,
+      "title": "GDAL Based `COPY` Function",
+      "anchor": "gdal-based-copy-function"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

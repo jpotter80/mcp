@@ -1,0 +1,40 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb/tree/main/extension/icu",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/icu",
+    "/docs/stable/extensions/icu/",
+    "/docs/extensions/ice",
+    "/docs/extensions/ice/"
+  ],
+  "title": "ICU Extension",
+  "file_name": "icu.md",
+  "file_stem": "icu",
+  "file_path": "core_extensions/icu.md",
+  "file_size": 1066,
+  "document_id": "core_extensions-icu",
+  "url": "/core_extensions/icu",
+  "content_hash": "3278349e8b1bef54be6c0590e030b7a1",
+  "statistics": {
+    "char_count": 824,
+    "word_count": 89,
+    "line_count": 18,
+    "paragraph_count": 7,
+    "header_count": 2,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:08.335688",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Features",
+      "anchor": "features"
+    }
+  ]
+}

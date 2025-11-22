@@ -1,0 +1,578 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/appender",
+    "/docs/api/c/appender/",
+    "/docs/clients/c/appender"
+  ],
+  "title": "Appender",
+  "file_name": "appender.md",
+  "file_stem": "appender",
+  "file_path": "clients/c/appender.md",
+  "file_size": 38651,
+  "document_id": "clients-c-appender",
+  "url": "/clients/c/appender",
+  "content_hash": "c77aaf2de8eb76ec019d07d2c71023cb",
+  "statistics": {
+    "char_count": 17752,
+    "word_count": 2036,
+    "line_count": 678,
+    "paragraph_count": 233,
+    "header_count": 110,
+    "code_block_count": 1,
+    "code_lines": 18
+  },
+  "processed_at": "2025-11-22T10:32:03.119242",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create`",
+      "anchor": "duckdb_appender_create"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create_ext`",
+      "anchor": "duckdb_appender_create_ext"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create_query`",
+      "anchor": "duckdb_appender_create_query"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_column_count`",
+      "anchor": "duckdb_appender_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_column_type`",
+      "anchor": "duckdb_appender_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_error`",
+      "anchor": "duckdb_appender_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_error_data`",
+      "anchor": "duckdb_appender_error_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_flush`",
+      "anchor": "duckdb_appender_flush"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_close`",
+      "anchor": "duckdb_appender_close"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_destroy`",
+      "anchor": "duckdb_appender_destroy"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_add_column`",
+      "anchor": "duckdb_appender_add_column"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_clear_columns`",
+      "anchor": "duckdb_appender_clear_columns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_begin_row`",
+      "anchor": "duckdb_appender_begin_row"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_end_row`",
+      "anchor": "duckdb_appender_end_row"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_default`",
+      "anchor": "duckdb_append_default"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_default_to_chunk`",
+      "anchor": "duckdb_append_default_to_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_bool`",
+      "anchor": "duckdb_append_bool"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int8`",
+      "anchor": "duckdb_append_int8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int16`",
+      "anchor": "duckdb_append_int16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int32`",
+      "anchor": "duckdb_append_int32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int64`",
+      "anchor": "duckdb_append_int64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_hugeint`",
+      "anchor": "duckdb_append_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint8`",
+      "anchor": "duckdb_append_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint16`",
+      "anchor": "duckdb_append_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint32`",
+      "anchor": "duckdb_append_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint64`",
+      "anchor": "duckdb_append_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uhugeint`",
+      "anchor": "duckdb_append_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_float`",
+      "anchor": "duckdb_append_float"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_double`",
+      "anchor": "duckdb_append_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_date`",
+      "anchor": "duckdb_append_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_time`",
+      "anchor": "duckdb_append_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_timestamp`",
+      "anchor": "duckdb_append_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_interval`",
+      "anchor": "duckdb_append_interval"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_varchar`",
+      "anchor": "duckdb_append_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_varchar_length`",
+      "anchor": "duckdb_append_varchar_length"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_blob`",
+      "anchor": "duckdb_append_blob"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_null`",
+      "anchor": "duckdb_append_null"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_value`",
+      "anchor": "duckdb_append_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_data_chunk`",
+      "anchor": "duckdb_append_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "blurb": "Timestamps represent points in time.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/timestamp"
+  ],
+  "title": "Timestamp Types",
+  "file_name": "timestamp.md",
+  "file_stem": "timestamp",
+  "file_path": "sql/data_types/timestamp.md",
+  "file_size": 12522,
+  "document_id": "sql-data_types-timestamp",
+  "url": "/sql/data_types/timestamp",
+  "content_hash": "b95451c1c479019fa3c2ee35ba27d5dc",
+  "statistics": {
+    "char_count": 10983,
+    "word_count": 1529,
+    "line_count": 223,
+    "paragraph_count": 65,
+    "header_count": 10,
+    "code_block_count": 21,
+    "code_lines": 40
+  },
+  "processed_at": "2025-11-22T10:32:12.664073",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Timestamp Types",
+      "anchor": "timestamp-types"
+    },
+    {
+      "level": 2,
+      "title": "Conversion between Strings and Naïve / Time Zone-Aware Timestamps",
+      "anchor": "conversion-between-strings-and-naïve-time-zone-aware-timestamps"
+    },
+    {
+      "level": 2,
+      "title": "Special Values",
+      "anchor": "special-values"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 2,
+      "title": "Time Zones",
+      "anchor": "time-zones"
+    },
+    {
+      "level": 3,
+      "title": "Instants",
+      "anchor": "instants"
+    },
+    {
+      "level": 3,
+      "title": "Temporal Binning",
+      "anchor": "temporal-binning"
+    },
+    {
+      "level": 3,
+      "title": "Time Zone Support",
+      "anchor": "time-zone-support"
+    },
+    {
+      "level": 2,
+      "title": "Calendar Support",
+      "anchor": "calendar-support"
+    },
+    {
+      "level": 2,
+      "title": "Settings",
+      "anchor": "settings"
+    }
+  ]
+}

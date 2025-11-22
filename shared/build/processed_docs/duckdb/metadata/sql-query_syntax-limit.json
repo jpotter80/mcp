@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/orderby.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/limit"
+  ],
+  "title": "LIMIT and OFFSET Clauses",
+  "file_name": "limit.md",
+  "file_stem": "limit",
+  "file_path": "sql/query_syntax/limit.md",
+  "file_size": 1204,
+  "document_id": "sql-query_syntax-limit",
+  "url": "/sql/query_syntax/limit",
+  "content_hash": "5029add2edff37b40ffae25f11235a31",
+  "statistics": {
+    "char_count": 1041,
+    "word_count": 179,
+    "line_count": 42,
+    "paragraph_count": 12,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:15.239502",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

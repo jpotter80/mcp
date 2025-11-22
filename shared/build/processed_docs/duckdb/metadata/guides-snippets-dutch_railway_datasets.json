@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "title": "Dutch Railway Datasets",
+  "file_name": "dutch_railway_datasets.md",
+  "file_stem": "dutch_railway_datasets",
+  "file_path": "guides/snippets/dutch_railway_datasets.md",
+  "file_size": 4815,
+  "document_id": "guides-snippets-dutch_railway_datasets",
+  "url": "/guides/snippets/dutch_railway_datasets",
+  "content_hash": "6059f870acfde9bb2c433e01373b96fd",
+  "statistics": {
+    "char_count": 4177,
+    "word_count": 431,
+    "line_count": 81,
+    "paragraph_count": 16,
+    "header_count": 5,
+    "code_block_count": 2,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:11.883989",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Loading the Datasets",
+      "anchor": "loading-the-datasets"
+    },
+    {
+      "level": 2,
+      "title": "Datasets",
+      "anchor": "datasets"
+    },
+    {
+      "level": 3,
+      "title": "80-Month Datasets",
+      "anchor": "80-month-datasets"
+    },
+    {
+      "level": 3,
+      "title": "Yearly Datasets",
+      "anchor": "yearly-datasets"
+    },
+    {
+      "level": 3,
+      "title": "Monthly Datasets",
+      "anchor": "monthly-datasets"
+    }
+  ]
+}

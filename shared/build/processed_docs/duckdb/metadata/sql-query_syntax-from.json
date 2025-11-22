@@ -1,0 +1,123 @@
+{
+  "blurb": "The FROM clause can contain a single table, a combination of multiple tables that are joined together, or another SELECT query inside a subquery node.",
+  "layout": "docu",
+  "railroad": "query_syntax/from.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/from"
+  ],
+  "title": "FROM and JOIN Clauses",
+  "file_name": "from.md",
+  "file_stem": "from",
+  "file_path": "sql/query_syntax/from.md",
+  "file_size": 16388,
+  "document_id": "sql-query_syntax-from",
+  "url": "/sql/query_syntax/from",
+  "content_hash": "2071cd72c572787bacbfad964e44feca",
+  "statistics": {
+    "char_count": 11629,
+    "word_count": 1954,
+    "line_count": 475,
+    "paragraph_count": 127,
+    "header_count": 19,
+    "code_block_count": 51,
+    "code_lines": 170
+  },
+  "processed_at": "2025-11-22T10:32:15.161663",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Table Functions",
+      "anchor": "table-functions"
+    },
+    {
+      "level": 2,
+      "title": "Joins",
+      "anchor": "joins"
+    },
+    {
+      "level": 3,
+      "title": "Outer Joins",
+      "anchor": "outer-joins"
+    },
+    {
+      "level": 3,
+      "title": "Cross Product Joins (Cartesian Product)",
+      "anchor": "cross-product-joins-cartesian-product"
+    },
+    {
+      "level": 3,
+      "title": "Conditional Joins",
+      "anchor": "conditional-joins"
+    },
+    {
+      "level": 3,
+      "title": "Natural Joins",
+      "anchor": "natural-joins"
+    },
+    {
+      "level": 3,
+      "title": "Semi and Anti Joins",
+      "anchor": "semi-and-anti-joins"
+    },
+    {
+      "level": 4,
+      "title": "Semi Join Example",
+      "anchor": "semi-join-example"
+    },
+    {
+      "level": 4,
+      "title": "Anti Join Example",
+      "anchor": "anti-join-example"
+    },
+    {
+      "level": 3,
+      "title": "Lateral Joins",
+      "anchor": "lateral-joins"
+    },
+    {
+      "level": 3,
+      "title": "Positional Joins",
+      "anchor": "positional-joins"
+    },
+    {
+      "level": 3,
+      "title": "As-Of Joins",
+      "anchor": "as-of-joins"
+    },
+    {
+      "level": 3,
+      "title": "Self-Joins",
+      "anchor": "self-joins"
+    },
+    {
+      "level": 3,
+      "title": "Shorthands in the `JOIN` Clause",
+      "anchor": "shorthands-in-the-join-clause"
+    },
+    {
+      "level": 2,
+      "title": "`FROM`-First Syntax",
+      "anchor": "from-first-syntax"
+    },
+    {
+      "level": 3,
+      "title": "`FROM`-First Syntax with a `SELECT` Clause",
+      "anchor": "from-first-syntax-with-a-select-clause"
+    },
+    {
+      "level": 3,
+      "title": "`FROM`-First Syntax without a `SELECT` Clause",
+      "anchor": "from-first-syntax-without-a-select-clause"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

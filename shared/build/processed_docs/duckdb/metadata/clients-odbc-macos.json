@@ -1,0 +1,28 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-odbc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/odbc/macos",
+    "/docs/api/odbc/macos/",
+    "/docs/clients/odbc/macos"
+  ],
+  "title": "ODBC API on macOS",
+  "file_name": "macos.md",
+  "file_stem": "macos",
+  "file_path": "clients/odbc/macos.md",
+  "file_size": 2808,
+  "document_id": "clients-odbc-macos",
+  "url": "/clients/odbc/macos",
+  "content_hash": "11b70d691ccea07366001de9a22bc953",
+  "statistics": {
+    "char_count": 2238,
+    "word_count": 269,
+    "line_count": 64,
+    "paragraph_count": 17,
+    "header_count": 0,
+    "code_block_count": 7,
+    "code_lines": 22
+  },
+  "processed_at": "2025-11-22T10:32:04.506707",
+  "sections": []
+}

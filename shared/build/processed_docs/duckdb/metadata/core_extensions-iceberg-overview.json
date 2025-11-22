@@ -1,0 +1,87 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-iceberg",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/iceberg",
+    "/docs/stable/extensions/iceberg/",
+    "/docs/stable/extensions/iceberg/overview",
+    "/docs/stable/extensions/iceberg/overview/",
+    "/docs/extensions/iceberg",
+    "/docs/extensions/iceberg/"
+  ],
+  "title": "Iceberg Extension",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "core_extensions/iceberg/overview.md",
+  "file_size": 9629,
+  "document_id": "core_extensions-iceberg-overview",
+  "url": "/core_extensions/iceberg/overview",
+  "content_hash": "02afa0ae0939c725f6f07cc425bd5e54",
+  "statistics": {
+    "char_count": 8387,
+    "word_count": 1000,
+    "line_count": 180,
+    "paragraph_count": 49,
+    "header_count": 11,
+    "code_block_count": 13,
+    "code_lines": 42
+  },
+  "processed_at": "2025-11-22T10:32:08.297187",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Updating the Extension",
+      "anchor": "updating-the-extension"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "Common Parameters",
+      "anchor": "common-parameters"
+    },
+    {
+      "level": 3,
+      "title": "Querying Individual Tables",
+      "anchor": "querying-individual-tables"
+    },
+    {
+      "level": 3,
+      "title": "Access Iceberg Metadata",
+      "anchor": "access-iceberg-metadata"
+    },
+    {
+      "level": 3,
+      "title": "Visualizing Snapshots",
+      "anchor": "visualizing-snapshots"
+    },
+    {
+      "level": 3,
+      "title": "Selecting Metadata Versions",
+      "anchor": "selecting-metadata-versions"
+    },
+    {
+      "level": 3,
+      "title": "Working with Alternative Metadata Naming Conventions",
+      "anchor": "working-with-alternative-metadata-naming-conventions"
+    },
+    {
+      "level": 3,
+      "title": "“Guessing” Metadata Versions",
+      "anchor": "guessing-metadata-versions"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

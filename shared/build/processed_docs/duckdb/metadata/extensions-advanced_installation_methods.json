@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "title": "Advanced Installation Methods",
+  "file_name": "advanced_installation_methods.md",
+  "file_stem": "advanced_installation_methods",
+  "file_path": "extensions/advanced_installation_methods.md",
+  "file_size": 1941,
+  "document_id": "extensions-advanced_installation_methods",
+  "url": "/extensions/advanced_installation_methods",
+  "content_hash": "561ef8a59c1d1f167e9dca902bd72b85",
+  "statistics": {
+    "char_count": 1865,
+    "word_count": 220,
+    "line_count": 47,
+    "paragraph_count": 18,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:10.716312",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Downloading Extensions Directly from S3",
+      "anchor": "downloading-extensions-directly-from-s3"
+    },
+    {
+      "level": 2,
+      "title": "Installing an Extension from an Explicit Path",
+      "anchor": "installing-an-extension-from-an-explicit-path"
+    },
+    {
+      "level": 2,
+      "title": "Loading an Extension from an Explicit Path",
+      "anchor": "loading-an-extension-from-an-explicit-path"
+    },
+    {
+      "level": 2,
+      "title": "Building and Installing Extensions from Source",
+      "anchor": "building-and-installing-extensions-from-source"
+    },
+    {
+      "level": 3,
+      "title": "Statically Linking Extensions",
+      "anchor": "statically-linking-extensions"
+    }
+  ]
+}

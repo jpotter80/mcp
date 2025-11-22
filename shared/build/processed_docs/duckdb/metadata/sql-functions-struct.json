@@ -1,0 +1,81 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/struct"
+  ],
+  "title": "Struct Functions",
+  "file_name": "struct.md",
+  "file_stem": "struct",
+  "file_path": "sql/functions/struct.md",
+  "file_size": 4325,
+  "document_id": "sql-functions-struct",
+  "url": "/sql/functions/struct",
+  "content_hash": "6d46989a05a2e51c188e59571d5d7467",
+  "statistics": {
+    "char_count": 3801,
+    "word_count": 558,
+    "line_count": 79,
+    "paragraph_count": 23,
+    "header_count": 11,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:14.103930",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`struct.entry`",
+      "anchor": "structentry"
+    },
+    {
+      "level": 4,
+      "title": "`struct[entry]`",
+      "anchor": "structentry"
+    },
+    {
+      "level": 4,
+      "title": "`struct[idx]`",
+      "anchor": "structidx"
+    },
+    {
+      "level": 4,
+      "title": "`row(any, ...)`",
+      "anchor": "rowany-"
+    },
+    {
+      "level": 4,
+      "title": "`struct_concat(structs...)`",
+      "anchor": "struct_concatstructs"
+    },
+    {
+      "level": 4,
+      "title": "`struct_extract(struct, 'entry')`",
+      "anchor": "struct_extractstruct-entry"
+    },
+    {
+      "level": 4,
+      "title": "`struct_extract(struct, idx)`",
+      "anchor": "struct_extractstruct-idx"
+    },
+    {
+      "level": 4,
+      "title": "`struct_extract_at(struct, idx)`",
+      "anchor": "struct_extract_atstruct-idx"
+    },
+    {
+      "level": 4,
+      "title": "`struct_insert(struct, name := any, ...)`",
+      "anchor": "struct_insertstruct-name-any-"
+    },
+    {
+      "level": 4,
+      "title": "`struct_pack(name := any, ...)`",
+      "anchor": "struct_packname-any-"
+    },
+    {
+      "level": 4,
+      "title": "`struct_update(struct, name := any, ...)`",
+      "anchor": "struct_updatestruct-name-any-"
+    }
+  ]
+}

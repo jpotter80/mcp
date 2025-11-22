@@ -1,0 +1,71 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/data_viewers/tableau"
+  ],
+  "title": "Tableau – A Data Visualization Tool",
+  "file_name": "tableau.md",
+  "file_stem": "tableau",
+  "file_path": "guides/data_viewers/tableau.md",
+  "file_size": 6144,
+  "document_id": "guides-data_viewers-tableau",
+  "url": "/guides/data_viewers/tableau",
+  "content_hash": "9738969d377558f5bd4179fa6098c49a",
+  "statistics": {
+    "char_count": 5937,
+    "word_count": 753,
+    "line_count": 130,
+    "paragraph_count": 41,
+    "header_count": 9,
+    "code_block_count": 5,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:10.845717",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Database Creation",
+      "anchor": "database-creation"
+    },
+    {
+      "level": 2,
+      "title": "Installing the JDBC Driver",
+      "anchor": "installing-the-jdbc-driver"
+    },
+    {
+      "level": 3,
+      "title": "Driver Links",
+      "anchor": "driver-links"
+    },
+    {
+      "level": 2,
+      "title": "Using the PostgreSQL Dialect",
+      "anchor": "using-the-postgresql-dialect"
+    },
+    {
+      "level": 2,
+      "title": "Installing the Tableau DuckDB Connector",
+      "anchor": "installing-the-tableau-duckdb-connector"
+    },
+    {
+      "level": 3,
+      "title": "Server (Online)",
+      "anchor": "server-online"
+    },
+    {
+      "level": 3,
+      "title": "macOS",
+      "anchor": "macos"
+    },
+    {
+      "level": 3,
+      "title": "Windows Desktop",
+      "anchor": "windows-desktop"
+    },
+    {
+      "level": 2,
+      "title": "Output",
+      "anchor": "output"
+    }
+  ]
+}

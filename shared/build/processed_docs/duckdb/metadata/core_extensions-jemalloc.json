@@ -1,0 +1,65 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb/tree/main/extension/jemalloc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/jemalloc",
+    "/docs/stable/extensions/jemalloc/",
+    "/docs/extensions/jemalloc",
+    "/docs/extensions/jemalloc/"
+  ],
+  "title": "jemalloc Extension",
+  "file_name": "jemalloc.md",
+  "file_stem": "jemalloc",
+  "file_path": "core_extensions/jemalloc.md",
+  "file_size": 2106,
+  "document_id": "core_extensions-jemalloc",
+  "url": "/core_extensions/jemalloc",
+  "content_hash": "c40f461d47c78e02abd983501838c32e",
+  "statistics": {
+    "char_count": 1834,
+    "word_count": 222,
+    "line_count": 43,
+    "paragraph_count": 18,
+    "header_count": 7,
+    "code_block_count": 3,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:08.361657",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Operating System Support",
+      "anchor": "operating-system-support"
+    },
+    {
+      "level": 3,
+      "title": "Linux",
+      "anchor": "linux"
+    },
+    {
+      "level": 3,
+      "title": "macOS",
+      "anchor": "macos"
+    },
+    {
+      "level": 3,
+      "title": "Windows",
+      "anchor": "windows"
+    },
+    {
+      "level": 2,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 3,
+      "title": "Environment Variables",
+      "anchor": "environment-variables"
+    },
+    {
+      "level": 3,
+      "title": "Background Threads",
+      "anchor": "background-threads"
+    }
+  ]
+}

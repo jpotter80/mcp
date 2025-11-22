@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/insert"
+  ],
+  "title": "INSERT Statements",
+  "file_name": "insert.md",
+  "file_stem": "insert",
+  "file_path": "data/insert.md",
+  "file_size": 1672,
+  "document_id": "data-insert",
+  "url": "/data/insert",
+  "content_hash": "1d06722a08b5e6caa7e0b9fbc9932ea6",
+  "statistics": {
+    "char_count": 1589,
+    "word_count": 248,
+    "line_count": 18,
+    "paragraph_count": 8,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:09.521020",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

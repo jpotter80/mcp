@@ -1,0 +1,86 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/typecasting"
+  ],
+  "title": "Typecasting",
+  "file_name": "typecasting.md",
+  "file_stem": "typecasting",
+  "file_path": "sql/data_types/typecasting.md",
+  "file_size": 7434,
+  "document_id": "sql-data_types-typecasting",
+  "url": "/sql/data_types/typecasting",
+  "content_hash": "ed82950984b778f8854be6710d091fb9",
+  "statistics": {
+    "char_count": 7324,
+    "word_count": 1123,
+    "line_count": 143,
+    "paragraph_count": 53,
+    "header_count": 12,
+    "code_block_count": 13,
+    "code_lines": 18
+  },
+  "processed_at": "2025-11-22T10:32:12.859344",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Explicit Casting",
+      "anchor": "explicit-casting"
+    },
+    {
+      "level": 2,
+      "title": "Implicit Casting",
+      "anchor": "implicit-casting"
+    },
+    {
+      "level": 3,
+      "title": "Combination Casting",
+      "anchor": "combination-casting"
+    },
+    {
+      "level": 2,
+      "title": "Casting Operations Matrix",
+      "anchor": "casting-operations-matrix"
+    },
+    {
+      "level": 3,
+      "title": "Lossy Casts",
+      "anchor": "lossy-casts"
+    },
+    {
+      "level": 3,
+      "title": "Overflows",
+      "anchor": "overflows"
+    },
+    {
+      "level": 3,
+      "title": "Varchar",
+      "anchor": "varchar"
+    },
+    {
+      "level": 3,
+      "title": "Literal Types",
+      "anchor": "literal-types"
+    },
+    {
+      "level": 3,
+      "title": "Lists / Arrays",
+      "anchor": "lists-arrays"
+    },
+    {
+      "level": 3,
+      "title": "Arrays",
+      "anchor": "arrays"
+    },
+    {
+      "level": 3,
+      "title": "Structs",
+      "anchor": "structs"
+    },
+    {
+      "level": 3,
+      "title": "Unions",
+      "anchor": "unions"
+    }
+  ]
+}

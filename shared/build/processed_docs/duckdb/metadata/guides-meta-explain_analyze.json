@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/meta/explain_analyze"
+  ],
+  "title": "EXPLAIN ANALYZE: Profile Queries",
+  "file_name": "explain_analyze.md",
+  "file_stem": "explain_analyze",
+  "file_path": "guides/meta/explain_analyze.md",
+  "file_size": 5119,
+  "document_id": "guides-meta-explain_analyze",
+  "url": "/guides/meta/explain_analyze",
+  "content_hash": "cec401e88c0040190aa169bd4878360c",
+  "statistics": {
+    "char_count": 2527,
+    "word_count": 531,
+    "line_count": 88,
+    "paragraph_count": 9,
+    "header_count": 1,
+    "code_block_count": 3,
+    "code_lines": 69
+  },
+  "processed_at": "2025-11-22T10:32:11.045531",
+  "sections": [
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

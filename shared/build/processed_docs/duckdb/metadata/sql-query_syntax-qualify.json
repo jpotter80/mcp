@@ -1,0 +1,38 @@
+{
+  "blurb": "The QUALIFY clause is used to filter the results of WINDOW functions.",
+  "layout": "docu",
+  "railroad": "query_syntax/qualify.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/qualify"
+  ],
+  "title": "QUALIFY Clause",
+  "file_name": "qualify.md",
+  "file_stem": "qualify",
+  "file_path": "sql/query_syntax/qualify.md",
+  "file_size": 3673,
+  "document_id": "sql-query_syntax-qualify",
+  "url": "/sql/query_syntax/qualify",
+  "content_hash": "10c09949f246e76fa14b6b85580f5d2d",
+  "statistics": {
+    "char_count": 1755,
+    "word_count": 224,
+    "line_count": 23,
+    "paragraph_count": 8,
+    "header_count": 2,
+    "code_block_count": 5,
+    "code_lines": 46
+  },
+  "processed_at": "2025-11-22T10:32:15.271629",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-spatial",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/spatial",
+    "/docs/stable/extensions/spatial/",
+    "/docs/stable/extensions/spatial/overview",
+    "/docs/stable/extensions/spatial/overview/",
+    "/docs/extensions/spatial",
+    "/docs/extensions/spatial/"
+  ],
+  "title": "Spatial Extension",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "core_extensions/spatial/overview.md",
+  "file_size": 2924,
+  "document_id": "core_extensions-spatial-overview",
+  "url": "/core_extensions/spatial/overview",
+  "content_hash": "b720730afdecb20ffb251ae12542b701",
+  "statistics": {
+    "char_count": 2582,
+    "word_count": 394,
+    "line_count": 29,
+    "paragraph_count": 12,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:09.107839",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "The `GEOMETRY` Type",
+      "anchor": "the-geometry-type"
+    }
+  ]
+}

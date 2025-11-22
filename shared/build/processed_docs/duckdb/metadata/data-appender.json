@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/appender"
+  ],
+  "title": "Appender",
+  "file_name": "appender.md",
+  "file_stem": "appender",
+  "file_path": "data/appender.md",
+  "file_size": 3715,
+  "document_id": "data-appender",
+  "url": "/data/appender",
+  "content_hash": "2e067f4a5c626fbc38c3f7c546c70db8",
+  "statistics": {
+    "char_count": 3604,
+    "word_count": 493,
+    "line_count": 81,
+    "paragraph_count": 22,
+    "header_count": 4,
+    "code_block_count": 5,
+    "code_lines": 29
+  },
+  "processed_at": "2025-11-22T10:32:09.311857",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Date, Time and Timestamps",
+      "anchor": "date-time-and-timestamps"
+    },
+    {
+      "level": 2,
+      "title": "Commit Frequency",
+      "anchor": "commit-frequency"
+    },
+    {
+      "level": 2,
+      "title": "Handling Constraint Violations",
+      "anchor": "handling-constraint-violations"
+    },
+    {
+      "level": 2,
+      "title": "Appender Support in Other Clients",
+      "anchor": "appender-support-in-other-clients"
+    }
+  ]
+}

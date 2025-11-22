@@ -1,0 +1,8163 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/api",
+    "/docs/api/c/api/",
+    "/docs/clients/c/api"
+  ],
+  "title": "Complete API",
+  "file_name": "api.md",
+  "file_stem": "api",
+  "file_path": "clients/c/api.md",
+  "file_size": 440994,
+  "document_id": "clients-c-api",
+  "url": "/clients/c/api",
+  "content_hash": "f32afd15870f872b99ce7f9e4f6ac0e1",
+  "statistics": {
+    "char_count": 212173,
+    "word_count": 24086,
+    "line_count": 8918,
+    "paragraph_count": 3405,
+    "header_count": 1627,
+    "code_block_count": 2,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:01.708677",
+  "sections": [
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 3,
+      "title": "Open Connect",
+      "anchor": "open-connect"
+    },
+    {
+      "level": 3,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 3,
+      "title": "Error Data",
+      "anchor": "error-data"
+    },
+    {
+      "level": 3,
+      "title": "Query Execution",
+      "anchor": "query-execution"
+    },
+    {
+      "level": 3,
+      "title": "Result Functions",
+      "anchor": "result-functions"
+    },
+    {
+      "level": 3,
+      "title": "Safe Fetch Functions",
+      "anchor": "safe-fetch-functions"
+    },
+    {
+      "level": 3,
+      "title": "Helpers",
+      "anchor": "helpers"
+    },
+    {
+      "level": 3,
+      "title": "Date Time Timestamp Helpers",
+      "anchor": "date-time-timestamp-helpers"
+    },
+    {
+      "level": 3,
+      "title": "Hugeint Helpers",
+      "anchor": "hugeint-helpers"
+    },
+    {
+      "level": 3,
+      "title": "Unsigned Hugeint Helpers",
+      "anchor": "unsigned-hugeint-helpers"
+    },
+    {
+      "level": 3,
+      "title": "Decimal Helpers",
+      "anchor": "decimal-helpers"
+    },
+    {
+      "level": 3,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 3,
+      "title": "Bind Values to Prepared Statements",
+      "anchor": "bind-values-to-prepared-statements"
+    },
+    {
+      "level": 3,
+      "title": "Execute Prepared Statements",
+      "anchor": "execute-prepared-statements"
+    },
+    {
+      "level": 3,
+      "title": "Extract Statements",
+      "anchor": "extract-statements"
+    },
+    {
+      "level": 3,
+      "title": "Pending Result Interface",
+      "anchor": "pending-result-interface"
+    },
+    {
+      "level": 3,
+      "title": "Value Interface",
+      "anchor": "value-interface"
+    },
+    {
+      "level": 3,
+      "title": "Logical Type Interface",
+      "anchor": "logical-type-interface"
+    },
+    {
+      "level": 3,
+      "title": "Data Chunk Interface",
+      "anchor": "data-chunk-interface"
+    },
+    {
+      "level": 3,
+      "title": "Vector Interface",
+      "anchor": "vector-interface"
+    },
+    {
+      "level": 3,
+      "title": "Validity Mask Functions",
+      "anchor": "validity-mask-functions"
+    },
+    {
+      "level": 3,
+      "title": "Scalar Functions",
+      "anchor": "scalar-functions"
+    },
+    {
+      "level": 3,
+      "title": "Selection Vector Interface",
+      "anchor": "selection-vector-interface"
+    },
+    {
+      "level": 3,
+      "title": "Aggregate Functions",
+      "anchor": "aggregate-functions"
+    },
+    {
+      "level": 3,
+      "title": "Table Functions",
+      "anchor": "table-functions"
+    },
+    {
+      "level": 3,
+      "title": "Table Function Bind",
+      "anchor": "table-function-bind"
+    },
+    {
+      "level": 3,
+      "title": "Table Function Init",
+      "anchor": "table-function-init"
+    },
+    {
+      "level": 3,
+      "title": "Table Function",
+      "anchor": "table-function"
+    },
+    {
+      "level": 3,
+      "title": "Replacement Scans",
+      "anchor": "replacement-scans"
+    },
+    {
+      "level": 3,
+      "title": "Profiling Info",
+      "anchor": "profiling-info"
+    },
+    {
+      "level": 3,
+      "title": "Appender",
+      "anchor": "appender"
+    },
+    {
+      "level": 3,
+      "title": "Table Description",
+      "anchor": "table-description"
+    },
+    {
+      "level": 3,
+      "title": "Arrow Interface",
+      "anchor": "arrow-interface"
+    },
+    {
+      "level": 3,
+      "title": "Threading Information",
+      "anchor": "threading-information"
+    },
+    {
+      "level": 3,
+      "title": "Streaming Result Interface",
+      "anchor": "streaming-result-interface"
+    },
+    {
+      "level": 3,
+      "title": "Cast Functions",
+      "anchor": "cast-functions"
+    },
+    {
+      "level": 3,
+      "title": "Expression Interface",
+      "anchor": "expression-interface"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_instance_cache`",
+      "anchor": "duckdb_create_instance_cache"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_or_create_from_cache`",
+      "anchor": "duckdb_get_or_create_from_cache"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_instance_cache`",
+      "anchor": "duckdb_destroy_instance_cache"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_open`",
+      "anchor": "duckdb_open"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_open_ext`",
+      "anchor": "duckdb_open_ext"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_close`",
+      "anchor": "duckdb_close"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connect`",
+      "anchor": "duckdb_connect"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_interrupt`",
+      "anchor": "duckdb_interrupt"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_progress`",
+      "anchor": "duckdb_query_progress"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_disconnect`",
+      "anchor": "duckdb_disconnect"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connection_get_client_context`",
+      "anchor": "duckdb_connection_get_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connection_get_arrow_options`",
+      "anchor": "duckdb_connection_get_arrow_options"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_client_context_get_connection_id`",
+      "anchor": "duckdb_client_context_get_connection_id"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_client_context`",
+      "anchor": "duckdb_destroy_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_arrow_options`",
+      "anchor": "duckdb_destroy_arrow_options"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_library_version`",
+      "anchor": "duckdb_library_version"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_table_names`",
+      "anchor": "duckdb_get_table_names"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_config`",
+      "anchor": "duckdb_create_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_config_count`",
+      "anchor": "duckdb_config_count"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_config_flag`",
+      "anchor": "duckdb_get_config_flag"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_set_config`",
+      "anchor": "duckdb_set_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_config`",
+      "anchor": "duckdb_destroy_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_error_data`",
+      "anchor": "duckdb_create_error_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_error_data`",
+      "anchor": "duckdb_destroy_error_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_error_data_error_type`",
+      "anchor": "duckdb_error_data_error_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_error_data_message`",
+      "anchor": "duckdb_error_data_message"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_error_data_has_error`",
+      "anchor": "duckdb_error_data_has_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query`",
+      "anchor": "duckdb_query"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_result`",
+      "anchor": "duckdb_destroy_result"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_name`",
+      "anchor": "duckdb_column_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_type`",
+      "anchor": "duckdb_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_statement_type`",
+      "anchor": "duckdb_result_statement_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_logical_type`",
+      "anchor": "duckdb_column_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_get_arrow_options`",
+      "anchor": "duckdb_result_get_arrow_options"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_count`",
+      "anchor": "duckdb_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_row_count`",
+      "anchor": "duckdb_row_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_rows_changed`",
+      "anchor": "duckdb_rows_changed"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_data`",
+      "anchor": "duckdb_column_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_nullmask_data`",
+      "anchor": "duckdb_nullmask_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_error`",
+      "anchor": "duckdb_result_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_error_type`",
+      "anchor": "duckdb_result_error_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_get_chunk`",
+      "anchor": "duckdb_result_get_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_is_streaming`",
+      "anchor": "duckdb_result_is_streaming"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_chunk_count`",
+      "anchor": "duckdb_result_chunk_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_return_type`",
+      "anchor": "duckdb_result_return_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_boolean`",
+      "anchor": "duckdb_value_boolean"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_int8`",
+      "anchor": "duckdb_value_int8"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_int16`",
+      "anchor": "duckdb_value_int16"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_int32`",
+      "anchor": "duckdb_value_int32"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_int64`",
+      "anchor": "duckdb_value_int64"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_hugeint`",
+      "anchor": "duckdb_value_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_uhugeint`",
+      "anchor": "duckdb_value_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_decimal`",
+      "anchor": "duckdb_value_decimal"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_uint8`",
+      "anchor": "duckdb_value_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_uint16`",
+      "anchor": "duckdb_value_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_uint32`",
+      "anchor": "duckdb_value_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_uint64`",
+      "anchor": "duckdb_value_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_float`",
+      "anchor": "duckdb_value_float"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_double`",
+      "anchor": "duckdb_value_double"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_date`",
+      "anchor": "duckdb_value_date"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_time`",
+      "anchor": "duckdb_value_time"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_timestamp`",
+      "anchor": "duckdb_value_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_interval`",
+      "anchor": "duckdb_value_interval"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_varchar`",
+      "anchor": "duckdb_value_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_string`",
+      "anchor": "duckdb_value_string"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_varchar_internal`",
+      "anchor": "duckdb_value_varchar_internal"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_string_internal`",
+      "anchor": "duckdb_value_string_internal"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_blob`",
+      "anchor": "duckdb_value_blob"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_is_null`",
+      "anchor": "duckdb_value_is_null"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_malloc`",
+      "anchor": "duckdb_malloc"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_free`",
+      "anchor": "duckdb_free"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_size`",
+      "anchor": "duckdb_vector_size"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_string_is_inlined`",
+      "anchor": "duckdb_string_is_inlined"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_string_t_length`",
+      "anchor": "duckdb_string_t_length"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_string_t_data`",
+      "anchor": "duckdb_string_t_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_from_date`",
+      "anchor": "duckdb_from_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_to_date`",
+      "anchor": "duckdb_to_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_finite_date`",
+      "anchor": "duckdb_is_finite_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_from_time`",
+      "anchor": "duckdb_from_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_time_tz`",
+      "anchor": "duckdb_create_time_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_from_time_tz`",
+      "anchor": "duckdb_from_time_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_to_time`",
+      "anchor": "duckdb_to_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_from_timestamp`",
+      "anchor": "duckdb_from_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_to_timestamp`",
+      "anchor": "duckdb_to_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_finite_timestamp`",
+      "anchor": "duckdb_is_finite_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_finite_timestamp_s`",
+      "anchor": "duckdb_is_finite_timestamp_s"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_finite_timestamp_ms`",
+      "anchor": "duckdb_is_finite_timestamp_ms"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_finite_timestamp_ns`",
+      "anchor": "duckdb_is_finite_timestamp_ns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_hugeint_to_double`",
+      "anchor": "duckdb_hugeint_to_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_double_to_hugeint`",
+      "anchor": "duckdb_double_to_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_uhugeint_to_double`",
+      "anchor": "duckdb_uhugeint_to_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_double_to_uhugeint`",
+      "anchor": "duckdb_double_to_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_double_to_decimal`",
+      "anchor": "duckdb_double_to_decimal"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_decimal_to_double`",
+      "anchor": "duckdb_decimal_to_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepare`",
+      "anchor": "duckdb_prepare"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_prepare`",
+      "anchor": "duckdb_destroy_prepare"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepare_error`",
+      "anchor": "duckdb_prepare_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_nparams`",
+      "anchor": "duckdb_nparams"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_parameter_name`",
+      "anchor": "duckdb_parameter_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_param_type`",
+      "anchor": "duckdb_param_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_param_logical_type`",
+      "anchor": "duckdb_param_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_clear_bindings`",
+      "anchor": "duckdb_clear_bindings"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_statement_type`",
+      "anchor": "duckdb_prepared_statement_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_statement_column_count`",
+      "anchor": "duckdb_prepared_statement_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_statement_column_name`",
+      "anchor": "duckdb_prepared_statement_column_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_statement_column_logical_type`",
+      "anchor": "duckdb_prepared_statement_column_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_statement_column_type`",
+      "anchor": "duckdb_prepared_statement_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_value`",
+      "anchor": "duckdb_bind_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_parameter_index`",
+      "anchor": "duckdb_bind_parameter_index"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_boolean`",
+      "anchor": "duckdb_bind_boolean"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_int8`",
+      "anchor": "duckdb_bind_int8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_int16`",
+      "anchor": "duckdb_bind_int16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_int32`",
+      "anchor": "duckdb_bind_int32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_int64`",
+      "anchor": "duckdb_bind_int64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_hugeint`",
+      "anchor": "duckdb_bind_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_uhugeint`",
+      "anchor": "duckdb_bind_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_decimal`",
+      "anchor": "duckdb_bind_decimal"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_uint8`",
+      "anchor": "duckdb_bind_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_uint16`",
+      "anchor": "duckdb_bind_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_uint32`",
+      "anchor": "duckdb_bind_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_uint64`",
+      "anchor": "duckdb_bind_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_float`",
+      "anchor": "duckdb_bind_float"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_double`",
+      "anchor": "duckdb_bind_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_date`",
+      "anchor": "duckdb_bind_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_time`",
+      "anchor": "duckdb_bind_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_timestamp`",
+      "anchor": "duckdb_bind_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_timestamp_tz`",
+      "anchor": "duckdb_bind_timestamp_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_interval`",
+      "anchor": "duckdb_bind_interval"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_varchar`",
+      "anchor": "duckdb_bind_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_varchar_length`",
+      "anchor": "duckdb_bind_varchar_length"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_blob`",
+      "anchor": "duckdb_bind_blob"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_null`",
+      "anchor": "duckdb_bind_null"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_prepared`",
+      "anchor": "duckdb_execute_prepared"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_prepared_streaming`",
+      "anchor": "duckdb_execute_prepared_streaming"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_extract_statements`",
+      "anchor": "duckdb_extract_statements"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepare_extracted_statement`",
+      "anchor": "duckdb_prepare_extracted_statement"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_extract_statements_error`",
+      "anchor": "duckdb_extract_statements_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_extracted`",
+      "anchor": "duckdb_destroy_extracted"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_prepared`",
+      "anchor": "duckdb_pending_prepared"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_prepared_streaming`",
+      "anchor": "duckdb_pending_prepared_streaming"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_pending`",
+      "anchor": "duckdb_destroy_pending"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_error`",
+      "anchor": "duckdb_pending_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_execute_task`",
+      "anchor": "duckdb_pending_execute_task"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_execute_check_state`",
+      "anchor": "duckdb_pending_execute_check_state"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_pending`",
+      "anchor": "duckdb_execute_pending"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_pending_execution_is_finished`",
+      "anchor": "duckdb_pending_execution_is_finished"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_value`",
+      "anchor": "duckdb_destroy_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_varchar`",
+      "anchor": "duckdb_create_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_varchar_length`",
+      "anchor": "duckdb_create_varchar_length"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_bool`",
+      "anchor": "duckdb_create_bool"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_int8`",
+      "anchor": "duckdb_create_int8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uint8`",
+      "anchor": "duckdb_create_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_int16`",
+      "anchor": "duckdb_create_int16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uint16`",
+      "anchor": "duckdb_create_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_int32`",
+      "anchor": "duckdb_create_int32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uint32`",
+      "anchor": "duckdb_create_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uint64`",
+      "anchor": "duckdb_create_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_int64`",
+      "anchor": "duckdb_create_int64"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_hugeint`",
+      "anchor": "duckdb_create_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uhugeint`",
+      "anchor": "duckdb_create_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_bignum`",
+      "anchor": "duckdb_create_bignum"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_decimal`",
+      "anchor": "duckdb_create_decimal"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_float`",
+      "anchor": "duckdb_create_float"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_double`",
+      "anchor": "duckdb_create_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_date`",
+      "anchor": "duckdb_create_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_time`",
+      "anchor": "duckdb_create_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_time_ns`",
+      "anchor": "duckdb_create_time_ns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_time_tz_value`",
+      "anchor": "duckdb_create_time_tz_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_timestamp`",
+      "anchor": "duckdb_create_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_timestamp_tz`",
+      "anchor": "duckdb_create_timestamp_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_timestamp_s`",
+      "anchor": "duckdb_create_timestamp_s"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_timestamp_ms`",
+      "anchor": "duckdb_create_timestamp_ms"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_timestamp_ns`",
+      "anchor": "duckdb_create_timestamp_ns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_interval`",
+      "anchor": "duckdb_create_interval"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_blob`",
+      "anchor": "duckdb_create_blob"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_bit`",
+      "anchor": "duckdb_create_bit"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_uuid`",
+      "anchor": "duckdb_create_uuid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_bool`",
+      "anchor": "duckdb_get_bool"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_int8`",
+      "anchor": "duckdb_get_int8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uint8`",
+      "anchor": "duckdb_get_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_int16`",
+      "anchor": "duckdb_get_int16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uint16`",
+      "anchor": "duckdb_get_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_int32`",
+      "anchor": "duckdb_get_int32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uint32`",
+      "anchor": "duckdb_get_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_int64`",
+      "anchor": "duckdb_get_int64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uint64`",
+      "anchor": "duckdb_get_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_hugeint`",
+      "anchor": "duckdb_get_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uhugeint`",
+      "anchor": "duckdb_get_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_bignum`",
+      "anchor": "duckdb_get_bignum"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_decimal`",
+      "anchor": "duckdb_get_decimal"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_float`",
+      "anchor": "duckdb_get_float"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_double`",
+      "anchor": "duckdb_get_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_date`",
+      "anchor": "duckdb_get_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_time`",
+      "anchor": "duckdb_get_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_time_ns`",
+      "anchor": "duckdb_get_time_ns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_time_tz`",
+      "anchor": "duckdb_get_time_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_timestamp`",
+      "anchor": "duckdb_get_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_timestamp_tz`",
+      "anchor": "duckdb_get_timestamp_tz"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_timestamp_s`",
+      "anchor": "duckdb_get_timestamp_s"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_timestamp_ms`",
+      "anchor": "duckdb_get_timestamp_ms"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_timestamp_ns`",
+      "anchor": "duckdb_get_timestamp_ns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_interval`",
+      "anchor": "duckdb_get_interval"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_value_type`",
+      "anchor": "duckdb_get_value_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_blob`",
+      "anchor": "duckdb_get_blob"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_bit`",
+      "anchor": "duckdb_get_bit"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_uuid`",
+      "anchor": "duckdb_get_uuid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_varchar`",
+      "anchor": "duckdb_get_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_struct_value`",
+      "anchor": "duckdb_create_struct_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_list_value`",
+      "anchor": "duckdb_create_list_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_array_value`",
+      "anchor": "duckdb_create_array_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_map_value`",
+      "anchor": "duckdb_create_map_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_union_value`",
+      "anchor": "duckdb_create_union_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_map_size`",
+      "anchor": "duckdb_get_map_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_map_key`",
+      "anchor": "duckdb_get_map_key"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_map_value`",
+      "anchor": "duckdb_get_map_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_is_null_value`",
+      "anchor": "duckdb_is_null_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_null_value`",
+      "anchor": "duckdb_create_null_value"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_list_size`",
+      "anchor": "duckdb_get_list_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_list_child`",
+      "anchor": "duckdb_get_list_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_enum_value`",
+      "anchor": "duckdb_create_enum_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_enum_value`",
+      "anchor": "duckdb_get_enum_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_struct_child`",
+      "anchor": "duckdb_get_struct_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_value_to_string`",
+      "anchor": "duckdb_value_to_string"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_logical_type`",
+      "anchor": "duckdb_create_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_logical_type_get_alias`",
+      "anchor": "duckdb_logical_type_get_alias"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_logical_type_set_alias`",
+      "anchor": "duckdb_logical_type_set_alias"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_list_type`",
+      "anchor": "duckdb_create_list_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_array_type`",
+      "anchor": "duckdb_create_array_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_map_type`",
+      "anchor": "duckdb_create_map_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_union_type`",
+      "anchor": "duckdb_create_union_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_struct_type`",
+      "anchor": "duckdb_create_struct_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_enum_type`",
+      "anchor": "duckdb_create_enum_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_decimal_type`",
+      "anchor": "duckdb_create_decimal_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_type_id`",
+      "anchor": "duckdb_get_type_id"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_decimal_width`",
+      "anchor": "duckdb_decimal_width"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_decimal_scale`",
+      "anchor": "duckdb_decimal_scale"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_decimal_internal_type`",
+      "anchor": "duckdb_decimal_internal_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_enum_internal_type`",
+      "anchor": "duckdb_enum_internal_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_enum_dictionary_size`",
+      "anchor": "duckdb_enum_dictionary_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_enum_dictionary_value`",
+      "anchor": "duckdb_enum_dictionary_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_type_child_type`",
+      "anchor": "duckdb_list_type_child_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_array_type_child_type`",
+      "anchor": "duckdb_array_type_child_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_array_type_array_size`",
+      "anchor": "duckdb_array_type_array_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_map_type_key_type`",
+      "anchor": "duckdb_map_type_key_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_map_type_value_type`",
+      "anchor": "duckdb_map_type_value_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_struct_type_child_count`",
+      "anchor": "duckdb_struct_type_child_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_struct_type_child_name`",
+      "anchor": "duckdb_struct_type_child_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_struct_type_child_type`",
+      "anchor": "duckdb_struct_type_child_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_union_type_member_count`",
+      "anchor": "duckdb_union_type_member_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_union_type_member_name`",
+      "anchor": "duckdb_union_type_member_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_union_type_member_type`",
+      "anchor": "duckdb_union_type_member_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_logical_type`",
+      "anchor": "duckdb_destroy_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_logical_type`",
+      "anchor": "duckdb_register_logical_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_data_chunk`",
+      "anchor": "duckdb_create_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_data_chunk`",
+      "anchor": "duckdb_destroy_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_reset`",
+      "anchor": "duckdb_data_chunk_reset"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_column_count`",
+      "anchor": "duckdb_data_chunk_get_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_vector`",
+      "anchor": "duckdb_data_chunk_get_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_get_size`",
+      "anchor": "duckdb_data_chunk_get_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_set_size`",
+      "anchor": "duckdb_data_chunk_set_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_vector`",
+      "anchor": "duckdb_create_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_vector`",
+      "anchor": "duckdb_destroy_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_column_type`",
+      "anchor": "duckdb_vector_get_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_data`",
+      "anchor": "duckdb_vector_get_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_validity`",
+      "anchor": "duckdb_vector_get_validity"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_ensure_validity_writable`",
+      "anchor": "duckdb_vector_ensure_validity_writable"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_assign_string_element`",
+      "anchor": "duckdb_vector_assign_string_element"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_assign_string_element_len`",
+      "anchor": "duckdb_vector_assign_string_element_len"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_get_child`",
+      "anchor": "duckdb_list_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_get_size`",
+      "anchor": "duckdb_list_vector_get_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_set_size`",
+      "anchor": "duckdb_list_vector_set_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_reserve`",
+      "anchor": "duckdb_list_vector_reserve"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_struct_vector_get_child`",
+      "anchor": "duckdb_struct_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_array_vector_get_child`",
+      "anchor": "duckdb_array_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_slice_vector`",
+      "anchor": "duckdb_slice_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_copy_sel`",
+      "anchor": "duckdb_vector_copy_sel"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_reference_value`",
+      "anchor": "duckdb_vector_reference_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_reference_vector`",
+      "anchor": "duckdb_vector_reference_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_row_is_valid`",
+      "anchor": "duckdb_validity_row_is_valid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_validity`",
+      "anchor": "duckdb_validity_set_row_validity"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_invalid`",
+      "anchor": "duckdb_validity_set_row_invalid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_valid`",
+      "anchor": "duckdb_validity_set_row_valid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_scalar_function`",
+      "anchor": "duckdb_create_scalar_function"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_scalar_function`",
+      "anchor": "duckdb_destroy_scalar_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_name`",
+      "anchor": "duckdb_scalar_function_set_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_varargs`",
+      "anchor": "duckdb_scalar_function_set_varargs"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_special_handling`",
+      "anchor": "duckdb_scalar_function_set_special_handling"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_volatile`",
+      "anchor": "duckdb_scalar_function_set_volatile"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_add_parameter`",
+      "anchor": "duckdb_scalar_function_add_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_return_type`",
+      "anchor": "duckdb_scalar_function_set_return_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_extra_info`",
+      "anchor": "duckdb_scalar_function_set_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_bind`",
+      "anchor": "duckdb_scalar_function_set_bind"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_bind_data`",
+      "anchor": "duckdb_scalar_function_set_bind_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_bind_data_copy`",
+      "anchor": "duckdb_scalar_function_set_bind_data_copy"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_bind_set_error`",
+      "anchor": "duckdb_scalar_function_bind_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_function`",
+      "anchor": "duckdb_scalar_function_set_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_scalar_function`",
+      "anchor": "duckdb_register_scalar_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_get_extra_info`",
+      "anchor": "duckdb_scalar_function_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_bind_get_extra_info`",
+      "anchor": "duckdb_scalar_function_bind_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_get_bind_data`",
+      "anchor": "duckdb_scalar_function_get_bind_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_get_client_context`",
+      "anchor": "duckdb_scalar_function_get_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_set_error`",
+      "anchor": "duckdb_scalar_function_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_scalar_function_set`",
+      "anchor": "duckdb_create_scalar_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_scalar_function_set`",
+      "anchor": "duckdb_destroy_scalar_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_add_scalar_function_to_set`",
+      "anchor": "duckdb_add_scalar_function_to_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_scalar_function_set`",
+      "anchor": "duckdb_register_scalar_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_bind_get_argument_count`",
+      "anchor": "duckdb_scalar_function_bind_get_argument_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_scalar_function_bind_get_argument`",
+      "anchor": "duckdb_scalar_function_bind_get_argument"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_selection_vector`",
+      "anchor": "duckdb_create_selection_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_selection_vector`",
+      "anchor": "duckdb_destroy_selection_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_selection_vector_get_data_ptr`",
+      "anchor": "duckdb_selection_vector_get_data_ptr"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_aggregate_function`",
+      "anchor": "duckdb_create_aggregate_function"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_aggregate_function`",
+      "anchor": "duckdb_destroy_aggregate_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_name`",
+      "anchor": "duckdb_aggregate_function_set_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_add_parameter`",
+      "anchor": "duckdb_aggregate_function_add_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_return_type`",
+      "anchor": "duckdb_aggregate_function_set_return_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_functions`",
+      "anchor": "duckdb_aggregate_function_set_functions"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_destructor`",
+      "anchor": "duckdb_aggregate_function_set_destructor"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_aggregate_function`",
+      "anchor": "duckdb_register_aggregate_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_special_handling`",
+      "anchor": "duckdb_aggregate_function_set_special_handling"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_extra_info`",
+      "anchor": "duckdb_aggregate_function_set_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_get_extra_info`",
+      "anchor": "duckdb_aggregate_function_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_aggregate_function_set_error`",
+      "anchor": "duckdb_aggregate_function_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_aggregate_function_set`",
+      "anchor": "duckdb_create_aggregate_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_aggregate_function_set`",
+      "anchor": "duckdb_destroy_aggregate_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_add_aggregate_function_to_set`",
+      "anchor": "duckdb_add_aggregate_function_to_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_aggregate_function_set`",
+      "anchor": "duckdb_register_aggregate_function_set"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_table_function`",
+      "anchor": "duckdb_create_table_function"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_table_function`",
+      "anchor": "duckdb_destroy_table_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_name`",
+      "anchor": "duckdb_table_function_set_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_add_parameter`",
+      "anchor": "duckdb_table_function_add_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_add_named_parameter`",
+      "anchor": "duckdb_table_function_add_named_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_extra_info`",
+      "anchor": "duckdb_table_function_set_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_bind`",
+      "anchor": "duckdb_table_function_set_bind"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_init`",
+      "anchor": "duckdb_table_function_set_init"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_local_init`",
+      "anchor": "duckdb_table_function_set_local_init"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_set_function`",
+      "anchor": "duckdb_table_function_set_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_supports_projection_pushdown`",
+      "anchor": "duckdb_table_function_supports_projection_pushdown"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_table_function`",
+      "anchor": "duckdb_register_table_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_get_extra_info`",
+      "anchor": "duckdb_bind_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_function_get_client_context`",
+      "anchor": "duckdb_table_function_get_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_add_result_column`",
+      "anchor": "duckdb_bind_add_result_column"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_get_parameter_count`",
+      "anchor": "duckdb_bind_get_parameter_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_get_parameter`",
+      "anchor": "duckdb_bind_get_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_get_named_parameter`",
+      "anchor": "duckdb_bind_get_named_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_set_bind_data`",
+      "anchor": "duckdb_bind_set_bind_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_set_cardinality`",
+      "anchor": "duckdb_bind_set_cardinality"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_bind_set_error`",
+      "anchor": "duckdb_bind_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_get_extra_info`",
+      "anchor": "duckdb_init_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_get_bind_data`",
+      "anchor": "duckdb_init_get_bind_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_set_init_data`",
+      "anchor": "duckdb_init_set_init_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_get_column_count`",
+      "anchor": "duckdb_init_get_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_get_column_index`",
+      "anchor": "duckdb_init_get_column_index"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_set_max_threads`",
+      "anchor": "duckdb_init_set_max_threads"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_init_set_error`",
+      "anchor": "duckdb_init_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_function_get_extra_info`",
+      "anchor": "duckdb_function_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_function_get_bind_data`",
+      "anchor": "duckdb_function_get_bind_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_function_get_init_data`",
+      "anchor": "duckdb_function_get_init_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_function_get_local_init_data`",
+      "anchor": "duckdb_function_get_local_init_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_function_set_error`",
+      "anchor": "duckdb_function_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_add_replacement_scan`",
+      "anchor": "duckdb_add_replacement_scan"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_set_function_name`",
+      "anchor": "duckdb_replacement_scan_set_function_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_add_parameter`",
+      "anchor": "duckdb_replacement_scan_add_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_set_error`",
+      "anchor": "duckdb_replacement_scan_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_profiling_info`",
+      "anchor": "duckdb_get_profiling_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_profiling_info_get_value`",
+      "anchor": "duckdb_profiling_info_get_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_profiling_info_get_metrics`",
+      "anchor": "duckdb_profiling_info_get_metrics"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_profiling_info_get_child_count`",
+      "anchor": "duckdb_profiling_info_get_child_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_profiling_info_get_child`",
+      "anchor": "duckdb_profiling_info_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create`",
+      "anchor": "duckdb_appender_create"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create_ext`",
+      "anchor": "duckdb_appender_create_ext"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_create_query`",
+      "anchor": "duckdb_appender_create_query"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_column_count`",
+      "anchor": "duckdb_appender_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_column_type`",
+      "anchor": "duckdb_appender_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_error`",
+      "anchor": "duckdb_appender_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_error_data`",
+      "anchor": "duckdb_appender_error_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_flush`",
+      "anchor": "duckdb_appender_flush"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_close`",
+      "anchor": "duckdb_appender_close"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_destroy`",
+      "anchor": "duckdb_appender_destroy"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_add_column`",
+      "anchor": "duckdb_appender_add_column"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_clear_columns`",
+      "anchor": "duckdb_appender_clear_columns"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_begin_row`",
+      "anchor": "duckdb_appender_begin_row"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_appender_end_row`",
+      "anchor": "duckdb_appender_end_row"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_default`",
+      "anchor": "duckdb_append_default"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_default_to_chunk`",
+      "anchor": "duckdb_append_default_to_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_bool`",
+      "anchor": "duckdb_append_bool"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int8`",
+      "anchor": "duckdb_append_int8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int16`",
+      "anchor": "duckdb_append_int16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int32`",
+      "anchor": "duckdb_append_int32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_int64`",
+      "anchor": "duckdb_append_int64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_hugeint`",
+      "anchor": "duckdb_append_hugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint8`",
+      "anchor": "duckdb_append_uint8"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint16`",
+      "anchor": "duckdb_append_uint16"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint32`",
+      "anchor": "duckdb_append_uint32"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uint64`",
+      "anchor": "duckdb_append_uint64"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_uhugeint`",
+      "anchor": "duckdb_append_uhugeint"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_float`",
+      "anchor": "duckdb_append_float"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_double`",
+      "anchor": "duckdb_append_double"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_date`",
+      "anchor": "duckdb_append_date"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_time`",
+      "anchor": "duckdb_append_time"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_timestamp`",
+      "anchor": "duckdb_append_timestamp"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_interval`",
+      "anchor": "duckdb_append_interval"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_varchar`",
+      "anchor": "duckdb_append_varchar"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_varchar_length`",
+      "anchor": "duckdb_append_varchar_length"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_blob`",
+      "anchor": "duckdb_append_blob"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_null`",
+      "anchor": "duckdb_append_null"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_value`",
+      "anchor": "duckdb_append_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_append_data_chunk`",
+      "anchor": "duckdb_append_data_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_description_create`",
+      "anchor": "duckdb_table_description_create"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_description_create_ext`",
+      "anchor": "duckdb_table_description_create_ext"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_description_destroy`",
+      "anchor": "duckdb_table_description_destroy"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_description_error`",
+      "anchor": "duckdb_table_description_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_column_has_default`",
+      "anchor": "duckdb_column_has_default"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_table_description_get_column_name`",
+      "anchor": "duckdb_table_description_get_column_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_to_arrow_schema`",
+      "anchor": "duckdb_to_arrow_schema"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_to_arrow`",
+      "anchor": "duckdb_data_chunk_to_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_schema_from_arrow`",
+      "anchor": "duckdb_schema_from_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_data_chunk_from_arrow`",
+      "anchor": "duckdb_data_chunk_from_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_arrow_converted_schema`",
+      "anchor": "duckdb_destroy_arrow_converted_schema"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_arrow`",
+      "anchor": "duckdb_query_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_arrow_schema`",
+      "anchor": "duckdb_query_arrow_schema"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_prepared_arrow_schema`",
+      "anchor": "duckdb_prepared_arrow_schema"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_result_arrow_array`",
+      "anchor": "duckdb_result_arrow_array"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_arrow_array`",
+      "anchor": "duckdb_query_arrow_array"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_arrow_column_count`",
+      "anchor": "duckdb_arrow_column_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_arrow_row_count`",
+      "anchor": "duckdb_arrow_row_count"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_arrow_rows_changed`",
+      "anchor": "duckdb_arrow_rows_changed"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_arrow_error`",
+      "anchor": "duckdb_query_arrow_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_arrow`",
+      "anchor": "duckdb_destroy_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_arrow_stream`",
+      "anchor": "duckdb_destroy_arrow_stream"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_prepared_arrow`",
+      "anchor": "duckdb_execute_prepared_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_arrow_scan`",
+      "anchor": "duckdb_arrow_scan"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_arrow_array_scan`",
+      "anchor": "duckdb_arrow_array_scan"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_tasks`",
+      "anchor": "duckdb_execute_tasks"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_task_state`",
+      "anchor": "duckdb_create_task_state"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_tasks_state`",
+      "anchor": "duckdb_execute_tasks_state"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execute_n_tasks_state`",
+      "anchor": "duckdb_execute_n_tasks_state"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_finish_execution`",
+      "anchor": "duckdb_finish_execution"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_task_state_is_finished`",
+      "anchor": "duckdb_task_state_is_finished"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_task_state`",
+      "anchor": "duckdb_destroy_task_state"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_execution_is_finished`",
+      "anchor": "duckdb_execution_is_finished"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_stream_fetch_chunk`",
+      "anchor": "duckdb_stream_fetch_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_fetch_chunk`",
+      "anchor": "duckdb_fetch_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_cast_function`",
+      "anchor": "duckdb_create_cast_function"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_source_type`",
+      "anchor": "duckdb_cast_function_set_source_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_target_type`",
+      "anchor": "duckdb_cast_function_set_target_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_implicit_cast_cost`",
+      "anchor": "duckdb_cast_function_set_implicit_cast_cost"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_function`",
+      "anchor": "duckdb_cast_function_set_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_extra_info`",
+      "anchor": "duckdb_cast_function_set_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_get_extra_info`",
+      "anchor": "duckdb_cast_function_get_extra_info"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_get_cast_mode`",
+      "anchor": "duckdb_cast_function_get_cast_mode"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_error`",
+      "anchor": "duckdb_cast_function_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_cast_function_set_row_error`",
+      "anchor": "duckdb_cast_function_set_row_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_register_cast_function`",
+      "anchor": "duckdb_register_cast_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_cast_function`",
+      "anchor": "duckdb_destroy_cast_function"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_expression`",
+      "anchor": "duckdb_destroy_expression"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_expression_return_type`",
+      "anchor": "duckdb_expression_return_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_expression_is_foldable`",
+      "anchor": "duckdb_expression_is_foldable"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_expression_fold`",
+      "anchor": "duckdb_expression_fold"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    }
+  ]
+}

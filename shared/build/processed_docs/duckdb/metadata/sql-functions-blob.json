@@ -1,0 +1,103 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/blob",
+    "/docs/test/functions/blob/",
+    "/docs/sql/functions/blob"
+  ],
+  "title": "Blob Functions",
+  "file_name": "blob.md",
+  "file_stem": "blob",
+  "file_path": "sql/functions/blob.md",
+  "file_size": 6581,
+  "document_id": "sql-functions-blob",
+  "url": "/sql/functions/blob",
+  "content_hash": "55ee662889fcb64190758aa9f4e88746",
+  "statistics": {
+    "char_count": 5612,
+    "word_count": 758,
+    "line_count": 121,
+    "paragraph_count": 32,
+    "header_count": 15,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.413519",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`arg1 || arg2`",
+      "anchor": "arg1-arg2"
+    },
+    {
+      "level": 4,
+      "title": "`decode(blob)`",
+      "anchor": "decodeblob"
+    },
+    {
+      "level": 4,
+      "title": "`encode(string)`",
+      "anchor": "encodestring"
+    },
+    {
+      "level": 4,
+      "title": "`from_base64(string)`",
+      "anchor": "from_base64string"
+    },
+    {
+      "level": 4,
+      "title": "`hex(blob)`",
+      "anchor": "hexblob"
+    },
+    {
+      "level": 4,
+      "title": "`md5(blob)`",
+      "anchor": "md5blob"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number(blob)`",
+      "anchor": "md5_numberblob"
+    },
+    {
+      "level": 4,
+      "title": "`octet_length(blob)`",
+      "anchor": "octet_lengthblob"
+    },
+    {
+      "level": 4,
+      "title": "`read_blob(source)`",
+      "anchor": "read_blobsource"
+    },
+    {
+      "level": 4,
+      "title": "`repeat(blob, count)`",
+      "anchor": "repeatblob-count"
+    },
+    {
+      "level": 4,
+      "title": "`sha1(blob)`",
+      "anchor": "sha1blob"
+    },
+    {
+      "level": 4,
+      "title": "`sha256(blob)`",
+      "anchor": "sha256blob"
+    },
+    {
+      "level": 4,
+      "title": "`to_base64(blob)`",
+      "anchor": "to_base64blob"
+    },
+    {
+      "level": 4,
+      "title": "`unbin(value)`",
+      "anchor": "unbinvalue"
+    },
+    {
+      "level": 4,
+      "title": "`unhex(value)`",
+      "anchor": "unhexvalue"
+    }
+  ]
+}

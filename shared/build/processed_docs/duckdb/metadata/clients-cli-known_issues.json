@@ -1,0 +1,28 @@
+{
+  "layout": "docu",
+  "title": "Known Issues",
+  "file_name": "known_issues.md",
+  "file_stem": "known_issues",
+  "file_path": "clients/cli/known_issues.md",
+  "file_size": 1858,
+  "document_id": "clients-cli-known_issues",
+  "url": "/clients/cli/known_issues",
+  "content_hash": "1778d7224835cb47f6417ff1d17365da",
+  "statistics": {
+    "char_count": 1075,
+    "word_count": 138,
+    "line_count": 21,
+    "paragraph_count": 6,
+    "header_count": 1,
+    "code_block_count": 2,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:03.962093",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Incorrect Memory Values on Old Linux Distributions and WSL 2",
+      "anchor": "incorrect-memory-values-on-old-linux-distributions-and-wsl-2"
+    }
+  ]
+}

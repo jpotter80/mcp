@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/multiple_files/combining_schemas"
+  ],
+  "title": "Combining Schemas",
+  "file_name": "combining_schemas.md",
+  "file_stem": "combining_schemas",
+  "file_path": "data/multiple_files/combining_schemas.md",
+  "file_size": 3844,
+  "document_id": "data-multiple_files-combining_schemas",
+  "url": "/data/multiple_files/combining_schemas",
+  "content_hash": "463819429eb02215405daa23b88ca84d",
+  "statistics": {
+    "char_count": 3615,
+    "word_count": 516,
+    "line_count": 85,
+    "paragraph_count": 29,
+    "header_count": 4,
+    "code_block_count": 7,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:10.028194",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Combining Schemas",
+      "anchor": "combining-schemas"
+    },
+    {
+      "level": 2,
+      "title": "Union by Position",
+      "anchor": "union-by-position"
+    },
+    {
+      "level": 2,
+      "title": "Union by Name",
+      "anchor": "union-by-name"
+    }
+  ]
+}

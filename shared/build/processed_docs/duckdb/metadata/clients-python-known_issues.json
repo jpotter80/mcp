@@ -1,0 +1,63 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/known_issues",
+    "/docs/api/python/known_issues/",
+    "/docs/clients/python/known_issues"
+  ],
+  "title": "Troubleshooting",
+  "file_name": "known_issues.md",
+  "file_stem": "known_issues",
+  "file_path": "clients/python/known_issues.md",
+  "file_size": 5369,
+  "document_id": "clients-python-known_issues",
+  "url": "/clients/python/known_issues",
+  "content_hash": "862e5ae9595e58e622f79e5402736e33",
+  "statistics": {
+    "char_count": 3704,
+    "word_count": 487,
+    "line_count": 122,
+    "paragraph_count": 35,
+    "header_count": 7,
+    "code_block_count": 14,
+    "code_lines": 39
+  },
+  "processed_at": "2025-11-22T10:32:04.800848",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Running `EXPLAIN` Renders Newlines",
+      "anchor": "running-explain-renders-newlines"
+    },
+    {
+      "level": 3,
+      "title": "Crashes and Errors on Windows",
+      "anchor": "crashes-and-errors-on-windows"
+    },
+    {
+      "level": 2,
+      "title": "Known Issues",
+      "anchor": "known-issues"
+    },
+    {
+      "level": 3,
+      "title": "Numpy Import Multithreading",
+      "anchor": "numpy-import-multithreading"
+    },
+    {
+      "level": 2,
+      "title": "`DESCRIBE` and `SUMMARIZE` Return Empty Tables in Jupyter",
+      "anchor": "describe-and-summarize-return-empty-tables-in-jupyter"
+    },
+    {
+      "level": 3,
+      "title": "Protobuf Error for JupySQL in IPython",
+      "anchor": "protobuf-error-for-jupysql-in-ipython"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/import_numpy"
+  ],
+  "title": "Import from Numpy",
+  "file_name": "import_numpy.md",
+  "file_stem": "import_numpy",
+  "file_path": "guides/python/import_numpy.md",
+  "file_size": 1056,
+  "document_id": "guides-python-import_numpy",
+  "url": "/guides/python/import_numpy",
+  "content_hash": "9e478f6eaea7ca5ce5ca764d9bf79d7f",
+  "statistics": {
+    "char_count": 711,
+    "word_count": 103,
+    "line_count": 27,
+    "paragraph_count": 7,
+    "header_count": 1,
+    "code_block_count": 2,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:11.564867",
+  "sections": [
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/meta/summarize"
+  ],
+  "title": "Summarize",
+  "file_name": "summarize.md",
+  "file_stem": "summarize",
+  "file_path": "guides/meta/summarize.md",
+  "file_size": 4975,
+  "document_id": "guides-meta-summarize",
+  "url": "/guides/meta/summarize",
+  "content_hash": "727875ac55daa2c2ea4f3d9078066e9b",
+  "statistics": {
+    "char_count": 3610,
+    "word_count": 642,
+    "line_count": 66,
+    "paragraph_count": 17,
+    "header_count": 4,
+    "code_block_count": 6,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:11.073926",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "Using `SUMMARIZE` in a Subquery",
+      "anchor": "using-summarize-in-a-subquery"
+    },
+    {
+      "level": 2,
+      "title": "Summarizing Remote Tables",
+      "anchor": "summarizing-remote-tables"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli/editing",
+    "/docs/api/cli/editing/",
+    "/docs/clients/cli/editing"
+  ],
+  "title": "Editing",
+  "file_name": "editing.md",
+  "file_stem": "editing",
+  "file_path": "clients/cli/editing.md",
+  "file_size": 6127,
+  "document_id": "clients-cli-editing",
+  "url": "/clients/cli/editing",
+  "content_hash": "6b1078b4e91385b6e3122c79bea82b8f",
+  "statistics": {
+    "char_count": 3977,
+    "word_count": 652,
+    "line_count": 95,
+    "paragraph_count": 20,
+    "header_count": 7,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:03.949385",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Moving",
+      "anchor": "moving"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "anchor": "history"
+    },
+    {
+      "level": 2,
+      "title": "Changing Text",
+      "anchor": "changing-text"
+    },
+    {
+      "level": 2,
+      "title": "Completing",
+      "anchor": "completing"
+    },
+    {
+      "level": 2,
+      "title": "Miscellaneous",
+      "anchor": "miscellaneous"
+    },
+    {
+      "level": 2,
+      "title": "External Editor Mode",
+      "anchor": "external-editor-mode"
+    },
+    {
+      "level": 2,
+      "title": "Using Read-Line",
+      "anchor": "using-read-line"
+    }
+  ]
+}

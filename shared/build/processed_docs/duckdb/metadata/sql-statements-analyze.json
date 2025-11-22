@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/analyze"
+  ],
+  "title": "ANALYZE Statement",
+  "file_name": "analyze.md",
+  "file_stem": "analyze",
+  "file_path": "sql/statements/analyze.md",
+  "file_size": 590,
+  "document_id": "sql-statements-analyze",
+  "url": "/sql/statements/analyze",
+  "content_hash": "ede8c76d9b5c0858b373ae13cf274ff5",
+  "statistics": {
+    "char_count": 496,
+    "word_count": 53,
+    "line_count": 11,
+    "paragraph_count": 5,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:15.465084",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    }
+  ]
+}

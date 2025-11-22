@@ -1,0 +1,88 @@
+{
+  "layout": "docu",
+  "title": "Logging",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "operations_manual/logging/overview.md",
+  "file_size": 7028,
+  "document_id": "operations_manual-logging-overview",
+  "url": "/operations_manual/logging/overview",
+  "content_hash": "d88c071401e3c8f2263ebdd26a4dac5b",
+  "statistics": {
+    "char_count": 6702,
+    "word_count": 936,
+    "line_count": 206,
+    "paragraph_count": 63,
+    "header_count": 13,
+    "code_block_count": 17,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:12.254566",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Basics",
+      "anchor": "basics"
+    },
+    {
+      "level": 2,
+      "title": "Log Level",
+      "anchor": "log-level"
+    },
+    {
+      "level": 2,
+      "title": "Log Types",
+      "anchor": "log-types"
+    },
+    {
+      "level": 3,
+      "title": "Logging-Specific Types",
+      "anchor": "logging-specific-types"
+    },
+    {
+      "level": 3,
+      "title": "Structured Logging",
+      "anchor": "structured-logging"
+    },
+    {
+      "level": 3,
+      "title": "List of Available Log Types",
+      "anchor": "list-of-available-log-types"
+    },
+    {
+      "level": 2,
+      "title": "Log Storages",
+      "anchor": "log-storages"
+    },
+    {
+      "level": 3,
+      "title": "Logging to stdout",
+      "anchor": "logging-to-stdout"
+    },
+    {
+      "level": 3,
+      "title": "Logging to File",
+      "anchor": "logging-to-file"
+    },
+    {
+      "level": 2,
+      "title": "Advanced Usage",
+      "anchor": "advanced-usage"
+    },
+    {
+      "level": 3,
+      "title": "Normalized vs. Denormalized Logging",
+      "anchor": "normalized-vs-denormalized-logging"
+    },
+    {
+      "level": 3,
+      "title": "Buffer Size",
+      "anchor": "buffer-size"
+    },
+    {
+      "level": 3,
+      "title": "Syntactic Sugar",
+      "anchor": "syntactic-sugar"
+    }
+  ]
+}

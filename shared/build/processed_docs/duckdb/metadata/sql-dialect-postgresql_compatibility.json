@@ -1,0 +1,103 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/postgresl_compatibility",
+    "/docs/sql/postgresl_compatibility/",
+    "/docs/sql/dialect/postgresql_compatibility"
+  ],
+  "title": "PostgreSQL Compatibility",
+  "file_name": "postgresql_compatibility.md",
+  "file_stem": "postgresql_compatibility",
+  "file_path": "sql/dialect/postgresql_compatibility.md",
+  "file_size": 9655,
+  "document_id": "sql-dialect-postgresql_compatibility",
+  "url": "/sql/dialect/postgresql_compatibility",
+  "content_hash": "e80100155fc5c8b6ebb2e7f2f6e32087",
+  "statistics": {
+    "char_count": 8852,
+    "word_count": 1320,
+    "line_count": 268,
+    "paragraph_count": 81,
+    "header_count": 15,
+    "code_block_count": 21,
+    "code_lines": 47
+  },
+  "processed_at": "2025-11-22T10:32:13.011759",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Floating-Point Arithmetic",
+      "anchor": "floating-point-arithmetic"
+    },
+    {
+      "level": 2,
+      "title": "Division on Integers",
+      "anchor": "division-on-integers"
+    },
+    {
+      "level": 2,
+      "title": "`UNION` of Boolean and Integer Values",
+      "anchor": "union-of-boolean-and-integer-values"
+    },
+    {
+      "level": 2,
+      "title": "Implicit Casting on Equality Checks",
+      "anchor": "implicit-casting-on-equality-checks"
+    },
+    {
+      "level": 2,
+      "title": "Case Sensitivity for Quoted Identifiers",
+      "anchor": "case-sensitivity-for-quoted-identifiers"
+    },
+    {
+      "level": 2,
+      "title": "Using Double Equality Sign for Comparison",
+      "anchor": "using-double-equality-sign-for-comparison"
+    },
+    {
+      "level": 2,
+      "title": "Vacuuming Tables",
+      "anchor": "vacuuming-tables"
+    },
+    {
+      "level": 2,
+      "title": "Strings",
+      "anchor": "strings"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 3,
+      "title": "`regexp_extract` Function",
+      "anchor": "regexp_extract-function"
+    },
+    {
+      "level": 3,
+      "title": "`to_date` Function",
+      "anchor": "to_date-function"
+    },
+    {
+      "level": 3,
+      "title": "`date_part` Function",
+      "anchor": "date_part-function"
+    },
+    {
+      "level": 2,
+      "title": "Resolution of Type Names in the Schema",
+      "anchor": "resolution-of-type-names-in-the-schema"
+    },
+    {
+      "level": 2,
+      "title": "Exploiting Functional Dependencies for `GROUP BY`",
+      "anchor": "exploiting-functional-dependencies-for-group-by"
+    },
+    {
+      "level": 2,
+      "title": "Behavior of Regular Expression Match Operators",
+      "anchor": "behavior-of-regular-expression-match-operators"
+    }
+  ]
+}

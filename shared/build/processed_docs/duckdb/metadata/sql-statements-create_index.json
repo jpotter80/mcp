@@ -1,0 +1,72 @@
+{
+  "layout": "docu",
+  "railroad": "statements/indexes.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_index"
+  ],
+  "title": "CREATE INDEX Statement",
+  "file_name": "create_index.md",
+  "file_stem": "create_index",
+  "file_path": "sql/statements/create_index.md",
+  "file_size": 2690,
+  "document_id": "sql-statements-create_index",
+  "url": "/sql/statements/create_index",
+  "content_hash": "6d07a5fc5f4d468ae360792e30b61628",
+  "statistics": {
+    "char_count": 2492,
+    "word_count": 430,
+    "line_count": 76,
+    "paragraph_count": 27,
+    "header_count": 9,
+    "code_block_count": 6,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:15.674953",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`CREATE INDEX`",
+      "anchor": "create-index"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`DROP INDEX`",
+      "anchor": "drop-index"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-sqlsmith",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/sqlsmith",
+    "/docs/stable/extensions/sqlsmith/",
+    "/docs/extensions/sqlsmith",
+    "/docs/extensions/sqlsmith/"
+  ],
+  "title": "SQLSmith Extension",
+  "file_name": "sqlsmith.md",
+  "file_stem": "sqlsmith",
+  "file_path": "core_extensions/sqlsmith.md",
+  "file_size": 521,
+  "document_id": "core_extensions-sqlsmith",
+  "url": "/core_extensions/sqlsmith",
+  "content_hash": "63aa671e545ac95ada3bb034f0de564a",
+  "statistics": {
+    "char_count": 268,
+    "word_count": 34,
+    "line_count": 17,
+    "paragraph_count": 6,
+    "header_count": 2,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:09.201740",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

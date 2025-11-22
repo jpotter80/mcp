@@ -1,0 +1,133 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/julia",
+    "/docs/api/julia/",
+    "/docs/clients/julia"
+  ],
+  "title": "Julia Client",
+  "file_name": "julia.md",
+  "file_stem": "julia",
+  "file_path": "clients/julia.md",
+  "file_size": 5387,
+  "document_id": "clients-julia",
+  "url": "/clients/julia",
+  "content_hash": "a89d2981f6556d5463cb31a3be8a47f7",
+  "statistics": {
+    "char_count": 5063,
+    "word_count": 701,
+    "line_count": 155,
+    "paragraph_count": 33,
+    "header_count": 21,
+    "code_block_count": 6,
+    "code_lines": 106
+  },
+  "processed_at": "2025-11-22T10:32:04.206947",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Basics",
+      "anchor": "basics"
+    },
+    {
+      "level": 1,
+      "title": "create a new in-memory database",
+      "anchor": "create-a-new-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "create a table",
+      "anchor": "create-a-table"
+    },
+    {
+      "level": 1,
+      "title": "insert data by executing a prepared statement",
+      "anchor": "insert-data-by-executing-a-prepared-statement"
+    },
+    {
+      "level": 1,
+      "title": "query the database",
+      "anchor": "query-the-database"
+    },
+    {
+      "level": 2,
+      "title": "Scanning DataFrames",
+      "anchor": "scanning-dataframes"
+    },
+    {
+      "level": 1,
+      "title": "create a new in-memory dabase",
+      "anchor": "create-a-new-in-memory-dabase"
+    },
+    {
+      "level": 1,
+      "title": "create a DataFrame",
+      "anchor": "create-a-dataframe"
+    },
+    {
+      "level": 1,
+      "title": "register it as a view in the database",
+      "anchor": "register-it-as-a-view-in-the-database"
+    },
+    {
+      "level": 1,
+      "title": "run a SQL query over the DataFrame",
+      "anchor": "run-a-sql-query-over-the-dataframe"
+    },
+    {
+      "level": 2,
+      "title": "Appender API",
+      "anchor": "appender-api"
+    },
+    {
+      "level": 1,
+      "title": "create a table",
+      "anchor": "create-a-table"
+    },
+    {
+      "level": 1,
+      "title": "create data to insert",
+      "anchor": "create-data-to-insert"
+    },
+    {
+      "level": 1,
+      "title": "append data by row",
+      "anchor": "append-data-by-row"
+    },
+    {
+      "level": 1,
+      "title": "close the appender after all rows",
+      "anchor": "close-the-appender-after-all-rows"
+    },
+    {
+      "level": 2,
+      "title": "Concurrency",
+      "anchor": "concurrency"
+    },
+    {
+      "level": 1,
+      "title": "spawn one reader task",
+      "anchor": "spawn-one-reader-task"
+    },
+    {
+      "level": 1,
+      "title": "spawn many insert tasks",
+      "anchor": "spawn-many-insert-tasks"
+    },
+    {
+      "level": 1,
+      "title": "spawn many appender tasks",
+      "anchor": "spawn-many-appender-tasks"
+    },
+    {
+      "level": 2,
+      "title": "Original Julia Connector",
+      "anchor": "original-julia-connector"
+    }
+  ]
+}

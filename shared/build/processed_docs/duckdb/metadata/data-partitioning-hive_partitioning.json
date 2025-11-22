@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/partitioning/hive_partitioning"
+  ],
+  "title": "Hive Partitioning",
+  "file_name": "hive_partitioning.md",
+  "file_stem": "hive_partitioning",
+  "file_path": "data/partitioning/hive_partitioning.md",
+  "file_size": 3678,
+  "document_id": "data-partitioning-hive_partitioning",
+  "url": "/data/partitioning/hive_partitioning",
+  "content_hash": "43007c500bc732ec047aa5cf3e6047b1",
+  "statistics": {
+    "char_count": 3375,
+    "word_count": 478,
+    "line_count": 109,
+    "paragraph_count": 30,
+    "header_count": 6,
+    "code_block_count": 10,
+    "code_lines": 39
+  },
+  "processed_at": "2025-11-22T10:32:10.161859",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Hive Partitioning",
+      "anchor": "hive-partitioning"
+    },
+    {
+      "level": 3,
+      "title": "Filter Pushdown",
+      "anchor": "filter-pushdown"
+    },
+    {
+      "level": 3,
+      "title": "Auto-detection",
+      "anchor": "auto-detection"
+    },
+    {
+      "level": 3,
+      "title": "Hive Types",
+      "anchor": "hive-types"
+    },
+    {
+      "level": 3,
+      "title": "Writing Partitioned Files",
+      "anchor": "writing-partitioned-files"
+    }
+  ]
+}

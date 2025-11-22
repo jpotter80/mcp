@@ -1,0 +1,26 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/case.js",
+  "redirect_from": [
+    "/docs/sql/expressions/case"
+  ],
+  "title": "CASE Expression",
+  "file_name": "case.md",
+  "file_stem": "case",
+  "file_path": "sql/expressions/case.md",
+  "file_size": 2088,
+  "document_id": "sql-expressions-case",
+  "url": "/sql/expressions/case",
+  "content_hash": "40510bf2b770a155dfd4513203183c5a",
+  "statistics": {
+    "char_count": 1916,
+    "word_count": 402,
+    "line_count": 69,
+    "paragraph_count": 16,
+    "header_count": 0,
+    "code_block_count": 6,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-22T10:32:13.053015",
+  "sections": []
+}

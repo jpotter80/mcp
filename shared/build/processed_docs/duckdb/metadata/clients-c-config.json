@@ -1,0 +1,128 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/config",
+    "/docs/api/c/config/",
+    "/docs/clients/c/config"
+  ],
+  "title": "Configuration",
+  "file_name": "config.md",
+  "file_stem": "config",
+  "file_path": "clients/c/config.md",
+  "file_size": 6905,
+  "document_id": "clients-c-config",
+  "url": "/clients/c/config",
+  "content_hash": "a87311a129aee6045b039960677a330f",
+  "statistics": {
+    "char_count": 4046,
+    "word_count": 507,
+    "line_count": 147,
+    "paragraph_count": 52,
+    "header_count": 20,
+    "code_block_count": 1,
+    "code_lines": 24
+  },
+  "processed_at": "2025-11-22T10:32:03.170399",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_config`",
+      "anchor": "duckdb_create_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_config_count`",
+      "anchor": "duckdb_config_count"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_config_flag`",
+      "anchor": "duckdb_get_config_flag"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_set_config`",
+      "anchor": "duckdb_set_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_config`",
+      "anchor": "duckdb_destroy_config"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

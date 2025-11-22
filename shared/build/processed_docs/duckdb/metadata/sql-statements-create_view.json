@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createview.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_view"
+  ],
+  "title": "CREATE VIEW Statement",
+  "file_name": "create_view.md",
+  "file_stem": "create_view",
+  "file_path": "sql/statements/create_view.md",
+  "file_size": 1373,
+  "document_id": "sql-statements-create_view",
+  "url": "/sql/statements/create_view",
+  "content_hash": "30b57d8321c0be8c80ccc241bde606fb",
+  "statistics": {
+    "char_count": 1208,
+    "word_count": 208,
+    "line_count": 35,
+    "paragraph_count": 14,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:15.754490",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

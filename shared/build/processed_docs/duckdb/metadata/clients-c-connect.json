@@ -1,0 +1,323 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/connect",
+    "/docs/api/c/connect/",
+    "/docs/clients/c/connect"
+  ],
+  "title": "Startup & Shutdown",
+  "file_name": "connect.md",
+  "file_stem": "connect",
+  "file_path": "clients/c/connect.md",
+  "file_size": 18293,
+  "document_id": "clients-c-connect",
+  "url": "/clients/c/connect",
+  "content_hash": "9596328c9e65a1683389862bc0191fca",
+  "statistics": {
+    "char_count": 9747,
+    "word_count": 1141,
+    "line_count": 349,
+    "paragraph_count": 127,
+    "header_count": 59,
+    "code_block_count": 1,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:03.202371",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_instance_cache`",
+      "anchor": "duckdb_create_instance_cache"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_or_create_from_cache`",
+      "anchor": "duckdb_get_or_create_from_cache"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_instance_cache`",
+      "anchor": "duckdb_destroy_instance_cache"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_open`",
+      "anchor": "duckdb_open"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_open_ext`",
+      "anchor": "duckdb_open_ext"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_close`",
+      "anchor": "duckdb_close"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connect`",
+      "anchor": "duckdb_connect"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_interrupt`",
+      "anchor": "duckdb_interrupt"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_query_progress`",
+      "anchor": "duckdb_query_progress"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_disconnect`",
+      "anchor": "duckdb_disconnect"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connection_get_client_context`",
+      "anchor": "duckdb_connection_get_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_connection_get_arrow_options`",
+      "anchor": "duckdb_connection_get_arrow_options"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_client_context_get_connection_id`",
+      "anchor": "duckdb_client_context_get_connection_id"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_client_context`",
+      "anchor": "duckdb_destroy_client_context"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_arrow_options`",
+      "anchor": "duckdb_destroy_arrow_options"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_library_version`",
+      "anchor": "duckdb_library_version"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_get_table_names`",
+      "anchor": "duckdb_get_table_names"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    }
+  ]
+}

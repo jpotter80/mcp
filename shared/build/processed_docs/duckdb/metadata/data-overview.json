@@ -1,0 +1,66 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/overview"
+  ],
+  "title": "Importing Data",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "data/overview.md",
+  "file_size": 3771,
+  "document_id": "data-overview",
+  "url": "/data/overview",
+  "content_hash": "0acafb7204b677acbb03c39250b399e9",
+  "statistics": {
+    "char_count": 3682,
+    "word_count": 494,
+    "line_count": 113,
+    "paragraph_count": 41,
+    "header_count": 8,
+    "code_block_count": 13,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:10.062976",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`INSERT` Statements",
+      "anchor": "insert-statements"
+    },
+    {
+      "level": 2,
+      "title": "File Loading: Relative Paths",
+      "anchor": "file-loading-relative-paths"
+    },
+    {
+      "level": 2,
+      "title": "File Formats",
+      "anchor": "file-formats"
+    },
+    {
+      "level": 3,
+      "title": "CSV Loading",
+      "anchor": "csv-loading"
+    },
+    {
+      "level": 3,
+      "title": "Parquet Loading",
+      "anchor": "parquet-loading"
+    },
+    {
+      "level": 3,
+      "title": "JSON Loading",
+      "anchor": "json-loading"
+    },
+    {
+      "level": 3,
+      "title": "Returning the Filename",
+      "anchor": "returning-the-filename"
+    },
+    {
+      "level": 2,
+      "title": "Appender",
+      "anchor": "appender"
+    }
+  ]
+}

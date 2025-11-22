@@ -1,0 +1,44 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/httpfs/s3api_legacy_authentication",
+    "/docs/extensions/httpfs/s3api_legacy_authentication/",
+    "/docs/stable/extensions/httpfs/s3api_legacy_authentication",
+    "/docs/stable/extensions/httpfs/s3api_legacy_authentication/"
+  ],
+  "title": "Legacy Authentication Scheme for S3 API",
+  "file_name": "s3api_legacy_authentication.md",
+  "file_stem": "s3api_legacy_authentication",
+  "file_path": "core_extensions/httpfs/s3api_legacy_authentication.md",
+  "file_size": 4436,
+  "document_id": "core_extensions-httpfs-s3api_legacy_authentication",
+  "url": "/core_extensions/httpfs/s3api_legacy_authentication",
+  "content_hash": "7b8612bcb4fb9b8a174577f1b8f26ab5",
+  "statistics": {
+    "char_count": 3652,
+    "word_count": 435,
+    "line_count": 83,
+    "paragraph_count": 26,
+    "header_count": 3,
+    "code_block_count": 8,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:08.213830",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Legacy Authentication Scheme",
+      "anchor": "legacy-authentication-scheme"
+    },
+    {
+      "level": 2,
+      "title": "Per-Request Configuration",
+      "anchor": "per-request-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Configuration",
+      "anchor": "configuration"
+    }
+  ]
+}

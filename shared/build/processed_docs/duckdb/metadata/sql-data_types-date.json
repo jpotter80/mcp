@@ -1,0 +1,37 @@
+{
+  "blurb": "A date specifies a combination of year, month and day.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/date"
+  ],
+  "title": "Date Types",
+  "file_name": "date.md",
+  "file_stem": "date",
+  "file_path": "sql/data_types/date.md",
+  "file_size": 1558,
+  "document_id": "sql-data_types-date",
+  "url": "/sql/data_types/date",
+  "content_hash": "28a33a69e6f6b410df94e007c1314469",
+  "statistics": {
+    "char_count": 1319,
+    "word_count": 195,
+    "line_count": 37,
+    "paragraph_count": 11,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:12.384274",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Special Values",
+      "anchor": "special-values"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

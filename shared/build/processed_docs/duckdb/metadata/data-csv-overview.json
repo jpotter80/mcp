@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/csv",
+    "/docs/data/csv/",
+    "/docs/data/csv/overview"
+  ],
+  "title": "CSV Import",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "data/csv/overview.md",
+  "file_size": 14696,
+  "document_id": "data-csv-overview",
+  "url": "/data/csv/overview",
+  "content_hash": "04a07c2a69bc703fe9cfe7aa1a4b7f23",
+  "statistics": {
+    "char_count": 14366,
+    "word_count": 2132,
+    "line_count": 215,
+    "paragraph_count": 49,
+    "header_count": 9,
+    "code_block_count": 14,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-22T10:32:09.407827",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "CSV Loading",
+      "anchor": "csv-loading"
+    },
+    {
+      "level": 2,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 3,
+      "title": "`auto_type_candidates` Details",
+      "anchor": "auto_type_candidates-details"
+    },
+    {
+      "level": 2,
+      "title": "CSV Functions",
+      "anchor": "csv-functions"
+    },
+    {
+      "level": 2,
+      "title": "Writing Using the `COPY` Statement",
+      "anchor": "writing-using-the-copy-statement"
+    },
+    {
+      "level": 2,
+      "title": "Reading Faulty CSV Files",
+      "anchor": "reading-faulty-csv-files"
+    },
+    {
+      "level": 2,
+      "title": "Order Preservation",
+      "anchor": "order-preservation"
+    },
+    {
+      "level": 2,
+      "title": "Writing CSV Files",
+      "anchor": "writing-csv-files"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/replacement_scans",
+    "/docs/api/c/replacement_scans/",
+    "/docs/clients/c/replacement_scans"
+  ],
+  "title": "Replacement Scans",
+  "file_name": "replacement_scans.md",
+  "file_stem": "replacement_scans",
+  "file_path": "clients/c/replacement_scans.md",
+  "file_size": 5324,
+  "document_id": "clients-c-replacement_scans",
+  "url": "/clients/c/replacement_scans",
+  "content_hash": "6de10b9d6db88be010514c1dab61226e",
+  "statistics": {
+    "char_count": 2537,
+    "word_count": 296,
+    "line_count": 77,
+    "paragraph_count": 27,
+    "header_count": 13,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:03.345681",
+  "sections": [
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_add_replacement_scan`",
+      "anchor": "duckdb_add_replacement_scan"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_set_function_name`",
+      "anchor": "duckdb_replacement_scan_set_function_name"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_add_parameter`",
+      "anchor": "duckdb_replacement_scan_add_parameter"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_replacement_scan_set_error`",
+      "anchor": "duckdb_replacement_scan_set_error"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

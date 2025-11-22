@@ -1,0 +1,4553 @@
+{
+  "processing_date": "2025-11-22T10:32:16.034621",
+  "source_directory": "/home/james/mcp/source-documentation/duckdb/docs",
+  "output_directory": "/home/james/mcp/shared/build/processed_docs/duckdb",
+  "total_documents": 756,
+  "total_chunks": 10830,
+  "total_tokens": 1697672,
+  "average_tokens_per_chunk": 156.76,
+  "chunks_with_code": 4400,
+  "configuration": {
+    "chunk_size": 256,
+    "chunk_overlap": 50,
+    "preserve_code_blocks": true
+  },
+  "documents": [
+    {
+      "file_path": "clients/adbc.md",
+      "document_id": "clients-adbc",
+      "chunks_generated": 40,
+      "content_hash": "1685ae1b3582a8e33904ec2041050a14"
+    },
+    {
+      "file_path": "clients/adbc.md",
+      "document_id": "clients-adbc",
+      "chunks_generated": 40,
+      "content_hash": "1685ae1b3582a8e33904ec2041050a14"
+    },
+    {
+      "file_path": "clients/c/api.md",
+      "document_id": "clients-c-api",
+      "chunks_generated": 368,
+      "content_hash": "f32afd15870f872b99ce7f9e4f6ac0e1"
+    },
+    {
+      "file_path": "clients/c/api.md",
+      "document_id": "clients-c-api",
+      "chunks_generated": 368,
+      "content_hash": "f32afd15870f872b99ce7f9e4f6ac0e1"
+    },
+    {
+      "file_path": "clients/c/appender.md",
+      "document_id": "clients-c-appender",
+      "chunks_generated": 33,
+      "content_hash": "c77aaf2de8eb76ec019d07d2c71023cb"
+    },
+    {
+      "file_path": "clients/c/appender.md",
+      "document_id": "clients-c-appender",
+      "chunks_generated": 33,
+      "content_hash": "c77aaf2de8eb76ec019d07d2c71023cb"
+    },
+    {
+      "file_path": "clients/c/config.md",
+      "document_id": "clients-c-config",
+      "chunks_generated": 9,
+      "content_hash": "a87311a129aee6045b039960677a330f"
+    },
+    {
+      "file_path": "clients/c/config.md",
+      "document_id": "clients-c-config",
+      "chunks_generated": 9,
+      "content_hash": "a87311a129aee6045b039960677a330f"
+    },
+    {
+      "file_path": "clients/c/connect.md",
+      "document_id": "clients-c-connect",
+      "chunks_generated": 17,
+      "content_hash": "9596328c9e65a1683389862bc0191fca"
+    },
+    {
+      "file_path": "clients/c/connect.md",
+      "document_id": "clients-c-connect",
+      "chunks_generated": 17,
+      "content_hash": "9596328c9e65a1683389862bc0191fca"
+    },
+    {
+      "file_path": "clients/c/data_chunk.md",
+      "document_id": "clients-c-data_chunk",
+      "chunks_generated": 7,
+      "content_hash": "60b65816007e762aa698dfc63b091d45"
+    },
+    {
+      "file_path": "clients/c/data_chunk.md",
+      "document_id": "clients-c-data_chunk",
+      "chunks_generated": 7,
+      "content_hash": "60b65816007e762aa698dfc63b091d45"
+    },
+    {
+      "file_path": "clients/c/overview.md",
+      "document_id": "clients-c-overview",
+      "chunks_generated": 2,
+      "content_hash": "f383b9b9a70f414d8a02a15d6fbb33ba"
+    },
+    {
+      "file_path": "clients/c/overview.md",
+      "document_id": "clients-c-overview",
+      "chunks_generated": 2,
+      "content_hash": "f383b9b9a70f414d8a02a15d6fbb33ba"
+    },
+    {
+      "file_path": "clients/c/prepared.md",
+      "document_id": "clients-c-prepared",
+      "chunks_generated": 15,
+      "content_hash": "425d91d32a296dfd8c2558ff10ca6b80"
+    },
+    {
+      "file_path": "clients/c/prepared.md",
+      "document_id": "clients-c-prepared",
+      "chunks_generated": 15,
+      "content_hash": "425d91d32a296dfd8c2558ff10ca6b80"
+    },
+    {
+      "file_path": "clients/c/query.md",
+      "document_id": "clients-c-query",
+      "chunks_generated": 21,
+      "content_hash": "a115c2df7dd13f7a4784f0b1b248d19c"
+    },
+    {
+      "file_path": "clients/c/query.md",
+      "document_id": "clients-c-query",
+      "chunks_generated": 21,
+      "content_hash": "a115c2df7dd13f7a4784f0b1b248d19c"
+    },
+    {
+      "file_path": "clients/c/replacement_scans.md",
+      "document_id": "clients-c-replacement_scans",
+      "chunks_generated": 5,
+      "content_hash": "6de10b9d6db88be010514c1dab61226e"
+    },
+    {
+      "file_path": "clients/c/replacement_scans.md",
+      "document_id": "clients-c-replacement_scans",
+      "chunks_generated": 5,
+      "content_hash": "6de10b9d6db88be010514c1dab61226e"
+    },
+    {
+      "file_path": "clients/c/table_functions.md",
+      "document_id": "clients-c-table_functions",
+      "chunks_generated": 27,
+      "content_hash": "67d28675edded7326867f22515feb82e"
+    },
+    {
+      "file_path": "clients/c/table_functions.md",
+      "document_id": "clients-c-table_functions",
+      "chunks_generated": 27,
+      "content_hash": "67d28675edded7326867f22515feb82e"
+    },
+    {
+      "file_path": "clients/c/types.md",
+      "document_id": "clients-c-types",
+      "chunks_generated": 54,
+      "content_hash": "100338359ef84ad644d30ff2d8b6b36c"
+    },
+    {
+      "file_path": "clients/c/types.md",
+      "document_id": "clients-c-types",
+      "chunks_generated": 54,
+      "content_hash": "100338359ef84ad644d30ff2d8b6b36c"
+    },
+    {
+      "file_path": "clients/c/value.md",
+      "document_id": "clients-c-value",
+      "chunks_generated": 52,
+      "content_hash": "c6cf4e545c2605a1d0b3ecdb367ad5ac"
+    },
+    {
+      "file_path": "clients/c/value.md",
+      "document_id": "clients-c-value",
+      "chunks_generated": 52,
+      "content_hash": "c6cf4e545c2605a1d0b3ecdb367ad5ac"
+    },
+    {
+      "file_path": "clients/c/vector.md",
+      "document_id": "clients-c-vector",
+      "chunks_generated": 29,
+      "content_hash": "5549e3ffbde59fb0c66b57e8ccc353b8"
+    },
+    {
+      "file_path": "clients/c/vector.md",
+      "document_id": "clients-c-vector",
+      "chunks_generated": 29,
+      "content_hash": "5549e3ffbde59fb0c66b57e8ccc353b8"
+    },
+    {
+      "file_path": "clients/cli/arguments.md",
+      "document_id": "clients-cli-arguments",
+      "chunks_generated": 9,
+      "content_hash": "f467ad07a0da31e3a7e7a39f1b052ec7"
+    },
+    {
+      "file_path": "clients/cli/arguments.md",
+      "document_id": "clients-cli-arguments",
+      "chunks_generated": 9,
+      "content_hash": "f467ad07a0da31e3a7e7a39f1b052ec7"
+    },
+    {
+      "file_path": "clients/cli/autocomplete.md",
+      "document_id": "clients-cli-autocomplete",
+      "chunks_generated": 2,
+      "content_hash": "ee2eb2500b319257194e9195bf3a56f2"
+    },
+    {
+      "file_path": "clients/cli/autocomplete.md",
+      "document_id": "clients-cli-autocomplete",
+      "chunks_generated": 2,
+      "content_hash": "ee2eb2500b319257194e9195bf3a56f2"
+    },
+    {
+      "file_path": "clients/cli/dot_commands.md",
+      "document_id": "clients-cli-dot_commands",
+      "chunks_generated": 29,
+      "content_hash": "f6d628b21a4a6487c7fcee4380053fb2"
+    },
+    {
+      "file_path": "clients/cli/dot_commands.md",
+      "document_id": "clients-cli-dot_commands",
+      "chunks_generated": 29,
+      "content_hash": "f6d628b21a4a6487c7fcee4380053fb2"
+    },
+    {
+      "file_path": "clients/cli/editing.md",
+      "document_id": "clients-cli-editing",
+      "chunks_generated": 13,
+      "content_hash": "6b1078b4e91385b6e3122c79bea82b8f"
+    },
+    {
+      "file_path": "clients/cli/editing.md",
+      "document_id": "clients-cli-editing",
+      "chunks_generated": 13,
+      "content_hash": "6b1078b4e91385b6e3122c79bea82b8f"
+    },
+    {
+      "file_path": "clients/cli/known_issues.md",
+      "document_id": "clients-cli-known_issues",
+      "chunks_generated": 1,
+      "content_hash": "1778d7224835cb47f6417ff1d17365da"
+    },
+    {
+      "file_path": "clients/cli/known_issues.md",
+      "document_id": "clients-cli-known_issues",
+      "chunks_generated": 1,
+      "content_hash": "1778d7224835cb47f6417ff1d17365da"
+    },
+    {
+      "file_path": "clients/cli/output_formats.md",
+      "document_id": "clients-cli-output_formats",
+      "chunks_generated": 10,
+      "content_hash": "7a79d625f7e87c53edaf087361f79165"
+    },
+    {
+      "file_path": "clients/cli/output_formats.md",
+      "document_id": "clients-cli-output_formats",
+      "chunks_generated": 10,
+      "content_hash": "7a79d625f7e87c53edaf087361f79165"
+    },
+    {
+      "file_path": "clients/cli/overview.md",
+      "document_id": "clients-cli-overview",
+      "chunks_generated": 26,
+      "content_hash": "36745a39a6fb00480b219fd769f1a4f9"
+    },
+    {
+      "file_path": "clients/cli/overview.md",
+      "document_id": "clients-cli-overview",
+      "chunks_generated": 26,
+      "content_hash": "36745a39a6fb00480b219fd769f1a4f9"
+    },
+    {
+      "file_path": "clients/cli/safe_mode.md",
+      "document_id": "clients-cli-safe_mode",
+      "chunks_generated": 3,
+      "content_hash": "c33f758fcbcd8c95efeec647fe653932"
+    },
+    {
+      "file_path": "clients/cli/safe_mode.md",
+      "document_id": "clients-cli-safe_mode",
+      "chunks_generated": 3,
+      "content_hash": "c33f758fcbcd8c95efeec647fe653932"
+    },
+    {
+      "file_path": "clients/cli/syntax_highlighting.md",
+      "document_id": "clients-cli-syntax_highlighting",
+      "chunks_generated": 6,
+      "content_hash": "2c2bb3a6aab09d3d9bfae166aadc85c0"
+    },
+    {
+      "file_path": "clients/cli/syntax_highlighting.md",
+      "document_id": "clients-cli-syntax_highlighting",
+      "chunks_generated": 6,
+      "content_hash": "2c2bb3a6aab09d3d9bfae166aadc85c0"
+    },
+    {
+      "file_path": "clients/cpp.md",
+      "document_id": "clients-cpp",
+      "chunks_generated": 22,
+      "content_hash": "0bc686c2bf00675f17198cc4b7de8b37"
+    },
+    {
+      "file_path": "clients/cpp.md",
+      "document_id": "clients-cpp",
+      "chunks_generated": 22,
+      "content_hash": "0bc686c2bf00675f17198cc4b7de8b37"
+    },
+    {
+      "file_path": "clients/dart.md",
+      "document_id": "clients-dart",
+      "chunks_generated": 5,
+      "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea"
+    },
+    {
+      "file_path": "clients/dart.md",
+      "document_id": "clients-dart",
+      "chunks_generated": 5,
+      "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea"
+    },
+    {
+      "file_path": "clients/go.md",
+      "document_id": "clients-go",
+      "chunks_generated": 11,
+      "content_hash": "7d3da91708f5ab062118f2bba2fe9809"
+    },
+    {
+      "file_path": "clients/go.md",
+      "document_id": "clients-go",
+      "chunks_generated": 11,
+      "content_hash": "7d3da91708f5ab062118f2bba2fe9809"
+    },
+    {
+      "file_path": "clients/java.md",
+      "document_id": "clients-java",
+      "chunks_generated": 26,
+      "content_hash": "959a2c9ed745cc4e785d2833d33717eb"
+    },
+    {
+      "file_path": "clients/java.md",
+      "document_id": "clients-java",
+      "chunks_generated": 26,
+      "content_hash": "959a2c9ed745cc4e785d2833d33717eb"
+    },
+    {
+      "file_path": "clients/julia.md",
+      "document_id": "clients-julia",
+      "chunks_generated": 11,
+      "content_hash": "a89d2981f6556d5463cb31a3be8a47f7"
+    },
+    {
+      "file_path": "clients/julia.md",
+      "document_id": "clients-julia",
+      "chunks_generated": 11,
+      "content_hash": "a89d2981f6556d5463cb31a3be8a47f7"
+    },
+    {
+      "file_path": "clients/node_neo/overview.md",
+      "document_id": "clients-node_neo-overview",
+      "chunks_generated": 47,
+      "content_hash": "83cee7dc7d1de166a5a5d0e8eea41b10"
+    },
+    {
+      "file_path": "clients/node_neo/overview.md",
+      "document_id": "clients-node_neo-overview",
+      "chunks_generated": 47,
+      "content_hash": "83cee7dc7d1de166a5a5d0e8eea41b10"
+    },
+    {
+      "file_path": "clients/nodejs/overview.md",
+      "document_id": "clients-nodejs-overview",
+      "chunks_generated": 8,
+      "content_hash": "9af8a5be9cb0563a09dc88e4fddae742"
+    },
+    {
+      "file_path": "clients/nodejs/overview.md",
+      "document_id": "clients-nodejs-overview",
+      "chunks_generated": 8,
+      "content_hash": "9af8a5be9cb0563a09dc88e4fddae742"
+    },
+    {
+      "file_path": "clients/nodejs/reference.md",
+      "document_id": "clients-nodejs-reference",
+      "chunks_generated": 47,
+      "content_hash": "1646f4d4e712b1b6695b28ba37696d68"
+    },
+    {
+      "file_path": "clients/nodejs/reference.md",
+      "document_id": "clients-nodejs-reference",
+      "chunks_generated": 47,
+      "content_hash": "1646f4d4e712b1b6695b28ba37696d68"
+    },
+    {
+      "file_path": "clients/odbc/configuration.md",
+      "document_id": "clients-odbc-configuration",
+      "chunks_generated": 3,
+      "content_hash": "7ba3007e47a673a3d2b56626b4ef39b4"
+    },
+    {
+      "file_path": "clients/odbc/configuration.md",
+      "document_id": "clients-odbc-configuration",
+      "chunks_generated": 3,
+      "content_hash": "7ba3007e47a673a3d2b56626b4ef39b4"
+    },
+    {
+      "file_path": "clients/odbc/linux.md",
+      "document_id": "clients-odbc-linux",
+      "chunks_generated": 6,
+      "content_hash": "ce3780e523b0ad1064ebb2e0881b0411"
+    },
+    {
+      "file_path": "clients/odbc/linux.md",
+      "document_id": "clients-odbc-linux",
+      "chunks_generated": 6,
+      "content_hash": "ce3780e523b0ad1064ebb2e0881b0411"
+    },
+    {
+      "file_path": "clients/odbc/macos.md",
+      "document_id": "clients-odbc-macos",
+      "chunks_generated": 5,
+      "content_hash": "11b70d691ccea07366001de9a22bc953"
+    },
+    {
+      "file_path": "clients/odbc/macos.md",
+      "document_id": "clients-odbc-macos",
+      "chunks_generated": 5,
+      "content_hash": "11b70d691ccea07366001de9a22bc953"
+    },
+    {
+      "file_path": "clients/odbc/overview.md",
+      "document_id": "clients-odbc-overview",
+      "chunks_generated": 2,
+      "content_hash": "37ed733864945fcea6706132af5850db"
+    },
+    {
+      "file_path": "clients/odbc/overview.md",
+      "document_id": "clients-odbc-overview",
+      "chunks_generated": 2,
+      "content_hash": "37ed733864945fcea6706132af5850db"
+    },
+    {
+      "file_path": "clients/odbc/windows.md",
+      "document_id": "clients-odbc-windows",
+      "chunks_generated": 8,
+      "content_hash": "abe895a690fb28a29f3cd0c2758702c6"
+    },
+    {
+      "file_path": "clients/odbc/windows.md",
+      "document_id": "clients-odbc-windows",
+      "chunks_generated": 8,
+      "content_hash": "abe895a690fb28a29f3cd0c2758702c6"
+    },
+    {
+      "file_path": "clients/overview.md",
+      "document_id": "clients-overview",
+      "chunks_generated": 13,
+      "content_hash": "e05adb85f4593b5e84bf004f43bc6767"
+    },
+    {
+      "file_path": "clients/overview.md",
+      "document_id": "clients-overview",
+      "chunks_generated": 13,
+      "content_hash": "e05adb85f4593b5e84bf004f43bc6767"
+    },
+    {
+      "file_path": "clients/php.md",
+      "document_id": "clients-php",
+      "chunks_generated": 25,
+      "content_hash": "786453ee53bed15ab6fc610a64ad2eba"
+    },
+    {
+      "file_path": "clients/php.md",
+      "document_id": "clients-php",
+      "chunks_generated": 25,
+      "content_hash": "786453ee53bed15ab6fc610a64ad2eba"
+    },
+    {
+      "file_path": "clients/python/conversion.md",
+      "document_id": "clients-python-conversion",
+      "chunks_generated": 17,
+      "content_hash": "9b5ed3c811ffc95e1d8dee38b8c18759"
+    },
+    {
+      "file_path": "clients/python/conversion.md",
+      "document_id": "clients-python-conversion",
+      "chunks_generated": 17,
+      "content_hash": "9b5ed3c811ffc95e1d8dee38b8c18759"
+    },
+    {
+      "file_path": "clients/python/data_ingestion.md",
+      "document_id": "clients-python-data_ingestion",
+      "chunks_generated": 14,
+      "content_hash": "89c0c95a8cc0331f8e9115a27c550d91"
+    },
+    {
+      "file_path": "clients/python/data_ingestion.md",
+      "document_id": "clients-python-data_ingestion",
+      "chunks_generated": 14,
+      "content_hash": "89c0c95a8cc0331f8e9115a27c550d91"
+    },
+    {
+      "file_path": "clients/python/dbapi.md",
+      "document_id": "clients-python-dbapi",
+      "chunks_generated": 13,
+      "content_hash": "155d906cf9125edc232f329191919427"
+    },
+    {
+      "file_path": "clients/python/dbapi.md",
+      "document_id": "clients-python-dbapi",
+      "chunks_generated": 13,
+      "content_hash": "155d906cf9125edc232f329191919427"
+    },
+    {
+      "file_path": "clients/python/expression.md",
+      "document_id": "clients-python-expression",
+      "chunks_generated": 16,
+      "content_hash": "02aabbf653b58afc49f21c4cb129beed"
+    },
+    {
+      "file_path": "clients/python/expression.md",
+      "document_id": "clients-python-expression",
+      "chunks_generated": 16,
+      "content_hash": "02aabbf653b58afc49f21c4cb129beed"
+    },
+    {
+      "file_path": "clients/python/function.md",
+      "document_id": "clients-python-function",
+      "chunks_generated": 25,
+      "content_hash": "e33b0190e86ad0b376829762ad357c3d"
+    },
+    {
+      "file_path": "clients/python/function.md",
+      "document_id": "clients-python-function",
+      "chunks_generated": 25,
+      "content_hash": "e33b0190e86ad0b376829762ad357c3d"
+    },
+    {
+      "file_path": "clients/python/known_issues.md",
+      "document_id": "clients-python-known_issues",
+      "chunks_generated": 7,
+      "content_hash": "862e5ae9595e58e622f79e5402736e33"
+    },
+    {
+      "file_path": "clients/python/known_issues.md",
+      "document_id": "clients-python-known_issues",
+      "chunks_generated": 7,
+      "content_hash": "862e5ae9595e58e622f79e5402736e33"
+    },
+    {
+      "file_path": "clients/python/overview.md",
+      "document_id": "clients-python-overview",
+      "chunks_generated": 13,
+      "content_hash": "282a439a26a27be05f17635bde48557a"
+    },
+    {
+      "file_path": "clients/python/overview.md",
+      "document_id": "clients-python-overview",
+      "chunks_generated": 13,
+      "content_hash": "282a439a26a27be05f17635bde48557a"
+    },
+    {
+      "file_path": "clients/python/reference/index.md",
+      "document_id": "clients-python-reference-index",
+      "chunks_generated": 90,
+      "content_hash": "21043966a1d5399aec9528a1f6dc5461"
+    },
+    {
+      "file_path": "clients/python/reference/index.md",
+      "document_id": "clients-python-reference-index",
+      "chunks_generated": 90,
+      "content_hash": "21043966a1d5399aec9528a1f6dc5461"
+    },
+    {
+      "file_path": "clients/python/relational_api.md",
+      "document_id": "clients-python-relational_api",
+      "chunks_generated": 418,
+      "content_hash": "f589938ba550c75d8942cd28489f1009"
+    },
+    {
+      "file_path": "clients/python/relational_api.md",
+      "document_id": "clients-python-relational_api",
+      "chunks_generated": 418,
+      "content_hash": "f589938ba550c75d8942cd28489f1009"
+    },
+    {
+      "file_path": "clients/python/spark_api.md",
+      "document_id": "clients-python-spark_api",
+      "chunks_generated": 3,
+      "content_hash": "b87b8b692d1ce48ebe74ed0ef56fc936"
+    },
+    {
+      "file_path": "clients/python/spark_api.md",
+      "document_id": "clients-python-spark_api",
+      "chunks_generated": 3,
+      "content_hash": "b87b8b692d1ce48ebe74ed0ef56fc936"
+    },
+    {
+      "file_path": "clients/python/types.md",
+      "document_id": "clients-python-types",
+      "chunks_generated": 7,
+      "content_hash": "eb22111ec78517065a2505facf0e197c"
+    },
+    {
+      "file_path": "clients/python/types.md",
+      "document_id": "clients-python-types",
+      "chunks_generated": 7,
+      "content_hash": "eb22111ec78517065a2505facf0e197c"
+    },
+    {
+      "file_path": "clients/r.md",
+      "document_id": "clients-r",
+      "chunks_generated": 11,
+      "content_hash": "324d340d836b903d9786bf0c981eed61"
+    },
+    {
+      "file_path": "clients/r.md",
+      "document_id": "clients-r",
+      "chunks_generated": 11,
+      "content_hash": "324d340d836b903d9786bf0c981eed61"
+    },
+    {
+      "file_path": "clients/rust.md",
+      "document_id": "clients-rust",
+      "chunks_generated": 6,
+      "content_hash": "93dc3d50b77c3d2247ce61992314b99b"
+    },
+    {
+      "file_path": "clients/rust.md",
+      "document_id": "clients-rust",
+      "chunks_generated": 6,
+      "content_hash": "93dc3d50b77c3d2247ce61992314b99b"
+    },
+    {
+      "file_path": "clients/swift.md",
+      "document_id": "clients-swift",
+      "chunks_generated": 10,
+      "content_hash": "1e92d92e71f1a0cb8f68fec829f4a157"
+    },
+    {
+      "file_path": "clients/swift.md",
+      "document_id": "clients-swift",
+      "chunks_generated": 10,
+      "content_hash": "1e92d92e71f1a0cb8f68fec829f4a157"
+    },
+    {
+      "file_path": "clients/tertiary.md",
+      "document_id": "clients-tertiary",
+      "chunks_generated": 5,
+      "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d"
+    },
+    {
+      "file_path": "clients/tertiary.md",
+      "document_id": "clients-tertiary",
+      "chunks_generated": 5,
+      "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d"
+    },
+    {
+      "file_path": "clients/wasm/data_ingestion.md",
+      "document_id": "clients-wasm-data_ingestion",
+      "chunks_generated": 16,
+      "content_hash": "04a3e0d9d8b943baea55ad84aeba6d98"
+    },
+    {
+      "file_path": "clients/wasm/data_ingestion.md",
+      "document_id": "clients-wasm-data_ingestion",
+      "chunks_generated": 16,
+      "content_hash": "04a3e0d9d8b943baea55ad84aeba6d98"
+    },
+    {
+      "file_path": "clients/wasm/deploying_duckdb_wasm.md",
+      "document_id": "clients-wasm-deploying_duckdb_wasm",
+      "chunks_generated": 5,
+      "content_hash": "abb7e59af87128082bb1cb0b33643011"
+    },
+    {
+      "file_path": "clients/wasm/deploying_duckdb_wasm.md",
+      "document_id": "clients-wasm-deploying_duckdb_wasm",
+      "chunks_generated": 5,
+      "content_hash": "abb7e59af87128082bb1cb0b33643011"
+    },
+    {
+      "file_path": "clients/wasm/extensions.md",
+      "document_id": "clients-wasm-extensions",
+      "chunks_generated": 12,
+      "content_hash": "1f45b67ebba2530c80ed5f8d76b994d0"
+    },
+    {
+      "file_path": "clients/wasm/extensions.md",
+      "document_id": "clients-wasm-extensions",
+      "chunks_generated": 12,
+      "content_hash": "1f45b67ebba2530c80ed5f8d76b994d0"
+    },
+    {
+      "file_path": "clients/wasm/instantiation.md",
+      "document_id": "clients-wasm-instantiation",
+      "chunks_generated": 11,
+      "content_hash": "d81d2ade84b6cca55cc5e54892aaa2e4"
+    },
+    {
+      "file_path": "clients/wasm/instantiation.md",
+      "document_id": "clients-wasm-instantiation",
+      "chunks_generated": 11,
+      "content_hash": "d81d2ade84b6cca55cc5e54892aaa2e4"
+    },
+    {
+      "file_path": "clients/wasm/overview.md",
+      "document_id": "clients-wasm-overview",
+      "chunks_generated": 2,
+      "content_hash": "53399182452c9e90878e596fb6a65f52"
+    },
+    {
+      "file_path": "clients/wasm/overview.md",
+      "document_id": "clients-wasm-overview",
+      "chunks_generated": 2,
+      "content_hash": "53399182452c9e90878e596fb6a65f52"
+    },
+    {
+      "file_path": "clients/wasm/query.md",
+      "document_id": "clients-wasm-query",
+      "chunks_generated": 5,
+      "content_hash": "35f30933137d6ec612e44654546dd9c6"
+    },
+    {
+      "file_path": "clients/wasm/query.md",
+      "document_id": "clients-wasm-query",
+      "chunks_generated": 5,
+      "content_hash": "35f30933137d6ec612e44654546dd9c6"
+    },
+    {
+      "file_path": "configuration/overview.md",
+      "document_id": "configuration-overview",
+      "chunks_generated": 58,
+      "content_hash": "828055c0dd212a8241fd8c6625f20795"
+    },
+    {
+      "file_path": "configuration/overview.md",
+      "document_id": "configuration-overview",
+      "chunks_generated": 58,
+      "content_hash": "828055c0dd212a8241fd8c6625f20795"
+    },
+    {
+      "file_path": "configuration/pragmas.md",
+      "document_id": "configuration-pragmas",
+      "chunks_generated": 33,
+      "content_hash": "f7c31076a9828de34b8627c25555670a"
+    },
+    {
+      "file_path": "configuration/pragmas.md",
+      "document_id": "configuration-pragmas",
+      "chunks_generated": 33,
+      "content_hash": "f7c31076a9828de34b8627c25555670a"
+    },
+    {
+      "file_path": "configuration/secrets_manager.md",
+      "document_id": "configuration-secrets_manager",
+      "chunks_generated": 12,
+      "content_hash": "f8f29a0c50ae0f5edd97fa47a9a238e6"
+    },
+    {
+      "file_path": "configuration/secrets_manager.md",
+      "document_id": "configuration-secrets_manager",
+      "chunks_generated": 12,
+      "content_hash": "f8f29a0c50ae0f5edd97fa47a9a238e6"
+    },
+    {
+      "file_path": "connect/concurrency.md",
+      "document_id": "connect-concurrency",
+      "chunks_generated": 6,
+      "content_hash": "e9a50b95e90709e9899b72cfee7bb960"
+    },
+    {
+      "file_path": "connect/concurrency.md",
+      "document_id": "connect-concurrency",
+      "chunks_generated": 6,
+      "content_hash": "e9a50b95e90709e9899b72cfee7bb960"
+    },
+    {
+      "file_path": "connect/overview.md",
+      "document_id": "connect-overview",
+      "chunks_generated": 4,
+      "content_hash": "996ac3fe40b643512796414adf2cd5c9"
+    },
+    {
+      "file_path": "connect/overview.md",
+      "document_id": "connect-overview",
+      "chunks_generated": 4,
+      "content_hash": "996ac3fe40b643512796414adf2cd5c9"
+    },
+    {
+      "file_path": "core_extensions/autocomplete.md",
+      "document_id": "core_extensions-autocomplete",
+      "chunks_generated": 2,
+      "content_hash": "b46cea54a4116d4ee89d05b0c2624b4f"
+    },
+    {
+      "file_path": "core_extensions/autocomplete.md",
+      "document_id": "core_extensions-autocomplete",
+      "chunks_generated": 2,
+      "content_hash": "b46cea54a4116d4ee89d05b0c2624b4f"
+    },
+    {
+      "file_path": "core_extensions/avro.md",
+      "document_id": "core_extensions-avro",
+      "chunks_generated": 7,
+      "content_hash": "f69cd305fc534cd22cee36eb9f41b031"
+    },
+    {
+      "file_path": "core_extensions/avro.md",
+      "document_id": "core_extensions-avro",
+      "chunks_generated": 7,
+      "content_hash": "f69cd305fc534cd22cee36eb9f41b031"
+    },
+    {
+      "file_path": "core_extensions/aws.md",
+      "document_id": "core_extensions-aws",
+      "chunks_generated": 14,
+      "content_hash": "a4bea09deb04fff982b3cf50fe367b7f"
+    },
+    {
+      "file_path": "core_extensions/aws.md",
+      "document_id": "core_extensions-aws",
+      "chunks_generated": 14,
+      "content_hash": "a4bea09deb04fff982b3cf50fe367b7f"
+    },
+    {
+      "file_path": "core_extensions/azure.md",
+      "document_id": "core_extensions-azure",
+      "chunks_generated": 40,
+      "content_hash": "abae9897f8b706f7fb27e4f8e41c1584"
+    },
+    {
+      "file_path": "core_extensions/azure.md",
+      "document_id": "core_extensions-azure",
+      "chunks_generated": 40,
+      "content_hash": "abae9897f8b706f7fb27e4f8e41c1584"
+    },
+    {
+      "file_path": "core_extensions/delta.md",
+      "document_id": "core_extensions-delta",
+      "chunks_generated": 6,
+      "content_hash": "5300f5391bddd3f733ca216ff66ebbc6"
+    },
+    {
+      "file_path": "core_extensions/delta.md",
+      "document_id": "core_extensions-delta",
+      "chunks_generated": 6,
+      "content_hash": "5300f5391bddd3f733ca216ff66ebbc6"
+    },
+    {
+      "file_path": "core_extensions/ducklake.md",
+      "document_id": "core_extensions-ducklake",
+      "chunks_generated": 17,
+      "content_hash": "ae2c0ea5480175b4517395c61461394a"
+    },
+    {
+      "file_path": "core_extensions/ducklake.md",
+      "document_id": "core_extensions-ducklake",
+      "chunks_generated": 17,
+      "content_hash": "ae2c0ea5480175b4517395c61461394a"
+    },
+    {
+      "file_path": "core_extensions/encodings.md",
+      "document_id": "core_extensions-encodings",
+      "chunks_generated": 102,
+      "content_hash": "2ae5b5261b078cbff2e3f7c43310a59f"
+    },
+    {
+      "file_path": "core_extensions/encodings.md",
+      "document_id": "core_extensions-encodings",
+      "chunks_generated": 102,
+      "content_hash": "2ae5b5261b078cbff2e3f7c43310a59f"
+    },
+    {
+      "file_path": "core_extensions/excel.md",
+      "document_id": "core_extensions-excel",
+      "chunks_generated": 28,
+      "content_hash": "f88130483e993c184c73d6e9e81457a3"
+    },
+    {
+      "file_path": "core_extensions/excel.md",
+      "document_id": "core_extensions-excel",
+      "chunks_generated": 28,
+      "content_hash": "f88130483e993c184c73d6e9e81457a3"
+    },
+    {
+      "file_path": "core_extensions/full_text_search.md",
+      "document_id": "core_extensions-full_text_search",
+      "chunks_generated": 19,
+      "content_hash": "5840f6389d1c5941a1e920b19278c3a1"
+    },
+    {
+      "file_path": "core_extensions/full_text_search.md",
+      "document_id": "core_extensions-full_text_search",
+      "chunks_generated": 19,
+      "content_hash": "5840f6389d1c5941a1e920b19278c3a1"
+    },
+    {
+      "file_path": "core_extensions/httpfs/https.md",
+      "document_id": "core_extensions-httpfs-https",
+      "chunks_generated": 5,
+      "content_hash": "61c0246d3297451cd0cb91efc3b86e50"
+    },
+    {
+      "file_path": "core_extensions/httpfs/https.md",
+      "document_id": "core_extensions-httpfs-https",
+      "chunks_generated": 5,
+      "content_hash": "61c0246d3297451cd0cb91efc3b86e50"
+    },
+    {
+      "file_path": "core_extensions/httpfs/hugging_face.md",
+      "document_id": "core_extensions-httpfs-hugging_face",
+      "chunks_generated": 10,
+      "content_hash": "dd5eba34e37cf69127dd66dfc280c48c"
+    },
+    {
+      "file_path": "core_extensions/httpfs/hugging_face.md",
+      "document_id": "core_extensions-httpfs-hugging_face",
+      "chunks_generated": 10,
+      "content_hash": "dd5eba34e37cf69127dd66dfc280c48c"
+    },
+    {
+      "file_path": "core_extensions/httpfs/overview.md",
+      "document_id": "core_extensions-httpfs-overview",
+      "chunks_generated": 1,
+      "content_hash": "84cd96940144decf1955759c295b615a"
+    },
+    {
+      "file_path": "core_extensions/httpfs/overview.md",
+      "document_id": "core_extensions-httpfs-overview",
+      "chunks_generated": 1,
+      "content_hash": "84cd96940144decf1955759c295b615a"
+    },
+    {
+      "file_path": "core_extensions/httpfs/s3api.md",
+      "document_id": "core_extensions-httpfs-s3api",
+      "chunks_generated": 31,
+      "content_hash": "6c83b3d2995e6f3632383a36ee070ecb"
+    },
+    {
+      "file_path": "core_extensions/httpfs/s3api.md",
+      "document_id": "core_extensions-httpfs-s3api",
+      "chunks_generated": 31,
+      "content_hash": "6c83b3d2995e6f3632383a36ee070ecb"
+    },
+    {
+      "file_path": "core_extensions/httpfs/s3api_legacy_authentication.md",
+      "document_id": "core_extensions-httpfs-s3api_legacy_authentication",
+      "chunks_generated": 7,
+      "content_hash": "7b8612bcb4fb9b8a174577f1b8f26ab5"
+    },
+    {
+      "file_path": "core_extensions/httpfs/s3api_legacy_authentication.md",
+      "document_id": "core_extensions-httpfs-s3api_legacy_authentication",
+      "chunks_generated": 7,
+      "content_hash": "7b8612bcb4fb9b8a174577f1b8f26ab5"
+    },
+    {
+      "file_path": "core_extensions/iceberg/amazon_s3_tables.md",
+      "document_id": "core_extensions-iceberg-amazon_s3_tables",
+      "chunks_generated": 3,
+      "content_hash": "f32f29880fbe45f3870da64bd732188f"
+    },
+    {
+      "file_path": "core_extensions/iceberg/amazon_s3_tables.md",
+      "document_id": "core_extensions-iceberg-amazon_s3_tables",
+      "chunks_generated": 3,
+      "content_hash": "f32f29880fbe45f3870da64bd732188f"
+    },
+    {
+      "file_path": "core_extensions/iceberg/amazon_sagemaker_lakehouse.md",
+      "document_id": "core_extensions-iceberg-amazon_sagemaker_lakehouse",
+      "chunks_generated": 3,
+      "content_hash": "245221ff52a4d174bb903013485ca025"
+    },
+    {
+      "file_path": "core_extensions/iceberg/amazon_sagemaker_lakehouse.md",
+      "document_id": "core_extensions-iceberg-amazon_sagemaker_lakehouse",
+      "chunks_generated": 3,
+      "content_hash": "245221ff52a4d174bb903013485ca025"
+    },
+    {
+      "file_path": "core_extensions/iceberg/iceberg_rest_catalogs.md",
+      "document_id": "core_extensions-iceberg-iceberg_rest_catalogs",
+      "chunks_generated": 15,
+      "content_hash": "bd2846807f65f1630c1aa2373f80bc00"
+    },
+    {
+      "file_path": "core_extensions/iceberg/iceberg_rest_catalogs.md",
+      "document_id": "core_extensions-iceberg-iceberg_rest_catalogs",
+      "chunks_generated": 15,
+      "content_hash": "bd2846807f65f1630c1aa2373f80bc00"
+    },
+    {
+      "file_path": "core_extensions/iceberg/overview.md",
+      "document_id": "core_extensions-iceberg-overview",
+      "chunks_generated": 28,
+      "content_hash": "02afa0ae0939c725f6f07cc425bd5e54"
+    },
+    {
+      "file_path": "core_extensions/iceberg/overview.md",
+      "document_id": "core_extensions-iceberg-overview",
+      "chunks_generated": 28,
+      "content_hash": "02afa0ae0939c725f6f07cc425bd5e54"
+    },
+    {
+      "file_path": "core_extensions/iceberg/troubleshooting.md",
+      "document_id": "core_extensions-iceberg-troubleshooting",
+      "chunks_generated": 2,
+      "content_hash": "7eaa158fb4ebed3f5a4075af7403c221"
+    },
+    {
+      "file_path": "core_extensions/iceberg/troubleshooting.md",
+      "document_id": "core_extensions-iceberg-troubleshooting",
+      "chunks_generated": 2,
+      "content_hash": "7eaa158fb4ebed3f5a4075af7403c221"
+    },
+    {
+      "file_path": "core_extensions/icu.md",
+      "document_id": "core_extensions-icu",
+      "chunks_generated": 2,
+      "content_hash": "3278349e8b1bef54be6c0590e030b7a1"
+    },
+    {
+      "file_path": "core_extensions/icu.md",
+      "document_id": "core_extensions-icu",
+      "chunks_generated": 2,
+      "content_hash": "3278349e8b1bef54be6c0590e030b7a1"
+    },
+    {
+      "file_path": "core_extensions/inet.md",
+      "document_id": "core_extensions-inet",
+      "chunks_generated": 15,
+      "content_hash": "9a01d3c5648030b25959f3ad362ec6b4"
+    },
+    {
+      "file_path": "core_extensions/inet.md",
+      "document_id": "core_extensions-inet",
+      "chunks_generated": 15,
+      "content_hash": "9a01d3c5648030b25959f3ad362ec6b4"
+    },
+    {
+      "file_path": "core_extensions/jemalloc.md",
+      "document_id": "core_extensions-jemalloc",
+      "chunks_generated": 3,
+      "content_hash": "c40f461d47c78e02abd983501838c32e"
+    },
+    {
+      "file_path": "core_extensions/jemalloc.md",
+      "document_id": "core_extensions-jemalloc",
+      "chunks_generated": 3,
+      "content_hash": "c40f461d47c78e02abd983501838c32e"
+    },
+    {
+      "file_path": "core_extensions/mysql.md",
+      "document_id": "core_extensions-mysql",
+      "chunks_generated": 24,
+      "content_hash": "803baf6b4ebc39c5708e2ba3e4ce12a9"
+    },
+    {
+      "file_path": "core_extensions/mysql.md",
+      "document_id": "core_extensions-mysql",
+      "chunks_generated": 24,
+      "content_hash": "803baf6b4ebc39c5708e2ba3e4ce12a9"
+    },
+    {
+      "file_path": "core_extensions/overview.md",
+      "document_id": "core_extensions-overview",
+      "chunks_generated": 17,
+      "content_hash": "adb997dfbace797ab5defb63386f2d1d"
+    },
+    {
+      "file_path": "core_extensions/overview.md",
+      "document_id": "core_extensions-overview",
+      "chunks_generated": 17,
+      "content_hash": "adb997dfbace797ab5defb63386f2d1d"
+    },
+    {
+      "file_path": "core_extensions/postgres.md",
+      "document_id": "core_extensions-postgres",
+      "chunks_generated": 25,
+      "content_hash": "2e9542c2cb9a49e4c44cbe9d9e153da8"
+    },
+    {
+      "file_path": "core_extensions/postgres.md",
+      "document_id": "core_extensions-postgres",
+      "chunks_generated": 25,
+      "content_hash": "2e9542c2cb9a49e4c44cbe9d9e153da8"
+    },
+    {
+      "file_path": "core_extensions/spatial/functions.md",
+      "document_id": "core_extensions-spatial-functions",
+      "chunks_generated": 163,
+      "content_hash": "91dafe824f7016a175ad644845b66cf1"
+    },
+    {
+      "file_path": "core_extensions/spatial/functions.md",
+      "document_id": "core_extensions-spatial-functions",
+      "chunks_generated": 163,
+      "content_hash": "91dafe824f7016a175ad644845b66cf1"
+    },
+    {
+      "file_path": "core_extensions/spatial/gdal.md",
+      "document_id": "core_extensions-spatial-gdal",
+      "chunks_generated": 4,
+      "content_hash": "24e97e5447f5738743feb6124c16d561"
+    },
+    {
+      "file_path": "core_extensions/spatial/gdal.md",
+      "document_id": "core_extensions-spatial-gdal",
+      "chunks_generated": 4,
+      "content_hash": "24e97e5447f5738743feb6124c16d561"
+    },
+    {
+      "file_path": "core_extensions/spatial/overview.md",
+      "document_id": "core_extensions-spatial-overview",
+      "chunks_generated": 4,
+      "content_hash": "b720730afdecb20ffb251ae12542b701"
+    },
+    {
+      "file_path": "core_extensions/spatial/overview.md",
+      "document_id": "core_extensions-spatial-overview",
+      "chunks_generated": 4,
+      "content_hash": "b720730afdecb20ffb251ae12542b701"
+    },
+    {
+      "file_path": "core_extensions/spatial/r-tree_indexes.md",
+      "document_id": "core_extensions-spatial-r-tree_indexes",
+      "chunks_generated": 22,
+      "content_hash": "6bf66fcae23c3fc253ac91d0b0aec41f"
+    },
+    {
+      "file_path": "core_extensions/spatial/r-tree_indexes.md",
+      "document_id": "core_extensions-spatial-r-tree_indexes",
+      "chunks_generated": 22,
+      "content_hash": "6bf66fcae23c3fc253ac91d0b0aec41f"
+    },
+    {
+      "file_path": "core_extensions/sqlite.md",
+      "document_id": "core_extensions-sqlite",
+      "chunks_generated": 18,
+      "content_hash": "ebd59da4bc29b01a658e3579b91eae86"
+    },
+    {
+      "file_path": "core_extensions/sqlite.md",
+      "document_id": "core_extensions-sqlite",
+      "chunks_generated": 18,
+      "content_hash": "ebd59da4bc29b01a658e3579b91eae86"
+    },
+    {
+      "file_path": "core_extensions/sqlsmith.md",
+      "document_id": "core_extensions-sqlsmith",
+      "chunks_generated": 1,
+      "content_hash": "63aa671e545ac95ada3bb034f0de564a"
+    },
+    {
+      "file_path": "core_extensions/sqlsmith.md",
+      "document_id": "core_extensions-sqlsmith",
+      "chunks_generated": 1,
+      "content_hash": "63aa671e545ac95ada3bb034f0de564a"
+    },
+    {
+      "file_path": "core_extensions/tpcds.md",
+      "document_id": "core_extensions-tpcds",
+      "chunks_generated": 3,
+      "content_hash": "f806d5262e51748ce095992b6fddc1d3"
+    },
+    {
+      "file_path": "core_extensions/tpcds.md",
+      "document_id": "core_extensions-tpcds",
+      "chunks_generated": 3,
+      "content_hash": "f806d5262e51748ce095992b6fddc1d3"
+    },
+    {
+      "file_path": "core_extensions/tpch.md",
+      "document_id": "core_extensions-tpch",
+      "chunks_generated": 14,
+      "content_hash": "a94156dbdfdb6dd8b0bf4d4d40b0dc25"
+    },
+    {
+      "file_path": "core_extensions/tpch.md",
+      "document_id": "core_extensions-tpch",
+      "chunks_generated": 14,
+      "content_hash": "a94156dbdfdb6dd8b0bf4d4d40b0dc25"
+    },
+    {
+      "file_path": "core_extensions/ui.md",
+      "document_id": "core_extensions-ui",
+      "chunks_generated": 8,
+      "content_hash": "40a061f803c8f3acf01bd05af1792d9a"
+    },
+    {
+      "file_path": "core_extensions/ui.md",
+      "document_id": "core_extensions-ui",
+      "chunks_generated": 8,
+      "content_hash": "40a061f803c8f3acf01bd05af1792d9a"
+    },
+    {
+      "file_path": "core_extensions/vortex.md",
+      "document_id": "core_extensions-vortex",
+      "chunks_generated": 1,
+      "content_hash": "3a21019931f866a0cedeab041d4c3f81"
+    },
+    {
+      "file_path": "core_extensions/vortex.md",
+      "document_id": "core_extensions-vortex",
+      "chunks_generated": 1,
+      "content_hash": "3a21019931f866a0cedeab041d4c3f81"
+    },
+    {
+      "file_path": "core_extensions/vss.md",
+      "document_id": "core_extensions-vss",
+      "chunks_generated": 25,
+      "content_hash": "96cf6a32b6e49c32a15a326a3360017a"
+    },
+    {
+      "file_path": "core_extensions/vss.md",
+      "document_id": "core_extensions-vss",
+      "chunks_generated": 25,
+      "content_hash": "96cf6a32b6e49c32a15a326a3360017a"
+    },
+    {
+      "file_path": "data/appender.md",
+      "document_id": "data-appender",
+      "chunks_generated": 8,
+      "content_hash": "2e067f4a5c626fbc38c3f7c546c70db8"
+    },
+    {
+      "file_path": "data/appender.md",
+      "document_id": "data-appender",
+      "chunks_generated": 8,
+      "content_hash": "2e067f4a5c626fbc38c3f7c546c70db8"
+    },
+    {
+      "file_path": "data/csv/auto_detection.md",
+      "document_id": "data-csv-auto_detection",
+      "chunks_generated": 22,
+      "content_hash": "dd1377a360419caa55ac84846a41844b"
+    },
+    {
+      "file_path": "data/csv/auto_detection.md",
+      "document_id": "data-csv-auto_detection",
+      "chunks_generated": 22,
+      "content_hash": "dd1377a360419caa55ac84846a41844b"
+    },
+    {
+      "file_path": "data/csv/overview.md",
+      "document_id": "data-csv-overview",
+      "chunks_generated": 25,
+      "content_hash": "04a07c2a69bc703fe9cfe7aa1a4b7f23"
+    },
+    {
+      "file_path": "data/csv/overview.md",
+      "document_id": "data-csv-overview",
+      "chunks_generated": 25,
+      "content_hash": "04a07c2a69bc703fe9cfe7aa1a4b7f23"
+    },
+    {
+      "file_path": "data/csv/reading_faulty_csv_files.md",
+      "document_id": "data-csv-reading_faulty_csv_files",
+      "chunks_generated": 31,
+      "content_hash": "6367c50d645676eac5bcc7ddb7e7fa9b"
+    },
+    {
+      "file_path": "data/csv/reading_faulty_csv_files.md",
+      "document_id": "data-csv-reading_faulty_csv_files",
+      "chunks_generated": 31,
+      "content_hash": "6367c50d645676eac5bcc7ddb7e7fa9b"
+    },
+    {
+      "file_path": "data/csv/tips.md",
+      "document_id": "data-csv-tips",
+      "chunks_generated": 4,
+      "content_hash": "52ee2e9383595163427c7e769f996fe9"
+    },
+    {
+      "file_path": "data/csv/tips.md",
+      "document_id": "data-csv-tips",
+      "chunks_generated": 4,
+      "content_hash": "52ee2e9383595163427c7e769f996fe9"
+    },
+    {
+      "file_path": "data/data_sources.md",
+      "document_id": "data-data_sources",
+      "chunks_generated": 4,
+      "content_hash": "e8f87366856d851a5eff4ca85251179e"
+    },
+    {
+      "file_path": "data/data_sources.md",
+      "document_id": "data-data_sources",
+      "chunks_generated": 4,
+      "content_hash": "e8f87366856d851a5eff4ca85251179e"
+    },
+    {
+      "file_path": "data/insert.md",
+      "document_id": "data-insert",
+      "chunks_generated": 3,
+      "content_hash": "1d06722a08b5e6caa7e0b9fbc9932ea6"
+    },
+    {
+      "file_path": "data/insert.md",
+      "document_id": "data-insert",
+      "chunks_generated": 3,
+      "content_hash": "1d06722a08b5e6caa7e0b9fbc9932ea6"
+    },
+    {
+      "file_path": "data/json/caveats.md",
+      "document_id": "data-json-caveats",
+      "chunks_generated": 2,
+      "content_hash": "6102dd1f68aa5ce9e69ee50987f55f7a"
+    },
+    {
+      "file_path": "data/json/caveats.md",
+      "document_id": "data-json-caveats",
+      "chunks_generated": 2,
+      "content_hash": "6102dd1f68aa5ce9e69ee50987f55f7a"
+    },
+    {
+      "file_path": "data/json/creating_json.md",
+      "document_id": "data-json-creating_json",
+      "chunks_generated": 5,
+      "content_hash": "10bf6f8f335c6f1163a205dc4f72782a"
+    },
+    {
+      "file_path": "data/json/creating_json.md",
+      "document_id": "data-json-creating_json",
+      "chunks_generated": 5,
+      "content_hash": "10bf6f8f335c6f1163a205dc4f72782a"
+    },
+    {
+      "file_path": "data/json/format_settings.md",
+      "document_id": "data-json-format_settings",
+      "chunks_generated": 7,
+      "content_hash": "34e0a7e9ceb9d7c62622b5fd52c4248b"
+    },
+    {
+      "file_path": "data/json/format_settings.md",
+      "document_id": "data-json-format_settings",
+      "chunks_generated": 7,
+      "content_hash": "34e0a7e9ceb9d7c62622b5fd52c4248b"
+    },
+    {
+      "file_path": "data/json/installing_and_loading.md",
+      "document_id": "data-json-installing_and_loading",
+      "chunks_generated": 1,
+      "content_hash": "ff85c0fa1890303347002c67ce235500"
+    },
+    {
+      "file_path": "data/json/installing_and_loading.md",
+      "document_id": "data-json-installing_and_loading",
+      "chunks_generated": 1,
+      "content_hash": "ff85c0fa1890303347002c67ce235500"
+    },
+    {
+      "file_path": "data/json/json_functions.md",
+      "document_id": "data-json-json_functions",
+      "chunks_generated": 55,
+      "content_hash": "30492fd151d022b927d7b7d4f7b4ff83"
+    },
+    {
+      "file_path": "data/json/json_functions.md",
+      "document_id": "data-json-json_functions",
+      "chunks_generated": 55,
+      "content_hash": "30492fd151d022b927d7b7d4f7b4ff83"
+    },
+    {
+      "file_path": "data/json/json_type.md",
+      "document_id": "data-json-json_type",
+      "chunks_generated": 2,
+      "content_hash": "f87570f10c1beb53d1a5b002feeeb329"
+    },
+    {
+      "file_path": "data/json/json_type.md",
+      "document_id": "data-json-json_type",
+      "chunks_generated": 2,
+      "content_hash": "f87570f10c1beb53d1a5b002feeeb329"
+    },
+    {
+      "file_path": "data/json/loading_json.md",
+      "document_id": "data-json-loading_json",
+      "chunks_generated": 30,
+      "content_hash": "d6f3fd3f1a84ac6ea102f9efced24cd0"
+    },
+    {
+      "file_path": "data/json/loading_json.md",
+      "document_id": "data-json-loading_json",
+      "chunks_generated": 30,
+      "content_hash": "d6f3fd3f1a84ac6ea102f9efced24cd0"
+    },
+    {
+      "file_path": "data/json/overview.md",
+      "document_id": "data-json-overview",
+      "chunks_generated": 9,
+      "content_hash": "71f8e778afbc9680a2caa63826d989cd"
+    },
+    {
+      "file_path": "data/json/overview.md",
+      "document_id": "data-json-overview",
+      "chunks_generated": 9,
+      "content_hash": "71f8e778afbc9680a2caa63826d989cd"
+    },
+    {
+      "file_path": "data/json/sql_to_and_from_json.md",
+      "document_id": "data-json-sql_to_and_from_json",
+      "chunks_generated": 81,
+      "content_hash": "2654e640bafd743bbe9ade8a511cfcc8"
+    },
+    {
+      "file_path": "data/json/sql_to_and_from_json.md",
+      "document_id": "data-json-sql_to_and_from_json",
+      "chunks_generated": 81,
+      "content_hash": "2654e640bafd743bbe9ade8a511cfcc8"
+    },
+    {
+      "file_path": "data/json/writing_json.md",
+      "document_id": "data-json-writing_json",
+      "chunks_generated": 1,
+      "content_hash": "a9d941964f301d940d30a35c5ed75aad"
+    },
+    {
+      "file_path": "data/json/writing_json.md",
+      "document_id": "data-json-writing_json",
+      "chunks_generated": 1,
+      "content_hash": "a9d941964f301d940d30a35c5ed75aad"
+    },
+    {
+      "file_path": "data/multiple_files/combining_schemas.md",
+      "document_id": "data-multiple_files-combining_schemas",
+      "chunks_generated": 6,
+      "content_hash": "463819429eb02215405daa23b88ca84d"
+    },
+    {
+      "file_path": "data/multiple_files/combining_schemas.md",
+      "document_id": "data-multiple_files-combining_schemas",
+      "chunks_generated": 6,
+      "content_hash": "463819429eb02215405daa23b88ca84d"
+    },
+    {
+      "file_path": "data/multiple_files/overview.md",
+      "document_id": "data-multiple_files-overview",
+      "chunks_generated": 12,
+      "content_hash": "e1f89649dfb5d98eb851540292ab5184"
+    },
+    {
+      "file_path": "data/multiple_files/overview.md",
+      "document_id": "data-multiple_files-overview",
+      "chunks_generated": 12,
+      "content_hash": "e1f89649dfb5d98eb851540292ab5184"
+    },
+    {
+      "file_path": "data/overview.md",
+      "document_id": "data-overview",
+      "chunks_generated": 9,
+      "content_hash": "0acafb7204b677acbb03c39250b399e9"
+    },
+    {
+      "file_path": "data/overview.md",
+      "document_id": "data-overview",
+      "chunks_generated": 9,
+      "content_hash": "0acafb7204b677acbb03c39250b399e9"
+    },
+    {
+      "file_path": "data/parquet/encryption.md",
+      "document_id": "data-parquet-encryption",
+      "chunks_generated": 5,
+      "content_hash": "7c72b76d455aa0dc262805d07537d16b"
+    },
+    {
+      "file_path": "data/parquet/encryption.md",
+      "document_id": "data-parquet-encryption",
+      "chunks_generated": 5,
+      "content_hash": "7c72b76d455aa0dc262805d07537d16b"
+    },
+    {
+      "file_path": "data/parquet/metadata.md",
+      "document_id": "data-parquet-metadata",
+      "chunks_generated": 11,
+      "content_hash": "e2af1ae572ef3461926ea7a31a020d39"
+    },
+    {
+      "file_path": "data/parquet/metadata.md",
+      "document_id": "data-parquet-metadata",
+      "chunks_generated": 11,
+      "content_hash": "e2af1ae572ef3461926ea7a31a020d39"
+    },
+    {
+      "file_path": "data/parquet/overview.md",
+      "document_id": "data-parquet-overview",
+      "chunks_generated": 16,
+      "content_hash": "73275906809a68431ecbf36dc9bf65ae"
+    },
+    {
+      "file_path": "data/parquet/overview.md",
+      "document_id": "data-parquet-overview",
+      "chunks_generated": 16,
+      "content_hash": "73275906809a68431ecbf36dc9bf65ae"
+    },
+    {
+      "file_path": "data/parquet/tips.md",
+      "document_id": "data-parquet-tips",
+      "chunks_generated": 6,
+      "content_hash": "1fc617114590e67eba3cf9bfcfaecc00"
+    },
+    {
+      "file_path": "data/parquet/tips.md",
+      "document_id": "data-parquet-tips",
+      "chunks_generated": 6,
+      "content_hash": "1fc617114590e67eba3cf9bfcfaecc00"
+    },
+    {
+      "file_path": "data/partitioning/hive_partitioning.md",
+      "document_id": "data-partitioning-hive_partitioning",
+      "chunks_generated": 6,
+      "content_hash": "43007c500bc732ec047aa5cf3e6047b1"
+    },
+    {
+      "file_path": "data/partitioning/hive_partitioning.md",
+      "document_id": "data-partitioning-hive_partitioning",
+      "chunks_generated": 6,
+      "content_hash": "43007c500bc732ec047aa5cf3e6047b1"
+    },
+    {
+      "file_path": "data/partitioning/partitioned_writes.md",
+      "document_id": "data-partitioning-partitioned_writes",
+      "chunks_generated": 5,
+      "content_hash": "0f862c4067f2634602697193eccd537c"
+    },
+    {
+      "file_path": "data/partitioning/partitioned_writes.md",
+      "document_id": "data-partitioning-partitioned_writes",
+      "chunks_generated": 5,
+      "content_hash": "0f862c4067f2634602697193eccd537c"
+    },
+    {
+      "file_path": "dev/benchmark.md",
+      "document_id": "dev-benchmark",
+      "chunks_generated": 12,
+      "content_hash": "e15aa0a00a30b04669e45edd608f14c5"
+    },
+    {
+      "file_path": "dev/benchmark.md",
+      "document_id": "dev-benchmark",
+      "chunks_generated": 12,
+      "content_hash": "e15aa0a00a30b04669e45edd608f14c5"
+    },
+    {
+      "file_path": "dev/building/android.md",
+      "document_id": "dev-building-android",
+      "chunks_generated": 10,
+      "content_hash": "6973350742a20a0b3dcd8352075abac1"
+    },
+    {
+      "file_path": "dev/building/android.md",
+      "document_id": "dev-building-android",
+      "chunks_generated": 10,
+      "content_hash": "6973350742a20a0b3dcd8352075abac1"
+    },
+    {
+      "file_path": "dev/building/build_configuration.md",
+      "document_id": "dev-building-build_configuration",
+      "chunks_generated": 8,
+      "content_hash": "ea48eee2f51b365e0fb278c760779dc8"
+    },
+    {
+      "file_path": "dev/building/build_configuration.md",
+      "document_id": "dev-building-build_configuration",
+      "chunks_generated": 8,
+      "content_hash": "ea48eee2f51b365e0fb278c760779dc8"
+    },
+    {
+      "file_path": "dev/building/building_extensions.md",
+      "document_id": "dev-building-building_extensions",
+      "chunks_generated": 6,
+      "content_hash": "84c297d927e78971b930849de7ebfe12"
+    },
+    {
+      "file_path": "dev/building/building_extensions.md",
+      "document_id": "dev-building-building_extensions",
+      "chunks_generated": 6,
+      "content_hash": "84c297d927e78971b930849de7ebfe12"
+    },
+    {
+      "file_path": "dev/building/linux.md",
+      "document_id": "dev-building-linux",
+      "chunks_generated": 8,
+      "content_hash": "1912bf3b05108612bd453d29e5be6c30"
+    },
+    {
+      "file_path": "dev/building/linux.md",
+      "document_id": "dev-building-linux",
+      "chunks_generated": 8,
+      "content_hash": "1912bf3b05108612bd453d29e5be6c30"
+    },
+    {
+      "file_path": "dev/building/macos.md",
+      "document_id": "dev-building-macos",
+      "chunks_generated": 11,
+      "content_hash": "a5eaa1867e7304014a3c036b06fd5001"
+    },
+    {
+      "file_path": "dev/building/macos.md",
+      "document_id": "dev-building-macos",
+      "chunks_generated": 11,
+      "content_hash": "a5eaa1867e7304014a3c036b06fd5001"
+    },
+    {
+      "file_path": "dev/building/overview.md",
+      "document_id": "dev-building-overview",
+      "chunks_generated": 19,
+      "content_hash": "f2b2c3425012ae3eeeb1e387e58003df"
+    },
+    {
+      "file_path": "dev/building/overview.md",
+      "document_id": "dev-building-overview",
+      "chunks_generated": 19,
+      "content_hash": "f2b2c3425012ae3eeeb1e387e58003df"
+    },
+    {
+      "file_path": "dev/building/python.md",
+      "document_id": "dev-building-python",
+      "chunks_generated": 18,
+      "content_hash": "0315572aaef87482a46ae29f4ab6b8da"
+    },
+    {
+      "file_path": "dev/building/python.md",
+      "document_id": "dev-building-python",
+      "chunks_generated": 18,
+      "content_hash": "0315572aaef87482a46ae29f4ab6b8da"
+    },
+    {
+      "file_path": "dev/building/r.md",
+      "document_id": "dev-building-r",
+      "chunks_generated": 1,
+      "content_hash": "9869061fcde3da662678e0f4e8eb1cc6"
+    },
+    {
+      "file_path": "dev/building/r.md",
+      "document_id": "dev-building-r",
+      "chunks_generated": 1,
+      "content_hash": "9869061fcde3da662678e0f4e8eb1cc6"
+    },
+    {
+      "file_path": "dev/building/raspberry_pi.md",
+      "document_id": "dev-building-raspberry_pi",
+      "chunks_generated": 2,
+      "content_hash": "a66659f3374a4657924abe76780a3d75"
+    },
+    {
+      "file_path": "dev/building/raspberry_pi.md",
+      "document_id": "dev-building-raspberry_pi",
+      "chunks_generated": 2,
+      "content_hash": "a66659f3374a4657924abe76780a3d75"
+    },
+    {
+      "file_path": "dev/building/troubleshooting.md",
+      "document_id": "dev-building-troubleshooting",
+      "chunks_generated": 1,
+      "content_hash": "81101750cb78803eea341312bc99c30b"
+    },
+    {
+      "file_path": "dev/building/troubleshooting.md",
+      "document_id": "dev-building-troubleshooting",
+      "chunks_generated": 1,
+      "content_hash": "81101750cb78803eea341312bc99c30b"
+    },
+    {
+      "file_path": "dev/building/unofficial_and_unsupported_platforms.md",
+      "document_id": "dev-building-unofficial_and_unsupported_platforms",
+      "chunks_generated": 6,
+      "content_hash": "3d0afba1c4944785a234f83ae5823082"
+    },
+    {
+      "file_path": "dev/building/unofficial_and_unsupported_platforms.md",
+      "document_id": "dev-building-unofficial_and_unsupported_platforms",
+      "chunks_generated": 6,
+      "content_hash": "3d0afba1c4944785a234f83ae5823082"
+    },
+    {
+      "file_path": "dev/building/windows.md",
+      "document_id": "dev-building-windows",
+      "chunks_generated": 7,
+      "content_hash": "e4d2206190b3ed40c08ca48643b34096"
+    },
+    {
+      "file_path": "dev/building/windows.md",
+      "document_id": "dev-building-windows",
+      "chunks_generated": 7,
+      "content_hash": "e4d2206190b3ed40c08ca48643b34096"
+    },
+    {
+      "file_path": "dev/internal_errors.md",
+      "document_id": "dev-internal_errors",
+      "chunks_generated": 2,
+      "content_hash": "436413f720f52a6aca581c338bc2b16d"
+    },
+    {
+      "file_path": "dev/internal_errors.md",
+      "document_id": "dev-internal_errors",
+      "chunks_generated": 2,
+      "content_hash": "436413f720f52a6aca581c338bc2b16d"
+    },
+    {
+      "file_path": "dev/profiling.md",
+      "document_id": "dev-profiling",
+      "chunks_generated": 40,
+      "content_hash": "fe63553daae88928581bbd60e60f7a68"
+    },
+    {
+      "file_path": "dev/profiling.md",
+      "document_id": "dev-profiling",
+      "chunks_generated": 40,
+      "content_hash": "fe63553daae88928581bbd60e60f7a68"
+    },
+    {
+      "file_path": "dev/release_cycle.md",
+      "document_id": "dev-release_cycle",
+      "chunks_generated": 30,
+      "content_hash": "c8dd481e5221420d6e99b080d2a10176"
+    },
+    {
+      "file_path": "dev/release_cycle.md",
+      "document_id": "dev-release_cycle",
+      "chunks_generated": 30,
+      "content_hash": "c8dd481e5221420d6e99b080d2a10176"
+    },
+    {
+      "file_path": "dev/repositories.md",
+      "document_id": "dev-repositories",
+      "chunks_generated": 7,
+      "content_hash": "f4e10838b9c9d038651cd0be281a0ae2"
+    },
+    {
+      "file_path": "dev/repositories.md",
+      "document_id": "dev-repositories",
+      "chunks_generated": 7,
+      "content_hash": "f4e10838b9c9d038651cd0be281a0ae2"
+    },
+    {
+      "file_path": "dev/sqllogictest/catch.md",
+      "document_id": "dev-sqllogictest-catch",
+      "chunks_generated": 4,
+      "content_hash": "5e5dd399cd50ce82438504eecaca8e11"
+    },
+    {
+      "file_path": "dev/sqllogictest/catch.md",
+      "document_id": "dev-sqllogictest-catch",
+      "chunks_generated": 4,
+      "content_hash": "5e5dd399cd50ce82438504eecaca8e11"
+    },
+    {
+      "file_path": "dev/sqllogictest/debugging.md",
+      "document_id": "dev-sqllogictest-debugging",
+      "chunks_generated": 6,
+      "content_hash": "0cf8a22e5a65bb431aea0fee45fe2617"
+    },
+    {
+      "file_path": "dev/sqllogictest/debugging.md",
+      "document_id": "dev-sqllogictest-debugging",
+      "chunks_generated": 6,
+      "content_hash": "0cf8a22e5a65bb431aea0fee45fe2617"
+    },
+    {
+      "file_path": "dev/sqllogictest/intro.md",
+      "document_id": "dev-sqllogictest-intro",
+      "chunks_generated": 9,
+      "content_hash": "790e2c9917d1c568a383b664f0891d12"
+    },
+    {
+      "file_path": "dev/sqllogictest/intro.md",
+      "document_id": "dev-sqllogictest-intro",
+      "chunks_generated": 9,
+      "content_hash": "790e2c9917d1c568a383b664f0891d12"
+    },
+    {
+      "file_path": "dev/sqllogictest/loops.md",
+      "document_id": "dev-sqllogictest-loops",
+      "chunks_generated": 6,
+      "content_hash": "bd44e3908a75d95acd1ed8ed9fa21bef"
+    },
+    {
+      "file_path": "dev/sqllogictest/loops.md",
+      "document_id": "dev-sqllogictest-loops",
+      "chunks_generated": 6,
+      "content_hash": "bd44e3908a75d95acd1ed8ed9fa21bef"
+    },
+    {
+      "file_path": "dev/sqllogictest/multiple_connections.md",
+      "document_id": "dev-sqllogictest-multiple_connections",
+      "chunks_generated": 3,
+      "content_hash": "4eed683ca53762e2071624575b2cc4cf"
+    },
+    {
+      "file_path": "dev/sqllogictest/multiple_connections.md",
+      "document_id": "dev-sqllogictest-multiple_connections",
+      "chunks_generated": 3,
+      "content_hash": "4eed683ca53762e2071624575b2cc4cf"
+    },
+    {
+      "file_path": "dev/sqllogictest/overview.md",
+      "document_id": "dev-sqllogictest-overview",
+      "chunks_generated": 1,
+      "content_hash": "6d6542994780f1c6b8006900701d6fa9"
+    },
+    {
+      "file_path": "dev/sqllogictest/overview.md",
+      "document_id": "dev-sqllogictest-overview",
+      "chunks_generated": 1,
+      "content_hash": "6d6542994780f1c6b8006900701d6fa9"
+    },
+    {
+      "file_path": "dev/sqllogictest/persistent_testing.md",
+      "document_id": "dev-sqllogictest-persistent_testing",
+      "chunks_generated": 1,
+      "content_hash": "864f46caf5ea9b4bed17f4f2fae9d50b"
+    },
+    {
+      "file_path": "dev/sqllogictest/persistent_testing.md",
+      "document_id": "dev-sqllogictest-persistent_testing",
+      "chunks_generated": 1,
+      "content_hash": "864f46caf5ea9b4bed17f4f2fae9d50b"
+    },
+    {
+      "file_path": "dev/sqllogictest/result_verification.md",
+      "document_id": "dev-sqllogictest-result_verification",
+      "chunks_generated": 14,
+      "content_hash": "e96c2ae1941457f9bf4c9bf2554027ca"
+    },
+    {
+      "file_path": "dev/sqllogictest/result_verification.md",
+      "document_id": "dev-sqllogictest-result_verification",
+      "chunks_generated": 14,
+      "content_hash": "e96c2ae1941457f9bf4c9bf2554027ca"
+    },
+    {
+      "file_path": "dev/sqllogictest/writing_tests.md",
+      "document_id": "dev-sqllogictest-writing_tests",
+      "chunks_generated": 11,
+      "content_hash": "f81c0332fb33b6b4fb74f419e2df52f0"
+    },
+    {
+      "file_path": "dev/sqllogictest/writing_tests.md",
+      "document_id": "dev-sqllogictest-writing_tests",
+      "chunks_generated": 11,
+      "content_hash": "f81c0332fb33b6b4fb74f419e2df52f0"
+    },
+    {
+      "file_path": "extensions/advanced_installation_methods.md",
+      "document_id": "extensions-advanced_installation_methods",
+      "chunks_generated": 3,
+      "content_hash": "561ef8a59c1d1f167e9dca902bd72b85"
+    },
+    {
+      "file_path": "extensions/advanced_installation_methods.md",
+      "document_id": "extensions-advanced_installation_methods",
+      "chunks_generated": 3,
+      "content_hash": "561ef8a59c1d1f167e9dca902bd72b85"
+    },
+    {
+      "file_path": "extensions/community_extensions.md",
+      "document_id": "extensions-community_extensions",
+      "chunks_generated": 1,
+      "content_hash": "4f7d7c42c96a7fc8e6233a769c6fb238"
+    },
+    {
+      "file_path": "extensions/community_extensions.md",
+      "document_id": "extensions-community_extensions",
+      "chunks_generated": 1,
+      "content_hash": "4f7d7c42c96a7fc8e6233a769c6fb238"
+    },
+    {
+      "file_path": "extensions/extension_distribution.md",
+      "document_id": "extensions-extension_distribution",
+      "chunks_generated": 10,
+      "content_hash": "78a1a6938e46626d3191119991ed6390"
+    },
+    {
+      "file_path": "extensions/extension_distribution.md",
+      "document_id": "extensions-extension_distribution",
+      "chunks_generated": 10,
+      "content_hash": "78a1a6938e46626d3191119991ed6390"
+    },
+    {
+      "file_path": "extensions/installing_extensions.md",
+      "document_id": "extensions-installing_extensions",
+      "chunks_generated": 13,
+      "content_hash": "d8a27caeb8b284392cd61d1f9e210c0b"
+    },
+    {
+      "file_path": "extensions/installing_extensions.md",
+      "document_id": "extensions-installing_extensions",
+      "chunks_generated": 13,
+      "content_hash": "d8a27caeb8b284392cd61d1f9e210c0b"
+    },
+    {
+      "file_path": "extensions/overview.md",
+      "document_id": "extensions-overview",
+      "chunks_generated": 11,
+      "content_hash": "a8e25056fca0c1ad7b75df430b2fb82e"
+    },
+    {
+      "file_path": "extensions/overview.md",
+      "document_id": "extensions-overview",
+      "chunks_generated": 11,
+      "content_hash": "a8e25056fca0c1ad7b75df430b2fb82e"
+    },
+    {
+      "file_path": "extensions/troubleshooting.md",
+      "document_id": "extensions-troubleshooting",
+      "chunks_generated": 3,
+      "content_hash": "cc88ed7d3672ffc9eec20b2e2ec9f1f5"
+    },
+    {
+      "file_path": "extensions/troubleshooting.md",
+      "document_id": "extensions-troubleshooting",
+      "chunks_generated": 3,
+      "content_hash": "cc88ed7d3672ffc9eec20b2e2ec9f1f5"
+    },
+    {
+      "file_path": "extensions/versioning_of_extensions.md",
+      "document_id": "extensions-versioning_of_extensions",
+      "chunks_generated": 16,
+      "content_hash": "7c7db6d68b5837236aa11918fb868bf7"
+    },
+    {
+      "file_path": "extensions/versioning_of_extensions.md",
+      "document_id": "extensions-versioning_of_extensions",
+      "chunks_generated": 16,
+      "content_hash": "7c7db6d68b5837236aa11918fb868bf7"
+    },
+    {
+      "file_path": "guides/data_viewers/tableau.md",
+      "document_id": "guides-data_viewers-tableau",
+      "chunks_generated": 12,
+      "content_hash": "9738969d377558f5bd4179fa6098c49a"
+    },
+    {
+      "file_path": "guides/data_viewers/tableau.md",
+      "document_id": "guides-data_viewers-tableau",
+      "chunks_generated": 12,
+      "content_hash": "9738969d377558f5bd4179fa6098c49a"
+    },
+    {
+      "file_path": "guides/data_viewers/youplot.md",
+      "document_id": "guides-data_viewers-youplot",
+      "chunks_generated": 6,
+      "content_hash": "20aaa4960b1180f56dd4e7688492e64c"
+    },
+    {
+      "file_path": "guides/data_viewers/youplot.md",
+      "document_id": "guides-data_viewers-youplot",
+      "chunks_generated": 6,
+      "content_hash": "20aaa4960b1180f56dd4e7688492e64c"
+    },
+    {
+      "file_path": "guides/database_integration/mysql.md",
+      "document_id": "guides-database_integration-mysql",
+      "chunks_generated": 4,
+      "content_hash": "2c0d9cd9ce40dd2470a880e0121159bb"
+    },
+    {
+      "file_path": "guides/database_integration/mysql.md",
+      "document_id": "guides-database_integration-mysql",
+      "chunks_generated": 4,
+      "content_hash": "2c0d9cd9ce40dd2470a880e0121159bb"
+    },
+    {
+      "file_path": "guides/database_integration/overview.md",
+      "document_id": "guides-database_integration-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/database_integration/overview.md",
+      "document_id": "guides-database_integration-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/database_integration/postgres.md",
+      "document_id": "guides-database_integration-postgres",
+      "chunks_generated": 6,
+      "content_hash": "64939a91188763dedd6f7b6dc43a46de"
+    },
+    {
+      "file_path": "guides/database_integration/postgres.md",
+      "document_id": "guides-database_integration-postgres",
+      "chunks_generated": 6,
+      "content_hash": "64939a91188763dedd6f7b6dc43a46de"
+    },
+    {
+      "file_path": "guides/database_integration/sqlite.md",
+      "document_id": "guides-database_integration-sqlite",
+      "chunks_generated": 2,
+      "content_hash": "cf924b0a577c220441b33fab881e9574"
+    },
+    {
+      "file_path": "guides/database_integration/sqlite.md",
+      "document_id": "guides-database_integration-sqlite",
+      "chunks_generated": 2,
+      "content_hash": "cf924b0a577c220441b33fab881e9574"
+    },
+    {
+      "file_path": "guides/file_formats/csv_export.md",
+      "document_id": "guides-file_formats-csv_export",
+      "chunks_generated": 1,
+      "content_hash": "949ff5c310e8a6d16178a819573b16cd"
+    },
+    {
+      "file_path": "guides/file_formats/csv_export.md",
+      "document_id": "guides-file_formats-csv_export",
+      "chunks_generated": 1,
+      "content_hash": "949ff5c310e8a6d16178a819573b16cd"
+    },
+    {
+      "file_path": "guides/file_formats/csv_import.md",
+      "document_id": "guides-file_formats-csv_import",
+      "chunks_generated": 2,
+      "content_hash": "a93c9ef5e2e25e7827df27ed1ba96d9e"
+    },
+    {
+      "file_path": "guides/file_formats/csv_import.md",
+      "document_id": "guides-file_formats-csv_import",
+      "chunks_generated": 2,
+      "content_hash": "a93c9ef5e2e25e7827df27ed1ba96d9e"
+    },
+    {
+      "file_path": "guides/file_formats/excel_export.md",
+      "document_id": "guides-file_formats-excel_export",
+      "chunks_generated": 6,
+      "content_hash": "251c5d6393327fdea9fcfe84840b15f1"
+    },
+    {
+      "file_path": "guides/file_formats/excel_export.md",
+      "document_id": "guides-file_formats-excel_export",
+      "chunks_generated": 6,
+      "content_hash": "251c5d6393327fdea9fcfe84840b15f1"
+    },
+    {
+      "file_path": "guides/file_formats/excel_import.md",
+      "document_id": "guides-file_formats-excel_import",
+      "chunks_generated": 8,
+      "content_hash": "092bc17e1084f538053bb5144d38245c"
+    },
+    {
+      "file_path": "guides/file_formats/excel_import.md",
+      "document_id": "guides-file_formats-excel_import",
+      "chunks_generated": 8,
+      "content_hash": "092bc17e1084f538053bb5144d38245c"
+    },
+    {
+      "file_path": "guides/file_formats/file_access.md",
+      "document_id": "guides-file_formats-file_access",
+      "chunks_generated": 1,
+      "content_hash": "934878738574d6a23d9187ce86e633f7"
+    },
+    {
+      "file_path": "guides/file_formats/file_access.md",
+      "document_id": "guides-file_formats-file_access",
+      "chunks_generated": 1,
+      "content_hash": "934878738574d6a23d9187ce86e633f7"
+    },
+    {
+      "file_path": "guides/file_formats/json_export.md",
+      "document_id": "guides-file_formats-json_export",
+      "chunks_generated": 2,
+      "content_hash": "6018f85295951f05b53c170c01fd1635"
+    },
+    {
+      "file_path": "guides/file_formats/json_export.md",
+      "document_id": "guides-file_formats-json_export",
+      "chunks_generated": 2,
+      "content_hash": "6018f85295951f05b53c170c01fd1635"
+    },
+    {
+      "file_path": "guides/file_formats/json_import.md",
+      "document_id": "guides-file_formats-json_import",
+      "chunks_generated": 2,
+      "content_hash": "7dee8aa9bb64c8fccb2e0229d52fde42"
+    },
+    {
+      "file_path": "guides/file_formats/json_import.md",
+      "document_id": "guides-file_formats-json_import",
+      "chunks_generated": 2,
+      "content_hash": "7dee8aa9bb64c8fccb2e0229d52fde42"
+    },
+    {
+      "file_path": "guides/file_formats/overview.md",
+      "document_id": "guides-file_formats-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/file_formats/overview.md",
+      "document_id": "guides-file_formats-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/file_formats/parquet_export.md",
+      "document_id": "guides-file_formats-parquet_export",
+      "chunks_generated": 1,
+      "content_hash": "3769285b6fbd0653e512bc594b504a4f"
+    },
+    {
+      "file_path": "guides/file_formats/parquet_export.md",
+      "document_id": "guides-file_formats-parquet_export",
+      "chunks_generated": 1,
+      "content_hash": "3769285b6fbd0653e512bc594b504a4f"
+    },
+    {
+      "file_path": "guides/file_formats/parquet_import.md",
+      "document_id": "guides-file_formats-parquet_import",
+      "chunks_generated": 4,
+      "content_hash": "3984ffaf66b6414dc0b693045c05aa3c"
+    },
+    {
+      "file_path": "guides/file_formats/parquet_import.md",
+      "document_id": "guides-file_formats-parquet_import",
+      "chunks_generated": 4,
+      "content_hash": "3984ffaf66b6414dc0b693045c05aa3c"
+    },
+    {
+      "file_path": "guides/file_formats/query_parquet.md",
+      "document_id": "guides-file_formats-query_parquet",
+      "chunks_generated": 1,
+      "content_hash": "3e86075cfdd9dafd5b528e0043458d24"
+    },
+    {
+      "file_path": "guides/file_formats/query_parquet.md",
+      "document_id": "guides-file_formats-query_parquet",
+      "chunks_generated": 1,
+      "content_hash": "3e86075cfdd9dafd5b528e0043458d24"
+    },
+    {
+      "file_path": "guides/file_formats/read_file.md",
+      "document_id": "guides-file_formats-read_file",
+      "chunks_generated": 13,
+      "content_hash": "f3bd1fbbd20d529bbb8593686655b6a6"
+    },
+    {
+      "file_path": "guides/file_formats/read_file.md",
+      "document_id": "guides-file_formats-read_file",
+      "chunks_generated": 13,
+      "content_hash": "f3bd1fbbd20d529bbb8593686655b6a6"
+    },
+    {
+      "file_path": "guides/glossary.md",
+      "document_id": "guides-glossary",
+      "chunks_generated": 4,
+      "content_hash": "3295a11731da20ce0bac9c96049fd74b"
+    },
+    {
+      "file_path": "guides/glossary.md",
+      "document_id": "guides-glossary",
+      "chunks_generated": 4,
+      "content_hash": "3295a11731da20ce0bac9c96049fd74b"
+    },
+    {
+      "file_path": "guides/meta/describe.md",
+      "document_id": "guides-meta-describe",
+      "chunks_generated": 7,
+      "content_hash": "19f6d48b9cacd39cd694fa21e1dd33a3"
+    },
+    {
+      "file_path": "guides/meta/describe.md",
+      "document_id": "guides-meta-describe",
+      "chunks_generated": 7,
+      "content_hash": "19f6d48b9cacd39cd694fa21e1dd33a3"
+    },
+    {
+      "file_path": "guides/meta/duckdb_environment.md",
+      "document_id": "guides-meta-duckdb_environment",
+      "chunks_generated": 7,
+      "content_hash": "a4c9a6437d18b5cae7516c99eaca23e8"
+    },
+    {
+      "file_path": "guides/meta/duckdb_environment.md",
+      "document_id": "guides-meta-duckdb_environment",
+      "chunks_generated": 7,
+      "content_hash": "a4c9a6437d18b5cae7516c99eaca23e8"
+    },
+    {
+      "file_path": "guides/meta/explain.md",
+      "document_id": "guides-meta-explain",
+      "chunks_generated": 7,
+      "content_hash": "7021dcaf6dfd08e3cc96bedbea8a432c"
+    },
+    {
+      "file_path": "guides/meta/explain.md",
+      "document_id": "guides-meta-explain",
+      "chunks_generated": 7,
+      "content_hash": "7021dcaf6dfd08e3cc96bedbea8a432c"
+    },
+    {
+      "file_path": "guides/meta/explain_analyze.md",
+      "document_id": "guides-meta-explain_analyze",
+      "chunks_generated": 8,
+      "content_hash": "cec401e88c0040190aa169bd4878360c"
+    },
+    {
+      "file_path": "guides/meta/explain_analyze.md",
+      "document_id": "guides-meta-explain_analyze",
+      "chunks_generated": 8,
+      "content_hash": "cec401e88c0040190aa169bd4878360c"
+    },
+    {
+      "file_path": "guides/meta/list_tables.md",
+      "document_id": "guides-meta-list_tables",
+      "chunks_generated": 4,
+      "content_hash": "8668f288907db782e371b6d20c282b79"
+    },
+    {
+      "file_path": "guides/meta/list_tables.md",
+      "document_id": "guides-meta-list_tables",
+      "chunks_generated": 4,
+      "content_hash": "8668f288907db782e371b6d20c282b79"
+    },
+    {
+      "file_path": "guides/meta/summarize.md",
+      "document_id": "guides-meta-summarize",
+      "chunks_generated": 9,
+      "content_hash": "727875ac55daa2c2ea4f3d9078066e9b"
+    },
+    {
+      "file_path": "guides/meta/summarize.md",
+      "document_id": "guides-meta-summarize",
+      "chunks_generated": 9,
+      "content_hash": "727875ac55daa2c2ea4f3d9078066e9b"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/cloudflare_r2_import.md",
+      "document_id": "guides-network_cloud_storage-cloudflare_r2_import",
+      "chunks_generated": 2,
+      "content_hash": "3c5c98163fe9fc2275d9037e03e0d725"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/cloudflare_r2_import.md",
+      "document_id": "guides-network_cloud_storage-cloudflare_r2_import",
+      "chunks_generated": 2,
+      "content_hash": "3c5c98163fe9fc2275d9037e03e0d725"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/duckdb_over_https_or_s3.md",
+      "document_id": "guides-network_cloud_storage-duckdb_over_https_or_s3",
+      "chunks_generated": 5,
+      "content_hash": "bf36080f7b1992412cca30d4303a85c2"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/duckdb_over_https_or_s3.md",
+      "document_id": "guides-network_cloud_storage-duckdb_over_https_or_s3",
+      "chunks_generated": 5,
+      "content_hash": "bf36080f7b1992412cca30d4303a85c2"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/fastly_object_storage_import.md",
+      "document_id": "guides-network_cloud_storage-fastly_object_storage_import",
+      "chunks_generated": 4,
+      "content_hash": "0050b2ce0f3ee5d6c7cf465c0e191019"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/fastly_object_storage_import.md",
+      "document_id": "guides-network_cloud_storage-fastly_object_storage_import",
+      "chunks_generated": 4,
+      "content_hash": "0050b2ce0f3ee5d6c7cf465c0e191019"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/gcs_import.md",
+      "document_id": "guides-network_cloud_storage-gcs_import",
+      "chunks_generated": 2,
+      "content_hash": "5502a71ed115040d75575952a5389ead"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/gcs_import.md",
+      "document_id": "guides-network_cloud_storage-gcs_import",
+      "chunks_generated": 2,
+      "content_hash": "5502a71ed115040d75575952a5389ead"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/http_import.md",
+      "document_id": "guides-network_cloud_storage-http_import",
+      "chunks_generated": 2,
+      "content_hash": "3cb035de6126d6683bf3ce8aedd63240"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/http_import.md",
+      "document_id": "guides-network_cloud_storage-http_import",
+      "chunks_generated": 2,
+      "content_hash": "3cb035de6126d6683bf3ce8aedd63240"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/overview.md",
+      "document_id": "guides-network_cloud_storage-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/overview.md",
+      "document_id": "guides-network_cloud_storage-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_export.md",
+      "document_id": "guides-network_cloud_storage-s3_export",
+      "chunks_generated": 3,
+      "content_hash": "99915c8bae6a3a1345bf856df7cf59fb"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_export.md",
+      "document_id": "guides-network_cloud_storage-s3_export",
+      "chunks_generated": 3,
+      "content_hash": "99915c8bae6a3a1345bf856df7cf59fb"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_express_one.md",
+      "document_id": "guides-network_cloud_storage-s3_express_one",
+      "chunks_generated": 7,
+      "content_hash": "28aac3f7a5f065d86bcbdb19e9ac9162"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_express_one.md",
+      "document_id": "guides-network_cloud_storage-s3_express_one",
+      "chunks_generated": 7,
+      "content_hash": "28aac3f7a5f065d86bcbdb19e9ac9162"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_iceberg_import.md",
+      "document_id": "guides-network_cloud_storage-s3_iceberg_import",
+      "chunks_generated": 3,
+      "content_hash": "6664048a100054d36a2d5f44edab5b04"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_iceberg_import.md",
+      "document_id": "guides-network_cloud_storage-s3_iceberg_import",
+      "chunks_generated": 3,
+      "content_hash": "6664048a100054d36a2d5f44edab5b04"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_import.md",
+      "document_id": "guides-network_cloud_storage-s3_import",
+      "chunks_generated": 3,
+      "content_hash": "7572e36da1a9f4a4ee593d1671a105ba"
+    },
+    {
+      "file_path": "guides/network_cloud_storage/s3_import.md",
+      "document_id": "guides-network_cloud_storage-s3_import",
+      "chunks_generated": 3,
+      "content_hash": "7572e36da1a9f4a4ee593d1671a105ba"
+    },
+    {
+      "file_path": "guides/odbc/general.md",
+      "document_id": "guides-odbc-general",
+      "chunks_generated": 27,
+      "content_hash": "277d13edfc49612a68c8d9527df59e76"
+    },
+    {
+      "file_path": "guides/odbc/general.md",
+      "document_id": "guides-odbc-general",
+      "chunks_generated": 27,
+      "content_hash": "277d13edfc49612a68c8d9527df59e76"
+    },
+    {
+      "file_path": "guides/offline-copy.md",
+      "document_id": "guides-offline-copy",
+      "chunks_generated": 1,
+      "content_hash": "bc80febc54ff60058fe8726ad08e9455"
+    },
+    {
+      "file_path": "guides/offline-copy.md",
+      "document_id": "guides-offline-copy",
+      "chunks_generated": 1,
+      "content_hash": "bc80febc54ff60058fe8726ad08e9455"
+    },
+    {
+      "file_path": "guides/overview.md",
+      "document_id": "guides-overview",
+      "chunks_generated": 15,
+      "content_hash": "0f1d7a183a920da8da97ebbfdeda9e2e"
+    },
+    {
+      "file_path": "guides/overview.md",
+      "document_id": "guides-overview",
+      "chunks_generated": 15,
+      "content_hash": "0f1d7a183a920da8da97ebbfdeda9e2e"
+    },
+    {
+      "file_path": "guides/performance/benchmarks.md",
+      "document_id": "guides-performance-benchmarks",
+      "chunks_generated": 3,
+      "content_hash": "941a10239fe5a48a855048b48d0ae96b"
+    },
+    {
+      "file_path": "guides/performance/benchmarks.md",
+      "document_id": "guides-performance-benchmarks",
+      "chunks_generated": 3,
+      "content_hash": "941a10239fe5a48a855048b48d0ae96b"
+    },
+    {
+      "file_path": "guides/performance/environment.md",
+      "document_id": "guides-performance-environment",
+      "chunks_generated": 10,
+      "content_hash": "d6de7a2778f159c0bf5a5c058efd7060"
+    },
+    {
+      "file_path": "guides/performance/environment.md",
+      "document_id": "guides-performance-environment",
+      "chunks_generated": 10,
+      "content_hash": "d6de7a2778f159c0bf5a5c058efd7060"
+    },
+    {
+      "file_path": "guides/performance/file_formats.md",
+      "document_id": "guides-performance-file_formats",
+      "chunks_generated": 10,
+      "content_hash": "4bd3d4d536d60b21adab0b6ee70d4b2e"
+    },
+    {
+      "file_path": "guides/performance/file_formats.md",
+      "document_id": "guides-performance-file_formats",
+      "chunks_generated": 10,
+      "content_hash": "4bd3d4d536d60b21adab0b6ee70d4b2e"
+    },
+    {
+      "file_path": "guides/performance/how_to_tune_workloads.md",
+      "document_id": "guides-performance-how_to_tune_workloads",
+      "chunks_generated": 16,
+      "content_hash": "eae3e6467c8f6abbfd469ddcf6bad14b"
+    },
+    {
+      "file_path": "guides/performance/how_to_tune_workloads.md",
+      "document_id": "guides-performance-how_to_tune_workloads",
+      "chunks_generated": 16,
+      "content_hash": "eae3e6467c8f6abbfd469ddcf6bad14b"
+    },
+    {
+      "file_path": "guides/performance/import.md",
+      "document_id": "guides-performance-import",
+      "chunks_generated": 4,
+      "content_hash": "846f80ccacd37d0c665410f72249096d"
+    },
+    {
+      "file_path": "guides/performance/import.md",
+      "document_id": "guides-performance-import",
+      "chunks_generated": 4,
+      "content_hash": "846f80ccacd37d0c665410f72249096d"
+    },
+    {
+      "file_path": "guides/performance/indexing.md",
+      "document_id": "guides-performance-indexing",
+      "chunks_generated": 4,
+      "content_hash": "da2520370c5e97963125da969a424c24"
+    },
+    {
+      "file_path": "guides/performance/indexing.md",
+      "document_id": "guides-performance-indexing",
+      "chunks_generated": 4,
+      "content_hash": "da2520370c5e97963125da969a424c24"
+    },
+    {
+      "file_path": "guides/performance/join_operations.md",
+      "document_id": "guides-performance-join_operations",
+      "chunks_generated": 2,
+      "content_hash": "e0f15ea21f0d94d1e5b4e5e100ca6b27"
+    },
+    {
+      "file_path": "guides/performance/join_operations.md",
+      "document_id": "guides-performance-join_operations",
+      "chunks_generated": 2,
+      "content_hash": "e0f15ea21f0d94d1e5b4e5e100ca6b27"
+    },
+    {
+      "file_path": "guides/performance/my_workload_is_slow.md",
+      "document_id": "guides-performance-my_workload_is_slow",
+      "chunks_generated": 5,
+      "content_hash": "b21718d6f6b1a071ca7f723bb5e512fe"
+    },
+    {
+      "file_path": "guides/performance/my_workload_is_slow.md",
+      "document_id": "guides-performance-my_workload_is_slow",
+      "chunks_generated": 5,
+      "content_hash": "b21718d6f6b1a071ca7f723bb5e512fe"
+    },
+    {
+      "file_path": "guides/performance/overview.md",
+      "document_id": "guides-performance-overview",
+      "chunks_generated": 1,
+      "content_hash": "3b2621d792b937c84fd411c7e1307be0"
+    },
+    {
+      "file_path": "guides/performance/overview.md",
+      "document_id": "guides-performance-overview",
+      "chunks_generated": 1,
+      "content_hash": "3b2621d792b937c84fd411c7e1307be0"
+    },
+    {
+      "file_path": "guides/performance/schema.md",
+      "document_id": "guides-performance-schema",
+      "chunks_generated": 10,
+      "content_hash": "b99e9faed02dfda3543f3adaa1b85260"
+    },
+    {
+      "file_path": "guides/performance/schema.md",
+      "document_id": "guides-performance-schema",
+      "chunks_generated": 10,
+      "content_hash": "b99e9faed02dfda3543f3adaa1b85260"
+    },
+    {
+      "file_path": "guides/performance/working_with_huge_databases.md",
+      "document_id": "guides-performance-working_with_huge_databases",
+      "chunks_generated": 2,
+      "content_hash": "1ec4fd7a7f2ddde361afa9c601a6d8e4"
+    },
+    {
+      "file_path": "guides/performance/working_with_huge_databases.md",
+      "document_id": "guides-performance-working_with_huge_databases",
+      "chunks_generated": 2,
+      "content_hash": "1ec4fd7a7f2ddde361afa9c601a6d8e4"
+    },
+    {
+      "file_path": "guides/python/execute_sql.md",
+      "document_id": "guides-python-execute_sql",
+      "chunks_generated": 2,
+      "content_hash": "eef18557a83607a5a4acc0329faa2f2d"
+    },
+    {
+      "file_path": "guides/python/execute_sql.md",
+      "document_id": "guides-python-execute_sql",
+      "chunks_generated": 2,
+      "content_hash": "eef18557a83607a5a4acc0329faa2f2d"
+    },
+    {
+      "file_path": "guides/python/export_arrow.md",
+      "document_id": "guides-python-export_arrow",
+      "chunks_generated": 4,
+      "content_hash": "ba1ab9669e593ef637eac2992a21c528"
+    },
+    {
+      "file_path": "guides/python/export_arrow.md",
+      "document_id": "guides-python-export_arrow",
+      "chunks_generated": 4,
+      "content_hash": "ba1ab9669e593ef637eac2992a21c528"
+    },
+    {
+      "file_path": "guides/python/export_numpy.md",
+      "document_id": "guides-python-export_numpy",
+      "chunks_generated": 1,
+      "content_hash": "5d85ccb9b6ffe57e660013c18fb2c579"
+    },
+    {
+      "file_path": "guides/python/export_numpy.md",
+      "document_id": "guides-python-export_numpy",
+      "chunks_generated": 1,
+      "content_hash": "5d85ccb9b6ffe57e660013c18fb2c579"
+    },
+    {
+      "file_path": "guides/python/export_pandas.md",
+      "document_id": "guides-python-export_pandas",
+      "chunks_generated": 1,
+      "content_hash": "15bd52ce8a761add704584255f8ed161"
+    },
+    {
+      "file_path": "guides/python/export_pandas.md",
+      "document_id": "guides-python-export_pandas",
+      "chunks_generated": 1,
+      "content_hash": "15bd52ce8a761add704584255f8ed161"
+    },
+    {
+      "file_path": "guides/python/filesystems.md",
+      "document_id": "guides-python-filesystems",
+      "chunks_generated": 3,
+      "content_hash": "9bd0a4085991ada658f02d8badc0c0d1"
+    },
+    {
+      "file_path": "guides/python/filesystems.md",
+      "document_id": "guides-python-filesystems",
+      "chunks_generated": 3,
+      "content_hash": "9bd0a4085991ada658f02d8badc0c0d1"
+    },
+    {
+      "file_path": "guides/python/ibis.md",
+      "document_id": "guides-python-ibis",
+      "chunks_generated": 48,
+      "content_hash": "6579507ba381fe42afaa62e81365e09d"
+    },
+    {
+      "file_path": "guides/python/ibis.md",
+      "document_id": "guides-python-ibis",
+      "chunks_generated": 48,
+      "content_hash": "6579507ba381fe42afaa62e81365e09d"
+    },
+    {
+      "file_path": "guides/python/import_arrow.md",
+      "document_id": "guides-python-import_arrow",
+      "chunks_generated": 2,
+      "content_hash": "4dd51c0675ff31a5d690e98ef469b6d1"
+    },
+    {
+      "file_path": "guides/python/import_arrow.md",
+      "document_id": "guides-python-import_arrow",
+      "chunks_generated": 2,
+      "content_hash": "4dd51c0675ff31a5d690e98ef469b6d1"
+    },
+    {
+      "file_path": "guides/python/import_numpy.md",
+      "document_id": "guides-python-import_numpy",
+      "chunks_generated": 1,
+      "content_hash": "9e478f6eaea7ca5ce5ca764d9bf79d7f"
+    },
+    {
+      "file_path": "guides/python/import_numpy.md",
+      "document_id": "guides-python-import_numpy",
+      "chunks_generated": 1,
+      "content_hash": "9e478f6eaea7ca5ce5ca764d9bf79d7f"
+    },
+    {
+      "file_path": "guides/python/import_pandas.md",
+      "document_id": "guides-python-import_pandas",
+      "chunks_generated": 2,
+      "content_hash": "a07d036ac040b64d5be4ff5f6ab43d57"
+    },
+    {
+      "file_path": "guides/python/import_pandas.md",
+      "document_id": "guides-python-import_pandas",
+      "chunks_generated": 2,
+      "content_hash": "a07d036ac040b64d5be4ff5f6ab43d57"
+    },
+    {
+      "file_path": "guides/python/install.md",
+      "document_id": "guides-python-install",
+      "chunks_generated": 1,
+      "content_hash": "3b135a8fa419f2ec3b0ee4d11326d51a"
+    },
+    {
+      "file_path": "guides/python/install.md",
+      "document_id": "guides-python-install",
+      "chunks_generated": 1,
+      "content_hash": "3b135a8fa419f2ec3b0ee4d11326d51a"
+    },
+    {
+      "file_path": "guides/python/jupyter.md",
+      "document_id": "guides-python-jupyter",
+      "chunks_generated": 13,
+      "content_hash": "e98162dce1a9d8ea0ade6b0eeaf71829"
+    },
+    {
+      "file_path": "guides/python/jupyter.md",
+      "document_id": "guides-python-jupyter",
+      "chunks_generated": 13,
+      "content_hash": "e98162dce1a9d8ea0ade6b0eeaf71829"
+    },
+    {
+      "file_path": "guides/python/marimo.md",
+      "document_id": "guides-python-marimo",
+      "chunks_generated": 7,
+      "content_hash": "878d62fc547113da1bda89e0c17f9832"
+    },
+    {
+      "file_path": "guides/python/marimo.md",
+      "document_id": "guides-python-marimo",
+      "chunks_generated": 7,
+      "content_hash": "878d62fc547113da1bda89e0c17f9832"
+    },
+    {
+      "file_path": "guides/python/multiple_threads.md",
+      "document_id": "guides-python-multiple_threads",
+      "chunks_generated": 10,
+      "content_hash": "da3fcd2a0f414b16f023c8add43799bd"
+    },
+    {
+      "file_path": "guides/python/multiple_threads.md",
+      "document_id": "guides-python-multiple_threads",
+      "chunks_generated": 10,
+      "content_hash": "da3fcd2a0f414b16f023c8add43799bd"
+    },
+    {
+      "file_path": "guides/python/polars.md",
+      "document_id": "guides-python-polars",
+      "chunks_generated": 4,
+      "content_hash": "fcaffa7d9894fc1c0fa170666f958d3d"
+    },
+    {
+      "file_path": "guides/python/polars.md",
+      "document_id": "guides-python-polars",
+      "chunks_generated": 4,
+      "content_hash": "fcaffa7d9894fc1c0fa170666f958d3d"
+    },
+    {
+      "file_path": "guides/python/relational_api_pandas.md",
+      "document_id": "guides-python-relational_api_pandas",
+      "chunks_generated": 3,
+      "content_hash": "a2049243c5c6b03889a2d8a09efcc232"
+    },
+    {
+      "file_path": "guides/python/relational_api_pandas.md",
+      "document_id": "guides-python-relational_api_pandas",
+      "chunks_generated": 3,
+      "content_hash": "a2049243c5c6b03889a2d8a09efcc232"
+    },
+    {
+      "file_path": "guides/python/sql_on_arrow.md",
+      "document_id": "guides-python-sql_on_arrow",
+      "chunks_generated": 7,
+      "content_hash": "46209a456c64bf4cfd92b8d65338ddfc"
+    },
+    {
+      "file_path": "guides/python/sql_on_arrow.md",
+      "document_id": "guides-python-sql_on_arrow",
+      "chunks_generated": 7,
+      "content_hash": "46209a456c64bf4cfd92b8d65338ddfc"
+    },
+    {
+      "file_path": "guides/python/sql_on_pandas.md",
+      "document_id": "guides-python-sql_on_pandas",
+      "chunks_generated": 1,
+      "content_hash": "e1ef6ca361097c7895e1c13d29d0bfef"
+    },
+    {
+      "file_path": "guides/python/sql_on_pandas.md",
+      "document_id": "guides-python-sql_on_pandas",
+      "chunks_generated": 1,
+      "content_hash": "e1ef6ca361097c7895e1c13d29d0bfef"
+    },
+    {
+      "file_path": "guides/snippets/analyze_git_repository.md",
+      "document_id": "guides-snippets-analyze_git_repository",
+      "chunks_generated": 21,
+      "content_hash": "9233c105be223a94a138909390c96644"
+    },
+    {
+      "file_path": "guides/snippets/analyze_git_repository.md",
+      "document_id": "guides-snippets-analyze_git_repository",
+      "chunks_generated": 21,
+      "content_hash": "9233c105be223a94a138909390c96644"
+    },
+    {
+      "file_path": "guides/snippets/copy_in-memory_database_to_file.md",
+      "document_id": "guides-snippets-copy_in-memory_database_to_file",
+      "chunks_generated": 1,
+      "content_hash": "000b0daf44e1f3acec58ba81fdece43c"
+    },
+    {
+      "file_path": "guides/snippets/copy_in-memory_database_to_file.md",
+      "document_id": "guides-snippets-copy_in-memory_database_to_file",
+      "chunks_generated": 1,
+      "content_hash": "000b0daf44e1f3acec58ba81fdece43c"
+    },
+    {
+      "file_path": "guides/snippets/create_synthetic_data.md",
+      "document_id": "guides-snippets-create_synthetic_data",
+      "chunks_generated": 5,
+      "content_hash": "7edb6e630ddb858d5a62fa381c2af85d"
+    },
+    {
+      "file_path": "guides/snippets/create_synthetic_data.md",
+      "document_id": "guides-snippets-create_synthetic_data",
+      "chunks_generated": 5,
+      "content_hash": "7edb6e630ddb858d5a62fa381c2af85d"
+    },
+    {
+      "file_path": "guides/snippets/dutch_railway_datasets.md",
+      "document_id": "guides-snippets-dutch_railway_datasets",
+      "chunks_generated": 13,
+      "content_hash": "6059f870acfde9bb2c433e01373b96fd"
+    },
+    {
+      "file_path": "guides/snippets/dutch_railway_datasets.md",
+      "document_id": "guides-snippets-dutch_railway_datasets",
+      "chunks_generated": 13,
+      "content_hash": "6059f870acfde9bb2c433e01373b96fd"
+    },
+    {
+      "file_path": "guides/snippets/importing_duckbox_tables.md",
+      "document_id": "guides-snippets-importing_duckbox_tables",
+      "chunks_generated": 8,
+      "content_hash": "26dd72c7ca1187895cdeb132c452e4c1"
+    },
+    {
+      "file_path": "guides/snippets/importing_duckbox_tables.md",
+      "document_id": "guides-snippets-importing_duckbox_tables",
+      "chunks_generated": 8,
+      "content_hash": "26dd72c7ca1187895cdeb132c452e4c1"
+    },
+    {
+      "file_path": "guides/snippets/sharing_macros.md",
+      "document_id": "guides-snippets-sharing_macros",
+      "chunks_generated": 9,
+      "content_hash": "ca37b9d3042f66b5c1977fe2f9ef7ea9"
+    },
+    {
+      "file_path": "guides/snippets/sharing_macros.md",
+      "document_id": "guides-snippets-sharing_macros",
+      "chunks_generated": 9,
+      "content_hash": "ca37b9d3042f66b5c1977fe2f9ef7ea9"
+    },
+    {
+      "file_path": "guides/sql_editors/dbeaver.md",
+      "document_id": "guides-sql_editors-dbeaver",
+      "chunks_generated": 4,
+      "content_hash": "9ba24e09902b5f7d7a9662082c0dcffa"
+    },
+    {
+      "file_path": "guides/sql_editors/dbeaver.md",
+      "document_id": "guides-sql_editors-dbeaver",
+      "chunks_generated": 4,
+      "content_hash": "9ba24e09902b5f7d7a9662082c0dcffa"
+    },
+    {
+      "file_path": "guides/sql_features/asof_join.md",
+      "document_id": "guides-sql_features-asof_join",
+      "chunks_generated": 13,
+      "content_hash": "2c5d49956f450246a47a67cd7d2046ed"
+    },
+    {
+      "file_path": "guides/sql_features/asof_join.md",
+      "document_id": "guides-sql_features-asof_join",
+      "chunks_generated": 13,
+      "content_hash": "2c5d49956f450246a47a67cd7d2046ed"
+    },
+    {
+      "file_path": "guides/sql_features/full_text_search.md",
+      "document_id": "guides-sql_features-full_text_search",
+      "chunks_generated": 11,
+      "content_hash": "e34ed184b378471e7f8fba98e67822fb"
+    },
+    {
+      "file_path": "guides/sql_features/full_text_search.md",
+      "document_id": "guides-sql_features-full_text_search",
+      "chunks_generated": 11,
+      "content_hash": "e34ed184b378471e7f8fba98e67822fb"
+    },
+    {
+      "file_path": "guides/sql_features/query_and_query_table_functions.md",
+      "document_id": "guides-sql_features-query_and_query_table_functions",
+      "chunks_generated": 6,
+      "content_hash": "992b2296c9f6ed8f3d9fb822b48e78d6"
+    },
+    {
+      "file_path": "guides/sql_features/query_and_query_table_functions.md",
+      "document_id": "guides-sql_features-query_and_query_table_functions",
+      "chunks_generated": 6,
+      "content_hash": "992b2296c9f6ed8f3d9fb822b48e78d6"
+    },
+    {
+      "file_path": "guides/sql_features/timestamps.md",
+      "document_id": "guides-sql_features-timestamps",
+      "chunks_generated": 7,
+      "content_hash": "94801b366a2581e905bd8bec8184f45a"
+    },
+    {
+      "file_path": "guides/sql_features/timestamps.md",
+      "document_id": "guides-sql_features-timestamps",
+      "chunks_generated": 7,
+      "content_hash": "94801b366a2581e905bd8bec8184f45a"
+    },
+    {
+      "file_path": "guides/troubleshooting/crashes.md",
+      "document_id": "guides-troubleshooting-crashes",
+      "chunks_generated": 9,
+      "content_hash": "2968437c7e751e2127f3d5fd9d8eee4c"
+    },
+    {
+      "file_path": "guides/troubleshooting/crashes.md",
+      "document_id": "guides-troubleshooting-crashes",
+      "chunks_generated": 9,
+      "content_hash": "2968437c7e751e2127f3d5fd9d8eee4c"
+    },
+    {
+      "file_path": "guides/troubleshooting/oom_errors.md",
+      "document_id": "guides-troubleshooting-oom_errors",
+      "chunks_generated": 7,
+      "content_hash": "e351f0672da3387a2ef72c303a2288f4"
+    },
+    {
+      "file_path": "guides/troubleshooting/oom_errors.md",
+      "document_id": "guides-troubleshooting-oom_errors",
+      "chunks_generated": 7,
+      "content_hash": "e351f0672da3387a2ef72c303a2288f4"
+    },
+    {
+      "file_path": "index.md",
+      "document_id": "index",
+      "chunks_generated": 1,
+      "content_hash": "a135623a0edd29f374268c8eebb0edb1"
+    },
+    {
+      "file_path": "index.md",
+      "document_id": "index",
+      "chunks_generated": 1,
+      "content_hash": "a135623a0edd29f374268c8eebb0edb1"
+    },
+    {
+      "file_path": "internals/overview.md",
+      "document_id": "internals-overview",
+      "chunks_generated": 11,
+      "content_hash": "14d33ab2547ab5962e7885a4aeb205a8"
+    },
+    {
+      "file_path": "internals/overview.md",
+      "document_id": "internals-overview",
+      "chunks_generated": 11,
+      "content_hash": "14d33ab2547ab5962e7885a4aeb205a8"
+    },
+    {
+      "file_path": "internals/pivot.md",
+      "document_id": "internals-pivot",
+      "chunks_generated": 9,
+      "content_hash": "7ec1ee82110a601e6f256f26e60183ea"
+    },
+    {
+      "file_path": "internals/pivot.md",
+      "document_id": "internals-pivot",
+      "chunks_generated": 9,
+      "content_hash": "7ec1ee82110a601e6f256f26e60183ea"
+    },
+    {
+      "file_path": "internals/storage.md",
+      "document_id": "internals-storage",
+      "chunks_generated": 19,
+      "content_hash": "907cf1e576587fe6f0a017748da3ec8f"
+    },
+    {
+      "file_path": "internals/storage.md",
+      "document_id": "internals-storage",
+      "chunks_generated": 19,
+      "content_hash": "907cf1e576587fe6f0a017748da3ec8f"
+    },
+    {
+      "file_path": "internals/vector.md",
+      "document_id": "internals-vector",
+      "chunks_generated": 8,
+      "content_hash": "7ec9e2c42cbfa7fd0e58ee53a14f3341"
+    },
+    {
+      "file_path": "internals/vector.md",
+      "document_id": "internals-vector",
+      "chunks_generated": 8,
+      "content_hash": "7ec9e2c42cbfa7fd0e58ee53a14f3341"
+    },
+    {
+      "file_path": "lakehouse_formats.md",
+      "document_id": "lakehouse_formats",
+      "chunks_generated": 13,
+      "content_hash": "29aac09b3e4b24420f0401e298aed004"
+    },
+    {
+      "file_path": "lakehouse_formats.md",
+      "document_id": "lakehouse_formats",
+      "chunks_generated": 13,
+      "content_hash": "29aac09b3e4b24420f0401e298aed004"
+    },
+    {
+      "file_path": "operations_manual/duckdb_docker.md",
+      "document_id": "operations_manual-duckdb_docker",
+      "chunks_generated": 2,
+      "content_hash": "6b9409523942a13c7d8f6fd04220f9bd"
+    },
+    {
+      "file_path": "operations_manual/duckdb_docker.md",
+      "document_id": "operations_manual-duckdb_docker",
+      "chunks_generated": 2,
+      "content_hash": "6b9409523942a13c7d8f6fd04220f9bd"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/files_created_by_duckdb.md",
+      "document_id": "operations_manual-footprint_of_duckdb-files_created_by_duckdb",
+      "chunks_generated": 8,
+      "content_hash": "cc9dccd0f4f17f05a65a82970d28fd3f"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/files_created_by_duckdb.md",
+      "document_id": "operations_manual-footprint_of_duckdb-files_created_by_duckdb",
+      "chunks_generated": 8,
+      "content_hash": "cc9dccd0f4f17f05a65a82970d28fd3f"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/gitignore_for_duckdb.md",
+      "document_id": "operations_manual-footprint_of_duckdb-gitignore_for_duckdb",
+      "chunks_generated": 2,
+      "content_hash": "e49f774bc53cadb1510ded9742503c67"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/gitignore_for_duckdb.md",
+      "document_id": "operations_manual-footprint_of_duckdb-gitignore_for_duckdb",
+      "chunks_generated": 2,
+      "content_hash": "e49f774bc53cadb1510ded9742503c67"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/reclaiming_space.md",
+      "document_id": "operations_manual-footprint_of_duckdb-reclaiming_space",
+      "chunks_generated": 2,
+      "content_hash": "dc2e3d73427806e925f1ec7f33133c22"
+    },
+    {
+      "file_path": "operations_manual/footprint_of_duckdb/reclaiming_space.md",
+      "document_id": "operations_manual-footprint_of_duckdb-reclaiming_space",
+      "chunks_generated": 2,
+      "content_hash": "dc2e3d73427806e925f1ec7f33133c22"
+    },
+    {
+      "file_path": "operations_manual/installing_duckdb/install_script.md",
+      "document_id": "operations_manual-installing_duckdb-install_script",
+      "chunks_generated": 6,
+      "content_hash": "e9e7d2377266df7eef43fde68c66315f"
+    },
+    {
+      "file_path": "operations_manual/installing_duckdb/install_script.md",
+      "document_id": "operations_manual-installing_duckdb-install_script",
+      "chunks_generated": 6,
+      "content_hash": "e9e7d2377266df7eef43fde68c66315f"
+    },
+    {
+      "file_path": "operations_manual/limits.md",
+      "document_id": "operations_manual-limits",
+      "chunks_generated": 2,
+      "content_hash": "92663167ac5b751319164ebda46d366c"
+    },
+    {
+      "file_path": "operations_manual/limits.md",
+      "document_id": "operations_manual-limits",
+      "chunks_generated": 2,
+      "content_hash": "92663167ac5b751319164ebda46d366c"
+    },
+    {
+      "file_path": "operations_manual/logging/overview.md",
+      "document_id": "operations_manual-logging-overview",
+      "chunks_generated": 15,
+      "content_hash": "d88c071401e3c8f2263ebdd26a4dac5b"
+    },
+    {
+      "file_path": "operations_manual/logging/overview.md",
+      "document_id": "operations_manual-logging-overview",
+      "chunks_generated": 15,
+      "content_hash": "d88c071401e3c8f2263ebdd26a4dac5b"
+    },
+    {
+      "file_path": "operations_manual/non-deterministic_behavior.md",
+      "document_id": "operations_manual-non-deterministic_behavior",
+      "chunks_generated": 5,
+      "content_hash": "7fde0e255d454c176b8d3cdf41c61433"
+    },
+    {
+      "file_path": "operations_manual/non-deterministic_behavior.md",
+      "document_id": "operations_manual-non-deterministic_behavior",
+      "chunks_generated": 5,
+      "content_hash": "7fde0e255d454c176b8d3cdf41c61433"
+    },
+    {
+      "file_path": "operations_manual/overview.md",
+      "document_id": "operations_manual-overview",
+      "chunks_generated": 1,
+      "content_hash": "4db340fb13576b9579acc0915a4c12d3"
+    },
+    {
+      "file_path": "operations_manual/overview.md",
+      "document_id": "operations_manual-overview",
+      "chunks_generated": 1,
+      "content_hash": "4db340fb13576b9579acc0915a4c12d3"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/embedding_duckdb.md",
+      "document_id": "operations_manual-securing_duckdb-embedding_duckdb",
+      "chunks_generated": 1,
+      "content_hash": "e67c0440269bb6c1d1f5361d34cfcd25"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/embedding_duckdb.md",
+      "document_id": "operations_manual-securing_duckdb-embedding_duckdb",
+      "chunks_generated": 1,
+      "content_hash": "e67c0440269bb6c1d1f5361d34cfcd25"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/overview.md",
+      "document_id": "operations_manual-securing_duckdb-overview",
+      "chunks_generated": 11,
+      "content_hash": "ee32cac7af81490b25b102a4ef33b6d0"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/overview.md",
+      "document_id": "operations_manual-securing_duckdb-overview",
+      "chunks_generated": 11,
+      "content_hash": "ee32cac7af81490b25b102a4ef33b6d0"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/securing_extensions.md",
+      "document_id": "operations_manual-securing_duckdb-securing_extensions",
+      "chunks_generated": 8,
+      "content_hash": "6afd1847af665991ae9b7ccb8a06cdb6"
+    },
+    {
+      "file_path": "operations_manual/securing_duckdb/securing_extensions.md",
+      "document_id": "operations_manual-securing_duckdb-securing_extensions",
+      "chunks_generated": 8,
+      "content_hash": "6afd1847af665991ae9b7ccb8a06cdb6"
+    },
+    {
+      "file_path": "sql/constraints.md",
+      "document_id": "sql-constraints",
+      "chunks_generated": 7,
+      "content_hash": "1d2265a5801f42d9b778854ea0a55ce9"
+    },
+    {
+      "file_path": "sql/constraints.md",
+      "document_id": "sql-constraints",
+      "chunks_generated": 7,
+      "content_hash": "1d2265a5801f42d9b778854ea0a55ce9"
+    },
+    {
+      "file_path": "sql/data_types/array.md",
+      "document_id": "sql-data_types-array",
+      "chunks_generated": 10,
+      "content_hash": "a2c91e304deadb00266a5fc6521ba180"
+    },
+    {
+      "file_path": "sql/data_types/array.md",
+      "document_id": "sql-data_types-array",
+      "chunks_generated": 10,
+      "content_hash": "a2c91e304deadb00266a5fc6521ba180"
+    },
+    {
+      "file_path": "sql/data_types/bitstring.md",
+      "document_id": "sql-data_types-bitstring",
+      "chunks_generated": 3,
+      "content_hash": "55b1396d67fb95f2d03a80e5cd5a39c8"
+    },
+    {
+      "file_path": "sql/data_types/bitstring.md",
+      "document_id": "sql-data_types-bitstring",
+      "chunks_generated": 3,
+      "content_hash": "55b1396d67fb95f2d03a80e5cd5a39c8"
+    },
+    {
+      "file_path": "sql/data_types/blob.md",
+      "document_id": "sql-data_types-blob",
+      "chunks_generated": 3,
+      "content_hash": "7639723867032bbbfdaf65f2d8d812ac"
+    },
+    {
+      "file_path": "sql/data_types/blob.md",
+      "document_id": "sql-data_types-blob",
+      "chunks_generated": 3,
+      "content_hash": "7639723867032bbbfdaf65f2d8d812ac"
+    },
+    {
+      "file_path": "sql/data_types/boolean.md",
+      "document_id": "sql-data_types-boolean",
+      "chunks_generated": 5,
+      "content_hash": "d87d8a1adc33b9b0e31ce448f7993d99"
+    },
+    {
+      "file_path": "sql/data_types/boolean.md",
+      "document_id": "sql-data_types-boolean",
+      "chunks_generated": 5,
+      "content_hash": "d87d8a1adc33b9b0e31ce448f7993d99"
+    },
+    {
+      "file_path": "sql/data_types/date.md",
+      "document_id": "sql-data_types-date",
+      "chunks_generated": 3,
+      "content_hash": "28a33a69e6f6b410df94e007c1314469"
+    },
+    {
+      "file_path": "sql/data_types/date.md",
+      "document_id": "sql-data_types-date",
+      "chunks_generated": 3,
+      "content_hash": "28a33a69e6f6b410df94e007c1314469"
+    },
+    {
+      "file_path": "sql/data_types/enum.md",
+      "document_id": "sql-data_types-enum",
+      "chunks_generated": 10,
+      "content_hash": "1536ab253e49942dabb27027d10cfba9"
+    },
+    {
+      "file_path": "sql/data_types/enum.md",
+      "document_id": "sql-data_types-enum",
+      "chunks_generated": 10,
+      "content_hash": "1536ab253e49942dabb27027d10cfba9"
+    },
+    {
+      "file_path": "sql/data_types/interval.md",
+      "document_id": "sql-data_types-interval",
+      "chunks_generated": 16,
+      "content_hash": "dbbc8c6de4b4de7825b1b0bd26a64f05"
+    },
+    {
+      "file_path": "sql/data_types/interval.md",
+      "document_id": "sql-data_types-interval",
+      "chunks_generated": 16,
+      "content_hash": "dbbc8c6de4b4de7825b1b0bd26a64f05"
+    },
+    {
+      "file_path": "sql/data_types/list.md",
+      "document_id": "sql-data_types-list",
+      "chunks_generated": 10,
+      "content_hash": "fe6f0aa8bdb43c15d8f294f4b1386d2c"
+    },
+    {
+      "file_path": "sql/data_types/list.md",
+      "document_id": "sql-data_types-list",
+      "chunks_generated": 10,
+      "content_hash": "fe6f0aa8bdb43c15d8f294f4b1386d2c"
+    },
+    {
+      "file_path": "sql/data_types/literal_types.md",
+      "document_id": "sql-data_types-literal_types",
+      "chunks_generated": 10,
+      "content_hash": "6c286964eb050897b04521228c1f7eef"
+    },
+    {
+      "file_path": "sql/data_types/literal_types.md",
+      "document_id": "sql-data_types-literal_types",
+      "chunks_generated": 10,
+      "content_hash": "6c286964eb050897b04521228c1f7eef"
+    },
+    {
+      "file_path": "sql/data_types/map.md",
+      "document_id": "sql-data_types-map",
+      "chunks_generated": 7,
+      "content_hash": "15f9766e273f263d121719be18f4cce2"
+    },
+    {
+      "file_path": "sql/data_types/map.md",
+      "document_id": "sql-data_types-map",
+      "chunks_generated": 7,
+      "content_hash": "15f9766e273f263d121719be18f4cce2"
+    },
+    {
+      "file_path": "sql/data_types/nulls.md",
+      "document_id": "sql-data_types-nulls",
+      "chunks_generated": 5,
+      "content_hash": "a49b1f80b1940cd657ad1250bdfe497f"
+    },
+    {
+      "file_path": "sql/data_types/nulls.md",
+      "document_id": "sql-data_types-nulls",
+      "chunks_generated": 5,
+      "content_hash": "a49b1f80b1940cd657ad1250bdfe497f"
+    },
+    {
+      "file_path": "sql/data_types/numeric.md",
+      "document_id": "sql-data_types-numeric",
+      "chunks_generated": 20,
+      "content_hash": "1bd65deb9e0a715d5d3056e0e077e9c4"
+    },
+    {
+      "file_path": "sql/data_types/numeric.md",
+      "document_id": "sql-data_types-numeric",
+      "chunks_generated": 20,
+      "content_hash": "1bd65deb9e0a715d5d3056e0e077e9c4"
+    },
+    {
+      "file_path": "sql/data_types/overview.md",
+      "document_id": "sql-data_types-overview",
+      "chunks_generated": 13,
+      "content_hash": "ff4b384e23cdce435e620245f15fc2df"
+    },
+    {
+      "file_path": "sql/data_types/overview.md",
+      "document_id": "sql-data_types-overview",
+      "chunks_generated": 13,
+      "content_hash": "ff4b384e23cdce435e620245f15fc2df"
+    },
+    {
+      "file_path": "sql/data_types/struct.md",
+      "document_id": "sql-data_types-struct",
+      "chunks_generated": 20,
+      "content_hash": "44f9c20c17913eb6b8499da3f83b500d"
+    },
+    {
+      "file_path": "sql/data_types/struct.md",
+      "document_id": "sql-data_types-struct",
+      "chunks_generated": 20,
+      "content_hash": "44f9c20c17913eb6b8499da3f83b500d"
+    },
+    {
+      "file_path": "sql/data_types/text.md",
+      "document_id": "sql-data_types-text",
+      "chunks_generated": 4,
+      "content_hash": "c344eaa51f1adc6a81dc81ff8b721532"
+    },
+    {
+      "file_path": "sql/data_types/text.md",
+      "document_id": "sql-data_types-text",
+      "chunks_generated": 4,
+      "content_hash": "c344eaa51f1adc6a81dc81ff8b721532"
+    },
+    {
+      "file_path": "sql/data_types/time.md",
+      "document_id": "sql-data_types-time",
+      "chunks_generated": 3,
+      "content_hash": "701b7b7133b700c7e27f69f75eaefbff"
+    },
+    {
+      "file_path": "sql/data_types/time.md",
+      "document_id": "sql-data_types-time",
+      "chunks_generated": 3,
+      "content_hash": "701b7b7133b700c7e27f69f75eaefbff"
+    },
+    {
+      "file_path": "sql/data_types/timestamp.md",
+      "document_id": "sql-data_types-timestamp",
+      "chunks_generated": 22,
+      "content_hash": "b95451c1c479019fa3c2ee35ba27d5dc"
+    },
+    {
+      "file_path": "sql/data_types/timestamp.md",
+      "document_id": "sql-data_types-timestamp",
+      "chunks_generated": 22,
+      "content_hash": "b95451c1c479019fa3c2ee35ba27d5dc"
+    },
+    {
+      "file_path": "sql/data_types/timezones.md",
+      "document_id": "sql-data_types-timezones",
+      "chunks_generated": 48,
+      "content_hash": "c128846261119426d3c8be7bd6a701ea"
+    },
+    {
+      "file_path": "sql/data_types/timezones.md",
+      "document_id": "sql-data_types-timezones",
+      "chunks_generated": 48,
+      "content_hash": "c128846261119426d3c8be7bd6a701ea"
+    },
+    {
+      "file_path": "sql/data_types/typecasting.md",
+      "document_id": "sql-data_types-typecasting",
+      "chunks_generated": 13,
+      "content_hash": "ed82950984b778f8854be6710d091fb9"
+    },
+    {
+      "file_path": "sql/data_types/typecasting.md",
+      "document_id": "sql-data_types-typecasting",
+      "chunks_generated": 13,
+      "content_hash": "ed82950984b778f8854be6710d091fb9"
+    },
+    {
+      "file_path": "sql/data_types/union.md",
+      "document_id": "sql-data_types-union",
+      "chunks_generated": 11,
+      "content_hash": "f438e389a48f96c73ccf1d4eafa9845d"
+    },
+    {
+      "file_path": "sql/data_types/union.md",
+      "document_id": "sql-data_types-union",
+      "chunks_generated": 11,
+      "content_hash": "f438e389a48f96c73ccf1d4eafa9845d"
+    },
+    {
+      "file_path": "sql/dialect/friendly_sql.md",
+      "document_id": "sql-dialect-friendly_sql",
+      "chunks_generated": 30,
+      "content_hash": "c4c720775b9050f33a2e4fc854b23f25"
+    },
+    {
+      "file_path": "sql/dialect/friendly_sql.md",
+      "document_id": "sql-dialect-friendly_sql",
+      "chunks_generated": 30,
+      "content_hash": "c4c720775b9050f33a2e4fc854b23f25"
+    },
+    {
+      "file_path": "sql/dialect/indexing.md",
+      "document_id": "sql-dialect-indexing",
+      "chunks_generated": 1,
+      "content_hash": "3273e4201691338d3f4e1aa0b02898f3"
+    },
+    {
+      "file_path": "sql/dialect/indexing.md",
+      "document_id": "sql-dialect-indexing",
+      "chunks_generated": 1,
+      "content_hash": "3273e4201691338d3f4e1aa0b02898f3"
+    },
+    {
+      "file_path": "sql/dialect/keywords_and_identifiers.md",
+      "document_id": "sql-dialect-keywords_and_identifiers",
+      "chunks_generated": 10,
+      "content_hash": "94b5fcbbeb9aef7d9aa95f33b105d1ef"
+    },
+    {
+      "file_path": "sql/dialect/keywords_and_identifiers.md",
+      "document_id": "sql-dialect-keywords_and_identifiers",
+      "chunks_generated": 10,
+      "content_hash": "94b5fcbbeb9aef7d9aa95f33b105d1ef"
+    },
+    {
+      "file_path": "sql/dialect/order_preservation.md",
+      "document_id": "sql-dialect-order_preservation",
+      "chunks_generated": 4,
+      "content_hash": "bf4339b03c5f392b4687c24dbf5373e5"
+    },
+    {
+      "file_path": "sql/dialect/order_preservation.md",
+      "document_id": "sql-dialect-order_preservation",
+      "chunks_generated": 4,
+      "content_hash": "bf4339b03c5f392b4687c24dbf5373e5"
+    },
+    {
+      "file_path": "sql/dialect/overview.md",
+      "document_id": "sql-dialect-overview",
+      "chunks_generated": 1,
+      "content_hash": "3012341a2a72b25c0d97e17031173815"
+    },
+    {
+      "file_path": "sql/dialect/overview.md",
+      "document_id": "sql-dialect-overview",
+      "chunks_generated": 1,
+      "content_hash": "3012341a2a72b25c0d97e17031173815"
+    },
+    {
+      "file_path": "sql/dialect/postgresql_compatibility.md",
+      "document_id": "sql-dialect-postgresql_compatibility",
+      "chunks_generated": 16,
+      "content_hash": "e80100155fc5c8b6ebb2e7f2f6e32087"
+    },
+    {
+      "file_path": "sql/dialect/postgresql_compatibility.md",
+      "document_id": "sql-dialect-postgresql_compatibility",
+      "chunks_generated": 16,
+      "content_hash": "e80100155fc5c8b6ebb2e7f2f6e32087"
+    },
+    {
+      "file_path": "sql/dialect/sql_quirks.md",
+      "document_id": "sql-dialect-sql_quirks",
+      "chunks_generated": 11,
+      "content_hash": "49d938bdd4c87b3051cf46fef4e1c280"
+    },
+    {
+      "file_path": "sql/dialect/sql_quirks.md",
+      "document_id": "sql-dialect-sql_quirks",
+      "chunks_generated": 11,
+      "content_hash": "49d938bdd4c87b3051cf46fef4e1c280"
+    },
+    {
+      "file_path": "sql/expressions/case.md",
+      "document_id": "sql-expressions-case",
+      "chunks_generated": 3,
+      "content_hash": "40510bf2b770a155dfd4513203183c5a"
+    },
+    {
+      "file_path": "sql/expressions/case.md",
+      "document_id": "sql-expressions-case",
+      "chunks_generated": 3,
+      "content_hash": "40510bf2b770a155dfd4513203183c5a"
+    },
+    {
+      "file_path": "sql/expressions/cast.md",
+      "document_id": "sql-expressions-cast",
+      "chunks_generated": 6,
+      "content_hash": "d2a09ab9c42bc223b18e262178112035"
+    },
+    {
+      "file_path": "sql/expressions/cast.md",
+      "document_id": "sql-expressions-cast",
+      "chunks_generated": 6,
+      "content_hash": "d2a09ab9c42bc223b18e262178112035"
+    },
+    {
+      "file_path": "sql/expressions/collations.md",
+      "document_id": "sql-expressions-collations",
+      "chunks_generated": 16,
+      "content_hash": "d8eab19803bb4ef8e64b7dc0d58a1382"
+    },
+    {
+      "file_path": "sql/expressions/collations.md",
+      "document_id": "sql-expressions-collations",
+      "chunks_generated": 16,
+      "content_hash": "d8eab19803bb4ef8e64b7dc0d58a1382"
+    },
+    {
+      "file_path": "sql/expressions/comparison_operators.md",
+      "document_id": "sql-expressions-comparison_operators",
+      "chunks_generated": 4,
+      "content_hash": "9d4ce9f3a7060ac8f94a732191b0eb04"
+    },
+    {
+      "file_path": "sql/expressions/comparison_operators.md",
+      "document_id": "sql-expressions-comparison_operators",
+      "chunks_generated": 4,
+      "content_hash": "9d4ce9f3a7060ac8f94a732191b0eb04"
+    },
+    {
+      "file_path": "sql/expressions/in.md",
+      "document_id": "sql-expressions-in",
+      "chunks_generated": 6,
+      "content_hash": "43cc98968b808150b4f4c3db799a620d"
+    },
+    {
+      "file_path": "sql/expressions/in.md",
+      "document_id": "sql-expressions-in",
+      "chunks_generated": 6,
+      "content_hash": "43cc98968b808150b4f4c3db799a620d"
+    },
+    {
+      "file_path": "sql/expressions/logical_operators.md",
+      "document_id": "sql-expressions-logical_operators",
+      "chunks_generated": 2,
+      "content_hash": "12a721908a1494f9bf7a83899515901b"
+    },
+    {
+      "file_path": "sql/expressions/logical_operators.md",
+      "document_id": "sql-expressions-logical_operators",
+      "chunks_generated": 2,
+      "content_hash": "12a721908a1494f9bf7a83899515901b"
+    },
+    {
+      "file_path": "sql/expressions/overview.md",
+      "document_id": "sql-expressions-overview",
+      "chunks_generated": 2,
+      "content_hash": "56162a0cc0592f352e58c0a1ef6f1ae9"
+    },
+    {
+      "file_path": "sql/expressions/overview.md",
+      "document_id": "sql-expressions-overview",
+      "chunks_generated": 2,
+      "content_hash": "56162a0cc0592f352e58c0a1ef6f1ae9"
+    },
+    {
+      "file_path": "sql/expressions/star.md",
+      "document_id": "sql-expressions-star",
+      "chunks_generated": 14,
+      "content_hash": "5ef277ebe1ae6d6f7abf3bea1daf18f4"
+    },
+    {
+      "file_path": "sql/expressions/star.md",
+      "document_id": "sql-expressions-star",
+      "chunks_generated": 14,
+      "content_hash": "5ef277ebe1ae6d6f7abf3bea1daf18f4"
+    },
+    {
+      "file_path": "sql/expressions/subqueries.md",
+      "document_id": "sql-expressions-subqueries",
+      "chunks_generated": 14,
+      "content_hash": "17959f44f962b8fb2d844cbefd9a6ea6"
+    },
+    {
+      "file_path": "sql/expressions/subqueries.md",
+      "document_id": "sql-expressions-subqueries",
+      "chunks_generated": 14,
+      "content_hash": "17959f44f962b8fb2d844cbefd9a6ea6"
+    },
+    {
+      "file_path": "sql/expressions/try.md",
+      "document_id": "sql-expressions-try",
+      "chunks_generated": 4,
+      "content_hash": "eaac1807fa020a63a20646be6b1065d1"
+    },
+    {
+      "file_path": "sql/expressions/try.md",
+      "document_id": "sql-expressions-try",
+      "chunks_generated": 4,
+      "content_hash": "eaac1807fa020a63a20646be6b1065d1"
+    },
+    {
+      "file_path": "sql/functions/aggregates.md",
+      "document_id": "sql-functions-aggregates",
+      "chunks_generated": 56,
+      "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf"
+    },
+    {
+      "file_path": "sql/functions/aggregates.md",
+      "document_id": "sql-functions-aggregates",
+      "chunks_generated": 56,
+      "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf"
+    },
+    {
+      "file_path": "sql/functions/array.md",
+      "document_id": "sql-functions-array",
+      "chunks_generated": 12,
+      "content_hash": "de6074ce33384bf57b972a75d8aaa79c"
+    },
+    {
+      "file_path": "sql/functions/array.md",
+      "document_id": "sql-functions-array",
+      "chunks_generated": 12,
+      "content_hash": "de6074ce33384bf57b972a75d8aaa79c"
+    },
+    {
+      "file_path": "sql/functions/bitstring.md",
+      "document_id": "sql-functions-bitstring",
+      "chunks_generated": 14,
+      "content_hash": "9888798da4539315ff995fdf6f4f69bb"
+    },
+    {
+      "file_path": "sql/functions/bitstring.md",
+      "document_id": "sql-functions-bitstring",
+      "chunks_generated": 14,
+      "content_hash": "9888798da4539315ff995fdf6f4f69bb"
+    },
+    {
+      "file_path": "sql/functions/blob.md",
+      "document_id": "sql-functions-blob",
+      "chunks_generated": 16,
+      "content_hash": "55ee662889fcb64190758aa9f4e88746"
+    },
+    {
+      "file_path": "sql/functions/blob.md",
+      "document_id": "sql-functions-blob",
+      "chunks_generated": 16,
+      "content_hash": "55ee662889fcb64190758aa9f4e88746"
+    },
+    {
+      "file_path": "sql/functions/date.md",
+      "document_id": "sql-functions-date",
+      "chunks_generated": 21,
+      "content_hash": "8a5c9c7a8ea1a1e6f1f367011c0ec1b1"
+    },
+    {
+      "file_path": "sql/functions/date.md",
+      "document_id": "sql-functions-date",
+      "chunks_generated": 21,
+      "content_hash": "8a5c9c7a8ea1a1e6f1f367011c0ec1b1"
+    },
+    {
+      "file_path": "sql/functions/dateformat.md",
+      "document_id": "sql-functions-dateformat",
+      "chunks_generated": 13,
+      "content_hash": "8ac69d583e8313e9b31d4ad1b750397a"
+    },
+    {
+      "file_path": "sql/functions/dateformat.md",
+      "document_id": "sql-functions-dateformat",
+      "chunks_generated": 13,
+      "content_hash": "8ac69d583e8313e9b31d4ad1b750397a"
+    },
+    {
+      "file_path": "sql/functions/datepart.md",
+      "document_id": "sql-functions-datepart",
+      "chunks_generated": 22,
+      "content_hash": "0682db29367ec9bfaf36faf2cea918df"
+    },
+    {
+      "file_path": "sql/functions/datepart.md",
+      "document_id": "sql-functions-datepart",
+      "chunks_generated": 22,
+      "content_hash": "0682db29367ec9bfaf36faf2cea918df"
+    },
+    {
+      "file_path": "sql/functions/enum.md",
+      "document_id": "sql-functions-enum",
+      "chunks_generated": 5,
+      "content_hash": "fb1a24766132fbcef250df8ee84173ae"
+    },
+    {
+      "file_path": "sql/functions/enum.md",
+      "document_id": "sql-functions-enum",
+      "chunks_generated": 5,
+      "content_hash": "fb1a24766132fbcef250df8ee84173ae"
+    },
+    {
+      "file_path": "sql/functions/interval.md",
+      "document_id": "sql-functions-interval",
+      "chunks_generated": 14,
+      "content_hash": "89ab388fd6c43ab035c10167c0a40b74"
+    },
+    {
+      "file_path": "sql/functions/interval.md",
+      "document_id": "sql-functions-interval",
+      "chunks_generated": 14,
+      "content_hash": "89ab388fd6c43ab035c10167c0a40b74"
+    },
+    {
+      "file_path": "sql/functions/lambda.md",
+      "document_id": "sql-functions-lambda",
+      "chunks_generated": 18,
+      "content_hash": "141e9065f350380cbac6075dc8e06b94"
+    },
+    {
+      "file_path": "sql/functions/lambda.md",
+      "document_id": "sql-functions-lambda",
+      "chunks_generated": 18,
+      "content_hash": "141e9065f350380cbac6075dc8e06b94"
+    },
+    {
+      "file_path": "sql/functions/list.md",
+      "document_id": "sql-functions-list",
+      "chunks_generated": 94,
+      "content_hash": "3fa1875ed127bcac524ce0e7e612c68c"
+    },
+    {
+      "file_path": "sql/functions/list.md",
+      "document_id": "sql-functions-list",
+      "chunks_generated": 94,
+      "content_hash": "3fa1875ed127bcac524ce0e7e612c68c"
+    },
+    {
+      "file_path": "sql/functions/map.md",
+      "document_id": "sql-functions-map",
+      "chunks_generated": 11,
+      "content_hash": "d7392bb08507a6db606fc6ce9618308c"
+    },
+    {
+      "file_path": "sql/functions/map.md",
+      "document_id": "sql-functions-map",
+      "chunks_generated": 11,
+      "content_hash": "d7392bb08507a6db606fc6ce9618308c"
+    },
+    {
+      "file_path": "sql/functions/nested.md",
+      "document_id": "sql-functions-nested",
+      "chunks_generated": 3,
+      "content_hash": "539e335242ceda0417aa012eba9355c3"
+    },
+    {
+      "file_path": "sql/functions/nested.md",
+      "document_id": "sql-functions-nested",
+      "chunks_generated": 3,
+      "content_hash": "539e335242ceda0417aa012eba9355c3"
+    },
+    {
+      "file_path": "sql/functions/numeric.md",
+      "document_id": "sql-functions-numeric",
+      "chunks_generated": 31,
+      "content_hash": "299b9376f96e97578f8f31ce17020103"
+    },
+    {
+      "file_path": "sql/functions/numeric.md",
+      "document_id": "sql-functions-numeric",
+      "chunks_generated": 31,
+      "content_hash": "299b9376f96e97578f8f31ce17020103"
+    },
+    {
+      "file_path": "sql/functions/overview.md",
+      "document_id": "sql-functions-overview",
+      "chunks_generated": 11,
+      "content_hash": "cbd11806622123f95c257ebe3b68abf5"
+    },
+    {
+      "file_path": "sql/functions/overview.md",
+      "document_id": "sql-functions-overview",
+      "chunks_generated": 11,
+      "content_hash": "cbd11806622123f95c257ebe3b68abf5"
+    },
+    {
+      "file_path": "sql/functions/pattern_matching.md",
+      "document_id": "sql-functions-pattern_matching",
+      "chunks_generated": 18,
+      "content_hash": "f4226ccf6e552b07cdc49a99231d1e0c"
+    },
+    {
+      "file_path": "sql/functions/pattern_matching.md",
+      "document_id": "sql-functions-pattern_matching",
+      "chunks_generated": 18,
+      "content_hash": "f4226ccf6e552b07cdc49a99231d1e0c"
+    },
+    {
+      "file_path": "sql/functions/regular_expressions.md",
+      "document_id": "sql-functions-regular_expressions",
+      "chunks_generated": 26,
+      "content_hash": "ef5a30d24b70d53568a7e36318957561"
+    },
+    {
+      "file_path": "sql/functions/regular_expressions.md",
+      "document_id": "sql-functions-regular_expressions",
+      "chunks_generated": 26,
+      "content_hash": "ef5a30d24b70d53568a7e36318957561"
+    },
+    {
+      "file_path": "sql/functions/struct.md",
+      "document_id": "sql-functions-struct",
+      "chunks_generated": 9,
+      "content_hash": "6d46989a05a2e51c188e59571d5d7467"
+    },
+    {
+      "file_path": "sql/functions/struct.md",
+      "document_id": "sql-functions-struct",
+      "chunks_generated": 9,
+      "content_hash": "6d46989a05a2e51c188e59571d5d7467"
+    },
+    {
+      "file_path": "sql/functions/text.md",
+      "document_id": "sql-functions-text",
+      "chunks_generated": 108,
+      "content_hash": "b982df04d60727e483a8b3da47672986"
+    },
+    {
+      "file_path": "sql/functions/text.md",
+      "document_id": "sql-functions-text",
+      "chunks_generated": 108,
+      "content_hash": "b982df04d60727e483a8b3da47672986"
+    },
+    {
+      "file_path": "sql/functions/time.md",
+      "document_id": "sql-functions-time",
+      "chunks_generated": 8,
+      "content_hash": "fe03c24c96f4d38d3d3f7c5fdcb2e2b9"
+    },
+    {
+      "file_path": "sql/functions/time.md",
+      "document_id": "sql-functions-time",
+      "chunks_generated": 8,
+      "content_hash": "fe03c24c96f4d38d3d3f7c5fdcb2e2b9"
+    },
+    {
+      "file_path": "sql/functions/timestamp.md",
+      "document_id": "sql-functions-timestamp",
+      "chunks_generated": 36,
+      "content_hash": "c743a66943aea266f28a696cf073a746"
+    },
+    {
+      "file_path": "sql/functions/timestamp.md",
+      "document_id": "sql-functions-timestamp",
+      "chunks_generated": 36,
+      "content_hash": "c743a66943aea266f28a696cf073a746"
+    },
+    {
+      "file_path": "sql/functions/timestamptz.md",
+      "document_id": "sql-functions-timestamptz",
+      "chunks_generated": 44,
+      "content_hash": "db716f490a07dd5e17a5f49e5e3f2cb8"
+    },
+    {
+      "file_path": "sql/functions/timestamptz.md",
+      "document_id": "sql-functions-timestamptz",
+      "chunks_generated": 44,
+      "content_hash": "db716f490a07dd5e17a5f49e5e3f2cb8"
+    },
+    {
+      "file_path": "sql/functions/union.md",
+      "document_id": "sql-functions-union",
+      "chunks_generated": 3,
+      "content_hash": "6a6b9ee8c06f0c2308c2010caf57fbc4"
+    },
+    {
+      "file_path": "sql/functions/union.md",
+      "document_id": "sql-functions-union",
+      "chunks_generated": 3,
+      "content_hash": "6a6b9ee8c06f0c2308c2010caf57fbc4"
+    },
+    {
+      "file_path": "sql/functions/utility.md",
+      "document_id": "sql-functions-utility",
+      "chunks_generated": 41,
+      "content_hash": "369df2b2c826294a42294a55a35207b0"
+    },
+    {
+      "file_path": "sql/functions/utility.md",
+      "document_id": "sql-functions-utility",
+      "chunks_generated": 41,
+      "content_hash": "369df2b2c826294a42294a55a35207b0"
+    },
+    {
+      "file_path": "sql/functions/window_functions.md",
+      "document_id": "sql-functions-window_functions",
+      "chunks_generated": 45,
+      "content_hash": "b527a16d8cf01c2ce1397ef5c7b19d84"
+    },
+    {
+      "file_path": "sql/functions/window_functions.md",
+      "document_id": "sql-functions-window_functions",
+      "chunks_generated": 45,
+      "content_hash": "b527a16d8cf01c2ce1397ef5c7b19d84"
+    },
+    {
+      "file_path": "sql/indexes.md",
+      "document_id": "sql-indexes",
+      "chunks_generated": 18,
+      "content_hash": "1259180f80617bc17e4887c589c3788c"
+    },
+    {
+      "file_path": "sql/indexes.md",
+      "document_id": "sql-indexes",
+      "chunks_generated": 18,
+      "content_hash": "1259180f80617bc17e4887c589c3788c"
+    },
+    {
+      "file_path": "sql/introduction.md",
+      "document_id": "sql-introduction",
+      "chunks_generated": 29,
+      "content_hash": "f106c47c7a10c36d62ffd1c52c857840"
+    },
+    {
+      "file_path": "sql/introduction.md",
+      "document_id": "sql-introduction",
+      "chunks_generated": 29,
+      "content_hash": "f106c47c7a10c36d62ffd1c52c857840"
+    },
+    {
+      "file_path": "sql/meta/duckdb_table_functions.md",
+      "document_id": "sql-meta-duckdb_table_functions",
+      "chunks_generated": 61,
+      "content_hash": "cf89056ac27d047fed99746d56974c4e"
+    },
+    {
+      "file_path": "sql/meta/duckdb_table_functions.md",
+      "document_id": "sql-meta-duckdb_table_functions",
+      "chunks_generated": 61,
+      "content_hash": "cf89056ac27d047fed99746d56974c4e"
+    },
+    {
+      "file_path": "sql/meta/information_schema.md",
+      "document_id": "sql-meta-information_schema",
+      "chunks_generated": 30,
+      "content_hash": "fdaffc241462873aff2e92215a3a99ce"
+    },
+    {
+      "file_path": "sql/meta/information_schema.md",
+      "document_id": "sql-meta-information_schema",
+      "chunks_generated": 30,
+      "content_hash": "fdaffc241462873aff2e92215a3a99ce"
+    },
+    {
+      "file_path": "sql/query_syntax/filter.md",
+      "document_id": "sql-query_syntax-filter",
+      "chunks_generated": 7,
+      "content_hash": "e78b683eed3be5c94c6f9f455864779c"
+    },
+    {
+      "file_path": "sql/query_syntax/filter.md",
+      "document_id": "sql-query_syntax-filter",
+      "chunks_generated": 7,
+      "content_hash": "e78b683eed3be5c94c6f9f455864779c"
+    },
+    {
+      "file_path": "sql/query_syntax/from.md",
+      "document_id": "sql-query_syntax-from",
+      "chunks_generated": 26,
+      "content_hash": "2071cd72c572787bacbfad964e44feca"
+    },
+    {
+      "file_path": "sql/query_syntax/from.md",
+      "document_id": "sql-query_syntax-from",
+      "chunks_generated": 26,
+      "content_hash": "2071cd72c572787bacbfad964e44feca"
+    },
+    {
+      "file_path": "sql/query_syntax/groupby.md",
+      "document_id": "sql-query_syntax-groupby",
+      "chunks_generated": 3,
+      "content_hash": "7ffc4e70f18859502d9d6cfe5a941774"
+    },
+    {
+      "file_path": "sql/query_syntax/groupby.md",
+      "document_id": "sql-query_syntax-groupby",
+      "chunks_generated": 3,
+      "content_hash": "7ffc4e70f18859502d9d6cfe5a941774"
+    },
+    {
+      "file_path": "sql/query_syntax/grouping_sets.md",
+      "document_id": "sql-query_syntax-grouping_sets",
+      "chunks_generated": 17,
+      "content_hash": "156e05d1058fcd56450f5571a5a10282"
+    },
+    {
+      "file_path": "sql/query_syntax/grouping_sets.md",
+      "document_id": "sql-query_syntax-grouping_sets",
+      "chunks_generated": 17,
+      "content_hash": "156e05d1058fcd56450f5571a5a10282"
+    },
+    {
+      "file_path": "sql/query_syntax/having.md",
+      "document_id": "sql-query_syntax-having",
+      "chunks_generated": 1,
+      "content_hash": "08a321e34315e325739240f44299d117"
+    },
+    {
+      "file_path": "sql/query_syntax/having.md",
+      "document_id": "sql-query_syntax-having",
+      "chunks_generated": 1,
+      "content_hash": "08a321e34315e325739240f44299d117"
+    },
+    {
+      "file_path": "sql/query_syntax/limit.md",
+      "document_id": "sql-query_syntax-limit",
+      "chunks_generated": 2,
+      "content_hash": "5029add2edff37b40ffae25f11235a31"
+    },
+    {
+      "file_path": "sql/query_syntax/limit.md",
+      "document_id": "sql-query_syntax-limit",
+      "chunks_generated": 2,
+      "content_hash": "5029add2edff37b40ffae25f11235a31"
+    },
+    {
+      "file_path": "sql/query_syntax/orderby.md",
+      "document_id": "sql-query_syntax-orderby",
+      "chunks_generated": 9,
+      "content_hash": "fef0a453ee1955a3bc7f3ab6396eeda0"
+    },
+    {
+      "file_path": "sql/query_syntax/orderby.md",
+      "document_id": "sql-query_syntax-orderby",
+      "chunks_generated": 9,
+      "content_hash": "fef0a453ee1955a3bc7f3ab6396eeda0"
+    },
+    {
+      "file_path": "sql/query_syntax/prepared_statements.md",
+      "document_id": "sql-query_syntax-prepared_statements",
+      "chunks_generated": 5,
+      "content_hash": "f5b3b2f68558dfc51897291bc2abb5ea"
+    },
+    {
+      "file_path": "sql/query_syntax/prepared_statements.md",
+      "document_id": "sql-query_syntax-prepared_statements",
+      "chunks_generated": 5,
+      "content_hash": "f5b3b2f68558dfc51897291bc2abb5ea"
+    },
+    {
+      "file_path": "sql/query_syntax/qualify.md",
+      "document_id": "sql-query_syntax-qualify",
+      "chunks_generated": 3,
+      "content_hash": "10c09949f246e76fa14b6b85580f5d2d"
+    },
+    {
+      "file_path": "sql/query_syntax/qualify.md",
+      "document_id": "sql-query_syntax-qualify",
+      "chunks_generated": 3,
+      "content_hash": "10c09949f246e76fa14b6b85580f5d2d"
+    },
+    {
+      "file_path": "sql/query_syntax/sample.md",
+      "document_id": "sql-query_syntax-sample",
+      "chunks_generated": 1,
+      "content_hash": "0e61c99033d7009b6952d91a5f12fbd8"
+    },
+    {
+      "file_path": "sql/query_syntax/sample.md",
+      "document_id": "sql-query_syntax-sample",
+      "chunks_generated": 1,
+      "content_hash": "0e61c99033d7009b6952d91a5f12fbd8"
+    },
+    {
+      "file_path": "sql/query_syntax/select.md",
+      "document_id": "sql-query_syntax-select",
+      "chunks_generated": 12,
+      "content_hash": "edb44c0a5c85c609ea8279a57c35e9d4"
+    },
+    {
+      "file_path": "sql/query_syntax/select.md",
+      "document_id": "sql-query_syntax-select",
+      "chunks_generated": 12,
+      "content_hash": "edb44c0a5c85c609ea8279a57c35e9d4"
+    },
+    {
+      "file_path": "sql/query_syntax/setops.md",
+      "document_id": "sql-query_syntax-setops",
+      "chunks_generated": 7,
+      "content_hash": "7772b99042c717a5384b8a6644c2ec1d"
+    },
+    {
+      "file_path": "sql/query_syntax/setops.md",
+      "document_id": "sql-query_syntax-setops",
+      "chunks_generated": 7,
+      "content_hash": "7772b99042c717a5384b8a6644c2ec1d"
+    },
+    {
+      "file_path": "sql/query_syntax/unnest.md",
+      "document_id": "sql-query_syntax-unnest",
+      "chunks_generated": 10,
+      "content_hash": "fb742c9106d31991455a9075db78cd69"
+    },
+    {
+      "file_path": "sql/query_syntax/unnest.md",
+      "document_id": "sql-query_syntax-unnest",
+      "chunks_generated": 10,
+      "content_hash": "fb742c9106d31991455a9075db78cd69"
+    },
+    {
+      "file_path": "sql/query_syntax/values.md",
+      "document_id": "sql-query_syntax-values",
+      "chunks_generated": 1,
+      "content_hash": "4445fc51b04c573b0c3140613ce9eae6"
+    },
+    {
+      "file_path": "sql/query_syntax/values.md",
+      "document_id": "sql-query_syntax-values",
+      "chunks_generated": 1,
+      "content_hash": "4445fc51b04c573b0c3140613ce9eae6"
+    },
+    {
+      "file_path": "sql/query_syntax/where.md",
+      "document_id": "sql-query_syntax-where",
+      "chunks_generated": 1,
+      "content_hash": "d44cdcda7a7c6e1af060a67d22d7f301"
+    },
+    {
+      "file_path": "sql/query_syntax/where.md",
+      "document_id": "sql-query_syntax-where",
+      "chunks_generated": 1,
+      "content_hash": "d44cdcda7a7c6e1af060a67d22d7f301"
+    },
+    {
+      "file_path": "sql/query_syntax/window.md",
+      "document_id": "sql-query_syntax-window",
+      "chunks_generated": 1,
+      "content_hash": "c9dd1f30306a67d2b5b0ce5a5aaf4491"
+    },
+    {
+      "file_path": "sql/query_syntax/window.md",
+      "document_id": "sql-query_syntax-window",
+      "chunks_generated": 1,
+      "content_hash": "c9dd1f30306a67d2b5b0ce5a5aaf4491"
+    },
+    {
+      "file_path": "sql/query_syntax/with.md",
+      "document_id": "sql-query_syntax-with",
+      "chunks_generated": 27,
+      "content_hash": "5a01f434b47d268752c331a9d7af6b66"
+    },
+    {
+      "file_path": "sql/query_syntax/with.md",
+      "document_id": "sql-query_syntax-with",
+      "chunks_generated": 27,
+      "content_hash": "5a01f434b47d268752c331a9d7af6b66"
+    },
+    {
+      "file_path": "sql/samples.md",
+      "document_id": "sql-samples",
+      "chunks_generated": 12,
+      "content_hash": "df5d5ad8596a4b8d8b15264ce4b4c11d"
+    },
+    {
+      "file_path": "sql/samples.md",
+      "document_id": "sql-samples",
+      "chunks_generated": 12,
+      "content_hash": "df5d5ad8596a4b8d8b15264ce4b4c11d"
+    },
+    {
+      "file_path": "sql/statements/alter_table.md",
+      "document_id": "sql-statements-alter_table",
+      "chunks_generated": 12,
+      "content_hash": "fe596e5e56fc2c7083c6bbc4719bcbd6"
+    },
+    {
+      "file_path": "sql/statements/alter_table.md",
+      "document_id": "sql-statements-alter_table",
+      "chunks_generated": 12,
+      "content_hash": "fe596e5e56fc2c7083c6bbc4719bcbd6"
+    },
+    {
+      "file_path": "sql/statements/alter_view.md",
+      "document_id": "sql-statements-alter_view",
+      "chunks_generated": 1,
+      "content_hash": "947d53e8a4382397120ef7de1aecbadb"
+    },
+    {
+      "file_path": "sql/statements/alter_view.md",
+      "document_id": "sql-statements-alter_view",
+      "chunks_generated": 1,
+      "content_hash": "947d53e8a4382397120ef7de1aecbadb"
+    },
+    {
+      "file_path": "sql/statements/analyze.md",
+      "document_id": "sql-statements-analyze",
+      "chunks_generated": 1,
+      "content_hash": "ede8c76d9b5c0858b373ae13cf274ff5"
+    },
+    {
+      "file_path": "sql/statements/analyze.md",
+      "document_id": "sql-statements-analyze",
+      "chunks_generated": 1,
+      "content_hash": "ede8c76d9b5c0858b373ae13cf274ff5"
+    },
+    {
+      "file_path": "sql/statements/attach.md",
+      "document_id": "sql-statements-attach",
+      "chunks_generated": 21,
+      "content_hash": "b17aa1c10599d064ab346a56d25996b8"
+    },
+    {
+      "file_path": "sql/statements/attach.md",
+      "document_id": "sql-statements-attach",
+      "chunks_generated": 21,
+      "content_hash": "b17aa1c10599d064ab346a56d25996b8"
+    },
+    {
+      "file_path": "sql/statements/call.md",
+      "document_id": "sql-statements-call",
+      "chunks_generated": 1,
+      "content_hash": "8cb2ad560f8927837fce6a5997346401"
+    },
+    {
+      "file_path": "sql/statements/call.md",
+      "document_id": "sql-statements-call",
+      "chunks_generated": 1,
+      "content_hash": "8cb2ad560f8927837fce6a5997346401"
+    },
+    {
+      "file_path": "sql/statements/checkpoint.md",
+      "document_id": "sql-statements-checkpoint",
+      "chunks_generated": 2,
+      "content_hash": "3117bc19228c7705e3c2f950fb0e2ee3"
+    },
+    {
+      "file_path": "sql/statements/checkpoint.md",
+      "document_id": "sql-statements-checkpoint",
+      "chunks_generated": 2,
+      "content_hash": "3117bc19228c7705e3c2f950fb0e2ee3"
+    },
+    {
+      "file_path": "sql/statements/comment_on.md",
+      "document_id": "sql-statements-comment_on",
+      "chunks_generated": 5,
+      "content_hash": "da01eba2cd66c6a6ec274fe2a3db839e"
+    },
+    {
+      "file_path": "sql/statements/comment_on.md",
+      "document_id": "sql-statements-comment_on",
+      "chunks_generated": 5,
+      "content_hash": "da01eba2cd66c6a6ec274fe2a3db839e"
+    },
+    {
+      "file_path": "sql/statements/copy.md",
+      "document_id": "sql-statements-copy",
+      "chunks_generated": 55,
+      "content_hash": "e0975999aa98f20743a50b4af8162846"
+    },
+    {
+      "file_path": "sql/statements/copy.md",
+      "document_id": "sql-statements-copy",
+      "chunks_generated": 55,
+      "content_hash": "e0975999aa98f20743a50b4af8162846"
+    },
+    {
+      "file_path": "sql/statements/create_index.md",
+      "document_id": "sql-statements-create_index",
+      "chunks_generated": 8,
+      "content_hash": "6d07a5fc5f4d468ae360792e30b61628"
+    },
+    {
+      "file_path": "sql/statements/create_index.md",
+      "document_id": "sql-statements-create_index",
+      "chunks_generated": 8,
+      "content_hash": "6d07a5fc5f4d468ae360792e30b61628"
+    },
+    {
+      "file_path": "sql/statements/create_macro.md",
+      "document_id": "sql-statements-create_macro",
+      "chunks_generated": 14,
+      "content_hash": "4a9d6ce3e2129f12ff7f3eca004b9c0a"
+    },
+    {
+      "file_path": "sql/statements/create_macro.md",
+      "document_id": "sql-statements-create_macro",
+      "chunks_generated": 14,
+      "content_hash": "4a9d6ce3e2129f12ff7f3eca004b9c0a"
+    },
+    {
+      "file_path": "sql/statements/create_schema.md",
+      "document_id": "sql-statements-create_schema",
+      "chunks_generated": 1,
+      "content_hash": "73842fd50a31ee579de4af1dde94e726"
+    },
+    {
+      "file_path": "sql/statements/create_schema.md",
+      "document_id": "sql-statements-create_schema",
+      "chunks_generated": 1,
+      "content_hash": "73842fd50a31ee579de4af1dde94e726"
+    },
+    {
+      "file_path": "sql/statements/create_secret.md",
+      "document_id": "sql-statements-create_secret",
+      "chunks_generated": 1,
+      "content_hash": "7e91104c563590bdff4dc62a8f02b1b4"
+    },
+    {
+      "file_path": "sql/statements/create_secret.md",
+      "document_id": "sql-statements-create_secret",
+      "chunks_generated": 1,
+      "content_hash": "7e91104c563590bdff4dc62a8f02b1b4"
+    },
+    {
+      "file_path": "sql/statements/create_sequence.md",
+      "document_id": "sql-statements-create_sequence",
+      "chunks_generated": 13,
+      "content_hash": "5b0c029a7128b12e10850abccdfe9ecd"
+    },
+    {
+      "file_path": "sql/statements/create_sequence.md",
+      "document_id": "sql-statements-create_sequence",
+      "chunks_generated": 13,
+      "content_hash": "5b0c029a7128b12e10850abccdfe9ecd"
+    },
+    {
+      "file_path": "sql/statements/create_table.md",
+      "document_id": "sql-statements-create_table",
+      "chunks_generated": 1,
+      "content_hash": "a58a3b7848f2bdcfdcc7a40a2800375f"
+    },
+    {
+      "file_path": "sql/statements/create_table.md",
+      "document_id": "sql-statements-create_table",
+      "chunks_generated": 1,
+      "content_hash": "a58a3b7848f2bdcfdcc7a40a2800375f"
+    },
+    {
+      "file_path": "sql/statements/create_type.md",
+      "document_id": "sql-statements-create_type",
+      "chunks_generated": 2,
+      "content_hash": "fd1e78f8bfad6c4d00cb359ebc1d4944"
+    },
+    {
+      "file_path": "sql/statements/create_type.md",
+      "document_id": "sql-statements-create_type",
+      "chunks_generated": 2,
+      "content_hash": "fd1e78f8bfad6c4d00cb359ebc1d4944"
+    },
+    {
+      "file_path": "sql/statements/create_view.md",
+      "document_id": "sql-statements-create_view",
+      "chunks_generated": 2,
+      "content_hash": "30b57d8321c0be8c80ccc241bde606fb"
+    },
+    {
+      "file_path": "sql/statements/create_view.md",
+      "document_id": "sql-statements-create_view",
+      "chunks_generated": 2,
+      "content_hash": "30b57d8321c0be8c80ccc241bde606fb"
+    },
+    {
+      "file_path": "sql/statements/delete.md",
+      "document_id": "sql-statements-delete",
+      "chunks_generated": 3,
+      "content_hash": "75d528da262b68457e63c184217f7520"
+    },
+    {
+      "file_path": "sql/statements/delete.md",
+      "document_id": "sql-statements-delete",
+      "chunks_generated": 3,
+      "content_hash": "75d528da262b68457e63c184217f7520"
+    },
+    {
+      "file_path": "sql/statements/describe.md",
+      "document_id": "sql-statements-describe",
+      "chunks_generated": 1,
+      "content_hash": "05b39cd8fa16d30a577c037e85f7f23b"
+    },
+    {
+      "file_path": "sql/statements/describe.md",
+      "document_id": "sql-statements-describe",
+      "chunks_generated": 1,
+      "content_hash": "05b39cd8fa16d30a577c037e85f7f23b"
+    },
+    {
+      "file_path": "sql/statements/drop.md",
+      "document_id": "sql-statements-drop",
+      "chunks_generated": 5,
+      "content_hash": "ad92f690241bdb8526efd321f622843d"
+    },
+    {
+      "file_path": "sql/statements/drop.md",
+      "document_id": "sql-statements-drop",
+      "chunks_generated": 5,
+      "content_hash": "ad92f690241bdb8526efd321f622843d"
+    },
+    {
+      "file_path": "sql/statements/export.md",
+      "document_id": "sql-statements-export",
+      "chunks_generated": 5,
+      "content_hash": "1b683d16f2d417afdda1cfaad4723f84"
+    },
+    {
+      "file_path": "sql/statements/export.md",
+      "document_id": "sql-statements-export",
+      "chunks_generated": 5,
+      "content_hash": "1b683d16f2d417afdda1cfaad4723f84"
+    },
+    {
+      "file_path": "sql/statements/insert.md",
+      "document_id": "sql-statements-insert",
+      "chunks_generated": 20,
+      "content_hash": "e6dcf4a5e6adf744b10a6e543ce63fa6"
+    },
+    {
+      "file_path": "sql/statements/insert.md",
+      "document_id": "sql-statements-insert",
+      "chunks_generated": 20,
+      "content_hash": "e6dcf4a5e6adf744b10a6e543ce63fa6"
+    },
+    {
+      "file_path": "sql/statements/load_and_install.md",
+      "document_id": "sql-statements-load_and_install",
+      "chunks_generated": 1,
+      "content_hash": "86bdbfe119c7b62d614a2697da837647"
+    },
+    {
+      "file_path": "sql/statements/load_and_install.md",
+      "document_id": "sql-statements-load_and_install",
+      "chunks_generated": 1,
+      "content_hash": "86bdbfe119c7b62d614a2697da837647"
+    },
+    {
+      "file_path": "sql/statements/merge_into.md",
+      "document_id": "sql-statements-merge_into",
+      "chunks_generated": 9,
+      "content_hash": "8b6a8814e3696de7ad1a084667fc1687"
+    },
+    {
+      "file_path": "sql/statements/merge_into.md",
+      "document_id": "sql-statements-merge_into",
+      "chunks_generated": 9,
+      "content_hash": "8b6a8814e3696de7ad1a084667fc1687"
+    },
+    {
+      "file_path": "sql/statements/overview.md",
+      "document_id": "sql-statements-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "sql/statements/overview.md",
+      "document_id": "sql-statements-overview",
+      "chunks_generated": 0,
+      "content_hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    {
+      "file_path": "sql/statements/pivot.md",
+      "document_id": "sql-statements-pivot",
+      "chunks_generated": 25,
+      "content_hash": "e466bf0743c7ab7b48174409d5ffacb4"
+    },
+    {
+      "file_path": "sql/statements/pivot.md",
+      "document_id": "sql-statements-pivot",
+      "chunks_generated": 25,
+      "content_hash": "e466bf0743c7ab7b48174409d5ffacb4"
+    },
+    {
+      "file_path": "sql/statements/profiling.md",
+      "document_id": "sql-statements-profiling",
+      "chunks_generated": 1,
+      "content_hash": "8942429d720744db3c36606c214cef67"
+    },
+    {
+      "file_path": "sql/statements/profiling.md",
+      "document_id": "sql-statements-profiling",
+      "chunks_generated": 1,
+      "content_hash": "8942429d720744db3c36606c214cef67"
+    },
+    {
+      "file_path": "sql/statements/select.md",
+      "document_id": "sql-statements-select",
+      "chunks_generated": 12,
+      "content_hash": "691cc54c49a66fb6947de77f9b0f6e83"
+    },
+    {
+      "file_path": "sql/statements/select.md",
+      "document_id": "sql-statements-select",
+      "chunks_generated": 12,
+      "content_hash": "691cc54c49a66fb6947de77f9b0f6e83"
+    },
+    {
+      "file_path": "sql/statements/set.md",
+      "document_id": "sql-statements-set",
+      "chunks_generated": 2,
+      "content_hash": "835ee6d73cea375929899e5603450fe1"
+    },
+    {
+      "file_path": "sql/statements/set.md",
+      "document_id": "sql-statements-set",
+      "chunks_generated": 2,
+      "content_hash": "835ee6d73cea375929899e5603450fe1"
+    },
+    {
+      "file_path": "sql/statements/set_variable.md",
+      "document_id": "sql-statements-set_variable",
+      "chunks_generated": 6,
+      "content_hash": "69f349015d52d5b4a116e571ca946222"
+    },
+    {
+      "file_path": "sql/statements/set_variable.md",
+      "document_id": "sql-statements-set_variable",
+      "chunks_generated": 6,
+      "content_hash": "69f349015d52d5b4a116e571ca946222"
+    },
+    {
+      "file_path": "sql/statements/show.md",
+      "document_id": "sql-statements-show",
+      "chunks_generated": 1,
+      "content_hash": "a9c8518c3d49b40776b9c7eb420386f8"
+    },
+    {
+      "file_path": "sql/statements/show.md",
+      "document_id": "sql-statements-show",
+      "chunks_generated": 1,
+      "content_hash": "a9c8518c3d49b40776b9c7eb420386f8"
+    },
+    {
+      "file_path": "sql/statements/summarize.md",
+      "document_id": "sql-statements-summarize",
+      "chunks_generated": 1,
+      "content_hash": "0b30a9e6c660bb008f87731e0a3b04b3"
+    },
+    {
+      "file_path": "sql/statements/summarize.md",
+      "document_id": "sql-statements-summarize",
+      "chunks_generated": 1,
+      "content_hash": "0b30a9e6c660bb008f87731e0a3b04b3"
+    },
+    {
+      "file_path": "sql/statements/transactions.md",
+      "document_id": "sql-statements-transactions",
+      "chunks_generated": 3,
+      "content_hash": "43a2ed97eec3e42575f9f10413e74e75"
+    },
+    {
+      "file_path": "sql/statements/transactions.md",
+      "document_id": "sql-statements-transactions",
+      "chunks_generated": 3,
+      "content_hash": "43a2ed97eec3e42575f9f10413e74e75"
+    },
+    {
+      "file_path": "sql/statements/unpivot.md",
+      "document_id": "sql-statements-unpivot",
+      "chunks_generated": 21,
+      "content_hash": "6974f361db39bf00092e24c452883b59"
+    },
+    {
+      "file_path": "sql/statements/unpivot.md",
+      "document_id": "sql-statements-unpivot",
+      "chunks_generated": 21,
+      "content_hash": "6974f361db39bf00092e24c452883b59"
+    },
+    {
+      "file_path": "sql/statements/update.md",
+      "document_id": "sql-statements-update",
+      "chunks_generated": 7,
+      "content_hash": "451e7364f89ffac7cb4ef90b37506166"
+    },
+    {
+      "file_path": "sql/statements/update.md",
+      "document_id": "sql-statements-update",
+      "chunks_generated": 7,
+      "content_hash": "451e7364f89ffac7cb4ef90b37506166"
+    },
+    {
+      "file_path": "sql/statements/update_extensions.md",
+      "document_id": "sql-statements-update_extensions",
+      "chunks_generated": 3,
+      "content_hash": "f410ca67d8082c9c4874553477e0cf84"
+    },
+    {
+      "file_path": "sql/statements/update_extensions.md",
+      "document_id": "sql-statements-update_extensions",
+      "chunks_generated": 3,
+      "content_hash": "f410ca67d8082c9c4874553477e0cf84"
+    },
+    {
+      "file_path": "sql/statements/use.md",
+      "document_id": "sql-statements-use",
+      "chunks_generated": 1,
+      "content_hash": "99b8e35cae1e3c3899691e8e75354662"
+    },
+    {
+      "file_path": "sql/statements/use.md",
+      "document_id": "sql-statements-use",
+      "chunks_generated": 1,
+      "content_hash": "99b8e35cae1e3c3899691e8e75354662"
+    },
+    {
+      "file_path": "sql/statements/vacuum.md",
+      "document_id": "sql-statements-vacuum",
+      "chunks_generated": 2,
+      "content_hash": "b32fcd3f488c82abdf1fb86d6ce687c6"
+    },
+    {
+      "file_path": "sql/statements/vacuum.md",
+      "document_id": "sql-statements-vacuum",
+      "chunks_generated": 2,
+      "content_hash": "b32fcd3f488c82abdf1fb86d6ce687c6"
+    }
+  ]
+}

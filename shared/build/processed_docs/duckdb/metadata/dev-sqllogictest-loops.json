@@ -1,0 +1,53 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/loops",
+    "/dev/sqllogictest/loops/",
+    "/docs/dev/sqllogictest/loops"
+  ],
+  "title": "Loops",
+  "file_name": "loops.md",
+  "file_stem": "loops",
+  "file_path": "dev/sqllogictest/loops.md",
+  "file_size": 3409,
+  "document_id": "dev-sqllogictest-loops",
+  "url": "/dev/sqllogictest/loops",
+  "content_hash": "bd44e3908a75d95acd1ed8ed9fa21bef",
+  "statistics": {
+    "char_count": 2974,
+    "word_count": 473,
+    "line_count": 68,
+    "paragraph_count": 21,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 26
+  },
+  "processed_at": "2025-11-22T10:32:10.637006",
+  "sections": [
+    {
+      "level": 1,
+      "title": "create the table 'integers' with values 0..100",
+      "anchor": "create-the-table-integers-with-values-0100"
+    },
+    {
+      "level": 1,
+      "title": "verify individually that all 100 values are there",
+      "anchor": "verify-individually-that-all-100-values-are-there"
+    },
+    {
+      "level": 1,
+      "title": "execute the query, replacing the value",
+      "anchor": "execute-the-query-replacing-the-value"
+    },
+    {
+      "level": 1,
+      "title": "end the loop (note that multiple statements can be part of a loop)",
+      "anchor": "end-the-loop-note-that-multiple-statements-can-be-part-of-a-loop"
+    },
+    {
+      "level": 2,
+      "title": "Data Generation without Loops",
+      "anchor": "data-generation-without-loops"
+    }
+  ]
+}

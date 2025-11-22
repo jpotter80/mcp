@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/footprint_of_duckdb/gitignore_for_duckdb"
+  ],
+  "title": "Gitignore for DuckDB",
+  "file_name": "gitignore_for_duckdb.md",
+  "file_stem": "gitignore_for_duckdb",
+  "file_path": "operations_manual/footprint_of_duckdb/gitignore_for_duckdb.md",
+  "file_size": 1209,
+  "document_id": "operations_manual-footprint_of_duckdb-gitignore_for_duckdb",
+  "url": "/operations_manual/footprint_of_duckdb/gitignore_for_duckdb",
+  "content_hash": "e49f774bc53cadb1510ded9742503c67",
+  "statistics": {
+    "char_count": 1076,
+    "word_count": 151,
+    "line_count": 27,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 2,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:12.217054",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Sample Gitignore Files",
+      "anchor": "sample-gitignore-files"
+    },
+    {
+      "level": 3,
+      "title": "Ignore Temporary Files but Keep Database",
+      "anchor": "ignore-temporary-files-but-keep-database"
+    },
+    {
+      "level": 3,
+      "title": "Ignore Database and Temporary Files",
+      "anchor": "ignore-database-and-temporary-files"
+    }
+  ]
+}

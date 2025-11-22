@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/overview",
+    "/docs/guides/import/overview/",
+    "/docs/guides/performance/import"
+  ],
+  "title": "Data Import",
+  "file_name": "import.md",
+  "file_stem": "import",
+  "file_path": "guides/performance/import.md",
+  "file_size": 1491,
+  "document_id": "guides-performance-import",
+  "url": "/guides/performance/import",
+  "content_hash": "846f80ccacd37d0c665410f72249096d",
+  "statistics": {
+    "char_count": 1337,
+    "word_count": 172,
+    "line_count": 15,
+    "paragraph_count": 6,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.337610",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Recommended Import Methods",
+      "anchor": "recommended-import-methods"
+    },
+    {
+      "level": 2,
+      "title": "Methods to Avoid",
+      "anchor": "methods-to-avoid"
+    }
+  ]
+}

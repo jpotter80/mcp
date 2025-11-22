@@ -1,0 +1,98 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/profiling",
+    "/dev/profiling/",
+    "/docs/dev/profiling"
+  ],
+  "title": "Profiling",
+  "file_name": "profiling.md",
+  "file_stem": "profiling",
+  "file_path": "dev/profiling.md",
+  "file_size": 16438,
+  "document_id": "dev-profiling",
+  "url": "/dev/profiling",
+  "content_hash": "fe63553daae88928581bbd60e60f7a68",
+  "statistics": {
+    "char_count": 13002,
+    "word_count": 1633,
+    "line_count": 266,
+    "paragraph_count": 58,
+    "header_count": 14,
+    "code_block_count": 6,
+    "code_lines": 88
+  },
+  "processed_at": "2025-11-22T10:32:10.449210",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Statements",
+      "anchor": "statements"
+    },
+    {
+      "level": 3,
+      "title": "The `EXPLAIN` Statement",
+      "anchor": "the-explain-statement"
+    },
+    {
+      "level": 3,
+      "title": "The `EXPLAIN ANALYZE` Statement",
+      "anchor": "the-explain-analyze-statement"
+    },
+    {
+      "level": 3,
+      "title": "The `FORMAT` Option",
+      "anchor": "the-format-option"
+    },
+    {
+      "level": 2,
+      "title": "Pragmas",
+      "anchor": "pragmas"
+    },
+    {
+      "level": 2,
+      "title": "Metrics",
+      "anchor": "metrics"
+    },
+    {
+      "level": 3,
+      "title": "Cumulative Metrics",
+      "anchor": "cumulative-metrics"
+    },
+    {
+      "level": 2,
+      "title": "Detailed Profiling",
+      "anchor": "detailed-profiling"
+    },
+    {
+      "level": 3,
+      "title": "Optimizer Metrics",
+      "anchor": "optimizer-metrics"
+    },
+    {
+      "level": 3,
+      "title": "Planner Metrics",
+      "anchor": "planner-metrics"
+    },
+    {
+      "level": 3,
+      "title": "Physical Planner Metrics",
+      "anchor": "physical-planner-metrics"
+    },
+    {
+      "level": 2,
+      "title": "Custom Metrics Examples",
+      "anchor": "custom-metrics-examples"
+    },
+    {
+      "level": 2,
+      "title": "Query Graphs",
+      "anchor": "query-graphs"
+    },
+    {
+      "level": 2,
+      "title": "Notation in Query Plans",
+      "anchor": "notation-in-query-plans"
+    }
+  ]
+}

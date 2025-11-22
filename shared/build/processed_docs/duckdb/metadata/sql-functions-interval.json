@@ -1,0 +1,121 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/interval"
+  ],
+  "title": "Interval Functions",
+  "file_name": "interval.md",
+  "file_stem": "interval",
+  "file_path": "sql/functions/interval.md",
+  "file_size": 6642,
+  "document_id": "sql-functions-interval",
+  "url": "/sql/functions/interval",
+  "content_hash": "89ab388fd6c43ab035c10167c0a40b74",
+  "statistics": {
+    "char_count": 5898,
+    "word_count": 797,
+    "line_count": 144,
+    "paragraph_count": 42,
+    "header_count": 19,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.584569",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Interval Operators",
+      "anchor": "interval-operators"
+    },
+    {
+      "level": 2,
+      "title": "Interval Functions",
+      "anchor": "interval-functions"
+    },
+    {
+      "level": 4,
+      "title": "`date_part(part, interval)`",
+      "anchor": "date_partpart-interval"
+    },
+    {
+      "level": 4,
+      "title": "`datepart(part, interval)`",
+      "anchor": "datepartpart-interval"
+    },
+    {
+      "level": 4,
+      "title": "`extract(part FROM interval)`",
+      "anchor": "extractpart-from-interval"
+    },
+    {
+      "level": 4,
+      "title": "`epoch(interval)`",
+      "anchor": "epochinterval"
+    },
+    {
+      "level": 4,
+      "title": "`to_centuries(integer)`",
+      "anchor": "to_centuriesinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_days(integer)`",
+      "anchor": "to_daysinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_decades(integer)`",
+      "anchor": "to_decadesinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_hours(integer)`",
+      "anchor": "to_hoursinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_microseconds(integer)`",
+      "anchor": "to_microsecondsinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_millennia(integer)`",
+      "anchor": "to_millenniainteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_milliseconds(integer)`",
+      "anchor": "to_millisecondsinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_minutes(integer)`",
+      "anchor": "to_minutesinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_months(integer)`",
+      "anchor": "to_monthsinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_quarters(integer)`",
+      "anchor": "to_quartersinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_seconds(integer)`",
+      "anchor": "to_secondsinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_weeks(integer)`",
+      "anchor": "to_weeksinteger"
+    },
+    {
+      "level": 4,
+      "title": "`to_years(integer)`",
+      "anchor": "to_yearsinteger"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/union"
+  ],
+  "title": "Union Type",
+  "file_name": "union.md",
+  "file_stem": "union",
+  "file_path": "sql/data_types/union.md",
+  "file_size": 6031,
+  "document_id": "sql-data_types-union",
+  "url": "/sql/data_types/union",
+  "content_hash": "f438e389a48f96c73ccf1d4eafa9845d",
+  "statistics": {
+    "char_count": 5639,
+    "word_count": 942,
+    "line_count": 107,
+    "paragraph_count": 35,
+    "header_count": 6,
+    "code_block_count": 5,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:12.885421",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "Union Casts",
+      "anchor": "union-casts"
+    },
+    {
+      "level": 3,
+      "title": "Casting to Unions",
+      "anchor": "casting-to-unions"
+    },
+    {
+      "level": 3,
+      "title": "Casting between Unions",
+      "anchor": "casting-between-unions"
+    },
+    {
+      "level": 2,
+      "title": "Comparison and Sorting",
+      "anchor": "comparison-and-sorting"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

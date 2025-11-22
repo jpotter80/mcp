@@ -1,0 +1,45 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli/output-formats",
+    "/docs/api/cli/output-formats/",
+    "/docs/api/cli/output_formats",
+    "/docs/api/cli/output_formats/",
+    "/docs/clients/cli/output_formats"
+  ],
+  "title": "Output Formats",
+  "file_name": "output_formats.md",
+  "file_stem": "output_formats",
+  "file_path": "clients/cli/output_formats.md",
+  "file_size": 5889,
+  "document_id": "clients-cli-output_formats",
+  "url": "/clients/cli/output_formats",
+  "content_hash": "7a79d625f7e87c53edaf087361f79165",
+  "statistics": {
+    "char_count": 3766,
+    "word_count": 580,
+    "line_count": 133,
+    "paragraph_count": 26,
+    "header_count": 3,
+    "code_block_count": 14,
+    "code_lines": 46
+  },
+  "processed_at": "2025-11-22T10:32:03.974224",
+  "sections": [
+    {
+      "level": 2,
+      "title": "List of Output Formats",
+      "anchor": "list-of-output-formats"
+    },
+    {
+      "level": 2,
+      "title": "Changing the Output Format",
+      "anchor": "changing-the-output-format"
+    },
+    {
+      "level": 2,
+      "title": "`duckbox` Mode",
+      "anchor": "duckbox-mode"
+    }
+  ]
+}

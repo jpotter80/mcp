@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/wasm/query",
+    "/docs/api/wasm/query/",
+    "/docs/clients/wasm/query"
+  ],
+  "title": "Query",
+  "file_name": "query.md",
+  "file_stem": "query",
+  "file_path": "clients/wasm/query.md",
+  "file_size": 2298,
+  "document_id": "clients-wasm-query",
+  "url": "/clients/wasm/query",
+  "content_hash": "35f30933137d6ec612e44654546dd9c6",
+  "statistics": {
+    "char_count": 2104,
+    "word_count": 275,
+    "line_count": 78,
+    "paragraph_count": 18,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 55
+  },
+  "processed_at": "2025-11-22T10:32:07.294813",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Query Execution",
+      "anchor": "query-execution"
+    },
+    {
+      "level": 2,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 2,
+      "title": "Arrow Table to JSON",
+      "anchor": "arrow-table-to-json"
+    },
+    {
+      "level": 2,
+      "title": "Export Parquet",
+      "anchor": "export-parquet"
+    }
+  ]
+}

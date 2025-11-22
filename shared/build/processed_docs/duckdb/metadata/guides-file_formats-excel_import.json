@@ -1,0 +1,63 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/excel_import",
+    "/docs/guides/import/excel_import/",
+    "/docs/guides/file_formats/excel_import"
+  ],
+  "title": "Excel Import",
+  "file_name": "excel_import.md",
+  "file_stem": "excel_import",
+  "file_path": "guides/file_formats/excel_import.md",
+  "file_size": 4873,
+  "document_id": "guides-file_formats-excel_import",
+  "url": "/guides/file_formats/excel_import",
+  "content_hash": "092bc17e1084f538053bb5144d38245c",
+  "statistics": {
+    "char_count": 4697,
+    "word_count": 732,
+    "line_count": 127,
+    "paragraph_count": 46,
+    "header_count": 7,
+    "code_block_count": 14,
+    "code_lines": 20
+  },
+  "processed_at": "2025-11-22T10:32:10.918999",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Importing Excel Sheets",
+      "anchor": "importing-excel-sheets"
+    },
+    {
+      "level": 2,
+      "title": "Importing a Specific Range",
+      "anchor": "importing-a-specific-range"
+    },
+    {
+      "level": 2,
+      "title": "Creating a New Table",
+      "anchor": "creating-a-new-table"
+    },
+    {
+      "level": 2,
+      "title": "Loading to an Existing Table",
+      "anchor": "loading-to-an-existing-table"
+    },
+    {
+      "level": 2,
+      "title": "Importing a Sheet with/without a Header",
+      "anchor": "importing-a-sheet-withwithout-a-header"
+    },
+    {
+      "level": 2,
+      "title": "Detecting Types",
+      "anchor": "detecting-types"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

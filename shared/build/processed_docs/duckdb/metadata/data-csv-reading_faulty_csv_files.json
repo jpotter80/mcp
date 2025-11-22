@@ -1,0 +1,61 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/csv/reading_faulty_csv_files"
+  ],
+  "title": "Reading Faulty CSV Files",
+  "file_name": "reading_faulty_csv_files.md",
+  "file_stem": "reading_faulty_csv_files",
+  "file_path": "data/csv/reading_faulty_csv_files.md",
+  "file_size": 12031,
+  "document_id": "data-csv-reading_faulty_csv_files",
+  "url": "/data/csv/reading_faulty_csv_files",
+  "content_hash": "6367c50d645676eac5bcc7ddb7e7fa9b",
+  "statistics": {
+    "char_count": 11508,
+    "word_count": 1836,
+    "line_count": 217,
+    "paragraph_count": 55,
+    "header_count": 7,
+    "code_block_count": 11,
+    "code_lines": 53
+  },
+  "processed_at": "2025-11-22T10:32:09.471970",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Structural Errors",
+      "anchor": "structural-errors"
+    },
+    {
+      "level": 3,
+      "title": "Anatomy of a CSV Error",
+      "anchor": "anatomy-of-a-csv-error"
+    },
+    {
+      "level": 2,
+      "title": "Using the `ignore_errors` Option",
+      "anchor": "using-the-ignore_errors-option"
+    },
+    {
+      "level": 2,
+      "title": "Retrieving Faulty CSV Lines",
+      "anchor": "retrieving-faulty-csv-lines"
+    },
+    {
+      "level": 3,
+      "title": "Reject Scans",
+      "anchor": "reject-scans"
+    },
+    {
+      "level": 3,
+      "title": "Reject Errors",
+      "anchor": "reject-errors"
+    },
+    {
+      "level": 2,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb/tree/main/extension/autocomplete",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/autocomplete",
+    "/docs/stable/extensions/autocomplete/"
+  ],
+  "title": "AutoComplete Extension",
+  "file_name": "autocomplete.md",
+  "file_stem": "autocomplete",
+  "file_path": "core_extensions/autocomplete.md",
+  "file_size": 1714,
+  "document_id": "core_extensions-autocomplete",
+  "url": "/core_extensions/autocomplete",
+  "content_hash": "b46cea54a4116d4ee89d05b0c2624b4f",
+  "statistics": {
+    "char_count": 1024,
+    "word_count": 176,
+    "line_count": 44,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:07.584327",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Behavior",
+      "anchor": "behavior"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    }
+  ]
+}

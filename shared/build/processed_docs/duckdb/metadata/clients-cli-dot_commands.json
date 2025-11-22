@@ -1,0 +1,75 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli/dot-commands",
+    "/docs/api/cli/dot-commands/",
+    "/docs/api/cli/dot_commands",
+    "/docs/api/cli/dot_commands/",
+    "/docs/clients/cli/dot_commands"
+  ],
+  "title": "Dot Commands",
+  "file_name": "dot_commands.md",
+  "file_stem": "dot_commands",
+  "file_path": "clients/cli/dot_commands.md",
+  "file_size": 20770,
+  "document_id": "clients-cli-dot_commands",
+  "url": "/clients/cli/dot_commands",
+  "content_hash": "f6d628b21a4a6487c7fcee4380053fb2",
+  "statistics": {
+    "char_count": 14017,
+    "word_count": 1959,
+    "line_count": 287,
+    "paragraph_count": 72,
+    "header_count": 9,
+    "code_block_count": 28,
+    "code_lines": 61
+  },
+  "processed_at": "2025-11-22T10:32:03.907806",
+  "sections": [
+    {
+      "level": 2,
+      "title": "List of Dot Commands",
+      "anchor": "list-of-dot-commands"
+    },
+    {
+      "level": 2,
+      "title": "Using the `.help` Command",
+      "anchor": "using-the-help-command"
+    },
+    {
+      "level": 2,
+      "title": "`.output`: Writing Results to a File",
+      "anchor": "output-writing-results-to-a-file"
+    },
+    {
+      "level": 2,
+      "title": "Querying the Database Schema",
+      "anchor": "querying-the-database-schema"
+    },
+    {
+      "level": 2,
+      "title": "Syntax Highlighters",
+      "anchor": "syntax-highlighters"
+    },
+    {
+      "level": 2,
+      "title": "Configuring the Query Syntax Highlighter",
+      "anchor": "configuring-the-query-syntax-highlighter"
+    },
+    {
+      "level": 2,
+      "title": "Configuring the Result Syntax Highlighter",
+      "anchor": "configuring-the-result-syntax-highlighter"
+    },
+    {
+      "level": 2,
+      "title": "Shorthands",
+      "anchor": "shorthands"
+    },
+    {
+      "level": 2,
+      "title": "Importing Data from CSV",
+      "anchor": "importing-data-from-csv"
+    }
+  ]
+}

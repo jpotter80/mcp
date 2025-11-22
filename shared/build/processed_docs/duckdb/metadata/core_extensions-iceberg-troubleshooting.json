@@ -1,0 +1,62 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/iceberg/troubleshooting",
+    "/docs/stable/extensions/iceberg/troubleshooting/"
+  ],
+  "title": "Troubleshooting",
+  "file_name": "troubleshooting.md",
+  "file_stem": "troubleshooting",
+  "file_path": "core_extensions/iceberg/troubleshooting.md",
+  "file_size": 1506,
+  "document_id": "core_extensions-iceberg-troubleshooting",
+  "url": "/core_extensions/iceberg/troubleshooting",
+  "content_hash": "7eaa158fb4ebed3f5a4075af7403c221",
+  "statistics": {
+    "char_count": 1320,
+    "word_count": 180,
+    "line_count": 71,
+    "paragraph_count": 23,
+    "header_count": 7,
+    "code_block_count": 9,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:08.331118",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Curl Request Fails",
+      "anchor": "curl-request-fails"
+    },
+    {
+      "level": 3,
+      "title": "Problem",
+      "anchor": "problem"
+    },
+    {
+      "level": 3,
+      "title": "Solution",
+      "anchor": "solution"
+    },
+    {
+      "level": 2,
+      "title": "HTTP Error 403",
+      "anchor": "http-error-403"
+    },
+    {
+      "level": 3,
+      "title": "Problem",
+      "anchor": "problem"
+    },
+    {
+      "level": 3,
+      "title": "Solution",
+      "anchor": "solution"
+    }
+  ]
+}

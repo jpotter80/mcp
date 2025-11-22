@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/in.js",
+  "redirect_from": [
+    "/docs/sql/expressions/in"
+  ],
+  "title": "IN Operator",
+  "file_name": "in.md",
+  "file_stem": "in",
+  "file_path": "sql/expressions/in.md",
+  "file_size": 2526,
+  "document_id": "sql-expressions-in",
+  "url": "/sql/expressions/in",
+  "content_hash": "43cc98968b808150b4f4c3db799a620d",
+  "statistics": {
+    "char_count": 2386,
+    "word_count": 389,
+    "line_count": 121,
+    "paragraph_count": 36,
+    "header_count": 6,
+    "code_block_count": 22,
+    "code_lines": 23
+  },
+  "processed_at": "2025-11-22T10:32:13.126067",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`IN (val1, val2, ...)` (Tuple)",
+      "anchor": "in-val1-val2-tuple"
+    },
+    {
+      "level": 2,
+      "title": "`IN [val1, val2, ...]` (List)",
+      "anchor": "in-val1-val2-list"
+    },
+    {
+      "level": 2,
+      "title": "`IN` Map",
+      "anchor": "in-map"
+    },
+    {
+      "level": 2,
+      "title": "`IN` Subquery",
+      "anchor": "in-subquery"
+    },
+    {
+      "level": 2,
+      "title": "`IN` String",
+      "anchor": "in-string"
+    },
+    {
+      "level": 2,
+      "title": "`NOT IN`",
+      "anchor": "not-in"
+    }
+  ]
+}

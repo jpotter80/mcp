@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/internal_errors"
+  ],
+  "title": "Internal Errors",
+  "file_name": "internal_errors.md",
+  "file_stem": "internal_errors",
+  "file_path": "dev/internal_errors.md",
+  "file_size": 1301,
+  "document_id": "dev-internal_errors",
+  "url": "/dev/internal_errors",
+  "content_hash": "436413f720f52a6aca581c338bc2b16d",
+  "statistics": {
+    "char_count": 1204,
+    "word_count": 174,
+    "line_count": 24,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:10.397868",
+  "sections": []
+}

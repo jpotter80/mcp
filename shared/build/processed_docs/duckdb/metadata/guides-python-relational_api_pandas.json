@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/relational_api_pandas"
+  ],
+  "title": "Relational API on Pandas",
+  "file_name": "relational_api_pandas.md",
+  "file_stem": "relational_api_pandas",
+  "file_path": "guides/python/relational_api_pandas.md",
+  "file_size": 1808,
+  "document_id": "guides-python-relational_api_pandas",
+  "url": "/guides/python/relational_api_pandas",
+  "content_hash": "a2049243c5c6b03889a2d8a09efcc232",
+  "statistics": {
+    "char_count": 1656,
+    "word_count": 241,
+    "line_count": 27,
+    "paragraph_count": 9,
+    "header_count": 6,
+    "code_block_count": 1,
+    "code_lines": 19
+  },
+  "processed_at": "2025-11-22T10:32:11.781117",
+  "sections": [
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "create a DuckDB relation from a dataframe",
+      "anchor": "create-a-duckdb-relation-from-a-dataframe"
+    },
+    {
+      "level": 1,
+      "title": "chain together relational operators (this is a lazy operation, so the operations are not yet executed)",
+      "anchor": "chain-together-relational-operators-this-is-a-lazy-operation-so-the-operations-are-not-yet-executed"
+    },
+    {
+      "level": 1,
+      "title": "equivalent to: SELECT i, j, i*2 AS two_i FROM input_df WHERE i >= 2 ORDER BY i DESC LIMIT 2",
+      "anchor": "equivalent-to-select-i-j-i2-as-two_i-from-input_df-where-i-2-order-by-i-desc-limit-2"
+    },
+    {
+      "level": 1,
+      "title": "trigger execution by requesting .df() of the relation",
+      "anchor": "trigger-execution-by-requesting-df-of-the-relation"
+    },
+    {
+      "level": 1,
+      "title": ".df() could have been added to the end of the chain above - it was separated for clarity",
+      "anchor": "df-could-have-been-added-to-the-end-of-the-chain-above-it-was-separated-for-clarity"
+    }
+  ]
+}

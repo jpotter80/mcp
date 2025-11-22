@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/update_extensions"
+  ],
+  "title": "UPDATE EXTENSIONS",
+  "file_name": "update_extensions.md",
+  "file_stem": "update_extensions",
+  "file_path": "sql/statements/update_extensions.md",
+  "file_size": 3369,
+  "document_id": "sql-statements-update_extensions",
+  "url": "/sql/statements/update_extensions",
+  "content_hash": "f410ca67d8082c9c4874553477e0cf84",
+  "statistics": {
+    "char_count": 2371,
+    "word_count": 326,
+    "line_count": 55,
+    "paragraph_count": 16,
+    "header_count": 3,
+    "code_block_count": 5,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-22T10:32:16.022341",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Updating All Extensions",
+      "anchor": "updating-all-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Updating Selected Extensions",
+      "anchor": "updating-selected-extensions"
+    },
+    {
+      "level": 2,
+      "title": "How It Works",
+      "anchor": "how-it-works"
+    }
+  ]
+}

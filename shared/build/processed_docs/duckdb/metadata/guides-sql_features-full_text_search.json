@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_features/full_text_search"
+  ],
+  "title": "Full-Text Search",
+  "file_name": "full_text_search.md",
+  "file_stem": "full_text_search",
+  "file_path": "guides/sql_features/full_text_search.md",
+  "file_size": 4600,
+  "document_id": "guides-sql_features-full_text_search",
+  "url": "/guides/sql_features/full_text_search",
+  "content_hash": "e34ed184b378471e7f8fba98e67822fb",
+  "statistics": {
+    "char_count": 4011,
+    "word_count": 630,
+    "line_count": 73,
+    "paragraph_count": 18,
+    "header_count": 3,
+    "code_block_count": 4,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:11.991185",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example: Shakespeare Corpus",
+      "anchor": "example-shakespeare-corpus"
+    },
+    {
+      "level": 2,
+      "title": "Creating a Full-Text Search Index",
+      "anchor": "creating-a-full-text-search-index"
+    },
+    {
+      "level": 2,
+      "title": "Note on Generating the Corpus Table",
+      "anchor": "note-on-generating-the-corpus-table"
+    }
+  ]
+}

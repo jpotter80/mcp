@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/parquet_import",
+    "/docs/guides/import/parquet_import/",
+    "/docs/guides/file_formats/parquet_import"
+  ],
+  "title": "Parquet Import",
+  "file_name": "parquet_import.md",
+  "file_stem": "parquet_import",
+  "file_path": "guides/file_formats/parquet_import.md",
+  "file_size": 2260,
+  "document_id": "guides-file_formats-parquet_import",
+  "url": "/guides/file_formats/parquet_import",
+  "content_hash": "3984ffaf66b6414dc0b693045c05aa3c",
+  "statistics": {
+    "char_count": 1870,
+    "word_count": 286,
+    "line_count": 65,
+    "paragraph_count": 19,
+    "header_count": 1,
+    "code_block_count": 8,
+    "code_lines": 19
+  },
+  "processed_at": "2025-11-22T10:32:10.947112",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Adjusting the Schema on the Fly",
+      "anchor": "adjusting-the-schema-on-the-fly"
+    }
+  ]
+}

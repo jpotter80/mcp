@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/query_syntax/unnest"
+  ],
+  "title": "Unnesting",
+  "file_name": "unnest.md",
+  "file_stem": "unnest",
+  "file_path": "sql/query_syntax/unnest.md",
+  "file_size": 4092,
+  "document_id": "sql-query_syntax-unnest",
+  "url": "/sql/query_syntax/unnest",
+  "content_hash": "fb742c9106d31991455a9075db78cd69",
+  "statistics": {
+    "char_count": 3950,
+    "word_count": 690,
+    "line_count": 161,
+    "paragraph_count": 49,
+    "header_count": 6,
+    "code_block_count": 18,
+    "code_lines": 19
+  },
+  "processed_at": "2025-11-22T10:32:15.330554",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Unnesting Lists",
+      "anchor": "unnesting-lists"
+    },
+    {
+      "level": 3,
+      "title": "Unnesting Structs",
+      "anchor": "unnesting-structs"
+    },
+    {
+      "level": 3,
+      "title": "Recursive Unnest",
+      "anchor": "recursive-unnest"
+    },
+    {
+      "level": 3,
+      "title": "Setting the Maximum Depth of Unnesting",
+      "anchor": "setting-the-maximum-depth-of-unnesting"
+    },
+    {
+      "level": 3,
+      "title": "Keeping Track of List Entry Positions",
+      "anchor": "keeping-track-of-list-entry-positions"
+    }
+  ]
+}

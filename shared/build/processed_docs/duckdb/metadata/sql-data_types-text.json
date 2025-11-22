@@ -1,0 +1,52 @@
+{
+  "blurb": "In DuckDB, strings can be stored in the VARCHAR field.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/text"
+  ],
+  "title": "Text Types",
+  "file_name": "text.md",
+  "file_stem": "text",
+  "file_path": "sql/data_types/text.md",
+  "file_size": 3070,
+  "document_id": "sql-data_types-text",
+  "url": "/sql/data_types/text",
+  "content_hash": "c344eaa51f1adc6a81dc81ff8b721532",
+  "statistics": {
+    "char_count": 2799,
+    "word_count": 382,
+    "line_count": 60,
+    "paragraph_count": 19,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:12.627623",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Specifying a Length Limit",
+      "anchor": "specifying-a-length-limit"
+    },
+    {
+      "level": 2,
+      "title": "Specifying a Compression Type",
+      "anchor": "specifying-a-compression-type"
+    },
+    {
+      "level": 2,
+      "title": "Text Type Values",
+      "anchor": "text-type-values"
+    },
+    {
+      "level": 2,
+      "title": "Strings with Special Characters",
+      "anchor": "strings-with-special-characters"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

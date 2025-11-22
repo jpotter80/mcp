@@ -1,0 +1,96 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/map"
+  ],
+  "title": "Map Functions",
+  "file_name": "map.md",
+  "file_stem": "map",
+  "file_path": "sql/functions/map.md",
+  "file_size": 6376,
+  "document_id": "sql-functions-map",
+  "url": "/sql/functions/map",
+  "content_hash": "d7392bb08507a6db606fc6ce9618308c",
+  "statistics": {
+    "char_count": 5750,
+    "word_count": 962,
+    "line_count": 104,
+    "paragraph_count": 29,
+    "header_count": 14,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.892993",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`cardinality(map)`",
+      "anchor": "cardinalitymap"
+    },
+    {
+      "level": 4,
+      "title": "`element_at(map, key)`",
+      "anchor": "element_atmap-key"
+    },
+    {
+      "level": 4,
+      "title": "`map_concat(maps...)`",
+      "anchor": "map_concatmaps"
+    },
+    {
+      "level": 4,
+      "title": "`map_contains(map, key)`",
+      "anchor": "map_containsmap-key"
+    },
+    {
+      "level": 4,
+      "title": "`map_contains_entry(map, key, value)`",
+      "anchor": "map_contains_entrymap-key-value"
+    },
+    {
+      "level": 4,
+      "title": "`map_contains_value(map, value)`",
+      "anchor": "map_contains_valuemap-value"
+    },
+    {
+      "level": 4,
+      "title": "`map_entries(map)`",
+      "anchor": "map_entriesmap"
+    },
+    {
+      "level": 4,
+      "title": "`map_extract(map, key)`",
+      "anchor": "map_extractmap-key"
+    },
+    {
+      "level": 4,
+      "title": "`map_extract_value(map, key)`",
+      "anchor": "map_extract_valuemap-key"
+    },
+    {
+      "level": 4,
+      "title": "`map_from_entries(STRUCT(k, v)[])`",
+      "anchor": "map_from_entriesstructk-v"
+    },
+    {
+      "level": 4,
+      "title": "`map_keys(map)`",
+      "anchor": "map_keysmap"
+    },
+    {
+      "level": 4,
+      "title": "`map_values(map)`",
+      "anchor": "map_valuesmap"
+    },
+    {
+      "level": 4,
+      "title": "`map()`",
+      "anchor": "map"
+    },
+    {
+      "level": 4,
+      "title": "`map[entry]`",
+      "anchor": "mapentry"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/benchmarks"
+  ],
+  "title": "Benchmarks",
+  "file_name": "benchmarks.md",
+  "file_stem": "benchmarks",
+  "file_path": "guides/performance/benchmarks.md",
+  "file_size": 1919,
+  "document_id": "guides-performance-benchmarks",
+  "url": "/guides/performance/benchmarks",
+  "content_hash": "941a10239fe5a48a855048b48d0ae96b",
+  "statistics": {
+    "char_count": 1663,
+    "word_count": 191,
+    "line_count": 18,
+    "paragraph_count": 8,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.251786",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Benchmark Environment",
+      "anchor": "benchmark-environment"
+    },
+    {
+      "level": 2,
+      "title": "Datasets",
+      "anchor": "datasets"
+    },
+    {
+      "level": 2,
+      "title": "A Note on Benchmarks",
+      "anchor": "a-note-on-benchmarks"
+    },
+    {
+      "level": 2,
+      "title": "Disclaimer on Benchmarks",
+      "anchor": "disclaimer-on-benchmarks"
+    }
+  ]
+}

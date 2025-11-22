@@ -1,0 +1,3638 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/relational_api",
+    "/docs/api/python/relational_api/",
+    "/docs/clients/python/relational_api"
+  ],
+  "title": "Relational API",
+  "file_name": "relational_api.md",
+  "file_stem": "relational_api",
+  "file_path": "clients/python/relational_api.md",
+  "file_size": 247942,
+  "document_id": "clients-python-relational_api",
+  "url": "/clients/python/relational_api",
+  "content_hash": "f589938ba550c75d8942cd28489f1009",
+  "statistics": {
+    "char_count": 185308,
+    "word_count": 23630,
+    "line_count": 7584,
+    "paragraph_count": 2339,
+    "header_count": 722,
+    "code_block_count": 369,
+    "code_lines": 2928
+  },
+  "processed_at": "2025-11-22T10:32:06.088567",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Lazy Evaluation",
+      "anchor": "lazy-evaluation"
+    },
+    {
+      "level": 1,
+      "title": "100% ▕████████████████████████████████████████████████████████████▏",
+      "anchor": "100-"
+    },
+    {
+      "level": 2,
+      "title": "Relation Creation",
+      "anchor": "relation-creation"
+    },
+    {
+      "level": 4,
+      "title": "`from_arrow`",
+      "anchor": "from_arrow"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`from_csv_auto`",
+      "anchor": "from_csv_auto"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`from_df`",
+      "anchor": "from_df"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`from_parquet`",
+      "anchor": "from_parquet"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`from_query`",
+      "anchor": "from_query"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`query`",
+      "anchor": "query"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`read_csv`",
+      "anchor": "read_csv"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`read_json`",
+      "anchor": "read_json"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`read_parquet`",
+      "anchor": "read_parquet"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`sql`",
+      "anchor": "sql"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`table`",
+      "anchor": "table"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`table_function`",
+      "anchor": "table_function"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`values`",
+      "anchor": "values"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`view`",
+      "anchor": "view"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 2,
+      "title": "Relation Definition Details",
+      "anchor": "relation-definition-details"
+    },
+    {
+      "level": 4,
+      "title": "`alias`",
+      "anchor": "alias"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`columns`",
+      "anchor": "columns"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`describe`",
+      "anchor": "describe"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`description`",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`dtypes`",
+      "anchor": "dtypes"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`explain`",
+      "anchor": "explain"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`query`",
+      "anchor": "query"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`set_alias`",
+      "anchor": "set_alias"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`shape`",
+      "anchor": "shape"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`show`",
+      "anchor": "show"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`sql_query`",
+      "anchor": "sql_query"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`type`",
+      "anchor": "type"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`types`",
+      "anchor": "types"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 2,
+      "title": "Transformation",
+      "anchor": "transformation"
+    },
+    {
+      "level": 4,
+      "title": "`aggregate`",
+      "anchor": "aggregate"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`apply`",
+      "anchor": "apply"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`cross`",
+      "anchor": "cross"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`except_`",
+      "anchor": "except_"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`filter`",
+      "anchor": "filter"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`insert`",
+      "anchor": "insert"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`insert_into`",
+      "anchor": "insert_into"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`intersect`",
+      "anchor": "intersect"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`join`",
+      "anchor": "join"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`limit`",
+      "anchor": "limit"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`map`",
+      "anchor": "map"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`order`",
+      "anchor": "order"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`project`",
+      "anchor": "project"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`select`",
+      "anchor": "select"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`sort`",
+      "anchor": "sort"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`union`",
+      "anchor": "union"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`update`",
+      "anchor": "update"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 1,
+      "title": "the update is executed on the table, but not reflected on the relationship",
+      "anchor": "the-update-is-executed-on-the-table-but-not-reflected-on-the-relationship"
+    },
+    {
+      "level": 1,
+      "title": "the relationship has to be recreated to retrieve the modified data",
+      "anchor": "the-relationship-has-to-be-recreated-to-retrieve-the-modified-data"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 4,
+      "title": "`any_value`",
+      "anchor": "any_value"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`arg_max`",
+      "anchor": "arg_max"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`arg_min`",
+      "anchor": "arg_min"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`avg`",
+      "anchor": "avg"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bit_and`",
+      "anchor": "bit_and"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bit_or`",
+      "anchor": "bit_or"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bit_xor`",
+      "anchor": "bit_xor"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bitstring_agg`",
+      "anchor": "bitstring_agg"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bool_and`",
+      "anchor": "bool_and"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`bool_or`",
+      "anchor": "bool_or"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`count`",
+      "anchor": "count"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`cume_dist`",
+      "anchor": "cume_dist"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`dense_rank`",
+      "anchor": "dense_rank"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`distinct`",
+      "anchor": "distinct"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`favg`",
+      "anchor": "favg"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`first`",
+      "anchor": "first"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`first_value`",
+      "anchor": "first_value"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fsum`",
+      "anchor": "fsum"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`geomean`",
+      "anchor": "geomean"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`histogram`",
+      "anchor": "histogram"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`lag`",
+      "anchor": "lag"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`last`",
+      "anchor": "last"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`last_value`",
+      "anchor": "last_value"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`lead`",
+      "anchor": "lead"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`list`",
+      "anchor": "list"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`max`",
+      "anchor": "max"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`mean`",
+      "anchor": "mean"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`median`",
+      "anchor": "median"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`min`",
+      "anchor": "min"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`mode`",
+      "anchor": "mode"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`n_tile`",
+      "anchor": "n_tile"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`nth_value`",
+      "anchor": "nth_value"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`percent_rank`",
+      "anchor": "percent_rank"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`product`",
+      "anchor": "product"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`quantile`",
+      "anchor": "quantile"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`quantile_cont`",
+      "anchor": "quantile_cont"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`quantile_disc`",
+      "anchor": "quantile_disc"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`rank`",
+      "anchor": "rank"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`rank_dense`",
+      "anchor": "rank_dense"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`row_number`",
+      "anchor": "row_number"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`select_dtypes`",
+      "anchor": "select_dtypes"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`select_types`",
+      "anchor": "select_types"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`std`",
+      "anchor": "std"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`stddev`",
+      "anchor": "stddev"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`stddev_pop`",
+      "anchor": "stddev_pop"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`stddev_samp`",
+      "anchor": "stddev_samp"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`string_agg`",
+      "anchor": "string_agg"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`sum`",
+      "anchor": "sum"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`unique`",
+      "anchor": "unique"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`value_counts`",
+      "anchor": "value_counts"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`var`",
+      "anchor": "var"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`var_pop`",
+      "anchor": "var_pop"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`var_samp`",
+      "anchor": "var_samp"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`variance`",
+      "anchor": "variance"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 2,
+      "title": "Output",
+      "anchor": "output"
+    },
+    {
+      "level": 4,
+      "title": "`arrow`",
+      "anchor": "arrow"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`close`",
+      "anchor": "close"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "`create`",
+      "anchor": "create"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`create_view`",
+      "anchor": "create_view"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`df`",
+      "anchor": "df"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`execute`",
+      "anchor": "execute"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetch_arrow_reader`",
+      "anchor": "fetch_arrow_reader"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetch_arrow_table`",
+      "anchor": "fetch_arrow_table"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetch_df_chunk`",
+      "anchor": "fetch_df_chunk"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetchall`",
+      "anchor": "fetchall"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetchdf`",
+      "anchor": "fetchdf"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetchmany`",
+      "anchor": "fetchmany"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetchnumpy`",
+      "anchor": "fetchnumpy"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`fetchone`",
+      "anchor": "fetchone"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`pl`",
+      "anchor": "pl"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`record_batch`",
+      "anchor": "record_batch"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`tf`",
+      "anchor": "tf"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_arrow_table`",
+      "anchor": "to_arrow_table"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_csv`",
+      "anchor": "to_csv"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_df`",
+      "anchor": "to_df"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_parquet`",
+      "anchor": "to_parquet"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_table`",
+      "anchor": "to_table"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`to_view`",
+      "anchor": "to_view"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`torch`",
+      "anchor": "torch"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`write_csv`",
+      "anchor": "write_csv"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    },
+    {
+      "level": 4,
+      "title": "`write_parquet`",
+      "anchor": "write_parquet"
+    },
+    {
+      "level": 5,
+      "title": "Signature",
+      "anchor": "signature"
+    },
+    {
+      "level": 5,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 5,
+      "title": "Result",
+      "anchor": "result"
+    }
+  ]
+}

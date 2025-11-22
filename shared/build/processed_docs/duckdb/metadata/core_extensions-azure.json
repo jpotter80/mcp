@@ -1,0 +1,110 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-azure",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/azure",
+    "/docs/stable/extensions/azure/",
+    "/docs/extensions/azure",
+    "/docs/extensions/azure/"
+  ],
+  "title": "Azure Extension",
+  "file_name": "azure.md",
+  "file_stem": "azure",
+  "file_path": "core_extensions/azure.md",
+  "file_size": 16175,
+  "document_id": "core_extensions-azure",
+  "url": "/core_extensions/azure",
+  "content_hash": "abae9897f8b706f7fb27e4f8e41c1584",
+  "statistics": {
+    "char_count": 15332,
+    "word_count": 1702,
+    "line_count": 373,
+    "paragraph_count": 88,
+    "header_count": 16,
+    "code_block_count": 25,
+    "code_lines": 109
+  },
+  "processed_at": "2025-11-22T10:32:07.671960",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "Azure Blob Storage",
+      "anchor": "azure-blob-storage"
+    },
+    {
+      "level": 3,
+      "title": "Azure Data Lake Storage (ADLS)",
+      "anchor": "azure-data-lake-storage-adls"
+    },
+    {
+      "level": 2,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 2,
+      "title": "Authentication",
+      "anchor": "authentication"
+    },
+    {
+      "level": 3,
+      "title": "Authentication with Secret",
+      "anchor": "authentication-with-secret"
+    },
+    {
+      "level": 4,
+      "title": "`CONFIG` Provider",
+      "anchor": "config-provider"
+    },
+    {
+      "level": 4,
+      "title": "`credential_chain` Provider",
+      "anchor": "credential_chain-provider"
+    },
+    {
+      "level": 4,
+      "title": "Managed Identity",
+      "anchor": "managed-identity"
+    },
+    {
+      "level": 4,
+      "title": "`SERVICE_PRINCIPAL` Provider",
+      "anchor": "service_principal-provider"
+    },
+    {
+      "level": 4,
+      "title": "Configuring a Proxy",
+      "anchor": "configuring-a-proxy"
+    },
+    {
+      "level": 3,
+      "title": "Authentication with Variables (Deprecated)",
+      "anchor": "authentication-with-variables-deprecated"
+    },
+    {
+      "level": 2,
+      "title": "Additional Information",
+      "anchor": "additional-information"
+    },
+    {
+      "level": 3,
+      "title": "Logging",
+      "anchor": "logging"
+    },
+    {
+      "level": 3,
+      "title": "Difference between ADLS and Blob Storage",
+      "anchor": "difference-between-adls-and-blob-storage"
+    }
+  ]
+}

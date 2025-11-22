@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "statements/use.js",
+  "redirect_from": [
+    "/docs/sql/statements/use"
+  ],
+  "title": "USE Statement",
+  "file_name": "use.md",
+  "file_stem": "use",
+  "file_path": "sql/statements/use.md",
+  "file_size": 824,
+  "document_id": "sql-statements-use",
+  "url": "/sql/statements/use",
+  "content_hash": "99b8e35cae1e3c3899691e8e75354662",
+  "statistics": {
+    "char_count": 681,
+    "word_count": 112,
+    "line_count": 19,
+    "paragraph_count": 5,
+    "header_count": 2,
+    "code_block_count": 1,
+    "code_lines": 7
+  },
+  "processed_at": "2025-11-22T10:32:16.027787",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

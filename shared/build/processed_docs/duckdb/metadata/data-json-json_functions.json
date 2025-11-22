@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/json_functions"
+  ],
+  "title": "JSON Processing Functions",
+  "file_name": "json_functions.md",
+  "file_stem": "json_functions",
+  "file_path": "data/json/json_functions.md",
+  "file_size": 19371,
+  "document_id": "data-json-json_functions",
+  "url": "/data/json/json_functions",
+  "content_hash": "30492fd151d022b927d7b7d4f7b4ff83",
+  "statistics": {
+    "char_count": 15731,
+    "word_count": 2304,
+    "line_count": 545,
+    "paragraph_count": 132,
+    "header_count": 5,
+    "code_block_count": 90,
+    "code_lines": 119
+  },
+  "processed_at": "2025-11-22T10:32:09.613340",
+  "sections": [
+    {
+      "level": 2,
+      "title": "JSON Extraction Functions",
+      "anchor": "json-extraction-functions"
+    },
+    {
+      "level": 2,
+      "title": "JSON Scalar Functions",
+      "anchor": "json-scalar-functions"
+    },
+    {
+      "level": 2,
+      "title": "JSON Aggregate Functions",
+      "anchor": "json-aggregate-functions"
+    },
+    {
+      "level": 2,
+      "title": "Transforming JSON to Nested Types",
+      "anchor": "transforming-json-to-nested-types"
+    },
+    {
+      "level": 2,
+      "title": "JSON Table Functions",
+      "anchor": "json-table-functions"
+    }
+  ]
+}

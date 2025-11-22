@@ -1,0 +1,52 @@
+{
+  "layout": "docu",
+  "railroad": "statements/constraints.js",
+  "redirect_from": [
+    "/docs/sql/constraints"
+  ],
+  "title": "Constraints",
+  "file_name": "constraints.md",
+  "file_stem": "constraints",
+  "file_path": "sql/constraints.md",
+  "file_size": 5377,
+  "document_id": "sql-constraints",
+  "url": "/sql/constraints",
+  "content_hash": "1d2265a5801f42d9b778854ea0a55ce9",
+  "statistics": {
+    "char_count": 5220,
+    "word_count": 748,
+    "line_count": 118,
+    "paragraph_count": 31,
+    "header_count": 5,
+    "code_block_count": 14,
+    "code_lines": 42
+  },
+  "processed_at": "2025-11-22T10:32:12.334685",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Check Constraint",
+      "anchor": "check-constraint"
+    },
+    {
+      "level": 2,
+      "title": "Not Null Constraint",
+      "anchor": "not-null-constraint"
+    },
+    {
+      "level": 2,
+      "title": "Primary Key and Unique Constraint",
+      "anchor": "primary-key-and-unique-constraint"
+    },
+    {
+      "level": 2,
+      "title": "Foreign Keys",
+      "anchor": "foreign-keys"
+    }
+  ]
+}

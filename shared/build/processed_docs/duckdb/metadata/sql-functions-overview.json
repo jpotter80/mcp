@@ -1,0 +1,54 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/function.js",
+  "redirect_from": [
+    "/docs/test/functions/overview",
+    "/docs/test/functions/overview/",
+    "/docs/sql/functions/overview"
+  ],
+  "title": "Functions",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "sql/functions/overview.md",
+  "file_size": 4670,
+  "document_id": "sql-functions-overview",
+  "url": "/sql/functions/overview",
+  "content_hash": "cbd11806622123f95c257ebe3b68abf5",
+  "statistics": {
+    "char_count": 3457,
+    "word_count": 492,
+    "line_count": 87,
+    "paragraph_count": 23,
+    "header_count": 5,
+    "code_block_count": 9,
+    "code_lines": 24
+  },
+  "processed_at": "2025-11-22T10:32:13.997981",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Function Syntax",
+      "anchor": "function-syntax"
+    },
+    {
+      "level": 2,
+      "title": "Function Chaining via the Dot Operator",
+      "anchor": "function-chaining-via-the-dot-operator"
+    },
+    {
+      "level": 3,
+      "title": "Using with Literals and Arrays",
+      "anchor": "using-with-literals-and-arrays"
+    },
+    {
+      "level": 3,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Query Functions",
+      "anchor": "query-functions"
+    }
+  ]
+}

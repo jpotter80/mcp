@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createschema.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_schema"
+  ],
+  "title": "CREATE SCHEMA Statement",
+  "file_name": "create_schema.md",
+  "file_stem": "create_schema",
+  "file_path": "sql/statements/create_schema.md",
+  "file_size": 796,
+  "document_id": "sql-statements-create_schema",
+  "url": "/sql/statements/create_schema",
+  "content_hash": "73842fd50a31ee579de4af1dde94e726",
+  "statistics": {
+    "char_count": 625,
+    "word_count": 107,
+    "line_count": 38,
+    "paragraph_count": 13,
+    "header_count": 2,
+    "code_block_count": 5,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:15.716292",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

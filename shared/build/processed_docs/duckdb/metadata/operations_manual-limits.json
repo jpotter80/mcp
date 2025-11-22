@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/limits"
+  ],
+  "title": "Limits",
+  "file_name": "limits.md",
+  "file_stem": "limits",
+  "file_path": "operations_manual/limits.md",
+  "file_size": 1183,
+  "document_id": "operations_manual-limits",
+  "url": "/operations_manual/limits",
+  "content_hash": "92663167ac5b751319164ebda46d366c",
+  "statistics": {
+    "char_count": 1098,
+    "word_count": 180,
+    "line_count": 20,
+    "paragraph_count": 5,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.236834",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Limit Values",
+      "anchor": "limit-values"
+    },
+    {
+      "level": 2,
+      "title": "Size of Database Files",
+      "anchor": "size-of-database-files"
+    }
+  ]
+}

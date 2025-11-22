@@ -1,0 +1,54 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/httpfs/https",
+    "/docs/extensions/httpfs/https/",
+    "/docs/stable/extensions/httpfs/https",
+    "/docs/stable/extensions/httpfs/https/"
+  ],
+  "title": "HTTP(S) Support",
+  "file_name": "https.md",
+  "file_stem": "https",
+  "file_path": "core_extensions/httpfs/https.md",
+  "file_size": 2815,
+  "document_id": "core_extensions-httpfs-https",
+  "url": "/core_extensions/httpfs/https",
+  "content_hash": "61c0246d3297451cd0cb91efc3b86e50",
+  "statistics": {
+    "char_count": 2534,
+    "word_count": 316,
+    "line_count": 90,
+    "paragraph_count": 24,
+    "header_count": 5,
+    "code_block_count": 9,
+    "code_lines": 33
+  },
+  "processed_at": "2025-11-22T10:32:08.115712",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Partial Reading",
+      "anchor": "partial-reading"
+    },
+    {
+      "level": 2,
+      "title": "Scanning Multiple Files",
+      "anchor": "scanning-multiple-files"
+    },
+    {
+      "level": 2,
+      "title": "Authenticating",
+      "anchor": "authenticating"
+    },
+    {
+      "level": 2,
+      "title": "HTTP Proxy",
+      "anchor": "http-proxy"
+    },
+    {
+      "level": 2,
+      "title": "Using a Custom Certificate File",
+      "anchor": "using-a-custom-certificate-file"
+    }
+  ]
+}

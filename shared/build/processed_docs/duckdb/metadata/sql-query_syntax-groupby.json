@@ -1,0 +1,52 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/groupby.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/groupby"
+  ],
+  "title": "GROUP BY Clause",
+  "file_name": "groupby.md",
+  "file_stem": "groupby",
+  "file_path": "sql/query_syntax/groupby.md",
+  "file_size": 2408,
+  "document_id": "sql-query_syntax-groupby",
+  "url": "/sql/query_syntax/groupby",
+  "content_hash": "7ffc4e70f18859502d9d6cfe5a941774",
+  "statistics": {
+    "char_count": 2248,
+    "word_count": 333,
+    "line_count": 56,
+    "paragraph_count": 17,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:15.194523",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`GROUP BY ALL`",
+      "anchor": "group-by-all"
+    },
+    {
+      "level": 2,
+      "title": "Multiple Dimensions",
+      "anchor": "multiple-dimensions"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "`GROUP BY ALL` Examples",
+      "anchor": "group-by-all-examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

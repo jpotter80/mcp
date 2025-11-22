@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/query_postgres",
+    "/docs/guides/import/query_postgres/",
+    "/docs/guides/database_integration/postgres"
+  ],
+  "title": "PostgreSQL Import",
+  "file_name": "postgres.md",
+  "file_stem": "postgres",
+  "file_path": "guides/database_integration/postgres.md",
+  "file_size": 2460,
+  "document_id": "guides-database_integration-postgres",
+  "url": "/guides/database_integration/postgres",
+  "content_hash": "64939a91188763dedd6f7b6dc43a46de",
+  "statistics": {
+    "char_count": 2073,
+    "word_count": 308,
+    "line_count": 51,
+    "paragraph_count": 14,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:10.882521",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation and Loading",
+      "anchor": "installation-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    }
+  ]
+}

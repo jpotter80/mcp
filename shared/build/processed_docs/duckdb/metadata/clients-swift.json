@@ -1,0 +1,59 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-swift",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/swift",
+    "/docs/api/swift/",
+    "/docs/clients/swift"
+  ],
+  "title": "Swift Client",
+  "file_name": "swift.md",
+  "file_stem": "swift",
+  "file_path": "clients/swift.md",
+  "file_size": 4762,
+  "document_id": "clients-swift",
+  "url": "/clients/swift",
+  "content_hash": "1e92d92e71f1a0cb8f68fec829f4a157",
+  "statistics": {
+    "char_count": 4449,
+    "word_count": 540,
+    "line_count": 145,
+    "paragraph_count": 42,
+    "header_count": 6,
+    "code_block_count": 8,
+    "code_lines": 85
+  },
+  "processed_at": "2025-11-22T10:32:07.183559",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Instantiating DuckDB",
+      "anchor": "instantiating-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Application Example",
+      "anchor": "application-example"
+    },
+    {
+      "level": 3,
+      "title": "Creating an Application-Specific Type",
+      "anchor": "creating-an-application-specific-type"
+    },
+    {
+      "level": 3,
+      "title": "Loading a CSV File",
+      "anchor": "loading-a-csv-file"
+    },
+    {
+      "level": 3,
+      "title": "Querying the Database",
+      "anchor": "querying-the-database"
+    },
+    {
+      "level": 3,
+      "title": "Complete Project",
+      "anchor": "complete-project"
+    }
+  ]
+}

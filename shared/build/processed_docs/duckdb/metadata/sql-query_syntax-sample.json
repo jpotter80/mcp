@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/sample.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/sample"
+  ],
+  "title": "SAMPLE Clause",
+  "file_name": "sample.md",
+  "file_stem": "sample",
+  "file_path": "sql/query_syntax/sample.md",
+  "file_size": 1062,
+  "document_id": "sql-query_syntax-sample",
+  "url": "/sql/query_syntax/sample",
+  "content_hash": "0e61c99033d7009b6952d91a5f12fbd8",
+  "statistics": {
+    "char_count": 910,
+    "word_count": 153,
+    "line_count": 29,
+    "paragraph_count": 9,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:15.277408",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/s3_export",
+    "/docs/guides/import/s3_export/",
+    "/docs/guides/network_cloud_storage/s3_export"
+  ],
+  "title": "S3 Parquet Export",
+  "file_name": "s3_export.md",
+  "file_stem": "s3_export",
+  "file_path": "guides/network_cloud_storage/s3_export.md",
+  "file_size": 2000,
+  "document_id": "guides-network_cloud_storage-s3_export",
+  "url": "/guides/network_cloud_storage/s3_export",
+  "content_hash": "99915c8bae6a3a1345bf856df7cf59fb",
+  "statistics": {
+    "char_count": 1750,
+    "word_count": 219,
+    "line_count": 56,
+    "paragraph_count": 15,
+    "header_count": 0,
+    "code_block_count": 7,
+    "code_lines": 19
+  },
+  "processed_at": "2025-11-22T10:32:11.120009",
+  "sections": []
+}

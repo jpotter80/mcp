@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "title": "Iceberg REST Catalogs",
+  "file_name": "iceberg_rest_catalogs.md",
+  "file_stem": "iceberg_rest_catalogs",
+  "file_path": "core_extensions/iceberg/iceberg_rest_catalogs.md",
+  "file_size": 8010,
+  "document_id": "core_extensions-iceberg-iceberg_rest_catalogs",
+  "url": "/core_extensions/iceberg/iceberg_rest_catalogs",
+  "content_hash": "bd2846807f65f1630c1aa2373f80bc00",
+  "statistics": {
+    "char_count": 7067,
+    "word_count": 914,
+    "line_count": 204,
+    "paragraph_count": 57,
+    "header_count": 10,
+    "code_block_count": 15,
+    "code_lines": 63
+  },
+  "processed_at": "2025-11-22T10:32:08.250623",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`ATTACH` Options",
+      "anchor": "attach-options"
+    },
+    {
+      "level": 3,
+      "title": "Supported Operations",
+      "anchor": "supported-operations"
+    },
+    {
+      "level": 3,
+      "title": "Metadata Operations",
+      "anchor": "metadata-operations"
+    },
+    {
+      "level": 3,
+      "title": "Interoperability with DuckLake",
+      "anchor": "interoperability-with-ducklake"
+    },
+    {
+      "level": 3,
+      "title": "Unsupported Operations",
+      "anchor": "unsupported-operations"
+    },
+    {
+      "level": 2,
+      "title": "Specific Catalog Examples",
+      "anchor": "specific-catalog-examples"
+    },
+    {
+      "level": 3,
+      "title": "R2 Catalog",
+      "anchor": "r2-catalog"
+    },
+    {
+      "level": 3,
+      "title": "Polaris",
+      "anchor": "polaris"
+    },
+    {
+      "level": 3,
+      "title": "Lakekeeper",
+      "anchor": "lakekeeper"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

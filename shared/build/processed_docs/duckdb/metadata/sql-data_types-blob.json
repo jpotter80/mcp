@@ -1,0 +1,32 @@
+{
+  "blurb": "The blob (Binary Large OBject) type represents an arbitrary binary object stored in the database system.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/blob"
+  ],
+  "title": "Blob Type",
+  "file_name": "blob.md",
+  "file_stem": "blob",
+  "file_path": "sql/data_types/blob.md",
+  "file_size": 1335,
+  "document_id": "sql-data_types-blob",
+  "url": "/sql/data_types/blob",
+  "content_hash": "7639723867032bbbfdaf65f2d8d812ac",
+  "statistics": {
+    "char_count": 1138,
+    "word_count": 182,
+    "line_count": 29,
+    "paragraph_count": 11,
+    "header_count": 1,
+    "code_block_count": 3,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:12.369426",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

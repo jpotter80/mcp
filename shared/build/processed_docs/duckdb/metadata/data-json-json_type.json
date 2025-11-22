@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/json",
+    "/docs/sql/data_types/json/",
+    "/docs/data/json/json_type"
+  ],
+  "title": "JSON Type",
+  "file_name": "json_type.md",
+  "file_stem": "json_type",
+  "file_path": "data/json/json_type.md",
+  "file_size": 1124,
+  "document_id": "data-json-json_type",
+  "url": "/data/json/json_type",
+  "content_hash": "f87570f10c1beb53d1a5b002feeeb329",
+  "statistics": {
+    "char_count": 984,
+    "word_count": 156,
+    "line_count": 35,
+    "paragraph_count": 11,
+    "header_count": 0,
+    "code_block_count": 6,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:09.673968",
+  "sections": []
+}

@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/expression",
+    "/docs/api/python/expression/",
+    "/docs/clients/python/expression"
+  ],
+  "title": "Expression API",
+  "file_name": "expression.md",
+  "file_stem": "expression",
+  "file_path": "clients/python/expression.md",
+  "file_size": 10118,
+  "document_id": "clients-python-expression",
+  "url": "/clients/python/expression",
+  "content_hash": "02aabbf653b58afc49f21c4cb129beed",
+  "statistics": {
+    "char_count": 6803,
+    "word_count": 905,
+    "line_count": 273,
+    "paragraph_count": 53,
+    "header_count": 9,
+    "code_block_count": 15,
+    "code_lines": 162
+  },
+  "processed_at": "2025-11-22T10:32:04.724197",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Why Would I Use the Expression API?",
+      "anchor": "why-would-i-use-the-expression-api"
+    },
+    {
+      "level": 2,
+      "title": "Column Expression",
+      "anchor": "column-expression"
+    },
+    {
+      "level": 2,
+      "title": "Star Expression",
+      "anchor": "star-expression"
+    },
+    {
+      "level": 2,
+      "title": "Constant Expression",
+      "anchor": "constant-expression"
+    },
+    {
+      "level": 2,
+      "title": "Case Expression",
+      "anchor": "case-expression"
+    },
+    {
+      "level": 2,
+      "title": "Function Expression",
+      "anchor": "function-expression"
+    },
+    {
+      "level": 2,
+      "title": "SQL Expression",
+      "anchor": "sql-expression"
+    },
+    {
+      "level": 2,
+      "title": "Common Operations",
+      "anchor": "common-operations"
+    },
+    {
+      "level": 3,
+      "title": "Order Operations",
+      "anchor": "order-operations"
+    }
+  ]
+}

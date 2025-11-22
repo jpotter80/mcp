@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance",
+    "/docs/guides/performance/",
+    "/docs/guides/performance/overview"
+  ],
+  "title": "Performance Guide",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "guides/performance/overview.md",
+  "file_size": 670,
+  "document_id": "guides-performance-overview",
+  "url": "/guides/performance/overview",
+  "content_hash": "3b2621d792b937c84fd411c7e1307be0",
+  "statistics": {
+    "char_count": 516,
+    "word_count": 67,
+    "line_count": 3,
+    "paragraph_count": 2,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.365701",
+  "sections": []
+}

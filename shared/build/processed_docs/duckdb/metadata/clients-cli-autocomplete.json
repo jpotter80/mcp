@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli/autocomplete",
+    "/docs/api/cli/autocomplete/",
+    "/docs/clients/cli/autocomplete"
+  ],
+  "title": "Autocomplete",
+  "file_name": "autocomplete.md",
+  "file_stem": "autocomplete",
+  "file_path": "clients/cli/autocomplete.md",
+  "file_size": 1116,
+  "document_id": "clients-cli-autocomplete",
+  "url": "/clients/cli/autocomplete",
+  "content_hash": "ee2eb2500b319257194e9195bf3a56f2",
+  "statistics": {
+    "char_count": 966,
+    "word_count": 136,
+    "line_count": 52,
+    "paragraph_count": 15,
+    "header_count": 0,
+    "code_block_count": 10,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:03.871374",
+  "sections": []
+}

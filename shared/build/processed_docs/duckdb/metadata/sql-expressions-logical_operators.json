@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/logical.js",
+  "redirect_from": [
+    "/docs/sql/expressions/logical_operators"
+  ],
+  "title": "Logical Operators",
+  "file_name": "logical_operators.md",
+  "file_stem": "logical_operators",
+  "file_path": "sql/expressions/logical_operators.md",
+  "file_size": 1114,
+  "document_id": "sql-expressions-logical_operators",
+  "url": "/sql/expressions/logical_operators",
+  "content_hash": "12a721908a1494f9bf7a83899515901b",
+  "statistics": {
+    "char_count": 874,
+    "word_count": 176,
+    "line_count": 22,
+    "paragraph_count": 6,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.133234",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Binary Operators: `AND` and `OR`",
+      "anchor": "binary-operators-and-and-or"
+    },
+    {
+      "level": 2,
+      "title": "Unary Operator: `NOT`",
+      "anchor": "unary-operator-not"
+    }
+  ]
+}

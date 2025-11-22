@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/summarize"
+  ],
+  "title": "SUMMARIZE Statement",
+  "file_name": "summarize.md",
+  "file_stem": "summarize",
+  "file_path": "sql/statements/summarize.md",
+  "file_size": 436,
+  "document_id": "sql-statements-summarize",
+  "url": "/sql/statements/summarize",
+  "content_hash": "0b30a9e6c660bb008f87731e0a3b04b3",
+  "statistics": {
+    "char_count": 338,
+    "word_count": 51,
+    "line_count": 17,
+    "paragraph_count": 7,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:15.953982",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

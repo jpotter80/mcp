@@ -1,0 +1,61 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_features/asof_join"
+  ],
+  "title": "AsOf Join",
+  "file_name": "asof_join.md",
+  "file_stem": "asof_join",
+  "file_path": "guides/sql_features/asof_join.md",
+  "file_size": 6031,
+  "document_id": "guides-sql_features-asof_join",
+  "url": "/guides/sql_features/asof_join",
+  "content_hash": "2c5d49956f450246a47a67cd7d2046ed",
+  "statistics": {
+    "char_count": 5795,
+    "word_count": 1050,
+    "line_count": 161,
+    "paragraph_count": 38,
+    "header_count": 7,
+    "code_block_count": 6,
+    "code_lines": 22
+  },
+  "processed_at": "2025-11-22T10:32:11.961059",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What is an AsOf Join?",
+      "anchor": "what-is-an-asof-join"
+    },
+    {
+      "level": 2,
+      "title": "Portfolio Example Dataset",
+      "anchor": "portfolio-example-dataset"
+    },
+    {
+      "level": 2,
+      "title": "Inner AsOf Joins",
+      "anchor": "inner-asof-joins"
+    },
+    {
+      "level": 2,
+      "title": "Outer AsOf Joins",
+      "anchor": "outer-asof-joins"
+    },
+    {
+      "level": 2,
+      "title": "AsOf Joins with the `USING` Keyword",
+      "anchor": "asof-joins-with-the-using-keyword"
+    },
+    {
+      "level": 3,
+      "title": "Clarification on Column Selection with `USING` in ASOF Joins",
+      "anchor": "clarification-on-column-selection-with-using-in-asof-joins"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

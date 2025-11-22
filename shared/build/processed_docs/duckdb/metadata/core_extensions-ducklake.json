@@ -1,0 +1,99 @@
+{
+  "github_repository": "https://github.com/duckdb/ducklake",
+  "layout": "docu",
+  "redirect_from": [
+    "/ducklake",
+    "/docs/extensions/ducklake",
+    "/docs/extensions/ducklake/"
+  ],
+  "title": "DuckLake",
+  "file_name": "ducklake.md",
+  "file_stem": "ducklake",
+  "file_path": "core_extensions/ducklake.md",
+  "file_size": 10068,
+  "document_id": "core_extensions-ducklake",
+  "url": "/core_extensions/ducklake",
+  "content_hash": "ae2c0ea5480175b4517395c61461394a",
+  "statistics": {
+    "char_count": 7715,
+    "word_count": 1119,
+    "line_count": 182,
+    "paragraph_count": 51,
+    "header_count": 14,
+    "code_block_count": 5,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:07.742643",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Tables",
+      "anchor": "tables"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_snapshots`",
+      "anchor": "ducklake_snapshots"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_table_info`",
+      "anchor": "ducklake_table_info"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_table_insertions`",
+      "anchor": "ducklake_table_insertions"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_table_deletions`",
+      "anchor": "ducklake_table_deletions"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_table_changes`",
+      "anchor": "ducklake_table_changes"
+    },
+    {
+      "level": 2,
+      "title": "Commands",
+      "anchor": "commands"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_cleanup_old_files`",
+      "anchor": "ducklake_cleanup_old_files"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_expire_snapshots`",
+      "anchor": "ducklake_expire_snapshots"
+    },
+    {
+      "level": 3,
+      "title": "`ducklake_merge_adjacent_files`",
+      "anchor": "ducklake_merge_adjacent_files"
+    },
+    {
+      "level": 2,
+      "title": "Compatibility Matrix",
+      "anchor": "compatibility-matrix"
+    }
+  ]
+}

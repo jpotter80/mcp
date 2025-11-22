@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/troubleshooting"
+  ],
+  "title": "Troubleshooting",
+  "file_name": "troubleshooting.md",
+  "file_stem": "troubleshooting",
+  "file_path": "dev/building/troubleshooting.md",
+  "file_size": 741,
+  "document_id": "dev-building-troubleshooting",
+  "url": "/dev/building/troubleshooting",
+  "content_hash": "81101750cb78803eea341312bc99c30b",
+  "statistics": {
+    "char_count": 643,
+    "word_count": 92,
+    "line_count": 14,
+    "paragraph_count": 5,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:10.371015",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The Build Runs Out of Memory",
+      "anchor": "the-build-runs-out-of-memory"
+    }
+  ]
+}

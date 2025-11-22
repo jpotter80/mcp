@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/iceberg/amazon_s3_tables",
+    "/docs/stable/extensions/iceberg/amazon_s3_tables/"
+  ],
+  "title": "Amazon S3 Tables",
+  "file_name": "amazon_s3_tables.md",
+  "file_stem": "amazon_s3_tables",
+  "file_path": "core_extensions/iceberg/amazon_s3_tables.md",
+  "file_size": 1424,
+  "document_id": "core_extensions-iceberg-amazon_s3_tables",
+  "url": "/core_extensions/iceberg/amazon_s3_tables",
+  "content_hash": "f32f29880fbe45f3870da64bd732188f",
+  "statistics": {
+    "char_count": 1213,
+    "word_count": 162,
+    "line_count": 57,
+    "paragraph_count": 16,
+    "header_count": 2,
+    "code_block_count": 6,
+    "code_lines": 20
+  },
+  "processed_at": "2025-11-22T10:32:08.224311",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Requirements",
+      "anchor": "requirements"
+    },
+    {
+      "level": 2,
+      "title": "Connecting to Amazon S3 Tables",
+      "anchor": "connecting-to-amazon-s3-tables"
+    }
+  ]
+}

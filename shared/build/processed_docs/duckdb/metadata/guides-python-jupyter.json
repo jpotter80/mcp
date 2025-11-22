@@ -1,0 +1,91 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/jupyter"
+  ],
+  "title": "Jupyter Notebooks",
+  "file_name": "jupyter.md",
+  "file_stem": "jupyter",
+  "file_path": "guides/python/jupyter.md",
+  "file_size": 7870,
+  "document_id": "guides-python-jupyter",
+  "url": "/guides/python/jupyter",
+  "content_hash": "e98162dce1a9d8ea0ade6b0eeaf71829",
+  "statistics": {
+    "char_count": 6378,
+    "word_count": 848,
+    "line_count": 169,
+    "paragraph_count": 51,
+    "header_count": 13,
+    "code_block_count": 19,
+    "code_lines": 51
+  },
+  "processed_at": "2025-11-22T10:32:11.591114",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Library Installation",
+      "anchor": "library-installation"
+    },
+    {
+      "level": 2,
+      "title": "Library Import and Configuration",
+      "anchor": "library-import-and-configuration"
+    },
+    {
+      "level": 3,
+      "title": "Connecting to DuckDB Natively",
+      "anchor": "connecting-to-duckdb-natively"
+    },
+    {
+      "level": 3,
+      "title": "Connecting to DuckDB via SQLAlchemy",
+      "anchor": "connecting-to-duckdb-via-sqlalchemy"
+    },
+    {
+      "level": 1,
+      "title": "No need to import duckdb_engine",
+      "anchor": "no-need-to-import-duckdb_engine"
+    },
+    {
+      "level": 1,
+      "title": "jupysql will auto-detect the driver needed based on the connection string!",
+      "anchor": "jupysql-will-auto-detect-the-driver-needed-based-on-the-connection-string"
+    },
+    {
+      "level": 1,
+      "title": "Import jupysql Jupyter extension to create SQL cells",
+      "anchor": "import-jupysql-jupyter-extension-to-create-sql-cells"
+    },
+    {
+      "level": 2,
+      "title": "Querying DuckDB",
+      "anchor": "querying-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Querying Pandas Dataframes",
+      "anchor": "querying-pandas-dataframes"
+    },
+    {
+      "level": 2,
+      "title": "Visualizing DuckDB Data",
+      "anchor": "visualizing-duckdb-data"
+    },
+    {
+      "level": 3,
+      "title": "Boxplot & Histogram",
+      "anchor": "boxplot-histogram"
+    },
+    {
+      "level": 3,
+      "title": "Install and Load DuckDB httpfs Extension",
+      "anchor": "install-and-load-duckdb-httpfs-extension"
+    },
+    {
+      "level": 2,
+      "title": "Summary",
+      "anchor": "summary"
+    }
+  ]
+}

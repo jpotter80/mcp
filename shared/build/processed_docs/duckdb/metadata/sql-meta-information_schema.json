@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/information_schema",
+    "/docs/sql/information_schema/",
+    "/docs/sql/meta/information_schema"
+  ],
+  "title": "Information Schema",
+  "file_name": "information_schema.md",
+  "file_stem": "information_schema",
+  "file_path": "sql/meta/information_schema.md",
+  "file_size": 12648,
+  "document_id": "sql-meta-information_schema",
+  "url": "/sql/meta/information_schema",
+  "content_hash": "fdaffc241462873aff2e92215a3a99ce",
+  "statistics": {
+    "char_count": 12481,
+    "word_count": 1940,
+    "line_count": 138,
+    "paragraph_count": 25,
+    "header_count": 10,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:15.084370",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Tables",
+      "anchor": "tables"
+    },
+    {
+      "level": 3,
+      "title": "`character_sets`: Character Sets",
+      "anchor": "character_sets-character-sets"
+    },
+    {
+      "level": 3,
+      "title": "`columns`: Columns",
+      "anchor": "columns-columns"
+    },
+    {
+      "level": 3,
+      "title": "`constraint_column_usage`: Constraint Column Usage",
+      "anchor": "constraint_column_usage-constraint-column-usage"
+    },
+    {
+      "level": 3,
+      "title": "`key_column_usage`: Key Column Usage",
+      "anchor": "key_column_usage-key-column-usage"
+    },
+    {
+      "level": 3,
+      "title": "`referential_constraints`: Referential Constraints",
+      "anchor": "referential_constraints-referential-constraints"
+    },
+    {
+      "level": 3,
+      "title": "`schemata`: Database, Catalog and Schema",
+      "anchor": "schemata-database-catalog-and-schema"
+    },
+    {
+      "level": 3,
+      "title": "`tables`: Tables and Views",
+      "anchor": "tables-tables-and-views"
+    },
+    {
+      "level": 3,
+      "title": "`table_constraints`: Table Constraints",
+      "anchor": "table_constraints-table-constraints"
+    },
+    {
+      "level": 2,
+      "title": "Catalog Functions",
+      "anchor": "catalog-functions"
+    }
+  ]
+}

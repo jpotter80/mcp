@@ -1,0 +1,103 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/how-to-tune-workloads",
+    "/docs/guides/performance/how-to-tune-workloads/",
+    "/docs/guides/performance/how_to_tune_workloads"
+  ],
+  "title": "Tuning Workloads",
+  "file_name": "how_to_tune_workloads.md",
+  "file_stem": "how_to_tune_workloads",
+  "file_path": "guides/performance/how_to_tune_workloads.md",
+  "file_size": 10202,
+  "document_id": "guides-performance-how_to_tune_workloads",
+  "url": "/guides/performance/how_to_tune_workloads",
+  "content_hash": "eae3e6467c8f6abbfd469ddcf6bad14b",
+  "statistics": {
+    "char_count": 9801,
+    "word_count": 1373,
+    "line_count": 145,
+    "paragraph_count": 54,
+    "header_count": 15,
+    "code_block_count": 6,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:11.318374",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The `preserve_insertion_order` Option",
+      "anchor": "the-preserve_insertion_order-option"
+    },
+    {
+      "level": 2,
+      "title": "Parallelism (Multi-Core Processing)",
+      "anchor": "parallelism-multi-core-processing"
+    },
+    {
+      "level": 3,
+      "title": "The Effect of Row Groups on Parallelism",
+      "anchor": "the-effect-of-row-groups-on-parallelism"
+    },
+    {
+      "level": 3,
+      "title": "Too Many Threads",
+      "anchor": "too-many-threads"
+    },
+    {
+      "level": 2,
+      "title": "Larger-than-Memory Workloads (Out-of-Core Processing)",
+      "anchor": "larger-than-memory-workloads-out-of-core-processing"
+    },
+    {
+      "level": 3,
+      "title": "Spilling to Disk",
+      "anchor": "spilling-to-disk"
+    },
+    {
+      "level": 3,
+      "title": "Blocking Operators",
+      "anchor": "blocking-operators"
+    },
+    {
+      "level": 3,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Profiling",
+      "anchor": "profiling"
+    },
+    {
+      "level": 2,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 2,
+      "title": "Querying Remote Files",
+      "anchor": "querying-remote-files"
+    },
+    {
+      "level": 3,
+      "title": "Avoid Reading Unnecessary Data",
+      "anchor": "avoid-reading-unnecessary-data"
+    },
+    {
+      "level": 3,
+      "title": "Caching",
+      "anchor": "caching"
+    },
+    {
+      "level": 2,
+      "title": "Best Practices for Using Connections",
+      "anchor": "best-practices-for-using-connections"
+    },
+    {
+      "level": 2,
+      "title": "Persistent vs. In-Memory Tables",
+      "anchor": "persistent-vs-in-memory-tables"
+    }
+  ]
+}

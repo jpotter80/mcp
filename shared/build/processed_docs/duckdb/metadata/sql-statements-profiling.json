@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/profiling"
+  ],
+  "title": "Profiling Queries",
+  "file_name": "profiling.md",
+  "file_stem": "profiling",
+  "file_path": "sql/statements/profiling.md",
+  "file_size": 628,
+  "document_id": "sql-statements-profiling",
+  "url": "/sql/statements/profiling",
+  "content_hash": "8942429d720744db3c36606c214cef67",
+  "statistics": {
+    "char_count": 524,
+    "word_count": 79,
+    "line_count": 22,
+    "paragraph_count": 9,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:15.906200",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`EXPLAIN`",
+      "anchor": "explain"
+    },
+    {
+      "level": 2,
+      "title": "`EXPLAIN ANALYZE`",
+      "anchor": "explain-analyze"
+    }
+  ]
+}

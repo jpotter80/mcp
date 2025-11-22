@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/network_cloud_storage/duckdb_over_https_or_s3"
+  ],
+  "title": "Attach to a DuckDB Database over HTTPS or S3",
+  "file_name": "duckdb_over_https_or_s3.md",
+  "file_stem": "duckdb_over_https_or_s3",
+  "file_path": "guides/network_cloud_storage/duckdb_over_https_or_s3.md",
+  "file_size": 2137,
+  "document_id": "guides-network_cloud_storage-duckdb_over_https_or_s3",
+  "url": "/guides/network_cloud_storage/duckdb_over_https_or_s3",
+  "content_hash": "bf36080f7b1992412cca30d4303a85c2",
+  "statistics": {
+    "char_count": 1968,
+    "word_count": 257,
+    "line_count": 56,
+    "paragraph_count": 20,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:11.092501",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Attaching to a Database over HTTPS",
+      "anchor": "attaching-to-a-database-over-https"
+    },
+    {
+      "level": 2,
+      "title": "Attaching to a Database over the S3 API",
+      "anchor": "attaching-to-a-database-over-the-s3-api"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_features/query_and_query_table_functions"
+  ],
+  "title": "query and query_table Functions",
+  "file_name": "query_and_query_table_functions.md",
+  "file_stem": "query_and_query_table_functions",
+  "file_path": "guides/sql_features/query_and_query_table_functions.md",
+  "file_size": 2891,
+  "document_id": "guides-sql_features-query_and_query_table_functions",
+  "url": "/guides/sql_features/query_and_query_table_functions",
+  "content_hash": "992b2296c9f6ed8f3d9fb822b48e78d6",
+  "statistics": {
+    "char_count": 2527,
+    "word_count": 365,
+    "line_count": 76,
+    "paragraph_count": 14,
+    "header_count": 0,
+    "code_block_count": 3,
+    "code_lines": 37
+  },
+  "processed_at": "2025-11-22T10:32:12.008721",
+  "sections": []
+}

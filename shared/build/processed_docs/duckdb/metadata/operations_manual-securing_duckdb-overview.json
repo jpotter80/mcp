@@ -1,0 +1,86 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/securing_duckdb/overview"
+  ],
+  "title": "Securing DuckDB",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "operations_manual/securing_duckdb/overview.md",
+  "file_size": 7179,
+  "document_id": "operations_manual-securing_duckdb-overview",
+  "url": "/operations_manual/securing_duckdb/overview",
+  "content_hash": "ee32cac7af81490b25b102a4ef33b6d0",
+  "statistics": {
+    "char_count": 7045,
+    "word_count": 947,
+    "line_count": 159,
+    "paragraph_count": 57,
+    "header_count": 12,
+    "code_block_count": 14,
+    "code_lines": 20
+  },
+  "processed_at": "2025-11-22T10:32:12.297586",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Reporting Vulnerabilities",
+      "anchor": "reporting-vulnerabilities"
+    },
+    {
+      "level": 2,
+      "title": "Safe Mode (CLI)",
+      "anchor": "safe-mode-cli"
+    },
+    {
+      "level": 2,
+      "title": "Restricting File Access",
+      "anchor": "restricting-file-access"
+    },
+    {
+      "level": 3,
+      "title": "Disabling File Access",
+      "anchor": "disabling-file-access"
+    },
+    {
+      "level": 3,
+      "title": "The `allowed_directories` and `allowed_paths` Options",
+      "anchor": "the-allowed_directories-and-allowed_paths-options"
+    },
+    {
+      "level": 2,
+      "title": "Secrets",
+      "anchor": "secrets"
+    },
+    {
+      "level": 2,
+      "title": "Locking Configurations",
+      "anchor": "locking-configurations"
+    },
+    {
+      "level": 2,
+      "title": "Prepared Statements to Prevent SQL Injection",
+      "anchor": "prepared-statements-to-prevent-sql-injection"
+    },
+    {
+      "level": 2,
+      "title": "Constrain Resource Usage",
+      "anchor": "constrain-resource-usage"
+    },
+    {
+      "level": 2,
+      "title": "Extensions",
+      "anchor": "extensions"
+    },
+    {
+      "level": 2,
+      "title": "Privileges",
+      "anchor": "privileges"
+    },
+    {
+      "level": 2,
+      "title": "Generic Solutions",
+      "anchor": "generic-solutions"
+    }
+  ]
+}

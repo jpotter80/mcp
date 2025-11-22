@@ -1,0 +1,39 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-odbc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/odbc/linux",
+    "/docs/api/odbc/linux/",
+    "/docs/clients/odbc/linux"
+  ],
+  "title": "ODBC API on Linux",
+  "file_name": "linux.md",
+  "file_stem": "linux",
+  "file_path": "clients/odbc/linux.md",
+  "file_size": 3274,
+  "document_id": "clients-odbc-linux",
+  "url": "/clients/odbc/linux",
+  "content_hash": "ce3780e523b0ad1064ebb2e0881b0411",
+  "statistics": {
+    "char_count": 2925,
+    "word_count": 373,
+    "line_count": 82,
+    "paragraph_count": 28,
+    "header_count": 2,
+    "code_block_count": 7,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:04.495073",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Driver Manager",
+      "anchor": "driver-manager"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up the Driver",
+      "anchor": "setting-up-the-driver"
+    }
+  ]
+}

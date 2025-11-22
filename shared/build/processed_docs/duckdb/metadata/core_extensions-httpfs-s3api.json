@@ -1,0 +1,114 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/httpfs/s3api",
+    "/docs/extensions/httpfs/s3api/",
+    "/docs/stable/extensions/httpfs/s3api",
+    "/docs/stable/extensions/httpfs/s3api/"
+  ],
+  "title": "S3 API Support",
+  "file_name": "s3api.md",
+  "file_stem": "s3api",
+  "file_path": "core_extensions/httpfs/s3api.md",
+  "file_size": 14428,
+  "document_id": "core_extensions-httpfs-s3api",
+  "url": "/core_extensions/httpfs/s3api",
+  "content_hash": "6c83b3d2995e6f3632383a36ee070ecb",
+  "statistics": {
+    "char_count": 12738,
+    "word_count": 1559,
+    "line_count": 281,
+    "paragraph_count": 78,
+    "header_count": 17,
+    "code_block_count": 20,
+    "code_lines": 76
+  },
+  "processed_at": "2025-11-22T10:32:08.173446",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Platforms",
+      "anchor": "platforms"
+    },
+    {
+      "level": 2,
+      "title": "Configuration and Authentication",
+      "anchor": "configuration-and-authentication"
+    },
+    {
+      "level": 3,
+      "title": "`config` Provider",
+      "anchor": "config-provider"
+    },
+    {
+      "level": 3,
+      "title": "`credential_chain` Provider",
+      "anchor": "credential_chain-provider"
+    },
+    {
+      "level": 4,
+      "title": "Loading a Secret Based on a Profile",
+      "anchor": "loading-a-secret-based-on-a-profile"
+    },
+    {
+      "level": 3,
+      "title": "Overview of S3 Secret Parameters",
+      "anchor": "overview-of-s3-secret-parameters"
+    },
+    {
+      "level": 3,
+      "title": "Platform-Specific Secret Types",
+      "anchor": "platform-specific-secret-types"
+    },
+    {
+      "level": 4,
+      "title": "S3 Secrets",
+      "anchor": "s3-secrets"
+    },
+    {
+      "level": 4,
+      "title": "R2 Secrets",
+      "anchor": "r2-secrets"
+    },
+    {
+      "level": 4,
+      "title": "GCS Secrets",
+      "anchor": "gcs-secrets"
+    },
+    {
+      "level": 2,
+      "title": "Reading",
+      "anchor": "reading"
+    },
+    {
+      "level": 3,
+      "title": "Partial Reading",
+      "anchor": "partial-reading"
+    },
+    {
+      "level": 3,
+      "title": "Reading Multiple Files",
+      "anchor": "reading-multiple-files"
+    },
+    {
+      "level": 3,
+      "title": "Globbing",
+      "anchor": "globbing"
+    },
+    {
+      "level": 3,
+      "title": "Hive Partitioning",
+      "anchor": "hive-partitioning"
+    },
+    {
+      "level": 2,
+      "title": "Writing",
+      "anchor": "writing"
+    },
+    {
+      "level": 3,
+      "title": "Configuration",
+      "anchor": "configuration"
+    }
+  ]
+}

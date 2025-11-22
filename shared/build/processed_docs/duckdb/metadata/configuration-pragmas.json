@@ -1,0 +1,273 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/pragmas",
+    "/docs/sql/pragmas/",
+    "/docs/configuration/pragmas"
+  ],
+  "title": "Pragmas",
+  "file_name": "pragmas.md",
+  "file_stem": "pragmas",
+  "file_path": "configuration/pragmas.md",
+  "file_size": 20061,
+  "document_id": "configuration-pragmas",
+  "url": "/configuration/pragmas",
+  "content_hash": "f7c31076a9828de34b8627c25555670a",
+  "statistics": {
+    "char_count": 17959,
+    "word_count": 2404,
+    "line_count": 652,
+    "paragraph_count": 217,
+    "header_count": 49,
+    "code_block_count": 72,
+    "code_lines": 103
+  },
+  "processed_at": "2025-11-22T10:32:07.504322",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Metadata",
+      "anchor": "metadata"
+    },
+    {
+      "level": 4,
+      "title": "Schema Information",
+      "anchor": "schema-information"
+    },
+    {
+      "level": 4,
+      "title": "Table Information",
+      "anchor": "table-information"
+    },
+    {
+      "level": 4,
+      "title": "Database Size",
+      "anchor": "database-size"
+    },
+    {
+      "level": 4,
+      "title": "Storage Information",
+      "anchor": "storage-information"
+    },
+    {
+      "level": 4,
+      "title": "Show Databases",
+      "anchor": "show-databases"
+    },
+    {
+      "level": 2,
+      "title": "Resource Management",
+      "anchor": "resource-management"
+    },
+    {
+      "level": 4,
+      "title": "Memory Limit",
+      "anchor": "memory-limit"
+    },
+    {
+      "level": 4,
+      "title": "Threads",
+      "anchor": "threads"
+    },
+    {
+      "level": 2,
+      "title": "Collations",
+      "anchor": "collations"
+    },
+    {
+      "level": 2,
+      "title": "Default Ordering for NULLs",
+      "anchor": "default-ordering-for-nulls"
+    },
+    {
+      "level": 2,
+      "title": "Ordering by Non-Integer Literals",
+      "anchor": "ordering-by-non-integer-literals"
+    },
+    {
+      "level": 2,
+      "title": "Implicit Casting to `VARCHAR`",
+      "anchor": "implicit-casting-to-varchar"
+    },
+    {
+      "level": 2,
+      "title": "Python: Scan All Dataframes",
+      "anchor": "python-scan-all-dataframes"
+    },
+    {
+      "level": 2,
+      "title": "Information on DuckDB",
+      "anchor": "information-on-duckdb"
+    },
+    {
+      "level": 4,
+      "title": "Version",
+      "anchor": "version"
+    },
+    {
+      "level": 4,
+      "title": "Platform",
+      "anchor": "platform"
+    },
+    {
+      "level": 4,
+      "title": "User Agent",
+      "anchor": "user-agent"
+    },
+    {
+      "level": 4,
+      "title": "Metadata Information",
+      "anchor": "metadata-information"
+    },
+    {
+      "level": 2,
+      "title": "Progress Bar",
+      "anchor": "progress-bar"
+    },
+    {
+      "level": 2,
+      "title": "EXPLAIN Output",
+      "anchor": "explain-output"
+    },
+    {
+      "level": 2,
+      "title": "Profiling",
+      "anchor": "profiling"
+    },
+    {
+      "level": 3,
+      "title": "Enable Profiling",
+      "anchor": "enable-profiling"
+    },
+    {
+      "level": 3,
+      "title": "Profiling Coverage",
+      "anchor": "profiling-coverage"
+    },
+    {
+      "level": 3,
+      "title": "Profiling Format",
+      "anchor": "profiling-format"
+    },
+    {
+      "level": 3,
+      "title": "Profiling Output",
+      "anchor": "profiling-output"
+    },
+    {
+      "level": 3,
+      "title": "Profiling Mode",
+      "anchor": "profiling-mode"
+    },
+    {
+      "level": 3,
+      "title": "Custom Metrics",
+      "anchor": "custom-metrics"
+    },
+    {
+      "level": 3,
+      "title": "Disable Profiling",
+      "anchor": "disable-profiling"
+    },
+    {
+      "level": 2,
+      "title": "Query Optimization",
+      "anchor": "query-optimization"
+    },
+    {
+      "level": 4,
+      "title": "Optimizer",
+      "anchor": "optimizer"
+    },
+    {
+      "level": 4,
+      "title": "Selectively Disabling Optimizers",
+      "anchor": "selectively-disabling-optimizers"
+    },
+    {
+      "level": 2,
+      "title": "Logging",
+      "anchor": "logging"
+    },
+    {
+      "level": 2,
+      "title": "Full-Text Search Indexes",
+      "anchor": "full-text-search-indexes"
+    },
+    {
+      "level": 2,
+      "title": "Verification",
+      "anchor": "verification"
+    },
+    {
+      "level": 4,
+      "title": "Verification of External Operators",
+      "anchor": "verification-of-external-operators"
+    },
+    {
+      "level": 4,
+      "title": "Verification of Round-Trip Capabilities",
+      "anchor": "verification-of-round-trip-capabilities"
+    },
+    {
+      "level": 2,
+      "title": "Object Cache",
+      "anchor": "object-cache"
+    },
+    {
+      "level": 2,
+      "title": "Checkpointing",
+      "anchor": "checkpointing"
+    },
+    {
+      "level": 4,
+      "title": "Compression",
+      "anchor": "compression"
+    },
+    {
+      "level": 5,
+      "title": "Force Compression",
+      "anchor": "force-compression"
+    },
+    {
+      "level": 5,
+      "title": "Disabled Compression Methods",
+      "anchor": "disabled-compression-methods"
+    },
+    {
+      "level": 4,
+      "title": "Force Checkpoint",
+      "anchor": "force-checkpoint"
+    },
+    {
+      "level": 4,
+      "title": "Checkpoint on Shutdown",
+      "anchor": "checkpoint-on-shutdown"
+    },
+    {
+      "level": 2,
+      "title": "Temp Directory for Spilling Data to Disk",
+      "anchor": "temp-directory-for-spilling-data-to-disk"
+    },
+    {
+      "level": 2,
+      "title": "Returning Errors as JSON",
+      "anchor": "returning-errors-as-json"
+    },
+    {
+      "level": 2,
+      "title": "IEEE Floating-Point Operation Semantics",
+      "anchor": "ieee-floating-point-operation-semantics"
+    },
+    {
+      "level": 2,
+      "title": "Query Verification (for Development)",
+      "anchor": "query-verification-for-development"
+    },
+    {
+      "level": 2,
+      "title": "Block Sizes",
+      "anchor": "block-sizes"
+    }
+  ]
+}

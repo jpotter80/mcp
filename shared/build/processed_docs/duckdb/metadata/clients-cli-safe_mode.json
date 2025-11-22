@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/clients/cli/safe_mode"
+  ],
+  "title": "Safe Mode",
+  "file_name": "safe_mode.md",
+  "file_stem": "safe_mode",
+  "file_path": "clients/cli/safe_mode.md",
+  "file_size": 1425,
+  "document_id": "clients-cli-safe_mode",
+  "url": "/clients/cli/safe_mode",
+  "content_hash": "c33f758fcbcd8c95efeec647fe653932",
+  "statistics": {
+    "char_count": 1293,
+    "word_count": 176,
+    "line_count": 26,
+    "paragraph_count": 5,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.048851",
+  "sections": []
+}

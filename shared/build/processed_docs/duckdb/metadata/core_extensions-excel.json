@@ -1,0 +1,65 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-excel",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/excel",
+    "/docs/stable/extensions/excel/",
+    "/docs/extensions/excel",
+    "/docs/extensions/excel/"
+  ],
+  "title": "Excel Extension",
+  "file_name": "excel.md",
+  "file_stem": "excel",
+  "file_path": "core_extensions/excel.md",
+  "file_size": 10669,
+  "document_id": "core_extensions-excel",
+  "url": "/core_extensions/excel",
+  "content_hash": "f88130483e993c184c73d6e9e81457a3",
+  "statistics": {
+    "char_count": 8522,
+    "word_count": 1333,
+    "line_count": 139,
+    "paragraph_count": 40,
+    "header_count": 7,
+    "code_block_count": 7,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:08.042376",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Excel Scalar Functions",
+      "anchor": "excel-scalar-functions"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Reading XLSX Files",
+      "anchor": "reading-xlsx-files"
+    },
+    {
+      "level": 3,
+      "title": "Type and Range Inference",
+      "anchor": "type-and-range-inference"
+    },
+    {
+      "level": 2,
+      "title": "Writing XLSX Files",
+      "anchor": "writing-xlsx-files"
+    },
+    {
+      "level": 3,
+      "title": "Type Conversions",
+      "anchor": "type-conversions"
+    }
+  ]
+}

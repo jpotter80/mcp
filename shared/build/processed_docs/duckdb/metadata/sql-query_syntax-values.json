@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/values.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/values"
+  ],
+  "title": "VALUES Clause",
+  "file_name": "values.md",
+  "file_stem": "values",
+  "file_path": "sql/query_syntax/values.md",
+  "file_size": 909,
+  "document_id": "sql-query_syntax-values",
+  "url": "/sql/query_syntax/values",
+  "content_hash": "4445fc51b04c573b0c3140613ce9eae6",
+  "statistics": {
+    "char_count": 751,
+    "word_count": 122,
+    "line_count": 33,
+    "paragraph_count": 11,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:15.340813",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

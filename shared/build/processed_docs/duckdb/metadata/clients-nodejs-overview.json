@@ -1,0 +1,60 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/nodejs",
+    "/docs/api/nodejs/",
+    "/docs/api/nodejs/overview",
+    "/docs/api/nodejs/overview/",
+    "/docs/clients/nodejs/overview"
+  ],
+  "title": "Node.js API",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/nodejs/overview.md",
+  "file_size": 4993,
+  "document_id": "clients-nodejs-overview",
+  "url": "/clients/nodejs/overview",
+  "content_hash": "9af8a5be9cb0563a09dc88e4fddae742",
+  "statistics": {
+    "char_count": 3677,
+    "word_count": 487,
+    "line_count": 130,
+    "paragraph_count": 31,
+    "header_count": 6,
+    "code_block_count": 12,
+    "code_lines": 90
+  },
+  "processed_at": "2025-11-22T10:32:04.341966",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Initializing",
+      "anchor": "initializing"
+    },
+    {
+      "level": 2,
+      "title": "Running a Query",
+      "anchor": "running-a-query"
+    },
+    {
+      "level": 2,
+      "title": "Connections",
+      "anchor": "connections"
+    },
+    {
+      "level": 2,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 2,
+      "title": "Inserting Data via Arrow",
+      "anchor": "inserting-data-via-arrow"
+    },
+    {
+      "level": 2,
+      "title": "Loading Unsigned Extensions",
+      "anchor": "loading-unsigned-extensions"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/writing_json"
+  ],
+  "title": "Writing JSON",
+  "file_name": "writing_json.md",
+  "file_stem": "writing_json",
+  "file_path": "data/json/writing_json.md",
+  "file_size": 583,
+  "document_id": "data-json-writing_json",
+  "url": "/data/json/writing_json",
+  "content_hash": "a9d941964f301d940d30a35c5ed75aad",
+  "statistics": {
+    "char_count": 491,
+    "word_count": 64,
+    "line_count": 17,
+    "paragraph_count": 5,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:10.019377",
+  "sections": []
+}

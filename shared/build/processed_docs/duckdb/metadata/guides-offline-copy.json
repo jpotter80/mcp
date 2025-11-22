@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/offline-copy"
+  ],
+  "title": "Browsing Offline",
+  "file_name": "offline-copy.md",
+  "file_stem": "offline-copy",
+  "file_path": "guides/offline-copy.md",
+  "file_size": 404,
+  "document_id": "guides-offline-copy",
+  "url": "/guides/offline-copy",
+  "content_hash": "bc80febc54ff60058fe8726ad08e9455",
+  "statistics": {
+    "char_count": 314,
+    "word_count": 35,
+    "line_count": 6,
+    "paragraph_count": 3,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.218115",
+  "sections": []
+}

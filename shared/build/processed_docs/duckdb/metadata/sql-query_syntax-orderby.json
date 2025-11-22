@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/orderby.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/orderby"
+  ],
+  "title": "ORDER BY Clause",
+  "file_name": "orderby.md",
+  "file_stem": "orderby",
+  "file_path": "sql/query_syntax/orderby.md",
+  "file_size": 4581,
+  "document_id": "sql-query_syntax-orderby",
+  "url": "/sql/query_syntax/orderby",
+  "content_hash": "fef0a453ee1955a3bc7f3ab6396eeda0",
+  "statistics": {
+    "char_count": 4298,
+    "word_count": 706,
+    "line_count": 121,
+    "paragraph_count": 31,
+    "header_count": 6,
+    "code_block_count": 9,
+    "code_lines": 28
+  },
+  "processed_at": "2025-11-22T10:32:15.249710",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`ORDER BY ALL`",
+      "anchor": "order-by-all"
+    },
+    {
+      "level": 2,
+      "title": "`NULL` Order Modifier",
+      "anchor": "null-order-modifier"
+    },
+    {
+      "level": 2,
+      "title": "Collations",
+      "anchor": "collations"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "`ORDER BY ALL` Examples",
+      "anchor": "order-by-all-examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/array"
+  ],
+  "title": "Array Functions",
+  "file_name": "array.md",
+  "file_stem": "array",
+  "file_path": "sql/functions/array.md",
+  "file_size": 5507,
+  "document_id": "sql-functions-array",
+  "url": "/sql/functions/array",
+  "content_hash": "de6074ce33384bf57b972a75d8aaa79c",
+  "statistics": {
+    "char_count": 4883,
+    "word_count": 645,
+    "line_count": 59,
+    "paragraph_count": 17,
+    "header_count": 8,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.357909",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Array-Native Functions",
+      "anchor": "array-native-functions"
+    },
+    {
+      "level": 4,
+      "title": "`array_cosine_distance(array1, array2)`",
+      "anchor": "array_cosine_distancearray1-array2"
+    },
+    {
+      "level": 4,
+      "title": "`array_cosine_similarity(array1, array2)`",
+      "anchor": "array_cosine_similarityarray1-array2"
+    },
+    {
+      "level": 4,
+      "title": "`array_cross_product(array, array)`",
+      "anchor": "array_cross_productarray-array"
+    },
+    {
+      "level": 4,
+      "title": "`array_distance(array1, array2)`",
+      "anchor": "array_distancearray1-array2"
+    },
+    {
+      "level": 4,
+      "title": "`array_inner_product(array1, array2)`",
+      "anchor": "array_inner_productarray1-array2"
+    },
+    {
+      "level": 4,
+      "title": "`array_negative_inner_product(array1, array2)`",
+      "anchor": "array_negative_inner_productarray1-array2"
+    },
+    {
+      "level": 4,
+      "title": "`array_value(arg, ...)`",
+      "anchor": "array_valuearg-"
+    }
+  ]
+}

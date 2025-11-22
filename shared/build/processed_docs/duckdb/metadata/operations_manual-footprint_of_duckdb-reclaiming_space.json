@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/footprint_of_duckdb/reclaiming_space"
+  ],
+  "title": "Reclaiming Space",
+  "file_name": "reclaiming_space.md",
+  "file_stem": "reclaiming_space",
+  "file_path": "operations_manual/footprint_of_duckdb/reclaiming_space.md",
+  "file_size": 995,
+  "document_id": "operations_manual-footprint_of_duckdb-reclaiming_space",
+  "url": "/operations_manual/footprint_of_duckdb/reclaiming_space",
+  "content_hash": "dc2e3d73427806e925f1ec7f33133c22",
+  "statistics": {
+    "char_count": 870,
+    "word_count": 119,
+    "line_count": 19,
+    "paragraph_count": 8,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:12.221338",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`CHECKPOINT`",
+      "anchor": "checkpoint"
+    },
+    {
+      "level": 2,
+      "title": "`VACUUM`",
+      "anchor": "vacuum"
+    },
+    {
+      "level": 2,
+      "title": "Compacting a Database by Copying",
+      "anchor": "compacting-a-database-by-copying"
+    }
+  ]
+}

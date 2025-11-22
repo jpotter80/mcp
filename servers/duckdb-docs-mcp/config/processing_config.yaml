@@ -1,0 +1,50 @@
+# Processing Configuration for Duckdb Docs MCP
+# Used during build-time preprocessing and embedding generation
+# Variables: ${SERVER_ROOT}, ${PROJECT_ROOT} are substituted at runtime
+
+source:
+  # Source documentation directory
+  directory: "${PROJECT_ROOT}/source-documentation/duckdb/docs"
+  # Format of source files: mdx, markdown, rst, etc.
+  format: "markdown"
+  file_patterns:
+    - "*.md"
+    - "*.md"
+  exclude_patterns:
+    - "*.draft.*"
+    - "node_modules/**"
+    - ".git/**"
+
+output:
+  # Temporary build artifacts during preprocessing
+  base_directory: "${PROJECT_ROOT}/shared/build/processed_docs/duckdb"
+  raw_dir: "raw"
+  metadata_dir: "metadata"
+  chunks_dir: "chunks"
+  manifest_file: "manifest.json"
+
+chunking:
+  strategy: "recursive"
+  chunk_size: 256
+  chunk_overlap: 50
+  min_chunk_size: 100
+  preserve_code_blocks: true
+  code_block_threshold: 50
+
+processing:
+  remove_jsx_components: true
+  remove_imports: true
+  preserve_code_blocks: true
+  normalize_whitespace: true
+  extract_urls: true
+  url_base: ""
+
+metadata:
+  extract_frontmatter: true
+  generate_section_hierarchy: true
+  calculate_content_hash: true
+  include_statistics: true
+
+validation:
+  check_content_preservation: true
+  validate_chunk_sizes: true

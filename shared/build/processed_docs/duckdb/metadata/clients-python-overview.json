@@ -1,0 +1,146 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-python",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python",
+    "/docs/api/python/",
+    "/docs/api/python/overview",
+    "/docs/api/python/overview/",
+    "/docs/clients/python/overview"
+  ],
+  "title": "Python API",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/python/overview.md",
+  "file_size": 8585,
+  "document_id": "clients-python-overview",
+  "url": "/clients/python/overview",
+  "content_hash": "282a439a26a27be05f17635bde48557a",
+  "statistics": {
+    "char_count": 8027,
+    "word_count": 1062,
+    "line_count": 245,
+    "paragraph_count": 77,
+    "header_count": 23,
+    "code_block_count": 18,
+    "code_lines": 98
+  },
+  "processed_at": "2025-11-22T10:32:04.825732",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Basic API Usage",
+      "anchor": "basic-api-usage"
+    },
+    {
+      "level": 2,
+      "title": "Data Input",
+      "anchor": "data-input"
+    },
+    {
+      "level": 3,
+      "title": "DataFrames",
+      "anchor": "dataframes"
+    },
+    {
+      "level": 4,
+      "title": "Pandas",
+      "anchor": "pandas"
+    },
+    {
+      "level": 4,
+      "title": "Polars",
+      "anchor": "polars"
+    },
+    {
+      "level": 4,
+      "title": "PyArrow",
+      "anchor": "pyarrow"
+    },
+    {
+      "level": 2,
+      "title": "Result Conversion",
+      "anchor": "result-conversion"
+    },
+    {
+      "level": 2,
+      "title": "Writing Data to Disk",
+      "anchor": "writing-data-to-disk"
+    },
+    {
+      "level": 2,
+      "title": "Connection Options",
+      "anchor": "connection-options"
+    },
+    {
+      "level": 3,
+      "title": "Using an In-Memory Database",
+      "anchor": "using-an-in-memory-database"
+    },
+    {
+      "level": 3,
+      "title": "Persistent Storage",
+      "anchor": "persistent-storage"
+    },
+    {
+      "level": 1,
+      "title": "create a connection to a file called 'file.db'",
+      "anchor": "create-a-connection-to-a-file-called-filedb"
+    },
+    {
+      "level": 1,
+      "title": "create a table and load data into it",
+      "anchor": "create-a-table-and-load-data-into-it"
+    },
+    {
+      "level": 1,
+      "title": "query the table",
+      "anchor": "query-the-table"
+    },
+    {
+      "level": 1,
+      "title": "explicitly close the connection",
+      "anchor": "explicitly-close-the-connection"
+    },
+    {
+      "level": 1,
+      "title": "Note: connections also closed implicitly when they go out of scope",
+      "anchor": "note-connections-also-closed-implicitly-when-they-go-out-of-scope"
+    },
+    {
+      "level": 3,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 3,
+      "title": "Connection Object and Module",
+      "anchor": "connection-object-and-module"
+    },
+    {
+      "level": 3,
+      "title": "Using Connections in Parallel Python Programs",
+      "anchor": "using-connections-in-parallel-python-programs"
+    },
+    {
+      "level": 2,
+      "title": "Loading and Installing Extensions",
+      "anchor": "loading-and-installing-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Community Extensions",
+      "anchor": "community-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Unsigned Extensions",
+      "anchor": "unsigned-extensions"
+    }
+  ]
+}

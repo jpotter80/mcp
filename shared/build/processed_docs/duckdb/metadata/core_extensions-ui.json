@@ -1,0 +1,85 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-ui",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/ui",
+    "/docs/stable/extensions/ui/",
+    "/docs/extensions/ui",
+    "/docs/extensions/ui/"
+  ],
+  "title": "UI Extension",
+  "file_name": "ui.md",
+  "file_stem": "ui",
+  "file_path": "core_extensions/ui.md",
+  "file_size": 4382,
+  "document_id": "core_extensions-ui",
+  "url": "/core_extensions/ui",
+  "content_hash": "40a061f803c8f3acf01bd05af1792d9a",
+  "statistics": {
+    "char_count": 4132,
+    "word_count": 641,
+    "line_count": 154,
+    "paragraph_count": 54,
+    "header_count": 11,
+    "code_block_count": 12,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:09.241122",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Requirements",
+      "anchor": "requirements"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Local Query Execution",
+      "anchor": "local-query-execution"
+    },
+    {
+      "level": 2,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 3,
+      "title": "Local Port",
+      "anchor": "local-port"
+    },
+    {
+      "level": 3,
+      "title": "Remote URL",
+      "anchor": "remote-url"
+    },
+    {
+      "level": 3,
+      "title": "Polling Interval",
+      "anchor": "polling-interval"
+    },
+    {
+      "level": 2,
+      "title": "Tips",
+      "anchor": "tips"
+    },
+    {
+      "level": 3,
+      "title": "Opening a CSV File with the DuckDB UI",
+      "anchor": "opening-a-csv-file-with-the-duckdb-ui"
+    },
+    {
+      "level": 3,
+      "title": "Running the UI in Read-Only Mode",
+      "anchor": "running-the-ui-in-read-only-mode"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

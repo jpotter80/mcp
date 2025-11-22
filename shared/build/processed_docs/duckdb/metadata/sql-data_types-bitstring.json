@@ -1,0 +1,37 @@
+{
+  "blurb": "The bitstring type are strings of 1s and 0s.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/bitstring"
+  ],
+  "title": "Bitstring Type",
+  "file_name": "bitstring.md",
+  "file_stem": "bitstring",
+  "file_path": "sql/data_types/bitstring.md",
+  "file_size": 1410,
+  "document_id": "sql-data_types-bitstring",
+  "url": "/sql/data_types/bitstring",
+  "content_hash": "55b1396d67fb95f2d03a80e5cd5a39c8",
+  "statistics": {
+    "char_count": 1144,
+    "word_count": 176,
+    "line_count": 44,
+    "paragraph_count": 15,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:12.363776",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Creating a Bitstring",
+      "anchor": "creating-a-bitstring"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

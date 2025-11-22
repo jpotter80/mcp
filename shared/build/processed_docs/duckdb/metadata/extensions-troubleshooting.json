@@ -1,0 +1,26 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/troubleshooting",
+    "/docs/extensions/troubleshooting/"
+  ],
+  "title": "Troubleshooting of Extensions",
+  "file_name": "troubleshooting.md",
+  "file_stem": "troubleshooting",
+  "file_path": "extensions/troubleshooting.md",
+  "file_size": 1951,
+  "document_id": "extensions-troubleshooting",
+  "url": "/extensions/troubleshooting",
+  "content_hash": "cc88ed7d3672ffc9eec20b2e2ec9f1f5",
+  "statistics": {
+    "char_count": 1784,
+    "word_count": 214,
+    "line_count": 22,
+    "paragraph_count": 7,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:10.797282",
+  "sections": []
+}

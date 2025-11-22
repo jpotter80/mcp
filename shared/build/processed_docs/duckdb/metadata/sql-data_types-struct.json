@@ -1,0 +1,101 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/struct"
+  ],
+  "title": "Struct Data Type",
+  "file_name": "struct.md",
+  "file_stem": "struct",
+  "file_path": "sql/data_types/struct.md",
+  "file_size": 11593,
+  "document_id": "sql-data_types-struct",
+  "url": "/sql/data_types/struct",
+  "content_hash": "44f9c20c17913eb6b8499da3f83b500d",
+  "statistics": {
+    "char_count": 9742,
+    "word_count": 1555,
+    "line_count": 328,
+    "paragraph_count": 100,
+    "header_count": 15,
+    "code_block_count": 45,
+    "code_lines": 86
+  },
+  "processed_at": "2025-11-22T10:32:12.602554",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Creating Structs",
+      "anchor": "creating-structs"
+    },
+    {
+      "level": 2,
+      "title": "Adding or Updating Fields of Structs",
+      "anchor": "adding-or-updating-fields-of-structs"
+    },
+    {
+      "level": 2,
+      "title": "Retrieving from Structs",
+      "anchor": "retrieving-from-structs"
+    },
+    {
+      "level": 3,
+      "title": "`unnest` / `STRUCT.*`",
+      "anchor": "unnest-struct"
+    },
+    {
+      "level": 2,
+      "title": "Dot Notation Order of Operations",
+      "anchor": "dot-notation-order-of-operations"
+    },
+    {
+      "level": 3,
+      "title": "No Dots",
+      "anchor": "no-dots"
+    },
+    {
+      "level": 3,
+      "title": "One Dot",
+      "anchor": "one-dot"
+    },
+    {
+      "level": 3,
+      "title": "Two (or More) Dots",
+      "anchor": "two-or-more-dots"
+    },
+    {
+      "level": 2,
+      "title": "Creating Structs with the `row` Function",
+      "anchor": "creating-structs-with-the-row-function"
+    },
+    {
+      "level": 2,
+      "title": "Comparison and Ordering",
+      "anchor": "comparison-and-ordering"
+    },
+    {
+      "level": 2,
+      "title": "Updating the Schema",
+      "anchor": "updating-the-schema"
+    },
+    {
+      "level": 3,
+      "title": "Adding a Field",
+      "anchor": "adding-a-field"
+    },
+    {
+      "level": 3,
+      "title": "Dropping a Field",
+      "anchor": "dropping-a-field"
+    },
+    {
+      "level": 3,
+      "title": "Renaming a Field",
+      "anchor": "renaming-a-field"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

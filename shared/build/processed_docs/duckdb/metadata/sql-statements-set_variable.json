@@ -1,0 +1,52 @@
+{
+  "layout": "docu",
+  "railroad": "statements/setvariable.js",
+  "redirect_from": [
+    "/docs/sql/statements/set_variable"
+  ],
+  "title": "SET VARIABLE and RESET VARIABLE Statements",
+  "file_name": "set_variable.md",
+  "file_stem": "set_variable",
+  "file_path": "sql/statements/set_variable.md",
+  "file_size": 2911,
+  "document_id": "sql-statements-set_variable",
+  "url": "/sql/statements/set_variable",
+  "content_hash": "69f349015d52d5b4a116e571ca946222",
+  "statistics": {
+    "char_count": 2664,
+    "word_count": 400,
+    "line_count": 106,
+    "paragraph_count": 31,
+    "header_count": 5,
+    "code_block_count": 7,
+    "code_lines": 28
+  },
+  "processed_at": "2025-11-22T10:32:15.943994",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Variable Scopes",
+      "anchor": "variable-scopes"
+    },
+    {
+      "level": 2,
+      "title": "`SET VARIABLE`",
+      "anchor": "set-variable"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`RESET VARIABLE`",
+      "anchor": "reset-variable"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

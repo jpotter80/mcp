@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "railroad": "statements/vacuum.js",
+  "redirect_from": [
+    "/docs/sql/statements/vacuum"
+  ],
+  "title": "VACUUM Statement",
+  "file_name": "vacuum.md",
+  "file_stem": "vacuum",
+  "file_path": "sql/statements/vacuum.md",
+  "file_size": 1234,
+  "document_id": "sql-statements-vacuum",
+  "url": "/sql/statements/vacuum",
+  "content_hash": "b32fcd3f488c82abdf1fb86d6ce687c6",
+  "statistics": {
+    "char_count": 1078,
+    "word_count": 151,
+    "line_count": 49,
+    "paragraph_count": 18,
+    "header_count": 3,
+    "code_block_count": 6,
+    "code_lines": 7
+  },
+  "processed_at": "2025-11-22T10:32:16.031703",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Reclaiming Space",
+      "anchor": "reclaiming-space"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

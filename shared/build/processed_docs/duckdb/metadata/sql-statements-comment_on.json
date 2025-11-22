@@ -1,0 +1,47 @@
+{
+  "layout": "docu",
+  "railroad": "statements/comment.js",
+  "redirect_from": [
+    "/docs/sql/statements/comment_on"
+  ],
+  "title": "COMMENT ON Statement",
+  "file_name": "comment_on.md",
+  "file_stem": "comment_on",
+  "file_path": "sql/statements/comment_on.md",
+  "file_size": 2310,
+  "document_id": "sql-statements-comment_on",
+  "url": "/sql/statements/comment_on",
+  "content_hash": "da01eba2cd66c6a6ec274fe2a3db839e",
+  "statistics": {
+    "char_count": 2149,
+    "word_count": 312,
+    "line_count": 119,
+    "paragraph_count": 42,
+    "header_count": 4,
+    "code_block_count": 17,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:15.528334",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Reading Comments",
+      "anchor": "reading-comments"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

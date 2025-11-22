@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/import_pandas"
+  ],
+  "title": "Import from Pandas",
+  "file_name": "import_pandas.md",
+  "file_stem": "import_pandas",
+  "file_path": "guides/python/import_pandas.md",
+  "file_size": 1468,
+  "document_id": "guides-python-import_pandas",
+  "url": "/guides/python/import_pandas",
+  "content_hash": "a07d036ac040b64d5be4ff5f6ab43d57",
+  "statistics": {
+    "char_count": 1366,
+    "word_count": 176,
+    "line_count": 29,
+    "paragraph_count": 9,
+    "header_count": 5,
+    "code_block_count": 2,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:11.569493",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Create a Pandas dataframe",
+      "anchor": "create-a-pandas-dataframe"
+    },
+    {
+      "level": 1,
+      "title": "create the table \"my_table\" from the DataFrame \"my_df\"",
+      "anchor": "create-the-table-my_table-from-the-dataframe-my_df"
+    },
+    {
+      "level": 1,
+      "title": "Note: duckdb.sql connects to the default in-memory database connection",
+      "anchor": "note-duckdbsql-connects-to-the-default-in-memory-database-connection"
+    },
+    {
+      "level": 1,
+      "title": "insert into the table \"my_table\" from the DataFrame \"my_df\"",
+      "anchor": "insert-into-the-table-my_table-from-the-dataframe-my_df"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

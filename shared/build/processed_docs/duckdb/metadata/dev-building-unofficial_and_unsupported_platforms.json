@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/unofficial_and_unsupported_platforms"
+  ],
+  "title": "Unofficial and Unsupported Platforms",
+  "file_name": "unofficial_and_unsupported_platforms.md",
+  "file_stem": "unofficial_and_unsupported_platforms",
+  "file_path": "dev/building/unofficial_and_unsupported_platforms.md",
+  "file_size": 2806,
+  "document_id": "dev-building-unofficial_and_unsupported_platforms",
+  "url": "/dev/building/unofficial_and_unsupported_platforms",
+  "content_hash": "3d0afba1c4944785a234f83ae5823082",
+  "statistics": {
+    "char_count": 2641,
+    "word_count": 260,
+    "line_count": 44,
+    "paragraph_count": 13,
+    "header_count": 3,
+    "code_block_count": 2,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:10.378073",
+  "sections": [
+    {
+      "level": 2,
+      "title": "32-bit Architectures",
+      "anchor": "32-bit-architectures"
+    },
+    {
+      "level": 2,
+      "title": "Big-Endian Architectures",
+      "anchor": "big-endian-architectures"
+    },
+    {
+      "level": 2,
+      "title": "RISC-V Architectures",
+      "anchor": "risc-v-architectures"
+    }
+  ]
+}

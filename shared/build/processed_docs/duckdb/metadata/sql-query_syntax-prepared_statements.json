@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/query_syntax/prepared_statements"
+  ],
+  "title": "Prepared Statements",
+  "file_name": "prepared_statements.md",
+  "file_stem": "prepared_statements",
+  "file_path": "sql/query_syntax/prepared_statements.md",
+  "file_size": 2649,
+  "document_id": "sql-query_syntax-prepared_statements",
+  "url": "/sql/query_syntax/prepared_statements",
+  "content_hash": "f5b3b2f68558dfc51897291bc2abb5ea",
+  "statistics": {
+    "char_count": 2486,
+    "word_count": 343,
+    "line_count": 95,
+    "paragraph_count": 27,
+    "header_count": 6,
+    "code_block_count": 9,
+    "code_lines": 22
+  },
+  "processed_at": "2025-11-22T10:32:15.262617",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 3,
+      "title": "Example Dataset",
+      "anchor": "example-dataset"
+    },
+    {
+      "level": 3,
+      "title": "Auto-Incremented Parameters: `?`",
+      "anchor": "auto-incremented-parameters-"
+    },
+    {
+      "level": 3,
+      "title": "Positional Parameters: `$1`",
+      "anchor": "positional-parameters-1"
+    },
+    {
+      "level": 3,
+      "title": "Named Parameters: `$parameter`",
+      "anchor": "named-parameters-parameter"
+    },
+    {
+      "level": 2,
+      "title": "Dropping Prepared Statements: `DEALLOCATE`",
+      "anchor": "dropping-prepared-statements-deallocate"
+    }
+  ]
+}

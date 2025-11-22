@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "title": "Timestamp Issues",
+  "file_name": "timestamps.md",
+  "file_stem": "timestamps",
+  "file_path": "guides/sql_features/timestamps.md",
+  "file_size": 4721,
+  "document_id": "guides-sql_features-timestamps",
+  "url": "/guides/sql_features/timestamps",
+  "content_hash": "94801b366a2581e905bd8bec8184f45a",
+  "statistics": {
+    "char_count": 3916,
+    "word_count": 583,
+    "line_count": 128,
+    "paragraph_count": 27,
+    "header_count": 3,
+    "code_block_count": 8,
+    "code_lines": 52
+  },
+  "processed_at": "2025-11-22T10:32:12.022865",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Timestamp with Time Zone Promotion Casts",
+      "anchor": "timestamp-with-time-zone-promotion-casts"
+    },
+    {
+      "level": 2,
+      "title": "Time Zone Performance",
+      "anchor": "time-zone-performance"
+    },
+    {
+      "level": 2,
+      "title": "Half Open Intervals",
+      "anchor": "half-open-intervals"
+    }
+  ]
+}

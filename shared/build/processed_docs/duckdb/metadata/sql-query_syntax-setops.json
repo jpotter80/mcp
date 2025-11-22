@@ -1,0 +1,82 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/setops.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/setops"
+  ],
+  "title": "Set Operations",
+  "file_name": "setops.md",
+  "file_stem": "setops",
+  "file_path": "sql/query_syntax/setops.md",
+  "file_size": 4388,
+  "document_id": "sql-query_syntax-setops",
+  "url": "/sql/query_syntax/setops",
+  "content_hash": "7772b99042c717a5384b8a6644c2ec1d",
+  "statistics": {
+    "char_count": 4167,
+    "word_count": 697,
+    "line_count": 150,
+    "paragraph_count": 41,
+    "header_count": 11,
+    "code_block_count": 8,
+    "code_lines": 29
+  },
+  "processed_at": "2025-11-22T10:32:15.312993",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`UNION`",
+      "anchor": "union"
+    },
+    {
+      "level": 3,
+      "title": "Vanilla `UNION` (Set Semantics)",
+      "anchor": "vanilla-union-set-semantics"
+    },
+    {
+      "level": 3,
+      "title": "`UNION ALL` (Bag Semantics)",
+      "anchor": "union-all-bag-semantics"
+    },
+    {
+      "level": 3,
+      "title": "`UNION [ALL] BY NAME`",
+      "anchor": "union-all-by-name"
+    },
+    {
+      "level": 2,
+      "title": "`INTERSECT`",
+      "anchor": "intersect"
+    },
+    {
+      "level": 3,
+      "title": "Vanilla `INTERSECT` (Set Semantics)",
+      "anchor": "vanilla-intersect-set-semantics"
+    },
+    {
+      "level": 3,
+      "title": "`INTERSECT ALL` (Bag Semantics)",
+      "anchor": "intersect-all-bag-semantics"
+    },
+    {
+      "level": 2,
+      "title": "`EXCEPT`",
+      "anchor": "except"
+    },
+    {
+      "level": 3,
+      "title": "Vanilla `EXCEPT` (Set Semantics)",
+      "anchor": "vanilla-except-set-semantics"
+    },
+    {
+      "level": 3,
+      "title": "`EXCEPT ALL` (Bag Semantics)",
+      "anchor": "except-all-bag-semantics"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

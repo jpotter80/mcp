@@ -1,0 +1,155 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-postgres",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/postgres",
+    "/docs/extensions/postgres/",
+    "/docs/stable/extensions/postgres",
+    "/docs/stable/extensions/postgres/"
+  ],
+  "title": "PostgreSQL Extension",
+  "file_name": "postgres.md",
+  "file_stem": "postgres",
+  "file_path": "core_extensions/postgres.md",
+  "file_size": 13373,
+  "document_id": "core_extensions-postgres",
+  "url": "/core_extensions/postgres",
+  "content_hash": "2e9542c2cb9a49e4c44cbe9d9e153da8",
+  "statistics": {
+    "char_count": 12077,
+    "word_count": 1697,
+    "line_count": 377,
+    "paragraph_count": 112,
+    "header_count": 25,
+    "code_block_count": 39,
+    "code_lines": 74
+  },
+  "processed_at": "2025-11-22T10:32:08.469991",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Connecting",
+      "anchor": "connecting"
+    },
+    {
+      "level": 3,
+      "title": "Configuration",
+      "anchor": "configuration"
+    },
+    {
+      "level": 3,
+      "title": "Configuring via Secrets",
+      "anchor": "configuring-via-secrets"
+    },
+    {
+      "level": 4,
+      "title": "Managing Multiple Secrets",
+      "anchor": "managing-multiple-secrets"
+    },
+    {
+      "level": 3,
+      "title": "Configuring via Environment Variables",
+      "anchor": "configuring-via-environment-variables"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Writing Data to PostgreSQL",
+      "anchor": "writing-data-to-postgresql"
+    },
+    {
+      "level": 3,
+      "title": "`CREATE TABLE`",
+      "anchor": "create-table"
+    },
+    {
+      "level": 3,
+      "title": "`INSERT INTO`",
+      "anchor": "insert-into"
+    },
+    {
+      "level": 3,
+      "title": "`SELECT`",
+      "anchor": "select"
+    },
+    {
+      "level": 3,
+      "title": "`COPY`",
+      "anchor": "copy"
+    },
+    {
+      "level": 3,
+      "title": "`UPDATE`",
+      "anchor": "update"
+    },
+    {
+      "level": 3,
+      "title": "`DELETE`",
+      "anchor": "delete"
+    },
+    {
+      "level": 3,
+      "title": "`ALTER TABLE`",
+      "anchor": "alter-table"
+    },
+    {
+      "level": 3,
+      "title": "`DROP TABLE`",
+      "anchor": "drop-table"
+    },
+    {
+      "level": 3,
+      "title": "`CREATE VIEW`",
+      "anchor": "create-view"
+    },
+    {
+      "level": 3,
+      "title": "`CREATE SCHEMA` / `DROP SCHEMA`",
+      "anchor": "create-schema-drop-schema"
+    },
+    {
+      "level": 2,
+      "title": "`DETACH`",
+      "anchor": "detach"
+    },
+    {
+      "level": 3,
+      "title": "Transactions",
+      "anchor": "transactions"
+    },
+    {
+      "level": 2,
+      "title": "Running SQL Queries in PostgreSQL",
+      "anchor": "running-sql-queries-in-postgresql"
+    },
+    {
+      "level": 3,
+      "title": "The `postgres_query` Table Function",
+      "anchor": "the-postgres_query-table-function"
+    },
+    {
+      "level": 3,
+      "title": "The `postgres_execute` Function",
+      "anchor": "the-postgres_execute-function"
+    },
+    {
+      "level": 2,
+      "title": "Settings",
+      "anchor": "settings"
+    },
+    {
+      "level": 2,
+      "title": "Schema Cache",
+      "anchor": "schema-cache"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_editors/dbeaver"
+  ],
+  "title": "DBeaver SQL IDE",
+  "file_name": "dbeaver.md",
+  "file_stem": "dbeaver",
+  "file_path": "guides/sql_editors/dbeaver.md",
+  "file_size": 4861,
+  "document_id": "guides-sql_editors-dbeaver",
+  "url": "/guides/sql_editors/dbeaver",
+  "content_hash": "9ba24e09902b5f7d7a9662082c0dcffa",
+  "statistics": {
+    "char_count": 2837,
+    "word_count": 434,
+    "line_count": 58,
+    "paragraph_count": 17,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.938920",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing DBeaver",
+      "anchor": "installing-dbeaver"
+    },
+    {
+      "level": 2,
+      "title": "Alternative Driver Installation",
+      "anchor": "alternative-driver-installation"
+    }
+  ]
+}

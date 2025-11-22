@@ -1,0 +1,11 @@
+DuckDB has two types of indexes: zonemaps and ART indexes.
+
+## Zonemaps
+
+DuckDB automatically creates [zonemaps](https://en.wikipedia.org/wiki/Block_Range_Index) (also known as min-max indexes) for the columns of all [general-purpose data types]({% link docs/stable/sql/data_types/overview.md %}#general-purpose-data-types).
+Operations like predicate pushdown into scan operators and computing aggregations use zonemaps.
+If a filter criterion (like `WHERE column1 = 123`) is in use, DuckDB can skip any row group whose min-max range does not contain that filter value (e.g., it can omit a block with a min-max range of 1000 to 2000 when comparing for `= 123` or ` Bestpractice We recommend following these guidelines:
+>
+> * Only use primary keys, foreign keys, or unique constraints, if these are necessary for enforcing constraints on your data.
+> * Do not define explicit indexes unless you have highly selective queries and enough memory available.
+> * If you define an ART index, do so after bulk loading the data to the table. Adding an index prior to loading, either explicitly or via primary/foreign keys, is [detrimental to load performance]({% link docs/stable/guides/performance/schema.md %}#microbenchmark-the-effect-of-primary-keys).

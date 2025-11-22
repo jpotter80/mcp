@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/r"
+  ],
+  "title": "R",
+  "file_name": "r.md",
+  "file_stem": "r",
+  "file_path": "dev/building/r.md",
+  "file_size": 757,
+  "document_id": "dev-building-r",
+  "url": "/dev/building/r",
+  "content_hash": "9869061fcde3da662678e0f4e8eb1cc6",
+  "statistics": {
+    "char_count": 687,
+    "word_count": 111,
+    "line_count": 21,
+    "paragraph_count": 8,
+    "header_count": 1,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:10.363786",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Parallelizing the Build",
+      "anchor": "parallelizing-the-build"
+    }
+  ]
+}

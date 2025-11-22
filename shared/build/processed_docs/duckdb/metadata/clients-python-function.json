@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/function",
+    "/docs/api/python/function/",
+    "/docs/clients/python/function"
+  ],
+  "title": "Python Function API",
+  "file_name": "function.md",
+  "file_stem": "function",
+  "file_path": "clients/python/function.md",
+  "file_size": 11948,
+  "document_id": "clients-python-function",
+  "url": "/clients/python/function",
+  "content_hash": "e33b0190e86ad0b376829762ad357c3d",
+  "statistics": {
+    "char_count": 10596,
+    "word_count": 1339,
+    "line_count": 366,
+    "paragraph_count": 86,
+    "header_count": 9,
+    "code_block_count": 26,
+    "code_lines": 215
+  },
+  "processed_at": "2025-11-22T10:32:04.767780",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Creating Functions",
+      "anchor": "creating-functions"
+    },
+    {
+      "level": 3,
+      "title": "Using Partial Functions",
+      "anchor": "using-partial-functions"
+    },
+    {
+      "level": 2,
+      "title": "Type Annotation",
+      "anchor": "type-annotation"
+    },
+    {
+      "level": 2,
+      "title": "`NULL` Handling",
+      "anchor": "null-handling"
+    },
+    {
+      "level": 2,
+      "title": "Exception Handling",
+      "anchor": "exception-handling"
+    },
+    {
+      "level": 2,
+      "title": "Side Effects",
+      "anchor": "side-effects"
+    },
+    {
+      "level": 2,
+      "title": "Python Function Types",
+      "anchor": "python-function-types"
+    },
+    {
+      "level": 3,
+      "title": "Arrow",
+      "anchor": "arrow"
+    },
+    {
+      "level": 3,
+      "title": "Native",
+      "anchor": "native"
+    }
+  ]
+}

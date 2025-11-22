@@ -1,0 +1,204 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-r",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/r",
+    "/docs/api/r/",
+    "/docs/clients/r"
+  ],
+  "title": "R Client",
+  "file_name": "r.md",
+  "file_stem": "r",
+  "file_path": "clients/r.md",
+  "file_size": 7935,
+  "document_id": "clients-r",
+  "url": "/clients/r",
+  "content_hash": "324d340d836b903d9786bf0c981eed61",
+  "statistics": {
+    "char_count": 5125,
+    "word_count": 681,
+    "line_count": 122,
+    "paragraph_count": 39,
+    "header_count": 35,
+    "code_block_count": 12,
+    "code_lines": 79
+  },
+  "processed_at": "2025-11-22T10:32:07.150655",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 3,
+      "title": "`duckdb`: R Client",
+      "anchor": "duckdb-r-client"
+    },
+    {
+      "level": 3,
+      "title": "`duckplyr`: dplyr Client",
+      "anchor": "duckplyr-dplyr-client"
+    },
+    {
+      "level": 2,
+      "title": "Reference Manual",
+      "anchor": "reference-manual"
+    },
+    {
+      "level": 2,
+      "title": "Basic Client Usage",
+      "anchor": "basic-client-usage"
+    },
+    {
+      "level": 3,
+      "title": "Startup & Shutdown",
+      "anchor": "startup-shutdown"
+    },
+    {
+      "level": 1,
+      "title": "to start an in-memory database",
+      "anchor": "to-start-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "or",
+      "anchor": "or"
+    },
+    {
+      "level": 1,
+      "title": "to use a database file (not shared between processes)",
+      "anchor": "to-use-a-database-file-not-shared-between-processes"
+    },
+    {
+      "level": 1,
+      "title": "to use a database file (shared between processes)",
+      "anchor": "to-use-a-database-file-shared-between-processes"
+    },
+    {
+      "level": 3,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 1,
+      "title": "create a table",
+      "anchor": "create-a-table"
+    },
+    {
+      "level": 1,
+      "title": "insert two items into the table",
+      "anchor": "insert-two-items-into-the-table"
+    },
+    {
+      "level": 1,
+      "title": "retrieve the items again",
+      "anchor": "retrieve-the-items-again"
+    },
+    {
+      "level": 1,
+      "title": "item value count",
+      "anchor": "item-value-count"
+    },
+    {
+      "level": 1,
+      "title": "1  jeans  20.0     1",
+      "anchor": "1-jeans-200-1"
+    },
+    {
+      "level": 1,
+      "title": "2 hammer  42.2     2",
+      "anchor": "2-hammer-422-2"
+    },
+    {
+      "level": 1,
+      "title": "prepared statement parameters are given as a list",
+      "anchor": "prepared-statement-parameters-are-given-as-a-list"
+    },
+    {
+      "level": 1,
+      "title": "if you want to reuse a prepared statement multiple times, use dbSendStatement() and dbBind()",
+      "anchor": "if-you-want-to-reuse-a-prepared-statement-multiple-times-use-dbsendstatement-and-dbbind"
+    },
+    {
+      "level": 1,
+      "title": "query the database using a prepared statement",
+      "anchor": "query-the-database-using-a-prepared-statement"
+    },
+    {
+      "level": 1,
+      "title": "item",
+      "anchor": "item"
+    },
+    {
+      "level": 1,
+      "title": "1 laptop",
+      "anchor": "1-laptop"
+    },
+    {
+      "level": 2,
+      "title": "Efficient Transfer",
+      "anchor": "efficient-transfer"
+    },
+    {
+      "level": 1,
+      "title": "Sepal.Length Sepal.Width Petal.Length Petal.Width Species",
+      "anchor": "sepallength-sepalwidth-petallength-petalwidth-species"
+    },
+    {
+      "level": 1,
+      "title": "1          5.1         3.5          1.4         0.2  setosa",
+      "anchor": "1-51-35-14-02-setosa"
+    },
+    {
+      "level": 1,
+      "title": "Sepal.Length Sepal.Width Petal.Length Petal.Width Species",
+      "anchor": "sepallength-sepalwidth-petallength-petalwidth-species"
+    },
+    {
+      "level": 1,
+      "title": "1          5.1         3.5          1.4         0.2  setosa",
+      "anchor": "1-51-35-14-02-setosa"
+    },
+    {
+      "level": 2,
+      "title": "dbplyr",
+      "anchor": "dbplyr"
+    },
+    {
+      "level": 1,
+      "title": "Establish a CSV for the sake of this example",
+      "anchor": "establish-a-csv-for-the-sake-of-this-example"
+    },
+    {
+      "level": 1,
+      "title": "Summarize the dataset in DuckDB to avoid reading the entire CSV into R's memory",
+      "anchor": "summarize-the-dataset-in-duckdb-to-avoid-reading-the-entire-csv-into-rs-memory"
+    },
+    {
+      "level": 1,
+      "title": "Establish a set of Parquet files",
+      "anchor": "establish-a-set-of-parquet-files"
+    },
+    {
+      "level": 1,
+      "title": "Summarize the dataset in DuckDB to avoid reading 12 Parquet files into R's memory",
+      "anchor": "summarize-the-dataset-in-duckdb-to-avoid-reading-12-parquet-files-into-rs-memory"
+    },
+    {
+      "level": 2,
+      "title": "Memory Limit",
+      "anchor": "memory-limit"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Warning When Installing on macOS",
+      "anchor": "warning-when-installing-on-macos"
+    }
+  ]
+}

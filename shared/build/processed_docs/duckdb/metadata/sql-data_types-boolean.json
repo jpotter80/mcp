@@ -1,0 +1,37 @@
+{
+  "blurb": "The BOOLEAN type represents a statement of truth (“true” or “false”).",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/boolean"
+  ],
+  "title": "Boolean Type",
+  "file_name": "boolean.md",
+  "file_stem": "boolean",
+  "file_path": "sql/data_types/boolean.md",
+  "file_size": 2348,
+  "document_id": "sql-data_types-boolean",
+  "url": "/sql/data_types/boolean",
+  "content_hash": "d87d8a1adc33b9b0e31ce448f7993d99",
+  "statistics": {
+    "char_count": 2077,
+    "word_count": 366,
+    "line_count": 56,
+    "paragraph_count": 19,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:12.376954",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Conjunctions",
+      "anchor": "conjunctions"
+    },
+    {
+      "level": 2,
+      "title": "Expressions",
+      "anchor": "expressions"
+    }
+  ]
+}

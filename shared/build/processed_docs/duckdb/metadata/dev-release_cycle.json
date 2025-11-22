@@ -1,0 +1,148 @@
+{
+  "layout": "docu",
+  "title": "Release Cycle",
+  "file_name": "release_cycle.md",
+  "file_stem": "release_cycle",
+  "file_path": "dev/release_cycle.md",
+  "file_size": 14804,
+  "document_id": "dev-release_cycle",
+  "url": "/dev/release_cycle",
+  "content_hash": "c8dd481e5221420d6e99b080d2a10176",
+  "statistics": {
+    "char_count": 14025,
+    "word_count": 2077,
+    "line_count": 272,
+    "paragraph_count": 61,
+    "header_count": 25,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.535551",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "level": 3,
+      "title": "Terminology",
+      "anchor": "terminology"
+    },
+    {
+      "level": 3,
+      "title": "Main Branches and Tags",
+      "anchor": "main-branches-and-tags"
+    },
+    {
+      "level": 2,
+      "title": "The Main DuckDB Release Cycle",
+      "anchor": "the-main-duckdb-release-cycle"
+    },
+    {
+      "level": 3,
+      "title": "Phase 1: Mid-Cycle",
+      "anchor": "phase-1-mid-cycle"
+    },
+    {
+      "level": 4,
+      "title": "Active DuckDB Branches",
+      "anchor": "active-duckdb-branches"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "PRs into DuckDB",
+      "anchor": "prs-into-duckdb"
+    },
+    {
+      "level": 3,
+      "title": "Phase 2: Pre-Release",
+      "anchor": "phase-2-pre-release"
+    },
+    {
+      "level": 4,
+      "title": "Active Branches",
+      "anchor": "active-branches"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "PRs into DuckDB",
+      "anchor": "prs-into-duckdb"
+    },
+    {
+      "level": 3,
+      "title": "Phase 3: Feature Freeze",
+      "anchor": "phase-3-feature-freeze"
+    },
+    {
+      "level": 4,
+      "title": "Active Branches",
+      "anchor": "active-branches"
+    },
+    {
+      "level": 4,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 4,
+      "title": "PRs into DuckDB",
+      "anchor": "prs-into-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Main Extension Release Cycle",
+      "anchor": "main-extension-release-cycle"
+    },
+    {
+      "level": 3,
+      "title": "In-Tree Extensions",
+      "anchor": "in-tree-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Stable API Extensions",
+      "anchor": "stable-api-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Unstable API Extensions",
+      "anchor": "unstable-api-extensions"
+    },
+    {
+      "level": 4,
+      "title": "Categorizing by Branching",
+      "anchor": "categorizing-by-branching"
+    },
+    {
+      "level": 4,
+      "title": "DuckDB Targets",
+      "anchor": "duckdb-targets"
+    },
+    {
+      "level": 4,
+      "title": "Where to Merge PRs",
+      "anchor": "where-to-merge-prs"
+    },
+    {
+      "level": 4,
+      "title": "What Extension Version Will Be Released?",
+      "anchor": "what-extension-version-will-be-released"
+    },
+    {
+      "level": 4,
+      "title": "Switching between Single Branch, Two Branch and Three Branch",
+      "anchor": "switching-between-single-branch-two-branch-and-three-branch"
+    }
+  ]
+}

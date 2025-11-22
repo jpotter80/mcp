@@ -1,0 +1,64 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-odbc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/odbc/windows",
+    "/docs/api/odbc/windows/",
+    "/docs/clients/odbc/windows"
+  ],
+  "title": "ODBC API on Windows",
+  "file_name": "windows.md",
+  "file_stem": "windows",
+  "file_path": "clients/odbc/windows.md",
+  "file_size": 4976,
+  "document_id": "clients-odbc-windows",
+  "url": "/clients/odbc/windows",
+  "content_hash": "abe895a690fb28a29f3cd0c2758702c6",
+  "statistics": {
+    "char_count": 4605,
+    "word_count": 565,
+    "line_count": 83,
+    "paragraph_count": 35,
+    "header_count": 7,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.528059",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Setup",
+      "anchor": "setup"
+    },
+    {
+      "level": 3,
+      "title": "DSN Windows Setup",
+      "anchor": "dsn-windows-setup"
+    },
+    {
+      "level": 3,
+      "title": "Default DuckDB DSN",
+      "anchor": "default-duckdb-dsn"
+    },
+    {
+      "level": 3,
+      "title": "Changing DuckDB DSN",
+      "anchor": "changing-duckdb-dsn"
+    },
+    {
+      "level": 2,
+      "title": "More Detailed Windows Setup",
+      "anchor": "more-detailed-windows-setup"
+    },
+    {
+      "level": 3,
+      "title": "Registry Keys",
+      "anchor": "registry-keys"
+    },
+    {
+      "level": 3,
+      "title": "Updating the ODBC Driver",
+      "anchor": "updating-the-odbc-driver"
+    }
+  ]
+}

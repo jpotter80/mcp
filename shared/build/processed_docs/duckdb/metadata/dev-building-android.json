@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/android"
+  ],
+  "title": "Android",
+  "file_name": "android.md",
+  "file_stem": "android",
+  "file_path": "dev/building/android.md",
+  "file_size": 3427,
+  "document_id": "dev-building-android",
+  "url": "/dev/building/android",
+  "content_hash": "6973350742a20a0b3dcd8352075abac1",
+  "statistics": {
+    "char_count": 3138,
+    "word_count": 360,
+    "line_count": 120,
+    "paragraph_count": 31,
+    "header_count": 4,
+    "code_block_count": 11,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-22T10:32:10.215117",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Building the DuckDB Library Using the Android NDK",
+      "anchor": "building-the-duckdb-library-using-the-android-ndk"
+    },
+    {
+      "level": 2,
+      "title": "Building the CLI in Termux",
+      "anchor": "building-the-cli-in-termux"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Log Library Is Missing",
+      "anchor": "log-library-is-missing"
+    }
+  ]
+}

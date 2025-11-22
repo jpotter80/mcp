@@ -1,0 +1,493 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/c/vector",
+    "/docs/api/c/vector/",
+    "/docs/clients/c/vector"
+  ],
+  "title": "Vectors",
+  "file_name": "vector.md",
+  "file_stem": "vector",
+  "file_path": "clients/c/vector.md",
+  "file_size": 36585,
+  "document_id": "clients-c-vector",
+  "url": "/clients/c/vector",
+  "content_hash": "5549e3ffbde59fb0c66b57e8ccc353b8",
+  "statistics": {
+    "char_count": 14631,
+    "word_count": 1915,
+    "line_count": 541,
+    "paragraph_count": 184,
+    "header_count": 93,
+    "code_block_count": 6,
+    "code_lines": 210
+  },
+  "processed_at": "2025-11-22T10:32:03.808754",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Vector Format",
+      "anchor": "vector-format"
+    },
+    {
+      "level": 3,
+      "title": "Primitive Types",
+      "anchor": "primitive-types"
+    },
+    {
+      "level": 3,
+      "title": "`NULL` Values",
+      "anchor": "null-values"
+    },
+    {
+      "level": 3,
+      "title": "Strings",
+      "anchor": "strings"
+    },
+    {
+      "level": 3,
+      "title": "Decimals",
+      "anchor": "decimals"
+    },
+    {
+      "level": 3,
+      "title": "Enums",
+      "anchor": "enums"
+    },
+    {
+      "level": 3,
+      "title": "Structs",
+      "anchor": "structs"
+    },
+    {
+      "level": 3,
+      "title": "Lists",
+      "anchor": "lists"
+    },
+    {
+      "level": 3,
+      "title": "Arrays",
+      "anchor": "arrays"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Example: Reading an int64 Vector with `NULL` Values",
+      "anchor": "example-reading-an-int64-vector-with-null-values"
+    },
+    {
+      "level": 3,
+      "title": "Example: Reading a String Vector",
+      "anchor": "example-reading-a-string-vector"
+    },
+    {
+      "level": 3,
+      "title": "Example: Reading a Struct Vector",
+      "anchor": "example-reading-a-struct-vector"
+    },
+    {
+      "level": 3,
+      "title": "Example: Reading a List Vector",
+      "anchor": "example-reading-a-list-vector"
+    },
+    {
+      "level": 2,
+      "title": "API Reference Overview",
+      "anchor": "api-reference-overview"
+    },
+    {
+      "level": 3,
+      "title": "Validity Mask Functions",
+      "anchor": "validity-mask-functions"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_create_vector`",
+      "anchor": "duckdb_create_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_destroy_vector`",
+      "anchor": "duckdb_destroy_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_column_type`",
+      "anchor": "duckdb_vector_get_column_type"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_data`",
+      "anchor": "duckdb_vector_get_data"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_get_validity`",
+      "anchor": "duckdb_vector_get_validity"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_ensure_validity_writable`",
+      "anchor": "duckdb_vector_ensure_validity_writable"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_assign_string_element`",
+      "anchor": "duckdb_vector_assign_string_element"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_assign_string_element_len`",
+      "anchor": "duckdb_vector_assign_string_element_len"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_get_child`",
+      "anchor": "duckdb_list_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_get_size`",
+      "anchor": "duckdb_list_vector_get_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_set_size`",
+      "anchor": "duckdb_list_vector_set_size"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_list_vector_reserve`",
+      "anchor": "duckdb_list_vector_reserve"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_struct_vector_get_child`",
+      "anchor": "duckdb_struct_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_array_vector_get_child`",
+      "anchor": "duckdb_array_vector_get_child"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_slice_vector`",
+      "anchor": "duckdb_slice_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_copy_sel`",
+      "anchor": "duckdb_vector_copy_sel"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_reference_value`",
+      "anchor": "duckdb_vector_reference_value"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_vector_reference_vector`",
+      "anchor": "duckdb_vector_reference_vector"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_row_is_valid`",
+      "anchor": "duckdb_validity_row_is_valid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 5,
+      "title": "Return Value",
+      "anchor": "return-value"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_validity`",
+      "anchor": "duckdb_validity_set_row_validity"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_invalid`",
+      "anchor": "duckdb_validity_set_row_invalid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 4,
+      "title": "`duckdb_validity_set_row_valid`",
+      "anchor": "duckdb_validity_set_row_valid"
+    },
+    {
+      "level": 5,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 5,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

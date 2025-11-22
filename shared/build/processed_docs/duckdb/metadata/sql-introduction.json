@@ -1,0 +1,66 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/introduction"
+  ],
+  "title": "SQL Introduction",
+  "file_name": "introduction.md",
+  "file_stem": "introduction",
+  "file_path": "sql/introduction.md",
+  "file_size": 17821,
+  "document_id": "sql-introduction",
+  "url": "/sql/introduction",
+  "content_hash": "f106c47c7a10c36d62ffd1c52c857840",
+  "statistics": {
+    "char_count": 15426,
+    "word_count": 2573,
+    "line_count": 376,
+    "paragraph_count": 108,
+    "header_count": 8,
+    "code_block_count": 33,
+    "code_lines": 92
+  },
+  "processed_at": "2025-11-22T10:32:14.892177",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Concepts",
+      "anchor": "concepts"
+    },
+    {
+      "level": 2,
+      "title": "Creating a New Table",
+      "anchor": "creating-a-new-table"
+    },
+    {
+      "level": 2,
+      "title": "Populating a Table with Rows",
+      "anchor": "populating-a-table-with-rows"
+    },
+    {
+      "level": 2,
+      "title": "Querying a Table",
+      "anchor": "querying-a-table"
+    },
+    {
+      "level": 2,
+      "title": "Joins between Tables",
+      "anchor": "joins-between-tables"
+    },
+    {
+      "level": 2,
+      "title": "Aggregate Functions",
+      "anchor": "aggregate-functions"
+    },
+    {
+      "level": 2,
+      "title": "Updates",
+      "anchor": "updates"
+    },
+    {
+      "level": 2,
+      "title": "Deletions",
+      "anchor": "deletions"
+    }
+  ]
+}

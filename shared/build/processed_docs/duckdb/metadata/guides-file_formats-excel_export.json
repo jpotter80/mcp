@@ -1,0 +1,43 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/excel_export",
+    "/docs/guides/import/excel_export/",
+    "/docs/guides/file_formats/excel_export"
+  ],
+  "title": "Excel Export",
+  "file_name": "excel_export.md",
+  "file_stem": "excel_export",
+  "file_path": "guides/file_formats/excel_export.md",
+  "file_size": 2370,
+  "document_id": "guides-file_formats-excel_export",
+  "url": "/guides/file_formats/excel_export",
+  "content_hash": "251c5d6393327fdea9fcfe84840b15f1",
+  "statistics": {
+    "char_count": 2198,
+    "word_count": 353,
+    "line_count": 61,
+    "paragraph_count": 21,
+    "header_count": 3,
+    "code_block_count": 7,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:10.905657",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Exporting Excel Sheets",
+      "anchor": "exporting-excel-sheets"
+    },
+    {
+      "level": 2,
+      "title": "Type Conversions",
+      "anchor": "type-conversions"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

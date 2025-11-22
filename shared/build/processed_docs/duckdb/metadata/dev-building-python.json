@@ -1,0 +1,171 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/python"
+  ],
+  "title": "Python",
+  "file_name": "python.md",
+  "file_stem": "python",
+  "file_path": "dev/building/python.md",
+  "file_size": 6695,
+  "document_id": "dev-building-python",
+  "url": "/dev/building/python",
+  "content_hash": "0315572aaef87482a46ae29f4ab6b8da",
+  "statistics": {
+    "char_count": 6588,
+    "word_count": 878,
+    "line_count": 252,
+    "paragraph_count": 80,
+    "header_count": 29,
+    "code_block_count": 21,
+    "code_lines": 54
+  },
+  "processed_at": "2025-11-22T10:32:10.346883",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 3,
+      "title": "1. DuckDB Python Repository",
+      "anchor": "1-duckdb-python-repository"
+    },
+    {
+      "level": 3,
+      "title": "2. Install Astral uv",
+      "anchor": "2-install-astral-uv"
+    },
+    {
+      "level": 2,
+      "title": "Development Environment Setup",
+      "anchor": "development-environment-setup"
+    },
+    {
+      "level": 3,
+      "title": "1. Platform-Specific Setup",
+      "anchor": "1-platform-specific-setup"
+    },
+    {
+      "level": 1,
+      "title": "Xcode command line tools",
+      "anchor": "xcode-command-line-tools"
+    },
+    {
+      "level": 3,
+      "title": "2. Install Dependencies and Build",
+      "anchor": "2-install-dependencies-and-build"
+    },
+    {
+      "level": 1,
+      "title": "Install all development dependencies without building the project",
+      "anchor": "install-all-development-dependencies-without-building-the-project"
+    },
+    {
+      "level": 1,
+      "title": "Build and install the project without build isolation",
+      "anchor": "build-and-install-the-project-without-build-isolation"
+    },
+    {
+      "level": 3,
+      "title": "3. Enable Pre-Commit Hooks",
+      "anchor": "3-enable-pre-commit-hooks"
+    },
+    {
+      "level": 3,
+      "title": "4. Verify Installation",
+      "anchor": "4-verify-installation"
+    },
+    {
+      "level": 2,
+      "title": "Development Workflow",
+      "anchor": "development-workflow"
+    },
+    {
+      "level": 3,
+      "title": "Running Tests",
+      "anchor": "running-tests"
+    },
+    {
+      "level": 3,
+      "title": "Test Coverage",
+      "anchor": "test-coverage"
+    },
+    {
+      "level": 3,
+      "title": "Building Wheels",
+      "anchor": "building-wheels"
+    },
+    {
+      "level": 3,
+      "title": "Cleaning Build Artifacts",
+      "anchor": "cleaning-build-artifacts"
+    },
+    {
+      "level": 2,
+      "title": "IDE Setup (CLion)",
+      "anchor": "ide-setup-clion"
+    },
+    {
+      "level": 3,
+      "title": "CMake Profile Configuration",
+      "anchor": "cmake-profile-configuration"
+    },
+    {
+      "level": 3,
+      "title": "Python Debug Configuration",
+      "anchor": "python-debug-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Debugging",
+      "anchor": "debugging"
+    },
+    {
+      "level": 3,
+      "title": "Command Line Debugging",
+      "anchor": "command-line-debugging"
+    },
+    {
+      "level": 1,
+      "title": "Example Python script (test.py)",
+      "anchor": "example-python-script-testpy"
+    },
+    {
+      "level": 1,
+      "title": "import duckdb",
+      "anchor": "import-duckdb"
+    },
+    {
+      "level": 1,
+      "title": "print(duckdb.sql(\"select * from range(1000)\").df())",
+      "anchor": "printduckdbsqlselect-from-range1000df"
+    },
+    {
+      "level": 1,
+      "title": "Set breakpoint (library loads when imported)",
+      "anchor": "set-breakpoint-library-loads-when-imported"
+    },
+    {
+      "level": 2,
+      "title": "Cross-Platform Testing",
+      "anchor": "cross-platform-testing"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Build Issues",
+      "anchor": "build-issues"
+    },
+    {
+      "level": 3,
+      "title": "Platform-Specific Issues",
+      "anchor": "platform-specific-issues"
+    }
+  ]
+}

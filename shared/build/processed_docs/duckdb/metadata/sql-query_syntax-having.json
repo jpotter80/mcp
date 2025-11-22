@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/groupby.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/having"
+  ],
+  "title": "HAVING Clause",
+  "file_name": "having.md",
+  "file_stem": "having",
+  "file_path": "sql/query_syntax/having.md",
+  "file_size": 979,
+  "document_id": "sql-query_syntax-having",
+  "url": "/sql/query_syntax/having",
+  "content_hash": "08a321e34315e325739240f44299d117",
+  "statistics": {
+    "char_count": 826,
+    "word_count": 130,
+    "line_count": 23,
+    "paragraph_count": 7,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:15.235676",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

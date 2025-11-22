@@ -1,0 +1,174 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/window.js",
+  "redirect_from": [
+    "/docs/sql/window_functions",
+    "/docs/sql/window_functions/",
+    "/docs/sql/functions/window_functions"
+  ],
+  "title": "Window Functions",
+  "file_name": "window_functions.md",
+  "file_stem": "window_functions",
+  "file_path": "sql/functions/window_functions.md",
+  "file_size": 26962,
+  "document_id": "sql-functions-window_functions",
+  "url": "/sql/functions/window_functions",
+  "content_hash": "b527a16d8cf01c2ce1397ef5c7b19d84",
+  "statistics": {
+    "char_count": 25193,
+    "word_count": 3993,
+    "line_count": 496,
+    "paragraph_count": 110,
+    "header_count": 29,
+    "code_block_count": 17,
+    "code_lines": 109
+  },
+  "processed_at": "2025-11-22T10:32:14.762638",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "General-Purpose Window Functions",
+      "anchor": "general-purpose-window-functions"
+    },
+    {
+      "level": 4,
+      "title": "`cume_dist([ORDER BY ordering])`",
+      "anchor": "cume_distorder-by-ordering"
+    },
+    {
+      "level": 4,
+      "title": "`dense_rank()`",
+      "anchor": "dense_rank"
+    },
+    {
+      "level": 4,
+      "title": "`fill(expr[ ORDER BY ordering])`",
+      "anchor": "fillexpr-order-by-ordering"
+    },
+    {
+      "level": 4,
+      "title": "`first_value(expr[ ORDER BY ordering][ IGNORE NULLS])`",
+      "anchor": "first_valueexpr-order-by-ordering-ignore-nulls"
+    },
+    {
+      "level": 4,
+      "title": "`lag(expr[, offset[, default]][ ORDER BY ordering][ IGNORE NULLS])`",
+      "anchor": "lagexpr-offset-default-order-by-ordering-ignore-nulls"
+    },
+    {
+      "level": 4,
+      "title": "`last_value(expr[ ORDER BY ordering][ IGNORE NULLS])`",
+      "anchor": "last_valueexpr-order-by-ordering-ignore-nulls"
+    },
+    {
+      "level": 4,
+      "title": "`lead(expr[, offset[, default]][ ORDER BY ordering][ IGNORE NULLS])`",
+      "anchor": "leadexpr-offset-default-order-by-ordering-ignore-nulls"
+    },
+    {
+      "level": 4,
+      "title": "`nth_value(expr, nth[ ORDER BY ordering][ IGNORE NULLS])`",
+      "anchor": "nth_valueexpr-nth-order-by-ordering-ignore-nulls"
+    },
+    {
+      "level": 4,
+      "title": "`ntile(num_buckets[ ORDER BY ordering])`",
+      "anchor": "ntilenum_buckets-order-by-ordering"
+    },
+    {
+      "level": 4,
+      "title": "`percent_rank([ORDER BY ordering])`",
+      "anchor": "percent_rankorder-by-ordering"
+    },
+    {
+      "level": 4,
+      "title": "`rank([ORDER BY ordering])`",
+      "anchor": "rankorder-by-ordering"
+    },
+    {
+      "level": 4,
+      "title": "`row_number([ORDER BY ordering])`",
+      "anchor": "row_numberorder-by-ordering"
+    },
+    {
+      "level": 2,
+      "title": "Aggregate Window Functions",
+      "anchor": "aggregate-window-functions"
+    },
+    {
+      "level": 2,
+      "title": "DISTINCT Arguments",
+      "anchor": "distinct-arguments"
+    },
+    {
+      "level": 2,
+      "title": "ORDER BY Arguments",
+      "anchor": "order-by-arguments"
+    },
+    {
+      "level": 2,
+      "title": "Nulls",
+      "anchor": "nulls"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation",
+      "anchor": "evaluation"
+    },
+    {
+      "level": 3,
+      "title": "Partition and Ordering",
+      "anchor": "partition-and-ordering"
+    },
+    {
+      "level": 3,
+      "title": "Framing",
+      "anchor": "framing"
+    },
+    {
+      "level": 4,
+      "title": "`ROWS` Framing",
+      "anchor": "rows-framing"
+    },
+    {
+      "level": 4,
+      "title": "`RANGE` Framing",
+      "anchor": "range-framing"
+    },
+    {
+      "level": 4,
+      "title": "`GROUPS` Framing",
+      "anchor": "groups-framing"
+    },
+    {
+      "level": 4,
+      "title": "`EXCLUDE` Clause",
+      "anchor": "exclude-clause"
+    },
+    {
+      "level": 3,
+      "title": "`WINDOW` Clauses",
+      "anchor": "window-clauses"
+    },
+    {
+      "level": 3,
+      "title": "Filtering the Results of Window Functions Using `QUALIFY`",
+      "anchor": "filtering-the-results-of-window-functions-using-qualify"
+    },
+    {
+      "level": 3,
+      "title": "Box and Whisker Queries",
+      "anchor": "box-and-whisker-queries"
+    }
+  ]
+}

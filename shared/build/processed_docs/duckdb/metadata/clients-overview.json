@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/clients",
+    "/docs/clients",
+    "/docs/clients/",
+    "/docs/api/overview",
+    "/docs/api/overview/",
+    "/docs/clients/overview"
+  ],
+  "title": "Client Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/overview.md",
+  "file_size": 7418,
+  "document_id": "clients-overview",
+  "url": "/clients/overview",
+  "content_hash": "e05adb85f4593b5e84bf004f43bc6767",
+  "statistics": {
+    "char_count": 4525,
+    "word_count": 440,
+    "line_count": 38,
+    "paragraph_count": 9,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.550244",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Support Tiers",
+      "anchor": "support-tiers"
+    },
+    {
+      "level": 2,
+      "title": "Compatibility",
+      "anchor": "compatibility"
+    }
+  ]
+}

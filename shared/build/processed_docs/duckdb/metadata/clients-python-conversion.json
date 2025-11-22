@@ -1,0 +1,115 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/conversion",
+    "/docs/api/python/conversion/",
+    "/docs/api/python/result_conversion",
+    "/docs/api/python/result_conversion/",
+    "/docs/clients/python/conversion"
+  ],
+  "title": "Conversion between DuckDB and Python",
+  "file_name": "conversion.md",
+  "file_stem": "conversion",
+  "file_path": "clients/python/conversion.md",
+  "file_size": 11479,
+  "document_id": "clients-python-conversion",
+  "url": "/clients/python/conversion",
+  "content_hash": "9b5ed3c811ffc95e1d8dee38b8c18759",
+  "statistics": {
+    "char_count": 8787,
+    "word_count": 1090,
+    "line_count": 307,
+    "paragraph_count": 81,
+    "header_count": 17,
+    "code_block_count": 16,
+    "code_lines": 135
+  },
+  "processed_at": "2025-11-22T10:32:04.627402",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Object Conversion: Python Object to DuckDB",
+      "anchor": "object-conversion-python-object-to-duckdb"
+    },
+    {
+      "level": 3,
+      "title": "`int`",
+      "anchor": "int"
+    },
+    {
+      "level": 3,
+      "title": "`float`",
+      "anchor": "float"
+    },
+    {
+      "level": 3,
+      "title": "`datetime.datetime`",
+      "anchor": "datetimedatetime"
+    },
+    {
+      "level": 3,
+      "title": "`datetime.time`",
+      "anchor": "datetimetime"
+    },
+    {
+      "level": 3,
+      "title": "`datetime.date`",
+      "anchor": "datetimedate"
+    },
+    {
+      "level": 3,
+      "title": "`bytes`",
+      "anchor": "bytes"
+    },
+    {
+      "level": 3,
+      "title": "`list`",
+      "anchor": "list"
+    },
+    {
+      "level": 3,
+      "title": "`dict`",
+      "anchor": "dict"
+    },
+    {
+      "level": 3,
+      "title": "`tuple`",
+      "anchor": "tuple"
+    },
+    {
+      "level": 3,
+      "title": "`numpy.ndarray` and `numpy.datetime64`",
+      "anchor": "numpyndarray-and-numpydatetime64"
+    },
+    {
+      "level": 2,
+      "title": "Result Conversion: DuckDB Results to Python",
+      "anchor": "result-conversion-duckdb-results-to-python"
+    },
+    {
+      "level": 3,
+      "title": "NumPy",
+      "anchor": "numpy"
+    },
+    {
+      "level": 3,
+      "title": "Pandas",
+      "anchor": "pandas"
+    },
+    {
+      "level": 3,
+      "title": "Apache Arrow",
+      "anchor": "apache-arrow"
+    },
+    {
+      "level": 3,
+      "title": "Polars",
+      "anchor": "polars"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    }
+  ]
+}

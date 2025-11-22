@@ -1,0 +1,58 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/read_file",
+    "/docs/guides/import/read_file/",
+    "/docs/guides/file_formats/read_file"
+  ],
+  "title": "Directly Reading Files",
+  "file_name": "read_file.md",
+  "file_stem": "read_file",
+  "file_path": "guides/file_formats/read_file.md",
+  "file_size": 4292,
+  "document_id": "guides-file_formats-read_file",
+  "url": "/guides/file_formats/read_file",
+  "content_hash": "f3bd1fbbd20d529bbb8593686655b6a6",
+  "statistics": {
+    "char_count": 3520,
+    "word_count": 471,
+    "line_count": 73,
+    "paragraph_count": 22,
+    "header_count": 6,
+    "code_block_count": 4,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:10.963640",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`read_text`",
+      "anchor": "read_text"
+    },
+    {
+      "level": 2,
+      "title": "`read_blob`",
+      "anchor": "read_blob"
+    },
+    {
+      "level": 2,
+      "title": "Schema",
+      "anchor": "schema"
+    },
+    {
+      "level": 2,
+      "title": "Hive Partitioning",
+      "anchor": "hive-partitioning"
+    },
+    {
+      "level": 2,
+      "title": "Handling Missing Metadata",
+      "anchor": "handling-missing-metadata"
+    },
+    {
+      "level": 2,
+      "title": "Support for Projection Pushdown",
+      "anchor": "support-for-projection-pushdown"
+    }
+  ]
+}

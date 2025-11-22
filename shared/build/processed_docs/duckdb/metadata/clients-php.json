@@ -1,0 +1,74 @@
+{
+  "github_repository": "https://github.com/satur-io/duckdb-php",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/php",
+    "/docs/api/php/",
+    "/docs/clients/php"
+  ],
+  "title": "PHP Client",
+  "file_name": "php.md",
+  "file_stem": "php",
+  "file_path": "clients/php.md",
+  "file_size": 9627,
+  "document_id": "clients-php",
+  "url": "/clients/php",
+  "content_hash": "786453ee53bed15ab6fc610a64ad2eba",
+  "statistics": {
+    "char_count": 7424,
+    "word_count": 965,
+    "line_count": 197,
+    "paragraph_count": 46,
+    "header_count": 9,
+    "code_block_count": 10,
+    "code_lines": 64
+  },
+  "processed_at": "2025-11-22T10:32:04.583724",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Automatic Install (Recommended for Newcomers)",
+      "anchor": "automatic-install-recommended-for-newcomers"
+    },
+    {
+      "level": 2,
+      "title": "Quick Start",
+      "anchor": "quick-start"
+    },
+    {
+      "level": 3,
+      "title": "Connection",
+      "anchor": "connection"
+    },
+    {
+      "level": 3,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 3,
+      "title": "Appenders",
+      "anchor": "appenders"
+    },
+    {
+      "level": 3,
+      "title": "DuckDB-Powerful",
+      "anchor": "duckdb-powerful"
+    },
+    {
+      "level": 2,
+      "title": "Requirements",
+      "anchor": "requirements"
+    },
+    {
+      "level": 3,
+      "title": "Recommended",
+      "anchor": "recommended"
+    },
+    {
+      "level": 2,
+      "title": "Type Support",
+      "anchor": "type-support"
+    }
+  ]
+}

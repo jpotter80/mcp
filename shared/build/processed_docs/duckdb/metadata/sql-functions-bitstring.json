@@ -1,0 +1,108 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/bitstring",
+    "/docs/test/functions/bitstring/",
+    "/docs/sql/functions/bitstring"
+  ],
+  "title": "Bitstring Functions",
+  "file_name": "bitstring.md",
+  "file_stem": "bitstring",
+  "file_path": "sql/functions/bitstring.md",
+  "file_size": 6674,
+  "document_id": "sql-functions-bitstring",
+  "url": "/sql/functions/bitstring",
+  "content_hash": "9888798da4539315ff995fdf6f4f69bb",
+  "statistics": {
+    "char_count": 5859,
+    "word_count": 838,
+    "line_count": 116,
+    "paragraph_count": 37,
+    "header_count": 16,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.383890",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Bitstring Operators",
+      "anchor": "bitstring-operators"
+    },
+    {
+      "level": 2,
+      "title": "Bitstring Functions",
+      "anchor": "bitstring-functions"
+    },
+    {
+      "level": 4,
+      "title": "`bit_count(bitstring)`",
+      "anchor": "bit_countbitstring"
+    },
+    {
+      "level": 4,
+      "title": "`bit_length(bitstring)`",
+      "anchor": "bit_lengthbitstring"
+    },
+    {
+      "level": 4,
+      "title": "`bit_position(substring, bitstring)`",
+      "anchor": "bit_positionsubstring-bitstring"
+    },
+    {
+      "level": 4,
+      "title": "`bitstring(bitstring, length)`",
+      "anchor": "bitstringbitstring-length"
+    },
+    {
+      "level": 4,
+      "title": "`get_bit(bitstring, index)`",
+      "anchor": "get_bitbitstring-index"
+    },
+    {
+      "level": 4,
+      "title": "`length(bitstring)`",
+      "anchor": "lengthbitstring"
+    },
+    {
+      "level": 4,
+      "title": "`octet_length(bitstring)`",
+      "anchor": "octet_lengthbitstring"
+    },
+    {
+      "level": 4,
+      "title": "`set_bit(bitstring, index, new_value)`",
+      "anchor": "set_bitbitstring-index-new_value"
+    },
+    {
+      "level": 2,
+      "title": "Bitstring Aggregate Functions",
+      "anchor": "bitstring-aggregate-functions"
+    },
+    {
+      "level": 4,
+      "title": "`bit_and(arg)`",
+      "anchor": "bit_andarg"
+    },
+    {
+      "level": 4,
+      "title": "`bit_or(arg)`",
+      "anchor": "bit_orarg"
+    },
+    {
+      "level": 4,
+      "title": "`bit_xor(arg)`",
+      "anchor": "bit_xorarg"
+    },
+    {
+      "level": 4,
+      "title": "`bitstring_agg(arg)`",
+      "anchor": "bitstring_aggarg"
+    },
+    {
+      "level": 4,
+      "title": "`bitstring_agg(arg, min, max)`",
+      "anchor": "bitstring_aggarg-min-max"
+    }
+  ]
+}

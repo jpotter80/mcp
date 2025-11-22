@@ -1,0 +1,53 @@
+{
+  "layout": "docu",
+  "title": "Extension Distribution",
+  "file_name": "extension_distribution.md",
+  "file_stem": "extension_distribution",
+  "file_path": "extensions/extension_distribution.md",
+  "file_size": 5351,
+  "document_id": "extensions-extension_distribution",
+  "url": "/extensions/extension_distribution",
+  "content_hash": "78a1a6938e46626d3191119991ed6390",
+  "statistics": {
+    "char_count": 4960,
+    "word_count": 624,
+    "line_count": 97,
+    "paragraph_count": 28,
+    "header_count": 6,
+    "code_block_count": 4,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:10.732156",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Platforms",
+      "anchor": "platforms"
+    },
+    {
+      "level": 2,
+      "title": "Extensions Signing",
+      "anchor": "extensions-signing"
+    },
+    {
+      "level": 3,
+      "title": "Signed Extensions",
+      "anchor": "signed-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Unsigned Extensions",
+      "anchor": "unsigned-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Binary Compatibility",
+      "anchor": "binary-compatibility"
+    },
+    {
+      "level": 2,
+      "title": "Creating a Custom Repository",
+      "anchor": "creating-a-custom-repository"
+    }
+  ]
+}

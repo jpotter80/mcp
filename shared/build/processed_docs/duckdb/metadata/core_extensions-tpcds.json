@@ -1,0 +1,50 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb/tree/main/extension/tpcds",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/tpcds",
+    "/docs/stable/extensions/tpcds/",
+    "/docs/extensions/tpcds",
+    "/docs/extensions/tpcds/"
+  ],
+  "title": "TPC-DS Extension",
+  "file_name": "tpcds.md",
+  "file_stem": "tpcds",
+  "file_path": "core_extensions/tpcds.md",
+  "file_size": 1507,
+  "document_id": "core_extensions-tpcds",
+  "url": "/core_extensions/tpcds",
+  "content_hash": "f806d5262e51748ce095992b6fddc1d3",
+  "statistics": {
+    "char_count": 1178,
+    "word_count": 170,
+    "line_count": 46,
+    "paragraph_count": 15,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:09.205936",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Generating the Schema",
+      "anchor": "generating-the-schema"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

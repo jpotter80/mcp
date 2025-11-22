@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/persistent_testing",
+    "/dev/sqllogictest/persistent_testing/",
+    "/docs/dev/sqllogictest/persistent_testing"
+  ],
+  "title": "Persistent Testing",
+  "file_name": "persistent_testing.md",
+  "file_stem": "persistent_testing",
+  "file_path": "dev/sqllogictest/persistent_testing.md",
+  "file_size": 1068,
+  "document_id": "dev-sqllogictest-persistent_testing",
+  "url": "/dev/sqllogictest/persistent_testing",
+  "content_hash": "864f46caf5ea9b4bed17f4f2fae9d50b",
+  "statistics": {
+    "char_count": 879,
+    "word_count": 140,
+    "line_count": 36,
+    "paragraph_count": 10,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:10.657413",
+  "sections": [
+    {
+      "level": 1,
+      "title": "load the DB from disk",
+      "anchor": "load-the-db-from-disk"
+    },
+    {
+      "level": 1,
+      "title": "...",
+      "anchor": ""
+    }
+  ]
+}

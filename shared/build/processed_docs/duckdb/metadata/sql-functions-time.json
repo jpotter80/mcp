@@ -1,0 +1,66 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/time"
+  ],
+  "title": "Time Functions",
+  "file_name": "time.md",
+  "file_stem": "time",
+  "file_path": "sql/functions/time.md",
+  "file_size": 3626,
+  "document_id": "sql-functions-time",
+  "url": "/sql/functions/time",
+  "content_hash": "fe03c24c96f4d38d3d3f7c5fdcb2e2b9",
+  "statistics": {
+    "char_count": 3286,
+    "word_count": 429,
+    "line_count": 65,
+    "paragraph_count": 20,
+    "header_count": 8,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:14.399070",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Time Operators",
+      "anchor": "time-operators"
+    },
+    {
+      "level": 2,
+      "title": "Time Functions",
+      "anchor": "time-functions"
+    },
+    {
+      "level": 4,
+      "title": "`date_diff(part, starttime, endtime)`",
+      "anchor": "date_diffpart-starttime-endtime"
+    },
+    {
+      "level": 4,
+      "title": "`date_part(part, time)`",
+      "anchor": "date_partpart-time"
+    },
+    {
+      "level": 4,
+      "title": "`date_sub(part, starttime, endtime)`",
+      "anchor": "date_subpart-starttime-endtime"
+    },
+    {
+      "level": 4,
+      "title": "`extract(part FROM time)`",
+      "anchor": "extractpart-from-time"
+    },
+    {
+      "level": 4,
+      "title": "`get_current_time()`",
+      "anchor": "get_current_time"
+    },
+    {
+      "level": 4,
+      "title": "`make_time(bigint, bigint, double)`",
+      "anchor": "make_timebigint-bigint-double"
+    }
+  ]
+}

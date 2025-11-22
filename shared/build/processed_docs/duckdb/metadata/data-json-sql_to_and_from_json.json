@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/sql_to_and_from_json"
+  ],
+  "title": "SQL to/from JSON",
+  "file_name": "sql_to_and_from_json.md",
+  "file_stem": "sql_to_and_from_json",
+  "file_path": "data/json/sql_to_and_from_json.md",
+  "file_size": 6142,
+  "document_id": "data-json-sql_to_and_from_json",
+  "url": "/data/json/sql_to_and_from_json",
+  "content_hash": "2654e640bafd743bbe9ade8a511cfcc8",
+  "statistics": {
+    "char_count": 6040,
+    "word_count": 440,
+    "line_count": 96,
+    "paragraph_count": 29,
+    "header_count": 1,
+    "code_block_count": 16,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:09.891620",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    }
+  ]
+}

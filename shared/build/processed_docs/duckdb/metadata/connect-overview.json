@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/connect",
+    "/docs/connect/",
+    "/docs/connect/overview"
+  ],
+  "title": "Connect",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "connect/overview.md",
+  "file_size": 1870,
+  "document_id": "connect-overview",
+  "url": "/connect/overview",
+  "content_hash": "996ac3fe40b643512796414adf2cd5c9",
+  "statistics": {
+    "char_count": 1759,
+    "word_count": 266,
+    "line_count": 23,
+    "paragraph_count": 10,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:07.577568",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Connect or Create a Database",
+      "anchor": "connect-or-create-a-database"
+    },
+    {
+      "level": 2,
+      "title": "Persistence",
+      "anchor": "persistence"
+    },
+    {
+      "level": 3,
+      "title": "Persistent Database",
+      "anchor": "persistent-database"
+    },
+    {
+      "level": 3,
+      "title": "In-Memory Database",
+      "anchor": "in-memory-database"
+    }
+  ]
+}

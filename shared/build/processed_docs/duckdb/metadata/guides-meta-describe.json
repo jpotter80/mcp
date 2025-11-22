@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/meta/describe"
+  ],
+  "title": "Describe",
+  "file_name": "describe.md",
+  "file_stem": "describe",
+  "file_path": "guides/meta/describe.md",
+  "file_size": 3478,
+  "document_id": "guides-meta-describe",
+  "url": "/guides/meta/describe",
+  "content_hash": "19f6d48b9cacd39cd694fa21e1dd33a3",
+  "statistics": {
+    "char_count": 2818,
+    "word_count": 489,
+    "line_count": 66,
+    "paragraph_count": 16,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:10.992940",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Describing a Table",
+      "anchor": "describing-a-table"
+    },
+    {
+      "level": 2,
+      "title": "Describing a Query",
+      "anchor": "describing-a-query"
+    },
+    {
+      "level": 2,
+      "title": "Using `DESCRIBE` in a Subquery",
+      "anchor": "using-describe-in-a-subquery"
+    },
+    {
+      "level": 2,
+      "title": "Describing Remote Tables",
+      "anchor": "describing-remote-tables"
+    }
+  ]
+}

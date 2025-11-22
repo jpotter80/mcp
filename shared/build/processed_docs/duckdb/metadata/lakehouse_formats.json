@@ -1,0 +1,71 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/lakehouse_formats"
+  ],
+  "title": "Lakehouse Formats",
+  "file_name": "lakehouse_formats.md",
+  "file_stem": "lakehouse_formats",
+  "file_path": "lakehouse_formats.md",
+  "file_size": 10644,
+  "document_id": "lakehouse_formats",
+  "url": "/lakehouse_formats",
+  "content_hash": "29aac09b3e4b24420f0401e298aed004",
+  "statistics": {
+    "char_count": 6086,
+    "word_count": 846,
+    "line_count": 148,
+    "paragraph_count": 22,
+    "header_count": 9,
+    "code_block_count": 2,
+    "code_lines": 94
+  },
+  "processed_at": "2025-11-22T10:32:12.183974",
+  "sections": [
+    {
+      "level": 2,
+      "title": "DuckDB Lakehouse Support Matrix",
+      "anchor": "duckdb-lakehouse-support-matrix"
+    },
+    {
+      "level": 2,
+      "title": "Workarounds for Unsupported Features",
+      "anchor": "workarounds-for-unsupported-features"
+    },
+    {
+      "level": 3,
+      "title": "Using PyIceberg with DuckDB",
+      "anchor": "using-pyiceberg-with-duckdb"
+    },
+    {
+      "level": 1,
+      "title": "Create a table with PyIceberg",
+      "anchor": "create-a-table-with-pyiceberg"
+    },
+    {
+      "level": 1,
+      "title": "Write and read the table with DuckDB",
+      "anchor": "write-and-read-the-table-with-duckdb"
+    },
+    {
+      "level": 1,
+      "title": "Alter schema with PyIceberg",
+      "anchor": "alter-schema-with-pyiceberg"
+    },
+    {
+      "level": 3,
+      "title": "Using delta-rs with DuckDB",
+      "anchor": "using-delta-rs-with-duckdb"
+    },
+    {
+      "level": 1,
+      "title": "Create a delta table and read it with DuckDB Delta extension",
+      "anchor": "create-a-delta-table-and-read-it-with-duckdb-delta-extension"
+    },
+    {
+      "level": 1,
+      "title": "Append some data and read the data change feed using the PyArrow integration",
+      "anchor": "append-some-data-and-read-the-data-change-feed-using-the-pyarrow-integration"
+    }
+  ]
+}

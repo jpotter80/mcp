@@ -1,0 +1,121 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/ibis"
+  ],
+  "title": "Integration with Ibis",
+  "file_name": "ibis.md",
+  "file_stem": "ibis",
+  "file_path": "guides/python/ibis.md",
+  "file_size": 41748,
+  "document_id": "guides-python-ibis",
+  "url": "/guides/python/ibis",
+  "content_hash": "6579507ba381fe42afaa62e81365e09d",
+  "statistics": {
+    "char_count": 23242,
+    "word_count": 3477,
+    "line_count": 674,
+    "paragraph_count": 120,
+    "header_count": 19,
+    "code_block_count": 57,
+    "code_lines": 384
+  },
+  "processed_at": "2025-11-22T10:32:11.491325",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Create a Database File",
+      "anchor": "create-a-database-file"
+    },
+    {
+      "level": 1,
+      "title": "Output:",
+      "anchor": "output"
+    },
+    {
+      "level": 1,
+      "title": "reconnect to the persisted database (dropping temp tables)",
+      "anchor": "reconnect-to-the-persisted-database-dropping-temp-tables"
+    },
+    {
+      "level": 1,
+      "title": "Output:",
+      "anchor": "output"
+    },
+    {
+      "level": 1,
+      "title": "Output:",
+      "anchor": "output"
+    },
+    {
+      "level": 1,
+      "title": "Output:",
+      "anchor": "output"
+    },
+    {
+      "level": 2,
+      "title": "Interactive Mode",
+      "anchor": "interactive-mode"
+    },
+    {
+      "level": 2,
+      "title": "Common Operations",
+      "anchor": "common-operations"
+    },
+    {
+      "level": 3,
+      "title": "filter",
+      "anchor": "filter"
+    },
+    {
+      "level": 3,
+      "title": "select",
+      "anchor": "select"
+    },
+    {
+      "level": 3,
+      "title": "mutate",
+      "anchor": "mutate"
+    },
+    {
+      "level": 3,
+      "title": "selectors",
+      "anchor": "selectors"
+    },
+    {
+      "level": 3,
+      "title": "`order_by`",
+      "anchor": "order_by"
+    },
+    {
+      "level": 3,
+      "title": "aggregate",
+      "anchor": "aggregate"
+    },
+    {
+      "level": 1,
+      "title": "Output:",
+      "anchor": "output"
+    },
+    {
+      "level": 3,
+      "title": "`group_by`",
+      "anchor": "group_by"
+    },
+    {
+      "level": 2,
+      "title": "Chaining It All Together",
+      "anchor": "chaining-it-all-together"
+    },
+    {
+      "level": 2,
+      "title": "Learn More",
+      "anchor": "learn-more"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/expressions/overview"
+  ],
+  "title": "Expressions",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "sql/expressions/overview.md",
+  "file_size": 415,
+  "document_id": "sql-expressions-overview",
+  "url": "/sql/expressions/overview",
+  "content_hash": "56162a0cc0592f352e58c0a1ef6f1ae9",
+  "statistics": {
+    "char_count": 325,
+    "word_count": 51,
+    "line_count": 1,
+    "paragraph_count": 1,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.138981",
+  "sections": []
+}

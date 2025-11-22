@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/partitioning/partitioned_writes"
+  ],
+  "title": "Partitioned Writes",
+  "file_name": "partitioned_writes.md",
+  "file_stem": "partitioned_writes",
+  "file_path": "data/partitioning/partitioned_writes.md",
+  "file_size": 3831,
+  "document_id": "data-partitioning-partitioned_writes",
+  "url": "/data/partitioning/partitioned_writes",
+  "content_hash": "0f862c4067f2634602697193eccd537c",
+  "statistics": {
+    "char_count": 3581,
+    "word_count": 509,
+    "line_count": 95,
+    "paragraph_count": 29,
+    "header_count": 6,
+    "code_block_count": 8,
+    "code_lines": 26
+  },
+  "processed_at": "2025-11-22T10:32:10.175929",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Partitioned Writes",
+      "anchor": "partitioned-writes"
+    },
+    {
+      "level": 3,
+      "title": "Filename Pattern",
+      "anchor": "filename-pattern"
+    },
+    {
+      "level": 3,
+      "title": "Overwriting",
+      "anchor": "overwriting"
+    },
+    {
+      "level": 3,
+      "title": "Appending",
+      "anchor": "appending"
+    },
+    {
+      "level": 3,
+      "title": "Handling Slashes in Columns",
+      "anchor": "handling-slashes-in-columns"
+    }
+  ]
+}

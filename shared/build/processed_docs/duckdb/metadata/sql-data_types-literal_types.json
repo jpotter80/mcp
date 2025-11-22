@@ -1,0 +1,71 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/literal_types"
+  ],
+  "title": "Literal Types",
+  "file_name": "literal_types.md",
+  "file_stem": "literal_types",
+  "file_path": "sql/data_types/literal_types.md",
+  "file_size": 7759,
+  "document_id": "sql-data_types-literal_types",
+  "url": "/sql/data_types/literal_types",
+  "content_hash": "6c286964eb050897b04521228c1f7eef",
+  "statistics": {
+    "char_count": 6325,
+    "word_count": 916,
+    "line_count": 197,
+    "paragraph_count": 56,
+    "header_count": 9,
+    "code_block_count": 17,
+    "code_lines": 54
+  },
+  "processed_at": "2025-11-22T10:32:12.471444",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Null Literals",
+      "anchor": "null-literals"
+    },
+    {
+      "level": 2,
+      "title": "Integer Literals",
+      "anchor": "integer-literals"
+    },
+    {
+      "level": 2,
+      "title": "Other Numeric Literals",
+      "anchor": "other-numeric-literals"
+    },
+    {
+      "level": 2,
+      "title": "Underscores in Numeric Literals",
+      "anchor": "underscores-in-numeric-literals"
+    },
+    {
+      "level": 2,
+      "title": "String Literals",
+      "anchor": "string-literals"
+    },
+    {
+      "level": 3,
+      "title": "Implicit String Literal Concatenation",
+      "anchor": "implicit-string-literal-concatenation"
+    },
+    {
+      "level": 3,
+      "title": "Implicit String Conversion",
+      "anchor": "implicit-string-conversion"
+    },
+    {
+      "level": 3,
+      "title": "Escape String Literals",
+      "anchor": "escape-string-literals"
+    },
+    {
+      "level": 3,
+      "title": "Dollar-Quoted String Literals",
+      "anchor": "dollar-quoted-string-literals"
+    }
+  ]
+}

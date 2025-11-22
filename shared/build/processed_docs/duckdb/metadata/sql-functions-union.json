@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/union"
+  ],
+  "title": "Union Functions",
+  "file_name": "union.md",
+  "file_stem": "union",
+  "file_path": "sql/functions/union.md",
+  "file_size": 1772,
+  "document_id": "sql-functions-union",
+  "url": "/sql/functions/union",
+  "content_hash": "6a6b9ee8c06f0c2308c2010caf57fbc4",
+  "statistics": {
+    "char_count": 1502,
+    "word_count": 220,
+    "line_count": 30,
+    "paragraph_count": 9,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:14.595509",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`union.tag`",
+      "anchor": "uniontag"
+    },
+    {
+      "level": 4,
+      "title": "`union_extract(union, 'tag')`",
+      "anchor": "union_extractunion-tag"
+    },
+    {
+      "level": 4,
+      "title": "`union_value(tag := any)`",
+      "anchor": "union_valuetag-any"
+    },
+    {
+      "level": 4,
+      "title": "`union_tag(union)`",
+      "anchor": "union_tagunion"
+    }
+  ]
+}

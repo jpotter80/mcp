@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/snippets/sharing_macros"
+  ],
+  "title": "Sharing Macros",
+  "file_name": "sharing_macros.md",
+  "file_stem": "sharing_macros",
+  "file_path": "guides/snippets/sharing_macros.md",
+  "file_size": 3270,
+  "document_id": "guides-snippets-sharing_macros",
+  "url": "/guides/snippets/sharing_macros",
+  "content_hash": "ca37b9d3042f66b5c1977fe2f9ef7ea9",
+  "statistics": {
+    "char_count": 2891,
+    "word_count": 319,
+    "line_count": 111,
+    "paragraph_count": 27,
+    "header_count": 2,
+    "code_block_count": 12,
+    "code_lines": 52
+  },
+  "processed_at": "2025-11-22T10:32:11.923782",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Sharing a Scalar Macro",
+      "anchor": "sharing-a-scalar-macro"
+    },
+    {
+      "level": 2,
+      "title": "Sharing a Table Macro",
+      "anchor": "sharing-a-table-macro"
+    }
+  ]
+}

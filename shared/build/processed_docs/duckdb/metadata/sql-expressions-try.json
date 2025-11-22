@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "title": "TRY expression",
+  "file_name": "try.md",
+  "file_stem": "try",
+  "file_path": "sql/expressions/try.md",
+  "file_size": 1689,
+  "document_id": "sql-expressions-try",
+  "url": "/sql/expressions/try",
+  "content_hash": "eaac1807fa020a63a20646be6b1065d1",
+  "statistics": {
+    "char_count": 1590,
+    "word_count": 239,
+    "line_count": 95,
+    "paragraph_count": 29,
+    "header_count": 11,
+    "code_block_count": 13,
+    "code_lines": 19
+  },
+  "processed_at": "2025-11-22T10:32:13.201262",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Casting",
+      "anchor": "casting"
+    },
+    {
+      "level": 4,
+      "title": "Without `TRY`",
+      "anchor": "without-try"
+    },
+    {
+      "level": 4,
+      "title": "With `TRY`",
+      "anchor": "with-try"
+    },
+    {
+      "level": 3,
+      "title": "Logarithm on Zero",
+      "anchor": "logarithm-on-zero"
+    },
+    {
+      "level": 4,
+      "title": "Without `TRY`",
+      "anchor": "without-try"
+    },
+    {
+      "level": 4,
+      "title": "With `TRY`",
+      "anchor": "with-try"
+    },
+    {
+      "level": 3,
+      "title": "Casting Multiple Rows",
+      "anchor": "casting-multiple-rows"
+    },
+    {
+      "level": 4,
+      "title": "Without `TRY`",
+      "anchor": "without-try"
+    },
+    {
+      "level": 4,
+      "title": "With `TRY`",
+      "anchor": "with-try"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

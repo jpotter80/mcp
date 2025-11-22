@@ -1,0 +1,57 @@
+{
+  "blurb": "The table below shows all the built-in general-purpose data types.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/overview"
+  ],
+  "title": "Data Types",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "sql/data_types/overview.md",
+  "file_size": 8631,
+  "document_id": "sql-data_types-overview",
+  "url": "/sql/data_types/overview",
+  "content_hash": "ff4b384e23cdce435e620245f15fc2df",
+  "statistics": {
+    "char_count": 5473,
+    "word_count": 841,
+    "line_count": 81,
+    "paragraph_count": 21,
+    "header_count": 6,
+    "code_block_count": 3,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:12.567236",
+  "sections": [
+    {
+      "level": 2,
+      "title": "General-Purpose Data Types",
+      "anchor": "general-purpose-data-types"
+    },
+    {
+      "level": 2,
+      "title": "Nested / Composite Types",
+      "anchor": "nested-composite-types"
+    },
+    {
+      "level": 3,
+      "title": "Rules for Case Sensitivity",
+      "anchor": "rules-for-case-sensitivity"
+    },
+    {
+      "level": 3,
+      "title": "Updating Values of Nested Types",
+      "anchor": "updating-values-of-nested-types"
+    },
+    {
+      "level": 2,
+      "title": "Nesting",
+      "anchor": "nesting"
+    },
+    {
+      "level": 2,
+      "title": "Performance Implications",
+      "anchor": "performance-implications"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/caveats"
+  ],
+  "title": "Caveats",
+  "file_name": "caveats.md",
+  "file_stem": "caveats",
+  "file_path": "data/json/caveats.md",
+  "file_size": 1100,
+  "document_id": "data-json-caveats",
+  "url": "/data/json/caveats",
+  "content_hash": "6102dd1f68aa5ce9e69ee50987f55f7a",
+  "statistics": {
+    "char_count": 905,
+    "word_count": 163,
+    "line_count": 25,
+    "paragraph_count": 5,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:09.526719",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Equality Comparison",
+      "anchor": "equality-comparison"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/odbc/general"
+  ],
+  "title": "ODBC 101: A Duck Themed Guide to ODBC",
+  "file_name": "general.md",
+  "file_stem": "general",
+  "file_path": "guides/odbc/general.md",
+  "file_size": 16941,
+  "document_id": "guides-odbc-general",
+  "url": "/guides/odbc/general",
+  "content_hash": "277d13edfc49612a68c8d9527df59e76",
+  "statistics": {
+    "char_count": 12978,
+    "word_count": 1536,
+    "line_count": 243,
+    "paragraph_count": 78,
+    "header_count": 26,
+    "code_block_count": 20,
+    "code_lines": 124
+  },
+  "processed_at": "2025-11-22T10:32:11.183612",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What is ODBC?",
+      "anchor": "what-is-odbc"
+    },
+    {
+      "level": 2,
+      "title": "General Concepts",
+      "anchor": "general-concepts"
+    },
+    {
+      "level": 3,
+      "title": "Handles",
+      "anchor": "handles"
+    },
+    {
+      "level": 4,
+      "title": "Environment",
+      "anchor": "environment"
+    },
+    {
+      "level": 4,
+      "title": "Connection",
+      "anchor": "connection"
+    },
+    {
+      "level": 4,
+      "title": "Statement",
+      "anchor": "statement"
+    },
+    {
+      "level": 4,
+      "title": "Descriptor",
+      "anchor": "descriptor"
+    },
+    {
+      "level": 3,
+      "title": "Connecting",
+      "anchor": "connecting"
+    },
+    {
+      "level": 4,
+      "title": "Connection String",
+      "anchor": "connection-string"
+    },
+    {
+      "level": 4,
+      "title": "DSN",
+      "anchor": "dsn"
+    },
+    {
+      "level": 3,
+      "title": "Error Handling and Diagnostics",
+      "anchor": "error-handling-and-diagnostics"
+    },
+    {
+      "level": 3,
+      "title": "Buffers and Binding",
+      "anchor": "buffers-and-binding"
+    },
+    {
+      "level": 2,
+      "title": "Setting up an Application",
+      "anchor": "setting-up-an-application"
+    },
+    {
+      "level": 3,
+      "title": "1. Include the SQL Header Files",
+      "anchor": "1-include-the-sql-header-files"
+    },
+    {
+      "level": 1,
+      "title": "or",
+      "anchor": "or"
+    },
+    {
+      "level": 1,
+      "title": "or",
+      "anchor": "or"
+    },
+    {
+      "level": 3,
+      "title": "2. Define the ODBC Handles and Connect to the Database",
+      "anchor": "2-define-the-odbc-handles-and-connect-to-the-database"
+    },
+    {
+      "level": 4,
+      "title": "2.a. Connecting with SQLConnect",
+      "anchor": "2a-connecting-with-sqlconnect"
+    },
+    {
+      "level": 4,
+      "title": "2.b. Connecting with SQLDriverConnect",
+      "anchor": "2b-connecting-with-sqldriverconnect"
+    },
+    {
+      "level": 3,
+      "title": "3. Adding a Query",
+      "anchor": "3-adding-a-query"
+    },
+    {
+      "level": 3,
+      "title": "4. Fetching Results",
+      "anchor": "4-fetching-results"
+    },
+    {
+      "level": 3,
+      "title": "5. Go Wild",
+      "anchor": "5-go-wild"
+    },
+    {
+      "level": 3,
+      "title": "6. Free the Handles and Disconnecting",
+      "anchor": "6-free-the-handles-and-disconnecting"
+    },
+    {
+      "level": 2,
+      "title": "Sample Application",
+      "anchor": "sample-application"
+    },
+    {
+      "level": 3,
+      "title": "Sample `.cpp` File",
+      "anchor": "sample-cpp-file"
+    },
+    {
+      "level": 3,
+      "title": "Sample `CMakelists.txt` File",
+      "anchor": "sample-cmakeliststxt-file"
+    }
+  ]
+}

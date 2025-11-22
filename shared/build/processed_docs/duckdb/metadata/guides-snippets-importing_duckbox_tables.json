@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/file_formats/duckbox",
+    "/docs/guides/snippets/importing_duckbox_tables"
+  ],
+  "title": "Importing Duckbox Tables",
+  "file_name": "importing_duckbox_tables.md",
+  "file_stem": "importing_duckbox_tables",
+  "file_path": "guides/snippets/importing_duckbox_tables.md",
+  "file_size": 4062,
+  "document_id": "guides-snippets-importing_duckbox_tables",
+  "url": "/guides/snippets/importing_duckbox_tables",
+  "content_hash": "26dd72c7ca1187895cdeb132c452e4c1",
+  "statistics": {
+    "char_count": 3559,
+    "word_count": 517,
+    "line_count": 108,
+    "paragraph_count": 27,
+    "header_count": 3,
+    "code_block_count": 9,
+    "code_lines": 35
+  },
+  "processed_at": "2025-11-22T10:32:11.905740",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Loading Duckbox Tables to DuckDB",
+      "anchor": "loading-duckbox-tables-to-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Using `shellfs`",
+      "anchor": "using-shellfs"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

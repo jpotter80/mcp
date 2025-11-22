@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/s3_import",
+    "/docs/guides/import/s3_import/",
+    "/docs/guides/network_cloud_storage/s3_import"
+  ],
+  "title": "S3 Parquet Import",
+  "file_name": "s3_import.md",
+  "file_stem": "s3_import",
+  "file_path": "guides/network_cloud_storage/s3_import.md",
+  "file_size": 1767,
+  "document_id": "guides-network_cloud_storage-s3_import",
+  "url": "/guides/network_cloud_storage/s3_import",
+  "content_hash": "7572e36da1a9f4a4ee593d1671a105ba",
+  "statistics": {
+    "char_count": 1550,
+    "word_count": 198,
+    "line_count": 50,
+    "paragraph_count": 16,
+    "header_count": 4,
+    "code_block_count": 5,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:11.145443",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Credentials and Configuration",
+      "anchor": "credentials-and-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 2,
+      "title": "Google Cloud Storage (GCS) and Cloudflare R2",
+      "anchor": "google-cloud-storage-gcs-and-cloudflare-r2"
+    }
+  ]
+}

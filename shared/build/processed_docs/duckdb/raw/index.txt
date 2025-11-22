@@ -1,0 +1,123 @@
+## Connecting to DuckDB
+
+
+
+
+ DuckDB connection overview
+
+
+
+## Client APIs
+
+
+
+
+ C
+
+
+
+
+
+ C++
+
+
+
+
+
+ CLI (command line interface)
+
+
+
+
+
+ Go
+
+
+
+
+
+ Java (JDBC)
+
+
+
+
+
+ Node.js
+
+
+
+
+
+ ODBC
+
+
+
+
+
+ Python
+
+
+
+
+
+ R
+
+
+
+
+
+ Rust
+
+
+
+
+
+ WebAssembly
+
+
+
+
+
+ All client APIs
+
+
+
+## SQL
+
+
+
+
+ Introduction
+
+
+
+
+
+ Statements
+
+
+
+## Other
+
+
+
+
+ Guides
+
+
+
+
+
+ Installation
+
+
+
+
+
+ Building DuckDB
+
+
+
+
+
+ Browsing offline

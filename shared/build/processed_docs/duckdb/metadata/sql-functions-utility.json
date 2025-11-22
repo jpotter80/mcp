@@ -1,0 +1,283 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/utility",
+    "/docs/test/functions/utility/",
+    "/docs/sql/functions/utility"
+  ],
+  "title": "Utility Functions",
+  "file_name": "utility.md",
+  "file_stem": "utility",
+  "file_path": "sql/functions/utility.md",
+  "file_size": 21686,
+  "document_id": "sql-functions-utility",
+  "url": "/sql/functions/utility",
+  "content_hash": "369df2b2c826294a42294a55a35207b0",
+  "statistics": {
+    "char_count": 19898,
+    "word_count": 2658,
+    "line_count": 355,
+    "paragraph_count": 104,
+    "header_count": 51,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:14.654477",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Scalar Utility Functions",
+      "anchor": "scalar-utility-functions"
+    },
+    {
+      "level": 4,
+      "title": "`alias(column)`",
+      "anchor": "aliascolumn"
+    },
+    {
+      "level": 4,
+      "title": "`can_cast_implicitly(source_value, target_value)`",
+      "anchor": "can_cast_implicitlysource_value-target_value"
+    },
+    {
+      "level": 4,
+      "title": "`checkpoint(database)`",
+      "anchor": "checkpointdatabase"
+    },
+    {
+      "level": 4,
+      "title": "`coalesce(expr, ...)`",
+      "anchor": "coalesceexpr-"
+    },
+    {
+      "level": 4,
+      "title": "`constant_or_null(arg1, arg2)`",
+      "anchor": "constant_or_nullarg1-arg2"
+    },
+    {
+      "level": 4,
+      "title": "`count_if(x)`",
+      "anchor": "count_ifx"
+    },
+    {
+      "level": 4,
+      "title": "`create_sort_key(parameters...)`",
+      "anchor": "create_sort_keyparameters"
+    },
+    {
+      "level": 4,
+      "title": "`current_catalog()`",
+      "anchor": "current_catalog"
+    },
+    {
+      "level": 4,
+      "title": "`current_database()`",
+      "anchor": "current_database"
+    },
+    {
+      "level": 4,
+      "title": "`current_query()`",
+      "anchor": "current_query"
+    },
+    {
+      "level": 4,
+      "title": "`current_schema()`",
+      "anchor": "current_schema"
+    },
+    {
+      "level": 4,
+      "title": "`current_schemas(boolean)`",
+      "anchor": "current_schemasboolean"
+    },
+    {
+      "level": 4,
+      "title": "`current_setting('setting_name')`",
+      "anchor": "current_settingsetting_name"
+    },
+    {
+      "level": 4,
+      "title": "`currval('sequence_name')`",
+      "anchor": "currvalsequence_name"
+    },
+    {
+      "level": 4,
+      "title": "`error(message)`",
+      "anchor": "errormessage"
+    },
+    {
+      "level": 4,
+      "title": "`equi_width_bins(min, max, bincount, nice := false)`",
+      "anchor": "equi_width_binsmin-max-bincount-nice-false"
+    },
+    {
+      "level": 4,
+      "title": "`force_checkpoint(database)`",
+      "anchor": "force_checkpointdatabase"
+    },
+    {
+      "level": 4,
+      "title": "`gen_random_uuid()`",
+      "anchor": "gen_random_uuid"
+    },
+    {
+      "level": 4,
+      "title": "`getenv(var)`",
+      "anchor": "getenvvar"
+    },
+    {
+      "level": 4,
+      "title": "`hash(value)`",
+      "anchor": "hashvalue"
+    },
+    {
+      "level": 4,
+      "title": "`icu_sort_key(string, collator)`",
+      "anchor": "icu_sort_keystring-collator"
+    },
+    {
+      "level": 4,
+      "title": "`if(a, b, c)`",
+      "anchor": "ifa-b-c"
+    },
+    {
+      "level": 4,
+      "title": "`ifnull(expr, other)`",
+      "anchor": "ifnullexpr-other"
+    },
+    {
+      "level": 4,
+      "title": "`is_histogram_other_bin(arg)`",
+      "anchor": "is_histogram_other_binarg"
+    },
+    {
+      "level": 4,
+      "title": "`md5(string)`",
+      "anchor": "md5string"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number(string)`",
+      "anchor": "md5_numberstring"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number_lower(string)`",
+      "anchor": "md5_number_lowerstring"
+    },
+    {
+      "level": 4,
+      "title": "`md5_number_upper(string)`",
+      "anchor": "md5_number_upperstring"
+    },
+    {
+      "level": 4,
+      "title": "`nextval('sequence_name')`",
+      "anchor": "nextvalsequence_name"
+    },
+    {
+      "level": 4,
+      "title": "`nullif(a, b)`",
+      "anchor": "nullifa-b"
+    },
+    {
+      "level": 4,
+      "title": "`pg_typeof(expression)`",
+      "anchor": "pg_typeofexpression"
+    },
+    {
+      "level": 4,
+      "title": "`query(query_string)`",
+      "anchor": "queryquery_string"
+    },
+    {
+      "level": 4,
+      "title": "`query_table(tbl_name)`",
+      "anchor": "query_tabletbl_name"
+    },
+    {
+      "level": 4,
+      "title": "`query_table(tbl_names, [by_name])`",
+      "anchor": "query_tabletbl_names-by_name"
+    },
+    {
+      "level": 4,
+      "title": "`read_blob(source)`",
+      "anchor": "read_blobsource"
+    },
+    {
+      "level": 4,
+      "title": "`read_text(source)`",
+      "anchor": "read_textsource"
+    },
+    {
+      "level": 4,
+      "title": "`sha1(string)`",
+      "anchor": "sha1string"
+    },
+    {
+      "level": 4,
+      "title": "`sha256(string)`",
+      "anchor": "sha256string"
+    },
+    {
+      "level": 4,
+      "title": "`stats(expression)`",
+      "anchor": "statsexpression"
+    },
+    {
+      "level": 4,
+      "title": "`txid_current()`",
+      "anchor": "txid_current"
+    },
+    {
+      "level": 4,
+      "title": "`typeof(expression)`",
+      "anchor": "typeofexpression"
+    },
+    {
+      "level": 4,
+      "title": "`uuid()`",
+      "anchor": "uuid"
+    },
+    {
+      "level": 4,
+      "title": "`uuidv4()`",
+      "anchor": "uuidv4"
+    },
+    {
+      "level": 4,
+      "title": "`uuidv7()`",
+      "anchor": "uuidv7"
+    },
+    {
+      "level": 4,
+      "title": "`uuid_extract_timestamp(uuidv7)`",
+      "anchor": "uuid_extract_timestampuuidv7"
+    },
+    {
+      "level": 4,
+      "title": "`uuid_extract_version(uuid)`",
+      "anchor": "uuid_extract_versionuuid"
+    },
+    {
+      "level": 4,
+      "title": "`version()`",
+      "anchor": "version"
+    },
+    {
+      "level": 2,
+      "title": "Utility Table Functions",
+      "anchor": "utility-table-functions"
+    },
+    {
+      "level": 4,
+      "title": "`glob(search_path)`",
+      "anchor": "globsearch_path"
+    },
+    {
+      "level": 4,
+      "title": "`repeat_row(varargs, num_rows)`",
+      "anchor": "repeat_rowvarargs-num_rows"
+    }
+  ]
+}

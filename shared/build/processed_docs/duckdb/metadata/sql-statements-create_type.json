@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createtype.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_type"
+  ],
+  "title": "CREATE TYPE Statement",
+  "file_name": "create_type.md",
+  "file_stem": "create_type",
+  "file_path": "sql/statements/create_type.md",
+  "file_size": 1185,
+  "document_id": "sql-statements-create_type",
+  "url": "/sql/statements/create_type",
+  "content_hash": "fd1e78f8bfad6c4d00cb359ebc1d4944",
+  "statistics": {
+    "char_count": 1019,
+    "word_count": 148,
+    "line_count": 39,
+    "paragraph_count": 15,
+    "header_count": 3,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:15.749859",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

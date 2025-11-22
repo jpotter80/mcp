@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "statements/call.js",
+  "redirect_from": [
+    "/docs/sql/statements/call"
+  ],
+  "title": "CALL Statement",
+  "file_name": "call.md",
+  "file_stem": "call",
+  "file_path": "sql/statements/call.md",
+  "file_size": 905,
+  "document_id": "sql-statements-call",
+  "url": "/sql/statements/call",
+  "content_hash": "8cb2ad560f8927837fce6a5997346401",
+  "statistics": {
+    "char_count": 758,
+    "word_count": 88,
+    "line_count": 27,
+    "paragraph_count": 10,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:15.515334",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/duckdb_table_functions",
+    "/docs/sql/duckdb_table_functions/",
+    "/docs/sql/meta/duckdb_table_functions"
+  ],
+  "title": "DuckDB_% Metadata Functions",
+  "file_name": "duckdb_table_functions.md",
+  "file_stem": "duckdb_table_functions",
+  "file_path": "sql/meta/duckdb_table_functions.md",
+  "file_size": 29209,
+  "document_id": "sql-meta-duckdb_table_functions",
+  "url": "/sql/meta/duckdb_table_functions",
+  "content_hash": "cf89056ac27d047fed99746d56974c4e",
+  "statistics": {
+    "char_count": 29009,
+    "word_count": 4436,
+    "line_count": 411,
+    "paragraph_count": 91,
+    "header_count": 23,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:14.986111",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`duckdb_columns`",
+      "anchor": "duckdb_columns"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_constraints`",
+      "anchor": "duckdb_constraints"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_databases`",
+      "anchor": "duckdb_databases"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_dependencies`",
+      "anchor": "duckdb_dependencies"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_extensions`",
+      "anchor": "duckdb_extensions"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_functions`",
+      "anchor": "duckdb_functions"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_indexes`",
+      "anchor": "duckdb_indexes"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_keywords`",
+      "anchor": "duckdb_keywords"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_log_contexts`",
+      "anchor": "duckdb_log_contexts"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_logs`",
+      "anchor": "duckdb_logs"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_memory`",
+      "anchor": "duckdb_memory"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_optimizers`",
+      "anchor": "duckdb_optimizers"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_prepared_statements`",
+      "anchor": "duckdb_prepared_statements"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_schemas`",
+      "anchor": "duckdb_schemas"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_secret_types`",
+      "anchor": "duckdb_secret_types"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_secrets`",
+      "anchor": "duckdb_secrets"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_sequences`",
+      "anchor": "duckdb_sequences"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_settings`",
+      "anchor": "duckdb_settings"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_tables`",
+      "anchor": "duckdb_tables"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_temporary_files`",
+      "anchor": "duckdb_temporary_files"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_types`",
+      "anchor": "duckdb_types"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_variables`",
+      "anchor": "duckdb_variables"
+    },
+    {
+      "level": 2,
+      "title": "`duckdb_views`",
+      "anchor": "duckdb_views"
+    }
+  ]
+}

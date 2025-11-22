@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/filesystems"
+  ],
+  "title": "Using fsspec Filesystems",
+  "file_name": "filesystems.md",
+  "file_stem": "filesystems",
+  "file_path": "guides/python/filesystems.md",
+  "file_size": 1646,
+  "document_id": "guides-python-filesystems",
+  "url": "/guides/python/filesystems",
+  "content_hash": "9bd0a4085991ada658f02d8badc0c0d1",
+  "statistics": {
+    "char_count": 1542,
+    "word_count": 187,
+    "line_count": 26,
+    "paragraph_count": 10,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:11.420450",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 1,
+      "title": "this line will throw an exception if the appropriate filesystem interface is not installed",
+      "anchor": "this-line-will-throw-an-exception-if-the-appropriate-filesystem-interface-is-not-installed"
+    }
+  ]
+}

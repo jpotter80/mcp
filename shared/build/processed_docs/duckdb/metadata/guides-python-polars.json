@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/polars"
+  ],
+  "title": "Integration with Polars",
+  "file_name": "polars.md",
+  "file_stem": "polars",
+  "file_path": "guides/python/polars.md",
+  "file_size": 2204,
+  "document_id": "guides-python-polars",
+  "url": "/guides/python/polars",
+  "content_hash": "fcaffa7d9894fc1c0fa170666f958d3d",
+  "statistics": {
+    "char_count": 1894,
+    "word_count": 275,
+    "line_count": 76,
+    "paragraph_count": 16,
+    "header_count": 3,
+    "code_block_count": 6,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-22T10:32:11.771782",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Polars to DuckDB",
+      "anchor": "polars-to-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "DuckDB to Polars",
+      "anchor": "duckdb-to-polars"
+    }
+  ]
+}

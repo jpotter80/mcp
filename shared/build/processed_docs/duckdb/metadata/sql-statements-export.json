@@ -1,0 +1,52 @@
+{
+  "layout": "docu",
+  "railroad": "statements/export.js",
+  "redirect_from": [
+    "/docs/sql/statements/export"
+  ],
+  "title": "EXPORT and IMPORT DATABASE Statements",
+  "file_name": "export.md",
+  "file_stem": "export",
+  "file_path": "sql/statements/export.md",
+  "file_size": 2517,
+  "document_id": "sql-statements-export",
+  "url": "/sql/statements/export",
+  "content_hash": "1b683d16f2d417afdda1cfaad4723f84",
+  "statistics": {
+    "char_count": 2302,
+    "word_count": 306,
+    "line_count": 69,
+    "paragraph_count": 24,
+    "header_count": 5,
+    "code_block_count": 7,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:15.781267",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "`EXPORT DATABASE`",
+      "anchor": "export-database"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`IMPORT DATABASE`",
+      "anchor": "import-database"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

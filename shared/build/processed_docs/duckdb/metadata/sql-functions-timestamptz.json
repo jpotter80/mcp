@@ -1,0 +1,256 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/timestamptz"
+  ],
+  "title": "Timestamp with Time Zone Functions",
+  "file_name": "timestamptz.md",
+  "file_stem": "timestamptz",
+  "file_path": "sql/functions/timestamptz.md",
+  "file_size": 23029,
+  "document_id": "sql-functions-timestamptz",
+  "url": "/sql/functions/timestamptz",
+  "content_hash": "db716f490a07dd5e17a5f49e5e3f2cb8",
+  "statistics": {
+    "char_count": 21518,
+    "word_count": 2723,
+    "line_count": 384,
+    "paragraph_count": 116,
+    "header_count": 46,
+    "code_block_count": 10,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:14.543081",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Built-In Timestamp with Time Zone Functions",
+      "anchor": "built-in-timestamp-with-time-zone-functions"
+    },
+    {
+      "level": 4,
+      "title": "`current_timestamp`",
+      "anchor": "current_timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`get_current_timestamp()`",
+      "anchor": "get_current_timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`greatest(timestamptz, timestamptz)`",
+      "anchor": "greatesttimestamptz-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`isfinite(timestamptz)`",
+      "anchor": "isfinitetimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`isinf(timestamptz)`",
+      "anchor": "isinftimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`least(timestamptz, timestamptz)`",
+      "anchor": "leasttimestamptz-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`now()`",
+      "anchor": "now"
+    },
+    {
+      "level": 4,
+      "title": "`timetz_byte_comparable(timetz)`",
+      "anchor": "timetz_byte_comparabletimetz"
+    },
+    {
+      "level": 4,
+      "title": "`to_timestamp(double)`",
+      "anchor": "to_timestampdouble"
+    },
+    {
+      "level": 4,
+      "title": "`transaction_timestamp()`",
+      "anchor": "transaction_timestamp"
+    },
+    {
+      "level": 2,
+      "title": "Timestamp with Time Zone Strings",
+      "anchor": "timestamp-with-time-zone-strings"
+    },
+    {
+      "level": 2,
+      "title": "ICU Timestamp with Time Zone Operators",
+      "anchor": "icu-timestamp-with-time-zone-operators"
+    },
+    {
+      "level": 2,
+      "title": "ICU Timestamp with Time Zone Functions",
+      "anchor": "icu-timestamp-with-time-zone-functions"
+    },
+    {
+      "level": 4,
+      "title": "`age(timestamptz, timestamptz)`",
+      "anchor": "agetimestamptz-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`age(timestamptz)`",
+      "anchor": "agetimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`date_diff(part, starttimestamptz, endtimestamptz)`",
+      "anchor": "date_diffpart-starttimestamptz-endtimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`date_part([part, ...], timestamptz)`",
+      "anchor": "date_partpart-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`date_part(part, timestamptz)`",
+      "anchor": "date_partpart-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`date_sub(part, starttimestamptz, endtimestamptz)`",
+      "anchor": "date_subpart-starttimestamptz-endtimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`date_trunc(part, timestamptz)`",
+      "anchor": "date_truncpart-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`epoch_ns(timestamptz)`",
+      "anchor": "epoch_nstimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`epoch_us(timestamptz)`",
+      "anchor": "epoch_ustimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`extract(field FROM timestamptz)`",
+      "anchor": "extractfield-from-timestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`last_day(timestamptz)`",
+      "anchor": "last_daytimestamptz"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamptz(bigint, bigint, bigint, bigint, bigint, double, string)`",
+      "anchor": "make_timestamptzbigint-bigint-bigint-bigint-bigint-double-string"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamptz(bigint, bigint, bigint, bigint, bigint, double)`",
+      "anchor": "make_timestamptzbigint-bigint-bigint-bigint-bigint-double"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamptz(microseconds)`",
+      "anchor": "make_timestamptzmicroseconds"
+    },
+    {
+      "level": 4,
+      "title": "`strftime(timestamptz, format)`",
+      "anchor": "strftimetimestamptz-format"
+    },
+    {
+      "level": 4,
+      "title": "`strptime(text, format)`",
+      "anchor": "strptimetext-format"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, timestamptz[, offset])`",
+      "anchor": "time_bucketbucket_width-timestamptz-offset"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, timestamptz[, origin])`",
+      "anchor": "time_bucketbucket_width-timestamptz-origin"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, timestamptz[, timezone])`",
+      "anchor": "time_bucketbucket_width-timestamptz-timezone"
+    },
+    {
+      "level": 2,
+      "title": "ICU Timestamp Table Functions",
+      "anchor": "icu-timestamp-table-functions"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(timestamptz, timestamptz, interval)`",
+      "anchor": "generate_seriestimestamptz-timestamptz-interval"
+    },
+    {
+      "level": 4,
+      "title": "`range(timestamptz, timestamptz, interval)`",
+      "anchor": "rangetimestamptz-timestamptz-interval"
+    },
+    {
+      "level": 2,
+      "title": "ICU Timestamp Without Time Zone Functions",
+      "anchor": "icu-timestamp-without-time-zone-functions"
+    },
+    {
+      "level": 4,
+      "title": "`current_localtime()`",
+      "anchor": "current_localtime"
+    },
+    {
+      "level": 4,
+      "title": "`current_localtimestamp()`",
+      "anchor": "current_localtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`localtime`",
+      "anchor": "localtime"
+    },
+    {
+      "level": 4,
+      "title": "`localtimestamp`",
+      "anchor": "localtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`timezone(text, timestamp)`",
+      "anchor": "timezonetext-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`timezone(text, timestamptz)`",
+      "anchor": "timezonetext-timestamptz"
+    },
+    {
+      "level": 2,
+      "title": "At Time Zone",
+      "anchor": "at-time-zone"
+    },
+    {
+      "level": 2,
+      "title": "Infinities",
+      "anchor": "infinities"
+    },
+    {
+      "level": 2,
+      "title": "Calendars",
+      "anchor": "calendars"
+    }
+  ]
+}

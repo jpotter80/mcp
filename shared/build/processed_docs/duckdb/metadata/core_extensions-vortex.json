@@ -1,0 +1,39 @@
+{
+  "github_directory": "https://github.com/vortex-data/duckdb-vortex",
+  "layout": "docu",
+  "title": "Vortex Extension",
+  "file_name": "vortex.md",
+  "file_stem": "vortex",
+  "file_path": "core_extensions/vortex.md",
+  "file_size": 959,
+  "document_id": "core_extensions-vortex",
+  "url": "/core_extensions/vortex",
+  "content_hash": "3a21019931f866a0cedeab041d4c3f81",
+  "statistics": {
+    "char_count": 759,
+    "word_count": 115,
+    "line_count": 40,
+    "paragraph_count": 12,
+    "header_count": 3,
+    "code_block_count": 4,
+    "code_lines": 13
+  },
+  "processed_at": "2025-11-22T10:32:09.250573",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Reading Vortex Files",
+      "anchor": "reading-vortex-files"
+    },
+    {
+      "level": 2,
+      "title": "Writing Vortex Files",
+      "anchor": "writing-vortex-files"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/building_extensions"
+  ],
+  "title": "Building Extensions",
+  "file_name": "building_extensions.md",
+  "file_stem": "building_extensions",
+  "file_path": "dev/building/building_extensions.md",
+  "file_size": 3312,
+  "document_id": "dev-building-building_extensions",
+  "url": "/dev/building/building_extensions",
+  "content_hash": "84c297d927e78971b930849de7ebfe12",
+  "statistics": {
+    "char_count": 3199,
+    "word_count": 422,
+    "line_count": 89,
+    "paragraph_count": 32,
+    "header_count": 14,
+    "code_block_count": 5,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:10.249405",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Building Extensions",
+      "anchor": "building-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Special Extension Flags",
+      "anchor": "special-extension-flags"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_JEMALLOC`",
+      "anchor": "build_jemalloc"
+    },
+    {
+      "level": 3,
+      "title": "`BUILD_TPCE`",
+      "anchor": "build_tpce"
+    },
+    {
+      "level": 2,
+      "title": "Debug Flags",
+      "anchor": "debug-flags"
+    },
+    {
+      "level": 3,
+      "title": "`CRASH_ON_ASSERT`",
+      "anchor": "crash_on_assert"
+    },
+    {
+      "level": 3,
+      "title": "`DISABLE_STRING_INLINE`",
+      "anchor": "disable_string_inline"
+    },
+    {
+      "level": 3,
+      "title": "`DISABLE_MEMORY_SAFETY`",
+      "anchor": "disable_memory_safety"
+    },
+    {
+      "level": 3,
+      "title": "`DESTROY_UNPINNED_BLOCKS`",
+      "anchor": "destroy_unpinned_blocks"
+    },
+    {
+      "level": 3,
+      "title": "`DEBUG_STACKTRACE`",
+      "anchor": "debug_stacktrace"
+    },
+    {
+      "level": 2,
+      "title": "Using a CMake Configuration File",
+      "anchor": "using-a-cmake-configuration-file"
+    },
+    {
+      "level": 1,
+      "title": "for release builds",
+      "anchor": "for-release-builds"
+    },
+    {
+      "level": 1,
+      "title": "for debug builds",
+      "anchor": "for-debug-builds"
+    },
+    {
+      "level": 1,
+      "title": "install extensions",
+      "anchor": "install-extensions"
+    }
+  ]
+}

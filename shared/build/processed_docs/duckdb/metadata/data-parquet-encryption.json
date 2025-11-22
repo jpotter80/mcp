@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/parquet/encryption"
+  ],
+  "title": "Parquet Encryption",
+  "file_name": "encryption.md",
+  "file_stem": "encryption",
+  "file_path": "data/parquet/encryption.md",
+  "file_size": 2514,
+  "document_id": "data-parquet-encryption",
+  "url": "/data/parquet/encryption",
+  "content_hash": "7c72b76d455aa0dc262805d07537d16b",
+  "statistics": {
+    "char_count": 2371,
+    "word_count": 284,
+    "line_count": 64,
+    "paragraph_count": 21,
+    "header_count": 5,
+    "code_block_count": 6,
+    "code_lines": 14
+  },
+  "processed_at": "2025-11-22T10:32:10.075517",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Reading and Writing Encrypted Files",
+      "anchor": "reading-and-writing-encrypted-files"
+    },
+    {
+      "level": 3,
+      "title": "Writing Encrypted Parquet Files",
+      "anchor": "writing-encrypted-parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "Reading Encrypted Parquet Files",
+      "anchor": "reading-encrypted-parquet-files"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Performance Implications",
+      "anchor": "performance-implications"
+    }
+  ]
+}

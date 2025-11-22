@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/s3_express_one",
+    "/docs/guides/import/s3_express_one/",
+    "/docs/guides/network_cloud_storage/s3_express_one"
+  ],
+  "title": "S3 Express One",
+  "file_name": "s3_express_one.md",
+  "file_stem": "s3_express_one",
+  "file_path": "guides/network_cloud_storage/s3_express_one.md",
+  "file_size": 3369,
+  "document_id": "guides-network_cloud_storage-s3_express_one",
+  "url": "/guides/network_cloud_storage/s3_express_one",
+  "content_hash": "28aac3f7a5f065d86bcbdb19e9ac9162",
+  "statistics": {
+    "char_count": 3101,
+    "word_count": 369,
+    "line_count": 72,
+    "paragraph_count": 22,
+    "header_count": 4,
+    "code_block_count": 7,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-22T10:32:11.129918",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Credentials and Configuration",
+      "anchor": "credentials-and-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Instance Location",
+      "anchor": "instance-location"
+    },
+    {
+      "level": 2,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 2,
+      "title": "Performance",
+      "anchor": "performance"
+    }
+  ]
+}

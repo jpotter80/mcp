@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "title": "DuckDB Docker Container",
+  "file_name": "duckdb_docker.md",
+  "file_stem": "duckdb_docker",
+  "file_path": "operations_manual/duckdb_docker.md",
+  "file_size": 929,
+  "document_id": "operations_manual-duckdb_docker",
+  "url": "/operations_manual/duckdb_docker",
+  "content_hash": "6b9409523942a13c7d8f6fd04220f9bd",
+  "statistics": {
+    "char_count": 875,
+    "word_count": 113,
+    "line_count": 27,
+    "paragraph_count": 11,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:12.199657",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Using the DuckDB UI with Docker",
+      "anchor": "using-the-duckdb-ui-with-docker"
+    }
+  ]
+}

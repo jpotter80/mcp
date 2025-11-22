@@ -1,0 +1,65 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-fts",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/full_text_search",
+    "/docs/stable/extensions/full_text_search/",
+    "/docs/extensions/full_text_search",
+    "/docs/extensions/full_text_search/"
+  ],
+  "title": "Full-Text Search Extension",
+  "file_name": "full_text_search.md",
+  "file_stem": "full_text_search",
+  "file_path": "core_extensions/full_text_search.md",
+  "file_size": 7297,
+  "document_id": "core_extensions-full_text_search",
+  "url": "/core_extensions/full_text_search",
+  "content_hash": "5840f6389d1c5941a1e920b19278c3a1",
+  "statistics": {
+    "char_count": 6597,
+    "word_count": 927,
+    "line_count": 155,
+    "paragraph_count": 35,
+    "header_count": 7,
+    "code_block_count": 9,
+    "code_lines": 49
+  },
+  "processed_at": "2025-11-22T10:32:08.094001",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "`PRAGMA create_fts_index`",
+      "anchor": "pragma-create_fts_index"
+    },
+    {
+      "level": 3,
+      "title": "`PRAGMA drop_fts_index`",
+      "anchor": "pragma-drop_fts_index"
+    },
+    {
+      "level": 3,
+      "title": "`match_bm25` Function",
+      "anchor": "match_bm25-function"
+    },
+    {
+      "level": 3,
+      "title": "`stem` Function",
+      "anchor": "stem-function"
+    },
+    {
+      "level": 2,
+      "title": "Example Usage",
+      "anchor": "example-usage"
+    }
+  ]
+}

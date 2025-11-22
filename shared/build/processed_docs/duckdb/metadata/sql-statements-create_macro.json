@@ -1,0 +1,77 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createmacro.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_macro"
+  ],
+  "title": "CREATE MACRO Statement",
+  "file_name": "create_macro.md",
+  "file_stem": "create_macro",
+  "file_path": "sql/statements/create_macro.md",
+  "file_size": 7223,
+  "document_id": "sql-statements-create_macro",
+  "url": "/sql/statements/create_macro",
+  "content_hash": "4a9d6ce3e2129f12ff7f3eca004b9c0a",
+  "statistics": {
+    "char_count": 6944,
+    "word_count": 1142,
+    "line_count": 303,
+    "paragraph_count": 90,
+    "header_count": 10,
+    "code_block_count": 38,
+    "code_lines": 77
+  },
+  "processed_at": "2025-11-22T10:32:15.699410",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Scalar Macros",
+      "anchor": "scalar-macros"
+    },
+    {
+      "level": 3,
+      "title": "Table Macros",
+      "anchor": "table-macros"
+    },
+    {
+      "level": 2,
+      "title": "Overloading",
+      "anchor": "overloading"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 3,
+      "title": "Using Subquery Macros",
+      "anchor": "using-subquery-macros"
+    },
+    {
+      "level": 3,
+      "title": "Overloads",
+      "anchor": "overloads"
+    },
+    {
+      "level": 3,
+      "title": "Recursive Functions",
+      "anchor": "recursive-functions"
+    },
+    {
+      "level": 3,
+      "title": "Function Chaining on the First Function Does Not Work",
+      "anchor": "function-chaining-on-the-first-function-does-not-work"
+    }
+  ]
+}

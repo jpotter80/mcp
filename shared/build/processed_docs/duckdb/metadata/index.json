@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/index"
+  ],
+  "title": "Documentation",
+  "file_name": "index.md",
+  "file_stem": "index",
+  "file_path": "index.md",
+  "file_size": 5358,
+  "document_id": "index",
+  "url": "/index",
+  "content_hash": "a135623a0edd29f374268c8eebb0edb1",
+  "statistics": {
+    "char_count": 382,
+    "word_count": 40,
+    "line_count": 123,
+    "paragraph_count": 23,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.069892",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Connecting to DuckDB",
+      "anchor": "connecting-to-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Client APIs",
+      "anchor": "client-apis"
+    },
+    {
+      "level": 2,
+      "title": "SQL",
+      "anchor": "sql"
+    },
+    {
+      "level": 2,
+      "title": "Other",
+      "anchor": "other"
+    }
+  ]
+}

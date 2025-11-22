@@ -1,0 +1,389 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/aggregate.js",
+  "redirect_from": [
+    "/docs/sql/aggregates",
+    "/docs/sql/aggregates/",
+    "/docs/sql/functions/aggregates"
+  ],
+  "title": "Aggregate Functions",
+  "file_name": "aggregates.md",
+  "file_stem": "aggregates",
+  "file_path": "sql/functions/aggregates.md",
+  "file_size": 34657,
+  "document_id": "sql-functions-aggregates",
+  "url": "/sql/functions/aggregates",
+  "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf",
+  "statistics": {
+    "char_count": 27853,
+    "word_count": 3783,
+    "line_count": 511,
+    "paragraph_count": 165,
+    "header_count": 72,
+    "code_block_count": 9,
+    "code_lines": 23
+  },
+  "processed_at": "2025-11-22T10:32:13.275770",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 3,
+      "title": "`DISTINCT` Clause in Aggregate Functions",
+      "anchor": "distinct-clause-in-aggregate-functions"
+    },
+    {
+      "level": 3,
+      "title": "`ORDER BY` Clause in Aggregate Functions",
+      "anchor": "order-by-clause-in-aggregate-functions"
+    },
+    {
+      "level": 3,
+      "title": "Handling `NULL` Values",
+      "anchor": "handling-null-values"
+    },
+    {
+      "level": 2,
+      "title": "General Aggregate Functions",
+      "anchor": "general-aggregate-functions"
+    },
+    {
+      "level": 4,
+      "title": "`any_value(arg)`",
+      "anchor": "any_valuearg"
+    },
+    {
+      "level": 4,
+      "title": "`arg_max(arg, val)`",
+      "anchor": "arg_maxarg-val"
+    },
+    {
+      "level": 4,
+      "title": "`arg_max(arg, val, n)`",
+      "anchor": "arg_maxarg-val-n"
+    },
+    {
+      "level": 4,
+      "title": "`arg_max_null(arg, val)`",
+      "anchor": "arg_max_nullarg-val"
+    },
+    {
+      "level": 4,
+      "title": "`arg_min(arg, val)`",
+      "anchor": "arg_minarg-val"
+    },
+    {
+      "level": 4,
+      "title": "`arg_min(arg, val, n)`",
+      "anchor": "arg_minarg-val-n"
+    },
+    {
+      "level": 4,
+      "title": "`arg_min_null(arg, val)`",
+      "anchor": "arg_min_nullarg-val"
+    },
+    {
+      "level": 4,
+      "title": "`avg(arg)`",
+      "anchor": "avgarg"
+    },
+    {
+      "level": 4,
+      "title": "`bit_and(arg)`",
+      "anchor": "bit_andarg"
+    },
+    {
+      "level": 4,
+      "title": "`bit_or(arg)`",
+      "anchor": "bit_orarg"
+    },
+    {
+      "level": 4,
+      "title": "`bit_xor(arg)`",
+      "anchor": "bit_xorarg"
+    },
+    {
+      "level": 4,
+      "title": "`bitstring_agg(arg)`",
+      "anchor": "bitstring_aggarg"
+    },
+    {
+      "level": 4,
+      "title": "`bool_and(arg)`",
+      "anchor": "bool_andarg"
+    },
+    {
+      "level": 4,
+      "title": "`bool_or(arg)`",
+      "anchor": "bool_orarg"
+    },
+    {
+      "level": 4,
+      "title": "`count()`",
+      "anchor": "count"
+    },
+    {
+      "level": 4,
+      "title": "`count(arg)`",
+      "anchor": "countarg"
+    },
+    {
+      "level": 4,
+      "title": "`countif(arg)`",
+      "anchor": "countifarg"
+    },
+    {
+      "level": 4,
+      "title": "`favg(arg)`",
+      "anchor": "favgarg"
+    },
+    {
+      "level": 4,
+      "title": "`first(arg)`",
+      "anchor": "firstarg"
+    },
+    {
+      "level": 4,
+      "title": "`fsum(arg)`",
+      "anchor": "fsumarg"
+    },
+    {
+      "level": 4,
+      "title": "`geometric_mean(arg)`",
+      "anchor": "geometric_meanarg"
+    },
+    {
+      "level": 4,
+      "title": "`histogram(arg)`",
+      "anchor": "histogramarg"
+    },
+    {
+      "level": 4,
+      "title": "`histogram(arg, boundaries)`",
+      "anchor": "histogramarg-boundaries"
+    },
+    {
+      "level": 4,
+      "title": "`histogram_exact(arg, elements)`",
+      "anchor": "histogram_exactarg-elements"
+    },
+    {
+      "level": 4,
+      "title": "`histogram_values(source, col_name, technique, bin_count)`",
+      "anchor": "histogram_valuessource-col_name-technique-bin_count"
+    },
+    {
+      "level": 4,
+      "title": "`last(arg)`",
+      "anchor": "lastarg"
+    },
+    {
+      "level": 4,
+      "title": "`list(arg)`",
+      "anchor": "listarg"
+    },
+    {
+      "level": 4,
+      "title": "`max(arg)`",
+      "anchor": "maxarg"
+    },
+    {
+      "level": 4,
+      "title": "`max(arg, n)`",
+      "anchor": "maxarg-n"
+    },
+    {
+      "level": 4,
+      "title": "`min(arg)`",
+      "anchor": "minarg"
+    },
+    {
+      "level": 4,
+      "title": "`min(arg, n)`",
+      "anchor": "minarg-n"
+    },
+    {
+      "level": 4,
+      "title": "`product(arg)`",
+      "anchor": "productarg"
+    },
+    {
+      "level": 4,
+      "title": "`string_agg(arg)`",
+      "anchor": "string_aggarg"
+    },
+    {
+      "level": 4,
+      "title": "`string_agg(arg, sep)`",
+      "anchor": "string_aggarg-sep"
+    },
+    {
+      "level": 4,
+      "title": "`sum(arg)`",
+      "anchor": "sumarg"
+    },
+    {
+      "level": 4,
+      "title": "`weighted_avg(arg, weight)`",
+      "anchor": "weighted_avgarg-weight"
+    },
+    {
+      "level": 2,
+      "title": "Approximate Aggregates",
+      "anchor": "approximate-aggregates"
+    },
+    {
+      "level": 2,
+      "title": "Statistical Aggregates",
+      "anchor": "statistical-aggregates"
+    },
+    {
+      "level": 4,
+      "title": "`corr(y, x)`",
+      "anchor": "corry-x"
+    },
+    {
+      "level": 4,
+      "title": "`covar_pop(y, x)`",
+      "anchor": "covar_popy-x"
+    },
+    {
+      "level": 4,
+      "title": "`covar_samp(y, x)`",
+      "anchor": "covar_sampy-x"
+    },
+    {
+      "level": 4,
+      "title": "`entropy(x)`",
+      "anchor": "entropyx"
+    },
+    {
+      "level": 4,
+      "title": "`kurtosis_pop(x)`",
+      "anchor": "kurtosis_popx"
+    },
+    {
+      "level": 4,
+      "title": "`kurtosis(x)`",
+      "anchor": "kurtosisx"
+    },
+    {
+      "level": 4,
+      "title": "`mad(x)`",
+      "anchor": "madx"
+    },
+    {
+      "level": 4,
+      "title": "`median(x)`",
+      "anchor": "medianx"
+    },
+    {
+      "level": 4,
+      "title": "`mode(x)`",
+      "anchor": "modex"
+    },
+    {
+      "level": 4,
+      "title": "`quantile_cont(x, pos)`",
+      "anchor": "quantile_contx-pos"
+    },
+    {
+      "level": 4,
+      "title": "`quantile_disc(x, pos)`",
+      "anchor": "quantile_discx-pos"
+    },
+    {
+      "level": 4,
+      "title": "`regr_avgx(y, x)`",
+      "anchor": "regr_avgxy-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_avgy(y, x)`",
+      "anchor": "regr_avgyy-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_count(y, x)`",
+      "anchor": "regr_county-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_intercept(y, x)`",
+      "anchor": "regr_intercepty-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_r2(y, x)`",
+      "anchor": "regr_r2y-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_slope(y, x)`",
+      "anchor": "regr_slopey-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_sxx(y, x)`",
+      "anchor": "regr_sxxy-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_sxy(y, x)`",
+      "anchor": "regr_sxyy-x"
+    },
+    {
+      "level": 4,
+      "title": "`regr_syy(y, x)`",
+      "anchor": "regr_syyy-x"
+    },
+    {
+      "level": 4,
+      "title": "`sem(x)`",
+      "anchor": "semx"
+    },
+    {
+      "level": 4,
+      "title": "`skewness(x)`",
+      "anchor": "skewnessx"
+    },
+    {
+      "level": 4,
+      "title": "`stddev_pop(x)`",
+      "anchor": "stddev_popx"
+    },
+    {
+      "level": 4,
+      "title": "`stddev_samp(x)`",
+      "anchor": "stddev_sampx"
+    },
+    {
+      "level": 4,
+      "title": "`var_pop(x)`",
+      "anchor": "var_popx"
+    },
+    {
+      "level": 4,
+      "title": "`var_samp(x)`",
+      "anchor": "var_sampx"
+    },
+    {
+      "level": 2,
+      "title": "Ordered Set Aggregate Functions",
+      "anchor": "ordered-set-aggregate-functions"
+    },
+    {
+      "level": 2,
+      "title": "Miscellaneous Aggregate Functions",
+      "anchor": "miscellaneous-aggregate-functions"
+    }
+  ]
+}

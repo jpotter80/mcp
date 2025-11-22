@@ -1,0 +1,138 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/date",
+    "/docs/test/functions/date/",
+    "/docs/sql/functions/date"
+  ],
+  "title": "Date Functions",
+  "file_name": "date.md",
+  "file_stem": "date",
+  "file_path": "sql/functions/date.md",
+  "file_size": 10062,
+  "document_id": "sql-functions-date",
+  "url": "/sql/functions/date",
+  "content_hash": "8a5c9c7a8ea1a1e6f1f367011c0ec1b1",
+  "statistics": {
+    "char_count": 9193,
+    "word_count": 1267,
+    "line_count": 171,
+    "paragraph_count": 49,
+    "header_count": 22,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.451905",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Date Operators",
+      "anchor": "date-operators"
+    },
+    {
+      "level": 2,
+      "title": "Date Functions",
+      "anchor": "date-functions"
+    },
+    {
+      "level": 4,
+      "title": "`date_add(date, interval)`",
+      "anchor": "date_adddate-interval"
+    },
+    {
+      "level": 4,
+      "title": "`date_diff(part, startdate, enddate)`",
+      "anchor": "date_diffpart-startdate-enddate"
+    },
+    {
+      "level": 4,
+      "title": "`date_part(part, date)`",
+      "anchor": "date_partpart-date"
+    },
+    {
+      "level": 4,
+      "title": "`date_sub(part, startdate, enddate)`",
+      "anchor": "date_subpart-startdate-enddate"
+    },
+    {
+      "level": 4,
+      "title": "`date_trunc(part, date)`",
+      "anchor": "date_truncpart-date"
+    },
+    {
+      "level": 4,
+      "title": "`dayname(date)`",
+      "anchor": "daynamedate"
+    },
+    {
+      "level": 4,
+      "title": "`extract(part from date)`",
+      "anchor": "extractpart-from-date"
+    },
+    {
+      "level": 4,
+      "title": "`greatest(date, date)`",
+      "anchor": "greatestdate-date"
+    },
+    {
+      "level": 4,
+      "title": "`isfinite(date)`",
+      "anchor": "isfinitedate"
+    },
+    {
+      "level": 4,
+      "title": "`isinf(date)`",
+      "anchor": "isinfdate"
+    },
+    {
+      "level": 4,
+      "title": "`julian(date)`",
+      "anchor": "juliandate"
+    },
+    {
+      "level": 4,
+      "title": "`last_day(date)`",
+      "anchor": "last_daydate"
+    },
+    {
+      "level": 4,
+      "title": "`least(date, date)`",
+      "anchor": "leastdate-date"
+    },
+    {
+      "level": 4,
+      "title": "`make_date(year, month, day)`",
+      "anchor": "make_dateyear-month-day"
+    },
+    {
+      "level": 4,
+      "title": "`monthname(date)`",
+      "anchor": "monthnamedate"
+    },
+    {
+      "level": 4,
+      "title": "`strftime(date, format)`",
+      "anchor": "strftimedate-format"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, date[, offset])`",
+      "anchor": "time_bucketbucket_width-date-offset"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, date[, origin])`",
+      "anchor": "time_bucketbucket_width-date-origin"
+    },
+    {
+      "level": 4,
+      "title": "`today()`",
+      "anchor": "today"
+    },
+    {
+      "level": 2,
+      "title": "Date Part Extraction Functions",
+      "anchor": "date-part-extraction-functions"
+    }
+  ]
+}

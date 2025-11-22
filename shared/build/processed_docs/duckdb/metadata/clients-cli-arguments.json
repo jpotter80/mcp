@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/cli/arguments",
+    "/docs/cli/arguments/",
+    "/docs/clients/cli/arguments"
+  ],
+  "title": "Command Line Arguments",
+  "file_name": "arguments.md",
+  "file_stem": "arguments",
+  "file_path": "clients/cli/arguments.md",
+  "file_size": 5797,
+  "document_id": "clients-cli-arguments",
+  "url": "/clients/cli/arguments",
+  "content_hash": "f467ad07a0da31e3a7e7a39f1b052ec7",
+  "statistics": {
+    "char_count": 3485,
+    "word_count": 514,
+    "line_count": 61,
+    "paragraph_count": 9,
+    "header_count": 1,
+    "code_block_count": 3,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:03.857809",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Passing a Sequence of Arguments",
+      "anchor": "passing-a-sequence-of-arguments"
+    }
+  ]
+}

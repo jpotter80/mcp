@@ -1,0 +1,531 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/list"
+  ],
+  "title": "List Functions",
+  "file_name": "list.md",
+  "file_stem": "list",
+  "file_path": "sql/functions/list.md",
+  "file_size": 55601,
+  "document_id": "sql-functions-list",
+  "url": "/sql/functions/list",
+  "content_hash": "3fa1875ed127bcac524ce0e7e612c68c",
+  "statistics": {
+    "char_count": 44440,
+    "word_count": 5465,
+    "line_count": 845,
+    "paragraph_count": 214,
+    "header_count": 101,
+    "code_block_count": 72,
+    "code_lines": 91
+  },
+  "processed_at": "2025-11-22T10:32:13.764895",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`list[index]`",
+      "anchor": "listindex"
+    },
+    {
+      "level": 4,
+      "title": "`list[begin[:end][:step]]`",
+      "anchor": "listbeginendstep"
+    },
+    {
+      "level": 4,
+      "title": "`arg1 || arg2`",
+      "anchor": "arg1-arg2"
+    },
+    {
+      "level": 4,
+      "title": "`array_extract(list, index)`",
+      "anchor": "array_extractlist-index"
+    },
+    {
+      "level": 4,
+      "title": "`array_pop_back(list)`",
+      "anchor": "array_pop_backlist"
+    },
+    {
+      "level": 4,
+      "title": "`array_pop_front(list)`",
+      "anchor": "array_pop_frontlist"
+    },
+    {
+      "level": 4,
+      "title": "`array_push_front(list, element)`",
+      "anchor": "array_push_frontlist-element"
+    },
+    {
+      "level": 4,
+      "title": "`array_to_string(list, delimiter)`",
+      "anchor": "array_to_stringlist-delimiter"
+    },
+    {
+      "level": 4,
+      "title": "`array_to_string_comma_default(array)`",
+      "anchor": "array_to_string_comma_defaultarray"
+    },
+    {
+      "level": 4,
+      "title": "`concat(value, ...)`",
+      "anchor": "concatvalue-"
+    },
+    {
+      "level": 4,
+      "title": "`contains(list, element)`",
+      "anchor": "containslist-element"
+    },
+    {
+      "level": 4,
+      "title": "`flatten(nested_list)`",
+      "anchor": "flattennested_list"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(start[, stop][, step])`",
+      "anchor": "generate_seriesstart-stop-step"
+    },
+    {
+      "level": 4,
+      "title": "`length(list)`",
+      "anchor": "lengthlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_aggregate(list, function_name, ...)`",
+      "anchor": "list_aggregatelist-function_name-"
+    },
+    {
+      "level": 4,
+      "title": "`list_any_value(list)`",
+      "anchor": "list_any_valuelist"
+    },
+    {
+      "level": 4,
+      "title": "`list_append(list, element)`",
+      "anchor": "list_appendlist-element"
+    },
+    {
+      "level": 4,
+      "title": "`list_approx_count_distinct(list)`",
+      "anchor": "list_approx_count_distinctlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_avg(list)`",
+      "anchor": "list_avglist"
+    },
+    {
+      "level": 4,
+      "title": "`list_bit_and(list)`",
+      "anchor": "list_bit_andlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_bit_or(list)`",
+      "anchor": "list_bit_orlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_bit_xor(list)`",
+      "anchor": "list_bit_xorlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_bool_and(list)`",
+      "anchor": "list_bool_andlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_bool_or(list)`",
+      "anchor": "list_bool_orlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_concat(list_1, ..., list_n)`",
+      "anchor": "list_concatlist_1-list_n"
+    },
+    {
+      "level": 4,
+      "title": "`list_contains(list, element)`",
+      "anchor": "list_containslist-element"
+    },
+    {
+      "level": 4,
+      "title": "`list_cosine_distance(list1, list2)`",
+      "anchor": "list_cosine_distancelist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_cosine_similarity(list1, list2)`",
+      "anchor": "list_cosine_similaritylist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_count(list)`",
+      "anchor": "list_countlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_distance(list1, list2)`",
+      "anchor": "list_distancelist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_distinct(list)`",
+      "anchor": "list_distinctlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_entropy(list)`",
+      "anchor": "list_entropylist"
+    },
+    {
+      "level": 4,
+      "title": "`list_extract(list, index)`",
+      "anchor": "list_extractlist-index"
+    },
+    {
+      "level": 4,
+      "title": "`list_filter(list, lambda(x))`",
+      "anchor": "list_filterlist-lambdax"
+    },
+    {
+      "level": 4,
+      "title": "`list_first(list)`",
+      "anchor": "list_firstlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_grade_up(list[, col1][, col2])`",
+      "anchor": "list_grade_uplist-col1-col2"
+    },
+    {
+      "level": 4,
+      "title": "`list_has_all(list1, list2)`",
+      "anchor": "list_has_alllist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_has_any(list1, list2)`",
+      "anchor": "list_has_anylist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_histogram(list)`",
+      "anchor": "list_histogramlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_inner_product(list1, list2)`",
+      "anchor": "list_inner_productlist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_intersect(list1, list2)`",
+      "anchor": "list_intersectlist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_kurtosis(list)`",
+      "anchor": "list_kurtosislist"
+    },
+    {
+      "level": 4,
+      "title": "`list_kurtosis_pop(list)`",
+      "anchor": "list_kurtosis_poplist"
+    },
+    {
+      "level": 4,
+      "title": "`list_last(list)`",
+      "anchor": "list_lastlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_mad(list)`",
+      "anchor": "list_madlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_max(list)`",
+      "anchor": "list_maxlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_median(list)`",
+      "anchor": "list_medianlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_min(list)`",
+      "anchor": "list_minlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_mode(list)`",
+      "anchor": "list_modelist"
+    },
+    {
+      "level": 4,
+      "title": "`list_negative_inner_product(list1, list2)`",
+      "anchor": "list_negative_inner_productlist1-list2"
+    },
+    {
+      "level": 4,
+      "title": "`list_position(list, element)`",
+      "anchor": "list_positionlist-element"
+    },
+    {
+      "level": 4,
+      "title": "`list_prepend(element, list)`",
+      "anchor": "list_prependelement-list"
+    },
+    {
+      "level": 4,
+      "title": "`list_product(list)`",
+      "anchor": "list_productlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_reduce(list, lambda(x,y)[, initial_value])`",
+      "anchor": "list_reducelist-lambdaxy-initial_value"
+    },
+    {
+      "level": 4,
+      "title": "`list_resize(list, size[[, value]])`",
+      "anchor": "list_resizelist-size-value"
+    },
+    {
+      "level": 4,
+      "title": "`list_reverse(list)`",
+      "anchor": "list_reverselist"
+    },
+    {
+      "level": 4,
+      "title": "`list_reverse_sort(list[, col1])`",
+      "anchor": "list_reverse_sortlist-col1"
+    },
+    {
+      "level": 4,
+      "title": "`list_select(value_list, index_list)`",
+      "anchor": "list_selectvalue_list-index_list"
+    },
+    {
+      "level": 4,
+      "title": "`list_sem(list)`",
+      "anchor": "list_semlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_skewness(list)`",
+      "anchor": "list_skewnesslist"
+    },
+    {
+      "level": 4,
+      "title": "`list_slice(list, begin, end)`",
+      "anchor": "list_slicelist-begin-end"
+    },
+    {
+      "level": 4,
+      "title": "`list_slice(list, begin, end, step)`",
+      "anchor": "list_slicelist-begin-end-step"
+    },
+    {
+      "level": 4,
+      "title": "`list_sort(list[, col1][, col2])`",
+      "anchor": "list_sortlist-col1-col2"
+    },
+    {
+      "level": 4,
+      "title": "`list_stddev_pop(list)`",
+      "anchor": "list_stddev_poplist"
+    },
+    {
+      "level": 4,
+      "title": "`list_stddev_samp(list)`",
+      "anchor": "list_stddev_samplist"
+    },
+    {
+      "level": 4,
+      "title": "`list_string_agg(list)`",
+      "anchor": "list_string_agglist"
+    },
+    {
+      "level": 4,
+      "title": "`list_sum(list)`",
+      "anchor": "list_sumlist"
+    },
+    {
+      "level": 4,
+      "title": "`list_transform(list, lambda(x))`",
+      "anchor": "list_transformlist-lambdax"
+    },
+    {
+      "level": 4,
+      "title": "`list_unique(list)`",
+      "anchor": "list_uniquelist"
+    },
+    {
+      "level": 4,
+      "title": "`list_value(arg, ...)`",
+      "anchor": "list_valuearg-"
+    },
+    {
+      "level": 4,
+      "title": "`list_var_pop(list)`",
+      "anchor": "list_var_poplist"
+    },
+    {
+      "level": 4,
+      "title": "`list_var_samp(list)`",
+      "anchor": "list_var_samplist"
+    },
+    {
+      "level": 4,
+      "title": "`list_where(value_list, mask_list)`",
+      "anchor": "list_wherevalue_list-mask_list"
+    },
+    {
+      "level": 4,
+      "title": "`list_zip(list_1, ..., list_n[, truncate])`",
+      "anchor": "list_ziplist_1-list_n-truncate"
+    },
+    {
+      "level": 4,
+      "title": "`range(start[, stop][, step])`",
+      "anchor": "rangestart-stop-step"
+    },
+    {
+      "level": 4,
+      "title": "`repeat(list, count)`",
+      "anchor": "repeatlist-count"
+    },
+    {
+      "level": 4,
+      "title": "`unnest(list)`",
+      "anchor": "unnestlist"
+    },
+    {
+      "level": 4,
+      "title": "`unpivot_list(arg, ...)`",
+      "anchor": "unpivot_listarg-"
+    },
+    {
+      "level": 2,
+      "title": "List Operators",
+      "anchor": "list-operators"
+    },
+    {
+      "level": 2,
+      "title": "List Comprehension",
+      "anchor": "list-comprehension"
+    },
+    {
+      "level": 2,
+      "title": "Range Functions",
+      "anchor": "range-functions"
+    },
+    {
+      "level": 3,
+      "title": "`range`",
+      "anchor": "range"
+    },
+    {
+      "level": 4,
+      "title": "`range(stop)`",
+      "anchor": "rangestop"
+    },
+    {
+      "level": 4,
+      "title": "`range(start, stop)`",
+      "anchor": "rangestart-stop"
+    },
+    {
+      "level": 4,
+      "title": "`range(start, stop, step)`",
+      "anchor": "rangestart-stop-step"
+    },
+    {
+      "level": 3,
+      "title": "`generate_series`",
+      "anchor": "generate_series"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(stop)`",
+      "anchor": "generate_seriesstop"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(start, stop)`",
+      "anchor": "generate_seriesstart-stop"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(start, stop, step)`",
+      "anchor": "generate_seriesstart-stop-step"
+    },
+    {
+      "level": 4,
+      "title": "`generate_subscripts(arr, dim)`",
+      "anchor": "generate_subscriptsarr-dim"
+    },
+    {
+      "level": 3,
+      "title": "Date Ranges",
+      "anchor": "date-ranges"
+    },
+    {
+      "level": 4,
+      "title": "`range` for Date Ranges",
+      "anchor": "range-for-date-ranges"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series` for Date Ranges",
+      "anchor": "generate_series-for-date-ranges"
+    },
+    {
+      "level": 2,
+      "title": "Slicing",
+      "anchor": "slicing"
+    },
+    {
+      "level": 2,
+      "title": "List Aggregates",
+      "anchor": "list-aggregates"
+    },
+    {
+      "level": 3,
+      "title": "`list_*` Rewrite Functions",
+      "anchor": "list_-rewrite-functions"
+    },
+    {
+      "level": 4,
+      "title": "`array_to_string`",
+      "anchor": "array_to_string"
+    },
+    {
+      "level": 2,
+      "title": "Sorting Lists",
+      "anchor": "sorting-lists"
+    },
+    {
+      "level": 2,
+      "title": "Flattening",
+      "anchor": "flattening"
+    },
+    {
+      "level": 2,
+      "title": "Lambda Functions",
+      "anchor": "lambda-functions"
+    },
+    {
+      "level": 2,
+      "title": "Related Functions",
+      "anchor": "related-functions"
+    }
+  ]
+}

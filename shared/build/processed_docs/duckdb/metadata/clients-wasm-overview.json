@@ -1,0 +1,41 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-wasm",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/wasm",
+    "/docs/api/wasm/",
+    "/docs/api/wasm/overview",
+    "/docs/api/wasm/overview/",
+    "/docs/clients/wasm/overview"
+  ],
+  "title": "DuckDB Wasm",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/wasm/overview.md",
+  "file_size": 1470,
+  "document_id": "clients-wasm-overview",
+  "url": "/clients/wasm/overview",
+  "content_hash": "53399182452c9e90878e596fb6a65f52",
+  "statistics": {
+    "char_count": 1198,
+    "word_count": 138,
+    "line_count": 20,
+    "paragraph_count": 10,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:07.288287",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Getting Started with DuckDB-Wasm",
+      "anchor": "getting-started-with-duckdb-wasm"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

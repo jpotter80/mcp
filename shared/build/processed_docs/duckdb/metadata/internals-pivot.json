@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/internals/pivot"
+  ],
+  "title": "Pivot Internals",
+  "file_name": "pivot.md",
+  "file_stem": "pivot",
+  "file_path": "internals/pivot.md",
+  "file_size": 4119,
+  "document_id": "internals-pivot",
+  "url": "/internals/pivot",
+  "content_hash": "7ec1ee82110a601e6f256f26e60183ea",
+  "statistics": {
+    "char_count": 3660,
+    "word_count": 657,
+    "line_count": 116,
+    "paragraph_count": 23,
+    "header_count": 3,
+    "code_block_count": 5,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:12.100564",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`PIVOT`",
+      "anchor": "pivot"
+    },
+    {
+      "level": 2,
+      "title": "`UNPIVOT`",
+      "anchor": "unpivot"
+    },
+    {
+      "level": 3,
+      "title": "Internals",
+      "anchor": "internals"
+    }
+  ]
+}

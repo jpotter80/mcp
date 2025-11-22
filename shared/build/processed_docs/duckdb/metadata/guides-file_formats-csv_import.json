@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/csv_import",
+    "/docs/guides/import/csv_import/",
+    "/docs/guides/file_formats/csv_import"
+  ],
+  "title": "CSV Import",
+  "file_name": "csv_import.md",
+  "file_stem": "csv_import",
+  "file_path": "guides/file_formats/csv_import.md",
+  "file_size": 1388,
+  "document_id": "guides-file_formats-csv_import",
+  "url": "/guides/file_formats/csv_import",
+  "content_hash": "a93c9ef5e2e25e7827df27ed1ba96d9e",
+  "statistics": {
+    "char_count": 1217,
+    "word_count": 168,
+    "line_count": 40,
+    "paragraph_count": 13,
+    "header_count": 0,
+    "code_block_count": 6,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:10.897945",
+  "sections": []
+}

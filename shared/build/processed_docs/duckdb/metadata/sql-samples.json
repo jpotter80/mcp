@@ -1,0 +1,62 @@
+{
+  "layout": "docu",
+  "railroad": "statements/samples.js",
+  "redirect_from": [
+    "/docs/sql/samples"
+  ],
+  "title": "Samples",
+  "file_name": "samples.md",
+  "file_stem": "samples",
+  "file_path": "sql/samples.md",
+  "file_size": 7000,
+  "document_id": "sql-samples",
+  "url": "/sql/samples",
+  "content_hash": "df5d5ad8596a4b8d8b15264ce4b4c11d",
+  "statistics": {
+    "char_count": 6855,
+    "word_count": 1105,
+    "line_count": 141,
+    "paragraph_count": 45,
+    "header_count": 7,
+    "code_block_count": 11,
+    "code_lines": 40
+  },
+  "processed_at": "2025-11-22T10:32:15.422676",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Sampling Methods",
+      "anchor": "sampling-methods"
+    },
+    {
+      "level": 3,
+      "title": "`reservoir`",
+      "anchor": "reservoir"
+    },
+    {
+      "level": 3,
+      "title": "`bernoulli`",
+      "anchor": "bernoulli"
+    },
+    {
+      "level": 3,
+      "title": "`system`",
+      "anchor": "system"
+    },
+    {
+      "level": 2,
+      "title": "Table Samples",
+      "anchor": "table-samples"
+    }
+  ]
+}

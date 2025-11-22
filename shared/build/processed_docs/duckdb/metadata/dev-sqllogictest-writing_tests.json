@@ -1,0 +1,63 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/writing_tests",
+    "/dev/writing_tests/",
+    "/docs/dev/sqllogictest/writing_tests"
+  ],
+  "title": "Writing Tests",
+  "file_name": "writing_tests.md",
+  "file_stem": "writing_tests",
+  "file_path": "dev/sqllogictest/writing_tests.md",
+  "file_size": 8862,
+  "document_id": "dev-sqllogictest-writing_tests",
+  "url": "/dev/sqllogictest/writing_tests",
+  "content_hash": "f81c0332fb33b6b4fb74f419e2df52f0",
+  "statistics": {
+    "char_count": 5112,
+    "word_count": 624,
+    "line_count": 91,
+    "paragraph_count": 24,
+    "header_count": 7,
+    "code_block_count": 7,
+    "code_lines": 33
+  },
+  "processed_at": "2025-11-22T10:32:10.699994",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Development and Testing",
+      "anchor": "development-and-testing"
+    },
+    {
+      "level": 2,
+      "title": "Philosophy",
+      "anchor": "philosophy"
+    },
+    {
+      "level": 2,
+      "title": "Frameworks",
+      "anchor": "frameworks"
+    },
+    {
+      "level": 2,
+      "title": "Client Connector Tests",
+      "anchor": "client-connector-tests"
+    },
+    {
+      "level": 2,
+      "title": "Functions for Generating Test Data",
+      "anchor": "functions-for-generating-test-data"
+    },
+    {
+      "level": 3,
+      "title": "`test_all_types` Function",
+      "anchor": "test_all_types-function"
+    },
+    {
+      "level": 3,
+      "title": "`test_vector_types` Function",
+      "anchor": "test_vector_types-function"
+    }
+  ]
+}

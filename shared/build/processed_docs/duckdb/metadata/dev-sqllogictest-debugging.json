@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/debugging",
+    "/dev/sqllogictest/debugging/",
+    "/docs/dev/sqllogictest/debugging"
+  ],
+  "title": "Debugging",
+  "file_name": "debugging.md",
+  "file_stem": "debugging",
+  "file_path": "dev/sqllogictest/debugging.md",
+  "file_size": 3172,
+  "document_id": "dev-sqllogictest-debugging",
+  "url": "/dev/sqllogictest/debugging",
+  "content_hash": "0cf8a22e5a65bb431aea0fee45fe2617",
+  "statistics": {
+    "char_count": 3017,
+    "word_count": 453,
+    "line_count": 66,
+    "paragraph_count": 21,
+    "header_count": 1,
+    "code_block_count": 9,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:10.599993",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Triggering Which Tests to Run",
+      "anchor": "triggering-which-tests-to-run"
+    }
+  ]
+}

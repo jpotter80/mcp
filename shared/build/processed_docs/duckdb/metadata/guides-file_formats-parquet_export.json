@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/parquet_export",
+    "/docs/guides/import/parquet_export/",
+    "/docs/guides/file_formats/parquet_export"
+  ],
+  "title": "Parquet Export",
+  "file_name": "parquet_export.md",
+  "file_stem": "parquet_export",
+  "file_path": "guides/file_formats/parquet_export.md",
+  "file_size": 626,
+  "document_id": "guides-file_formats-parquet_export",
+  "url": "/guides/file_formats/parquet_export",
+  "content_hash": "3769285b6fbd0653e512bc594b504a4f",
+  "statistics": {
+    "char_count": 448,
+    "word_count": 69,
+    "line_count": 13,
+    "paragraph_count": 5,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:10.940893",
+  "sections": []
+}

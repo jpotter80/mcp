@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/testing",
+    "/dev/testing/",
+    "/docs/dev/sqllogictest/overview"
+  ],
+  "title": "Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "dev/sqllogictest/overview.md",
+  "file_size": 743,
+  "document_id": "dev-sqllogictest-overview",
+  "url": "/dev/sqllogictest/overview",
+  "content_hash": "6d6542994780f1c6b8006900701d6fa9",
+  "statistics": {
+    "char_count": 624,
+    "word_count": 88,
+    "line_count": 6,
+    "paragraph_count": 2,
+    "header_count": 1,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.653959",
+  "sections": [
+    {
+      "level": 2,
+      "title": "How is DuckDB Tested?",
+      "anchor": "how-is-duckdb-tested"
+    }
+  ]
+}

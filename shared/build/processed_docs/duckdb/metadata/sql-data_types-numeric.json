@@ -1,0 +1,67 @@
+{
+  "blurb": "Numeric types are used to store numbers, and come in different shapes and sizes.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/numeric"
+  ],
+  "title": "Numeric Types",
+  "file_name": "numeric.md",
+  "file_stem": "numeric",
+  "file_path": "sql/data_types/numeric.md",
+  "file_size": 11121,
+  "document_id": "sql-data_types-numeric",
+  "url": "/sql/data_types/numeric",
+  "content_hash": "1bd65deb9e0a715d5d3056e0e077e9c4",
+  "statistics": {
+    "char_count": 10254,
+    "word_count": 1526,
+    "line_count": 125,
+    "paragraph_count": 42,
+    "header_count": 8,
+    "code_block_count": 2,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:12.531096",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Fixed-Width Integer Types",
+      "anchor": "fixed-width-integer-types"
+    },
+    {
+      "level": 2,
+      "title": "Variable-Length Integers",
+      "anchor": "variable-length-integers"
+    },
+    {
+      "level": 2,
+      "title": "Fixed-Point Decimals",
+      "anchor": "fixed-point-decimals"
+    },
+    {
+      "level": 2,
+      "title": "Floating-Point Types",
+      "anchor": "floating-point-types"
+    },
+    {
+      "level": 2,
+      "title": "Universally Unique Identifiers (`UUID`s)",
+      "anchor": "universally-unique-identifiers-uuids"
+    },
+    {
+      "level": 3,
+      "title": "UUIDv4",
+      "anchor": "uuidv4"
+    },
+    {
+      "level": 3,
+      "title": "UUIDv7",
+      "anchor": "uuidv7"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    }
+  ]
+}

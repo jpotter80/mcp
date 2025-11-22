@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/wasm/extensions",
+    "/docs/api/wasm/extensions/",
+    "/docs/clients/wasm/extensions"
+  ],
+  "title": "Extensions",
+  "file_name": "extensions.md",
+  "file_stem": "extensions",
+  "file_path": "clients/wasm/extensions.md",
+  "file_size": 6784,
+  "document_id": "clients-wasm-extensions",
+  "url": "/clients/wasm/extensions",
+  "content_hash": "1f45b67ebba2530c80ed5f8d76b994d0",
+  "statistics": {
+    "char_count": 5936,
+    "word_count": 785,
+    "line_count": 75,
+    "paragraph_count": 28,
+    "header_count": 9,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:07.256092",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Format",
+      "anchor": "format"
+    },
+    {
+      "level": 2,
+      "title": "`INSTALL` and `LOAD`",
+      "anchor": "install-and-load"
+    },
+    {
+      "level": 2,
+      "title": "Autoloading",
+      "anchor": "autoloading"
+    },
+    {
+      "level": 2,
+      "title": "List of Officially Available Extensions",
+      "anchor": "list-of-officially-available-extensions"
+    },
+    {
+      "level": 3,
+      "title": "HTTPFS",
+      "anchor": "httpfs"
+    },
+    {
+      "level": 2,
+      "title": "Extension Signing",
+      "anchor": "extension-signing"
+    },
+    {
+      "level": 2,
+      "title": "Fetching DuckDB-Wasm Extensions",
+      "anchor": "fetching-duckdb-wasm-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Serving Extensions from a Third-Party Repository",
+      "anchor": "serving-extensions-from-a-third-party-repository"
+    },
+    {
+      "level": 2,
+      "title": "Tooling",
+      "anchor": "tooling"
+    }
+  ]
+}

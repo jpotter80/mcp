@@ -1,0 +1,93 @@
+{
+  "blurb": "The UNPIVOT statement allows columns to be stacked into rows that indicate the prior column name and value.",
+  "layout": "docu",
+  "railroad": "statements/unpivot.js",
+  "redirect_from": [
+    "/docs/sql/statements/unpivot"
+  ],
+  "title": "UNPIVOT Statement",
+  "file_name": "unpivot.md",
+  "file_stem": "unpivot",
+  "file_path": "sql/statements/unpivot.md",
+  "file_size": 12026,
+  "document_id": "sql-statements-unpivot",
+  "url": "/sql/statements/unpivot",
+  "content_hash": "6974f361db39bf00092e24c452883b59",
+  "statistics": {
+    "char_count": 10052,
+    "word_count": 1903,
+    "line_count": 294,
+    "paragraph_count": 55,
+    "header_count": 13,
+    "code_block_count": 13,
+    "code_lines": 71
+  },
+  "processed_at": "2025-11-22T10:32:15.984068",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Simplified `UNPIVOT` Syntax",
+      "anchor": "simplified-unpivot-syntax"
+    },
+    {
+      "level": 3,
+      "title": "Example Data",
+      "anchor": "example-data"
+    },
+    {
+      "level": 3,
+      "title": "`UNPIVOT` Manually",
+      "anchor": "unpivot-manually"
+    },
+    {
+      "level": 3,
+      "title": "`UNPIVOT` Dynamically Using Columns Expression",
+      "anchor": "unpivot-dynamically-using-columns-expression"
+    },
+    {
+      "level": 3,
+      "title": "`UNPIVOT` into Multiple Value Columns",
+      "anchor": "unpivot-into-multiple-value-columns"
+    },
+    {
+      "level": 3,
+      "title": "Using `UNPIVOT` within a `SELECT` Statement",
+      "anchor": "using-unpivot-within-a-select-statement"
+    },
+    {
+      "level": 3,
+      "title": "Expressions within `UNPIVOT` Statements",
+      "anchor": "expressions-within-unpivot-statements"
+    },
+    {
+      "level": 3,
+      "title": "Simplified `UNPIVOT` Full Syntax Diagram",
+      "anchor": "simplified-unpivot-full-syntax-diagram"
+    },
+    {
+      "level": 2,
+      "title": "SQL Standard `UNPIVOT` Syntax",
+      "anchor": "sql-standard-unpivot-syntax"
+    },
+    {
+      "level": 3,
+      "title": "SQL Standard `UNPIVOT` Manually",
+      "anchor": "sql-standard-unpivot-manually"
+    },
+    {
+      "level": 3,
+      "title": "SQL Standard `UNPIVOT` Dynamically Using the `COLUMNS` Expression",
+      "anchor": "sql-standard-unpivot-dynamically-using-the-columns-expression"
+    },
+    {
+      "level": 3,
+      "title": "SQL Standard `UNPIVOT` into Multiple Value Columns",
+      "anchor": "sql-standard-unpivot-into-multiple-value-columns"
+    },
+    {
+      "level": 3,
+      "title": "SQL Standard `UNPIVOT` Full Syntax Diagram",
+      "anchor": "sql-standard-unpivot-full-syntax-diagram"
+    }
+  ]
+}

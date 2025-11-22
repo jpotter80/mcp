@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "title": "Deploying DuckDB-Wasm",
+  "file_name": "deploying_duckdb_wasm.md",
+  "file_stem": "deploying_duckdb_wasm",
+  "file_path": "clients/wasm/deploying_duckdb_wasm.md",
+  "file_size": 3839,
+  "document_id": "clients-wasm-deploying_duckdb_wasm",
+  "url": "/clients/wasm/deploying_duckdb_wasm",
+  "content_hash": "abb7e59af87128082bb1cb0b33643011",
+  "statistics": {
+    "char_count": 3421,
+    "word_count": 521,
+    "line_count": 54,
+    "paragraph_count": 21,
+    "header_count": 5,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:07.237005",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Main Library Component",
+      "anchor": "main-library-component"
+    },
+    {
+      "level": 2,
+      "title": "JS Worker Component",
+      "anchor": "js-worker-component"
+    },
+    {
+      "level": 2,
+      "title": "Wasm Worker Component",
+      "anchor": "wasm-worker-component"
+    },
+    {
+      "level": 2,
+      "title": "DuckDB Extensions",
+      "anchor": "duckdb-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Security Considerations",
+      "anchor": "security-considerations"
+    }
+  ]
+}

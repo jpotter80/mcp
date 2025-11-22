@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/export_pandas"
+  ],
+  "title": "Export to Pandas",
+  "file_name": "export_pandas.md",
+  "file_stem": "export_pandas",
+  "file_path": "guides/python/export_pandas.md",
+  "file_size": 498,
+  "document_id": "guides-python-export_pandas",
+  "url": "/guides/python/export_pandas",
+  "content_hash": "15bd52ce8a761add704584255f8ed161",
+  "statistics": {
+    "char_count": 397,
+    "word_count": 55,
+    "line_count": 18,
+    "paragraph_count": 6,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 7
+  },
+  "processed_at": "2025-11-22T10:32:11.416004",
+  "sections": [
+    {
+      "level": 1,
+      "title": "read the result of an arbitrary SQL query to a Pandas DataFrame",
+      "anchor": "read-the-result-of-an-arbitrary-sql-query-to-a-pandas-dataframe"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

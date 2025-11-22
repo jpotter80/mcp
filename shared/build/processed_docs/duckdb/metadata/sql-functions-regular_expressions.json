@@ -1,0 +1,102 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/like.js",
+  "redirect_from": [
+    "/docs/sql/functions/regular_expressions"
+  ],
+  "title": "Regular Expressions",
+  "file_name": "regular_expressions.md",
+  "file_stem": "regular_expressions",
+  "file_path": "sql/functions/regular_expressions.md",
+  "file_size": 11321,
+  "document_id": "sql-functions-regular_expressions",
+  "url": "/sql/functions/regular_expressions",
+  "content_hash": "ef5a30d24b70d53568a7e36318957561",
+  "statistics": {
+    "char_count": 10570,
+    "word_count": 1313,
+    "line_count": 182,
+    "paragraph_count": 49,
+    "header_count": 15,
+    "code_block_count": 10,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:14.067557",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Regular Expression Syntax",
+      "anchor": "regular-expression-syntax"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract(string, pattern[, group = 0][, options])`",
+      "anchor": "regexp_extractstring-pattern-group-0-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract(string, pattern, name_list[, options])`",
+      "anchor": "regexp_extractstring-pattern-name_list-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_extract_all(string, regex[, group = 0][, options])`",
+      "anchor": "regexp_extract_allstring-regex-group-0-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_full_match(string, regex[, options])`",
+      "anchor": "regexp_full_matchstring-regex-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_matches(string, pattern[, options])`",
+      "anchor": "regexp_matchesstring-pattern-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_replace(string, pattern, replacement[, options])`",
+      "anchor": "regexp_replacestring-pattern-replacement-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_split_to_array(string, regex[, options])`",
+      "anchor": "regexp_split_to_arraystring-regex-options"
+    },
+    {
+      "level": 4,
+      "title": "`regexp_split_to_table(string, regex[, options])`",
+      "anchor": "regexp_split_to_tablestring-regex-options"
+    },
+    {
+      "level": 2,
+      "title": "Options for Regular Expression Functions",
+      "anchor": "options-for-regular-expression-functions"
+    },
+    {
+      "level": 3,
+      "title": "Using `regexp_matches`",
+      "anchor": "using-regexp_matches"
+    },
+    {
+      "level": 3,
+      "title": "Using `regexp_replace`",
+      "anchor": "using-regexp_replace"
+    },
+    {
+      "level": 3,
+      "title": "Using `regexp_extract`",
+      "anchor": "using-regexp_extract"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

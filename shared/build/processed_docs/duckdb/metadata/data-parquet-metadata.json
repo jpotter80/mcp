@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/parquet/metadata"
+  ],
+  "title": "Querying Parquet Metadata",
+  "file_name": "metadata.md",
+  "file_stem": "metadata",
+  "file_path": "data/parquet/metadata.md",
+  "file_size": 5317,
+  "document_id": "data-parquet-metadata",
+  "url": "/data/parquet/metadata",
+  "content_hash": "e2af1ae572ef3461926ea7a31a020d39",
+  "statistics": {
+    "char_count": 4156,
+    "word_count": 664,
+    "line_count": 136,
+    "paragraph_count": 29,
+    "header_count": 5,
+    "code_block_count": 6,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:10.090826",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Parquet Metadata",
+      "anchor": "parquet-metadata"
+    },
+    {
+      "level": 2,
+      "title": "Parquet Schema",
+      "anchor": "parquet-schema"
+    },
+    {
+      "level": 2,
+      "title": "Parquet File Metadata",
+      "anchor": "parquet-file-metadata"
+    },
+    {
+      "level": 2,
+      "title": "Parquet Key-Value Metadata",
+      "anchor": "parquet-key-value-metadata"
+    },
+    {
+      "level": 2,
+      "title": "Bloom Filters",
+      "anchor": "bloom-filters"
+    }
+  ]
+}

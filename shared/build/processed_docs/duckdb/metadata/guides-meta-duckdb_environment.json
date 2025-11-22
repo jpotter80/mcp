@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/meta/duckdb_environment"
+  ],
+  "title": "DuckDB Environment",
+  "file_name": "duckdb_environment.md",
+  "file_stem": "duckdb_environment",
+  "file_path": "guides/meta/duckdb_environment.md",
+  "file_size": 3675,
+  "document_id": "guides-meta-duckdb_environment",
+  "url": "/guides/meta/duckdb_environment",
+  "content_hash": "a4c9a6437d18b5cae7516c99eaca23e8",
+  "statistics": {
+    "char_count": 3496,
+    "word_count": 327,
+    "line_count": 72,
+    "paragraph_count": 20,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:11.009045",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Version",
+      "anchor": "version"
+    },
+    {
+      "level": 2,
+      "title": "Platform",
+      "anchor": "platform"
+    },
+    {
+      "level": 2,
+      "title": "Extensions",
+      "anchor": "extensions"
+    },
+    {
+      "level": 2,
+      "title": "Meta Table Functions",
+      "anchor": "meta-table-functions"
+    }
+  ]
+}

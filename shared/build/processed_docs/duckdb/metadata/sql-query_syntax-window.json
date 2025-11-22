@@ -1,0 +1,32 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/window.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/window"
+  ],
+  "title": "WINDOW Clause",
+  "file_name": "window.md",
+  "file_stem": "window",
+  "file_path": "sql/query_syntax/window.md",
+  "file_size": 439,
+  "document_id": "sql-query_syntax-window",
+  "url": "/sql/query_syntax/window",
+  "content_hash": "c9dd1f30306a67d2b5b0ce5a5aaf4491",
+  "statistics": {
+    "char_count": 287,
+    "word_count": 41,
+    "line_count": 3,
+    "paragraph_count": 2,
+    "header_count": 1,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:15.346773",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

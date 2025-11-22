@@ -1,0 +1,55 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-avro",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/avro",
+    "/docs/stable/extensions/avro/",
+    "/docs/extensions/avro",
+    "/docs/extensions/avro/"
+  ],
+  "title": "Avro Extension",
+  "file_name": "avro.md",
+  "file_stem": "avro",
+  "file_path": "core_extensions/avro.md",
+  "file_size": 4236,
+  "document_id": "core_extensions-avro",
+  "url": "/core_extensions/avro",
+  "content_hash": "f69cd305fc534cd22cee36eb9f41b031",
+  "statistics": {
+    "char_count": 3993,
+    "word_count": 607,
+    "line_count": 62,
+    "paragraph_count": 24,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:07.594550",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The `read_avro` Function",
+      "anchor": "the-read_avro-function"
+    },
+    {
+      "level": 2,
+      "title": "File IO",
+      "anchor": "file-io"
+    },
+    {
+      "level": 2,
+      "title": "Schema Conversion",
+      "anchor": "schema-conversion"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "anchor": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Limitations and Future Plans",
+      "anchor": "limitations-and-future-plans"
+    }
+  ]
+}

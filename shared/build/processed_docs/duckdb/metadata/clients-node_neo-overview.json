@@ -1,0 +1,173 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/node_neo/overview",
+    "/docs/api/node_neo/overview/",
+    "/docs/clients/node_neo/overview"
+  ],
+  "title": "Node.js Client (Neo)",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/node_neo/overview.md",
+  "file_size": 29576,
+  "document_id": "clients-node_neo-overview",
+  "url": "/clients/node_neo/overview",
+  "content_hash": "83cee7dc7d1de166a5a5d0e8eea41b10",
+  "statistics": {
+    "char_count": 19459,
+    "word_count": 2765,
+    "line_count": 790,
+    "paragraph_count": 127,
+    "header_count": 29,
+    "code_block_count": 42,
+    "code_lines": 796
+  },
+  "processed_at": "2025-11-22T10:32:04.277847",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Features",
+      "anchor": "features"
+    },
+    {
+      "level": 3,
+      "title": "Main Differences from [duckdb-node](https://www.npmjs.com/package/duckdb)",
+      "anchor": "main-differences-from-duckdb-nodehttpswwwnpmjscompackageduckdb"
+    },
+    {
+      "level": 3,
+      "title": "Roadmap",
+      "anchor": "roadmap"
+    },
+    {
+      "level": 3,
+      "title": "Supported Platforms",
+      "anchor": "supported-platforms"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Get Basic Information",
+      "anchor": "get-basic-information"
+    },
+    {
+      "level": 3,
+      "title": "Connect",
+      "anchor": "connect"
+    },
+    {
+      "level": 3,
+      "title": "Create Instance",
+      "anchor": "create-instance"
+    },
+    {
+      "level": 3,
+      "title": "Instance Cache",
+      "anchor": "instance-cache"
+    },
+    {
+      "level": 3,
+      "title": "Connect to Instance",
+      "anchor": "connect-to-instance"
+    },
+    {
+      "level": 3,
+      "title": "Disconnect",
+      "anchor": "disconnect"
+    },
+    {
+      "level": 3,
+      "title": "Run SQL",
+      "anchor": "run-sql"
+    },
+    {
+      "level": 3,
+      "title": "Parameterize SQL",
+      "anchor": "parameterize-sql"
+    },
+    {
+      "level": 3,
+      "title": "Specifying Values",
+      "anchor": "specifying-values"
+    },
+    {
+      "level": 3,
+      "title": "Stream Results",
+      "anchor": "stream-results"
+    },
+    {
+      "level": 3,
+      "title": "Inspect Result Metadata",
+      "anchor": "inspect-result-metadata"
+    },
+    {
+      "level": 3,
+      "title": "Read Result Data",
+      "anchor": "read-result-data"
+    },
+    {
+      "level": 3,
+      "title": "Get Result Data",
+      "anchor": "get-result-data"
+    },
+    {
+      "level": 3,
+      "title": "Convert Result Data",
+      "anchor": "convert-result-data"
+    },
+    {
+      "level": 3,
+      "title": "Fetch Chunks",
+      "anchor": "fetch-chunks"
+    },
+    {
+      "level": 3,
+      "title": "Inspect Data Types",
+      "anchor": "inspect-data-types"
+    },
+    {
+      "level": 3,
+      "title": "Inspect Data Values",
+      "anchor": "inspect-data-values"
+    },
+    {
+      "level": 3,
+      "title": "Displaying Timezones",
+      "anchor": "displaying-timezones"
+    },
+    {
+      "level": 3,
+      "title": "Append To Table",
+      "anchor": "append-to-table"
+    },
+    {
+      "level": 3,
+      "title": "Append Data Chunk",
+      "anchor": "append-data-chunk"
+    },
+    {
+      "level": 3,
+      "title": "Extract Statements",
+      "anchor": "extract-statements"
+    },
+    {
+      "level": 3,
+      "title": "Control Evaluation of Tasks",
+      "anchor": "control-evaluation-of-tasks"
+    },
+    {
+      "level": 3,
+      "title": "Ways to Run SQL",
+      "anchor": "ways-to-run-sql"
+    },
+    {
+      "level": 3,
+      "title": "Ways to Get Result Data",
+      "anchor": "ways-to-get-result-data"
+    }
+  ]
+}

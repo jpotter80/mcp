@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "title": "Crashes",
+  "file_name": "crashes.md",
+  "file_stem": "crashes",
+  "file_path": "guides/troubleshooting/crashes.md",
+  "file_size": 5880,
+  "document_id": "guides-troubleshooting-crashes",
+  "url": "/guides/troubleshooting/crashes",
+  "content_hash": "2968437c7e751e2127f3d5fd9d8eee4c",
+  "statistics": {
+    "char_count": 5818,
+    "word_count": 835,
+    "line_count": 95,
+    "paragraph_count": 32,
+    "header_count": 11,
+    "code_block_count": 3,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:12.043422",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Types of Crashes",
+      "anchor": "types-of-crashes"
+    },
+    {
+      "level": 2,
+      "title": "Recovering Data",
+      "anchor": "recovering-data"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting the Crash",
+      "anchor": "troubleshooting-the-crash"
+    },
+    {
+      "level": 3,
+      "title": "Using the Latest Stable and Preview Builds",
+      "anchor": "using-the-latest-stable-and-preview-builds"
+    },
+    {
+      "level": 3,
+      "title": "Search for Existing Issues",
+      "anchor": "search-for-existing-issues"
+    },
+    {
+      "level": 3,
+      "title": "Disabling the Query Optimizer",
+      "anchor": "disabling-the-query-optimizer"
+    },
+    {
+      "level": 3,
+      "title": "Try to Isolate the Issue",
+      "anchor": "try-to-isolate-the-issue"
+    },
+    {
+      "level": 4,
+      "title": "Reproducing in Plain SQL",
+      "anchor": "reproducing-in-plain-sql"
+    },
+    {
+      "level": 4,
+      "title": "Different Hardware Setup",
+      "anchor": "different-hardware-setup"
+    },
+    {
+      "level": 4,
+      "title": "Decomposing the Query",
+      "anchor": "decomposing-the-query"
+    },
+    {
+      "level": 2,
+      "title": "Submitting an Issue",
+      "anchor": "submitting-an-issue"
+    }
+  ]
+}

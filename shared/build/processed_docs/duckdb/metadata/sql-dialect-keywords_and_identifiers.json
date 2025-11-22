@@ -1,0 +1,77 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/case_sensitivity",
+    "/docs/sql/case_sensitivity/",
+    "/docs/sql/keywords-and-identifiers",
+    "/docs/sql/keywords-and-identifiers/",
+    "/docs/sql/dialect/keywords-and-identifiers",
+    "/docs/sql/dialect/keywords-and-identifiers/",
+    "/docs/sql/dialect/keywords_and_identifiers"
+  ],
+  "title": "Keywords and Identifiers",
+  "file_name": "keywords_and_identifiers.md",
+  "file_stem": "keywords_and_identifiers",
+  "file_path": "sql/dialect/keywords_and_identifiers.md",
+  "file_size": 5287,
+  "document_id": "sql-dialect-keywords_and_identifiers",
+  "url": "/sql/dialect/keywords_and_identifiers",
+  "content_hash": "94b5fcbbeb9aef7d9aa95f33b105d1ef",
+  "statistics": {
+    "char_count": 4884,
+    "word_count": 694,
+    "line_count": 150,
+    "paragraph_count": 44,
+    "header_count": 9,
+    "code_block_count": 13,
+    "code_lines": 24
+  },
+  "processed_at": "2025-11-22T10:32:12.973614",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Identifiers",
+      "anchor": "identifiers"
+    },
+    {
+      "level": 3,
+      "title": "Deduplicating Identifiers",
+      "anchor": "deduplicating-identifiers"
+    },
+    {
+      "level": 2,
+      "title": "Database Names",
+      "anchor": "database-names"
+    },
+    {
+      "level": 2,
+      "title": "Rules for Case-Sensitivity",
+      "anchor": "rules-for-case-sensitivity"
+    },
+    {
+      "level": 3,
+      "title": "Keywords and Function Names",
+      "anchor": "keywords-and-function-names"
+    },
+    {
+      "level": 3,
+      "title": "Case-Sensitivity of Identifiers",
+      "anchor": "case-sensitivity-of-identifiers"
+    },
+    {
+      "level": 3,
+      "title": "Case-Sensitivity of Keys in Nested Data Structures",
+      "anchor": "case-sensitivity-of-keys-in-nested-data-structures"
+    },
+    {
+      "level": 4,
+      "title": "Handling Conflicts",
+      "anchor": "handling-conflicts"
+    },
+    {
+      "level": 4,
+      "title": "Disabling Preserving Cases",
+      "anchor": "disabling-preserving-cases"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/internals/storage",
+    "/internals/storage/",
+    "/docs/internals/storage"
+  ],
+  "title": "Storage Versions and Format",
+  "file_name": "storage.md",
+  "file_stem": "storage",
+  "file_path": "internals/storage.md",
+  "file_size": 10652,
+  "document_id": "internals-storage",
+  "url": "/internals/storage",
+  "content_hash": "907cf1e576587fe6f0a017748da3ec8f",
+  "statistics": {
+    "char_count": 9230,
+    "word_count": 1289,
+    "line_count": 182,
+    "paragraph_count": 55,
+    "header_count": 14,
+    "code_block_count": 10,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:12.130694",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Compatibility",
+      "anchor": "compatibility"
+    },
+    {
+      "level": 3,
+      "title": "Backward Compatibility",
+      "anchor": "backward-compatibility"
+    },
+    {
+      "level": 3,
+      "title": "Forward Compatibility",
+      "anchor": "forward-compatibility"
+    },
+    {
+      "level": 2,
+      "title": "How to Move between Storage Formats",
+      "anchor": "how-to-move-between-storage-formats"
+    },
+    {
+      "level": 3,
+      "title": "Explicit Storage Versions",
+      "anchor": "explicit-storage-versions"
+    },
+    {
+      "level": 3,
+      "title": "Converting between Storage Versions",
+      "anchor": "converting-between-storage-versions"
+    },
+    {
+      "level": 2,
+      "title": "Storage Header",
+      "anchor": "storage-header"
+    },
+    {
+      "level": 2,
+      "title": "Storage Version Table",
+      "anchor": "storage-version-table"
+    },
+    {
+      "level": 2,
+      "title": "Compression",
+      "anchor": "compression"
+    },
+    {
+      "level": 3,
+      "title": "Compression Algorithms",
+      "anchor": "compression-algorithms"
+    },
+    {
+      "level": 2,
+      "title": "Disk Usage",
+      "anchor": "disk-usage"
+    },
+    {
+      "level": 2,
+      "title": "Row Groups",
+      "anchor": "row-groups"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Error Message When Opening an Incompatible Database File",
+      "anchor": "error-message-when-opening-an-incompatible-database-file"
+    }
+  ]
+}

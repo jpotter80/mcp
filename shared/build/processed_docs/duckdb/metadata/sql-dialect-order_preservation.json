@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/dialect/order_preservation"
+  ],
+  "title": "Order Preservation",
+  "file_name": "order_preservation.md",
+  "file_stem": "order_preservation",
+  "file_path": "sql/dialect/order_preservation.md",
+  "file_size": 2756,
+  "document_id": "sql-dialect-order_preservation",
+  "url": "/sql/dialect/order_preservation",
+  "content_hash": "bf4339b03c5f392b4687c24dbf5373e5",
+  "statistics": {
+    "char_count": 2647,
+    "word_count": 390,
+    "line_count": 78,
+    "paragraph_count": 21,
+    "header_count": 3,
+    "code_block_count": 3,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:12.988220",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "Clauses",
+      "anchor": "clauses"
+    },
+    {
+      "level": 2,
+      "title": "Insertion Order",
+      "anchor": "insertion-order"
+    }
+  ]
+}

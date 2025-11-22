@@ -1,0 +1,216 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/timestamp"
+  ],
+  "title": "Timestamp Functions",
+  "file_name": "timestamp.md",
+  "file_stem": "timestamp",
+  "file_path": "sql/functions/timestamp.md",
+  "file_size": 18149,
+  "document_id": "sql-functions-timestamp",
+  "url": "/sql/functions/timestamp",
+  "content_hash": "c743a66943aea266f28a696cf073a746",
+  "statistics": {
+    "char_count": 16751,
+    "word_count": 2037,
+    "line_count": 279,
+    "paragraph_count": 84,
+    "header_count": 38,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:14.451520",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Timestamp Operators",
+      "anchor": "timestamp-operators"
+    },
+    {
+      "level": 2,
+      "title": "Scalar Timestamp Functions",
+      "anchor": "scalar-timestamp-functions"
+    },
+    {
+      "level": 4,
+      "title": "`age(timestamp, timestamp)`",
+      "anchor": "agetimestamp-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`age(timestamp)`",
+      "anchor": "agetimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`century(timestamp)`",
+      "anchor": "centurytimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`current_localtimestamp()`",
+      "anchor": "current_localtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`date_diff(part, starttimestamp, endtimestamp)`",
+      "anchor": "date_diffpart-starttimestamp-endtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`date_part([part, ...], timestamp)`",
+      "anchor": "date_partpart-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`date_part(part, timestamp)`",
+      "anchor": "date_partpart-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`date_sub(part, starttimestamp, endtimestamp)`",
+      "anchor": "date_subpart-starttimestamp-endtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`date_trunc(part, timestamp)`",
+      "anchor": "date_truncpart-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`dayname(timestamp)`",
+      "anchor": "daynametimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`epoch_ms(timestamp)`",
+      "anchor": "epoch_mstimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`epoch_ns(timestamp)`",
+      "anchor": "epoch_nstimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`epoch_us(timestamp)`",
+      "anchor": "epoch_ustimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`epoch(timestamp)`",
+      "anchor": "epochtimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`extract(field FROM timestamp)`",
+      "anchor": "extractfield-from-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`greatest(timestamp, timestamp)`",
+      "anchor": "greatesttimestamp-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`isfinite(timestamp)`",
+      "anchor": "isfinitetimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`isinf(timestamp)`",
+      "anchor": "isinftimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`julian(timestamp)`",
+      "anchor": "juliantimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`last_day(timestamp)`",
+      "anchor": "last_daytimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`least(timestamp, timestamp)`",
+      "anchor": "leasttimestamp-timestamp"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamp(bigint, bigint, bigint, bigint, bigint, double)`",
+      "anchor": "make_timestampbigint-bigint-bigint-bigint-bigint-double"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamp(microseconds)`",
+      "anchor": "make_timestampmicroseconds"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamp_ms(milliseconds)`",
+      "anchor": "make_timestamp_msmilliseconds"
+    },
+    {
+      "level": 4,
+      "title": "`make_timestamp_ns(nanoseconds)`",
+      "anchor": "make_timestamp_nsnanoseconds"
+    },
+    {
+      "level": 4,
+      "title": "`monthname(timestamp)`",
+      "anchor": "monthnametimestamp"
+    },
+    {
+      "level": 4,
+      "title": "`strftime(timestamp, format)`",
+      "anchor": "strftimetimestamp-format"
+    },
+    {
+      "level": 4,
+      "title": "`strptime(text, format-list)`",
+      "anchor": "strptimetext-format-list"
+    },
+    {
+      "level": 4,
+      "title": "`strptime(text, format)`",
+      "anchor": "strptimetext-format"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, timestamp[, offset])`",
+      "anchor": "time_bucketbucket_width-timestamp-offset"
+    },
+    {
+      "level": 4,
+      "title": "`time_bucket(bucket_width, timestamp[, origin])`",
+      "anchor": "time_bucketbucket_width-timestamp-origin"
+    },
+    {
+      "level": 4,
+      "title": "`try_strptime(text, format-list)`",
+      "anchor": "try_strptimetext-format-list"
+    },
+    {
+      "level": 4,
+      "title": "`try_strptime(text, format)`",
+      "anchor": "try_strptimetext-format"
+    },
+    {
+      "level": 2,
+      "title": "Timestamp Table Functions",
+      "anchor": "timestamp-table-functions"
+    },
+    {
+      "level": 4,
+      "title": "`generate_series(timestamp, timestamp, interval)`",
+      "anchor": "generate_seriestimestamp-timestamp-interval"
+    },
+    {
+      "level": 4,
+      "title": "`range(timestamp, timestamp, interval)`",
+      "anchor": "rangetimestamp-timestamp-interval"
+    }
+  ]
+}

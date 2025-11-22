@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "statements/set.js",
+  "redirect_from": [
+    "/docs/sql/statements/set"
+  ],
+  "title": "SET and RESET Statements",
+  "file_name": "set.md",
+  "file_stem": "set",
+  "file_path": "sql/statements/set.md",
+  "file_size": 1661,
+  "document_id": "sql-statements-set",
+  "url": "/sql/statements/set",
+  "content_hash": "835ee6d73cea375929899e5603450fe1",
+  "statistics": {
+    "char_count": 1477,
+    "word_count": 216,
+    "line_count": 75,
+    "paragraph_count": 29,
+    "header_count": 6,
+    "code_block_count": 8,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:15.935041",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Set a Global Variable",
+      "anchor": "set-a-global-variable"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`RESET`",
+      "anchor": "reset"
+    },
+    {
+      "level": 2,
+      "title": "Scopes",
+      "anchor": "scopes"
+    },
+    {
+      "level": 2,
+      "title": "Configuration",
+      "anchor": "configuration"
+    }
+  ]
+}

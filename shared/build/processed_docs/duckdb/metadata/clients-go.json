@@ -1,0 +1,64 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-go",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/go",
+    "/docs/api/go/",
+    "/docs/clients/go"
+  ],
+  "title": "Go Client",
+  "file_name": "go.md",
+  "file_stem": "go",
+  "file_path": "clients/go.md",
+  "file_size": 2908,
+  "document_id": "clients-go",
+  "url": "/clients/go",
+  "content_hash": "7d3da91708f5ab062118f2bba2fe9809",
+  "statistics": {
+    "char_count": 2741,
+    "word_count": 357,
+    "line_count": 115,
+    "paragraph_count": 28,
+    "header_count": 7,
+    "code_block_count": 4,
+    "code_lines": 73
+  },
+  "processed_at": "2025-11-22T10:32:04.135964",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Importing",
+      "anchor": "importing"
+    },
+    {
+      "level": 2,
+      "title": "Appender",
+      "anchor": "appender"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Simple Example",
+      "anchor": "simple-example"
+    },
+    {
+      "level": 3,
+      "title": "More Examples",
+      "anchor": "more-examples"
+    },
+    {
+      "level": 2,
+      "title": "Acknowledgements",
+      "anchor": "acknowledgements"
+    }
+  ]
+}

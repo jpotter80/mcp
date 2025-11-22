@@ -1,0 +1,108 @@
+{
+  "blurb": "The PIVOT statement allows values within a column to be separated into their own columns.",
+  "layout": "docu",
+  "railroad": "statements/pivot.js",
+  "redirect_from": [
+    "/docs/sql/statements/pivot"
+  ],
+  "title": "PIVOT Statement",
+  "file_name": "pivot.md",
+  "file_stem": "pivot",
+  "file_path": "sql/statements/pivot.md",
+  "file_size": 13415,
+  "document_id": "sql-statements-pivot",
+  "url": "/sql/statements/pivot",
+  "content_hash": "e466bf0743c7ab7b48174409d5ffacb4",
+  "statistics": {
+    "char_count": 12084,
+    "word_count": 2035,
+    "line_count": 364,
+    "paragraph_count": 85,
+    "header_count": 16,
+    "code_block_count": 20,
+    "code_lines": 105
+  },
+  "processed_at": "2025-11-22T10:32:15.879112",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Simplified `PIVOT` Syntax",
+      "anchor": "simplified-pivot-syntax"
+    },
+    {
+      "level": 3,
+      "title": "Example Data",
+      "anchor": "example-data"
+    },
+    {
+      "level": 3,
+      "title": "`PIVOT ON` and `USING`",
+      "anchor": "pivot-on-and-using"
+    },
+    {
+      "level": 3,
+      "title": "`PIVOT ON`, `USING`, and `GROUP BY`",
+      "anchor": "pivot-on-using-and-group-by"
+    },
+    {
+      "level": 3,
+      "title": "`IN` Filter for `ON` Clause",
+      "anchor": "in-filter-for-on-clause"
+    },
+    {
+      "level": 3,
+      "title": "Multiple Expressions per Clause",
+      "anchor": "multiple-expressions-per-clause"
+    },
+    {
+      "level": 4,
+      "title": "Multiple `ON` Columns and `ON` Expressions",
+      "anchor": "multiple-on-columns-and-on-expressions"
+    },
+    {
+      "level": 4,
+      "title": "Multiple `USING` Expressions",
+      "anchor": "multiple-using-expressions"
+    },
+    {
+      "level": 4,
+      "title": "Multiple `GROUP BY` Columns",
+      "anchor": "multiple-group-by-columns"
+    },
+    {
+      "level": 3,
+      "title": "Using `PIVOT` within a `SELECT` Statement",
+      "anchor": "using-pivot-within-a-select-statement"
+    },
+    {
+      "level": 3,
+      "title": "Multiple `PIVOT` Statements",
+      "anchor": "multiple-pivot-statements"
+    },
+    {
+      "level": 2,
+      "title": "Simplified `PIVOT` Full Syntax Diagram",
+      "anchor": "simplified-pivot-full-syntax-diagram"
+    },
+    {
+      "level": 2,
+      "title": "SQL Standard `PIVOT` Syntax",
+      "anchor": "sql-standard-pivot-syntax"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "SQL Standard `PIVOT` Full Syntax Diagram",
+      "anchor": "sql-standard-pivot-full-syntax-diagram"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

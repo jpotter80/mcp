@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/describe"
+  ],
+  "title": "DESCRIBE Statement",
+  "file_name": "describe.md",
+  "file_stem": "describe",
+  "file_path": "sql/statements/describe.md",
+  "file_size": 475,
+  "document_id": "sql-statements-describe",
+  "url": "/sql/statements/describe",
+  "content_hash": "05b39cd8fa16d30a577c037e85f7f23b",
+  "statistics": {
+    "char_count": 379,
+    "word_count": 60,
+    "line_count": 21,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:15.764164",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Alias",
+      "anchor": "alias"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

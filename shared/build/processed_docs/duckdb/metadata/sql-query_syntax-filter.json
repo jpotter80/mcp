@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/filter.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/filter"
+  ],
+  "title": "FILTER Clause",
+  "file_name": "filter.md",
+  "file_stem": "filter",
+  "file_path": "sql/query_syntax/filter.md",
+  "file_size": 5375,
+  "document_id": "sql-query_syntax-filter",
+  "url": "/sql/query_syntax/filter",
+  "content_hash": "e78b683eed3be5c94c6f9f455864779c",
+  "statistics": {
+    "char_count": 3320,
+    "word_count": 559,
+    "line_count": 72,
+    "paragraph_count": 21,
+    "header_count": 2,
+    "code_block_count": 7,
+    "code_lines": 53
+  },
+  "processed_at": "2025-11-22T10:32:15.125606",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Aggregate Function Syntax (Including `FILTER` Clause)",
+      "anchor": "aggregate-function-syntax-including-filter-clause"
+    }
+  ]
+}

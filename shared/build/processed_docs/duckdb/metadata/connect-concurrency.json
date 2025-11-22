@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/connect/concurrency"
+  ],
+  "title": "Concurrency",
+  "file_name": "concurrency.md",
+  "file_stem": "concurrency",
+  "file_path": "connect/concurrency.md",
+  "file_size": 3766,
+  "document_id": "connect-concurrency",
+  "url": "/connect/concurrency",
+  "content_hash": "e9a50b95e90709e9899b72cfee7bb960",
+  "statistics": {
+    "char_count": 3681,
+    "word_count": 509,
+    "line_count": 32,
+    "paragraph_count": 15,
+    "header_count": 4,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:07.567934",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Handling Concurrency",
+      "anchor": "handling-concurrency"
+    },
+    {
+      "level": 2,
+      "title": "Concurrency within a Single Process",
+      "anchor": "concurrency-within-a-single-process"
+    },
+    {
+      "level": 2,
+      "title": "Writing to DuckDB from Multiple Processes",
+      "anchor": "writing-to-duckdb-from-multiple-processes"
+    },
+    {
+      "level": 2,
+      "title": "Optimistic Concurrency Control",
+      "anchor": "optimistic-concurrency-control"
+    }
+  ]
+}

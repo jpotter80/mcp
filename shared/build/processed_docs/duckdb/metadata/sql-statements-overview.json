@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/overview"
+  ],
+  "title": "Statements Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "sql/statements/overview.md",
+  "file_size": 95,
+  "document_id": "sql-statements-overview",
+  "url": "/sql/statements/overview",
+  "content_hash": "d41d8cd98f00b204e9800998ecf8427e",
+  "statistics": {
+    "char_count": 0,
+    "word_count": 0,
+    "line_count": 1,
+    "paragraph_count": 0,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:15.852978",
+  "sections": []
+}

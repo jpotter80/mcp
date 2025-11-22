@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions",
+    "/docs/extensions/",
+    "/docs/extensions/overview"
+  ],
+  "title": "Extensions",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "extensions/overview.md",
+  "file_size": 7196,
+  "document_id": "extensions-overview",
+  "url": "/extensions/overview",
+  "content_hash": "a8e25056fca0c1ad7b75df430b2fb82e",
+  "statistics": {
+    "char_count": 6897,
+    "word_count": 913,
+    "line_count": 116,
+    "paragraph_count": 42,
+    "header_count": 10,
+    "code_block_count": 6,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:10.782278",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Listing Extensions",
+      "anchor": "listing-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Built-In Extensions",
+      "anchor": "built-in-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Installing More Extensions",
+      "anchor": "installing-more-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Explicit `INSTALL` and `LOAD`",
+      "anchor": "explicit-install-and-load"
+    },
+    {
+      "level": 4,
+      "title": "Extension Repository",
+      "anchor": "extension-repository"
+    },
+    {
+      "level": 3,
+      "title": "Autoloading Extensions",
+      "anchor": "autoloading-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Community Extensions",
+      "anchor": "community-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Updating Extensions",
+      "anchor": "updating-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Developing Extensions",
+      "anchor": "developing-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Working with Extensions",
+      "anchor": "working-with-extensions"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cli/syntax_highlighting",
+    "/docs/api/cli/syntax_highlighting/",
+    "/docs/clients/cli/syntax_highlighting"
+  ],
+  "title": "Syntax Highlighting",
+  "file_name": "syntax_highlighting.md",
+  "file_stem": "syntax_highlighting",
+  "file_path": "clients/cli/syntax_highlighting.md",
+  "file_size": 2801,
+  "document_id": "clients-cli-syntax_highlighting",
+  "url": "/clients/cli/syntax_highlighting",
+  "content_hash": "2c2bb3a6aab09d3d9bfae166aadc85c0",
+  "statistics": {
+    "char_count": 2365,
+    "word_count": 363,
+    "line_count": 56,
+    "paragraph_count": 13,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:04.057720",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Error Highlighting",
+      "anchor": "error-highlighting"
+    }
+  ]
+}

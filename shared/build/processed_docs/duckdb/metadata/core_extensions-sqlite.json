@@ -1,0 +1,120 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-sqlite",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/sqlite",
+    "/docs/extensions/sqlite/",
+    "/docs/stable/extensions/sqlite",
+    "/docs/stable/extensions/sqlite/"
+  ],
+  "title": "SQLite Extension",
+  "file_name": "sqlite.md",
+  "file_stem": "sqlite",
+  "file_path": "core_extensions/sqlite.md",
+  "file_size": 8927,
+  "document_id": "core_extensions-sqlite",
+  "url": "/core_extensions/sqlite",
+  "content_hash": "ebd59da4bc29b01a658e3579b91eae86",
+  "statistics": {
+    "char_count": 8163,
+    "word_count": 1238,
+    "line_count": 268,
+    "paragraph_count": 74,
+    "header_count": 18,
+    "code_block_count": 25,
+    "code_lines": 55
+  },
+  "processed_at": "2025-11-22T10:32:09.184597",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Data Types",
+      "anchor": "data-types"
+    },
+    {
+      "level": 2,
+      "title": "Opening SQLite Databases Directly",
+      "anchor": "opening-sqlite-databases-directly"
+    },
+    {
+      "level": 2,
+      "title": "Writing Data to SQLite",
+      "anchor": "writing-data-to-sqlite"
+    },
+    {
+      "level": 2,
+      "title": "Concurrency",
+      "anchor": "concurrency"
+    },
+    {
+      "level": 2,
+      "title": "Settings",
+      "anchor": "settings"
+    },
+    {
+      "level": 2,
+      "title": "Supported Operations",
+      "anchor": "supported-operations"
+    },
+    {
+      "level": 3,
+      "title": "`CREATE TABLE`",
+      "anchor": "create-table"
+    },
+    {
+      "level": 3,
+      "title": "`INSERT INTO`",
+      "anchor": "insert-into"
+    },
+    {
+      "level": 3,
+      "title": "`SELECT`",
+      "anchor": "select"
+    },
+    {
+      "level": 3,
+      "title": "`COPY`",
+      "anchor": "copy"
+    },
+    {
+      "level": 3,
+      "title": "`UPDATE`",
+      "anchor": "update"
+    },
+    {
+      "level": 3,
+      "title": "`DELETE`",
+      "anchor": "delete"
+    },
+    {
+      "level": 3,
+      "title": "`ALTER TABLE`",
+      "anchor": "alter-table"
+    },
+    {
+      "level": 3,
+      "title": "`DROP TABLE`",
+      "anchor": "drop-table"
+    },
+    {
+      "level": 3,
+      "title": "`CREATE VIEW`",
+      "anchor": "create-view"
+    },
+    {
+      "level": 3,
+      "title": "Transactions",
+      "anchor": "transactions"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/file_formats/file_access"
+  ],
+  "title": "File Access with the file: Protocol",
+  "file_name": "file_access.md",
+  "file_stem": "file_access",
+  "file_path": "guides/file_formats/file_access.md",
+  "file_size": 609,
+  "document_id": "guides-file_formats-file_access",
+  "url": "/guides/file_formats/file_access",
+  "content_hash": "934878738574d6a23d9187ce86e633f7",
+  "statistics": {
+    "char_count": 486,
+    "word_count": 57,
+    "line_count": 12,
+    "paragraph_count": 5,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.928347",
+  "sections": []
+}

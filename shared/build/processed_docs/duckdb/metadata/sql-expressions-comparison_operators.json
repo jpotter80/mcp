@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/comparison.js",
+  "redirect_from": [
+    "/docs/sql/expressions/comparison_operators"
+  ],
+  "title": "Comparisons",
+  "file_name": "comparison_operators.md",
+  "file_stem": "comparison_operators",
+  "file_path": "sql/expressions/comparison_operators.md",
+  "file_size": 3107,
+  "document_id": "sql-expressions-comparison_operators",
+  "url": "/sql/expressions/comparison_operators",
+  "content_hash": "9d4ce9f3a7060ac8f94a732191b0eb04",
+  "statistics": {
+    "char_count": 2751,
+    "word_count": 449,
+    "line_count": 47,
+    "paragraph_count": 14,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:13.114881",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Comparison Operators",
+      "anchor": "comparison-operators"
+    },
+    {
+      "level": 3,
+      "title": "Combination Casting",
+      "anchor": "combination-casting"
+    },
+    {
+      "level": 2,
+      "title": "`BETWEEN` and `IS [NOT] NULL`",
+      "anchor": "between-and-is-not-null"
+    }
+  ]
+}

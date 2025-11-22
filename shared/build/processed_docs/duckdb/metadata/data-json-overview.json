@@ -1,0 +1,75 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json",
+    "/docs/data/json/",
+    "/docs/extensions/json",
+    "/docs/extensions/json/",
+    "/docs/data/json/overview"
+  ],
+  "title": "JSON Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "data/json/overview.md",
+  "file_size": 4455,
+  "document_id": "data-json-overview",
+  "url": "/data/json/overview",
+  "content_hash": "71f8e778afbc9680a2caa63826d989cd",
+  "statistics": {
+    "char_count": 4033,
+    "word_count": 544,
+    "line_count": 133,
+    "paragraph_count": 43,
+    "header_count": 9,
+    "code_block_count": 16,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:09.755689",
+  "sections": [
+    {
+      "level": 2,
+      "title": "About JSON",
+      "anchor": "about-json"
+    },
+    {
+      "level": 2,
+      "title": "JSONPath and JSON Pointer Syntax",
+      "anchor": "jsonpath-and-json-pointer-syntax"
+    },
+    {
+      "level": 2,
+      "title": "Indexing",
+      "anchor": "indexing"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Loading JSON",
+      "anchor": "loading-json"
+    },
+    {
+      "level": 3,
+      "title": "Writing JSON",
+      "anchor": "writing-json"
+    },
+    {
+      "level": 3,
+      "title": "JSON Data Type",
+      "anchor": "json-data-type"
+    },
+    {
+      "level": 3,
+      "title": "Retrieving JSON Data",
+      "anchor": "retrieving-json-data"
+    },
+    {
+      "level": 3,
+      "title": "Using Quotes for Special Characters",
+      "anchor": "using-quotes-for-special-characters"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "layout": "docu",
+  "title": "Building DuckDB from Source",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "dev/building/overview.md",
+  "file_size": 7062,
+  "document_id": "dev-building-overview",
+  "url": "/dev/building/overview",
+  "content_hash": "f2b2c3425012ae3eeeb1e387e58003df",
+  "statistics": {
+    "char_count": 5742,
+    "word_count": 683,
+    "line_count": 117,
+    "paragraph_count": 36,
+    "header_count": 11,
+    "code_block_count": 2,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:10.315717",
+  "sections": [
+    {
+      "level": 2,
+      "title": "When Should You Build DuckDB?",
+      "anchor": "when-should-you-build-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Getting Started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 2,
+      "title": "Platforms",
+      "anchor": "platforms"
+    },
+    {
+      "level": 3,
+      "title": "Platforms with Full Support",
+      "anchor": "platforms-with-full-support"
+    },
+    {
+      "level": 3,
+      "title": "Platforms with Partial Support",
+      "anchor": "platforms-with-partial-support"
+    },
+    {
+      "level": 3,
+      "title": "Platforms with Best Effort Support",
+      "anchor": "platforms-with-best-effort-support"
+    },
+    {
+      "level": 3,
+      "title": "Outdated Platforms",
+      "anchor": "outdated-platforms"
+    },
+    {
+      "level": 2,
+      "title": "Amalgamation Build",
+      "anchor": "amalgamation-build"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting Guides",
+      "anchor": "troubleshooting-guides"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/gcs_import",
+    "/docs/guides/import/gcs_import/",
+    "/docs/guides/network_cloud_storage/gcs_import"
+  ],
+  "title": "Google Cloud Storage Import",
+  "file_name": "gcs_import.md",
+  "file_stem": "gcs_import",
+  "file_path": "guides/network_cloud_storage/gcs_import.md",
+  "file_size": 1255,
+  "document_id": "guides-network_cloud_storage-gcs_import",
+  "url": "/guides/network_cloud_storage/gcs_import",
+  "content_hash": "5502a71ed115040d75575952a5389ead",
+  "statistics": {
+    "char_count": 1030,
+    "word_count": 120,
+    "line_count": 36,
+    "paragraph_count": 12,
+    "header_count": 4,
+    "code_block_count": 3,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:11.107258",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Credentials and Configuration",
+      "anchor": "credentials-and-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 2,
+      "title": "Attaching to a Database",
+      "anchor": "attaching-to-a-database"
+    }
+  ]
+}

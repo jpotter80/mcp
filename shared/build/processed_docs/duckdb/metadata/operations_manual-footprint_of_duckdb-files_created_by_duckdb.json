@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/footprint_of_duckdb/files_created_by_duckdb"
+  ],
+  "title": "Files Created by DuckDB",
+  "file_name": "files_created_by_duckdb.md",
+  "file_stem": "files_created_by_duckdb",
+  "file_path": "operations_manual/footprint_of_duckdb/files_created_by_duckdb.md",
+  "file_size": 2628,
+  "document_id": "operations_manual-footprint_of_duckdb-files_created_by_duckdb",
+  "url": "/operations_manual/footprint_of_duckdb/files_created_by_duckdb",
+  "content_hash": "cc9dccd0f4f17f05a65a82970d28fd3f",
+  "statistics": {
+    "char_count": 2473,
+    "word_count": 321,
+    "line_count": 26,
+    "paragraph_count": 8,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.208433",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Global Files and Directories",
+      "anchor": "global-files-and-directories"
+    },
+    {
+      "level": 2,
+      "title": "Local Files and Directories",
+      "anchor": "local-files-and-directories"
+    }
+  ]
+}

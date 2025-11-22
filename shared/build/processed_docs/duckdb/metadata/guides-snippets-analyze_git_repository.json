@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/snippets/analyze_git_repository"
+  ],
+  "title": "Analyzing a Git Repository",
+  "file_name": "analyze_git_repository.md",
+  "file_stem": "analyze_git_repository",
+  "file_path": "guides/snippets/analyze_git_repository.md",
+  "file_size": 11620,
+  "document_id": "guides-snippets-analyze_git_repository",
+  "url": "/guides/snippets/analyze_git_repository",
+  "content_hash": "9233c105be223a94a138909390c96644",
+  "statistics": {
+    "char_count": 7633,
+    "word_count": 996,
+    "line_count": 197,
+    "paragraph_count": 36,
+    "header_count": 5,
+    "code_block_count": 13,
+    "code_lines": 107
+  },
+  "processed_at": "2025-11-22T10:32:11.831288",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Exporting the Git Log",
+      "anchor": "exporting-the-git-log"
+    },
+    {
+      "level": 2,
+      "title": "Loading the Git Log into DuckDB",
+      "anchor": "loading-the-git-log-into-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Analyzing the Log",
+      "anchor": "analyzing-the-log"
+    },
+    {
+      "level": 3,
+      "title": "Common Topics",
+      "anchor": "common-topics"
+    },
+    {
+      "level": 3,
+      "title": "Visualizing the Number of Commits",
+      "anchor": "visualizing-the-number-of-commits"
+    }
+  ]
+}

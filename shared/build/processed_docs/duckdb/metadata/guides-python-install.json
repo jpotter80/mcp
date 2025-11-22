@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/install"
+  ],
+  "title": "Installing the Python Client",
+  "file_name": "install.md",
+  "file_stem": "install",
+  "file_path": "guides/python/install.md",
+  "file_size": 831,
+  "document_id": "guides-python-install",
+  "url": "/guides/python/install",
+  "content_hash": "3b135a8fa419f2ec3b0ee4d11326d51a",
+  "statistics": {
+    "char_count": 719,
+    "word_count": 93,
+    "line_count": 25,
+    "paragraph_count": 9,
+    "header_count": 2,
+    "code_block_count": 3,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:11.573919",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing via Pip",
+      "anchor": "installing-via-pip"
+    },
+    {
+      "level": 2,
+      "title": "Installing from Source",
+      "anchor": "installing-from-source"
+    }
+  ]
+}

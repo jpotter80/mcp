@@ -1,0 +1,125 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides",
+    "/docs/guides/",
+    "/docs/guides/index",
+    "/docs/guides/index/",
+    "/docs/guides/overview"
+  ],
+  "title": "Guides",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "guides/overview.md",
+  "file_size": 6986,
+  "document_id": "guides-overview",
+  "url": "/guides/overview",
+  "content_hash": "0f1d7a183a920da8da97ebbfdeda9e2e",
+  "statistics": {
+    "char_count": 6832,
+    "word_count": 803,
+    "line_count": 121,
+    "paragraph_count": 41,
+    "header_count": 19,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.234811",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Data Import and Export",
+      "anchor": "data-import-and-export"
+    },
+    {
+      "level": 3,
+      "title": "CSV Files",
+      "anchor": "csv-files"
+    },
+    {
+      "level": 3,
+      "title": "Parquet Files",
+      "anchor": "parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "HTTP(S), S3 and GCP",
+      "anchor": "https-s3-and-gcp"
+    },
+    {
+      "level": 3,
+      "title": "JSON Files",
+      "anchor": "json-files"
+    },
+    {
+      "level": 3,
+      "title": "Excel Files with the Spatial Extension",
+      "anchor": "excel-files-with-the-spatial-extension"
+    },
+    {
+      "level": 3,
+      "title": "Querying Other Database Systems",
+      "anchor": "querying-other-database-systems"
+    },
+    {
+      "level": 3,
+      "title": "Directly Reading Files",
+      "anchor": "directly-reading-files"
+    },
+    {
+      "level": 2,
+      "title": "Performance",
+      "anchor": "performance"
+    },
+    {
+      "level": 2,
+      "title": "Meta Queries",
+      "anchor": "meta-queries"
+    },
+    {
+      "level": 2,
+      "title": "ODBC",
+      "anchor": "odbc"
+    },
+    {
+      "level": 2,
+      "title": "Python Client",
+      "anchor": "python-client"
+    },
+    {
+      "level": 3,
+      "title": "Pandas",
+      "anchor": "pandas"
+    },
+    {
+      "level": 3,
+      "title": "Apache Arrow",
+      "anchor": "apache-arrow"
+    },
+    {
+      "level": 3,
+      "title": "Relational API",
+      "anchor": "relational-api"
+    },
+    {
+      "level": 3,
+      "title": "Python Library Integrations",
+      "anchor": "python-library-integrations"
+    },
+    {
+      "level": 2,
+      "title": "SQL Features",
+      "anchor": "sql-features"
+    },
+    {
+      "level": 2,
+      "title": "SQL Editors and IDEs",
+      "anchor": "sql-editors-and-ides"
+    },
+    {
+      "level": 2,
+      "title": "Data Viewers",
+      "anchor": "data-viewers"
+    }
+  ]
+}

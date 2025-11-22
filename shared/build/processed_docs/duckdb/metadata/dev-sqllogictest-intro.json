@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/intro",
+    "/dev/sqllogictest/intro/",
+    "/docs/dev/sqllogictest/intro"
+  ],
+  "title": "sqllogictest Introduction",
+  "file_name": "intro.md",
+  "file_stem": "intro",
+  "file_path": "dev/sqllogictest/intro.md",
+  "file_size": 5846,
+  "document_id": "dev-sqllogictest-intro",
+  "url": "/dev/sqllogictest/intro",
+  "content_hash": "790e2c9917d1c568a383b664f0891d12",
+  "statistics": {
+    "char_count": 5674,
+    "word_count": 854,
+    "line_count": 68,
+    "paragraph_count": 25,
+    "header_count": 9,
+    "code_block_count": 3,
+    "code_lines": 23
+  },
+  "processed_at": "2025-11-22T10:32:10.618290",
+  "sections": [
+    {
+      "level": 1,
+      "title": "name: test/sql/projection/test_simple_projection.test",
+      "anchor": "name-testsqlprojectiontest_simple_projectiontest"
+    },
+    {
+      "level": 1,
+      "title": "group [projection]",
+      "anchor": "group-projection"
+    },
+    {
+      "level": 1,
+      "title": "enable query verification",
+      "anchor": "enable-query-verification"
+    },
+    {
+      "level": 1,
+      "title": "create table",
+      "anchor": "create-table"
+    },
+    {
+      "level": 1,
+      "title": "insertion: 1 affected row",
+      "anchor": "insertion-1-affected-row"
+    },
+    {
+      "level": 2,
+      "title": "Query Verification",
+      "anchor": "query-verification"
+    },
+    {
+      "level": 2,
+      "title": "Editors & Syntax Highlighting",
+      "anchor": "editors-syntax-highlighting"
+    },
+    {
+      "level": 3,
+      "title": "Temporary Files",
+      "anchor": "temporary-files"
+    },
+    {
+      "level": 3,
+      "title": "Require & Extensions",
+      "anchor": "require-extensions"
+    }
+  ]
+}

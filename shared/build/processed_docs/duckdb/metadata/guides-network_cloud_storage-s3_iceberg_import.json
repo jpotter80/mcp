@@ -1,0 +1,44 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/s3_iceberg_import",
+    "/docs/guides/import/s3_iceberg_import/",
+    "/docs/guides/network_cloud_storage/s3_iceberg_import"
+  ],
+  "selected": "S3 Iceberg Import",
+  "title": "S3 Iceberg Import",
+  "file_name": "s3_iceberg_import.md",
+  "file_stem": "s3_iceberg_import",
+  "file_path": "guides/network_cloud_storage/s3_iceberg_import.md",
+  "file_size": 1770,
+  "document_id": "guides-network_cloud_storage-s3_iceberg_import",
+  "url": "/guides/network_cloud_storage/s3_iceberg_import",
+  "content_hash": "6664048a100054d36a2d5f44edab5b04",
+  "statistics": {
+    "char_count": 1501,
+    "word_count": 194,
+    "line_count": 53,
+    "paragraph_count": 15,
+    "header_count": 3,
+    "code_block_count": 6,
+    "code_lines": 18
+  },
+  "processed_at": "2025-11-22T10:32:11.138995",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Credentials",
+      "anchor": "credentials"
+    },
+    {
+      "level": 2,
+      "title": "Loading Iceberg Tables from S3",
+      "anchor": "loading-iceberg-tables-from-s3"
+    }
+  ]
+}

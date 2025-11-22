@@ -1,0 +1,1311 @@
+class duckdb.BinaryValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.BinderException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.BitValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.BlobValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.BooleanValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.CSVLineTerminator&#182;
+
+Bases: pybind11_object
+Members:
+LINE_FEED
+CARRIAGE_RETURN_LINE_FEED
+
+property name&#182;
+
+class duckdb.CatalogException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.ConnectionException&#182;
+
+Bases: OperationalError
+
+class duckdb.ConstraintException&#182;
+
+Bases: IntegrityError
+
+class duckdb.ConversionException&#182;
+
+Bases: DataError
+
+class duckdb.DBAPITypeObject(types: list[DuckDBPyType])&#182;
+
+Bases: object
+
+class duckdb.DataError&#182;
+
+Bases: DatabaseError
+
+class duckdb.DateValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.DecimalValue(object: Any, width: int, scale: int)&#182;
+
+Bases: Value
+
+class duckdb.DoubleValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.DuckDBPyConnection&#182;
+
+Bases: pybind11_object
+
+append(self: _duckdb.DuckDBPyConnection, table_name: str, df: pandas.DataFrame, *, by_name: bool = False) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Append the passed DataFrame to the named table
+
+array_type(self: _duckdb.DuckDBPyConnection, type: _duckdb.typing.DuckDBPyType, size: SupportsInt) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create an array type object of &#8216;type&#8217;
+
+arrow(self: _duckdb.DuckDBPyConnection, rows_per_batch: SupportsInt = 1000000) &#8594; pyarrow.lib.RecordBatchReader&#182;
+
+Fetch an Arrow RecordBatchReader following execute()
+
+begin(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Start a new transaction
+
+checkpoint(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Synchronizes data in the write-ahead log (WAL) to the database data file (no-op for in-memory connections)
+
+close(self: _duckdb.DuckDBPyConnection) &#8594; None&#182;
+
+Close the connection
+
+commit(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Commit changes performed within a transaction
+
+create_function(self: _duckdb.DuckDBPyConnection, name: str, function: collections.abc.Callable, parameters: object = None, return_type: _duckdb.typing.DuckDBPyType = None, *, type: _duckdb.functional.PythonUDFType = &lt;PythonUDFType.NATIVE: 0&gt;, null_handling: _duckdb.functional.FunctionNullHandling = &lt;FunctionNullHandling.DEFAULT: 0&gt;, exception_handling: _duckdb.PythonExceptionHandling = &lt;PythonExceptionHandling.DEFAULT: 0&gt;, side_effects: bool = False) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Create a DuckDB function out of the passing in Python function so it can be used in queries
+
+cursor(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Create a duplicate of the current connection
+
+decimal_type(self: _duckdb.DuckDBPyConnection, width: SupportsInt, scale: SupportsInt) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a decimal type with &#8216;width&#8217; and &#8216;scale&#8217;
+
+property description&#182;
+
+Get result set attributes, mainly column names
+
+df(self: _duckdb.DuckDBPyConnection, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Fetch a result as DataFrame following execute()
+
+dtype(self: _duckdb.DuckDBPyConnection, type_str: str) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a type object by parsing the &#8216;type_str&#8217; string
+
+duplicate(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Create a duplicate of the current connection
+
+enum_type(self: _duckdb.DuckDBPyConnection, name: str, type: _duckdb.typing.DuckDBPyType, values: list) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create an enum type of underlying &#8216;type&#8217;, consisting of the list of &#8216;values&#8217;
+
+execute(self: _duckdb.DuckDBPyConnection, query: object, parameters: object = None) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Execute the given SQL query, optionally using prepared statements with parameters set
+
+executemany(self: _duckdb.DuckDBPyConnection, query: object, parameters: object = None) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Execute the given prepared statement multiple times using the list of parameter sets in parameters
+
+extract_statements(self: _duckdb.DuckDBPyConnection, query: str) &#8594; list&#182;
+
+Parse the query string and extract the Statement object(s) produced
+
+fetch_arrow_table(self: _duckdb.DuckDBPyConnection, rows_per_batch: SupportsInt = 1000000) &#8594; pyarrow.lib.Table&#182;
+
+Fetch a result as Arrow table following execute()
+
+fetch_df(self: _duckdb.DuckDBPyConnection, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Fetch a result as DataFrame following execute()
+
+fetch_df_chunk(self: _duckdb.DuckDBPyConnection, vectors_per_chunk: SupportsInt = 1, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Fetch a chunk of the result as DataFrame following execute()
+
+fetch_record_batch(self: _duckdb.DuckDBPyConnection, rows_per_batch: SupportsInt = 1000000) &#8594; pyarrow.lib.RecordBatchReader&#182;
+
+Fetch an Arrow RecordBatchReader following execute()
+
+fetchall(self: _duckdb.DuckDBPyConnection) &#8594; list&#182;
+
+Fetch all rows from a result following execute
+
+fetchdf(self: _duckdb.DuckDBPyConnection, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Fetch a result as DataFrame following execute()
+
+fetchmany(self: _duckdb.DuckDBPyConnection, size: SupportsInt = 1) &#8594; list&#182;
+
+Fetch the next set of rows from a result following execute
+
+fetchnumpy(self: _duckdb.DuckDBPyConnection) &#8594; dict&#182;
+
+Fetch a result as list of NumPy arrays following execute
+
+fetchone(self: _duckdb.DuckDBPyConnection) &#8594; Optional[tuple]&#182;
+
+Fetch a single row from a result following execute
+
+filesystem_is_registered(self: _duckdb.DuckDBPyConnection, name: str) &#8594; bool&#182;
+
+Check if a filesystem with the provided name is currently registered
+
+from_arrow(self: _duckdb.DuckDBPyConnection, arrow_object: object) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from an Arrow object
+
+from_csv_auto(self: _duckdb.DuckDBPyConnection, path_or_buffer: object, **kwargs) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the CSV file in &#8216;name&#8217;
+
+from_df(self: _duckdb.DuckDBPyConnection, df: pandas.DataFrame) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the DataFrame in df
+
+from_parquet(*args, **kwargs)&#182;
+
+Overloaded function.
+
+from_parquet(self: _duckdb.DuckDBPyConnection, file_glob: str, binary_as_string: bool = False, *, file_row_number: bool = False, filename: bool = False, hive_partitioning: bool = False, union_by_name: bool = False, compression: object = None) -&gt; _duckdb.DuckDBPyRelation
+
+Create a relation object from the Parquet files in file_glob
+
+from_parquet(self: _duckdb.DuckDBPyConnection, file_globs: collections.abc.Sequence[str], binary_as_string: bool = False, *, file_row_number: bool = False, filename: bool = False, hive_partitioning: bool = False, union_by_name: bool = False, compression: object = None) -&gt; _duckdb.DuckDBPyRelation
+
+Create a relation object from the Parquet files in file_globs
+
+from_query(self: _duckdb.DuckDBPyConnection, query: object, *, alias: str = '', params: object = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Run a SQL query. If it is a SELECT statement, create a relation object from the given SQL query, otherwise run the query as-is.
+
+get_table_names(self: _duckdb.DuckDBPyConnection, query: str, *, qualified: bool = False) &#8594; set[str]&#182;
+
+Extract the required table names from a query
+
+install_extension(self: _duckdb.DuckDBPyConnection, extension: str, *, force_install: bool = False, repository: object = None, repository_url: object = None, version: object = None) &#8594; None&#182;
+
+Install an extension by name, with an optional version and/or repository to get the extension from
+
+interrupt(self: _duckdb.DuckDBPyConnection) &#8594; None&#182;
+
+Interrupt pending operations
+
+list_filesystems(self: _duckdb.DuckDBPyConnection) &#8594; list&#182;
+
+List registered filesystems, including builtin ones
+
+list_type(self: _duckdb.DuckDBPyConnection, type: _duckdb.typing.DuckDBPyType) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a list type object of &#8216;type&#8217;
+
+load_extension(self: _duckdb.DuckDBPyConnection, extension: str) &#8594; None&#182;
+
+Load an installed extension
+
+map_type(self: _duckdb.DuckDBPyConnection, key: _duckdb.typing.DuckDBPyType, value: _duckdb.typing.DuckDBPyType) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a map type object from &#8216;key_type&#8217; and &#8216;value_type&#8217;
+
+pl(self: _duckdb.DuckDBPyConnection, rows_per_batch: SupportsInt = 1000000, *, lazy: bool = False) &#8594; duckdb::PolarsDataFrame&#182;
+
+Fetch a result as Polars DataFrame following execute()
+
+query(self: _duckdb.DuckDBPyConnection, query: object, *, alias: str = '', params: object = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Run a SQL query. If it is a SELECT statement, create a relation object from the given SQL query, otherwise run the query as-is.
+
+query_progress(self: _duckdb.DuckDBPyConnection) &#8594; float&#182;
+
+Query progress of pending operation
+
+read_csv(self: _duckdb.DuckDBPyConnection, path_or_buffer: object, **kwargs) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the CSV file in &#8216;name&#8217;
+
+read_json(self: _duckdb.DuckDBPyConnection, path_or_buffer: object, *, columns: Optional[object] = None, sample_size: Optional[object] = None, maximum_depth: Optional[object] = None, records: Optional[str] = None, format: Optional[str] = None, date_format: Optional[object] = None, timestamp_format: Optional[object] = None, compression: Optional[object] = None, maximum_object_size: Optional[object] = None, ignore_errors: Optional[object] = None, convert_strings_to_integers: Optional[object] = None, field_appearance_threshold: Optional[object] = None, map_inference_threshold: Optional[object] = None, maximum_sample_files: Optional[object] = None, filename: Optional[object] = None, hive_partitioning: Optional[object] = None, union_by_name: Optional[object] = None, hive_types: Optional[object] = None, hive_types_autocast: Optional[object] = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the JSON file in &#8216;name&#8217;
+
+read_parquet(*args, **kwargs)&#182;
+
+Overloaded function.
+
+read_parquet(self: _duckdb.DuckDBPyConnection, file_glob: str, binary_as_string: bool = False, *, file_row_number: bool = False, filename: bool = False, hive_partitioning: bool = False, union_by_name: bool = False, compression: object = None) -&gt; _duckdb.DuckDBPyRelation
+
+Create a relation object from the Parquet files in file_glob
+
+read_parquet(self: _duckdb.DuckDBPyConnection, file_globs: collections.abc.Sequence[str], binary_as_string: bool = False, *, file_row_number: bool = False, filename: bool = False, hive_partitioning: bool = False, union_by_name: bool = False, compression: object = None) -&gt; _duckdb.DuckDBPyRelation
+
+Create a relation object from the Parquet files in file_globs
+
+register(self: _duckdb.DuckDBPyConnection, view_name: str, python_object: object) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Register the passed Python Object value for querying with a view
+
+register_filesystem(self: _duckdb.DuckDBPyConnection, filesystem: fsspec.AbstractFileSystem) &#8594; None&#182;
+
+Register a fsspec compliant filesystem
+
+remove_function(self: _duckdb.DuckDBPyConnection, name: str) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Remove a previously created function
+
+rollback(self: _duckdb.DuckDBPyConnection) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Roll back changes performed within a transaction
+
+row_type(self: _duckdb.DuckDBPyConnection, fields: object) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a struct type object from &#8216;fields&#8217;
+
+property rowcount&#182;
+
+Get result set row count
+
+sql(self: _duckdb.DuckDBPyConnection, query: object, *, alias: str = '', params: object = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Run a SQL query. If it is a SELECT statement, create a relation object from the given SQL query, otherwise run the query as-is.
+
+sqltype(self: _duckdb.DuckDBPyConnection, type_str: str) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a type object by parsing the &#8216;type_str&#8217; string
+
+string_type(self: _duckdb.DuckDBPyConnection, collation: str = '') &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a string type with an optional collation
+
+struct_type(self: _duckdb.DuckDBPyConnection, fields: object) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a struct type object from &#8216;fields&#8217;
+
+table(self: _duckdb.DuckDBPyConnection, table_name: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object for the named table
+
+table_function(self: _duckdb.DuckDBPyConnection, name: str, parameters: object = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the named table function with given parameters
+
+tf(self: _duckdb.DuckDBPyConnection) &#8594; dict&#182;
+
+Fetch a result as dict of TensorFlow Tensors following execute()
+
+torch(self: _duckdb.DuckDBPyConnection) &#8594; dict&#182;
+
+Fetch a result as dict of PyTorch Tensors following execute()
+
+type(self: _duckdb.DuckDBPyConnection, type_str: str) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a type object by parsing the &#8216;type_str&#8217; string
+
+union_type(self: _duckdb.DuckDBPyConnection, members: object) &#8594; _duckdb.typing.DuckDBPyType&#182;
+
+Create a union type object from &#8216;members&#8217;
+
+unregister(self: _duckdb.DuckDBPyConnection, view_name: str) &#8594; _duckdb.DuckDBPyConnection&#182;
+
+Unregister the view name
+
+unregister_filesystem(self: _duckdb.DuckDBPyConnection, name: str) &#8594; None&#182;
+
+Unregister a filesystem
+
+values(self: _duckdb.DuckDBPyConnection, *args) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object from the passed values
+
+view(self: _duckdb.DuckDBPyConnection, view_name: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create a relation object for the named view
+
+class duckdb.DuckDBPyRelation&#182;
+
+Bases: pybind11_object
+Detailed examples can be found at Relational API page.
+
+aggregate(self: _duckdb.DuckDBPyRelation, aggr_expr: object, group_expr: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Compute the aggregate aggr_expr by the optional groups group_expr on the relation
+Detailed examples can be found at Relational API page.
+
+alias&#182;
+
+Get the name of the current alias
+Detailed examples can be found at Relational API page.
+
+any_value(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the first non-null value from a given column
+Detailed examples can be found at Relational API page.
+
+apply(self: _duckdb.DuckDBPyRelation, function_name: str, function_aggr: str, group_expr: str = '', function_parameter: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Compute the function of a single column or a list of columns by the optional groups on the relation
+Detailed examples can be found at Relational API page.
+
+arg_max(self: _duckdb.DuckDBPyRelation, arg_column: str, value_column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Finds the row with the maximum value for a value column and returns the value of that row for an argument column
+Detailed examples can be found at Relational API page.
+
+arg_min(self: _duckdb.DuckDBPyRelation, arg_column: str, value_column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Finds the row with the minimum value for a value column and returns the value of that row for an argument column
+Detailed examples can be found at Relational API page.
+
+arrow(self: _duckdb.DuckDBPyRelation, batch_size: SupportsInt = 1000000) &#8594; pyarrow.lib.RecordBatchReader&#182;
+
+Execute and return an Arrow Record Batch Reader that yields all rows
+Detailed examples can be found at Relational API page.
+
+avg(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the average on a given column
+Detailed examples can be found at Relational API page.
+
+bit_and(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the bitwise AND of all bits present in a given column
+Detailed examples can be found at Relational API page.
+
+bit_or(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the bitwise OR of all bits present in a given column
+Detailed examples can be found at Relational API page.
+
+bit_xor(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the bitwise XOR of all bits present in a given column
+Detailed examples can be found at Relational API page.
+
+bitstring_agg(self: _duckdb.DuckDBPyRelation, column: str, min: Optional[object] = None, max: Optional[object] = None, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes a bitstring with bits set for each distinct value in a given column
+Detailed examples can be found at Relational API page.
+
+bool_and(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the logical AND of all values present in a given column
+Detailed examples can be found at Relational API page.
+
+bool_or(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the logical OR of all values present in a given column
+Detailed examples can be found at Relational API page.
+
+close(self: _duckdb.DuckDBPyRelation) &#8594; None&#182;
+
+Closes the result
+Detailed examples can be found at Relational API page.
+
+columns&#182;
+
+Return a list containing the names of the columns of the relation.
+Detailed examples can be found at Relational API page.
+
+count(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the number of elements present in a given column
+Detailed examples can be found at Relational API page.
+
+create(self: _duckdb.DuckDBPyRelation, table_name: str) &#8594; None&#182;
+
+Creates a new table named table_name with the contents of the relation object
+Detailed examples can be found at Relational API page.
+
+create_view(self: _duckdb.DuckDBPyRelation, view_name: str, replace: bool = True) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Creates a view named view_name that refers to the relation object
+Detailed examples can be found at Relational API page.
+
+cross(self: _duckdb.DuckDBPyRelation, other_rel: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create cross/cartesian product of two relational objects
+Detailed examples can be found at Relational API page.
+
+cume_dist(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the cumulative distribution within the partition
+Detailed examples can be found at Relational API page.
+
+dense_rank(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the dense rank within the partition
+Detailed examples can be found at Relational API page.
+
+describe(self: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Gives basic statistics (e.g., min, max) and if NULL exists for each column of the relation.
+Detailed examples can be found at Relational API page.
+
+description&#182;
+
+Return the description of the result
+Detailed examples can be found at Relational API page.
+
+df(self: _duckdb.DuckDBPyRelation, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Execute and fetch all rows as a pandas DataFrame
+Detailed examples can be found at Relational API page.
+
+distinct(self: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Retrieve distinct rows from this relation object
+Detailed examples can be found at Relational API page.
+
+dtypes&#182;
+
+Return a list containing the types of the columns of the relation.
+Detailed examples can be found at Relational API page.
+
+except_(self: _duckdb.DuckDBPyRelation, other_rel: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create the set except of this relation object with another relation object in other_rel
+Detailed examples can be found at Relational API page.
+
+execute(self: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Transform the relation into a result set
+Detailed examples can be found at Relational API page.
+
+explain(self: _duckdb.DuckDBPyRelation, type: _duckdb.ExplainType = 'standard') &#8594; str&#182;
+
+Detailed examples can be found at Relational API page.
+
+favg(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the average of all values present in a given column using a more accurate floating point summation (Kahan Sum)
+Detailed examples can be found at Relational API page.
+
+fetch_arrow_reader(self: _duckdb.DuckDBPyRelation, batch_size: SupportsInt = 1000000) &#8594; pyarrow.lib.RecordBatchReader&#182;
+
+Execute and return an Arrow Record Batch Reader that yields all rows
+Detailed examples can be found at Relational API page.
+
+fetch_arrow_table(self: _duckdb.DuckDBPyRelation, batch_size: SupportsInt = 1000000) &#8594; pyarrow.lib.Table&#182;
+
+Execute and fetch all rows as an Arrow Table
+Detailed examples can be found at Relational API page.
+
+fetch_df_chunk(self: _duckdb.DuckDBPyRelation, vectors_per_chunk: SupportsInt = 1, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Execute and fetch a chunk of the rows
+Detailed examples can be found at Relational API page.
+
+fetch_record_batch(self: _duckdb.DuckDBPyRelation, rows_per_batch: SupportsInt = 1000000) &#8594; pyarrow.lib.RecordBatchReader&#182;
+
+Execute and return an Arrow Record Batch Reader that yields all rows
+Detailed examples can be found at Relational API page.
+
+fetchall(self: _duckdb.DuckDBPyRelation) &#8594; list&#182;
+
+Execute and fetch all rows as a list of tuples
+Detailed examples can be found at Relational API page.
+
+fetchdf(self: _duckdb.DuckDBPyRelation, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Execute and fetch all rows as a pandas DataFrame
+Detailed examples can be found at Relational API page.
+
+fetchmany(self: _duckdb.DuckDBPyRelation, size: SupportsInt = 1) &#8594; list&#182;
+
+Execute and fetch the next set of rows as a list of tuples
+Detailed examples can be found at Relational API page.
+
+fetchnumpy(self: _duckdb.DuckDBPyRelation) &#8594; dict&#182;
+
+Execute and fetch all rows as a Python dict mapping each column to one numpy arrays
+Detailed examples can be found at Relational API page.
+
+fetchone(self: _duckdb.DuckDBPyRelation) &#8594; Optional[tuple]&#182;
+
+Execute and fetch a single row as a tuple
+Detailed examples can be found at Relational API page.
+
+filter(self: _duckdb.DuckDBPyRelation, filter_expr: object) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Filter the relation object by the filter in filter_expr
+Detailed examples can be found at Relational API page.
+
+first(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the first value of a given column
+Detailed examples can be found at Relational API page.
+
+first_value(self: _duckdb.DuckDBPyRelation, column: str, window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the first value within the group or partition
+Detailed examples can be found at Relational API page.
+
+fsum(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sum of all values present in a given column using a more accurate floating point summation (Kahan Sum)
+Detailed examples can be found at Relational API page.
+
+geomean(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the geometric mean over all values present in a given column
+Detailed examples can be found at Relational API page.
+
+histogram(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the histogram over all values present in a given column
+Detailed examples can be found at Relational API page.
+
+insert(self: _duckdb.DuckDBPyRelation, values: object) &#8594; None&#182;
+
+Inserts the given values into the relation
+Detailed examples can be found at Relational API page.
+
+insert_into(self: _duckdb.DuckDBPyRelation, table_name: str) &#8594; None&#182;
+
+Inserts the relation object into an existing table named table_name
+Detailed examples can be found at Relational API page.
+
+intersect(self: _duckdb.DuckDBPyRelation, other_rel: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create the set intersection of this relation object with another relation object in other_rel
+Detailed examples can be found at Relational API page.
+
+join(self: _duckdb.DuckDBPyRelation, other_rel: _duckdb.DuckDBPyRelation, condition: object, how: str = 'inner') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Join the relation object with another relation object in other_rel using the join condition expression in join_condition. Types supported are &#8216;inner&#8217;, &#8216;left&#8217;, &#8216;right&#8217;, &#8216;outer&#8217;, &#8216;semi&#8217; and &#8216;anti&#8217;
+Detailed examples can be found at Relational API page.
+
+lag(self: _duckdb.DuckDBPyRelation, column: str, window_spec: str, offset: SupportsInt = 1, default_value: str = 'NULL', ignore_nulls: bool = False, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the lag within the partition
+Detailed examples can be found at Relational API page.
+
+last(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the last value of a given column
+Detailed examples can be found at Relational API page.
+
+last_value(self: _duckdb.DuckDBPyRelation, column: str, window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the last value within the group or partition
+Detailed examples can be found at Relational API page.
+
+lead(self: _duckdb.DuckDBPyRelation, column: str, window_spec: str, offset: SupportsInt = 1, default_value: str = 'NULL', ignore_nulls: bool = False, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the lead within the partition
+Detailed examples can be found at Relational API page.
+
+limit(self: _duckdb.DuckDBPyRelation, n: SupportsInt, offset: SupportsInt = 0) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Only retrieve the first n rows from this relation object, starting at offset
+Detailed examples can be found at Relational API page.
+
+list(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns a list containing all values present in a given column
+Detailed examples can be found at Relational API page.
+
+map(self: _duckdb.DuckDBPyRelation, map_function: collections.abc.Callable, *, schema: Optional[object] = None) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Calls the passed function on the relation
+Detailed examples can be found at Relational API page.
+
+max(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the maximum value present in a given column
+Detailed examples can be found at Relational API page.
+
+mean(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the average on a given column
+Detailed examples can be found at Relational API page.
+
+median(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the median over all values present in a given column
+Detailed examples can be found at Relational API page.
+
+min(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the minimum value present in a given column
+Detailed examples can be found at Relational API page.
+
+mode(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the mode over all values present in a given column
+Detailed examples can be found at Relational API page.
+
+n_tile(self: _duckdb.DuckDBPyRelation, window_spec: str, num_buckets: SupportsInt, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Divides the partition as equally as possible into num_buckets
+Detailed examples can be found at Relational API page.
+
+nth_value(self: _duckdb.DuckDBPyRelation, column: str, window_spec: str, offset: SupportsInt, ignore_nulls: bool = False, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the nth value within the partition
+Detailed examples can be found at Relational API page.
+
+order(self: _duckdb.DuckDBPyRelation, order_expr: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Reorder the relation object by order_expr
+Detailed examples can be found at Relational API page.
+
+percent_rank(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the relative rank within the partition
+Detailed examples can be found at Relational API page.
+
+pl(self: _duckdb.DuckDBPyRelation, batch_size: SupportsInt = 1000000, *, lazy: bool = False) &#8594; duckdb::PolarsDataFrame&#182;
+
+Execute and fetch all rows as a Polars DataFrame
+Detailed examples can be found at Relational API page.
+
+product(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the product of all values present in a given column
+Detailed examples can be found at Relational API page.
+
+project(self: _duckdb.DuckDBPyRelation, *args, groups: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Project the relation object by the projection in project_expr
+Detailed examples can be found at Relational API page.
+
+quantile(self: _duckdb.DuckDBPyRelation, column: str, q: object = 0.5, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the exact quantile value for a given column
+Detailed examples can be found at Relational API page.
+
+quantile_cont(self: _duckdb.DuckDBPyRelation, column: str, q: object = 0.5, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the interpolated quantile value for a given column
+Detailed examples can be found at Relational API page.
+
+quantile_disc(self: _duckdb.DuckDBPyRelation, column: str, q: object = 0.5, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the exact quantile value for a given column
+Detailed examples can be found at Relational API page.
+
+query(self: _duckdb.DuckDBPyRelation, virtual_table_name: str, sql_query: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Run the given SQL query in sql_query on the view named virtual_table_name that refers to the relation object
+Detailed examples can be found at Relational API page.
+
+rank(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the rank within the partition
+Detailed examples can be found at Relational API page.
+
+rank_dense(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the dense rank within the partition
+Detailed examples can be found at Relational API page.
+
+record_batch(self: object, batch_size: SupportsInt = 1000000) &#8594; object&#182;
+
+Detailed examples can be found at Relational API page.
+
+row_number(self: _duckdb.DuckDBPyRelation, window_spec: str, projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the row number within the partition
+Detailed examples can be found at Relational API page.
+
+select(self: _duckdb.DuckDBPyRelation, *args, groups: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Project the relation object by the projection in project_expr
+Detailed examples can be found at Relational API page.
+
+select_dtypes(self: _duckdb.DuckDBPyRelation, types: object) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Select columns from the relation, by filtering based on type(s)
+Detailed examples can be found at Relational API page.
+
+select_types(self: _duckdb.DuckDBPyRelation, types: object) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Select columns from the relation, by filtering based on type(s)
+Detailed examples can be found at Relational API page.
+
+set_alias(self: _duckdb.DuckDBPyRelation, alias: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Rename the relation object to new alias
+Detailed examples can be found at Relational API page.
+
+shape&#182;
+
+Tuple of # of rows, # of columns in relation.
+Detailed examples can be found at Relational API page.
+
+show(self: _duckdb.DuckDBPyRelation, *, max_width: Optional[SupportsInt] = None, max_rows: Optional[SupportsInt] = None, max_col_width: Optional[SupportsInt] = None, null_value: Optional[str] = None, render_mode: object = None) &#8594; None&#182;
+
+Display a summary of the data
+Detailed examples can be found at Relational API page.
+
+sort(self: _duckdb.DuckDBPyRelation, *args) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Reorder the relation object by the provided expressions
+Detailed examples can be found at Relational API page.
+
+sql_query(self: _duckdb.DuckDBPyRelation) &#8594; str&#182;
+
+Get the SQL query that is equivalent to the relation
+Detailed examples can be found at Relational API page.
+
+std(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample standard deviation for a given column
+Detailed examples can be found at Relational API page.
+
+stddev(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample standard deviation for a given column
+Detailed examples can be found at Relational API page.
+
+stddev_pop(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the population standard deviation for a given column
+Detailed examples can be found at Relational API page.
+
+stddev_samp(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample standard deviation for a given column
+Detailed examples can be found at Relational API page.
+
+string_agg(self: _duckdb.DuckDBPyRelation, column: str, sep: str = ',', groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Concatenates the values present in a given column with a separator
+Detailed examples can be found at Relational API page.
+
+sum(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sum of all values present in a given column
+Detailed examples can be found at Relational API page.
+
+tf(self: _duckdb.DuckDBPyRelation) &#8594; dict&#182;
+
+Fetch a result as dict of TensorFlow Tensors
+Detailed examples can be found at Relational API page.
+
+to_arrow_table(self: _duckdb.DuckDBPyRelation, batch_size: SupportsInt = 1000000) &#8594; pyarrow.lib.Table&#182;
+
+Execute and fetch all rows as an Arrow Table
+Detailed examples can be found at Relational API page.
+
+to_csv(self: _duckdb.DuckDBPyRelation, file_name: str, *, sep: object = None, na_rep: object = None, header: object = None, quotechar: object = None, escapechar: object = None, date_format: object = None, timestamp_format: object = None, quoting: object = None, encoding: object = None, compression: object = None, overwrite: object = None, per_thread_output: object = None, use_tmp_file: object = None, partition_by: object = None, write_partition_columns: object = None) &#8594; None&#182;
+
+Write the relation object to a CSV file in &#8216;file_name&#8217;
+Detailed examples can be found at Relational API page.
+
+to_df(self: _duckdb.DuckDBPyRelation, *, date_as_object: bool = False) &#8594; pandas.DataFrame&#182;
+
+Execute and fetch all rows as a pandas DataFrame
+Detailed examples can be found at Relational API page.
+
+to_parquet(self: _duckdb.DuckDBPyRelation, file_name: str, *, compression: object = None, field_ids: object = None, row_group_size_bytes: object = None, row_group_size: object = None, overwrite: object = None, per_thread_output: object = None, use_tmp_file: object = None, partition_by: object = None, write_partition_columns: object = None, append: object = None) &#8594; None&#182;
+
+Write the relation object to a Parquet file in &#8216;file_name&#8217;
+Detailed examples can be found at Relational API page.
+
+to_table(self: _duckdb.DuckDBPyRelation, table_name: str) &#8594; None&#182;
+
+Creates a new table named table_name with the contents of the relation object
+Detailed examples can be found at Relational API page.
+
+to_view(self: _duckdb.DuckDBPyRelation, view_name: str, replace: bool = True) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Creates a view named view_name that refers to the relation object
+Detailed examples can be found at Relational API page.
+
+torch(self: _duckdb.DuckDBPyRelation) &#8594; dict&#182;
+
+Fetch a result as dict of PyTorch Tensors
+Detailed examples can be found at Relational API page.
+
+type&#182;
+
+Get the type of the relation.
+Detailed examples can be found at Relational API page.
+
+types&#182;
+
+Return a list containing the types of the columns of the relation.
+Detailed examples can be found at Relational API page.
+
+union(self: _duckdb.DuckDBPyRelation, union_rel: _duckdb.DuckDBPyRelation) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Create the set union of this relation object with another relation object in other_rel
+Detailed examples can be found at Relational API page.
+
+unique(self: _duckdb.DuckDBPyRelation, unique_aggr: str) &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Returns the distinct values in a column.
+Detailed examples can be found at Relational API page.
+
+update(self: _duckdb.DuckDBPyRelation, set: object, *, condition: object = None) &#8594; None&#182;
+
+Update the given relation with the provided expressions
+Detailed examples can be found at Relational API page.
+
+value_counts(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the number of elements present in a given column, also projecting the original column
+Detailed examples can be found at Relational API page.
+
+var(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample variance for a given column
+Detailed examples can be found at Relational API page.
+
+var_pop(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the population variance for a given column
+Detailed examples can be found at Relational API page.
+
+var_samp(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample variance for a given column
+Detailed examples can be found at Relational API page.
+
+variance(self: _duckdb.DuckDBPyRelation, column: str, groups: str = '', window_spec: str = '', projected_columns: str = '') &#8594; _duckdb.DuckDBPyRelation&#182;
+
+Computes the sample variance for a given column
+Detailed examples can be found at Relational API page.
+
+write_csv(self: _duckdb.DuckDBPyRelation, file_name: str, *, sep: object = None, na_rep: object = None, header: object = None, quotechar: object = None, escapechar: object = None, date_format: object = None, timestamp_format: object = None, quoting: object = None, encoding: object = None, compression: object = None, overwrite: object = None, per_thread_output: object = None, use_tmp_file: object = None, partition_by: object = None, write_partition_columns: object = None) &#8594; None&#182;
+
+Write the relation object to a CSV file in &#8216;file_name&#8217;
+Detailed examples can be found at Relational API page.
+
+write_parquet(self: _duckdb.DuckDBPyRelation, file_name: str, *, compression: object = None, field_ids: object = None, row_group_size_bytes: object = None, row_group_size: object = None, overwrite: object = None, per_thread_output: object = None, use_tmp_file: object = None, partition_by: object = None, write_partition_columns: object = None, append: object = None) &#8594; None&#182;
+
+Write the relation object to a Parquet file in &#8216;file_name&#8217;
+Detailed examples can be found at Relational API page.
+
+class duckdb.Error&#182;
+
+Bases: Exception
+
+class duckdb.ExpectedResultType&#182;
+
+Bases: pybind11_object
+Members:
+QUERY_RESULT
+CHANGED_ROWS
+NOTHING
+
+property name&#182;
+
+class duckdb.ExplainType&#182;
+
+Bases: pybind11_object
+Members:
+STANDARD
+ANALYZE
+
+property name&#182;
+
+class duckdb.Expression&#182;
+
+Bases: pybind11_object
+
+alias(self: _duckdb.Expression, arg0: str) &#8594; _duckdb.Expression&#182;
+
+Create a copy of this expression with the given alias.
+
+Parameters:
+
+name: The alias to use for the expression, this will affect how it can be referenced.
+
+Returns:
+
+Expression: self with an alias.
+
+asc(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Set the order by modifier to ASCENDING.
+
+between(self: _duckdb.Expression, lower: _duckdb.Expression, upper: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+cast(self: _duckdb.Expression, type: _duckdb.typing.DuckDBPyType) &#8594; _duckdb.Expression&#182;
+
+Create a CastExpression to type from self
+
+Parameters:
+
+type: The type to cast to
+
+Returns:
+
+CastExpression: self::type
+
+collate(self: _duckdb.Expression, collation: str) &#8594; _duckdb.Expression&#182;
+
+desc(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Set the order by modifier to DESCENDING.
+
+get_name(self: _duckdb.Expression) &#8594; str&#182;
+
+Return the stringified version of the expression.
+
+Returns:
+
+str: The string representation.
+
+isin(self: _duckdb.Expression, *args) &#8594; _duckdb.Expression&#182;
+
+Return an IN expression comparing self to the input arguments.
+
+Returns:
+
+DuckDBPyExpression: The compare IN expression
+
+isnotin(self: _duckdb.Expression, *args) &#8594; _duckdb.Expression&#182;
+
+Return a NOT IN expression comparing self to the input arguments.
+
+Returns:
+
+DuckDBPyExpression: The compare NOT IN expression
+
+isnotnull(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Create a binary IS NOT NULL expression from self
+
+Returns:
+
+DuckDBPyExpression: self IS NOT NULL
+
+isnull(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Create a binary IS NULL expression from self
+
+Returns:
+
+DuckDBPyExpression: self IS NULL
+
+nulls_first(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Set the NULL order by modifier to NULLS FIRST.
+
+nulls_last(self: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Set the NULL order by modifier to NULLS LAST.
+
+otherwise(self: _duckdb.Expression, value: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Add an ELSE &lt;value&gt; clause to the CaseExpression.
+
+Parameters:
+
+value: The value to use if none of the WHEN conditions are met.
+
+Returns:
+
+CaseExpression: self with an ELSE clause.
+
+show(self: _duckdb.Expression) &#8594; None&#182;
+
+Print the stringified version of the expression.
+
+when(self: _duckdb.Expression, condition: _duckdb.Expression, value: _duckdb.Expression) &#8594; _duckdb.Expression&#182;
+
+Add an additional WHEN &lt;condition&gt; THEN &lt;value&gt; clause to the CaseExpression.
+
+Parameters:
+
+condition: The condition that must be met.
+value: The value to use if the condition is met.
+
+Returns:
+
+CaseExpression: self with an additional WHEN clause.
+
+class duckdb.FatalException&#182;
+
+Bases: DatabaseError
+
+class duckdb.FloatValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.HTTPException&#182;
+
+Bases: IOException
+Thrown when an error occurs in the httpfs extension, or whilst downloading an extension.
+
+class duckdb.HugeIntegerValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.IOException&#182;
+
+Bases: OperationalError
+
+class duckdb.IntegerValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.IntegrityError&#182;
+
+Bases: DatabaseError
+
+class duckdb.InternalError&#182;
+
+Bases: DatabaseError
+
+class duckdb.InternalException&#182;
+
+Bases: InternalError
+
+class duckdb.InterruptException&#182;
+
+Bases: DatabaseError
+
+class duckdb.IntervalValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.InvalidInputException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.InvalidTypeException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.LongValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.NotImplementedException&#182;
+
+Bases: NotSupportedError
+
+class duckdb.NotSupportedError&#182;
+
+Bases: DatabaseError
+
+class duckdb.NullValue&#182;
+
+Bases: Value
+
+class duckdb.OperationalError&#182;
+
+Bases: DatabaseError
+
+class duckdb.OutOfMemoryException&#182;
+
+Bases: OperationalError
+
+class duckdb.OutOfRangeException&#182;
+
+Bases: DataError
+
+class duckdb.ParserException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.PermissionException&#182;
+
+Bases: DatabaseError
+
+class duckdb.ProgrammingError&#182;
+
+Bases: DatabaseError
+
+class duckdb.PythonExceptionHandling&#182;
+
+Bases: pybind11_object
+Members:
+DEFAULT
+RETURN_NULL
+
+property name&#182;
+
+class duckdb.RenderMode&#182;
+
+Bases: pybind11_object
+Members:
+ROWS
+COLUMNS
+
+property name&#182;
+
+class duckdb.SequenceException&#182;
+
+Bases: DatabaseError
+
+class duckdb.SerializationException&#182;
+
+Bases: OperationalError
+
+class duckdb.ShortValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.Statement&#182;
+
+Bases: pybind11_object
+
+property expected_result_type&#182;
+
+Get the expected type of result produced by this statement, actual type may vary depending on the statement.
+
+property named_parameters&#182;
+
+Get the map of named parameters this statement has.
+
+property query&#182;
+
+Get the query equivalent to this statement.
+
+property type&#182;
+
+Get the type of the statement.
+
+class duckdb.StatementType&#182;
+
+Bases: pybind11_object
+Members:
+INVALID
+SELECT
+INSERT
+UPDATE
+CREATE
+DELETE
+PREPARE
+EXECUTE
+ALTER
+TRANSACTION
+COPY
+ANALYZE
+VARIABLE_SET
+CREATE_FUNC
+EXPLAIN
+DROP
+EXPORT
+PRAGMA
+VACUUM
+CALL
+SET
+LOAD
+RELATION
+EXTENSION
+LOGICAL_PLAN
+ATTACH
+DETACH
+MULTI
+COPY_DATABASE
+MERGE_INTO
+
+property name&#182;
+
+class duckdb.StringValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.SyntaxException&#182;
+
+Bases: ProgrammingError
+
+class duckdb.TimeTimeZoneValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimeValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimestampMilisecondValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimestampNanosecondValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimestampSecondValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimestampTimeZoneValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TimestampValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.TransactionException&#182;
+
+Bases: OperationalError
+
+class duckdb.TypeMismatchException&#182;
+
+Bases: DataError
+
+class duckdb.UUIDValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.UnsignedBinaryValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.UnsignedIntegerValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.UnsignedLongValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.UnsignedShortValue(object: Any)&#182;
+
+Bases: Value
+
+class duckdb.Value(object: Any, type: DuckDBPyType)&#182;
+
+Bases: object
+
+class duckdb.Warning&#182;
+
+Bases: Exception
+
+class duckdb.token_type&#182;
+
+Bases: pybind11_object
+Members:
+identifier
+numeric_const
+string_const
+operator
+keyword
+comment
+
+property name&#182;

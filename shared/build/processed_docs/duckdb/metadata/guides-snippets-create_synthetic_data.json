@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/snippets/create_synthetic_data"
+  ],
+  "title": "Create Synthetic Data",
+  "file_name": "create_synthetic_data.md",
+  "file_stem": "create_synthetic_data",
+  "file_path": "guides/snippets/create_synthetic_data.md",
+  "file_size": 3238,
+  "document_id": "guides-snippets-create_synthetic_data",
+  "url": "/guides/snippets/create_synthetic_data",
+  "content_hash": "7edb6e630ddb858d5a62fa381c2af85d",
+  "statistics": {
+    "char_count": 2325,
+    "word_count": 247,
+    "line_count": 68,
+    "paragraph_count": 13,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 49
+  },
+  "processed_at": "2025-11-22T10:32:11.864513",
+  "sections": []
+}

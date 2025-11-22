@@ -1,0 +1,33 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-odbc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/clients/odbc/overview",
+    "/docs/clients/odbc/overview/"
+  ],
+  "title": "ODBC API Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "clients/odbc/overview.md",
+  "file_size": 1377,
+  "document_id": "clients-odbc-overview",
+  "url": "/clients/odbc/overview",
+  "content_hash": "37ed733864945fcea6706132af5850db",
+  "statistics": {
+    "char_count": 1196,
+    "word_count": 168,
+    "line_count": 17,
+    "paragraph_count": 8,
+    "header_count": 1,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.514248",
+  "sections": [
+    {
+      "level": 2,
+      "title": "DuckDB ODBC Driver",
+      "anchor": "duckdb-odbc-driver"
+    }
+  ]
+}

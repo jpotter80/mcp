@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/dialect/indexing"
+  ],
+  "title": "Indexing",
+  "file_name": "indexing.md",
+  "file_stem": "indexing",
+  "file_path": "sql/dialect/indexing.md",
+  "file_size": 840,
+  "document_id": "sql-dialect-indexing",
+  "url": "/sql/dialect/indexing",
+  "content_hash": "3273e4201691338d3f4e1aa0b02898f3",
+  "statistics": {
+    "char_count": 588,
+    "word_count": 88,
+    "line_count": 35,
+    "paragraph_count": 8,
+    "header_count": 1,
+    "code_block_count": 4,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-22T10:32:12.961548",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    }
+  ]
+}

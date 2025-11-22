@@ -1,0 +1,39 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-odbc",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/odbc/configuration",
+    "/docs/api/odbc/configuration/",
+    "/docs/clients/odbc/configuration"
+  ],
+  "title": "ODBC Configuration",
+  "file_name": "configuration.md",
+  "file_stem": "configuration",
+  "file_path": "clients/odbc/configuration.md",
+  "file_size": 2184,
+  "document_id": "clients-odbc-configuration",
+  "url": "/clients/odbc/configuration",
+  "content_hash": "7ba3007e47a673a3d2b56626b4ef39b4",
+  "statistics": {
+    "char_count": 1965,
+    "word_count": 276,
+    "line_count": 46,
+    "paragraph_count": 13,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:04.484938",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`odbc.ini` and `.odbc.ini`",
+      "anchor": "odbcini-and-odbcini"
+    },
+    {
+      "level": 2,
+      "title": "`odbcinst.ini` and `.odbcinst.ini`",
+      "anchor": "odbcinstini-and-odbcinstini"
+    }
+  ]
+}

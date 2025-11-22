@@ -1,0 +1,32 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/embedding_duckdb",
+    "/docs/stable/operations_manual/embedding_duckdb"
+  ],
+  "title": "Embedding DuckDB",
+  "file_name": "embedding_duckdb.md",
+  "file_stem": "embedding_duckdb",
+  "file_path": "operations_manual/securing_duckdb/embedding_duckdb.md",
+  "file_size": 913,
+  "document_id": "operations_manual-securing_duckdb-embedding_duckdb",
+  "url": "/operations_manual/securing_duckdb/embedding_duckdb",
+  "content_hash": "e67c0440269bb6c1d1f5361d34cfcd25",
+  "statistics": {
+    "char_count": 758,
+    "word_count": 111,
+    "line_count": 12,
+    "paragraph_count": 4,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:12.284095",
+  "sections": [
+    {
+      "level": 2,
+      "title": "CLI Client",
+      "anchor": "cli-client"
+    }
+  ]
+}

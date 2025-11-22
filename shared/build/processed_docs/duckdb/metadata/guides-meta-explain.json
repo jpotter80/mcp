@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/meta/explain"
+  ],
+  "title": "EXPLAIN: Inspect Query Plans",
+  "file_name": "explain.md",
+  "file_stem": "explain",
+  "file_path": "guides/meta/explain.md",
+  "file_size": 4948,
+  "document_id": "guides-meta-explain",
+  "url": "/guides/meta/explain",
+  "content_hash": "7021dcaf6dfd08e3cc96bedbea8a432c",
+  "statistics": {
+    "char_count": 2708,
+    "word_count": 493,
+    "line_count": 94,
+    "paragraph_count": 17,
+    "header_count": 2,
+    "code_block_count": 6,
+    "code_lines": 54
+  },
+  "processed_at": "2025-11-22T10:32:11.026079",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Additional Explain Settings",
+      "anchor": "additional-explain-settings"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

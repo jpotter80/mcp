@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/json_export",
+    "/docs/guides/import/json_export/",
+    "/docs/guides/file_formats/json_export"
+  ],
+  "title": "JSON Export",
+  "file_name": "json_export.md",
+  "file_stem": "json_export",
+  "file_path": "guides/file_formats/json_export.md",
+  "file_size": 925,
+  "document_id": "guides-file_formats-json_export",
+  "url": "/guides/file_formats/json_export",
+  "content_hash": "6018f85295951f05b53c170c01fd1635",
+  "statistics": {
+    "char_count": 738,
+    "word_count": 104,
+    "line_count": 34,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 5,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:10.931984",
+  "sections": []
+}

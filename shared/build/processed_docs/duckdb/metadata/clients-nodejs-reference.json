@@ -1,0 +1,368 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/nodejs/reference",
+    "/docs/api/nodejs/reference/",
+    "/docs/clients/nodejs/reference"
+  ],
+  "title": "Node.js API",
+  "file_name": "reference.md",
+  "file_stem": "reference",
+  "file_path": "clients/nodejs/reference.md",
+  "file_size": 29513,
+  "document_id": "clients-nodejs-reference",
+  "url": "/clients/nodejs/reference",
+  "content_hash": "1646f4d4e712b1b6695b28ba37696d68",
+  "statistics": {
+    "char_count": 21818,
+    "word_count": 2488,
+    "line_count": 761,
+    "paragraph_count": 239,
+    "header_count": 68,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:04.417736",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Modules",
+      "anchor": "modules"
+    },
+    {
+      "level": 2,
+      "title": "Typedefs",
+      "anchor": "typedefs"
+    },
+    {
+      "level": 2,
+      "title": "duckdb",
+      "anchor": "duckdb"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~Connection",
+      "anchor": "duckdbconnection"
+    },
+    {
+      "level": 4,
+      "title": "connection.run(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "connectionrunsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.all(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "connectionallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.arrowIPCAll(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "connectionarrowipcallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.arrowIPCStream(sql, ...params, callback) ⇒",
+      "anchor": "connectionarrowipcstreamsql-params-callback-"
+    },
+    {
+      "level": 4,
+      "title": "connection.each(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "connectioneachsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.stream(sql, ...params)",
+      "anchor": "connectionstreamsql-params"
+    },
+    {
+      "level": 4,
+      "title": "connection.register\\_udf(name, return_type, fun) ⇒ <code>void</code>",
+      "anchor": "connectionregister_udfname-return_type-fun-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.prepare(sql, ...params, callback) ⇒ <code>Statement</code>",
+      "anchor": "connectionpreparesql-params-callback-codestatementcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.exec(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "connectionexecsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.register\\_udf\\_bulk(name, return_type, callback) ⇒ <code>void</code>",
+      "anchor": "connectionregister_udf_bulkname-return_type-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.unregister\\_udf(name, return_type, callback) ⇒ <code>void</code>",
+      "anchor": "connectionunregister_udfname-return_type-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.register\\_buffer(name, array, force, callback) ⇒ <code>void</code>",
+      "anchor": "connectionregister_buffername-array-force-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.unregister\\_buffer(name, callback) ⇒ <code>void</code>",
+      "anchor": "connectionunregister_buffername-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "connection.close(callback) ⇒ <code>void</code>",
+      "anchor": "connectionclosecallback-codevoidcode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~Statement",
+      "anchor": "duckdbstatement"
+    },
+    {
+      "level": 4,
+      "title": "statement.sql ⇒",
+      "anchor": "statementsql-"
+    },
+    {
+      "level": 4,
+      "title": "statement.get()",
+      "anchor": "statementget"
+    },
+    {
+      "level": 4,
+      "title": "statement.run(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "statementrunsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "statement.all(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "statementallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "statement.arrowIPCAll(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "statementarrowipcallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "statement.each(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "statementeachsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "statement.finalize(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "statementfinalizesql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "statement.stream(sql, ...params)",
+      "anchor": "statementstreamsql-params"
+    },
+    {
+      "level": 4,
+      "title": "statement.columns() ⇒ [<code>Array.&lt;ColumnInfo&gt;</code>](#ColumnInfo)",
+      "anchor": "statementcolumns-codearrayltcolumninfogtcodecolumninfo"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~QueryResult",
+      "anchor": "duckdbqueryresult"
+    },
+    {
+      "level": 4,
+      "title": "queryResult.nextChunk() ⇒",
+      "anchor": "queryresultnextchunk-"
+    },
+    {
+      "level": 4,
+      "title": "queryResult.nextIpcBuffer() ⇒",
+      "anchor": "queryresultnextipcbuffer-"
+    },
+    {
+      "level": 4,
+      "title": "queryResult.asyncIterator()",
+      "anchor": "queryresultasynciterator"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~Database",
+      "anchor": "duckdbdatabase"
+    },
+    {
+      "level": 4,
+      "title": "database.close(callback) ⇒ <code>void</code>",
+      "anchor": "databaseclosecallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.close\\_internal(callback) ⇒ <code>void</code>",
+      "anchor": "databaseclose_internalcallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.wait(callback) ⇒ <code>void</code>",
+      "anchor": "databasewaitcallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.serialize(callback) ⇒ <code>void</code>",
+      "anchor": "databaseserializecallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.parallelize(callback) ⇒ <code>void</code>",
+      "anchor": "databaseparallelizecallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.connect(path) ⇒ <code>Connection</code>",
+      "anchor": "databaseconnectpath-codeconnectioncode"
+    },
+    {
+      "level": 4,
+      "title": "database.interrupt(callback) ⇒ <code>void</code>",
+      "anchor": "databaseinterruptcallback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.prepare(sql) ⇒ <code>Statement</code>",
+      "anchor": "databasepreparesql-codestatementcode"
+    },
+    {
+      "level": 4,
+      "title": "database.run(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databaserunsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.scanArrowIpc(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databasescanarrowipcsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.each(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databaseeachsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.stream(sql, ...params)",
+      "anchor": "databasestreamsql-params"
+    },
+    {
+      "level": 4,
+      "title": "database.all(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databaseallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.arrowIPCAll(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databasearrowipcallsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.arrowIPCStream(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databasearrowipcstreamsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.exec(sql, ...params, callback) ⇒ <code>void</code>",
+      "anchor": "databaseexecsql-params-callback-codevoidcode"
+    },
+    {
+      "level": 4,
+      "title": "database.register\\_udf(name, return_type, fun) ⇒ <code>this</code>",
+      "anchor": "databaseregister_udfname-return_type-fun-codethiscode"
+    },
+    {
+      "level": 4,
+      "title": "database.register\\_buffer(name) ⇒ <code>this</code>",
+      "anchor": "databaseregister_buffername-codethiscode"
+    },
+    {
+      "level": 4,
+      "title": "database.unregister\\_buffer(name) ⇒ <code>this</code>",
+      "anchor": "databaseunregister_buffername-codethiscode"
+    },
+    {
+      "level": 4,
+      "title": "database.unregister\\_udf(name) ⇒ <code>this</code>",
+      "anchor": "databaseunregister_udfname-codethiscode"
+    },
+    {
+      "level": 4,
+      "title": "database.registerReplacementScan(fun) ⇒ <code>this</code>",
+      "anchor": "databaseregisterreplacementscanfun-codethiscode"
+    },
+    {
+      "level": 4,
+      "title": "database.tokenize(text) ⇒ <code>ScriptTokens</code>",
+      "anchor": "databasetokenizetext-codescripttokenscode"
+    },
+    {
+      "level": 4,
+      "title": "database.get()",
+      "anchor": "databaseget"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~TokenType",
+      "anchor": "duckdbtokentype"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~ERROR : <code>number</code>",
+      "anchor": "duckdberror-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_READONLY : <code>number</code>",
+      "anchor": "duckdbopen_readonly-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_READWRITE : <code>number</code>",
+      "anchor": "duckdbopen_readwrite-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_CREATE : <code>number</code>",
+      "anchor": "duckdbopen_create-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_FULLMUTEX : <code>number</code>",
+      "anchor": "duckdbopen_fullmutex-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_SHAREDCACHE : <code>number</code>",
+      "anchor": "duckdbopen_sharedcache-codenumbercode"
+    },
+    {
+      "level": 3,
+      "title": "duckdb~OPEN\\_PRIVATECACHE : <code>number</code>",
+      "anchor": "duckdbopen_privatecache-codenumbercode"
+    },
+    {
+      "level": 2,
+      "title": "ColumnInfo : <code>object</code>",
+      "anchor": "columninfo-codeobjectcode"
+    },
+    {
+      "level": 2,
+      "title": "TypeInfo : <code>object</code>",
+      "anchor": "typeinfo-codeobjectcode"
+    },
+    {
+      "level": 2,
+      "title": "DuckDbError : <code>object</code>",
+      "anchor": "duckdberror-codeobjectcode"
+    },
+    {
+      "level": 2,
+      "title": "HTTPError : <code>object</code>",
+      "anchor": "httperror-codeobjectcode"
+    }
+  ]
+}

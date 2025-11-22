@@ -1,0 +1,81 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/versioning_of_extensions"
+  ],
+  "title": "Versioning of Extensions",
+  "file_name": "versioning_of_extensions.md",
+  "file_stem": "versioning_of_extensions",
+  "file_path": "extensions/versioning_of_extensions.md",
+  "file_size": 10189,
+  "document_id": "extensions-versioning_of_extensions",
+  "url": "/extensions/versioning_of_extensions",
+  "content_hash": "7c7db6d68b5837236aa11918fb868bf7",
+  "statistics": {
+    "char_count": 9843,
+    "word_count": 1450,
+    "line_count": 149,
+    "paragraph_count": 50,
+    "header_count": 11,
+    "code_block_count": 4,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:10.818291",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Extension Versioning",
+      "anchor": "extension-versioning"
+    },
+    {
+      "level": 3,
+      "title": "Unstable Extensions",
+      "anchor": "unstable-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Pre-Release Extensions",
+      "anchor": "pre-release-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Stable Extensions",
+      "anchor": "stable-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Release Cycle of Pre-Release and Stable Core Extensions",
+      "anchor": "release-cycle-of-pre-release-and-stable-core-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Nightly Builds",
+      "anchor": "nightly-builds"
+    },
+    {
+      "level": 3,
+      "title": "From Stable DuckDB",
+      "anchor": "from-stable-duckdb"
+    },
+    {
+      "level": 3,
+      "title": "From Nightly DuckDB",
+      "anchor": "from-nightly-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Updating Extensions",
+      "anchor": "updating-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Target DuckDB Version",
+      "anchor": "target-duckdb-version"
+    },
+    {
+      "level": 2,
+      "title": "In-Tree vs. Out-of-Tree",
+      "anchor": "in-tree-vs-out-of-tree"
+    }
+  ]
+}

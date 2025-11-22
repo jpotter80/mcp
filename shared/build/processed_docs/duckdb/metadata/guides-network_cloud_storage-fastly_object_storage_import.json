@@ -1,0 +1,42 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/fastly_object_storage_import",
+    "/docs/guides/network_cloud_storage/fastly_object_storage_import"
+  ],
+  "title": "Fastly Object Storage Import",
+  "file_name": "fastly_object_storage_import.md",
+  "file_stem": "fastly_object_storage_import",
+  "file_path": "guides/network_cloud_storage/fastly_object_storage_import.md",
+  "file_size": 1717,
+  "document_id": "guides-network_cloud_storage-fastly_object_storage_import",
+  "url": "/guides/network_cloud_storage/fastly_object_storage_import",
+  "content_hash": "0050b2ce0f3ee5d6c7cf465c0e191019",
+  "statistics": {
+    "char_count": 1483,
+    "word_count": 161,
+    "line_count": 33,
+    "paragraph_count": 10,
+    "header_count": 3,
+    "code_block_count": 2,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:11.100639",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Credentials and Configuration",
+      "anchor": "credentials-and-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Querying",
+      "anchor": "querying"
+    }
+  ]
+}

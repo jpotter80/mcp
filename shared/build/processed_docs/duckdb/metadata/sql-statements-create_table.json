@@ -1,0 +1,82 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createtable.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_table"
+  ],
+  "title": "CREATE TABLE Statement",
+  "file_name": "create_table.md",
+  "file_stem": "create_table",
+  "file_path": "sql/statements/create_table.md",
+  "file_size": 9045,
+  "document_id": "sql-statements-create_table",
+  "url": "/sql/statements/create_table",
+  "content_hash": "a58a3b7848f2bdcfdcc7a40a2800375f",
+  "statistics": {
+    "char_count": 573,
+    "word_count": 96,
+    "line_count": 28,
+    "paragraph_count": 10,
+    "header_count": 11,
+    "code_block_count": 35,
+    "code_lines": 95
+  },
+  "processed_at": "2025-11-22T10:32:15.746142",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Temporary Tables",
+      "anchor": "temporary-tables"
+    },
+    {
+      "level": 2,
+      "title": "`CREATE OR REPLACE`",
+      "anchor": "create-or-replace"
+    },
+    {
+      "level": 2,
+      "title": "`IF NOT EXISTS`",
+      "anchor": "if-not-exists"
+    },
+    {
+      "level": 2,
+      "title": "`CREATE TABLE ... AS SELECT` (CTAS)",
+      "anchor": "create-table-as-select-ctas"
+    },
+    {
+      "level": 3,
+      "title": "Copying the Schema",
+      "anchor": "copying-the-schema"
+    },
+    {
+      "level": 2,
+      "title": "Check Constraints",
+      "anchor": "check-constraints"
+    },
+    {
+      "level": 2,
+      "title": "Foreign Key Constraints",
+      "anchor": "foreign-key-constraints"
+    },
+    {
+      "level": 3,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Generated Columns",
+      "anchor": "generated-columns"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

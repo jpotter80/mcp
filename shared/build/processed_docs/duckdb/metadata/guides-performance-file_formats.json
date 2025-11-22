@@ -1,0 +1,83 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/file-formats",
+    "/docs/guides/performance/file-formats/",
+    "/docs/guides/performance/file_formats"
+  ],
+  "title": "File Formats",
+  "file_name": "file_formats.md",
+  "file_stem": "file_formats",
+  "file_path": "guides/performance/file_formats.md",
+  "file_size": 7545,
+  "document_id": "guides-performance-file_formats",
+  "url": "/guides/performance/file_formats",
+  "content_hash": "4bd3d4d536d60b21adab0b6ee70d4b2e",
+  "statistics": {
+    "char_count": 6428,
+    "word_count": 929,
+    "line_count": 88,
+    "paragraph_count": 32,
+    "header_count": 11,
+    "code_block_count": 3,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:11.288527",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Handling Parquet Files",
+      "anchor": "handling-parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "Reasons for Querying Parquet Files",
+      "anchor": "reasons-for-querying-parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "Reasons against Querying Parquet Files",
+      "anchor": "reasons-against-querying-parquet-files"
+    },
+    {
+      "level": 4,
+      "title": "Microbenchmark: Running TPC-H on a DuckDB Database vs. Parquet",
+      "anchor": "microbenchmark-running-tpc-h-on-a-duckdb-database-vs-parquet"
+    },
+    {
+      "level": 3,
+      "title": "The Effect of Row Group Sizes",
+      "anchor": "the-effect-of-row-group-sizes"
+    },
+    {
+      "level": 4,
+      "title": "Microbenchmark: Running Aggregation Query at Different Row Group Sizes",
+      "anchor": "microbenchmark-running-aggregation-query-at-different-row-group-sizes"
+    },
+    {
+      "level": 3,
+      "title": "Parquet File Sizes",
+      "anchor": "parquet-file-sizes"
+    },
+    {
+      "level": 3,
+      "title": "Hive Partitioning for Filter Pushdown",
+      "anchor": "hive-partitioning-for-filter-pushdown"
+    },
+    {
+      "level": 3,
+      "title": "More Tips on Reading and Writing Parquet Files",
+      "anchor": "more-tips-on-reading-and-writing-parquet-files"
+    },
+    {
+      "level": 2,
+      "title": "Loading CSV Files",
+      "anchor": "loading-csv-files"
+    },
+    {
+      "level": 3,
+      "title": "Loading Many Small CSV Files",
+      "anchor": "loading-many-small-csv-files"
+    }
+  ]
+}

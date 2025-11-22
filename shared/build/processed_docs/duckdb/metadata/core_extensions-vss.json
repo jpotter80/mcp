@@ -1,0 +1,60 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-vss",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/vss",
+    "/docs/stable/extensions/vss/",
+    "/docs/extensions/vss",
+    "/docs/extensions/vss/"
+  ],
+  "title": "Vector Similarity Search Extension",
+  "file_name": "vss.md",
+  "file_stem": "vss",
+  "file_path": "core_extensions/vss.md",
+  "file_size": 15467,
+  "document_id": "core_extensions-vss",
+  "url": "/core_extensions/vss",
+  "content_hash": "96cf6a32b6e49c32a15a326a3360017a",
+  "statistics": {
+    "char_count": 12086,
+    "word_count": 1773,
+    "line_count": 193,
+    "paragraph_count": 48,
+    "header_count": 6,
+    "code_block_count": 11,
+    "code_lines": 78
+  },
+  "processed_at": "2025-11-22T10:32:09.279062",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Index Options",
+      "anchor": "index-options"
+    },
+    {
+      "level": 2,
+      "title": "Persistence",
+      "anchor": "persistence"
+    },
+    {
+      "level": 2,
+      "title": "Inserts, Updates, Deletes and Re-Compaction",
+      "anchor": "inserts-updates-deletes-and-re-compaction"
+    },
+    {
+      "level": 2,
+      "title": "Bonus: Vector Similarity Search Joins",
+      "anchor": "bonus-vector-similarity-search-joins"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

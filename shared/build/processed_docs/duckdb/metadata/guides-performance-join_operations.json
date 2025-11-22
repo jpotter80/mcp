@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/join_operations"
+  ],
+  "title": "Join Operations",
+  "file_name": "join_operations.md",
+  "file_stem": "join_operations",
+  "file_path": "guides/performance/join_operations.md",
+  "file_size": 1446,
+  "document_id": "guides-performance-join_operations",
+  "url": "/guides/performance/join_operations",
+  "content_hash": "e0f15ea21f0d94d1e5b4e5e100ca6b27",
+  "statistics": {
+    "char_count": 1335,
+    "word_count": 219,
+    "line_count": 50,
+    "paragraph_count": 16,
+    "header_count": 3,
+    "code_block_count": 5,
+    "code_lines": 17
+  },
+  "processed_at": "2025-11-22T10:32:11.351455",
+  "sections": [
+    {
+      "level": 2,
+      "title": "How to Force a Join Order",
+      "anchor": "how-to-force-a-join-order"
+    },
+    {
+      "level": 3,
+      "title": "Turn off the Join Order Optimizer",
+      "anchor": "turn-off-the-join-order-optimizer"
+    },
+    {
+      "level": 3,
+      "title": "Create Temporary Tables",
+      "anchor": "create-temporary-tables"
+    }
+  ]
+}

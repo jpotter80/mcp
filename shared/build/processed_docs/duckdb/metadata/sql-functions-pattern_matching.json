@@ -1,0 +1,64 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/like.js",
+  "redirect_from": [
+    "/docs/sql/functions/patternmatching",
+    "/docs/sql/functions/patternmatching/",
+    "/docs/sql/functions/pattern_matching"
+  ],
+  "title": "Pattern Matching",
+  "file_name": "pattern_matching.md",
+  "file_stem": "pattern_matching",
+  "file_path": "sql/functions/pattern_matching.md",
+  "file_size": 8529,
+  "document_id": "sql-functions-pattern_matching",
+  "url": "/sql/functions/pattern_matching",
+  "content_hash": "f4226ccf6e552b07cdc49a99231d1e0c",
+  "statistics": {
+    "char_count": 7600,
+    "word_count": 1125,
+    "line_count": 191,
+    "paragraph_count": 55,
+    "header_count": 7,
+    "code_block_count": 15,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:14.024163",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`LIKE`",
+      "anchor": "like"
+    },
+    {
+      "level": 2,
+      "title": "`SIMILAR TO`",
+      "anchor": "similar-to"
+    },
+    {
+      "level": 2,
+      "title": "Globbing",
+      "anchor": "globbing"
+    },
+    {
+      "level": 3,
+      "title": "`GLOB`",
+      "anchor": "glob"
+    },
+    {
+      "level": 3,
+      "title": "Glob Function to Find Filenames",
+      "anchor": "glob-function-to-find-filenames"
+    },
+    {
+      "level": 3,
+      "title": "Globbing Semantics",
+      "anchor": "globbing-semantics"
+    },
+    {
+      "level": 2,
+      "title": "Regular Expressions",
+      "anchor": "regular-expressions"
+    }
+  ]
+}

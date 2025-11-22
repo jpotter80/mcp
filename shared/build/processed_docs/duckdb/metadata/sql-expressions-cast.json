@@ -1,0 +1,47 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/cast.js",
+  "redirect_from": [
+    "/docs/sql/expressions/cast"
+  ],
+  "title": "Casting",
+  "file_name": "cast.md",
+  "file_stem": "cast",
+  "file_path": "sql/expressions/cast.md",
+  "file_size": 3455,
+  "document_id": "sql-expressions-cast",
+  "url": "/sql/expressions/cast",
+  "content_hash": "d2a09ab9c42bc223b18e262178112035",
+  "statistics": {
+    "char_count": 3041,
+    "word_count": 494,
+    "line_count": 99,
+    "paragraph_count": 25,
+    "header_count": 4,
+    "code_block_count": 9,
+    "code_lines": 30
+  },
+  "processed_at": "2025-11-22T10:32:13.063221",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Explicit Casting",
+      "anchor": "explicit-casting"
+    },
+    {
+      "level": 3,
+      "title": "Casting Rules",
+      "anchor": "casting-rules"
+    },
+    {
+      "level": 3,
+      "title": "`TRY_CAST`",
+      "anchor": "try_cast"
+    },
+    {
+      "level": 2,
+      "title": "`cast_to_type` Function",
+      "anchor": "cast_to_type-function"
+    }
+  ]
+}

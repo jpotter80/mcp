@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/export_numpy"
+  ],
+  "title": "Export to Numpy",
+  "file_name": "export_numpy.md",
+  "file_stem": "export_numpy",
+  "file_path": "guides/python/export_numpy.md",
+  "file_size": 714,
+  "document_id": "guides-python-export_numpy",
+  "url": "/guides/python/export_numpy",
+  "content_hash": "5d85ccb9b6ffe57e660013c18fb2c579",
+  "statistics": {
+    "char_count": 600,
+    "word_count": 81,
+    "line_count": 29,
+    "paragraph_count": 9,
+    "header_count": 1,
+    "code_block_count": 4,
+    "code_lines": 10
+  },
+  "processed_at": "2025-11-22T10:32:11.413214",
+  "sections": [
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

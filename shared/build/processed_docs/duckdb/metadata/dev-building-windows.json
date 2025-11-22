@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/windows"
+  ],
+  "title": "Windows",
+  "file_name": "windows.md",
+  "file_stem": "windows",
+  "file_path": "dev/building/windows.md",
+  "file_size": 2754,
+  "document_id": "dev-building-windows",
+  "url": "/dev/building/windows",
+  "content_hash": "e4d2206190b3ed40c08ca48643b34096",
+  "statistics": {
+    "char_count": 2639,
+    "word_count": 275,
+    "line_count": 69,
+    "paragraph_count": 19,
+    "header_count": 3,
+    "code_block_count": 6,
+    "code_lines": 22
+  },
+  "processed_at": "2025-11-22T10:32:10.389616",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Visual Studio",
+      "anchor": "visual-studio"
+    },
+    {
+      "level": 2,
+      "title": "MSYS2 and MinGW64",
+      "anchor": "msys2-and-mingw64"
+    },
+    {
+      "level": 2,
+      "title": "Building the Go Client",
+      "anchor": "building-the-go-client"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/data_ingestion",
+    "/docs/api/python/data_ingestion/",
+    "/docs/clients/python/data_ingestion"
+  ],
+  "title": "Data Ingestion",
+  "file_name": "data_ingestion.md",
+  "file_stem": "data_ingestion",
+  "file_path": "clients/python/data_ingestion.md",
+  "file_size": 6848,
+  "document_id": "clients-python-data_ingestion",
+  "url": "/clients/python/data_ingestion",
+  "content_hash": "89c0c95a8cc0331f8e9115a27c550d91",
+  "statistics": {
+    "char_count": 6675,
+    "word_count": 842,
+    "line_count": 196,
+    "paragraph_count": 65,
+    "header_count": 9,
+    "code_block_count": 24,
+    "code_lines": 38
+  },
+  "processed_at": "2025-11-22T10:32:04.663524",
+  "sections": [
+    {
+      "level": 2,
+      "title": "CSV Files",
+      "anchor": "csv-files"
+    },
+    {
+      "level": 2,
+      "title": "Parquet Files",
+      "anchor": "parquet-files"
+    },
+    {
+      "level": 2,
+      "title": "JSON Files",
+      "anchor": "json-files"
+    },
+    {
+      "level": 2,
+      "title": "Directly Accessing DataFrames and Arrow Objects",
+      "anchor": "directly-accessing-dataframes-and-arrow-objects"
+    },
+    {
+      "level": 1,
+      "title": "create a new table from the contents of a DataFrame",
+      "anchor": "create-a-new-table-from-the-contents-of-a-dataframe"
+    },
+    {
+      "level": 1,
+      "title": "insert into an existing table from the contents of a DataFrame",
+      "anchor": "insert-into-an-existing-table-from-the-contents-of-a-dataframe"
+    },
+    {
+      "level": 3,
+      "title": "Pandas DataFrames – `object` Columns",
+      "anchor": "pandas-dataframes-object-columns"
+    },
+    {
+      "level": 1,
+      "title": "example setting the sample size to 100k",
+      "anchor": "example-setting-the-sample-size-to-100k"
+    },
+    {
+      "level": 3,
+      "title": "Registering Objects",
+      "anchor": "registering-objects"
+    }
+  ]
+}

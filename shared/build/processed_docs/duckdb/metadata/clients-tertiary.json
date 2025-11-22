@@ -1,0 +1,22 @@
+{
+  "layout": "docu",
+  "title": "Tertiary Clients",
+  "file_name": "tertiary.md",
+  "file_stem": "tertiary",
+  "file_path": "clients/tertiary.md",
+  "file_size": 2392,
+  "document_id": "clients-tertiary",
+  "url": "/clients/tertiary",
+  "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d",
+  "statistics": {
+    "char_count": 1757,
+    "word_count": 163,
+    "line_count": 17,
+    "paragraph_count": 1,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:07.198697",
+  "sections": []
+}

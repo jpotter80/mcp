@@ -1,0 +1,38 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/query_sqlite",
+    "/docs/guides/import/query_sqlite/",
+    "/docs/guides/database_integration/sqlite"
+  ],
+  "title": "SQLite Import",
+  "file_name": "sqlite.md",
+  "file_stem": "sqlite",
+  "file_path": "guides/database_integration/sqlite.md",
+  "file_size": 1323,
+  "document_id": "guides-database_integration-sqlite",
+  "url": "/guides/database_integration/sqlite",
+  "content_hash": "cf924b0a577c220441b33fab881e9574",
+  "statistics": {
+    "char_count": 1150,
+    "word_count": 183,
+    "line_count": 39,
+    "paragraph_count": 12,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:10.890112",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation and Loading",
+      "anchor": "installation-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    }
+  ]
+}

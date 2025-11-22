@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/multiple_connections",
+    "/dev/sqllogictest/multiple_connections/",
+    "/docs/dev/sqllogictest/multiple_connections"
+  ],
+  "title": "Multiple Connections",
+  "file_name": "multiple_connections.md",
+  "file_stem": "multiple_connections",
+  "file_path": "dev/sqllogictest/multiple_connections.md",
+  "file_size": 2201,
+  "document_id": "dev-sqllogictest-multiple_connections",
+  "url": "/dev/sqllogictest/multiple_connections",
+  "content_hash": "4eed683ca53762e2071624575b2cc4cf",
+  "statistics": {
+    "char_count": 2004,
+    "word_count": 313,
+    "line_count": 46,
+    "paragraph_count": 16,
+    "header_count": 1,
+    "code_block_count": 3,
+    "code_lines": 28
+  },
+  "processed_at": "2025-11-22T10:32:10.648613",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Concurrent Connections",
+      "anchor": "concurrent-connections"
+    }
+  ]
+}

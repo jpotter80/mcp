@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/transactions"
+  ],
+  "title": "Transaction Management",
+  "file_name": "transactions.md",
+  "file_stem": "transactions",
+  "file_path": "sql/statements/transactions.md",
+  "file_size": 1828,
+  "document_id": "sql-statements-transactions",
+  "url": "/sql/statements/transactions",
+  "content_hash": "43a2ed97eec3e42575f9f10413e74e75",
+  "statistics": {
+    "char_count": 1701,
+    "word_count": 251,
+    "line_count": 66,
+    "paragraph_count": 23,
+    "header_count": 5,
+    "code_block_count": 5,
+    "code_lines": 16
+  },
+  "processed_at": "2025-11-22T10:32:15.958901",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Statements",
+      "anchor": "statements"
+    },
+    {
+      "level": 3,
+      "title": "Starting a Transaction",
+      "anchor": "starting-a-transaction"
+    },
+    {
+      "level": 3,
+      "title": "Committing a Transaction",
+      "anchor": "committing-a-transaction"
+    },
+    {
+      "level": 3,
+      "title": "Rolling Back a Transaction",
+      "anchor": "rolling-back-a-transaction"
+    },
+    {
+      "level": 3,
+      "title": "Example",
+      "anchor": "example"
+    }
+  ]
+}

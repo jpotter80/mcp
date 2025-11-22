@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/where.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/where"
+  ],
+  "title": "WHERE Clause",
+  "file_name": "where.md",
+  "file_stem": "where",
+  "file_path": "sql/query_syntax/where.md",
+  "file_size": 900,
+  "document_id": "sql-query_syntax-where",
+  "url": "/sql/query_syntax/where",
+  "content_hash": "d44cdcda7a7c6e1af060a67d22d7f301",
+  "statistics": {
+    "char_count": 751,
+    "word_count": 130,
+    "line_count": 37,
+    "paragraph_count": 11,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:15.344089",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

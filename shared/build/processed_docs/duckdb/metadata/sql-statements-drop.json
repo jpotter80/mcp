@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "statements/drop.js",
+  "redirect_from": [
+    "/docs/sql/statements/drop"
+  ],
+  "title": "DROP Statement",
+  "file_name": "drop.md",
+  "file_stem": "drop",
+  "file_path": "sql/statements/drop.md",
+  "file_size": 3224,
+  "document_id": "sql-statements-drop",
+  "url": "/sql/statements/drop",
+  "content_hash": "ad92f690241bdb8526efd321f622843d",
+  "statistics": {
+    "char_count": 3071,
+    "word_count": 514,
+    "line_count": 135,
+    "paragraph_count": 39,
+    "header_count": 6,
+    "code_block_count": 15,
+    "code_lines": 27
+  },
+  "processed_at": "2025-11-22T10:32:15.771027",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Dependencies of Dropped Objects",
+      "anchor": "dependencies-of-dropped-objects"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 3,
+      "title": "Dependencies on Views",
+      "anchor": "dependencies-on-views"
+    },
+    {
+      "level": 2,
+      "title": "Limitations on Reclaiming Disk Space",
+      "anchor": "limitations-on-reclaiming-disk-space"
+    }
+  ]
+}

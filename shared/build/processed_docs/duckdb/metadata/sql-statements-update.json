@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "statements/update.js",
+  "redirect_from": [
+    "/docs/sql/statements/update"
+  ],
+  "title": "UPDATE Statement",
+  "file_name": "update.md",
+  "file_stem": "update",
+  "file_path": "sql/statements/update.md",
+  "file_size": 3275,
+  "document_id": "sql-statements-update",
+  "url": "/sql/statements/update",
+  "content_hash": "451e7364f89ffac7cb4ef90b37506166",
+  "statistics": {
+    "char_count": 2938,
+    "word_count": 506,
+    "line_count": 126,
+    "paragraph_count": 31,
+    "header_count": 6,
+    "code_block_count": 10,
+    "code_lines": 48
+  },
+  "processed_at": "2025-11-22T10:32:16.012167",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Update from Other Table",
+      "anchor": "update-from-other-table"
+    },
+    {
+      "level": 2,
+      "title": "Update from Same Table",
+      "anchor": "update-from-same-table"
+    },
+    {
+      "level": 2,
+      "title": "Update Using Joins",
+      "anchor": "update-using-joins"
+    },
+    {
+      "level": 2,
+      "title": "Upsert (Insert or Update)",
+      "anchor": "upsert-insert-or-update"
+    }
+  ]
+}

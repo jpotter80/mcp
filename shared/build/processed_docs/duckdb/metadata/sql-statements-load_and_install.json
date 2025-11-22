@@ -1,0 +1,57 @@
+{
+  "layout": "docu",
+  "railroad": "statements/load_and_install.js",
+  "redirect_from": [
+    "/docs/sql/statements/load_and_install"
+  ],
+  "title": "LOAD / INSTALL Statements",
+  "file_name": "load_and_install.md",
+  "file_stem": "load_and_install",
+  "file_path": "sql/statements/load_and_install.md",
+  "file_size": 947,
+  "document_id": "sql-statements-load_and_install",
+  "url": "/sql/statements/load_and_install",
+  "content_hash": "86bdbfe119c7b62d614a2697da837647",
+  "statistics": {
+    "char_count": 737,
+    "word_count": 86,
+    "line_count": 39,
+    "paragraph_count": 16,
+    "header_count": 6,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:15.835487",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`INSTALL`",
+      "anchor": "install"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`LOAD`",
+      "anchor": "load"
+    },
+    {
+      "level": 3,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

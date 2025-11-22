@@ -1,0 +1,84 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/spatial/r-tree_indexes",
+    "/docs/stable/extensions/spatial/r-tree_indexes/",
+    "/docs/extensions/spatial/r-tree_indexes",
+    "/docs/extensions/spatial/r-tree_indexes/"
+  ],
+  "title": "R-Tree Indexes",
+  "file_name": "r-tree_indexes.md",
+  "file_stem": "r-tree_indexes",
+  "file_path": "core_extensions/spatial/r-tree_indexes.md",
+  "file_size": 15079,
+  "document_id": "core_extensions-spatial-r-tree_indexes",
+  "url": "/core_extensions/spatial/r-tree_indexes",
+  "content_hash": "6bf66fcae23c3fc253ac91d0b0aec41f",
+  "statistics": {
+    "char_count": 12073,
+    "word_count": 1917,
+    "line_count": 191,
+    "paragraph_count": 48,
+    "header_count": 11,
+    "code_block_count": 8,
+    "code_lines": 91
+  },
+  "processed_at": "2025-11-22T10:32:09.141322",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Why Should I Use an R-Tree Index?",
+      "anchor": "why-should-i-use-an-r-tree-index"
+    },
+    {
+      "level": 2,
+      "title": "How Do R-Tree Indexes Work?",
+      "anchor": "how-do-r-tree-indexes-work"
+    },
+    {
+      "level": 2,
+      "title": "What Are the Limitations of R-Tree Indexes in DuckDB?",
+      "anchor": "what-are-the-limitations-of-r-tree-indexes-in-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "How to Use R-Tree Indexes in DuckDB",
+      "anchor": "how-to-use-r-tree-indexes-in-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 2,
+      "title": "Performance Considerations",
+      "anchor": "performance-considerations"
+    },
+    {
+      "level": 3,
+      "title": "Bulk Loading & Maintenance",
+      "anchor": "bulk-loading-maintenance"
+    },
+    {
+      "level": 3,
+      "title": "Memory Usage",
+      "anchor": "memory-usage"
+    },
+    {
+      "level": 3,
+      "title": "Tuning",
+      "anchor": "tuning"
+    },
+    {
+      "level": 2,
+      "title": "Options",
+      "anchor": "options"
+    },
+    {
+      "level": 2,
+      "title": "R-Tree Table Functions",
+      "anchor": "r-tree-table-functions"
+    }
+  ]
+}

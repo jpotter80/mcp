@@ -1,0 +1,77 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/working_with_extensions",
+    "/docs/stable/core_extensions/working_with_extensions"
+  ],
+  "title": "Installing Extensions",
+  "file_name": "installing_extensions.md",
+  "file_stem": "installing_extensions",
+  "file_path": "extensions/installing_extensions.md",
+  "file_size": 7533,
+  "document_id": "extensions-installing_extensions",
+  "url": "/extensions/installing_extensions",
+  "content_hash": "d8a27caeb8b284392cd61d1f9e210c0b",
+  "statistics": {
+    "char_count": 6820,
+    "word_count": 874,
+    "line_count": 164,
+    "paragraph_count": 52,
+    "header_count": 10,
+    "code_block_count": 14,
+    "code_lines": 21
+  },
+  "processed_at": "2025-11-22T10:32:10.757032",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Extension Repositories",
+      "anchor": "extension-repositories"
+    },
+    {
+      "level": 3,
+      "title": "Installing Extensions from Different Repositories",
+      "anchor": "installing-extensions-from-different-repositories"
+    },
+    {
+      "level": 2,
+      "title": "Working with Multiple Repositories",
+      "anchor": "working-with-multiple-repositories"
+    },
+    {
+      "level": 2,
+      "title": "Force Installing to Upgrade Extensions",
+      "anchor": "force-installing-to-upgrade-extensions"
+    },
+    {
+      "level": 3,
+      "title": "Switching between Repositories",
+      "anchor": "switching-between-repositories"
+    },
+    {
+      "level": 2,
+      "title": "Installing Extensions through Client APIs",
+      "anchor": "installing-extensions-through-client-apis"
+    },
+    {
+      "level": 2,
+      "title": "Installation Location",
+      "anchor": "installation-location"
+    },
+    {
+      "level": 2,
+      "title": "Uninstalling Extensions",
+      "anchor": "uninstalling-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Sharing Extensions between Clients",
+      "anchor": "sharing-extensions-between-clients"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

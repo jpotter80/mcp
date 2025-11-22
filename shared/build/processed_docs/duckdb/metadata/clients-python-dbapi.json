@@ -1,0 +1,138 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/python/dbapi",
+    "/docs/api/python/dbapi/",
+    "/docs/clients/python/dbapi"
+  ],
+  "title": "Python DB API",
+  "file_name": "dbapi.md",
+  "file_stem": "dbapi",
+  "file_path": "clients/python/dbapi.md",
+  "file_size": 7695,
+  "document_id": "clients-python-dbapi",
+  "url": "/clients/python/dbapi",
+  "content_hash": "155d906cf9125edc232f329191919427",
+  "statistics": {
+    "char_count": 7429,
+    "word_count": 1034,
+    "line_count": 167,
+    "paragraph_count": 47,
+    "header_count": 22,
+    "code_block_count": 12,
+    "code_lines": 65
+  },
+  "processed_at": "2025-11-22T10:32:04.693498",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Connection",
+      "anchor": "connection"
+    },
+    {
+      "level": 3,
+      "title": "In-Memory Connection",
+      "anchor": "in-memory-connection"
+    },
+    {
+      "level": 4,
+      "title": "Named In-memory Connections",
+      "anchor": "named-in-memory-connections"
+    },
+    {
+      "level": 3,
+      "title": "Default Connection",
+      "anchor": "default-connection"
+    },
+    {
+      "level": 3,
+      "title": "File-Based Connection",
+      "anchor": "file-based-connection"
+    },
+    {
+      "level": 4,
+      "title": "`read_only` Connections",
+      "anchor": "read_only-connections"
+    },
+    {
+      "level": 1,
+      "title": "or",
+      "anchor": "or"
+    },
+    {
+      "level": 1,
+      "title": "to start an in-memory database",
+      "anchor": "to-start-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "to use a database file (not shared between processes)",
+      "anchor": "to-use-a-database-file-not-shared-between-processes"
+    },
+    {
+      "level": 1,
+      "title": "to use a database file (shared between processes)",
+      "anchor": "to-use-a-database-file-shared-between-processes"
+    },
+    {
+      "level": 1,
+      "title": "to explicitly get the default connection",
+      "anchor": "to-explicitly-get-the-default-connection"
+    },
+    {
+      "level": 2,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 1,
+      "title": "create a table",
+      "anchor": "create-a-table"
+    },
+    {
+      "level": 1,
+      "title": "insert two items into the table",
+      "anchor": "insert-two-items-into-the-table"
+    },
+    {
+      "level": 1,
+      "title": "retrieve the items again",
+      "anchor": "retrieve-the-items-again"
+    },
+    {
+      "level": 1,
+      "title": "[('jeans', Decimal('20.00'), 1), ('hammer', Decimal('42.20'), 2)]",
+      "anchor": "jeans-decimal2000-1-hammer-decimal4220-2"
+    },
+    {
+      "level": 1,
+      "title": "retrieve the items one at a time",
+      "anchor": "retrieve-the-items-one-at-a-time"
+    },
+    {
+      "level": 1,
+      "title": "('jeans', Decimal('20.00'), 1)",
+      "anchor": "jeans-decimal2000-1"
+    },
+    {
+      "level": 1,
+      "title": "('hammer', Decimal('42.20'), 2)",
+      "anchor": "hammer-decimal4220-2"
+    },
+    {
+      "level": 1,
+      "title": "None",
+      "anchor": "none"
+    },
+    {
+      "level": 3,
+      "title": "Prepared Statements",
+      "anchor": "prepared-statements"
+    },
+    {
+      "level": 2,
+      "title": "Named Parameters",
+      "anchor": "named-parameters"
+    }
+  ]
+}

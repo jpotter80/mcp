@@ -1,0 +1,102 @@
+{
+  "layout": "docu",
+  "railroad": "statements/insert.js",
+  "redirect_from": [
+    "/docs/sql/statements/insert"
+  ],
+  "title": "INSERT Statement",
+  "file_name": "insert.md",
+  "file_stem": "insert",
+  "file_path": "sql/statements/insert.md",
+  "file_size": 11785,
+  "document_id": "sql-statements-insert",
+  "url": "/sql/statements/insert",
+  "content_hash": "e6dcf4a5e6adf744b10a6e543ce63fa6",
+  "statistics": {
+    "char_count": 11422,
+    "word_count": 1991,
+    "line_count": 388,
+    "paragraph_count": 99,
+    "header_count": 15,
+    "code_block_count": 31,
+    "code_lines": 125
+  },
+  "processed_at": "2025-11-22T10:32:15.810816",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Insert Column Order",
+      "anchor": "insert-column-order"
+    },
+    {
+      "level": 3,
+      "title": "`INSERT INTO ... [BY POSITION]`",
+      "anchor": "insert-into-by-position"
+    },
+    {
+      "level": 3,
+      "title": "`INSERT INTO ... BY NAME`",
+      "anchor": "insert-into-by-name"
+    },
+    {
+      "level": 2,
+      "title": "`ON CONFLICT` Clause",
+      "anchor": "on-conflict-clause"
+    },
+    {
+      "level": 3,
+      "title": "`DO NOTHING` Clause",
+      "anchor": "do-nothing-clause"
+    },
+    {
+      "level": 4,
+      "title": "`INSERT OR IGNORE INTO`",
+      "anchor": "insert-or-ignore-into"
+    },
+    {
+      "level": 3,
+      "title": "`DO UPDATE` Clause (Upsert)",
+      "anchor": "do-update-clause-upsert"
+    },
+    {
+      "level": 4,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 4,
+      "title": "`INSERT OR REPLACE INTO`",
+      "anchor": "insert-or-replace-into"
+    },
+    {
+      "level": 4,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 4,
+      "title": "Composite Primary Key",
+      "anchor": "composite-primary-key"
+    },
+    {
+      "level": 3,
+      "title": "Defining a Conflict Target",
+      "anchor": "defining-a-conflict-target"
+    },
+    {
+      "level": 2,
+      "title": "`RETURNING` Clause",
+      "anchor": "returning-clause"
+    }
+  ]
+}

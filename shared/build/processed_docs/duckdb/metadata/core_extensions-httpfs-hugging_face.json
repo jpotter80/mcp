@@ -1,0 +1,64 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/httpfs/hugging_face",
+    "/docs/extensions/httpfs/hugging_face/",
+    "/docs/stable/extensions/httpfs/hugging_face",
+    "/docs/stable/extensions/httpfs/hugging_face/"
+  ],
+  "title": "Hugging Face Support",
+  "file_name": "hugging_face.md",
+  "file_stem": "hugging_face",
+  "file_path": "core_extensions/httpfs/hugging_face.md",
+  "file_size": 4794,
+  "document_id": "core_extensions-httpfs-hugging_face",
+  "url": "/core_extensions/httpfs/hugging_face",
+  "content_hash": "dd5eba34e37cf69127dd66dfc280c48c",
+  "statistics": {
+    "char_count": 4465,
+    "word_count": 597,
+    "line_count": 145,
+    "paragraph_count": 43,
+    "header_count": 7,
+    "code_block_count": 12,
+    "code_lines": 28
+  },
+  "processed_at": "2025-11-22T10:32:08.128987",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Creating a Local Table",
+      "anchor": "creating-a-local-table"
+    },
+    {
+      "level": 2,
+      "title": "Multiple Files",
+      "anchor": "multiple-files"
+    },
+    {
+      "level": 2,
+      "title": "Versioning and Revisions",
+      "anchor": "versioning-and-revisions"
+    },
+    {
+      "level": 2,
+      "title": "Authentication",
+      "anchor": "authentication"
+    },
+    {
+      "level": 3,
+      "title": "`CONFIG`",
+      "anchor": "config"
+    },
+    {
+      "level": 3,
+      "title": "`credential_chain`",
+      "anchor": "credential_chain"
+    }
+  ]
+}

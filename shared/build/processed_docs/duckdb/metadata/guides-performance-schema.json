@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/schema"
+  ],
+  "title": "Schema",
+  "file_name": "schema.md",
+  "file_stem": "schema",
+  "file_path": "guides/performance/schema.md",
+  "file_size": 5727,
+  "document_id": "guides-performance-schema",
+  "url": "/guides/performance/schema",
+  "content_hash": "b99e9faed02dfda3543f3adaa1b85260",
+  "statistics": {
+    "char_count": 5433,
+    "word_count": 808,
+    "line_count": 83,
+    "paragraph_count": 28,
+    "header_count": 5,
+    "code_block_count": 3,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:11.380007",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Types",
+      "anchor": "types"
+    },
+    {
+      "level": 3,
+      "title": "Microbenchmark: Using Timestamps",
+      "anchor": "microbenchmark-using-timestamps"
+    },
+    {
+      "level": 3,
+      "title": "Microbenchmark: Joining on Strings",
+      "anchor": "microbenchmark-joining-on-strings"
+    },
+    {
+      "level": 2,
+      "title": "Constraints",
+      "anchor": "constraints"
+    },
+    {
+      "level": 3,
+      "title": "Microbenchmark: The Effect of Primary Keys",
+      "anchor": "microbenchmark-the-effect-of-primary-keys"
+    }
+  ]
+}

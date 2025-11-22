@@ -1,0 +1,49 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-httpfs",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/httpfs",
+    "/docs/extensions/httpfs/",
+    "/docs/extensions/httpfs/overview",
+    "/docs/extensions/httpfs/overview/",
+    "/docs/stable/extensions/httpfs",
+    "/docs/stable/extensions/httpfs/",
+    "/docs/stable/extensions/httpfs/overview",
+    "/docs/stable/extensions/httpfs/overview/"
+  ],
+  "title": "httpfs Extension for HTTP and S3 Support",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "core_extensions/httpfs/overview.md",
+  "file_size": 1285,
+  "document_id": "core_extensions-httpfs-overview",
+  "url": "/core_extensions/httpfs/overview",
+  "content_hash": "84cd96940144decf1955759c295b615a",
+  "statistics": {
+    "char_count": 864,
+    "word_count": 106,
+    "line_count": 21,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:08.139114",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation and Loading",
+      "anchor": "installation-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "HTTP(S)",
+      "anchor": "https"
+    },
+    {
+      "level": 2,
+      "title": "S3 API",
+      "anchor": "s3-api"
+    }
+  ]
+}

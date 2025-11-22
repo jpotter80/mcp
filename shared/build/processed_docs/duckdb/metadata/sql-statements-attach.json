@@ -1,0 +1,97 @@
+{
+  "layout": "docu",
+  "railroad": "statements/attach.js",
+  "redirect_from": [
+    "/docs/sql/statements/attach"
+  ],
+  "title": "ATTACH and DETACH Statements",
+  "file_name": "attach.md",
+  "file_stem": "attach",
+  "file_path": "sql/statements/attach.md",
+  "file_size": 12309,
+  "document_id": "sql-statements-attach",
+  "url": "/sql/statements/attach",
+  "content_hash": "b17aa1c10599d064ab346a56d25996b8",
+  "statistics": {
+    "char_count": 11296,
+    "word_count": 1602,
+    "line_count": 302,
+    "paragraph_count": 102,
+    "header_count": 14,
+    "code_block_count": 36,
+    "code_lines": 51
+  },
+  "processed_at": "2025-11-22T10:32:15.489692",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "`ATTACH`",
+      "anchor": "attach"
+    },
+    {
+      "level": 3,
+      "title": "`ATTACH` Syntax",
+      "anchor": "attach-syntax"
+    },
+    {
+      "level": 3,
+      "title": "Explicit Storage Versions",
+      "anchor": "explicit-storage-versions"
+    },
+    {
+      "level": 3,
+      "title": "Database Encryption",
+      "anchor": "database-encryption"
+    },
+    {
+      "level": 3,
+      "title": "Options",
+      "anchor": "options"
+    },
+    {
+      "level": 2,
+      "title": "`DETACH`",
+      "anchor": "detach"
+    },
+    {
+      "level": 3,
+      "title": "`DETACH` Syntax",
+      "anchor": "detach-syntax"
+    },
+    {
+      "level": 2,
+      "title": "Name Qualification",
+      "anchor": "name-qualification"
+    },
+    {
+      "level": 3,
+      "title": "Default Database and Schema",
+      "anchor": "default-database-and-schema"
+    },
+    {
+      "level": 3,
+      "title": "Changing the Default Database and Schema",
+      "anchor": "changing-the-default-database-and-schema"
+    },
+    {
+      "level": 3,
+      "title": "Resolving Conflicts",
+      "anchor": "resolving-conflicts"
+    },
+    {
+      "level": 3,
+      "title": "Changing the Catalog Search Path",
+      "anchor": "changing-the-catalog-search-path"
+    },
+    {
+      "level": 2,
+      "title": "Transactional Semantics",
+      "anchor": "transactional-semantics"
+    }
+  ]
+}

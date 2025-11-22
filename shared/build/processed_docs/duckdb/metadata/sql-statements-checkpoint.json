@@ -1,0 +1,52 @@
+{
+  "layout": "docu",
+  "railroad": "statements/checkpoint.js",
+  "redirect_from": [
+    "/docs/sql/statements/checkpoint"
+  ],
+  "title": "CHECKPOINT Statement",
+  "file_name": "checkpoint.md",
+  "file_stem": "checkpoint",
+  "file_path": "sql/statements/checkpoint.md",
+  "file_size": 2112,
+  "document_id": "sql-statements-checkpoint",
+  "url": "/sql/statements/checkpoint",
+  "content_hash": "3117bc19228c7705e3c2f950fb0e2ee3",
+  "statistics": {
+    "char_count": 1942,
+    "word_count": 261,
+    "line_count": 54,
+    "paragraph_count": 22,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 5
+  },
+  "processed_at": "2025-11-22T10:32:15.520477",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Checkpointing In-Memory Tables",
+      "anchor": "checkpointing-in-memory-tables"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Behavior",
+      "anchor": "behavior"
+    },
+    {
+      "level": 3,
+      "title": "Reclaiming Space",
+      "anchor": "reclaiming-space"
+    }
+  ]
+}

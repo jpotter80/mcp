@@ -1,0 +1,36 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/raspberry_pi"
+  ],
+  "title": "Raspberry Pi",
+  "file_name": "raspberry_pi.md",
+  "file_stem": "raspberry_pi",
+  "file_path": "dev/building/raspberry_pi.md",
+  "file_size": 1024,
+  "document_id": "dev-building-raspberry_pi",
+  "url": "/dev/building/raspberry_pi",
+  "content_hash": "a66659f3374a4657924abe76780a3d75",
+  "statistics": {
+    "char_count": 926,
+    "word_count": 119,
+    "line_count": 40,
+    "paragraph_count": 11,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 12
+  },
+  "processed_at": "2025-11-22T10:32:10.367473",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Raspberry Pi (64-bit)",
+      "anchor": "raspberry-pi-64-bit"
+    },
+    {
+      "level": 2,
+      "title": "Raspberry Pi (32-bit)",
+      "anchor": "raspberry-pi-32-bit"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/multiple_threads"
+  ],
+  "title": "Multiple Python Threads",
+  "file_name": "multiple_threads.md",
+  "file_stem": "multiple_threads",
+  "file_path": "guides/python/multiple_threads.md",
+  "file_size": 4361,
+  "document_id": "guides-python-multiple_threads",
+  "url": "/guides/python/multiple_threads",
+  "content_hash": "da3fcd2a0f414b16f023c8add43799bd",
+  "statistics": {
+    "char_count": 3997,
+    "word_count": 552,
+    "line_count": 110,
+    "paragraph_count": 20,
+    "header_count": 11,
+    "code_block_count": 4,
+    "code_lines": 69
+  },
+  "processed_at": "2025-11-22T10:32:11.757543",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Setup",
+      "anchor": "setup"
+    },
+    {
+      "level": 1,
+      "title": "Use connect without parameters for an in-memory database",
+      "anchor": "use-connect-without-parameters-for-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "duckdb_con = duckdb.connect()",
+      "anchor": "duckdb_con-duckdbconnect"
+    },
+    {
+      "level": 2,
+      "title": "Reader and Writer Functions",
+      "anchor": "reader-and-writer-functions"
+    },
+    {
+      "level": 2,
+      "title": "Create Threads",
+      "anchor": "create-threads"
+    },
+    {
+      "level": 1,
+      "title": "Create multiple writer and reader threads (in the same process)",
+      "anchor": "create-multiple-writer-and-reader-threads-in-the-same-process"
+    },
+    {
+      "level": 1,
+      "title": "Pass in the same connection as an argument",
+      "anchor": "pass-in-the-same-connection-as-an-argument"
+    },
+    {
+      "level": 1,
+      "title": "Shuffle the threads to simulate a mix of readers and writers",
+      "anchor": "shuffle-the-threads-to-simulate-a-mix-of-readers-and-writers"
+    },
+    {
+      "level": 2,
+      "title": "Run Threads and Show Results",
+      "anchor": "run-threads-and-show-results"
+    },
+    {
+      "level": 1,
+      "title": "Kick off all threads in parallel",
+      "anchor": "kick-off-all-threads-in-parallel"
+    },
+    {
+      "level": 1,
+      "title": "Ensure all threads complete before printing final results",
+      "anchor": "ensure-all-threads-complete-before-printing-final-results"
+    }
+  ]
+}

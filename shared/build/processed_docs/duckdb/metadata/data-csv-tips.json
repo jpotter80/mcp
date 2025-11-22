@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/csv/tips"
+  ],
+  "title": "CSV Import Tips",
+  "file_name": "tips.md",
+  "file_stem": "tips",
+  "file_path": "data/csv/tips.md",
+  "file_size": 2330,
+  "document_id": "data-csv-tips",
+  "url": "/data/csv/tips",
+  "content_hash": "52ee2e9383595163427c7e769f996fe9",
+  "statistics": {
+    "char_count": 2242,
+    "word_count": 340,
+    "line_count": 57,
+    "paragraph_count": 21,
+    "header_count": 6,
+    "code_block_count": 7,
+    "code_lines": 8
+  },
+  "processed_at": "2025-11-22T10:32:09.504827",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Override the Header Flag if the Header Is Not Correctly Detected",
+      "anchor": "override-the-header-flag-if-the-header-is-not-correctly-detected"
+    },
+    {
+      "level": 2,
+      "title": "Provide Names if the File Does Not Contain a Header",
+      "anchor": "provide-names-if-the-file-does-not-contain-a-header"
+    },
+    {
+      "level": 2,
+      "title": "Override the Types of Specific Columns",
+      "anchor": "override-the-types-of-specific-columns"
+    },
+    {
+      "level": 2,
+      "title": "Use `COPY` When Loading Data into a Table",
+      "anchor": "use-copy-when-loading-data-into-a-table"
+    },
+    {
+      "level": 2,
+      "title": "Use `union_by_name` When Loading Files with Different Schemas",
+      "anchor": "use-union_by_name-when-loading-files-with-different-schemas"
+    },
+    {
+      "level": 2,
+      "title": "Sample Size",
+      "anchor": "sample-size"
+    }
+  ]
+}

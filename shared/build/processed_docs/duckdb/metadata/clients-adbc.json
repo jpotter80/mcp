@@ -1,0 +1,108 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/adbc",
+    "/docs/api/adbc/",
+    "/docs/clients/adbc"
+  ],
+  "title": "ADBC Client",
+  "file_name": "adbc.md",
+  "file_stem": "adbc",
+  "file_path": "clients/adbc.md",
+  "file_size": 19121,
+  "document_id": "clients-adbc",
+  "url": "/clients/adbc",
+  "content_hash": "1685ae1b3582a8e33904ec2041050a14",
+  "statistics": {
+    "char_count": 18441,
+    "word_count": 2276,
+    "line_count": 416,
+    "paragraph_count": 101,
+    "header_count": 16,
+    "code_block_count": 15,
+    "code_lines": 210
+  },
+  "processed_at": "2025-11-22T10:32:00.275415",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Implemented Functionality",
+      "anchor": "implemented-functionality"
+    },
+    {
+      "level": 3,
+      "title": "Database",
+      "anchor": "database"
+    },
+    {
+      "level": 3,
+      "title": "Connection",
+      "anchor": "connection"
+    },
+    {
+      "level": 3,
+      "title": "Statement",
+      "anchor": "statement"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up the DuckDB ADBC Driver",
+      "anchor": "setting-up-the-duckdb-adbc-driver"
+    },
+    {
+      "level": 3,
+      "title": "Downloading libduckdb",
+      "anchor": "downloading-libduckdb"
+    },
+    {
+      "level": 3,
+      "title": "Installing the Library",
+      "anchor": "installing-the-library"
+    },
+    {
+      "level": 4,
+      "title": "Linux",
+      "anchor": "linux"
+    },
+    {
+      "level": 4,
+      "title": "macOS",
+      "anchor": "macos"
+    },
+    {
+      "level": 4,
+      "title": "Windows",
+      "anchor": "windows"
+    },
+    {
+      "level": 3,
+      "title": "Understanding Library Paths",
+      "anchor": "understanding-library-paths"
+    },
+    {
+      "level": 3,
+      "title": "Verifying Installation",
+      "anchor": "verifying-installation"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "C++",
+      "anchor": "c"
+    },
+    {
+      "level": 3,
+      "title": "Python",
+      "anchor": "python"
+    },
+    {
+      "level": 3,
+      "title": "Go",
+      "anchor": "go"
+    }
+  ]
+}

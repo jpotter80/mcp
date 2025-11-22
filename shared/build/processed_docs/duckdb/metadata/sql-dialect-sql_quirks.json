@@ -1,0 +1,91 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/dialect/sql_quirks"
+  ],
+  "title": "SQL Quirks",
+  "file_name": "sql_quirks.md",
+  "file_stem": "sql_quirks",
+  "file_path": "sql/dialect/sql_quirks.md",
+  "file_size": 5632,
+  "document_id": "sql-dialect-sql_quirks",
+  "url": "/sql/dialect/sql_quirks",
+  "content_hash": "49d938bdd4c87b3051cf46fef4e1c280",
+  "statistics": {
+    "char_count": 4682,
+    "word_count": 699,
+    "line_count": 83,
+    "paragraph_count": 29,
+    "header_count": 13,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:13.038738",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Aggregating Empty Groups",
+      "anchor": "aggregating-empty-groups"
+    },
+    {
+      "level": 2,
+      "title": "0 vs. 1-Based Indexing",
+      "anchor": "0-vs-1-based-indexing"
+    },
+    {
+      "level": 2,
+      "title": "Types",
+      "anchor": "types"
+    },
+    {
+      "level": 3,
+      "title": "`UINT8` vs. `INT8`",
+      "anchor": "uint8-vs-int8"
+    },
+    {
+      "level": 2,
+      "title": "Expressions",
+      "anchor": "expressions"
+    },
+    {
+      "level": 3,
+      "title": "Results That May Surprise You",
+      "anchor": "results-that-may-surprise-you"
+    },
+    {
+      "level": 3,
+      "title": "`NaN` Values",
+      "anchor": "nan-values"
+    },
+    {
+      "level": 3,
+      "title": "`age` Function",
+      "anchor": "age-function"
+    },
+    {
+      "level": 3,
+      "title": "Extract Functions",
+      "anchor": "extract-functions"
+    },
+    {
+      "level": 2,
+      "title": "Clauses",
+      "anchor": "clauses"
+    },
+    {
+      "level": 3,
+      "title": "Automatic Column Deduplication in `SELECT`",
+      "anchor": "automatic-column-deduplication-in-select"
+    },
+    {
+      "level": 3,
+      "title": "Case Insensitivity for `SELECT`ing Columns",
+      "anchor": "case-insensitivity-for-selecting-columns"
+    },
+    {
+      "level": 3,
+      "title": "`USING SAMPLE`",
+      "anchor": "using-sample"
+    }
+  ]
+}

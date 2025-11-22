@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/dev/building/macos"
+  ],
+  "title": "macOS",
+  "file_name": "macos.md",
+  "file_stem": "macos",
+  "file_path": "dev/building/macos.md",
+  "file_size": 3750,
+  "document_id": "dev-building-macos",
+  "url": "/dev/building/macos",
+  "content_hash": "a5eaa1867e7304014a3c036b06fd5001",
+  "statistics": {
+    "char_count": 3658,
+    "word_count": 265,
+    "line_count": 73,
+    "paragraph_count": 23,
+    "header_count": 5,
+    "code_block_count": 8,
+    "code_lines": 15
+  },
+  "processed_at": "2025-11-22T10:32:10.288593",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Building DuckDB",
+      "anchor": "building-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Build Failure: `'string' file not found`",
+      "anchor": "build-failure-string-file-not-found"
+    },
+    {
+      "level": 3,
+      "title": "Debug Build Prints malloc Warning",
+      "anchor": "debug-build-prints-malloc-warning"
+    }
+  ]
+}

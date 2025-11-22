@@ -1,0 +1,45 @@
+{
+  "github_directory": "https://github.com/duckdb/duckdb-encodings",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/encodings",
+    "/docs/stable/extensions/encodings/",
+    "/docs/extensions/encodings",
+    "/docs/extensions/encodings/"
+  ],
+  "title": "Encodings Extension",
+  "file_name": "encodings.md",
+  "file_stem": "encodings",
+  "file_path": "core_extensions/encodings.md",
+  "file_size": 27380,
+  "document_id": "core_extensions-encodings",
+  "url": "/core_extensions/encodings",
+  "content_hash": "2ae5b5261b078cbff2e3f7c43310a59f",
+  "statistics": {
+    "char_count": 27098,
+    "word_count": 1203,
+    "line_count": 1088,
+    "paragraph_count": 16,
+    "header_count": 3,
+    "code_block_count": 5,
+    "code_lines": 6
+  },
+  "processed_at": "2025-11-22T10:32:07.884120",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 2,
+      "title": "All Supported Encodings",
+      "anchor": "all-supported-encodings"
+    }
+  ]
+}

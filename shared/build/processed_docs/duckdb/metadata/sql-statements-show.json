@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "title": "SHOW and SHOW DATABASE Statements",
+  "file_name": "show.md",
+  "file_stem": "show",
+  "file_path": "sql/statements/show.md",
+  "file_size": 575,
+  "document_id": "sql-statements-show",
+  "url": "/sql/statements/show",
+  "content_hash": "a9c8518c3d49b40776b9c7eb420386f8",
+  "statistics": {
+    "char_count": 495,
+    "word_count": 70,
+    "line_count": 27,
+    "paragraph_count": 8,
+    "header_count": 2,
+    "code_block_count": 2,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:15.951276",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`SHOW` Statement",
+      "anchor": "show-statement"
+    },
+    {
+      "level": 2,
+      "title": "`SHOW DATABASES` Statement",
+      "anchor": "show-databases-statement"
+    }
+  ]
+}

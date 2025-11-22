@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/json_import",
+    "/docs/guides/import/json_import/",
+    "/docs/guides/file_formats/json_import"
+  ],
+  "title": "JSON Import",
+  "file_name": "json_import.md",
+  "file_stem": "json_import",
+  "file_path": "guides/file_formats/json_import.md",
+  "file_size": 1027,
+  "document_id": "guides-file_formats-json_import",
+  "url": "/guides/file_formats/json_import",
+  "content_hash": "7dee8aa9bb64c8fccb2e0229d52fde42",
+  "statistics": {
+    "char_count": 849,
+    "word_count": 123,
+    "line_count": 30,
+    "paragraph_count": 9,
+    "header_count": 0,
+    "code_block_count": 4,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:10.936321",
+  "sections": []
+}

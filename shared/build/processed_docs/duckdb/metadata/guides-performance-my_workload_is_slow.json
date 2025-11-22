@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/my-workload-is-slow",
+    "/docs/guides/performance/my-workload-is-slow/",
+    "/docs/guides/performance/my_workload_is_slow"
+  ],
+  "title": "My Workload Is Slow",
+  "file_name": "my_workload_is_slow.md",
+  "file_stem": "my_workload_is_slow",
+  "file_path": "guides/performance/my_workload_is_slow.md",
+  "file_size": 2109,
+  "document_id": "guides-performance-my_workload_is_slow",
+  "url": "/guides/performance/my_workload_is_slow",
+  "content_hash": "b21718d6f6b1a071ca7f723bb5e512fe",
+  "statistics": {
+    "char_count": 1902,
+    "word_count": 236,
+    "line_count": 12,
+    "paragraph_count": 3,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:11.359214",
+  "sections": []
+}

@@ -1,0 +1,33 @@
+{
+  "layout": "docu",
+  "title": "Install Script",
+  "file_name": "install_script.md",
+  "file_stem": "install_script",
+  "file_path": "operations_manual/installing_duckdb/install_script.md",
+  "file_size": 2110,
+  "document_id": "operations_manual-installing_duckdb-install_script",
+  "url": "/operations_manual/installing_duckdb/install_script",
+  "content_hash": "e9e7d2377266df7eef43fde68c66315f",
+  "statistics": {
+    "char_count": 1765,
+    "word_count": 207,
+    "line_count": 56,
+    "paragraph_count": 18,
+    "header_count": 2,
+    "code_block_count": 4,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:12.228669",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Linux and macOS",
+      "anchor": "linux-and-macos"
+    },
+    {
+      "level": 2,
+      "title": "Windows",
+      "anchor": "windows"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/installing_and_loading"
+  ],
+  "title": "Installing and Loading the JSON extension",
+  "file_name": "installing_and_loading.md",
+  "file_stem": "installing_and_loading",
+  "file_path": "data/json/installing_and_loading.md",
+  "file_size": 414,
+  "document_id": "data-json-installing_and_loading",
+  "url": "/data/json/installing_and_loading",
+  "content_hash": "ff85c0fa1890303347002c67ce235500",
+  "statistics": {
+    "char_count": 286,
+    "word_count": 39,
+    "line_count": 6,
+    "paragraph_count": 2,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:09.552276",
+  "sections": []
+}

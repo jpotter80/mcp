@@ -1,0 +1,47 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/groupby.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/grouping_sets"
+  ],
+  "title": "GROUPING SETS",
+  "file_name": "grouping_sets.md",
+  "file_stem": "grouping_sets",
+  "file_path": "sql/query_syntax/grouping_sets.md",
+  "file_size": 9074,
+  "document_id": "sql-query_syntax-grouping_sets",
+  "url": "/sql/query_syntax/grouping_sets",
+  "content_hash": "156e05d1058fcd56450f5571a5a10282",
+  "statistics": {
+    "char_count": 7735,
+    "word_count": 1435,
+    "line_count": 192,
+    "paragraph_count": 31,
+    "header_count": 4,
+    "code_block_count": 8,
+    "code_lines": 71
+  },
+  "processed_at": "2025-11-22T10:32:15.216738",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Description",
+      "anchor": "description"
+    },
+    {
+      "level": 2,
+      "title": "Identifying Grouping Sets with `GROUPING_ID()`",
+      "anchor": "identifying-grouping-sets-with-grouping_id"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+Data chunks represent a horizontal slice of a table. They hold a number of [vectors]({% link docs/stable/clients/c/vector.md %}), that can each hold up to the `VECTOR_SIZE` rows. The vector size can be obtained through the `duckdb_vector_size` function and is configurable, but is usually set to `2048`.
+
+Data chunks and vectors are what DuckDB uses natively to store and represent data. For this reason, the data chunk interface is the most efficient way of interfacing with DuckDB. Be aware, however, that correctly interfacing with DuckDB using the data chunk API does require knowledge of DuckDB's internal vector format.
+
+Data chunks can be used in two manners:
+
+* **Reading Data**: Data chunks can be obtained from query results using the `duckdb_fetch_chunk` method, or as input to a user-defined function. In this case, the [vector methods]({% link docs/stable/clients/c/vector.md %}) can be used to read individual values.
+* **Writing Data**: Data chunks can be created using `duckdb_create_data_chunk`. The data chunk can then be filled with values and used in `duckdb_append_data_chunk` to write data to the database.
+
+The primary manner of interfacing with data chunks is by obtaining the internal vectors of the data chunk using the `duckdb_data_chunk_get_vector` method. Afterwards, the [vector methods]({% link docs/stable/clients/c/vector.md %}) can be used to read from or write to the individual vectors.
+
+## API Reference Overview
+
+duckdb_data_chunk duckdb_create_data_chunk(duckdb_logical_type *types, idx_t column_count);
+void duckdb_destroy_data_chunk(duckdb_data_chunk *chunk);
+void duckdb_data_chunk_reset(duckdb_data_chunk chunk);
+idx_t duckdb_data_chunk_get_column_count(duckdb_data_chunk chunk);
+duckdb_vector duckdb_data_chunk_get_vector(duckdb_data_chunk chunk, idx_t col_idx);
+idx_t duckdb_data_chunk_get_size(duckdb_data_chunk chunk);
+void duckdb_data_chunk_set_size(duckdb_data_chunk chunk, idx_t size);
+
+#### `duckdb_create_data_chunk`
+
+Creates an empty data chunk with the specified column types.
+The result must be destroyed with `duckdb_destroy_data_chunk`.
+
+##### Syntax
+
+duckdb_data_chunk duckdb_create_data_chunk(
+ duckdb_logical_type *types,
+ idx_t column_count
+);
+
+##### Parameters
+
+* `types`: An array of column types. Column types can not contain ANY and INVALID types.
+* `column_count`: The number of columns.
+
+##### Return Value
+
+The data chunk.
+
+#### `duckdb_destroy_data_chunk`
+
+Destroys the data chunk and de-allocates all memory allocated for that chunk.
+
+##### Syntax
+
+void duckdb_destroy_data_chunk(
+ duckdb_data_chunk *chunk
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to destroy.
+
+#### `duckdb_data_chunk_reset`
+
+Resets a data chunk, clearing the validity masks and setting the cardinality of the data chunk to 0.
+After calling this method, you must call `duckdb_vector_get_validity` and `duckdb_vector_get_data` to obtain current
+data and validity pointers
+
+##### Syntax
+
+void duckdb_data_chunk_reset(
+ duckdb_data_chunk chunk
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to reset.
+
+#### `duckdb_data_chunk_get_column_count`
+
+Retrieves the number of columns in a data chunk.
+
+##### Syntax
+
+idx_t duckdb_data_chunk_get_column_count(
+ duckdb_data_chunk chunk
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to get the data from
+
+##### Return Value
+
+The number of columns in the data chunk
+
+#### `duckdb_data_chunk_get_vector`
+
+Retrieves the vector at the specified column index in the data chunk.
+
+The pointer to the vector is valid for as long as the chunk is alive.
+It does NOT need to be destroyed.
+
+##### Syntax
+
+duckdb_vector duckdb_data_chunk_get_vector(
+ duckdb_data_chunk chunk,
+ idx_t col_idx
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to get the data from
+
+##### Return Value
+
+The vector
+
+#### `duckdb_data_chunk_get_size`
+
+Retrieves the current number of tuples in a data chunk.
+
+##### Syntax
+
+idx_t duckdb_data_chunk_get_size(
+ duckdb_data_chunk chunk
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to get the data from
+
+##### Return Value
+
+The number of tuples in the data chunk
+
+#### `duckdb_data_chunk_set_size`
+
+Sets the current number of tuples in a data chunk.
+
+##### Syntax
+
+void duckdb_data_chunk_set_size(
+ duckdb_data_chunk chunk,
+ idx_t size
+);
+
+##### Parameters
+
+* `chunk`: The data chunk to set the size in
+* `size`: The number of tuples in the data chunk

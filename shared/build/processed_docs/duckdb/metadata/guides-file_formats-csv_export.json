@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/import/csv_export",
+    "/docs/guides/import/csv_export/",
+    "/docs/guides/file_formats/csv_export"
+  ],
+  "title": "CSV Export",
+  "file_name": "csv_export.md",
+  "file_stem": "csv_export",
+  "file_path": "guides/file_formats/csv_export.md",
+  "file_size": 568,
+  "document_id": "guides-file_formats-csv_export",
+  "url": "/guides/file_formats/csv_export",
+  "content_hash": "949ff5c310e8a6d16178a819573b16cd",
+  "statistics": {
+    "char_count": 406,
+    "word_count": 60,
+    "line_count": 13,
+    "paragraph_count": 5,
+    "header_count": 0,
+    "code_block_count": 2,
+    "code_lines": 2
+  },
+  "processed_at": "2025-11-22T10:32:10.893909",
+  "sections": []
+}

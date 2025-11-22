@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/execute_sql"
+  ],
+  "title": "Executing SQL in Python",
+  "file_name": "execute_sql.md",
+  "file_stem": "execute_sql",
+  "file_path": "guides/python/execute_sql.md",
+  "file_size": 1210,
+  "document_id": "guides-python-execute_sql",
+  "url": "/guides/python/execute_sql",
+  "content_hash": "eef18557a83607a5a4acc0329faa2f2d",
+  "statistics": {
+    "char_count": 1103,
+    "word_count": 157,
+    "line_count": 41,
+    "paragraph_count": 12,
+    "header_count": 0,
+    "code_block_count": 6,
+    "code_lines": 14
+  },
+  "processed_at": "2025-11-22T10:32:11.399549",
+  "sections": []
+}

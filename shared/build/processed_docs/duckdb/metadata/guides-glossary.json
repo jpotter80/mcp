@@ -1,0 +1,51 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/glossary"
+  ],
+  "title": "Glossary of Terms",
+  "file_name": "glossary.md",
+  "file_stem": "glossary",
+  "file_path": "guides/glossary.md",
+  "file_size": 1945,
+  "document_id": "guides-glossary",
+  "url": "/guides/glossary",
+  "content_hash": "3295a11731da20ce0bac9c96049fd74b",
+  "statistics": {
+    "char_count": 1850,
+    "word_count": 243,
+    "line_count": 19,
+    "paragraph_count": 10,
+    "header_count": 5,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.977097",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Terms",
+      "anchor": "terms"
+    },
+    {
+      "level": 3,
+      "title": "In-Process Database Management System",
+      "anchor": "in-process-database-management-system"
+    },
+    {
+      "level": 3,
+      "title": "Replacement Scan",
+      "anchor": "replacement-scan"
+    },
+    {
+      "level": 3,
+      "title": "Extension",
+      "anchor": "extension"
+    },
+    {
+      "level": 3,
+      "title": "Platform",
+      "anchor": "platform"
+    }
+  ]
+}

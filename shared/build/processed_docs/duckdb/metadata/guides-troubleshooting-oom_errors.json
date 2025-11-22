@@ -1,0 +1,48 @@
+{
+  "layout": "docu",
+  "title": "Out of Memory Errors",
+  "file_name": "oom_errors.md",
+  "file_stem": "oom_errors",
+  "file_path": "guides/troubleshooting/oom_errors.md",
+  "file_size": 3115,
+  "document_id": "guides-troubleshooting-oom_errors",
+  "url": "/guides/troubleshooting/oom_errors",
+  "content_hash": "e351f0672da3387a2ef72c303a2288f4",
+  "statistics": {
+    "char_count": 3048,
+    "word_count": 429,
+    "line_count": 53,
+    "paragraph_count": 18,
+    "header_count": 5,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2025-11-22T10:32:12.062044",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Types of “Out of Memory” Errors",
+      "anchor": "types-of-out-of-memory-errors"
+    },
+    {
+      "level": 3,
+      "title": "`OutOfMemoryException`",
+      "anchor": "outofmemoryexception"
+    },
+    {
+      "level": 3,
+      "title": "OOM Reaper (Linux)",
+      "anchor": "oom-reaper-linux"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting Out of Memory Errors",
+      "anchor": "troubleshooting-out-of-memory-errors"
+    },
+    {
+      "level": 2,
+      "title": "See Also",
+      "anchor": "see-also"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/extensions/community_extensions"
+  ],
+  "title": "Community Extensions",
+  "file_name": "community_extensions.md",
+  "file_stem": "community_extensions",
+  "file_path": "extensions/community_extensions.md",
+  "file_size": 400,
+  "document_id": "extensions-community_extensions",
+  "url": "/extensions/community_extensions",
+  "content_hash": "4f7d7c42c96a7fc8e6233a769c6fb238",
+  "statistics": {
+    "char_count": 290,
+    "word_count": 31,
+    "line_count": 2,
+    "paragraph_count": 1,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:10.720693",
+  "sections": []
+}

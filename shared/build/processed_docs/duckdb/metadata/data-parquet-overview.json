@@ -1,0 +1,80 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/parquet",
+    "/docs/data/parquet/",
+    "/docs/extensions/parquet",
+    "/docs/extensions/parquet/",
+    "/docs/data/parquet/overview"
+  ],
+  "title": "Reading and Writing Parquet Files",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "data/parquet/overview.md",
+  "file_size": 10325,
+  "document_id": "data-parquet-overview",
+  "url": "/data/parquet/overview",
+  "content_hash": "73275906809a68431ecbf36dc9bf65ae",
+  "statistics": {
+    "char_count": 9957,
+    "word_count": 1363,
+    "line_count": 312,
+    "paragraph_count": 91,
+    "header_count": 10,
+    "code_block_count": 33,
+    "code_lines": 88
+  },
+  "processed_at": "2025-11-22T10:32:10.120738",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Parquet Files",
+      "anchor": "parquet-files"
+    },
+    {
+      "level": 2,
+      "title": "`read_parquet` Function",
+      "anchor": "read_parquet-function"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 2,
+      "title": "Partial Reading",
+      "anchor": "partial-reading"
+    },
+    {
+      "level": 2,
+      "title": "Inserts and Views",
+      "anchor": "inserts-and-views"
+    },
+    {
+      "level": 2,
+      "title": "Writing to Parquet Files",
+      "anchor": "writing-to-parquet-files"
+    },
+    {
+      "level": 2,
+      "title": "Encryption",
+      "anchor": "encryption"
+    },
+    {
+      "level": 2,
+      "title": "Supported Features",
+      "anchor": "supported-features"
+    },
+    {
+      "level": 2,
+      "title": "Installing and Loading the Parquet Extension",
+      "anchor": "installing-and-loading-the-parquet-extension"
+    }
+  ]
+}

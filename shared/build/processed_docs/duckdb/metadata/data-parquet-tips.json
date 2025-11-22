@@ -1,0 +1,56 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/parquet/tips"
+  ],
+  "title": "Parquet Tips",
+  "file_name": "tips.md",
+  "file_stem": "tips",
+  "file_path": "data/parquet/tips.md",
+  "file_size": 3323,
+  "document_id": "data-parquet-tips",
+  "url": "/data/parquet/tips",
+  "content_hash": "1fc617114590e67eba3cf9bfcfaecc00",
+  "statistics": {
+    "char_count": 3206,
+    "word_count": 471,
+    "line_count": 64,
+    "paragraph_count": 21,
+    "header_count": 6,
+    "code_block_count": 4,
+    "code_lines": 14
+  },
+  "processed_at": "2025-11-22T10:32:10.147314",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Tips for Reading Parquet Files",
+      "anchor": "tips-for-reading-parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "Use `union_by_name` When Loading Files with Different Schemas",
+      "anchor": "use-union_by_name-when-loading-files-with-different-schemas"
+    },
+    {
+      "level": 2,
+      "title": "Tips for Writing Parquet Files",
+      "anchor": "tips-for-writing-parquet-files"
+    },
+    {
+      "level": 3,
+      "title": "Enabling `PER_THREAD_OUTPUT`",
+      "anchor": "enabling-per_thread_output"
+    },
+    {
+      "level": 3,
+      "title": "Selecting a `ROW_GROUP_SIZE`",
+      "anchor": "selecting-a-row_group_size"
+    },
+    {
+      "level": 3,
+      "title": "The `ROW_GROUPS_PER_FILE` Option",
+      "anchor": "the-row_groups_per_file-option"
+    }
+  ]
+}

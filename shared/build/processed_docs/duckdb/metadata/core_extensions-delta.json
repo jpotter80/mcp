@@ -1,0 +1,60 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-delta",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/delta",
+    "/docs/stable/extensions/delta/",
+    "/docs/extensions/delta",
+    "/docs/extensions/delta/"
+  ],
+  "title": "Delta Extension",
+  "file_name": "delta.md",
+  "file_stem": "delta",
+  "file_path": "core_extensions/delta.md",
+  "file_size": 3617,
+  "document_id": "core_extensions-delta",
+  "url": "/core_extensions/delta",
+  "content_hash": "5300f5391bddd3f733ca216ff66ebbc6",
+  "statistics": {
+    "char_count": 3358,
+    "word_count": 414,
+    "line_count": 106,
+    "paragraph_count": 31,
+    "header_count": 6,
+    "code_block_count": 7,
+    "code_lines": 26
+  },
+  "processed_at": "2025-11-22T10:32:07.718268",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "Reading from an S3 Bucket",
+      "anchor": "reading-from-an-s3-bucket"
+    },
+    {
+      "level": 3,
+      "title": "Reading from Azure Blob Storage",
+      "anchor": "reading-from-azure-blob-storage"
+    },
+    {
+      "level": 2,
+      "title": "Features",
+      "anchor": "features"
+    },
+    {
+      "level": 2,
+      "title": "Supported DuckDB Versions and Platforms",
+      "anchor": "supported-duckdb-versions-and-platforms"
+    }
+  ]
+}

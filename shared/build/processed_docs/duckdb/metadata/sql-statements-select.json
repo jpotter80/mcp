@@ -1,0 +1,98 @@
+{
+  "blurb": "The SELECT statement retrieves rows from the database.",
+  "layout": "docu",
+  "railroad": "statements/select.js",
+  "redirect_from": [
+    "/docs/sql/statements/select"
+  ],
+  "title": "SELECT Statement",
+  "file_name": "select.md",
+  "file_stem": "select",
+  "file_path": "sql/statements/select.md",
+  "file_size": 6633,
+  "document_id": "sql-statements-select",
+  "url": "/sql/statements/select",
+  "content_hash": "691cc54c49a66fb6947de77f9b0f6e83",
+  "statistics": {
+    "char_count": 6047,
+    "word_count": 918,
+    "line_count": 158,
+    "paragraph_count": 55,
+    "header_count": 14,
+    "code_block_count": 11,
+    "code_lines": 25
+  },
+  "processed_at": "2025-11-22T10:32:15.920521",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 3,
+      "title": "`SELECT` Clause",
+      "anchor": "select-clause"
+    },
+    {
+      "level": 3,
+      "title": "`FROM` Clause",
+      "anchor": "from-clause"
+    },
+    {
+      "level": 3,
+      "title": "`SAMPLE` Clause",
+      "anchor": "sample-clause"
+    },
+    {
+      "level": 3,
+      "title": "`WHERE` Clause",
+      "anchor": "where-clause"
+    },
+    {
+      "level": 3,
+      "title": "`GROUP BY` and `HAVING` Clauses",
+      "anchor": "group-by-and-having-clauses"
+    },
+    {
+      "level": 3,
+      "title": "`WINDOW` Clause",
+      "anchor": "window-clause"
+    },
+    {
+      "level": 3,
+      "title": "`QUALIFY` Clause",
+      "anchor": "qualify-clause"
+    },
+    {
+      "level": 3,
+      "title": "`ORDER BY`, `LIMIT` and `OFFSET` Clauses",
+      "anchor": "order-by-limit-and-offset-clauses"
+    },
+    {
+      "level": 3,
+      "title": "`VALUES` List",
+      "anchor": "values-list"
+    },
+    {
+      "level": 3,
+      "title": "Row IDs",
+      "anchor": "row-ids"
+    },
+    {
+      "level": 3,
+      "title": "Common Table Expressions",
+      "anchor": "common-table-expressions"
+    },
+    {
+      "level": 2,
+      "title": "Full Syntax Diagram",
+      "anchor": "full-syntax-diagram"
+    }
+  ]
+}

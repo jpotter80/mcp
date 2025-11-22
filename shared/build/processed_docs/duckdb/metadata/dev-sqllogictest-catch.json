@@ -1,0 +1,27 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/dev/sqllogictest/catch",
+    "/dev/sqllogictest/catch/",
+    "/docs/dev/sqllogictest/catch"
+  ],
+  "title": "Catch C/C++ Tests",
+  "file_name": "catch.md",
+  "file_stem": "catch",
+  "file_path": "dev/sqllogictest/catch.md",
+  "file_size": 2269,
+  "document_id": "dev-sqllogictest-catch",
+  "url": "/dev/sqllogictest/catch",
+  "content_hash": "5e5dd399cd50ce82438504eecaca8e11",
+  "statistics": {
+    "char_count": 1978,
+    "word_count": 270,
+    "line_count": 39,
+    "paragraph_count": 6,
+    "header_count": 0,
+    "code_block_count": 1,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:10.587677",
+  "sections": []
+}

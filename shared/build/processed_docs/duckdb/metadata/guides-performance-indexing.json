@@ -1,0 +1,66 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/indexing"
+  ],
+  "title": "Indexing",
+  "file_name": "indexing.md",
+  "file_stem": "indexing",
+  "file_path": "guides/performance/indexing.md",
+  "file_size": 5877,
+  "document_id": "guides-performance-indexing",
+  "url": "/guides/performance/indexing",
+  "content_hash": "da2520370c5e97963125da969a424c24",
+  "statistics": {
+    "char_count": 1245,
+    "word_count": 175,
+    "line_count": 11,
+    "paragraph_count": 3,
+    "header_count": 8,
+    "code_block_count": 2,
+    "code_lines": 3
+  },
+  "processed_at": "2025-11-22T10:32:11.344987",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Zonemaps",
+      "anchor": "zonemaps"
+    },
+    {
+      "level": 3,
+      "title": "The Effect of Ordering on Zonemaps",
+      "anchor": "the-effect-of-ordering-on-zonemaps"
+    },
+    {
+      "level": 3,
+      "title": "Microbenchmark: The Effect of Ordering",
+      "anchor": "microbenchmark-the-effect-of-ordering"
+    },
+    {
+      "level": 3,
+      "title": "Ordered Integers",
+      "anchor": "ordered-integers"
+    },
+    {
+      "level": 2,
+      "title": "ART Indexes",
+      "anchor": "art-indexes"
+    },
+    {
+      "level": 3,
+      "title": "ART Index Scans",
+      "anchor": "art-index-scans"
+    },
+    {
+      "level": 3,
+      "title": "Indexes and Memory",
+      "anchor": "indexes-and-memory"
+    },
+    {
+      "level": 3,
+      "title": "Indexes and Opening Databases",
+      "anchor": "indexes-and-opening-databases"
+    }
+  ]
+}

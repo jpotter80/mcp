@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/creating_json"
+  ],
+  "title": "Creating JSON",
+  "file_name": "creating_json.md",
+  "file_stem": "creating_json",
+  "file_path": "data/json/creating_json.md",
+  "file_size": 1431,
+  "document_id": "data-json-creating_json",
+  "url": "/data/json/creating_json",
+  "content_hash": "10bf6f8f335c6f1163a205dc4f72782a",
+  "statistics": {
+    "char_count": 1340,
+    "word_count": 192,
+    "line_count": 71,
+    "paragraph_count": 18,
+    "header_count": 1,
+    "code_block_count": 14,
+    "code_lines": 14
+  },
+  "processed_at": "2025-11-22T10:32:09.533307",
+  "sections": [
+    {
+      "level": 2,
+      "title": "JSON Creation Functions",
+      "anchor": "json-creation-functions"
+    }
+  ]
+}

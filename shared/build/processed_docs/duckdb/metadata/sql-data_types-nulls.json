@@ -1,0 +1,47 @@
+{
+  "blurb": "The NULL value represents a missing value.",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/data_types/nulls"
+  ],
+  "title": "NULL Values",
+  "file_name": "nulls.md",
+  "file_stem": "nulls",
+  "file_path": "sql/data_types/nulls.md",
+  "file_size": 2793,
+  "document_id": "sql-data_types-nulls",
+  "url": "/sql/data_types/nulls",
+  "content_hash": "a49b1f80b1940cd657ad1250bdfe497f",
+  "statistics": {
+    "char_count": 2645,
+    "word_count": 403,
+    "line_count": 131,
+    "paragraph_count": 40,
+    "header_count": 4,
+    "code_block_count": 24,
+    "code_lines": 26
+  },
+  "processed_at": "2025-11-22T10:32:12.503495",
+  "sections": [
+    {
+      "level": 2,
+      "title": "NULL and Functions",
+      "anchor": "null-and-functions"
+    },
+    {
+      "level": 2,
+      "title": "`NULL` and `AND` / `OR`",
+      "anchor": "null-and-and-or"
+    },
+    {
+      "level": 2,
+      "title": "`NULL` and `IN` / `NOT IN`",
+      "anchor": "null-and-in-not-in"
+    },
+    {
+      "level": 2,
+      "title": "`NULL` and Aggregate Functions",
+      "anchor": "null-and-aggregate-functions"
+    }
+  ]
+}

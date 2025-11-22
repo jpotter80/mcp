@@ -1,0 +1,53 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/enum",
+    "/docs/test/functions/enum/",
+    "/docs/sql/functions/enum"
+  ],
+  "title": "Enum Functions",
+  "file_name": "enum.md",
+  "file_stem": "enum",
+  "file_path": "sql/functions/enum.md",
+  "file_size": 2528,
+  "document_id": "sql-functions-enum",
+  "url": "/sql/functions/enum",
+  "content_hash": "fb1a24766132fbcef250df8ee84173ae",
+  "statistics": {
+    "char_count": 2167,
+    "word_count": 325,
+    "line_count": 47,
+    "paragraph_count": 14,
+    "header_count": 5,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:13.561225",
+  "sections": [
+    {
+      "level": 4,
+      "title": "`enum_code(enum_value)`",
+      "anchor": "enum_codeenum_value"
+    },
+    {
+      "level": 4,
+      "title": "`enum_first(enum)`",
+      "anchor": "enum_firstenum"
+    },
+    {
+      "level": 4,
+      "title": "`enum_last(enum)`",
+      "anchor": "enum_lastenum"
+    },
+    {
+      "level": 4,
+      "title": "`enum_range(enum)`",
+      "anchor": "enum_rangeenum"
+    },
+    {
+      "level": 4,
+      "title": "`enum_range_boundary(enum, enum)`",
+      "anchor": "enum_range_boundaryenum-enum"
+    }
+  ]
+}

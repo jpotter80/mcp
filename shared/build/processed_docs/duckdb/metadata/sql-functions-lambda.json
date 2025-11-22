@@ -1,0 +1,83 @@
+{
+  "layout": "docu",
+  "title": "Lambda Functions",
+  "file_name": "lambda.md",
+  "file_stem": "lambda",
+  "file_path": "sql/functions/lambda.md",
+  "file_size": 9226,
+  "document_id": "sql-functions-lambda",
+  "url": "/sql/functions/lambda",
+  "content_hash": "141e9065f350380cbac6075dc8e06b94",
+  "statistics": {
+    "char_count": 8600,
+    "word_count": 1294,
+    "line_count": 283,
+    "paragraph_count": 69,
+    "header_count": 12,
+    "code_block_count": 33,
+    "code_lines": 65
+  },
+  "processed_at": "2025-11-22T10:32:13.622557",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Scalar Functions That Accept Lambda Functions",
+      "anchor": "scalar-functions-that-accept-lambda-functions"
+    },
+    {
+      "level": 4,
+      "title": "`list_filter(list, lambda(x))`",
+      "anchor": "list_filterlist-lambdax"
+    },
+    {
+      "level": 4,
+      "title": "`list_reduce(list, lambda(x, y)[, initial_value])`",
+      "anchor": "list_reducelist-lambdax-y-initial_value"
+    },
+    {
+      "level": 4,
+      "title": "`list_transform(list, lambda(x))`",
+      "anchor": "list_transformlist-lambdax"
+    },
+    {
+      "level": 2,
+      "title": "Nesting Lambda Functions",
+      "anchor": "nesting-lambda-functions"
+    },
+    {
+      "level": 2,
+      "title": "Scoping",
+      "anchor": "scoping"
+    },
+    {
+      "level": 2,
+      "title": "Indexes as Parameters",
+      "anchor": "indexes-as-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "`list_transform` Examples",
+      "anchor": "list_transform-examples"
+    },
+    {
+      "level": 3,
+      "title": "`list_filter` Examples",
+      "anchor": "list_filter-examples"
+    },
+    {
+      "level": 3,
+      "title": "`list_reduce` Examples",
+      "anchor": "list_reduce-examples"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

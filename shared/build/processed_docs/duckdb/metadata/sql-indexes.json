@@ -1,0 +1,92 @@
+{
+  "layout": "docu",
+  "railroad": "statements/indexes.js",
+  "redirect_from": [
+    "/docs/sql/indexes"
+  ],
+  "title": "Indexes",
+  "file_name": "indexes.md",
+  "file_stem": "indexes",
+  "file_path": "sql/indexes.md",
+  "file_size": 10263,
+  "document_id": "sql-indexes",
+  "url": "/sql/indexes",
+  "content_hash": "1259180f80617bc17e4887c589c3788c",
+  "statistics": {
+    "char_count": 9976,
+    "word_count": 1449,
+    "line_count": 201,
+    "paragraph_count": 58,
+    "header_count": 13,
+    "code_block_count": 7,
+    "code_lines": 68
+  },
+  "processed_at": "2025-11-22T10:32:14.837685",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Index Types",
+      "anchor": "index-types"
+    },
+    {
+      "level": 3,
+      "title": "Min-Max Index (Zonemap)",
+      "anchor": "min-max-index-zonemap"
+    },
+    {
+      "level": 3,
+      "title": "Adaptive Radix Tree (ART)",
+      "anchor": "adaptive-radix-tree-art"
+    },
+    {
+      "level": 3,
+      "title": "Indexes Defined by Extensions",
+      "anchor": "indexes-defined-by-extensions"
+    },
+    {
+      "level": 2,
+      "title": "Persistence",
+      "anchor": "persistence"
+    },
+    {
+      "level": 2,
+      "title": "`CREATE INDEX` and `DROP INDEX` Statements",
+      "anchor": "create-index-and-drop-index-statements"
+    },
+    {
+      "level": 2,
+      "title": "Limitations of ART Indexes",
+      "anchor": "limitations-of-art-indexes"
+    },
+    {
+      "level": 3,
+      "title": "Constraint Checking in `UPDATE` Statements",
+      "anchor": "constraint-checking-in-update-statements"
+    },
+    {
+      "level": 3,
+      "title": "Over-Eager Constraint Checking in Foreign Keys",
+      "anchor": "over-eager-constraint-checking-in-foreign-keys"
+    },
+    {
+      "level": 3,
+      "title": "Constraint Checking after Delete with Concurrent Transactions",
+      "anchor": "constraint-checking-after-delete-with-concurrent-transactions"
+    },
+    {
+      "level": 4,
+      "title": "Workarounds",
+      "anchor": "workarounds"
+    },
+    {
+      "level": 4,
+      "title": "Over-Eager Unique Constraint Checking",
+      "anchor": "over-eager-unique-constraint-checking"
+    },
+    {
+      "level": 4,
+      "title": "Under-Eager Foreign Key Constraint Checking",
+      "anchor": "under-eager-foreign-key-constraint-checking"
+    }
+  ]
+}

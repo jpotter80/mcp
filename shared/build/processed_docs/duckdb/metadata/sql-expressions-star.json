@@ -1,0 +1,97 @@
+{
+  "layout": "docu",
+  "railroad": "expressions/star.js",
+  "redirect_from": [
+    "/docs/sql/expressions/star"
+  ],
+  "title": "Star Expression",
+  "file_name": "star.md",
+  "file_stem": "star",
+  "file_path": "sql/expressions/star.md",
+  "file_size": 6901,
+  "document_id": "sql-expressions-star",
+  "url": "/sql/expressions/star",
+  "content_hash": "5ef277ebe1ae6d6f7abf3bea1daf18f4",
+  "statistics": {
+    "char_count": 6608,
+    "word_count": 1119,
+    "line_count": 269,
+    "paragraph_count": 76,
+    "header_count": 14,
+    "code_block_count": 23,
+    "code_lines": 49
+  },
+  "processed_at": "2025-11-22T10:32:13.157782",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 3,
+      "title": "`TABLE.*` and `STRUCT.*`",
+      "anchor": "table-and-struct"
+    },
+    {
+      "level": 3,
+      "title": "`EXCLUDE` Clause",
+      "anchor": "exclude-clause"
+    },
+    {
+      "level": 3,
+      "title": "`REPLACE` Clause",
+      "anchor": "replace-clause"
+    },
+    {
+      "level": 3,
+      "title": "`RENAME` Clause",
+      "anchor": "rename-clause"
+    },
+    {
+      "level": 3,
+      "title": "Column Filtering via Pattern Matching Operators",
+      "anchor": "column-filtering-via-pattern-matching-operators"
+    },
+    {
+      "level": 2,
+      "title": "`COLUMNS` Expression",
+      "anchor": "columns-expression"
+    },
+    {
+      "level": 3,
+      "title": "`COLUMNS` Expression in a `WHERE` Clause",
+      "anchor": "columns-expression-in-a-where-clause"
+    },
+    {
+      "level": 3,
+      "title": "Regular Expressions in a `COLUMNS` Expression",
+      "anchor": "regular-expressions-in-a-columns-expression"
+    },
+    {
+      "level": 3,
+      "title": "Renaming Columns with Regular Expressions in a `COLUMNS` Expression",
+      "anchor": "renaming-columns-with-regular-expressions-in-a-columns-expression"
+    },
+    {
+      "level": 3,
+      "title": "`COLUMNS` Lambda Function",
+      "anchor": "columns-lambda-function"
+    },
+    {
+      "level": 3,
+      "title": "`COLUMNS` List",
+      "anchor": "columns-list"
+    },
+    {
+      "level": 2,
+      "title": "`*COLUMNS` Unpacked Columns",
+      "anchor": "columns-unpacked-columns"
+    },
+    {
+      "level": 2,
+      "title": "`STRUCT.*`",
+      "anchor": "struct"
+    }
+  ]
+}

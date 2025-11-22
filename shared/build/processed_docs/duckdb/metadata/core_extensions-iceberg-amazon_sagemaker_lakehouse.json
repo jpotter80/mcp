@@ -1,0 +1,37 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/iceberg/amazon_sagemaker_lakehouse",
+    "/docs/stable/extensions/iceberg/amazon_sagemaker_lakehouse/"
+  ],
+  "title": "Amazon SageMaker Lakehouse (AWS Glue)",
+  "file_name": "amazon_sagemaker_lakehouse.md",
+  "file_stem": "amazon_sagemaker_lakehouse",
+  "file_path": "core_extensions/iceberg/amazon_sagemaker_lakehouse.md",
+  "file_size": 1795,
+  "document_id": "core_extensions-iceberg-amazon_sagemaker_lakehouse",
+  "url": "/core_extensions/iceberg/amazon_sagemaker_lakehouse",
+  "content_hash": "245221ff52a4d174bb903013485ca025",
+  "statistics": {
+    "char_count": 1531,
+    "word_count": 178,
+    "line_count": 64,
+    "paragraph_count": 18,
+    "header_count": 2,
+    "code_block_count": 6,
+    "code_lines": 22
+  },
+  "processed_at": "2025-11-22T10:32:08.230922",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Requirements",
+      "anchor": "requirements"
+    },
+    {
+      "level": 2,
+      "title": "Connecting to Amazon SageMaker Lakehouse (AWS Glue)",
+      "anchor": "connecting-to-amazon-sagemaker-lakehouse-aws-glue"
+    }
+  ]
+}

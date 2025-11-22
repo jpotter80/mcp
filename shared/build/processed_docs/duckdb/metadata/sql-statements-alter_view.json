@@ -1,0 +1,31 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/statements/alter_view"
+  ],
+  "title": "ALTER VIEW Statement",
+  "file_name": "alter_view.md",
+  "file_stem": "alter_view",
+  "file_path": "sql/statements/alter_view.md",
+  "file_size": 587,
+  "document_id": "sql-statements-alter_view",
+  "url": "/sql/statements/alter_view",
+  "content_hash": "947d53e8a4382397120ef7de1aecbadb",
+  "statistics": {
+    "char_count": 487,
+    "word_count": 80,
+    "line_count": 11,
+    "paragraph_count": 5,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:15.462496",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    }
+  ]
+}

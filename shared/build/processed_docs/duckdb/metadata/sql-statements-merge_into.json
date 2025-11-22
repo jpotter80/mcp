@@ -1,0 +1,34 @@
+{
+  "layout": "docu",
+  "railroad": "statements/merge_into.js",
+  "title": "MERGE INTO Statement",
+  "file_name": "merge_into.md",
+  "file_stem": "merge_into",
+  "file_path": "sql/statements/merge_into.md",
+  "file_size": 4344,
+  "document_id": "sql-statements-merge_into",
+  "url": "/sql/statements/merge_into",
+  "content_hash": "8b6a8814e3696de7ad1a084667fc1687",
+  "statistics": {
+    "char_count": 3813,
+    "word_count": 667,
+    "line_count": 141,
+    "paragraph_count": 30,
+    "header_count": 2,
+    "code_block_count": 7,
+    "code_lines": 70
+  },
+  "processed_at": "2025-11-22T10:32:15.844955",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

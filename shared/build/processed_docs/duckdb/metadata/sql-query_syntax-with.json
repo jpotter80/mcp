@@ -1,0 +1,102 @@
+{
+  "layout": "docu",
+  "railroad": "query_syntax/with.js",
+  "redirect_from": [
+    "/docs/sql/query_syntax/with"
+  ],
+  "title": "WITH Clause",
+  "file_name": "with.md",
+  "file_stem": "with",
+  "file_path": "sql/query_syntax/with.md",
+  "file_size": 16519,
+  "document_id": "sql-query_syntax-with",
+  "url": "/sql/query_syntax/with",
+  "content_hash": "5a01f434b47d268752c331a9d7af6b66",
+  "statistics": {
+    "char_count": 12069,
+    "word_count": 2029,
+    "line_count": 352,
+    "paragraph_count": 59,
+    "header_count": 15,
+    "code_block_count": 18,
+    "code_lines": 197
+  },
+  "processed_at": "2025-11-22T10:32:15.378877",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Basic CTE Examples",
+      "anchor": "basic-cte-examples"
+    },
+    {
+      "level": 2,
+      "title": "CTE Materialization",
+      "anchor": "cte-materialization"
+    },
+    {
+      "level": 2,
+      "title": "Recursive CTEs",
+      "anchor": "recursive-ctes"
+    },
+    {
+      "level": 3,
+      "title": "Example: Fibonacci Sequence",
+      "anchor": "example-fibonacci-sequence"
+    },
+    {
+      "level": 3,
+      "title": "Example: Tree Traversal",
+      "anchor": "example-tree-traversal"
+    },
+    {
+      "level": 3,
+      "title": "Graph Traversal",
+      "anchor": "graph-traversal"
+    },
+    {
+      "level": 4,
+      "title": "Enumerate All Paths from a Node",
+      "anchor": "enumerate-all-paths-from-a-node"
+    },
+    {
+      "level": 4,
+      "title": "Enumerate Unweighted Shortest Paths from a Node",
+      "anchor": "enumerate-unweighted-shortest-paths-from-a-node"
+    },
+    {
+      "level": 4,
+      "title": "Enumerate Unweighted Shortest Paths between Two Nodes",
+      "anchor": "enumerate-unweighted-shortest-paths-between-two-nodes"
+    },
+    {
+      "level": 2,
+      "title": "Recursive CTEs with `USING KEY`",
+      "anchor": "recursive-ctes-with-using-key"
+    },
+    {
+      "level": 3,
+      "title": "Example: `USING KEY`",
+      "anchor": "example-using-key"
+    },
+    {
+      "level": 2,
+      "title": "Using `VALUES`",
+      "anchor": "using-values"
+    },
+    {
+      "level": 3,
+      "title": "Example: `USING KEY` References Union Table",
+      "anchor": "example-using-key-references-union-table"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    }
+  ]
+}

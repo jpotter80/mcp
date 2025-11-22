@@ -1,0 +1,46 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/format_settings"
+  ],
+  "title": "JSON Format Settings",
+  "file_name": "format_settings.md",
+  "file_stem": "format_settings",
+  "file_path": "data/json/format_settings.md",
+  "file_size": 3735,
+  "document_id": "data-json-format_settings",
+  "url": "/data/json/format_settings",
+  "content_hash": "34e0a7e9ceb9d7c62622b5fd52c4248b",
+  "statistics": {
+    "char_count": 3337,
+    "word_count": 495,
+    "line_count": 145,
+    "paragraph_count": 32,
+    "header_count": 4,
+    "code_block_count": 12,
+    "code_lines": 40
+  },
+  "processed_at": "2025-11-22T10:32:09.544722",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Format: `newline_delimited`",
+      "anchor": "format-newline_delimited"
+    },
+    {
+      "level": 2,
+      "title": "Format: `array`",
+      "anchor": "format-array"
+    },
+    {
+      "level": 2,
+      "title": "Format: `unstructured`",
+      "anchor": "format-unstructured"
+    },
+    {
+      "level": 2,
+      "title": "`records` Options",
+      "anchor": "records-options"
+    }
+  ]
+}

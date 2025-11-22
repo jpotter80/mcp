@@ -1,0 +1,68 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/csv/multiple_files",
+    "/docs/data/csv/multiple_files/",
+    "/docs/data/multiple_files/overview"
+  ],
+  "title": "Reading Multiple Files",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "data/multiple_files/overview.md",
+  "file_size": 4784,
+  "document_id": "data-multiple_files-overview",
+  "url": "/data/multiple_files/overview",
+  "content_hash": "e1f89649dfb5d98eb851540292ab5184",
+  "statistics": {
+    "char_count": 4420,
+    "word_count": 688,
+    "line_count": 156,
+    "paragraph_count": 48,
+    "header_count": 8,
+    "code_block_count": 14,
+    "code_lines": 28
+  },
+  "processed_at": "2025-11-22T10:32:10.045607",
+  "sections": [
+    {
+      "level": 2,
+      "title": "CSV",
+      "anchor": "csv"
+    },
+    {
+      "level": 2,
+      "title": "Parquet",
+      "anchor": "parquet"
+    },
+    {
+      "level": 2,
+      "title": "Multi-File Reads and Globs",
+      "anchor": "multi-file-reads-and-globs"
+    },
+    {
+      "level": 3,
+      "title": "List Parameter",
+      "anchor": "list-parameter"
+    },
+    {
+      "level": 3,
+      "title": "Glob Syntax",
+      "anchor": "glob-syntax"
+    },
+    {
+      "level": 3,
+      "title": "List of Globs",
+      "anchor": "list-of-globs"
+    },
+    {
+      "level": 2,
+      "title": "Filename",
+      "anchor": "filename"
+    },
+    {
+      "level": 2,
+      "title": "Glob Function to Find Filenames",
+      "anchor": "glob-function-to-find-filenames"
+    }
+  ]
+}

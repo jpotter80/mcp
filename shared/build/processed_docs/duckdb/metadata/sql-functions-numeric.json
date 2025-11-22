@@ -1,0 +1,333 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/test/functions/math",
+    "/docs/test/functions/math/",
+    "/docs/sql/functions/numeric"
+  ],
+  "title": "Numeric Functions",
+  "file_name": "numeric.md",
+  "file_stem": "numeric",
+  "file_path": "sql/functions/numeric.md",
+  "file_size": 16682,
+  "document_id": "sql-functions-numeric",
+  "url": "/sql/functions/numeric",
+  "content_hash": "299b9376f96e97578f8f31ce17020103",
+  "statistics": {
+    "char_count": 12771,
+    "word_count": 2160,
+    "line_count": 412,
+    "paragraph_count": 120,
+    "header_count": 61,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.949375",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Numeric Operators",
+      "anchor": "numeric-operators"
+    },
+    {
+      "level": 3,
+      "title": "Division and Modulo Operators",
+      "anchor": "division-and-modulo-operators"
+    },
+    {
+      "level": 3,
+      "title": "Supported Types",
+      "anchor": "supported-types"
+    },
+    {
+      "level": 2,
+      "title": "Numeric Functions",
+      "anchor": "numeric-functions"
+    },
+    {
+      "level": 4,
+      "title": "`@(x)`",
+      "anchor": "x"
+    },
+    {
+      "level": 4,
+      "title": "`abs(x)`",
+      "anchor": "absx"
+    },
+    {
+      "level": 4,
+      "title": "`acos(x)`",
+      "anchor": "acosx"
+    },
+    {
+      "level": 4,
+      "title": "`acosh(x)`",
+      "anchor": "acoshx"
+    },
+    {
+      "level": 4,
+      "title": "`add(x, y)`",
+      "anchor": "addx-y"
+    },
+    {
+      "level": 4,
+      "title": "`asin(x)`",
+      "anchor": "asinx"
+    },
+    {
+      "level": 4,
+      "title": "`asinh(x)`",
+      "anchor": "asinhx"
+    },
+    {
+      "level": 4,
+      "title": "`atan(x)`",
+      "anchor": "atanx"
+    },
+    {
+      "level": 4,
+      "title": "`atanh(x)`",
+      "anchor": "atanhx"
+    },
+    {
+      "level": 4,
+      "title": "`atan2(y, x)`",
+      "anchor": "atan2y-x"
+    },
+    {
+      "level": 4,
+      "title": "`bit_count(x)`",
+      "anchor": "bit_countx"
+    },
+    {
+      "level": 4,
+      "title": "`cbrt(x)`",
+      "anchor": "cbrtx"
+    },
+    {
+      "level": 4,
+      "title": "`ceil(x)`",
+      "anchor": "ceilx"
+    },
+    {
+      "level": 4,
+      "title": "`ceiling(x)`",
+      "anchor": "ceilingx"
+    },
+    {
+      "level": 4,
+      "title": "`cos(x)`",
+      "anchor": "cosx"
+    },
+    {
+      "level": 4,
+      "title": "`cot(x)`",
+      "anchor": "cotx"
+    },
+    {
+      "level": 4,
+      "title": "`degrees(x)`",
+      "anchor": "degreesx"
+    },
+    {
+      "level": 4,
+      "title": "`divide(x, y)`",
+      "anchor": "dividex-y"
+    },
+    {
+      "level": 4,
+      "title": "`even(x)`",
+      "anchor": "evenx"
+    },
+    {
+      "level": 4,
+      "title": "`exp(x)`",
+      "anchor": "expx"
+    },
+    {
+      "level": 4,
+      "title": "`factorial(x)`",
+      "anchor": "factorialx"
+    },
+    {
+      "level": 4,
+      "title": "`fdiv(x, y)`",
+      "anchor": "fdivx-y"
+    },
+    {
+      "level": 4,
+      "title": "`floor(x)`",
+      "anchor": "floorx"
+    },
+    {
+      "level": 4,
+      "title": "`fmod(x, y)`",
+      "anchor": "fmodx-y"
+    },
+    {
+      "level": 4,
+      "title": "`gamma(x)`",
+      "anchor": "gammax"
+    },
+    {
+      "level": 4,
+      "title": "`gcd(x, y)`",
+      "anchor": "gcdx-y"
+    },
+    {
+      "level": 4,
+      "title": "`greatest_common_divisor(x, y)`",
+      "anchor": "greatest_common_divisorx-y"
+    },
+    {
+      "level": 4,
+      "title": "`greatest(x1, x2, ...)`",
+      "anchor": "greatestx1-x2-"
+    },
+    {
+      "level": 4,
+      "title": "`isfinite(x)`",
+      "anchor": "isfinitex"
+    },
+    {
+      "level": 4,
+      "title": "`isinf(x)`",
+      "anchor": "isinfx"
+    },
+    {
+      "level": 4,
+      "title": "`isnan(x)`",
+      "anchor": "isnanx"
+    },
+    {
+      "level": 4,
+      "title": "`lcm(x, y)`",
+      "anchor": "lcmx-y"
+    },
+    {
+      "level": 4,
+      "title": "`least_common_multiple(x, y)`",
+      "anchor": "least_common_multiplex-y"
+    },
+    {
+      "level": 4,
+      "title": "`least(x1, x2, ...)`",
+      "anchor": "leastx1-x2-"
+    },
+    {
+      "level": 4,
+      "title": "`lgamma(x)`",
+      "anchor": "lgammax"
+    },
+    {
+      "level": 4,
+      "title": "`ln(x)`",
+      "anchor": "lnx"
+    },
+    {
+      "level": 4,
+      "title": "`log(x)`",
+      "anchor": "logx"
+    },
+    {
+      "level": 4,
+      "title": "`log10(x)`",
+      "anchor": "log10x"
+    },
+    {
+      "level": 4,
+      "title": "`log2(x)`",
+      "anchor": "log2x"
+    },
+    {
+      "level": 4,
+      "title": "`multiply(x, y)`",
+      "anchor": "multiplyx-y"
+    },
+    {
+      "level": 4,
+      "title": "`nextafter(x, y)`",
+      "anchor": "nextafterx-y"
+    },
+    {
+      "level": 4,
+      "title": "`pi()`",
+      "anchor": "pi"
+    },
+    {
+      "level": 4,
+      "title": "`pow(x, y)`",
+      "anchor": "powx-y"
+    },
+    {
+      "level": 4,
+      "title": "`power(x, y)`",
+      "anchor": "powerx-y"
+    },
+    {
+      "level": 4,
+      "title": "`radians(x)`",
+      "anchor": "radiansx"
+    },
+    {
+      "level": 4,
+      "title": "`random()`",
+      "anchor": "random"
+    },
+    {
+      "level": 4,
+      "title": "`round_even(v NUMERIC, s INTEGER)`",
+      "anchor": "round_evenv-numeric-s-integer"
+    },
+    {
+      "level": 4,
+      "title": "`round(v NUMERIC, s INTEGER)`",
+      "anchor": "roundv-numeric-s-integer"
+    },
+    {
+      "level": 4,
+      "title": "`setseed(x)`",
+      "anchor": "setseedx"
+    },
+    {
+      "level": 4,
+      "title": "`sign(x)`",
+      "anchor": "signx"
+    },
+    {
+      "level": 4,
+      "title": "`signbit(x)`",
+      "anchor": "signbitx"
+    },
+    {
+      "level": 4,
+      "title": "`sin(x)`",
+      "anchor": "sinx"
+    },
+    {
+      "level": 4,
+      "title": "`sqrt(x)`",
+      "anchor": "sqrtx"
+    },
+    {
+      "level": 4,
+      "title": "`subtract(x, y)`",
+      "anchor": "subtractx-y"
+    },
+    {
+      "level": 4,
+      "title": "`tan(x)`",
+      "anchor": "tanx"
+    },
+    {
+      "level": 4,
+      "title": "`trunc(x)`",
+      "anchor": "truncx"
+    },
+    {
+      "level": 4,
+      "title": "`xor(x, y)`",
+      "anchor": "xorx-y"
+    }
+  ]
+}

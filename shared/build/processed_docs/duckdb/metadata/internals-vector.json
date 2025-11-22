@@ -1,0 +1,93 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/internals/vector",
+    "/internals/vector/",
+    "/docs/internals/vector"
+  ],
+  "title": "Execution Format",
+  "file_name": "vector.md",
+  "file_stem": "vector",
+  "file_path": "internals/vector.md",
+  "file_size": 5942,
+  "document_id": "internals-vector",
+  "url": "/internals/vector",
+  "content_hash": "7ec9e2c42cbfa7fd0e58ee53a14f3341",
+  "statistics": {
+    "char_count": 5149,
+    "word_count": 816,
+    "line_count": 126,
+    "paragraph_count": 42,
+    "header_count": 13,
+    "code_block_count": 4,
+    "code_lines": 31
+  },
+  "processed_at": "2025-11-22T10:32:12.160377",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Data Flow",
+      "anchor": "data-flow"
+    },
+    {
+      "level": 2,
+      "title": "Vector Format",
+      "anchor": "vector-format"
+    },
+    {
+      "level": 3,
+      "title": "Flat Vectors",
+      "anchor": "flat-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Constant Vectors",
+      "anchor": "constant-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Dictionary Vectors",
+      "anchor": "dictionary-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Sequence Vectors",
+      "anchor": "sequence-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Unified Vector Format",
+      "anchor": "unified-vector-format"
+    },
+    {
+      "level": 2,
+      "title": "Complex Types",
+      "anchor": "complex-types"
+    },
+    {
+      "level": 3,
+      "title": "String Vectors",
+      "anchor": "string-vectors"
+    },
+    {
+      "level": 3,
+      "title": "List Vectors",
+      "anchor": "list-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Struct Vectors",
+      "anchor": "struct-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Map Vectors",
+      "anchor": "map-vectors"
+    },
+    {
+      "level": 3,
+      "title": "Union Vectors",
+      "anchor": "union-vectors"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/cpp",
+    "/docs/api/cpp/",
+    "/docs/clients/cpp"
+  ],
+  "title": "C++ API",
+  "file_name": "cpp.md",
+  "file_stem": "cpp",
+  "file_path": "clients/cpp.md",
+  "file_size": 11658,
+  "document_id": "clients-cpp",
+  "url": "/clients/cpp",
+  "content_hash": "0bc686c2bf00675f17198cc4b7de8b37",
+  "statistics": {
+    "char_count": 9454,
+    "word_count": 1238,
+    "line_count": 232,
+    "paragraph_count": 61,
+    "header_count": 7,
+    "code_block_count": 12,
+    "code_lines": 93
+  },
+  "processed_at": "2025-11-22T10:32:04.090590",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "Basic API Usage",
+      "anchor": "basic-api-usage"
+    },
+    {
+      "level": 3,
+      "title": "Startup & Shutdown",
+      "anchor": "startup-shutdown"
+    },
+    {
+      "level": 3,
+      "title": "Querying",
+      "anchor": "querying"
+    },
+    {
+      "level": 3,
+      "title": "UDF API",
+      "anchor": "udf-api"
+    },
+    {
+      "level": 4,
+      "title": "CreateScalarFunction",
+      "anchor": "createscalarfunction"
+    },
+    {
+      "level": 4,
+      "title": "CreateVectorizedFunction",
+      "anchor": "createvectorizedfunction"
+    }
+  ]
+}

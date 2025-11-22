@@ -1,0 +1,97 @@
+{
+  "layout": "docu",
+  "railroad": "statements/alter.js",
+  "redirect_from": [
+    "/docs/sql/statements/alter_table"
+  ],
+  "title": "ALTER TABLE Statement",
+  "file_name": "alter_table.md",
+  "file_stem": "alter_table",
+  "file_path": "sql/statements/alter_table.md",
+  "file_size": 7466,
+  "document_id": "sql-statements-alter_table",
+  "url": "/sql/statements/alter_table",
+  "content_hash": "fe596e5e56fc2c7083c6bbc4719bcbd6",
+  "statistics": {
+    "char_count": 7280,
+    "word_count": 1233,
+    "line_count": 289,
+    "paragraph_count": 92,
+    "header_count": 14,
+    "code_block_count": 32,
+    "code_lines": 71
+  },
+  "processed_at": "2025-11-22T10:32:15.448744",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "`RENAME TABLE`",
+      "anchor": "rename-table"
+    },
+    {
+      "level": 2,
+      "title": "`RENAME COLUMN`",
+      "anchor": "rename-column"
+    },
+    {
+      "level": 2,
+      "title": "`ADD COLUMN`",
+      "anchor": "add-column"
+    },
+    {
+      "level": 2,
+      "title": "`DROP COLUMN`",
+      "anchor": "drop-column"
+    },
+    {
+      "level": 2,
+      "title": "`[SET [DATA]] TYPE`",
+      "anchor": "set-data-type"
+    },
+    {
+      "level": 3,
+      "title": "Handling Structs",
+      "anchor": "handling-structs"
+    },
+    {
+      "level": 4,
+      "title": "`ALTER TABLE` with `struct_insert`",
+      "anchor": "alter-table-with-struct_insert"
+    },
+    {
+      "level": 4,
+      "title": "`ALTER TABLE` with `ADD COLUMN` / `DROP COLUMN` / `RENAME COLUMN`",
+      "anchor": "alter-table-with-add-column-drop-column-rename-column"
+    },
+    {
+      "level": 2,
+      "title": "`SET` / `DROP DEFAULT`",
+      "anchor": "set-drop-default"
+    },
+    {
+      "level": 2,
+      "title": "`ADD PRIMARY KEY`",
+      "anchor": "add-primary-key"
+    },
+    {
+      "level": 2,
+      "title": "`ADD` / `DROP CONSTRAINT`",
+      "anchor": "add-drop-constraint"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

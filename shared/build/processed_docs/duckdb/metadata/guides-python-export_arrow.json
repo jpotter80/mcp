@@ -1,0 +1,76 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/export_arrow"
+  ],
+  "title": "Export to Apache Arrow",
+  "file_name": "export_arrow.md",
+  "file_stem": "export_arrow",
+  "file_path": "guides/python/export_arrow.md",
+  "file_size": 2822,
+  "document_id": "guides-python-export_arrow",
+  "url": "/guides/python/export_arrow",
+  "content_hash": "ba1ab9669e593ef637eac2992a21c528",
+  "statistics": {
+    "char_count": 2631,
+    "word_count": 325,
+    "line_count": 61,
+    "paragraph_count": 18,
+    "header_count": 10,
+    "code_block_count": 3,
+    "code_lines": 43
+  },
+  "processed_at": "2025-11-22T10:32:11.406980",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Export to an Arrow Table",
+      "anchor": "export-to-an-arrow-table"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow Table \"my_arrow_table\" and return as an Arrow Table",
+      "anchor": "query-the-apache-arrow-table-my_arrow_table-and-return-as-an-arrow-table"
+    },
+    {
+      "level": 2,
+      "title": "Export as a RecordBatchReader",
+      "anchor": "export-as-a-recordbatchreader"
+    },
+    {
+      "level": 1,
+      "title": "query the Apache Arrow Table \"my_arrow_table\" and return as an Arrow RecordBatchReader",
+      "anchor": "query-the-apache-arrow-table-my_arrow_table-and-return-as-an-arrow-recordbatchreader"
+    },
+    {
+      "level": 1,
+      "title": "Loop through the results. A StopIteration exception is thrown when the RecordBatchReader is empty",
+      "anchor": "loop-through-the-results-a-stopiteration-exception-is-thrown-when-the-recordbatchreader-is-empty"
+    },
+    {
+      "level": 2,
+      "title": "Export from Relational API",
+      "anchor": "export-from-relational-api"
+    },
+    {
+      "level": 1,
+      "title": "connect to an in-memory database",
+      "anchor": "connect-to-an-in-memory-database"
+    },
+    {
+      "level": 1,
+      "title": "Create a relation from the table and export the entire relation as Arrow",
+      "anchor": "create-a-relation-from-the-table-and-export-the-entire-relation-as-arrow"
+    },
+    {
+      "level": 1,
+      "title": "Calculate a result using that relation and export that result to Arrow",
+      "anchor": "calculate-a-result-using-that-relation-and-export-that-result-to-arrow"
+    },
+    {
+      "level": 1,
+      "title": "You can also create an Arrow record batch reader from a relation",
+      "anchor": "you-can-also-create-an-arrow-record-batch-reader-from-a-relation"
+    }
+  ]
+}

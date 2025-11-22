@@ -1,0 +1,61 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/json/loading_json"
+  ],
+  "title": "Loading JSON",
+  "file_name": "loading_json.md",
+  "file_stem": "loading_json",
+  "file_path": "data/json/loading_json.md",
+  "file_size": 15275,
+  "document_id": "data-json-loading_json",
+  "url": "/data/json/loading_json",
+  "content_hash": "d6f3fd3f1a84ac6ea102f9efced24cd0",
+  "statistics": {
+    "char_count": 13558,
+    "word_count": 2115,
+    "line_count": 350,
+    "paragraph_count": 74,
+    "header_count": 7,
+    "code_block_count": 24,
+    "code_lines": 99
+  },
+  "processed_at": "2025-11-22T10:32:09.712818",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The `read_json` Function",
+      "anchor": "the-read_json-function"
+    },
+    {
+      "level": 2,
+      "title": "Functions for Reading JSON Objects",
+      "anchor": "functions-for-reading-json-objects"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 2,
+      "title": "Functions for Reading JSON as a Table",
+      "anchor": "functions-for-reading-json-as-a-table"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 2,
+      "title": "Loading with the `COPY` Statement Using `FORMAT json`",
+      "anchor": "loading-with-the-copy-statement-using-format-json"
+    },
+    {
+      "level": 3,
+      "title": "Parameters",
+      "anchor": "parameters"
+    }
+  ]
+}

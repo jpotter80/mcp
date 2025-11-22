@@ -1,0 +1,80 @@
+{
+  "github_repository": "https://github.com/duckdb/duckdb-inet",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/stable/extensions/inet",
+    "/docs/stable/extensions/inet/",
+    "/docs/extensions/inet",
+    "/docs/extensions/inet/"
+  ],
+  "title": "inet Extension",
+  "file_name": "inet.md",
+  "file_stem": "inet",
+  "file_path": "core_extensions/inet.md",
+  "file_size": 6783,
+  "document_id": "core_extensions-inet",
+  "url": "/core_extensions/inet",
+  "content_hash": "9a01d3c5648030b25959f3ad362ec6b4",
+  "statistics": {
+    "char_count": 4578,
+    "word_count": 533,
+    "line_count": 184,
+    "paragraph_count": 38,
+    "header_count": 10,
+    "code_block_count": 14,
+    "code_lines": 68
+  },
+  "processed_at": "2025-11-22T10:32:08.348221",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installing and Loading",
+      "anchor": "installing-and-loading"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 2,
+      "title": "Operations on `INET` Values",
+      "anchor": "operations-on-inet-values"
+    },
+    {
+      "level": 2,
+      "title": "`host` Function",
+      "anchor": "host-function"
+    },
+    {
+      "level": 2,
+      "title": "`netmask` Function",
+      "anchor": "netmask-function"
+    },
+    {
+      "level": 2,
+      "title": "`network` Function",
+      "anchor": "network-function"
+    },
+    {
+      "level": 2,
+      "title": "`broadcast` Function",
+      "anchor": "broadcast-function"
+    },
+    {
+      "level": 2,
+      "title": "`<<=` Predicate",
+      "anchor": "-predicate"
+    },
+    {
+      "level": 2,
+      "title": "`>>=` Predicate",
+      "anchor": "-predicate"
+    },
+    {
+      "level": 2,
+      "title": "HTML Escape and Unescape Functions",
+      "anchor": "html-escape-and-unescape-functions"
+    }
+  ]
+}

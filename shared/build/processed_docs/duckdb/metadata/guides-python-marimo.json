@@ -1,0 +1,73 @@
+{
+  "layout": "docu",
+  "title": "marimo Notebooks",
+  "file_name": "marimo.md",
+  "file_stem": "marimo",
+  "file_path": "guides/python/marimo.md",
+  "file_size": 5475,
+  "document_id": "guides-python-marimo",
+  "url": "/guides/python/marimo",
+  "content_hash": "878d62fc547113da1bda89e0c17f9832",
+  "statistics": {
+    "char_count": 4837,
+    "word_count": 718,
+    "line_count": 137,
+    "paragraph_count": 43,
+    "header_count": 10,
+    "code_block_count": 9,
+    "code_lines": 18
+  },
+  "processed_at": "2025-11-22T10:32:11.614785",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 2,
+      "title": "SQL in marimo",
+      "anchor": "sql-in-marimo"
+    },
+    {
+      "level": 2,
+      "title": "Connecting a Custom DuckDB Connection",
+      "anchor": "connecting-a-custom-duckdb-connection"
+    },
+    {
+      "level": 1,
+      "title": "Create a DuckDB connection",
+      "anchor": "create-a-duckdb-connection"
+    },
+    {
+      "level": 2,
+      "title": "Database, Schema, and Table Auto-Discovery",
+      "anchor": "database-schema-and-table-auto-discovery"
+    },
+    {
+      "level": 2,
+      "title": "Reference a Local Dataframe",
+      "anchor": "reference-a-local-dataframe"
+    },
+    {
+      "level": 2,
+      "title": "Reference the Output of a SQL Cell",
+      "anchor": "reference-the-output-of-a-sql-cell"
+    },
+    {
+      "level": 2,
+      "title": "Reactive SQL Cells",
+      "anchor": "reactive-sql-cells"
+    },
+    {
+      "level": 2,
+      "title": "DuckDB-Powered OLAP Analytics in marimo",
+      "anchor": "duckdb-powered-olap-analytics-in-marimo"
+    },
+    {
+      "level": 2,
+      "title": "Next Steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

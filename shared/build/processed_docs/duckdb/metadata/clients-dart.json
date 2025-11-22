@@ -1,0 +1,64 @@
+{
+  "github_repository": "https://github.com/TigerEyeLabs/duckdb-dart",
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/api/dart",
+    "/docs/api/dart/",
+    "/docs/clients/dart"
+  ],
+  "title": "Dart Client",
+  "file_name": "dart.md",
+  "file_stem": "dart",
+  "file_path": "clients/dart.md",
+  "file_size": 2538,
+  "document_id": "clients-dart",
+  "url": "/clients/dart",
+  "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea",
+  "statistics": {
+    "char_count": 2335,
+    "word_count": 269,
+    "line_count": 90,
+    "paragraph_count": 31,
+    "header_count": 7,
+    "code_block_count": 5,
+    "code_lines": 41
+  },
+  "processed_at": "2025-11-22T10:32:04.123468",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 3,
+      "title": "Use This Package as a Library",
+      "anchor": "use-this-package-as-a-library"
+    },
+    {
+      "level": 4,
+      "title": "Depend on It",
+      "anchor": "depend-on-it"
+    },
+    {
+      "level": 4,
+      "title": "Import It",
+      "anchor": "import-it"
+    },
+    {
+      "level": 2,
+      "title": "Usage Examples",
+      "anchor": "usage-examples"
+    },
+    {
+      "level": 3,
+      "title": "Querying an In-Memory Database",
+      "anchor": "querying-an-in-memory-database"
+    },
+    {
+      "level": 3,
+      "title": "Queries on Background Isolates",
+      "anchor": "queries-on-background-isolates"
+    }
+  ]
+}

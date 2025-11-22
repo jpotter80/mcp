@@ -1,0 +1,41 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/python/sql_on_pandas"
+  ],
+  "title": "SQL on Pandas",
+  "file_name": "sql_on_pandas.md",
+  "file_stem": "sql_on_pandas",
+  "file_path": "guides/python/sql_on_pandas.md",
+  "file_size": 781,
+  "document_id": "guides-python-sql_on_pandas",
+  "url": "/guides/python/sql_on_pandas",
+  "content_hash": "e1ef6ca361097c7895e1c13d29d0bfef",
+  "statistics": {
+    "char_count": 686,
+    "word_count": 95,
+    "line_count": 15,
+    "paragraph_count": 5,
+    "header_count": 3,
+    "code_block_count": 1,
+    "code_lines": 9
+  },
+  "processed_at": "2025-11-22T10:32:11.803155",
+  "sections": [
+    {
+      "level": 1,
+      "title": "Create a Pandas dataframe",
+      "anchor": "create-a-pandas-dataframe"
+    },
+    {
+      "level": 1,
+      "title": "query the Pandas DataFrame \"my_df\"",
+      "anchor": "query-the-pandas-dataframe-my_df"
+    },
+    {
+      "level": 1,
+      "title": "Note: duckdb.sql connects to the default in-memory database connection",
+      "anchor": "note-duckdbsql-connects-to-the-default-in-memory-database-connection"
+    }
+  ]
+}

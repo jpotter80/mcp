@@ -1,0 +1,176 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/sql/functions/datepart"
+  ],
+  "title": "Date Part Functions",
+  "file_name": "datepart.md",
+  "file_stem": "datepart",
+  "file_path": "sql/functions/datepart.md",
+  "file_size": 9891,
+  "document_id": "sql-functions-datepart",
+  "url": "/sql/functions/datepart",
+  "content_hash": "0682db29367ec9bfaf36faf2cea918df",
+  "statistics": {
+    "char_count": 8784,
+    "word_count": 1308,
+    "line_count": 240,
+    "paragraph_count": 65,
+    "header_count": 30,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:13.531766",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Part Specifiers Usable as Date Part Specifiers and in Intervals",
+      "anchor": "part-specifiers-usable-as-date-part-specifiers-and-in-intervals"
+    },
+    {
+      "level": 2,
+      "title": "Part Specifiers Only Usable as Date Part Specifiers",
+      "anchor": "part-specifiers-only-usable-as-date-part-specifiers"
+    },
+    {
+      "level": 2,
+      "title": "Part Functions",
+      "anchor": "part-functions"
+    },
+    {
+      "level": 4,
+      "title": "`century(date)`",
+      "anchor": "centurydate"
+    },
+    {
+      "level": 4,
+      "title": "`day(date)`",
+      "anchor": "daydate"
+    },
+    {
+      "level": 4,
+      "title": "`dayofmonth(date)`",
+      "anchor": "dayofmonthdate"
+    },
+    {
+      "level": 4,
+      "title": "`dayofweek(date)`",
+      "anchor": "dayofweekdate"
+    },
+    {
+      "level": 4,
+      "title": "`dayofyear(date)`",
+      "anchor": "dayofyeardate"
+    },
+    {
+      "level": 4,
+      "title": "`decade(date)`",
+      "anchor": "decadedate"
+    },
+    {
+      "level": 4,
+      "title": "`epoch(date)`",
+      "anchor": "epochdate"
+    },
+    {
+      "level": 4,
+      "title": "`era(date)`",
+      "anchor": "eradate"
+    },
+    {
+      "level": 4,
+      "title": "`hour(date)`",
+      "anchor": "hourdate"
+    },
+    {
+      "level": 4,
+      "title": "`isodow(date)`",
+      "anchor": "isodowdate"
+    },
+    {
+      "level": 4,
+      "title": "`isoyear(date)`",
+      "anchor": "isoyeardate"
+    },
+    {
+      "level": 4,
+      "title": "`julian(date)`",
+      "anchor": "juliandate"
+    },
+    {
+      "level": 4,
+      "title": "`microsecond(date)`",
+      "anchor": "microseconddate"
+    },
+    {
+      "level": 4,
+      "title": "`millennium(date)`",
+      "anchor": "millenniumdate"
+    },
+    {
+      "level": 4,
+      "title": "`millisecond(date)`",
+      "anchor": "milliseconddate"
+    },
+    {
+      "level": 4,
+      "title": "`minute(date)`",
+      "anchor": "minutedate"
+    },
+    {
+      "level": 4,
+      "title": "`month(date)`",
+      "anchor": "monthdate"
+    },
+    {
+      "level": 4,
+      "title": "`quarter(date)`",
+      "anchor": "quarterdate"
+    },
+    {
+      "level": 4,
+      "title": "`second(date)`",
+      "anchor": "seconddate"
+    },
+    {
+      "level": 4,
+      "title": "`timezone_hour(date)`",
+      "anchor": "timezone_hourdate"
+    },
+    {
+      "level": 4,
+      "title": "`timezone_minute(date)`",
+      "anchor": "timezone_minutedate"
+    },
+    {
+      "level": 4,
+      "title": "`timezone(date)`",
+      "anchor": "timezonedate"
+    },
+    {
+      "level": 4,
+      "title": "`week(date)`",
+      "anchor": "weekdate"
+    },
+    {
+      "level": 4,
+      "title": "`weekday(date)`",
+      "anchor": "weekdaydate"
+    },
+    {
+      "level": 4,
+      "title": "`weekofyear(date)`",
+      "anchor": "weekofyeardate"
+    },
+    {
+      "level": 4,
+      "title": "`year(date)`",
+      "anchor": "yeardate"
+    },
+    {
+      "level": 4,
+      "title": "`yearweek(date)`",
+      "anchor": "yearweekdate"
+    }
+  ]
+}

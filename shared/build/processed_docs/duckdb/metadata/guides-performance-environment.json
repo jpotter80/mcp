@@ -1,0 +1,86 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/performance/environment"
+  ],
+  "title": "Environment",
+  "file_name": "environment.md",
+  "file_stem": "environment",
+  "file_path": "guides/performance/environment.md",
+  "file_size": 5067,
+  "document_id": "guides-performance-environment",
+  "url": "/guides/performance/environment",
+  "content_hash": "d6de7a2778f159c0bf5a5c058efd7060",
+  "statistics": {
+    "char_count": 4962,
+    "word_count": 677,
+    "line_count": 86,
+    "paragraph_count": 31,
+    "header_count": 12,
+    "code_block_count": 1,
+    "code_lines": 1
+  },
+  "processed_at": "2025-11-22T10:32:11.265052",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Hardware Configuration",
+      "anchor": "hardware-configuration"
+    },
+    {
+      "level": 3,
+      "title": "CPU",
+      "anchor": "cpu"
+    },
+    {
+      "level": 3,
+      "title": "Memory",
+      "anchor": "memory"
+    },
+    {
+      "level": 4,
+      "title": "Minimum Required Memory",
+      "anchor": "minimum-required-memory"
+    },
+    {
+      "level": 4,
+      "title": "Memory for Ideal Performance",
+      "anchor": "memory-for-ideal-performance"
+    },
+    {
+      "level": 4,
+      "title": "Larger-than-Memory Workloads",
+      "anchor": "larger-than-memory-workloads"
+    },
+    {
+      "level": 3,
+      "title": "Local Disk",
+      "anchor": "local-disk"
+    },
+    {
+      "level": 3,
+      "title": "Network-Attached Disks",
+      "anchor": "network-attached-disks"
+    },
+    {
+      "level": 2,
+      "title": "Operating System",
+      "anchor": "operating-system"
+    },
+    {
+      "level": 3,
+      "title": "Linux",
+      "anchor": "linux"
+    },
+    {
+      "level": 4,
+      "title": "glibc vs. musl libc",
+      "anchor": "glibc-vs-musl-libc"
+    },
+    {
+      "level": 2,
+      "title": "Memory Allocator",
+      "anchor": "memory-allocator"
+    }
+  ]
+}

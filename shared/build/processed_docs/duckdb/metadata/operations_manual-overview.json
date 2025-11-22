@@ -1,0 +1,25 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/operations_manual/overview"
+  ],
+  "title": "Overview",
+  "file_name": "overview.md",
+  "file_stem": "overview",
+  "file_path": "operations_manual/overview.md",
+  "file_size": 672,
+  "document_id": "operations_manual-overview",
+  "url": "/operations_manual/overview",
+  "content_hash": "4db340fb13576b9579acc0915a4c12d3",
+  "statistics": {
+    "char_count": 579,
+    "word_count": 88,
+    "line_count": 5,
+    "paragraph_count": 2,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-11-22T10:32:12.280775",
+  "sections": []
+}

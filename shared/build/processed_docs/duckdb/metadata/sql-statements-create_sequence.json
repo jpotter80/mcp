@@ -1,0 +1,67 @@
+{
+  "layout": "docu",
+  "railroad": "statements/createsequence.js",
+  "redirect_from": [
+    "/docs/sql/statements/create_sequence"
+  ],
+  "title": "CREATE SEQUENCE Statement",
+  "file_name": "create_sequence.md",
+  "file_stem": "create_sequence",
+  "file_path": "sql/statements/create_sequence.md",
+  "file_size": 6706,
+  "document_id": "sql-statements-create_sequence",
+  "url": "/sql/statements/create_sequence",
+  "content_hash": "5b0c029a7128b12e10850abccdfe9ecd",
+  "statistics": {
+    "char_count": 6510,
+    "word_count": 1000,
+    "line_count": 186,
+    "paragraph_count": 58,
+    "header_count": 8,
+    "code_block_count": 19,
+    "code_lines": 37
+  },
+  "processed_at": "2025-11-22T10:32:15.732445",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    },
+    {
+      "level": 3,
+      "title": "Creating and Dropping Sequences",
+      "anchor": "creating-and-dropping-sequences"
+    },
+    {
+      "level": 3,
+      "title": "Using Sequences for Primary Keys",
+      "anchor": "using-sequences-for-primary-keys"
+    },
+    {
+      "level": 3,
+      "title": "Selecting the Next Value",
+      "anchor": "selecting-the-next-value"
+    },
+    {
+      "level": 3,
+      "title": "Selecting the Current Value",
+      "anchor": "selecting-the-current-value"
+    },
+    {
+      "level": 2,
+      "title": "Syntax",
+      "anchor": "syntax"
+    },
+    {
+      "level": 2,
+      "title": "Parameters",
+      "anchor": "parameters"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "anchor": "limitations"
+    }
+  ]
+}

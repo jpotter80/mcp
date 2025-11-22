@@ -1,0 +1,71 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/data/csv/auto_detection"
+  ],
+  "title": "CSV Auto Detection",
+  "file_name": "auto_detection.md",
+  "file_stem": "auto_detection",
+  "file_path": "data/csv/auto_detection.md",
+  "file_size": 12229,
+  "document_id": "data-csv-auto_detection",
+  "url": "/data/csv/auto_detection",
+  "content_hash": "dd1377a360419caa55ac84846a41844b",
+  "statistics": {
+    "char_count": 10706,
+    "word_count": 1718,
+    "line_count": 185,
+    "paragraph_count": 53,
+    "header_count": 9,
+    "code_block_count": 5,
+    "code_lines": 11
+  },
+  "processed_at": "2025-11-22T10:32:09.346870",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Sample Size",
+      "anchor": "sample-size"
+    },
+    {
+      "level": 2,
+      "title": "`sniff_csv` Function",
+      "anchor": "sniff_csv-function"
+    },
+    {
+      "level": 3,
+      "title": "Prompt",
+      "anchor": "prompt"
+    },
+    {
+      "level": 2,
+      "title": "Detection Steps",
+      "anchor": "detection-steps"
+    },
+    {
+      "level": 3,
+      "title": "Dialect Detection",
+      "anchor": "dialect-detection"
+    },
+    {
+      "level": 3,
+      "title": "Type Detection",
+      "anchor": "type-detection"
+    },
+    {
+      "level": 4,
+      "title": "Overriding Type Detection",
+      "anchor": "overriding-type-detection"
+    },
+    {
+      "level": 2,
+      "title": "Header Detection",
+      "anchor": "header-detection"
+    },
+    {
+      "level": 3,
+      "title": "Dates and Timestamps",
+      "anchor": "dates-and-timestamps"
+    }
+  ]
+}
