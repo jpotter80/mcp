@@ -3,8 +3,18 @@ import duckdb
 import os
 
 
-def _build_paths(mcp_name: str):
-    catalog_path = os.path.join("servers", f"{mcp_name}-manual-mcp", "runtime", f"{mcp_name}_catalog.ducklake")
+def _build_paths(mcp_name: str, doc_type: str = "manual"):
+    """Build paths for MCP-specific files using both mcp_name and doc_type.
+    
+    Args:
+        mcp_name: Tool name (e.g., 'mojo', 'duckdb')
+        doc_type: Documentation type (e.g., 'manual', 'docs', 'guide')
+    
+    Returns:
+        Tuple of (catalog_path, parquet_input, table_name)
+    """
+    mcp_dir = f"{mcp_name}-{doc_type}-mcp"
+    catalog_path = os.path.join("servers", mcp_dir, "runtime", f"{mcp_name}_catalog.ducklake")
     parquet_input = os.path.join("shared", "build", f"{mcp_name}_embeddings.parquet")
     table_name = f"{mcp_name}_docs"
     return catalog_path, parquet_input, table_name
@@ -18,10 +28,16 @@ def main():
         default="mojo",
         help="MCP server name (e.g., 'mojo', 'duckdb')",
     )
+    parser.add_argument(
+        "--doc-type",
+        default="manual",
+        help="Documentation type (e.g., 'manual', 'docs', 'guide')",
+    )
     args = parser.parse_args()
 
     mcp_name = args.mcp_name
-    ducklake_catalog_path, parquet_input_file, table_name = _build_paths(mcp_name)
+    doc_type = args.doc_type
+    ducklake_catalog_path, parquet_input_file, table_name = _build_paths(mcp_name, doc_type)
 
     print("🔥 Initializing DuckLake and loading data...")
 

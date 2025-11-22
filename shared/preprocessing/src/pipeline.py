@@ -74,14 +74,17 @@ class DocumentProcessingPipeline:
         # Initialize output directories with substituted config
         init_directories(self.config, config_path)
 
-    def process_all_documents(self) -> Dict:
+    def process_all_documents(self, doc_name: str = "Documentation") -> Dict:
         """
         Process all documentation files in the source directory.
+        
+        Args:
+            doc_name: Friendly name for the documentation being processed (e.g., "Mojo Manual", "DuckDB Docs")
         
         Returns:
             Processing manifest dictionary
         """
-        print("🔥 Starting Mojo Manual Preprocessing Pipeline\n")
+        print(f"🔥 Starting {doc_name} Preprocessing Pipeline\n")
         
         # Discover files
         files = self._discover_files()
@@ -320,12 +323,17 @@ class DocumentProcessingPipeline:
 def main():
     """Main entry point for the preprocessing pipeline."""
     parser = argparse.ArgumentParser(
-        description="Preprocessing pipeline for Mojo manual documentation"
+        description="Preprocessing pipeline for documentation"
     )
     parser.add_argument(
         "--config",
         default="preprocessing/config/processing_config.yaml",
         help="Path to configuration file",
+    )
+    parser.add_argument(
+        "--doc-name",
+        default="Documentation",
+        help="Friendly name for the documentation being processed (e.g., 'Mojo Manual', 'DuckDB Docs')",
     )
     parser.add_argument(
         "--validate-only",
@@ -352,7 +360,7 @@ def main():
             sys.exit(0)
         
         # Run full processing
-        pipeline.process_all_documents()
+        pipeline.process_all_documents(args.doc_name)
         
         # Auto-validate
         pipeline.validate_output()

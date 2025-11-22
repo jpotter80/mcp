@@ -38,6 +38,11 @@ def main():
         help="MCP server name (e.g., 'mojo', 'duckdb')",
     )
     parser.add_argument(
+        "--doc-type",
+        default="manual",
+        help="Documentation type (e.g., 'manual', 'docs', 'guide')",
+    )
+    parser.add_argument(
         "--config",
         type=str,
         required=False,

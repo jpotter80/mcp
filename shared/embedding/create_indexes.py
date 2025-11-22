@@ -3,11 +3,22 @@ import duckdb
 import os
 
 
-def _build_paths(mcp_name: str):
-    ducklake_catalog_path = os.path.join("servers", f"{mcp_name}-manual-mcp", "runtime", f"{mcp_name}_catalog.ducklake")
+def _build_paths(mcp_name: str, doc_type: str = "manual"):
+    """Build paths for MCP-specific files using both mcp_name and doc_type.
+    
+    Args:
+        mcp_name: Tool name (e.g., 'mojo', 'duckdb')
+        doc_type: Documentation type (e.g., 'manual', 'docs', 'guide')
+    
+    Returns:
+        Tuple of (ducklake_catalog_path, ducklake_table_name, indexed_table_name, main_db_path)
+    """
+    mcp_dir = f"{mcp_name}-{doc_type}-mcp"
+    ducklake_catalog_path = os.path.join("servers", mcp_dir, "runtime", f"{mcp_name}_catalog.ducklake")
     ducklake_table_name = f"{mcp_name}_docs"
     indexed_table_name = f"{mcp_name}_docs_indexed"
-    main_db_path = os.path.join("servers", f"{mcp_name}-manual-mcp", "runtime", f"{mcp_name}_manual_mcp.db")
+    # Use underscores in database filename for SQL compatibility
+    main_db_path = os.path.join("servers", mcp_dir, "runtime", f"{mcp_name}_{doc_type}_mcp.db")
     return ducklake_catalog_path, ducklake_table_name, indexed_table_name, main_db_path
 
 def main():
@@ -19,10 +30,16 @@ def main():
         default="mojo",
         help="MCP server name (e.g., 'mojo', 'duckdb')",
     )
+    parser.add_argument(
+        "--doc-type",
+        default="manual",
+        help="Documentation type (e.g., 'manual', 'docs', 'guide')",
+    )
     args = parser.parse_args()
 
     mcp_name = args.mcp_name
-    ducklake_catalog_path, ducklake_table_name, indexed_table_name, main_db_path = _build_paths(mcp_name)
+    doc_type = args.doc_type
+    ducklake_catalog_path, ducklake_table_name, indexed_table_name, main_db_path = _build_paths(mcp_name, doc_type)
 
     print("🔥 Starting materialized view and index creation process...")
 

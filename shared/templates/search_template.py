@@ -16,10 +16,11 @@ import argparse
 
 # --- Configuration ---
 _RUNTIME_DIR = os.path.dirname(os.path.abspath(__file__))
-_DEFAULT_DB_PATH = os.path.join(_RUNTIME_DIR, "{{MCP_NAME}}.db")
+# Database filename uses underscores for SQL compatibility: {tool_name}_{doc_type}_mcp.db
+_DEFAULT_DB_PATH = os.path.join(_RUNTIME_DIR, "{{TOOL_NAME}}_{{DOC_TYPE}}_mcp.db")
 
 DB_PATH = os.getenv("{{MCP_NAME_UPPER}}_DB_PATH", _DEFAULT_DB_PATH)
-TABLE_NAME = os.getenv("{{MCP_NAME_UPPER}}_TABLE_NAME", "{{MCP_NAME}}_indexed")
+TABLE_NAME = os.getenv("{{MCP_NAME_UPPER}}_TABLE_NAME", "{{TOOL_NAME}}_docs_indexed")
 MAX_SERVER_URL = os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1")
 MODEL_NAME = os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2")
 TOP_K = 5  # Default number of results to return

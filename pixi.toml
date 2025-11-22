@@ -15,17 +15,17 @@ mcp-dev = "mcp dev servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
 # MCP-specific build tasks - Updated paths to shared/
-mojo-process = "python -m shared.preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml"
-mojo-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name mojo --config servers/mojo-manual-mcp/config/processing_config.yaml"
-mojo-consolidate = "python -m shared.embedding.consolidate_data --mcp-name mojo"
-mojo-load = "python -m shared.embedding.load_to_ducklake --mcp-name mojo"
-mojo-index = "python -m shared.embedding.create_indexes --mcp-name mojo"
+mojo-process = "python -m shared.preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml --doc-name 'Mojo Manual'"
+mojo-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name mojo --doc-type manual --config servers/mojo-manual-mcp/config/processing_config.yaml"
+mojo-consolidate = "python -m shared.embedding.consolidate_data --mcp-name mojo --doc-type manual"
+mojo-load = "python -m shared.embedding.load_to_ducklake --mcp-name mojo --doc-type manual"
+mojo-index = "python -m shared.embedding.create_indexes --mcp-name mojo --doc-type manual"
 
-duckdb-process = "python -m shared.preprocessing.src.pipeline --config servers/duckdb-docs-mcp/config/processing_config.yaml"
-duckdb-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name duckdb --config servers/duckdb-docs-mcp/config/processing_config.yaml"
-duckdb-consolidate = "python -m shared.embedding.consolidate_data --mcp-name duckdb"
-duckdb-load = "python -m shared.embedding.load_to_ducklake --mcp-name duckdb"
-duckdb-index = "python -m shared.embedding.create_indexes --mcp-name duckdb"
+duckdb-process = "python -m shared.preprocessing.src.pipeline --config servers/duckdb-docs-mcp/config/processing_config.yaml --doc-name 'DuckDB Docs'"
+duckdb-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name duckdb --doc-type docs --config servers/duckdb-docs-mcp/config/processing_config.yaml"
+duckdb-consolidate = "python -m shared.embedding.consolidate_data --mcp-name duckdb --doc-type docs"
+duckdb-load = "python -m shared.embedding.load_to_ducklake --mcp-name duckdb --doc-type docs"
+duckdb-index = "python -m shared.embedding.create_indexes --mcp-name duckdb --doc-type docs"
 
 mojo-build = """
 pixi run mojo-process && \
@@ -43,9 +43,9 @@ pixi run duckdb-load && \
 pixi run duckdb-index
 """
 
-# Demonstration: generic tasks with explicit mcp-name
-process-mojo = "python -m shared.preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml --mcp-name mojo"
-generate-embeddings-mojo = "python shared/embedding/generate_embeddings.py --mcp-name mojo"
+# Demonstration: generic tasks with explicit mcp-name and doc-type
+process-mojo = "python -m shared.preprocessing.src.pipeline --config servers/mojo-manual-mcp/config/processing_config.yaml --doc-name 'Mojo Manual'"
+generate-embeddings-mojo = "python -m shared.embedding.generate_embeddings --mcp-name mojo --doc-type manual"
 
 
 
