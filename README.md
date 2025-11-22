@@ -152,9 +152,7 @@ Currently implemented:
 | Server | Documentation Source | Format | Status |
 |--------|---------------------|--------|--------|
 | **mojo-manual-mcp** | [Mojo Manual](https://docs.modular.com/mojo/manual) | MDX | ✅ Production |
-
-Coming soon:
-- **duckdb-docs-mcp** - DuckDB documentation
+| **duckdb-docs-mcp** | [DuckDB Docs](https://duckdb.org/docs/stable/) | MD | ✅ Production |
 
 ## 🛠️ Key Technologies
 
