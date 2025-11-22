@@ -4,6 +4,7 @@
 __pycache__/
 *.egg-info/
 .pixi/
+kgen.*
 
 # Environment files
 .env
