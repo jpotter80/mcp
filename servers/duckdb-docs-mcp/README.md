@@ -54,8 +54,8 @@ pixi run duckdb-index
 
 ## Resources
 
-- `runtime/duckdb-docs-mcp_mcp_server.py` — MCP server entry point
+- `runtime/duckdb_docs_mcp_server.py` — MCP server entry point
 - `runtime/search.py` — Hybrid search engine
-- `runtime/duckdb-docs-mcp.db` — Indexed DuckDB database
+- `runtime/duckdb_docs_mcp.db` — Indexed DuckDB database
 
 For more details, see the main project README.
