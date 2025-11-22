@@ -4,34 +4,27 @@ Searchable Duckdb Docs documentation via MCP (Model Context Protocol).
 
 ## Quick Start
 
-### Option 1: With Python venv (No pixi required)
+### With Pixi (Recommended)
+
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-# Run the server
-mcp dev runtime/duckdb-docs-mcp_mcp_server.py
+# Clone the repo and navigate to the server directory
+git clone jpotter80/mcp
+cd /path/to/mcp/servers/duckdb-docs-mcp
+
+# Install dependencies in servers/mojo-manual-mcp
+pixi install
 ```
 
-### Option 2: With pixi
-```bash
-pixi run mcp-dev
-```
+Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 
-## Configure in VS Code
-
-Add to VS Code settings.json:
 ```json
 {
-  "mcp.servers": {
-    "duckdb-docs": {
-      "command": "python3",
-      "args": ["/absolute/path/to/servers/duckdb-docs-mcp/runtime/duckdb-docs-mcp_mcp_server.py"],
-      "cwd": "/absolute/path/to/servers/duckdb-docs-mcp/runtime",
-      "env": {
-        "MAX_SERVER_URL": "http://localhost:8000/v1",
-        "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2"
-      }
+  "servers": {
+    "mojo-manual": {
+      "type": "stdio",
+      "command": "pixi",
+      "args": ["run", "serve"],
+      "cwd": "/absolute/path/to/duckdb-docs-mcp"
     }
   }
 }
