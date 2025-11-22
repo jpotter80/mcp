@@ -67,7 +67,7 @@ pixi run mcp-dev
 ```
 
 Opens an interactive inspector in your browser to test search and explore resources.
-```
+
 
 ## Rebuilding the Database
 
