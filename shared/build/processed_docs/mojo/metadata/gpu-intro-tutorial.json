@@ -7,20 +7,20 @@
   "file_name": "intro-tutorial.mdx",
   "file_stem": "intro-tutorial",
   "file_path": "gpu/intro-tutorial.mdx",
-  "file_size": 37449,
+  "file_size": 37538,
   "document_id": "gpu-intro-tutorial",
   "url": "https://docs.modular.com/mojo/manual/gpu/intro-tutorial",
-  "content_hash": "c497f11ffede64e5e84afe094c7f8dc4",
+  "content_hash": "4f5ab558b532aef087c46841db65e2db",
   "statistics": {
-    "char_count": 35462,
-    "word_count": 4900,
+    "char_count": 35551,
+    "word_count": 4905,
     "line_count": 930,
     "paragraph_count": 192,
     "header_count": 18,
     "code_block_count": 32,
     "code_lines": 432
   },
-  "processed_at": "2025-11-21T13:24:16.443817",
+  "processed_at": "2025-12-11T14:37:07.150551",
   "sections": [
     {
       "level": 2,

@@ -13,20 +13,20 @@
   "file_name": "overview.md",
   "file_stem": "overview",
   "file_path": "core_extensions/iceberg/overview.md",
-  "file_size": 9629,
+  "file_size": 9578,
   "document_id": "core_extensions-iceberg-overview",
   "url": "/core_extensions/iceberg/overview",
-  "content_hash": "02afa0ae0939c725f6f07cc425bd5e54",
+  "content_hash": "8df85d559ea1445b913497612a91e248",
   "statistics": {
-    "char_count": 8387,
-    "word_count": 1000,
-    "line_count": 180,
-    "paragraph_count": 49,
+    "char_count": 8336,
+    "word_count": 993,
+    "line_count": 174,
+    "paragraph_count": 47,
     "header_count": 11,
-    "code_block_count": 13,
+    "code_block_count": 12,
     "code_lines": 42
   },
-  "processed_at": "2025-11-22T14:19:51.508486",
+  "processed_at": "2025-12-11T15:53:15.975149",
   "sections": [
     {
       "level": 2,

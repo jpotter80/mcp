@@ -10,12 +10,12 @@
   "file_name": "aggregates.md",
   "file_stem": "aggregates",
   "file_path": "sql/functions/aggregates.md",
-  "file_size": 34657,
+  "file_size": 34809,
   "document_id": "sql-functions-aggregates",
   "url": "/sql/functions/aggregates",
-  "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf",
+  "content_hash": "7503ece077eca6070023d2a1807a60a8",
   "statistics": {
-    "char_count": 27853,
+    "char_count": 27859,
     "word_count": 3783,
     "line_count": 511,
     "paragraph_count": 165,
@@ -23,7 +23,7 @@
     "code_block_count": 9,
     "code_lines": 23
   },
-  "processed_at": "2025-11-22T14:19:56.302893",
+  "processed_at": "2025-12-11T15:53:20.937643",
   "sections": [
     {
       "level": 2,

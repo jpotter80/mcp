@@ -1,0 +1,38 @@
+{
+  "title": "SDKs",
+  "description": "Official SDKs for building with Model Context Protocol",
+  "file_name": "sdk.mdx",
+  "file_stem": "sdk",
+  "file_path": "sdk.mdx",
+  "file_size": 2210,
+  "document_id": "sdk",
+  "url": "/sdk",
+  "content_hash": "3cb7827c00266e60b7080551b4f965b2",
+  "statistics": {
+    "char_count": 678,
+    "word_count": 106,
+    "line_count": 21,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-12-18T21:07:59.669379",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Available SDKs",
+      "anchor": "available-sdks"
+    },
+    {
+      "level": 2,
+      "title": "Getting Started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 2,
+      "title": "Next Steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

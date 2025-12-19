@@ -5,19 +5,40 @@
   "file_name": "fieldwise-init.mdx",
   "file_stem": "fieldwise-init",
   "file_path": "decorators/fieldwise-init.mdx",
-  "file_size": 893,
+  "file_size": 3795,
   "document_id": "decorators-fieldwise-init",
   "url": "https://docs.modular.com/mojo/manual/decorators/fieldwise-init",
-  "content_hash": "ad30e52861366df64adf75facccc3f81",
+  "content_hash": "a20f1da8e4e5b6d2efdfdfae9bb0f2b5",
   "statistics": {
-    "char_count": 753,
-    "word_count": 110,
-    "line_count": 28,
-    "paragraph_count": 7,
-    "header_count": 0,
-    "code_block_count": 2,
-    "code_lines": 11
+    "char_count": 3497,
+    "word_count": 489,
+    "line_count": 111,
+    "paragraph_count": 27,
+    "header_count": 4,
+    "code_block_count": 6,
+    "code_lines": 43
   },
-  "processed_at": "2025-11-21T13:24:15.968088",
-  "sections": []
+  "processed_at": "2025-12-11T14:37:06.629386",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Implicit conversion",
+      "anchor": "implicit-conversion"
+    },
+    {
+      "level": 3,
+      "title": "Declaring implicit initialization",
+      "anchor": "declaring-implicit-initialization"
+    },
+    {
+      "level": 3,
+      "title": "Fieldwise and implicit example",
+      "anchor": "fieldwise-and-implicit-example"
+    },
+    {
+      "level": 1,
+      "title": "Creates an implicit initializer and limits the type to one instance field.",
+      "anchor": "creates-an-implicit-initializer-and-limits-the-type-to-one-instance-field"
+    }
+  ]
 }

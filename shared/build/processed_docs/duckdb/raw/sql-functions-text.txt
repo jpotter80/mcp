@@ -329,8 +329,8 @@ This section describes functions and operators for examining and manipulating [`
 #### `ltrim(string[, characters])`
 
 | **Description** | Removes any occurrences of any of the `characters` from the left side of the `string`. `characters` defaults to `space`. |
-| **Example 1** | `ltrim(' test ')` |
-| **Result** | `test ` |
+| **Example 1** | ltrim('&nbsp;&nbsp;&nbsp;&nbsp;test&nbsp;&nbsp;') |
+| **Result** | test&nbsp;&nbsp; |
 | **Example 2** | `ltrim('>>>>test
 
 | **Description** | Returns the MD5 hash of the `string` as a `VARCHAR`. |
@@ -506,8 +506,8 @@ This section describes functions and operators for examining and manipulating [`
 | **Example** | `rpad('hello', 10, '
 
 | **Description** | Removes any occurrences of any of the `characters` from the right side of the `string`. `characters` defaults to `space`. |
-| **Example 1** | `rtrim('test ')` |
-| **Result** | `test` |
+| **Example 1** | rtrim('&nbsp;&nbsp;&nbsp;&nbsp;test&nbsp;&nbsp;') |
+| **Result** | &nbsp;&nbsp;&nbsp;&nbsp;test |
 | **Example 2** | `rtrim('>>>>test>>>test` |
 
 #### `sha1(value)`
@@ -607,7 +607,7 @@ This section describes functions and operators for examining and manipulating [`
 #### `trim(string[, characters])`
 
 | **Description** | Removes any occurrences of any of the `characters` from either side of the `string`. `characters` defaults to `space`. |
-| **Example 1** | `trim(' test ')` |
+| **Example 1** | trim('&nbsp;&nbsp;&nbsp;&nbsp;test&nbsp;&nbsp;') |
 | **Result** | `test` |
 | **Example 2** | `trim('>>>>test
 

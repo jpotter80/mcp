@@ -1,0 +1,64 @@
+{
+  "title": "Self-referential structs",
+  "sidebar_position": 2,
+  "description": "Mojo structs can't directly contain themselves. Learn how to use pointers to build linked lists, trees, and other self-referential data structures.",
+  "file_name": "reference.mdx",
+  "file_stem": "reference",
+  "file_path": "structs/reference.mdx",
+  "file_size": 8959,
+  "document_id": "structs-reference",
+  "url": "https://docs.modular.com/mojo/manual/structs/reference",
+  "content_hash": "ab9d8709a756aee0d78cd93df01b969d",
+  "statistics": {
+    "char_count": 8183,
+    "word_count": 1088,
+    "line_count": 270,
+    "paragraph_count": 63,
+    "header_count": 8,
+    "code_block_count": 10,
+    "code_lines": 131
+  },
+  "processed_at": "2025-12-11T14:37:07.937882",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Avoid direct self-reference",
+      "anchor": "avoid-direct-self-reference"
+    },
+    {
+      "level": 2,
+      "title": "Adding self-referential pointers",
+      "anchor": "adding-self-referential-pointers"
+    },
+    {
+      "level": 2,
+      "title": "Building nodes",
+      "anchor": "building-nodes"
+    },
+    {
+      "level": 2,
+      "title": "Linking nodes",
+      "anchor": "linking-nodes"
+    },
+    {
+      "level": 2,
+      "title": "Walking the list",
+      "anchor": "walking-the-list"
+    },
+    {
+      "level": 2,
+      "title": "Cleaning up",
+      "anchor": "cleaning-up"
+    },
+    {
+      "level": 3,
+      "title": "Destructors",
+      "anchor": "destructors"
+    },
+    {
+      "level": 2,
+      "title": "What next?",
+      "anchor": "what-next"
+    }
+  ]
+}

@@ -4,20 +4,20 @@
   "file_name": "unsafe-pointers.mdx",
   "file_stem": "unsafe-pointers",
   "file_path": "pointers/unsafe-pointers.mdx",
-  "file_size": 22879,
+  "file_size": 22888,
   "document_id": "pointers-unsafe-pointers",
   "url": "https://docs.modular.com/mojo/manual/pointers/unsafe-pointers",
-  "content_hash": "268701bab1dcb4f03d4db9f659ae57cb",
+  "content_hash": "d5aaf49713cc8e701b5a836a3fe76fd2",
   "statistics": {
-    "char_count": 22468,
-    "word_count": 3109,
-    "line_count": 617,
-    "paragraph_count": 143,
+    "char_count": 22476,
+    "word_count": 3110,
+    "line_count": 618,
+    "paragraph_count": 144,
     "header_count": 26,
     "code_block_count": 32,
     "code_lines": 115
   },
-  "processed_at": "2025-11-21T13:24:17.063463",
+  "processed_at": "2025-12-11T14:37:07.767951",
   "sections": [
     {
       "level": 2,

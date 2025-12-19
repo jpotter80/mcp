@@ -1,0 +1,96 @@
+Model Context Protocol (MCP) servers extend AI applications' capabilities by providing secure, controlled access to local resources and tools. Many clients support MCP, enabling diverse integration possibilities across different platforms and applications.
+
+This guide demonstrates how to connect to local MCP servers using Claude Desktop as an example, one of the [many clients that support MCP](/clients). While we focus on Claude Desktop's implementation, the concepts apply broadly to other MCP-compatible clients. By the end of this tutorial, Claude will be able to interact with files on your computer, create new documents, organize folders, and search through your file system—all with your explicit permission for each action.
+
+## Prerequisites
+
+Before starting this tutorial, ensure you have the following installed on your system:
+
+### Claude Desktop
+
+Download and install [Claude Desktop](https://claude.ai/download) for your operating system. Claude Desktop is available for macOS and Windows.
+
+If you already have Claude Desktop installed, verify you're running the latest version by clicking the Claude menu and selecting "Check for Updates..."
+
+### Node.js
+
+The Filesystem Server and many other MCP servers require Node.js to run. Verify your Node.js installation by opening a terminal or command prompt and running:
+
+```bash
+node --version
+```
+
+If Node.js is not installed, download it from [nodejs.org](https://nodejs.org/). We recommend the LTS (Long Term Support) version for stability.
+
+## Understanding MCP Servers
+
+MCP servers are programs that run on your computer and provide specific capabilities to Claude Desktop through a standardized protocol. Each server exposes tools that Claude can use to perform actions, with your approval. The Filesystem Server we'll install provides tools for:
+
+- Reading file contents and directory structures
+- Creating new files and directories
+- Moving and renaming files
+- Searching for files by name or content
+
+All actions require your explicit approval before execution, ensuring you maintain full control over what Claude can access and modify.
+
+## Installing the Filesystem Server
+
+The process involves configuring Claude Desktop to automatically start the Filesystem Server whenever you launch the application. This configuration is done through a JSON file that tells Claude Desktop which servers to run and how to connect to them.
+
+This opens the Claude Desktop configuration window, which is separate from your Claude account settings.
+
+</Step>
+
+This action creates a new configuration file if one doesn't exist, or opens your existing configuration. The file is located at:
+
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+</Step>
+
+Replace `username` with your actual computer username. The paths listed in the `args` array specify which directories the Filesystem Server can access. You can modify these paths or add additional directories as needed.
+
+</Step>
+
+Click on this indicator to view the available tools provided by the Filesystem Server:
+
+If the server indicator doesn't appear, refer to the [Troubleshooting](#troubleshooting) section for debugging steps.
+
+</Step>
+</Steps>
+
+## Using the Filesystem Server
+
+With the Filesystem Server connected, Claude can now interact with your file system. Try these example requests to explore the capabilities:
+
+### File Management Examples
+
+- **"Can you write a poem and save it to my desktop?"** - Claude will compose a poem and create a new text file on your desktop
+- **"What work-related files are in my downloads folder?"** - Claude will scan your downloads and identify work-related documents
+- **"Please organize all images on my desktop into a new folder called 'Images'"** - Claude will create a folder and move image files into it
+
+### How Approval Works
+
+Before executing any file system operation, Claude will request your approval. This ensures you maintain control over all actions:
+
+Review each request carefully before approving. You can always deny a request if you're not comfortable with the proposed action.
+
+## Troubleshooting
+
+If you encounter issues setting up or using the Filesystem Server, these solutions address common problems:
+
+</Accordion>
+
+</Accordion>
+
+</Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+Now that you've successfully connected Claude Desktop to a local MCP server, explore these options to expand your setup:
+
+
+
+
+</CardGroup>

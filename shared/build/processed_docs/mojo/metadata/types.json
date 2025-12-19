@@ -5,25 +5,30 @@
   "file_name": "types.mdx",
   "file_stem": "types",
   "file_path": "types.mdx",
-  "file_size": 29585,
+  "file_size": 31310,
   "document_id": "types",
   "url": "https://docs.modular.com/mojo/manual/types",
-  "content_hash": "6971c60617daeb1f058a1323cc9e182f",
+  "content_hash": "cc0d857e0df90551ee092853e689acec",
   "statistics": {
-    "char_count": 28520,
-    "word_count": 4145,
-    "line_count": 840,
-    "paragraph_count": 192,
-    "header_count": 29,
-    "code_block_count": 56,
-    "code_lines": 167
+    "char_count": 30670,
+    "word_count": 4453,
+    "line_count": 876,
+    "paragraph_count": 197,
+    "header_count": 30,
+    "code_block_count": 55,
+    "code_lines": 162
   },
-  "processed_at": "2025-11-21T13:24:17.291036",
+  "processed_at": "2025-12-11T14:37:08.045707",
   "sections": [
     {
       "level": 2,
       "title": "Numeric types",
       "anchor": "numeric-types"
+    },
+    {
+      "level": 3,
+      "title": "AI-optimized floating point formats",
+      "anchor": "ai-optimized-floating-point-formats"
     },
     {
       "level": 3,

@@ -10,20 +10,20 @@
   "file_name": "dart.md",
   "file_stem": "dart",
   "file_path": "clients/dart.md",
-  "file_size": 2538,
+  "file_size": 4681,
   "document_id": "clients-dart",
   "url": "/clients/dart",
-  "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea",
+  "content_hash": "318277be1028e0950c49025446d6f48f",
   "statistics": {
-    "char_count": 2335,
-    "word_count": 269,
-    "line_count": 90,
-    "paragraph_count": 31,
-    "header_count": 7,
-    "code_block_count": 5,
-    "code_lines": 41
+    "char_count": 4346,
+    "word_count": 514,
+    "line_count": 159,
+    "paragraph_count": 51,
+    "header_count": 10,
+    "code_block_count": 7,
+    "code_lines": 89
   },
-  "processed_at": "2025-11-22T14:19:47.440963",
+  "processed_at": "2025-12-11T15:53:11.804814",
   "sections": [
     {
       "level": 2,
@@ -57,8 +57,23 @@
     },
     {
       "level": 3,
-      "title": "Queries on Background Isolates",
-      "anchor": "queries-on-background-isolates"
+      "title": "Using Multiple Connections",
+      "anchor": "using-multiple-connections"
+    },
+    {
+      "level": 2,
+      "title": "Web Support",
+      "anchor": "web-support"
+    },
+    {
+      "level": 3,
+      "title": "Setup for Flutter Web",
+      "anchor": "setup-for-flutter-web"
+    },
+    {
+      "level": 3,
+      "title": "Usage in Flutter Web",
+      "anchor": "usage-in-flutter-web"
     }
   ]
 }

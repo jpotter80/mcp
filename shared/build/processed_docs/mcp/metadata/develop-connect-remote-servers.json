@@ -1,0 +1,48 @@
+{
+  "title": "Connect to remote MCP Servers",
+  "description": "Learn how to connect Claude to remote MCP servers and extend its capabilities with internet-hosted tools and data sources",
+  "file_name": "connect-remote-servers.mdx",
+  "file_stem": "connect-remote-servers",
+  "file_path": "develop/connect-remote-servers.mdx",
+  "file_size": 8164,
+  "document_id": "develop-connect-remote-servers",
+  "url": "/develop/connect-remote-servers",
+  "content_hash": "2a1b787d9ddef151615fd8530257578a",
+  "statistics": {
+    "char_count": 4808,
+    "word_count": 666,
+    "line_count": 60,
+    "paragraph_count": 28,
+    "header_count": 5,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-12-18T21:07:59.558973",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Understanding Remote MCP Servers",
+      "anchor": "understanding-remote-mcp-servers"
+    },
+    {
+      "level": 2,
+      "title": "What are Custom Connectors?",
+      "anchor": "what-are-custom-connectors"
+    },
+    {
+      "level": 2,
+      "title": "Connecting to a Remote MCP Server",
+      "anchor": "connecting-to-a-remote-mcp-server"
+    },
+    {
+      "level": 2,
+      "title": "Best Practices for Using Remote MCP Servers",
+      "anchor": "best-practices-for-using-remote-mcp-servers"
+    },
+    {
+      "level": 2,
+      "title": "Next Steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

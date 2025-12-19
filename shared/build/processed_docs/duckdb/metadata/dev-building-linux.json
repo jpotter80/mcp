@@ -7,20 +7,20 @@
   "file_name": "linux.md",
   "file_stem": "linux",
   "file_path": "dev/building/linux.md",
-  "file_size": 4771,
+  "file_size": 4773,
   "document_id": "dev-building-linux",
   "url": "/dev/building/linux",
-  "content_hash": "1912bf3b05108612bd453d29e5be6c30",
+  "content_hash": "231b8340e369754a0a8c4e5c6abe1dd1",
   "statistics": {
-    "char_count": 4685,
-    "word_count": 626,
+    "char_count": 4687,
+    "word_count": 623,
     "line_count": 160,
     "paragraph_count": 49,
     "header_count": 17,
     "code_block_count": 14,
     "code_lines": 39
   },
-  "processed_at": "2025-11-22T14:19:53.413183",
+  "processed_at": "2025-12-11T15:53:17.945492",
   "sections": [
     {
       "level": 2,
@@ -89,8 +89,8 @@
     },
     {
       "level": 2,
-      "title": "Building Using Extension Flags",
-      "anchor": "building-using-extension-flags"
+      "title": "Building Extensions",
+      "anchor": "building-extensions"
     },
     {
       "level": 2,

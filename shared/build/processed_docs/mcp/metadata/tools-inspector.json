@@ -1,0 +1,98 @@
+{
+  "title": "MCP Inspector",
+  "description": "In-depth guide to using the MCP Inspector for testing and debugging Model Context Protocol servers",
+  "file_name": "inspector.mdx",
+  "file_stem": "inspector",
+  "file_path": "tools/inspector.mdx",
+  "file_size": 3788,
+  "document_id": "tools-inspector",
+  "url": "/tools/inspector",
+  "content_hash": "d87c8b04caad6698c163c01a5064d96e",
+  "statistics": {
+    "char_count": 2385,
+    "word_count": 321,
+    "line_count": 95,
+    "paragraph_count": 32,
+    "header_count": 15,
+    "code_block_count": 6,
+    "code_lines": 15
+  },
+  "processed_at": "2025-12-18T21:07:59.670901",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Getting started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 3,
+      "title": "Installation and basic usage",
+      "anchor": "installation-and-basic-usage"
+    },
+    {
+      "level": 4,
+      "title": "Inspecting servers from npm or PyPI",
+      "anchor": "inspecting-servers-from-npm-or-pypi"
+    },
+    {
+      "level": 1,
+      "title": "For example",
+      "anchor": "for-example"
+    },
+    {
+      "level": 1,
+      "title": "For example",
+      "anchor": "for-example"
+    },
+    {
+      "level": 4,
+      "title": "Inspecting locally developed servers",
+      "anchor": "inspecting-locally-developed-servers"
+    },
+    {
+      "level": 2,
+      "title": "Feature overview",
+      "anchor": "feature-overview"
+    },
+    {
+      "level": 3,
+      "title": "Server connection pane",
+      "anchor": "server-connection-pane"
+    },
+    {
+      "level": 3,
+      "title": "Resources tab",
+      "anchor": "resources-tab"
+    },
+    {
+      "level": 3,
+      "title": "Prompts tab",
+      "anchor": "prompts-tab"
+    },
+    {
+      "level": 3,
+      "title": "Tools tab",
+      "anchor": "tools-tab"
+    },
+    {
+      "level": 3,
+      "title": "Notifications pane",
+      "anchor": "notifications-pane"
+    },
+    {
+      "level": 2,
+      "title": "Best practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "Development workflow",
+      "anchor": "development-workflow"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

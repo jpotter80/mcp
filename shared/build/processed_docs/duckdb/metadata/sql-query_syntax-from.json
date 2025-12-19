@@ -12,7 +12,7 @@
   "file_size": 16388,
   "document_id": "sql-query_syntax-from",
   "url": "/sql/query_syntax/from",
-  "content_hash": "2071cd72c572787bacbfad964e44feca",
+  "content_hash": "8ca77b3df32124789a0ead4280ffd3b6",
   "statistics": {
     "char_count": 11629,
     "word_count": 1954,
@@ -22,7 +22,7 @@
     "code_block_count": 51,
     "code_lines": 170
   },
-  "processed_at": "2025-11-22T14:19:58.146385",
+  "processed_at": "2025-12-11T15:53:22.869127",
   "sections": [
     {
       "level": 2,

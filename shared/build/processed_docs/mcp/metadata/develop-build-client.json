@@ -1,0 +1,583 @@
+{
+  "title": "Build an MCP client",
+  "description": "Get started building your own client that can integrate with all MCP servers.",
+  "file_name": "build-client.mdx",
+  "file_stem": "build-client",
+  "file_path": "develop/build-client.mdx",
+  "file_size": 45437,
+  "document_id": "develop-build-client",
+  "url": "/develop/build-client",
+  "content_hash": "8a3287e54c2f5ea2d201c7324f0305e9",
+  "statistics": {
+    "char_count": 24385,
+    "word_count": 3169,
+    "line_count": 954,
+    "paragraph_count": 229,
+    "header_count": 112,
+    "code_block_count": 60,
+    "code_lines": 587
+  },
+  "processed_at": "2025-12-18T21:07:59.408685",
+  "sections": [
+    {
+      "level": 2,
+      "title": "System Requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up Your Environment",
+      "anchor": "setting-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create project directory",
+      "anchor": "create-project-directory"
+    },
+    {
+      "level": 1,
+      "title": "Create virtual environment",
+      "anchor": "create-virtual-environment"
+    },
+    {
+      "level": 1,
+      "title": "Activate virtual environment",
+      "anchor": "activate-virtual-environment"
+    },
+    {
+      "level": 1,
+      "title": "Install required packages",
+      "anchor": "install-required-packages"
+    },
+    {
+      "level": 1,
+      "title": "Remove boilerplate files",
+      "anchor": "remove-boilerplate-files"
+    },
+    {
+      "level": 1,
+      "title": "Create our main file",
+      "anchor": "create-our-main-file"
+    },
+    {
+      "level": 1,
+      "title": "Create project directory",
+      "anchor": "create-project-directory"
+    },
+    {
+      "level": 1,
+      "title": "Create virtual environment",
+      "anchor": "create-virtual-environment"
+    },
+    {
+      "level": 1,
+      "title": "Activate virtual environment",
+      "anchor": "activate-virtual-environment"
+    },
+    {
+      "level": 1,
+      "title": "Install required packages",
+      "anchor": "install-required-packages"
+    },
+    {
+      "level": 1,
+      "title": "Remove boilerplate files",
+      "anchor": "remove-boilerplate-files"
+    },
+    {
+      "level": 1,
+      "title": "Create our main file",
+      "anchor": "create-our-main-file"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up Your API Key",
+      "anchor": "setting-up-your-api-key"
+    },
+    {
+      "level": 2,
+      "title": "Creating the Client",
+      "anchor": "creating-the-client"
+    },
+    {
+      "level": 3,
+      "title": "Basic Client Structure",
+      "anchor": "basic-client-structure"
+    },
+    {
+      "level": 3,
+      "title": "Server Connection Management",
+      "anchor": "server-connection-management"
+    },
+    {
+      "level": 3,
+      "title": "Query Processing Logic",
+      "anchor": "query-processing-logic"
+    },
+    {
+      "level": 3,
+      "title": "Interactive Chat Interface",
+      "anchor": "interactive-chat-interface"
+    },
+    {
+      "level": 3,
+      "title": "Main Entry Point",
+      "anchor": "main-entry-point"
+    },
+    {
+      "level": 2,
+      "title": "Key Components Explained",
+      "anchor": "key-components-explained"
+    },
+    {
+      "level": 3,
+      "title": "1. Client Initialization",
+      "anchor": "1-client-initialization"
+    },
+    {
+      "level": 3,
+      "title": "2. Server Connection",
+      "anchor": "2-server-connection"
+    },
+    {
+      "level": 3,
+      "title": "3. Query Processing",
+      "anchor": "3-query-processing"
+    },
+    {
+      "level": 3,
+      "title": "4. Interactive Interface",
+      "anchor": "4-interactive-interface"
+    },
+    {
+      "level": 3,
+      "title": "5. Resource Management",
+      "anchor": "5-resource-management"
+    },
+    {
+      "level": 2,
+      "title": "Common Customization Points",
+      "anchor": "common-customization-points"
+    },
+    {
+      "level": 2,
+      "title": "Running the Client",
+      "anchor": "running-the-client"
+    },
+    {
+      "level": 2,
+      "title": "How It Works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 2,
+      "title": "Best practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Server Path Issues",
+      "anchor": "server-path-issues"
+    },
+    {
+      "level": 1,
+      "title": "Relative path",
+      "anchor": "relative-path"
+    },
+    {
+      "level": 1,
+      "title": "Absolute path",
+      "anchor": "absolute-path"
+    },
+    {
+      "level": 1,
+      "title": "Windows path (either format works)",
+      "anchor": "windows-path-either-format-works"
+    },
+    {
+      "level": 3,
+      "title": "Response Timing",
+      "anchor": "response-timing"
+    },
+    {
+      "level": 3,
+      "title": "Common Error Messages",
+      "anchor": "common-error-messages"
+    },
+    {
+      "level": 2,
+      "title": "System Requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up Your Environment",
+      "anchor": "setting-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create project directory",
+      "anchor": "create-project-directory"
+    },
+    {
+      "level": 1,
+      "title": "Initialize npm project",
+      "anchor": "initialize-npm-project"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Install dev dependencies",
+      "anchor": "install-dev-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create source file",
+      "anchor": "create-source-file"
+    },
+    {
+      "level": 1,
+      "title": "Create project directory",
+      "anchor": "create-project-directory"
+    },
+    {
+      "level": 1,
+      "title": "Initialize npm project",
+      "anchor": "initialize-npm-project"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Install dev dependencies",
+      "anchor": "install-dev-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create source file",
+      "anchor": "create-source-file"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up Your API Key",
+      "anchor": "setting-up-your-api-key"
+    },
+    {
+      "level": 2,
+      "title": "Creating the Client",
+      "anchor": "creating-the-client"
+    },
+    {
+      "level": 3,
+      "title": "Basic Client Structure",
+      "anchor": "basic-client-structure"
+    },
+    {
+      "level": 3,
+      "title": "Server Connection Management",
+      "anchor": "server-connection-management"
+    },
+    {
+      "level": 3,
+      "title": "Query Processing Logic",
+      "anchor": "query-processing-logic"
+    },
+    {
+      "level": 3,
+      "title": "Interactive Chat Interface",
+      "anchor": "interactive-chat-interface"
+    },
+    {
+      "level": 3,
+      "title": "Main Entry Point",
+      "anchor": "main-entry-point"
+    },
+    {
+      "level": 2,
+      "title": "Running the Client",
+      "anchor": "running-the-client"
+    },
+    {
+      "level": 1,
+      "title": "Build TypeScript",
+      "anchor": "build-typescript"
+    },
+    {
+      "level": 1,
+      "title": "Run the client",
+      "anchor": "run-the-client"
+    },
+    {
+      "level": 2,
+      "title": "How It Works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 2,
+      "title": "Best practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Server Path Issues",
+      "anchor": "server-path-issues"
+    },
+    {
+      "level": 1,
+      "title": "Relative path",
+      "anchor": "relative-path"
+    },
+    {
+      "level": 1,
+      "title": "Absolute path",
+      "anchor": "absolute-path"
+    },
+    {
+      "level": 1,
+      "title": "Windows path (either format works)",
+      "anchor": "windows-path-either-format-works"
+    },
+    {
+      "level": 3,
+      "title": "Response Timing",
+      "anchor": "response-timing"
+    },
+    {
+      "level": 3,
+      "title": "Common Error Messages",
+      "anchor": "common-error-messages"
+    },
+    {
+      "level": 2,
+      "title": "System Requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 2,
+      "title": "Setting Up Your Environment",
+      "anchor": "setting-up-your-environment"
+    },
+    {
+      "level": 2,
+      "title": "How it Works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 3,
+      "title": "MCP Client Configuration",
+      "anchor": "mcp-client-configuration"
+    },
+    {
+      "level": 3,
+      "title": "Chat Implementation",
+      "anchor": "chat-implementation"
+    },
+    {
+      "level": 3,
+      "title": "Build and run",
+      "anchor": "build-and-run"
+    },
+    {
+      "level": 3,
+      "title": "Advanced Configuration",
+      "anchor": "advanced-configuration"
+    },
+    {
+      "level": 2,
+      "title": "System Requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 2,
+      "title": "Setting up your environment",
+      "anchor": "setting-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new kotlin project",
+      "anchor": "initialize-a-new-kotlin-project"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new kotlin project",
+      "anchor": "initialize-a-new-kotlin-project"
+    },
+    {
+      "level": 2,
+      "title": "Setting up your API key",
+      "anchor": "setting-up-your-api-key"
+    },
+    {
+      "level": 2,
+      "title": "Creating the Client",
+      "anchor": "creating-the-client"
+    },
+    {
+      "level": 3,
+      "title": "Basic Client Structure",
+      "anchor": "basic-client-structure"
+    },
+    {
+      "level": 3,
+      "title": "Server connection management",
+      "anchor": "server-connection-management"
+    },
+    {
+      "level": 3,
+      "title": "Query processing logic",
+      "anchor": "query-processing-logic"
+    },
+    {
+      "level": 3,
+      "title": "Interactive chat",
+      "anchor": "interactive-chat"
+    },
+    {
+      "level": 3,
+      "title": "Main entry point",
+      "anchor": "main-entry-point"
+    },
+    {
+      "level": 2,
+      "title": "Running the client",
+      "anchor": "running-the-client"
+    },
+    {
+      "level": 1,
+      "title": "Run the client",
+      "anchor": "run-the-client"
+    },
+    {
+      "level": 2,
+      "title": "How it works",
+      "anchor": "how-it-works"
+    },
+    {
+      "level": 2,
+      "title": "Best practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "Server Path Issues",
+      "anchor": "server-path-issues"
+    },
+    {
+      "level": 1,
+      "title": "Relative path",
+      "anchor": "relative-path"
+    },
+    {
+      "level": 1,
+      "title": "Absolute path",
+      "anchor": "absolute-path"
+    },
+    {
+      "level": 1,
+      "title": "Windows path (either format works)",
+      "anchor": "windows-path-either-format-works"
+    },
+    {
+      "level": 3,
+      "title": "Response Timing",
+      "anchor": "response-timing"
+    },
+    {
+      "level": 3,
+      "title": "Common Error Messages",
+      "anchor": "common-error-messages"
+    },
+    {
+      "level": 2,
+      "title": "System Requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 2,
+      "title": "Setting up your environment",
+      "anchor": "setting-up-your-environment"
+    },
+    {
+      "level": 2,
+      "title": "Setting up your API key",
+      "anchor": "setting-up-your-api-key"
+    },
+    {
+      "level": 2,
+      "title": "Creating the Client",
+      "anchor": "creating-the-client"
+    },
+    {
+      "level": 3,
+      "title": "Basic Client Structure",
+      "anchor": "basic-client-structure"
+    },
+    {
+      "level": 3,
+      "title": "Query processing logic",
+      "anchor": "query-processing-logic"
+    },
+    {
+      "level": 2,
+      "title": "Key Components Explained",
+      "anchor": "key-components-explained"
+    },
+    {
+      "level": 3,
+      "title": "1. Client Initialization",
+      "anchor": "1-client-initialization"
+    },
+    {
+      "level": 3,
+      "title": "2. Server Connection",
+      "anchor": "2-server-connection"
+    },
+    {
+      "level": 3,
+      "title": "3. Query Processing",
+      "anchor": "3-query-processing"
+    },
+    {
+      "level": 2,
+      "title": "Running the Client",
+      "anchor": "running-the-client"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

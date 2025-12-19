@@ -1,12 +1,12 @@
 {
-  "processing_date": "2025-11-22T14:19:58.977370",
+  "processing_date": "2025-12-11T15:53:23.746834",
   "source_directory": "/home/james/mcp/source-documentation/duckdb/docs",
   "output_directory": "/home/james/mcp/shared/build/processed_docs/duckdb",
-  "total_documents": 756,
-  "total_chunks": 10830,
-  "total_tokens": 1697672,
-  "average_tokens_per_chunk": 156.76,
-  "chunks_with_code": 4400,
+  "total_documents": 754,
+  "total_chunks": 10868,
+  "total_tokens": 1702832,
+  "average_tokens_per_chunk": 156.68,
+  "chunks_with_code": 4428,
   "configuration": {
     "chunk_size": 256,
     "chunk_overlap": 50,
@@ -208,14 +208,14 @@
     {
       "file_path": "clients/cli/dot_commands.md",
       "document_id": "clients-cli-dot_commands",
-      "chunks_generated": 29,
-      "content_hash": "f6d628b21a4a6487c7fcee4380053fb2"
+      "chunks_generated": 32,
+      "content_hash": "b5d261791a1f4c85448433de93d1cbad"
     },
     {
       "file_path": "clients/cli/dot_commands.md",
       "document_id": "clients-cli-dot_commands",
-      "chunks_generated": 29,
-      "content_hash": "f6d628b21a4a6487c7fcee4380053fb2"
+      "chunks_generated": 32,
+      "content_hash": "b5d261791a1f4c85448433de93d1cbad"
     },
     {
       "file_path": "clients/cli/editing.md",
@@ -304,26 +304,26 @@
     {
       "file_path": "clients/dart.md",
       "document_id": "clients-dart",
-      "chunks_generated": 5,
-      "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea"
+      "chunks_generated": 9,
+      "content_hash": "318277be1028e0950c49025446d6f48f"
     },
     {
       "file_path": "clients/dart.md",
       "document_id": "clients-dart",
-      "chunks_generated": 5,
-      "content_hash": "9fbdbd4d9e8f96754ac7d1cdbcf433ea"
+      "chunks_generated": 9,
+      "content_hash": "318277be1028e0950c49025446d6f48f"
     },
     {
       "file_path": "clients/go.md",
       "document_id": "clients-go",
       "chunks_generated": 11,
-      "content_hash": "7d3da91708f5ab062118f2bba2fe9809"
+      "content_hash": "9ae983760ba52dab5b1e7eb69b6d4455"
     },
     {
       "file_path": "clients/go.md",
       "document_id": "clients-go",
       "chunks_generated": 11,
-      "content_hash": "7d3da91708f5ab062118f2bba2fe9809"
+      "content_hash": "9ae983760ba52dab5b1e7eb69b6d4455"
     },
     {
       "file_path": "clients/java.md",
@@ -544,14 +544,14 @@
     {
       "file_path": "clients/python/overview.md",
       "document_id": "clients-python-overview",
-      "chunks_generated": 13,
-      "content_hash": "282a439a26a27be05f17635bde48557a"
+      "chunks_generated": 15,
+      "content_hash": "99c166c4f51e54165f200e12c76dd9ac"
     },
     {
       "file_path": "clients/python/overview.md",
       "document_id": "clients-python-overview",
-      "chunks_generated": 13,
-      "content_hash": "282a439a26a27be05f17635bde48557a"
+      "chunks_generated": 15,
+      "content_hash": "99c166c4f51e54165f200e12c76dd9ac"
     },
     {
       "file_path": "clients/python/reference/index.md",
@@ -640,14 +640,14 @@
     {
       "file_path": "clients/tertiary.md",
       "document_id": "clients-tertiary",
-      "chunks_generated": 5,
-      "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d"
+      "chunks_generated": 6,
+      "content_hash": "6a281af807cae19c5d87742fbc40e219"
     },
     {
       "file_path": "clients/tertiary.md",
       "document_id": "clients-tertiary",
-      "chunks_generated": 5,
-      "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d"
+      "chunks_generated": 6,
+      "content_hash": "6a281af807cae19c5d87742fbc40e219"
     },
     {
       "file_path": "clients/wasm/data_ingestion.md",
@@ -797,13 +797,13 @@
       "file_path": "core_extensions/avro.md",
       "document_id": "core_extensions-avro",
       "chunks_generated": 7,
-      "content_hash": "f69cd305fc534cd22cee36eb9f41b031"
+      "content_hash": "6d33a154d4ddc34392d60139520775b9"
     },
     {
       "file_path": "core_extensions/avro.md",
       "document_id": "core_extensions-avro",
       "chunks_generated": 7,
-      "content_hash": "f69cd305fc534cd22cee36eb9f41b031"
+      "content_hash": "6d33a154d4ddc34392d60139520775b9"
     },
     {
       "file_path": "core_extensions/aws.md",
@@ -989,13 +989,13 @@
       "file_path": "core_extensions/iceberg/overview.md",
       "document_id": "core_extensions-iceberg-overview",
       "chunks_generated": 28,
-      "content_hash": "02afa0ae0939c725f6f07cc425bd5e54"
+      "content_hash": "8df85d559ea1445b913497612a91e248"
     },
     {
       "file_path": "core_extensions/iceberg/overview.md",
       "document_id": "core_extensions-iceberg-overview",
       "chunks_generated": 28,
-      "content_hash": "02afa0ae0939c725f6f07cc425bd5e54"
+      "content_hash": "8df85d559ea1445b913497612a91e248"
     },
     {
       "file_path": "core_extensions/iceberg/troubleshooting.md",
@@ -1025,13 +1025,13 @@
       "file_path": "core_extensions/inet.md",
       "document_id": "core_extensions-inet",
       "chunks_generated": 15,
-      "content_hash": "9a01d3c5648030b25959f3ad362ec6b4"
+      "content_hash": "8efa3c7b3d2a1f902938f738af061cb7"
     },
     {
       "file_path": "core_extensions/inet.md",
       "document_id": "core_extensions-inet",
       "chunks_generated": 15,
-      "content_hash": "9a01d3c5648030b25959f3ad362ec6b4"
+      "content_hash": "8efa3c7b3d2a1f902938f738af061cb7"
     },
     {
       "file_path": "core_extensions/jemalloc.md",
@@ -1529,13 +1529,13 @@
       "file_path": "dev/benchmark.md",
       "document_id": "dev-benchmark",
       "chunks_generated": 12,
-      "content_hash": "e15aa0a00a30b04669e45edd608f14c5"
+      "content_hash": "ad0f2007193b922051a5f029ae287b84"
     },
     {
       "file_path": "dev/benchmark.md",
       "document_id": "dev-benchmark",
       "chunks_generated": 12,
-      "content_hash": "e15aa0a00a30b04669e45edd608f14c5"
+      "content_hash": "ad0f2007193b922051a5f029ae287b84"
     },
     {
       "file_path": "dev/building/android.md",
@@ -1553,37 +1553,37 @@
       "file_path": "dev/building/build_configuration.md",
       "document_id": "dev-building-build_configuration",
       "chunks_generated": 8,
-      "content_hash": "ea48eee2f51b365e0fb278c760779dc8"
+      "content_hash": "91e1e65e83794291f135f13a67db57e5"
     },
     {
       "file_path": "dev/building/build_configuration.md",
       "document_id": "dev-building-build_configuration",
       "chunks_generated": 8,
-      "content_hash": "ea48eee2f51b365e0fb278c760779dc8"
+      "content_hash": "91e1e65e83794291f135f13a67db57e5"
     },
     {
       "file_path": "dev/building/building_extensions.md",
       "document_id": "dev-building-building_extensions",
       "chunks_generated": 6,
-      "content_hash": "84c297d927e78971b930849de7ebfe12"
+      "content_hash": "ceedeae3da3073b65f94f14bde2ca848"
     },
     {
       "file_path": "dev/building/building_extensions.md",
       "document_id": "dev-building-building_extensions",
       "chunks_generated": 6,
-      "content_hash": "84c297d927e78971b930849de7ebfe12"
+      "content_hash": "ceedeae3da3073b65f94f14bde2ca848"
     },
     {
       "file_path": "dev/building/linux.md",
       "document_id": "dev-building-linux",
       "chunks_generated": 8,
-      "content_hash": "1912bf3b05108612bd453d29e5be6c30"
+      "content_hash": "231b8340e369754a0a8c4e5c6abe1dd1"
     },
     {
       "file_path": "dev/building/linux.md",
       "document_id": "dev-building-linux",
       "chunks_generated": 8,
-      "content_hash": "1912bf3b05108612bd453d29e5be6c30"
+      "content_hash": "231b8340e369754a0a8c4e5c6abe1dd1"
     },
     {
       "file_path": "dev/building/macos.md",
@@ -1613,13 +1613,13 @@
       "file_path": "dev/building/python.md",
       "document_id": "dev-building-python",
       "chunks_generated": 18,
-      "content_hash": "0315572aaef87482a46ae29f4ab6b8da"
+      "content_hash": "d6bd21d1806fcff1f862173fbdc0f69a"
     },
     {
       "file_path": "dev/building/python.md",
       "document_id": "dev-building-python",
       "chunks_generated": 18,
-      "content_hash": "0315572aaef87482a46ae29f4ab6b8da"
+      "content_hash": "d6bd21d1806fcff1f862173fbdc0f69a"
     },
     {
       "file_path": "dev/building/r.md",
@@ -1637,13 +1637,13 @@
       "file_path": "dev/building/raspberry_pi.md",
       "document_id": "dev-building-raspberry_pi",
       "chunks_generated": 2,
-      "content_hash": "a66659f3374a4657924abe76780a3d75"
+      "content_hash": "8340ecd345abb5afc80d004c8b041419"
     },
     {
       "file_path": "dev/building/raspberry_pi.md",
       "document_id": "dev-building-raspberry_pi",
       "chunks_generated": 2,
-      "content_hash": "a66659f3374a4657924abe76780a3d75"
+      "content_hash": "8340ecd345abb5afc80d004c8b041419"
     },
     {
       "file_path": "dev/building/troubleshooting.md",
@@ -1661,13 +1661,13 @@
       "file_path": "dev/building/unofficial_and_unsupported_platforms.md",
       "document_id": "dev-building-unofficial_and_unsupported_platforms",
       "chunks_generated": 6,
-      "content_hash": "3d0afba1c4944785a234f83ae5823082"
+      "content_hash": "1afcf8919bf184553dfcb91031d09852"
     },
     {
       "file_path": "dev/building/unofficial_and_unsupported_platforms.md",
       "document_id": "dev-building-unofficial_and_unsupported_platforms",
       "chunks_generated": 6,
-      "content_hash": "3d0afba1c4944785a234f83ae5823082"
+      "content_hash": "1afcf8919bf184553dfcb91031d09852"
     },
     {
       "file_path": "dev/building/windows.md",
@@ -1709,13 +1709,13 @@
       "file_path": "dev/release_cycle.md",
       "document_id": "dev-release_cycle",
       "chunks_generated": 30,
-      "content_hash": "c8dd481e5221420d6e99b080d2a10176"
+      "content_hash": "7c703677021a3ae4f823b12b66fa3650"
     },
     {
       "file_path": "dev/release_cycle.md",
       "document_id": "dev-release_cycle",
       "chunks_generated": 30,
-      "content_hash": "c8dd481e5221420d6e99b080d2a10176"
+      "content_hash": "7c703677021a3ae4f823b12b66fa3650"
     },
     {
       "file_path": "dev/repositories.md",
@@ -2357,13 +2357,13 @@
       "file_path": "guides/offline-copy.md",
       "document_id": "guides-offline-copy",
       "chunks_generated": 1,
-      "content_hash": "bc80febc54ff60058fe8726ad08e9455"
+      "content_hash": "4e972a918cb2e0e8626a51b219f1bfae"
     },
     {
       "file_path": "guides/offline-copy.md",
       "document_id": "guides-offline-copy",
       "chunks_generated": 1,
-      "content_hash": "bc80febc54ff60058fe8726ad08e9455"
+      "content_hash": "4e972a918cb2e0e8626a51b219f1bfae"
     },
     {
       "file_path": "guides/overview.md",
@@ -2822,6 +2822,18 @@
       "content_hash": "e34ed184b378471e7f8fba98e67822fb"
     },
     {
+      "file_path": "guides/sql_features/merge.md",
+      "document_id": "guides-sql_features-merge",
+      "chunks_generated": 22,
+      "content_hash": "27db97c83ca18dcdff4142826a3be127"
+    },
+    {
+      "file_path": "guides/sql_features/merge.md",
+      "document_id": "guides-sql_features-merge",
+      "chunks_generated": 22,
+      "content_hash": "27db97c83ca18dcdff4142826a3be127"
+    },
+    {
       "file_path": "guides/sql_features/query_and_query_table_functions.md",
       "document_id": "guides-sql_features-query_and_query_table_functions",
       "chunks_generated": 6,
@@ -2870,18 +2882,6 @@
       "content_hash": "e351f0672da3387a2ef72c303a2288f4"
     },
     {
-      "file_path": "index.md",
-      "document_id": "index",
-      "chunks_generated": 1,
-      "content_hash": "a135623a0edd29f374268c8eebb0edb1"
-    },
-    {
-      "file_path": "index.md",
-      "document_id": "index",
-      "chunks_generated": 1,
-      "content_hash": "a135623a0edd29f374268c8eebb0edb1"
-    },
-    {
       "file_path": "internals/overview.md",
       "document_id": "internals-overview",
       "chunks_generated": 11,
@@ -2928,18 +2928,6 @@
       "document_id": "internals-vector",
       "chunks_generated": 8,
       "content_hash": "7ec9e2c42cbfa7fd0e58ee53a14f3341"
-    },
-    {
-      "file_path": "lakehouse_formats.md",
-      "document_id": "lakehouse_formats",
-      "chunks_generated": 13,
-      "content_hash": "29aac09b3e4b24420f0401e298aed004"
-    },
-    {
-      "file_path": "lakehouse_formats.md",
-      "document_id": "lakehouse_formats",
-      "chunks_generated": 13,
-      "content_hash": "29aac09b3e4b24420f0401e298aed004"
     },
     {
       "file_path": "operations_manual/duckdb_docker.md",
@@ -3545,13 +3533,13 @@
       "file_path": "sql/functions/aggregates.md",
       "document_id": "sql-functions-aggregates",
       "chunks_generated": 56,
-      "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf"
+      "content_hash": "7503ece077eca6070023d2a1807a60a8"
     },
     {
       "file_path": "sql/functions/aggregates.md",
       "document_id": "sql-functions-aggregates",
       "chunks_generated": 56,
-      "content_hash": "32181d9072f1d8609c31f1d2c91b9dbf"
+      "content_hash": "7503ece077eca6070023d2a1807a60a8"
     },
     {
       "file_path": "sql/functions/array.md",
@@ -3593,13 +3581,13 @@
       "file_path": "sql/functions/date.md",
       "document_id": "sql-functions-date",
       "chunks_generated": 21,
-      "content_hash": "8a5c9c7a8ea1a1e6f1f367011c0ec1b1"
+      "content_hash": "3c957221ad9e69a3e6e16146e68b7120"
     },
     {
       "file_path": "sql/functions/date.md",
       "document_id": "sql-functions-date",
       "chunks_generated": 21,
-      "content_hash": "8a5c9c7a8ea1a1e6f1f367011c0ec1b1"
+      "content_hash": "3c957221ad9e69a3e6e16146e68b7120"
     },
     {
       "file_path": "sql/functions/dateformat.md",
@@ -3653,13 +3641,13 @@
       "file_path": "sql/functions/lambda.md",
       "document_id": "sql-functions-lambda",
       "chunks_generated": 18,
-      "content_hash": "141e9065f350380cbac6075dc8e06b94"
+      "content_hash": "f863fffc42af3c52a5e67e4b44a2145a"
     },
     {
       "file_path": "sql/functions/lambda.md",
       "document_id": "sql-functions-lambda",
       "chunks_generated": 18,
-      "content_hash": "141e9065f350380cbac6075dc8e06b94"
+      "content_hash": "f863fffc42af3c52a5e67e4b44a2145a"
     },
     {
       "file_path": "sql/functions/list.md",
@@ -3761,13 +3749,13 @@
       "file_path": "sql/functions/text.md",
       "document_id": "sql-functions-text",
       "chunks_generated": 108,
-      "content_hash": "b982df04d60727e483a8b3da47672986"
+      "content_hash": "086665ba550eea914989a4660ac5b004"
     },
     {
       "file_path": "sql/functions/text.md",
       "document_id": "sql-functions-text",
       "chunks_generated": 108,
-      "content_hash": "b982df04d60727e483a8b3da47672986"
+      "content_hash": "086665ba550eea914989a4660ac5b004"
     },
     {
       "file_path": "sql/functions/time.md",
@@ -3845,13 +3833,13 @@
       "file_path": "sql/indexes.md",
       "document_id": "sql-indexes",
       "chunks_generated": 18,
-      "content_hash": "1259180f80617bc17e4887c589c3788c"
+      "content_hash": "6c3a984560acdc3c601e2b0e59da8df7"
     },
     {
       "file_path": "sql/indexes.md",
       "document_id": "sql-indexes",
       "chunks_generated": 18,
-      "content_hash": "1259180f80617bc17e4887c589c3788c"
+      "content_hash": "6c3a984560acdc3c601e2b0e59da8df7"
     },
     {
       "file_path": "sql/introduction.md",
@@ -3905,13 +3893,13 @@
       "file_path": "sql/query_syntax/from.md",
       "document_id": "sql-query_syntax-from",
       "chunks_generated": 26,
-      "content_hash": "2071cd72c572787bacbfad964e44feca"
+      "content_hash": "8ca77b3df32124789a0ead4280ffd3b6"
     },
     {
       "file_path": "sql/query_syntax/from.md",
       "document_id": "sql-query_syntax-from",
       "chunks_generated": 26,
-      "content_hash": "2071cd72c572787bacbfad964e44feca"
+      "content_hash": "8ca77b3df32124789a0ead4280ffd3b6"
     },
     {
       "file_path": "sql/query_syntax/groupby.md",
@@ -4168,14 +4156,14 @@
     {
       "file_path": "sql/statements/checkpoint.md",
       "document_id": "sql-statements-checkpoint",
-      "chunks_generated": 2,
-      "content_hash": "3117bc19228c7705e3c2f950fb0e2ee3"
+      "chunks_generated": 3,
+      "content_hash": "38bf657a3c0cba8708ec678819949753"
     },
     {
       "file_path": "sql/statements/checkpoint.md",
       "document_id": "sql-statements-checkpoint",
-      "chunks_generated": 2,
-      "content_hash": "3117bc19228c7705e3c2f950fb0e2ee3"
+      "chunks_generated": 3,
+      "content_hash": "38bf657a3c0cba8708ec678819949753"
     },
     {
       "file_path": "sql/statements/comment_on.md",
@@ -4373,13 +4361,13 @@
       "file_path": "sql/statements/merge_into.md",
       "document_id": "sql-statements-merge_into",
       "chunks_generated": 9,
-      "content_hash": "8b6a8814e3696de7ad1a084667fc1687"
+      "content_hash": "878570340ec4c884e991cdafea29ad8a"
     },
     {
       "file_path": "sql/statements/merge_into.md",
       "document_id": "sql-statements-merge_into",
       "chunks_generated": 9,
-      "content_hash": "8b6a8814e3696de7ad1a084667fc1687"
+      "content_hash": "878570340ec4c884e991cdafea29ad8a"
     },
     {
       "file_path": "sql/statements/overview.md",

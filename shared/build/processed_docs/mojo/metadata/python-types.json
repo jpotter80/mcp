@@ -5,20 +5,20 @@
   "file_name": "types.mdx",
   "file_stem": "types",
   "file_path": "python/types.mdx",
-  "file_size": 6287,
+  "file_size": 6382,
   "document_id": "python-types",
   "url": "https://docs.modular.com/mojo/manual/python/types",
-  "content_hash": "4b873b34e48d511fdc4e7925d7774237",
+  "content_hash": "7097067433cc99d11b37ecdac72883c8",
   "statistics": {
-    "char_count": 6022,
-    "word_count": 803,
+    "char_count": 6117,
+    "word_count": 802,
     "line_count": 208,
     "paragraph_count": 43,
     "header_count": 4,
     "code_block_count": 13,
     "code_lines": 98
   },
-  "processed_at": "2025-11-21T13:24:17.184092",
+  "processed_at": "2025-12-11T14:37:07.887381",
   "sections": [
     {
       "level": 2,

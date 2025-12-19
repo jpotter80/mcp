@@ -10,7 +10,7 @@ generate-embeddings = "python embedding/generate_embeddings.py"
 consolidate = "python embedding/consolidate_data.py"
 load = "python embedding/load_to_ducklake.py"
 index = "python embedding/create_indexes.py"
-search = "python servers/mojo-manual-mcp/runtime/search.py"
+search = "python servers/mcp-docs-mcp/runtime/search.py"
 mcp-dev = "mcp dev servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
@@ -27,6 +27,12 @@ duckdb-consolidate = "python -m shared.embedding.consolidate_data --mcp-name duc
 duckdb-load = "python -m shared.embedding.load_to_ducklake --mcp-name duckdb --doc-type docs"
 duckdb-index = "python -m shared.embedding.create_indexes --mcp-name duckdb --doc-type docs"
 
+mcp-process = "python -m shared.preprocessing.src.pipeline --config servers/mcp-docs-mcp/config/processing_config.yaml --doc-name 'MCP Docs'"
+mcp-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name mcp --doc-type docs --config servers/mcp-docs-mcp/config/processing_config.yaml"
+mcp-consolidate = "python -m shared.embedding.consolidate_data --mcp-name mcp --doc-type docs"
+mcp-load = "python -m shared.embedding.load_to_ducklake --mcp-name mcp --doc-type docs"
+mcp-index = "python -m shared.embedding.create_indexes --mcp-name mcp --doc-type docs"
+
 mojo-build = """
 pixi run mojo-process && \
 pixi run mojo-generate-embeddings && \
@@ -41,6 +47,14 @@ pixi run duckdb-generate-embeddings && \
 pixi run duckdb-consolidate && \
 pixi run duckdb-load && \
 pixi run duckdb-index
+"""
+
+mcp-build = """
+pixi run mcp-process && \
+pixi run mcp-generate-embeddings && \
+pixi run mcp-consolidate && \
+pixi run mcp-load && \
+pixi run mcp-index
 """
 
 # Demonstration: generic tasks with explicit mcp-name and doc-type

@@ -7,12 +7,12 @@
   "file_name": "python.md",
   "file_stem": "python",
   "file_path": "dev/building/python.md",
-  "file_size": 6695,
+  "file_size": 6697,
   "document_id": "dev-building-python",
   "url": "/dev/building/python",
-  "content_hash": "0315572aaef87482a46ae29f4ab6b8da",
+  "content_hash": "d6bd21d1806fcff1f862173fbdc0f69a",
   "statistics": {
-    "char_count": 6588,
+    "char_count": 6590,
     "word_count": 878,
     "line_count": 252,
     "paragraph_count": 80,
@@ -20,7 +20,7 @@
     "code_block_count": 21,
     "code_lines": 54
   },
-  "processed_at": "2025-11-22T14:19:53.492599",
+  "processed_at": "2025-12-11T15:53:18.024306",
   "sections": [
     {
       "level": 2,

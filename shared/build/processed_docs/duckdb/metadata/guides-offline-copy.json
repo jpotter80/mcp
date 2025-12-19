@@ -7,12 +7,12 @@
   "file_name": "offline-copy.md",
   "file_stem": "offline-copy",
   "file_path": "guides/offline-copy.md",
-  "file_size": 404,
+  "file_size": 406,
   "document_id": "guides-offline-copy",
   "url": "/guides/offline-copy",
-  "content_hash": "bc80febc54ff60058fe8726ad08e9455",
+  "content_hash": "4e972a918cb2e0e8626a51b219f1bfae",
   "statistics": {
-    "char_count": 314,
+    "char_count": 316,
     "word_count": 35,
     "line_count": 6,
     "paragraph_count": 3,
@@ -20,6 +20,6 @@
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-11-22T14:19:54.347649",
+  "processed_at": "2025-12-11T15:53:19.026817",
   "sections": []
 }

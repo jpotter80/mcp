@@ -4,12 +4,12 @@
   "file_name": "release_cycle.md",
   "file_stem": "release_cycle",
   "file_path": "dev/release_cycle.md",
-  "file_size": 14804,
+  "file_size": 14806,
   "document_id": "dev-release_cycle",
   "url": "/dev/release_cycle",
-  "content_hash": "c8dd481e5221420d6e99b080d2a10176",
+  "content_hash": "7c703677021a3ae4f823b12b66fa3650",
   "statistics": {
-    "char_count": 14025,
+    "char_count": 14027,
     "word_count": 2077,
     "line_count": 272,
     "paragraph_count": 61,
@@ -17,7 +17,7 @@
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-11-22T14:19:53.676549",
+  "processed_at": "2025-12-11T15:53:18.212803",
   "sections": [
     {
       "level": 2,

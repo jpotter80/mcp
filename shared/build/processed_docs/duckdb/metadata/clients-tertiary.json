@@ -4,19 +4,25 @@
   "file_name": "tertiary.md",
   "file_stem": "tertiary",
   "file_path": "clients/tertiary.md",
-  "file_size": 2392,
+  "file_size": 2582,
   "document_id": "clients-tertiary",
   "url": "/clients/tertiary",
-  "content_hash": "9471b8a73a7d413b6d5e6eb48e776a0d",
+  "content_hash": "6a281af807cae19c5d87742fbc40e219",
   "statistics": {
-    "char_count": 1757,
-    "word_count": 163,
-    "line_count": 17,
-    "paragraph_count": 1,
-    "header_count": 0,
+    "char_count": 2067,
+    "word_count": 194,
+    "line_count": 23,
+    "paragraph_count": 4,
+    "header_count": 1,
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-11-22T14:19:50.456604",
-  "sections": []
+  "processed_at": "2025-12-11T15:53:14.872804",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Support Tiers",
+      "anchor": "support-tiers"
+    }
+  ]
 }

@@ -12,20 +12,20 @@
   "file_name": "overview.md",
   "file_stem": "overview",
   "file_path": "clients/python/overview.md",
-  "file_size": 8585,
+  "file_size": 8962,
   "document_id": "clients-python-overview",
   "url": "/clients/python/overview",
-  "content_hash": "282a439a26a27be05f17635bde48557a",
+  "content_hash": "99c166c4f51e54165f200e12c76dd9ac",
   "statistics": {
-    "char_count": 8027,
-    "word_count": 1062,
-    "line_count": 245,
-    "paragraph_count": 77,
-    "header_count": 23,
-    "code_block_count": 18,
-    "code_lines": 98
+    "char_count": 8376,
+    "word_count": 1120,
+    "line_count": 265,
+    "paragraph_count": 82,
+    "header_count": 24,
+    "code_block_count": 20,
+    "code_lines": 104
   },
-  "processed_at": "2025-11-22T14:19:48.115345",
+  "processed_at": "2025-12-11T15:53:12.503509",
   "sections": [
     {
       "level": 2,
@@ -128,9 +128,14 @@
       "anchor": "using-connections-in-parallel-python-programs"
     },
     {
-      "level": 2,
-      "title": "Loading and Installing Extensions",
-      "anchor": "loading-and-installing-extensions"
+      "level": 4,
+      "title": "Thread Safety of `duckdb.sql()` and the Global Connection",
+      "anchor": "thread-safety-of-duckdbsql-and-the-global-connection"
+    },
+    {
+      "level": 4,
+      "title": "About `cursor()`",
+      "anchor": "about-cursor"
     },
     {
       "level": 3,

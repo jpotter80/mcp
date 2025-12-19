@@ -95,56 +95,40 @@ file with a `main()` function:
 
 ### Try some examples
 
-We have a bunch of [code
-examples on GitHub](https://github.com/modular/modular/tree/main/examples/mojo).
-Here's how to use them:
+The
+[`examples/mojo/`](https://github.com/modular/modular/tree/main/examples/mojo)
+directory of our public [GitHub](https://github.com/modular/modular) repository
+contains several examples of Mojo code that you can use to learn more about the
+language and its standard library. Here's how to download and use them.
 
-1. Clone the repo:
+1. Clone the repository:
 
  ```sh
  git clone https://github.com/modular/modular.git
  ```
 
- If you installed the stable version, make sure you check out the `stable`
- GitHub branch (the `main` branch is the nightly code). For example:
+2. Navigate to one of the Mojo example subdirectories, such as the subdirectory
+ containing the reference solution for the
+ [Get started with Mojo](/mojo/manual/get-started) tutorial project, which is
+ an implementation of [Conway's Game of
+ Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) cellular
+ automation:
 
  ```sh
- git clone -b stable https://github.com/modular/modular.git
+ cd modular/examples/mojo/life
  ```
 
-2. Navigate to the examples:
+3. Use `pixi` to download and install the dependencies for the project and to
+ build and run the examples. For example, to run the reference solution for
+ the Game of Life tutorial project, use the following command:
 
  ```sh
- cd modular/examples/mojo
+ pixi run lifev1
  ```
 
-3. Pick an example and run it with [`mojo`](/mojo/cli).
-
- If you're using a package manager other than `pixi`, make sure `mojo` is
- installed and accessible in your current shell environment. Then run some
- code:
-
- ```sh
- mojo nbody.mojo
- ```
-
- If you installed `pixi`, there's nothing you need to do—our examples
- provide a [`pixi.toml`](https://pixi.sh/latest/reference/pixi_manifest/)
- file, which specifies package dependencies and environment settings. So you
- can immediately run the code and be sure you have the same version of Mojo
- that the code is written for. Instead of shelling into the environment, you
- can use [`pixi run`](https://pixi.sh/latest/reference/cli/pixi/run/):
-
- ```sh
- pixi run mojo nbody.mojo
- ```
-
-## Update
-
-The following commands should update your local `mojo` package if a new version
-is available that's compatible with the version you specified when you
-installed it or added it as a package dependency. For more information about
-updating packages, see the docs for your package manager.
+ This displays a window that shows an initial random state for the grid and
+ then automatically updates it with subsequent generations. Quit the program
+ by pressing the `q` or `
 
 </Tabs>
 

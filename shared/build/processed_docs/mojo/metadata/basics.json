@@ -6,20 +6,20 @@
   "file_name": "basics.mdx",
   "file_stem": "basics",
   "file_path": "basics.mdx",
-  "file_size": 12242,
+  "file_size": 12218,
   "document_id": "basics",
   "url": "https://docs.modular.com/mojo/manual/basics",
-  "content_hash": "8ca821aadab29fcef14b75dcf75cc72d",
+  "content_hash": "baee0d0f1ed14494b60afb3944584385",
   "statistics": {
-    "char_count": 11859,
-    "word_count": 1800,
+    "char_count": 11835,
+    "word_count": 1797,
     "line_count": 396,
     "paragraph_count": 103,
     "header_count": 11,
     "code_block_count": 24,
     "code_lines": 88
   },
-  "processed_at": "2025-11-21T13:24:15.897227",
+  "processed_at": "2025-12-11T14:37:06.554273",
   "sections": [
     {
       "level": 2,

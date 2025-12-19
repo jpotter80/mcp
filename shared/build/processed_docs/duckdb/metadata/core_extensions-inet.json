@@ -11,20 +11,20 @@
   "file_name": "inet.md",
   "file_stem": "inet",
   "file_path": "core_extensions/inet.md",
-  "file_size": 6783,
+  "file_size": 6838,
   "document_id": "core_extensions-inet",
   "url": "/core_extensions/inet",
-  "content_hash": "9a01d3c5648030b25959f3ad362ec6b4",
+  "content_hash": "8efa3c7b3d2a1f902938f738af061cb7",
   "statistics": {
-    "char_count": 4578,
-    "word_count": 533,
-    "line_count": 184,
-    "paragraph_count": 38,
+    "char_count": 4718,
+    "word_count": 562,
+    "line_count": 192,
+    "paragraph_count": 40,
     "header_count": 10,
     "code_block_count": 14,
     "code_lines": 68
   },
-  "processed_at": "2025-11-22T14:19:51.556633",
+  "processed_at": "2025-12-11T15:53:16.027627",
   "sections": [
     {
       "level": 2,

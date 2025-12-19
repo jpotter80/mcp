@@ -1,0 +1,93 @@
+{
+  "title": "Understanding MCP clients",
+  "sidebarTitle": "Clients",
+  "file_name": "client-concepts.mdx",
+  "file_stem": "client-concepts",
+  "file_path": "learn/client-concepts.mdx",
+  "file_size": 14332,
+  "document_id": "learn-client-concepts",
+  "url": "/learn/client-concepts",
+  "content_hash": "76f5b142233e375c0ea818454a07ca29",
+  "statistics": {
+    "char_count": 13456,
+    "word_count": 1763,
+    "line_count": 230,
+    "paragraph_count": 72,
+    "header_count": 14,
+    "code_block_count": 5,
+    "code_lines": 94
+  },
+  "processed_at": "2025-12-18T21:07:59.610685",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Core Client Features",
+      "anchor": "core-client-features"
+    },
+    {
+      "level": 3,
+      "title": "Elicitation",
+      "anchor": "elicitation"
+    },
+    {
+      "level": 4,
+      "title": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "level": 4,
+      "title": "Example: Holiday Booking Approval",
+      "anchor": "example-holiday-booking-approval"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    },
+    {
+      "level": 3,
+      "title": "Roots",
+      "anchor": "roots"
+    },
+    {
+      "level": 4,
+      "title": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "level": 4,
+      "title": "Example: Travel Planning Workspace",
+      "anchor": "example-travel-planning-workspace"
+    },
+    {
+      "level": 4,
+      "title": "Design Philosophy",
+      "anchor": "design-philosophy"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    },
+    {
+      "level": 3,
+      "title": "Sampling",
+      "anchor": "sampling"
+    },
+    {
+      "level": 4,
+      "title": "Overview",
+      "anchor": "overview"
+    },
+    {
+      "level": 4,
+      "title": "Example: Flight Analysis Tool",
+      "anchor": "example-flight-analysis-tool"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    }
+  ]
+}

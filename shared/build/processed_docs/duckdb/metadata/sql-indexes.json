@@ -8,20 +8,20 @@
   "file_name": "indexes.md",
   "file_stem": "indexes",
   "file_path": "sql/indexes.md",
-  "file_size": 10263,
+  "file_size": 11121,
   "document_id": "sql-indexes",
   "url": "/sql/indexes",
-  "content_hash": "1259180f80617bc17e4887c589c3788c",
+  "content_hash": "6c3a984560acdc3c601e2b0e59da8df7",
   "statistics": {
-    "char_count": 9976,
-    "word_count": 1449,
-    "line_count": 201,
-    "paragraph_count": 58,
+    "char_count": 10762,
+    "word_count": 1549,
+    "line_count": 229,
+    "paragraph_count": 67,
     "header_count": 13,
-    "code_block_count": 7,
-    "code_lines": 68
+    "code_block_count": 8,
+    "code_lines": 88
   },
-  "processed_at": "2025-11-22T14:19:57.830791",
+  "processed_at": "2025-12-11T15:53:22.542638",
   "sections": [
     {
       "level": 2,

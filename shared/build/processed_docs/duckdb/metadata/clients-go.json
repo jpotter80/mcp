@@ -10,12 +10,12 @@
   "file_name": "go.md",
   "file_stem": "go",
   "file_path": "clients/go.md",
-  "file_size": 2908,
+  "file_size": 2947,
   "document_id": "clients-go",
   "url": "/clients/go",
-  "content_hash": "7d3da91708f5ab062118f2bba2fe9809",
+  "content_hash": "9ae983760ba52dab5b1e7eb69b6d4455",
   "statistics": {
-    "char_count": 2741,
+    "char_count": 2780,
     "word_count": 357,
     "line_count": 115,
     "paragraph_count": 28,
@@ -23,7 +23,7 @@
     "code_block_count": 4,
     "code_lines": 73
   },
-  "processed_at": "2025-11-22T14:19:47.452839",
+  "processed_at": "2025-12-11T15:53:11.821450",
   "sections": [
     {
       "level": 2,

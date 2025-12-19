@@ -1,0 +1,89 @@
+{
+  "processing_date": "2025-12-18T21:07:59.706550",
+  "source_directory": "/home/james/mcp/source-documentation/mcp/docs",
+  "output_directory": "/home/james/mcp/shared/build/processed_docs/mcp",
+  "total_documents": 12,
+  "total_chunks": 227,
+  "total_tokens": 32303,
+  "average_tokens_per_chunk": 142.3,
+  "chunks_with_code": 96,
+  "configuration": {
+    "chunk_size": 256,
+    "chunk_overlap": 50,
+    "preserve_code_blocks": true
+  },
+  "documents": [
+    {
+      "file_path": "develop/build-client.mdx",
+      "document_id": "develop-build-client",
+      "chunks_generated": 54,
+      "content_hash": "8a3287e54c2f5ea2d201c7324f0305e9"
+    },
+    {
+      "file_path": "develop/build-server.mdx",
+      "document_id": "develop-build-server",
+      "chunks_generated": 52,
+      "content_hash": "f6cf29eb7b8aac3faf1ad7548028e8bc"
+    },
+    {
+      "file_path": "develop/connect-local-servers.mdx",
+      "document_id": "develop-connect-local-servers",
+      "chunks_generated": 7,
+      "content_hash": "57bee5648095f7381859f2fb161d3814"
+    },
+    {
+      "file_path": "develop/connect-remote-servers.mdx",
+      "document_id": "develop-connect-remote-servers",
+      "chunks_generated": 6,
+      "content_hash": "2a1b787d9ddef151615fd8530257578a"
+    },
+    {
+      "file_path": "getting-started/intro.mdx",
+      "document_id": "getting-started-intro",
+      "chunks_generated": 2,
+      "content_hash": "4684c31bdeac590a686656e1b306158f"
+    },
+    {
+      "file_path": "learn/architecture.mdx",
+      "document_id": "learn-architecture",
+      "chunks_generated": 28,
+      "content_hash": "4065ca18a53cb5433bb3321c9cd3893c"
+    },
+    {
+      "file_path": "learn/client-concepts.mdx",
+      "document_id": "learn-client-concepts",
+      "chunks_generated": 21,
+      "content_hash": "76f5b142233e375c0ea818454a07ca29"
+    },
+    {
+      "file_path": "learn/server-concepts.mdx",
+      "document_id": "learn-server-concepts",
+      "chunks_generated": 28,
+      "content_hash": "b98279efc4487afff59c8bd515d28f68"
+    },
+    {
+      "file_path": "sdk.mdx",
+      "document_id": "sdk",
+      "chunks_generated": 1,
+      "content_hash": "3cb7827c00266e60b7080551b4f965b2"
+    },
+    {
+      "file_path": "tools/inspector.mdx",
+      "document_id": "tools-inspector",
+      "chunks_generated": 4,
+      "content_hash": "d87c8b04caad6698c163c01a5064d96e"
+    },
+    {
+      "file_path": "tutorials/security/authorization.mdx",
+      "document_id": "tutorials-security-authorization",
+      "chunks_generated": 23,
+      "content_hash": "ca2324df89cb29cc9cfe9855477fdb99"
+    },
+    {
+      "file_path": "tutorials/use-local-mcp-server.mdx",
+      "document_id": "tutorials-use-local-mcp-server",
+      "chunks_generated": 1,
+      "content_hash": "ea5cb8ff0abf6b4ca0080069daaeada0"
+    }
+  ]
+}

@@ -11,20 +11,20 @@
   "file_name": "dot_commands.md",
   "file_stem": "dot_commands",
   "file_path": "clients/cli/dot_commands.md",
-  "file_size": 20770,
+  "file_size": 22848,
   "document_id": "clients-cli-dot_commands",
   "url": "/clients/cli/dot_commands",
-  "content_hash": "f6d628b21a4a6487c7fcee4380053fb2",
+  "content_hash": "b5d261791a1f4c85448433de93d1cbad",
   "statistics": {
-    "char_count": 14017,
-    "word_count": 1959,
-    "line_count": 287,
-    "paragraph_count": 72,
-    "header_count": 9,
-    "code_block_count": 28,
-    "code_lines": 61
+    "char_count": 15634,
+    "word_count": 2172,
+    "line_count": 336,
+    "paragraph_count": 90,
+    "header_count": 11,
+    "code_block_count": 34,
+    "code_lines": 67
   },
-  "processed_at": "2025-11-22T14:19:47.237198",
+  "processed_at": "2025-12-11T15:53:11.582010",
   "sections": [
     {
       "level": 2,
@@ -48,16 +48,26 @@
     },
     {
       "level": 2,
+      "title": "Progress Bar",
+      "anchor": "progress-bar"
+    },
+    {
+      "level": 3,
+      "title": "Configuring the Progress Bar Display",
+      "anchor": "configuring-the-progress-bar-display"
+    },
+    {
+      "level": 2,
       "title": "Syntax Highlighters",
       "anchor": "syntax-highlighters"
     },
     {
-      "level": 2,
+      "level": 3,
       "title": "Configuring the Query Syntax Highlighter",
       "anchor": "configuring-the-query-syntax-highlighter"
     },
     {
-      "level": 2,
+      "level": 3,
       "title": "Configuring the Result Syntax Highlighter",
       "anchor": "configuring-the-result-syntax-highlighter"
     },

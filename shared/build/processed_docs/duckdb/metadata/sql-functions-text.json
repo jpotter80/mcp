@@ -10,20 +10,20 @@
   "file_name": "text.md",
   "file_stem": "text",
   "file_path": "sql/functions/text.md",
-  "file_size": 56789,
+  "file_size": 57197,
   "document_id": "sql-functions-text",
   "url": "/sql/functions/text",
-  "content_hash": "b982df04d60727e483a8b3da47672986",
+  "content_hash": "086665ba550eea914989a4660ac5b004",
   "statistics": {
-    "char_count": 50365,
-    "word_count": 6432,
+    "char_count": 50493,
+    "word_count": 6426,
     "line_count": 921,
     "paragraph_count": 249,
     "header_count": 101,
     "code_block_count": 29,
     "code_lines": 44
   },
-  "processed_at": "2025-11-22T14:19:57.252265",
+  "processed_at": "2025-12-11T15:53:21.938989",
   "sections": [
     {
       "level": 2,

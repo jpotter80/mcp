@@ -1,0 +1,43 @@
+{
+  "title": "What is the Model Context Protocol (MCP)?",
+  "sidebarTitle": "What is MCP?",
+  "file_name": "intro.mdx",
+  "file_stem": "intro",
+  "file_path": "getting-started/intro.mdx",
+  "file_size": 2198,
+  "document_id": "getting-started-intro",
+  "url": "/getting-started/intro",
+  "content_hash": "4684c31bdeac590a686656e1b306158f",
+  "statistics": {
+    "char_count": 1574,
+    "word_count": 248,
+    "line_count": 29,
+    "paragraph_count": 12,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2025-12-18T21:07:59.566815",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What can MCP enable?",
+      "anchor": "what-can-mcp-enable"
+    },
+    {
+      "level": 2,
+      "title": "Why does MCP matter?",
+      "anchor": "why-does-mcp-matter"
+    },
+    {
+      "level": 2,
+      "title": "Start Building",
+      "anchor": "start-building"
+    },
+    {
+      "level": 2,
+      "title": "Learn more",
+      "anchor": "learn-more"
+    }
+  ]
+}

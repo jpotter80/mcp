@@ -7,12 +7,12 @@
   "file_name": "building_extensions.md",
   "file_stem": "building_extensions",
   "file_path": "dev/building/building_extensions.md",
-  "file_size": 3312,
+  "file_size": 3315,
   "document_id": "dev-building-building_extensions",
   "url": "/dev/building/building_extensions",
-  "content_hash": "84c297d927e78971b930849de7ebfe12",
+  "content_hash": "ceedeae3da3073b65f94f14bde2ca848",
   "statistics": {
-    "char_count": 3199,
+    "char_count": 3202,
     "word_count": 422,
     "line_count": 89,
     "paragraph_count": 32,
@@ -20,7 +20,7 @@
     "code_block_count": 5,
     "code_lines": 17
   },
-  "processed_at": "2025-11-22T14:19:53.396633",
+  "processed_at": "2025-12-11T15:53:17.928587",
   "sections": [
     {
       "level": 2,

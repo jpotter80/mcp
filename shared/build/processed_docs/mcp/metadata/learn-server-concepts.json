@@ -1,0 +1,108 @@
+{
+  "title": "Understanding MCP servers",
+  "sidebarTitle": "Servers",
+  "file_name": "server-concepts.mdx",
+  "file_stem": "server-concepts",
+  "file_path": "learn/server-concepts.mdx",
+  "file_size": 14176,
+  "document_id": "learn-server-concepts",
+  "url": "/learn/server-concepts",
+  "content_hash": "b98279efc4487afff59c8bd515d28f68",
+  "statistics": {
+    "char_count": 13278,
+    "word_count": 1766,
+    "line_count": 275,
+    "paragraph_count": 87,
+    "header_count": 17,
+    "code_block_count": 7,
+    "code_lines": 52
+  },
+  "processed_at": "2025-12-18T21:07:59.638718",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Core Server Features",
+      "anchor": "core-server-features"
+    },
+    {
+      "level": 3,
+      "title": "Tools",
+      "anchor": "tools"
+    },
+    {
+      "level": 4,
+      "title": "How Tools Work",
+      "anchor": "how-tools-work"
+    },
+    {
+      "level": 4,
+      "title": "Example: Travel Booking",
+      "anchor": "example-travel-booking"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    },
+    {
+      "level": 3,
+      "title": "Resources",
+      "anchor": "resources"
+    },
+    {
+      "level": 4,
+      "title": "How Resources Work",
+      "anchor": "how-resources-work"
+    },
+    {
+      "level": 4,
+      "title": "Example: Getting Travel Planning Context",
+      "anchor": "example-getting-travel-planning-context"
+    },
+    {
+      "level": 4,
+      "title": "Parameter Completion",
+      "anchor": "parameter-completion"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    },
+    {
+      "level": 3,
+      "title": "Prompts",
+      "anchor": "prompts"
+    },
+    {
+      "level": 4,
+      "title": "How Prompts Work",
+      "anchor": "how-prompts-work"
+    },
+    {
+      "level": 4,
+      "title": "Example: Streamlined Workflows",
+      "anchor": "example-streamlined-workflows"
+    },
+    {
+      "level": 4,
+      "title": "User Interaction Model",
+      "anchor": "user-interaction-model"
+    },
+    {
+      "level": 2,
+      "title": "Bringing Servers Together",
+      "anchor": "bringing-servers-together"
+    },
+    {
+      "level": 3,
+      "title": "Example: Multi-Server Travel Planning",
+      "anchor": "example-multi-server-travel-planning"
+    },
+    {
+      "level": 4,
+      "title": "The Complete Flow",
+      "anchor": "the-complete-flow"
+    }
+  ]
+}

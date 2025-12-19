@@ -4,20 +4,20 @@
   "file_name": "traits.mdx",
   "file_stem": "traits",
   "file_path": "traits.mdx",
-  "file_size": 25852,
+  "file_size": 25801,
   "document_id": "traits",
   "url": "https://docs.modular.com/mojo/manual/traits",
-  "content_hash": "51cd8f3e1d539c449384bd433d02fbbe",
+  "content_hash": "4c3344df461f68e59278ee7a8ff480a5",
   "statistics": {
-    "char_count": 25239,
-    "word_count": 3329,
-    "line_count": 765,
-    "paragraph_count": 176,
+    "char_count": 25183,
+    "word_count": 3314,
+    "line_count": 772,
+    "paragraph_count": 177,
     "header_count": 24,
-    "code_block_count": 35,
-    "code_lines": 391
+    "code_block_count": 36,
+    "code_lines": 388
   },
-  "processed_at": "2025-11-21T13:24:17.228475",
+  "processed_at": "2025-12-11T14:37:07.984772",
   "sections": [
     {
       "level": 2,
@@ -136,8 +136,8 @@
     },
     {
       "level": 3,
-      "title": "Associated aliases for generics",
-      "anchor": "associated-aliases-for-generics"
+      "title": "`comptime` members for generics",
+      "anchor": "comptime-members-for-generics"
     }
   ]
 }

@@ -4,20 +4,20 @@
   "file_name": "errors.mdx",
   "file_stem": "errors",
   "file_path": "errors.mdx",
-  "file_size": 22706,
+  "file_size": 22685,
   "document_id": "errors",
   "url": "https://docs.modular.com/mojo/manual/errors",
-  "content_hash": "09434e9ce5741431ceea75f061dd26fa",
+  "content_hash": "a838cbab0da49f6a2779bbf776a6d53b",
   "statistics": {
-    "char_count": 21852,
-    "word_count": 2696,
+    "char_count": 21831,
+    "word_count": 2694,
     "line_count": 604,
     "paragraph_count": 118,
     "header_count": 13,
     "code_block_count": 34,
     "code_lines": 192
   },
-  "processed_at": "2025-11-21T13:24:15.995846",
+  "processed_at": "2025-12-11T14:37:06.663862",
   "sections": [
     {
       "level": 2,

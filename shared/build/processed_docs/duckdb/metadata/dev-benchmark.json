@@ -9,12 +9,12 @@
   "file_name": "benchmark.md",
   "file_stem": "benchmark",
   "file_path": "dev/benchmark.md",
-  "file_size": 5553,
+  "file_size": 5554,
   "document_id": "dev-benchmark",
   "url": "/dev/benchmark",
-  "content_hash": "e15aa0a00a30b04669e45edd608f14c5",
+  "content_hash": "ad0f2007193b922051a5f029ae287b84",
   "statistics": {
-    "char_count": 5435,
+    "char_count": 5436,
     "word_count": 764,
     "line_count": 188,
     "paragraph_count": 50,
@@ -22,7 +22,7 @@
     "code_block_count": 17,
     "code_lines": 50
   },
-  "processed_at": "2025-11-22T14:19:53.344087",
+  "processed_at": "2025-12-11T15:53:17.876569",
   "sections": [
     {
       "level": 2,

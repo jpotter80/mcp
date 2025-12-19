@@ -1,0 +1,86 @@
+{
+  "layout": "docu",
+  "redirect_from": [
+    "/docs/guides/sql_features/merge"
+  ],
+  "title": "Merge Statement for SCD Type 2",
+  "file_name": "merge.md",
+  "file_stem": "merge",
+  "file_path": "guides/sql_features/merge.md",
+  "file_size": 10288,
+  "document_id": "guides-sql_features-merge",
+  "url": "/guides/sql_features/merge",
+  "content_hash": "27db97c83ca18dcdff4142826a3be127",
+  "statistics": {
+    "char_count": 8954,
+    "word_count": 1331,
+    "line_count": 222,
+    "paragraph_count": 55,
+    "header_count": 12,
+    "code_block_count": 8,
+    "code_lines": 88
+  },
+  "processed_at": "2025-12-11T15:53:19.670580",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Why Use MERGE in DuckDB?",
+      "anchor": "why-use-merge-in-duckdb"
+    },
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Key Terminology",
+      "anchor": "key-terminology"
+    },
+    {
+      "level": 2,
+      "title": "Build an SCD Type 2 Dimension Table",
+      "anchor": "build-an-scd-type-2-dimension-table"
+    },
+    {
+      "level": 3,
+      "title": "Step 1: Create the Incoming (source) Table",
+      "anchor": "step-1-create-the-incoming-source-table"
+    },
+    {
+      "level": 3,
+      "title": "Step 2: Create the Master (target) Table",
+      "anchor": "step-2-create-the-master-target-table"
+    },
+    {
+      "level": 3,
+      "title": "Step 3: Perform the Merge Statement",
+      "anchor": "step-3-perform-the-merge-statement"
+    },
+    {
+      "level": 3,
+      "title": "Step 4: Insert New Current Versions for Changed Records",
+      "anchor": "step-4-insert-new-current-versions-for-changed-records"
+    },
+    {
+      "level": 3,
+      "title": "Step 5: Query The Results",
+      "anchor": "step-5-query-the-results"
+    },
+    {
+      "level": 3,
+      "title": "Step 6: Examine a Single Duck",
+      "anchor": "step-6-examine-a-single-duck"
+    },
+    {
+      "level": 2,
+      "title": "Common Patterns and Variations",
+      "anchor": "common-patterns-and-variations"
+    },
+    {
+      "level": 2,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    }
+  ]
+}

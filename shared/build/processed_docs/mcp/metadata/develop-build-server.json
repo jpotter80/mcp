@@ -1,0 +1,568 @@
+{
+  "title": "Build an MCP server",
+  "description": "Get started building your own server to use in Claude for Desktop and other clients.",
+  "file_name": "build-server.mdx",
+  "file_stem": "build-server",
+  "file_path": "develop/build-server.mdx",
+  "file_size": 66482,
+  "document_id": "develop-build-server",
+  "url": "/develop/build-server",
+  "content_hash": "f6cf29eb7b8aac3faf1ad7548028e8bc",
+  "statistics": {
+    "char_count": 24785,
+    "word_count": 3177,
+    "line_count": 742,
+    "paragraph_count": 232,
+    "header_count": 109,
+    "code_block_count": 87,
+    "code_lines": 725
+  },
+  "processed_at": "2025-12-18T21:07:59.483483",
+  "sections": [
+    {
+      "level": 3,
+      "title": "What we'll be building",
+      "anchor": "what-well-be-building"
+    },
+    {
+      "level": 3,
+      "title": "Core MCP Concepts",
+      "anchor": "core-mcp-concepts"
+    },
+    {
+      "level": 3,
+      "title": "Prerequisite knowledge",
+      "anchor": "prerequisite-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "Logging in MCP Servers",
+      "anchor": "logging-in-mcp-servers"
+    },
+    {
+      "level": 3,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "Quick Examples",
+      "anchor": "quick-examples"
+    },
+    {
+      "level": 1,
+      "title": "❌ Bad (STDIO)",
+      "anchor": "-bad-stdio"
+    },
+    {
+      "level": 1,
+      "title": "✅ Good (STDIO)",
+      "anchor": "-good-stdio"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Create virtual environment and activate it",
+      "anchor": "create-virtual-environment-and-activate-it"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create our server file",
+      "anchor": "create-our-server-file"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Create virtual environment and activate it",
+      "anchor": "create-virtual-environment-and-activate-it"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create our server file",
+      "anchor": "create-our-server-file"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Importing packages and setting up the instance",
+      "anchor": "importing-packages-and-setting-up-the-instance"
+    },
+    {
+      "level": 1,
+      "title": "Initialize FastMCP server",
+      "anchor": "initialize-fastmcp-server"
+    },
+    {
+      "level": 1,
+      "title": "Constants",
+      "anchor": "constants"
+    },
+    {
+      "level": 3,
+      "title": "Helper functions",
+      "anchor": "helper-functions"
+    },
+    {
+      "level": 3,
+      "title": "Implementing tool execution",
+      "anchor": "implementing-tool-execution"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Prerequisite knowledge",
+      "anchor": "prerequisite-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "Logging in MCP Servers",
+      "anchor": "logging-in-mcp-servers"
+    },
+    {
+      "level": 3,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "Quick Examples",
+      "anchor": "quick-examples"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new npm project",
+      "anchor": "initialize-a-new-npm-project"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create our files",
+      "anchor": "create-our-files"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new npm project",
+      "anchor": "initialize-a-new-npm-project"
+    },
+    {
+      "level": 1,
+      "title": "Install dependencies",
+      "anchor": "install-dependencies"
+    },
+    {
+      "level": 1,
+      "title": "Create our files",
+      "anchor": "create-our-files"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Importing packages and setting up the instance",
+      "anchor": "importing-packages-and-setting-up-the-instance"
+    },
+    {
+      "level": 3,
+      "title": "Helper functions",
+      "anchor": "helper-functions"
+    },
+    {
+      "level": 3,
+      "title": "Implementing tool execution",
+      "anchor": "implementing-tool-execution"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Logging in MCP Servers",
+      "anchor": "logging-in-mcp-servers"
+    },
+    {
+      "level": 3,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Weather Service",
+      "anchor": "weather-service"
+    },
+    {
+      "level": 3,
+      "title": "Create your Boot Application",
+      "anchor": "create-your-boot-application"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Java client",
+      "anchor": "testing-your-server-with-java-client"
+    },
+    {
+      "level": 3,
+      "title": "Create an MCP Client manually",
+      "anchor": "create-an-mcp-client-manually"
+    },
+    {
+      "level": 3,
+      "title": "Use MCP Client Boot Starter",
+      "anchor": "use-mcp-client-boot-starter"
+    },
+    {
+      "level": 2,
+      "title": "More Java MCP Server examples",
+      "anchor": "more-java-mcp-server-examples"
+    },
+    {
+      "level": 3,
+      "title": "Prerequisite knowledge",
+      "anchor": "prerequisite-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new kotlin project",
+      "anchor": "initialize-a-new-kotlin-project"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new kotlin project",
+      "anchor": "initialize-a-new-kotlin-project"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Setting up the instance",
+      "anchor": "setting-up-the-instance"
+    },
+    {
+      "level": 3,
+      "title": "Weather API helper functions",
+      "anchor": "weather-api-helper-functions"
+    },
+    {
+      "level": 3,
+      "title": "Implementing tool execution",
+      "anchor": "implementing-tool-execution"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Prerequisite knowledge",
+      "anchor": "prerequisite-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "Logging in MCP Servers",
+      "anchor": "logging-in-mcp-servers"
+    },
+    {
+      "level": 3,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new C# project",
+      "anchor": "initialize-a-new-c-project"
+    },
+    {
+      "level": 1,
+      "title": "Create a new directory for our project",
+      "anchor": "create-a-new-directory-for-our-project"
+    },
+    {
+      "level": 1,
+      "title": "Initialize a new C# project",
+      "anchor": "initialize-a-new-c-project"
+    },
+    {
+      "level": 1,
+      "title": "Add the Model Context Protocol SDK NuGet package",
+      "anchor": "add-the-model-context-protocol-sdk-nuget-package"
+    },
+    {
+      "level": 1,
+      "title": "Add the .NET Hosting NuGet package",
+      "anchor": "add-the-net-hosting-nuget-package"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Weather API helper functions",
+      "anchor": "weather-api-helper-functions"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Prerequisite knowledge",
+      "anchor": "prerequisite-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "Logging in MCP Servers",
+      "anchor": "logging-in-mcp-servers"
+    },
+    {
+      "level": 3,
+      "title": "Best Practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "Quick Examples",
+      "anchor": "quick-examples"
+    },
+    {
+      "level": 3,
+      "title": "System requirements",
+      "anchor": "system-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Set up your environment",
+      "anchor": "set-up-your-environment"
+    },
+    {
+      "level": 1,
+      "title": "Download and run rustup-init.exe from https://rustup.rs/",
+      "anchor": "download-and-run-rustup-initexe-from-httpsrustuprs"
+    },
+    {
+      "level": 1,
+      "title": "Create a new Rust project",
+      "anchor": "create-a-new-rust-project"
+    },
+    {
+      "level": 1,
+      "title": "Create a new Rust project",
+      "anchor": "create-a-new-rust-project"
+    },
+    {
+      "level": 2,
+      "title": "Building your server",
+      "anchor": "building-your-server"
+    },
+    {
+      "level": 3,
+      "title": "Importing packages and constants",
+      "anchor": "importing-packages-and-constants"
+    },
+    {
+      "level": 3,
+      "title": "Data structures",
+      "anchor": "data-structures"
+    },
+    {
+      "level": 3,
+      "title": "Helper functions",
+      "anchor": "helper-functions"
+    },
+    {
+      "level": 3,
+      "title": "Implementing the Weather server and tools",
+      "anchor": "implementing-the-weather-server-and-tools"
+    },
+    {
+      "level": 3,
+      "title": "Implementing the ServerHandler",
+      "anchor": "implementing-the-serverhandler"
+    },
+    {
+      "level": 3,
+      "title": "Running the server",
+      "anchor": "running-the-server"
+    },
+    {
+      "level": 2,
+      "title": "Testing your server with Claude for Desktop",
+      "anchor": "testing-your-server-with-claude-for-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Test with commands",
+      "anchor": "test-with-commands"
+    },
+    {
+      "level": 2,
+      "title": "What's happening under the hood",
+      "anchor": "whats-happening-under-the-hood"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 1,
+      "title": "Check Claude's logs for errors",
+      "anchor": "check-claudes-logs-for-errors"
+    },
+    {
+      "level": 2,
+      "title": "Next steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

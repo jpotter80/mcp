@@ -5,20 +5,20 @@
   "file_name": "lifetimes.mdx",
   "file_stem": "lifetimes",
   "file_path": "values/lifetimes.mdx",
-  "file_size": 16299,
+  "file_size": 16334,
   "document_id": "values-lifetimes",
   "url": "https://docs.modular.com/mojo/manual/values/lifetimes",
-  "content_hash": "8730dfc7a6ae646c3a893a48581ae336",
+  "content_hash": "a25c248d5e1dae67e7ebcad600ce8eb2",
   "statistics": {
-    "char_count": 15951,
-    "word_count": 2336,
+    "char_count": 15986,
+    "word_count": 2338,
     "line_count": 463,
     "paragraph_count": 118,
     "header_count": 15,
     "code_block_count": 18,
     "code_lines": 89
   },
-  "processed_at": "2025-11-21T13:24:17.370840",
+  "processed_at": "2025-12-11T14:37:08.132070",
   "sections": [
     {
       "level": 2,

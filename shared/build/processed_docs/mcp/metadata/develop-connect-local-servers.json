@@ -1,0 +1,73 @@
+{
+  "title": "Connect to local MCP servers",
+  "description": "Learn how to extend Claude Desktop with local MCP servers to enable file system access and other powerful integrations",
+  "file_name": "connect-local-servers.mdx",
+  "file_stem": "connect-local-servers",
+  "file_path": "develop/connect-local-servers.mdx",
+  "file_size": 11759,
+  "document_id": "develop-connect-local-servers",
+  "url": "/develop/connect-local-servers",
+  "content_hash": "57bee5648095f7381859f2fb161d3814",
+  "statistics": {
+    "char_count": 4483,
+    "word_count": 649,
+    "line_count": 96,
+    "paragraph_count": 42,
+    "header_count": 10,
+    "code_block_count": 8,
+    "code_lines": 135
+  },
+  "processed_at": "2025-12-18T21:07:59.551376",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 3,
+      "title": "Claude Desktop",
+      "anchor": "claude-desktop"
+    },
+    {
+      "level": 3,
+      "title": "Node.js",
+      "anchor": "nodejs"
+    },
+    {
+      "level": 2,
+      "title": "Understanding MCP Servers",
+      "anchor": "understanding-mcp-servers"
+    },
+    {
+      "level": 2,
+      "title": "Installing the Filesystem Server",
+      "anchor": "installing-the-filesystem-server"
+    },
+    {
+      "level": 2,
+      "title": "Using the Filesystem Server",
+      "anchor": "using-the-filesystem-server"
+    },
+    {
+      "level": 3,
+      "title": "File Management Examples",
+      "anchor": "file-management-examples"
+    },
+    {
+      "level": 3,
+      "title": "How Approval Works",
+      "anchor": "how-approval-works"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 2,
+      "title": "Next Steps",
+      "anchor": "next-steps"
+    }
+  ]
+}

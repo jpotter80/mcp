@@ -1,0 +1,83 @@
+{
+  "title": "Understanding Authorization in MCP",
+  "description": "Learn how to implement secure authorization for MCP servers using OAuth 2.1 to protect sensitive resources and operations",
+  "file_name": "authorization.mdx",
+  "file_stem": "authorization",
+  "file_path": "tutorials/security/authorization.mdx",
+  "file_size": 43109,
+  "document_id": "tutorials-security-authorization",
+  "url": "/tutorials/security/authorization",
+  "content_hash": "ca2324df89cb29cc9cfe9855477fdb99",
+  "statistics": {
+    "char_count": 12268,
+    "word_count": 1551,
+    "line_count": 163,
+    "paragraph_count": 54,
+    "header_count": 12,
+    "code_block_count": 17,
+    "code_lines": 726
+  },
+  "processed_at": "2025-12-18T21:07:59.676297",
+  "sections": [
+    {
+      "level": 2,
+      "title": "When Should You Use Authorization?",
+      "anchor": "when-should-you-use-authorization"
+    },
+    {
+      "level": 2,
+      "title": "The Authorization Flow: Step by Step",
+      "anchor": "the-authorization-flow-step-by-step"
+    },
+    {
+      "level": 2,
+      "title": "Implementation Example",
+      "anchor": "implementation-example"
+    },
+    {
+      "level": 3,
+      "title": "Keycloak Setup",
+      "anchor": "keycloak-setup"
+    },
+    {
+      "level": 3,
+      "title": "MCP Server Setup",
+      "anchor": "mcp-server-setup"
+    },
+    {
+      "level": 1,
+      "title": "Server host/port",
+      "anchor": "server-hostport"
+    },
+    {
+      "level": 1,
+      "title": "Auth server location",
+      "anchor": "auth-server-location"
+    },
+    {
+      "level": 1,
+      "title": "Keycloak OAuth client credentials",
+      "anchor": "keycloak-oauth-client-credentials"
+    },
+    {
+      "level": 1,
+      "title": "Global configuration instance",
+      "anchor": "global-configuration-instance"
+    },
+    {
+      "level": 2,
+      "title": "Testing the MCP Server",
+      "anchor": "testing-the-mcp-server"
+    },
+    {
+      "level": 2,
+      "title": "Common Pitfalls and How to Avoid Them",
+      "anchor": "common-pitfalls-and-how-to-avoid-them"
+    },
+    {
+      "level": 2,
+      "title": "Related Standards and Documentation",
+      "anchor": "related-standards-and-documentation"
+    }
+  ]
+}

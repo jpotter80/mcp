@@ -8,7 +8,7 @@
   "file_size": 4344,
   "document_id": "sql-statements-merge_into",
   "url": "/sql/statements/merge_into",
-  "content_hash": "8b6a8814e3696de7ad1a084667fc1687",
+  "content_hash": "878570340ec4c884e991cdafea29ad8a",
   "statistics": {
     "char_count": 3813,
     "word_count": 667,
@@ -18,7 +18,7 @@
     "code_block_count": 7,
     "code_lines": 70
   },
-  "processed_at": "2025-11-22T14:19:58.793254",
+  "processed_at": "2025-12-11T15:53:23.531509",
   "sections": [
     {
       "level": 2,

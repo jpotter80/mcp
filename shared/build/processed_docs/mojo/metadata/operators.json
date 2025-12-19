@@ -5,20 +5,20 @@
   "file_name": "operators.mdx",
   "file_stem": "operators",
   "file_path": "operators.mdx",
-  "file_size": 54486,
+  "file_size": 55228,
   "document_id": "operators",
   "url": "https://docs.modular.com/mojo/manual/operators",
-  "content_hash": "08033743fa361090d12f957e84e2ffe2",
+  "content_hash": "668c635b57c87ad6237ce9444107b46f",
   "statistics": {
-    "char_count": 52800,
-    "word_count": 7866,
-    "line_count": 1610,
-    "paragraph_count": 334,
-    "header_count": 43,
+    "char_count": 53542,
+    "word_count": 7937,
+    "line_count": 1623,
+    "paragraph_count": 338,
+    "header_count": 44,
     "code_block_count": 102,
     "code_lines": 598
   },
-  "processed_at": "2025-11-21T13:24:16.761625",
+  "processed_at": "2025-12-11T14:37:07.465548",
   "sections": [
     {
       "level": 2,
@@ -82,8 +82,8 @@
     },
     {
       "level": 1,
-      "title": "Compile-time StringLiteral alias",
-      "anchor": "compile-time-stringliteral-alias"
+      "title": "Compile-time StringLiteral value",
+      "anchor": "compile-time-stringliteral-value"
     },
     {
       "level": 1,
@@ -97,8 +97,8 @@
     },
     {
       "level": 1,
-      "title": "You must define the following function using `fn` because an alias",
-      "anchor": "you-must-define-the-following-function-using-fn-because-an-alias"
+      "title": "You must define the following function using `fn` because a comptime",
+      "anchor": "you-must-define-the-following-function-using-fn-because-a-comptime"
     },
     {
       "level": 1,
@@ -169,6 +169,11 @@
       "level": 3,
       "title": "Membership operator dunder methods",
       "anchor": "membership-operator-dunder-methods"
+    },
+    {
+      "level": 3,
+      "title": "Identity operator dunder methods",
+      "anchor": "identity-operator-dunder-methods"
     },
     {
       "level": 3,

@@ -1,0 +1,174 @@
+{
+  "title": "Architecture overview",
+  "sidebarTitle": "Architecture",
+  "type": "docs",
+  "file_name": "architecture.mdx",
+  "file_stem": "architecture",
+  "file_path": "learn/architecture.mdx",
+  "file_size": 24512,
+  "document_id": "learn-architecture",
+  "url": "/learn/architecture",
+  "content_hash": "4065ca18a53cb5433bb3321c9cd3893c",
+  "statistics": {
+    "char_count": 16979,
+    "word_count": 2239,
+    "line_count": 255,
+    "paragraph_count": 93,
+    "header_count": 30,
+    "code_block_count": 13,
+    "code_lines": 144
+  },
+  "processed_at": "2025-12-18T21:07:59.571122",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Scope",
+      "anchor": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Concepts of MCP",
+      "anchor": "concepts-of-mcp"
+    },
+    {
+      "level": 3,
+      "title": "Participants",
+      "anchor": "participants"
+    },
+    {
+      "level": 3,
+      "title": "Layers",
+      "anchor": "layers"
+    },
+    {
+      "level": 4,
+      "title": "Data layer",
+      "anchor": "data-layer"
+    },
+    {
+      "level": 4,
+      "title": "Transport layer",
+      "anchor": "transport-layer"
+    },
+    {
+      "level": 3,
+      "title": "Data Layer Protocol",
+      "anchor": "data-layer-protocol"
+    },
+    {
+      "level": 4,
+      "title": "Lifecycle management",
+      "anchor": "lifecycle-management"
+    },
+    {
+      "level": 4,
+      "title": "Primitives",
+      "anchor": "primitives"
+    },
+    {
+      "level": 4,
+      "title": "Notifications",
+      "anchor": "notifications"
+    },
+    {
+      "level": 2,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "Data Layer",
+      "anchor": "data-layer"
+    },
+    {
+      "level": 4,
+      "title": "Understanding the Initialization Exchange",
+      "anchor": "understanding-the-initialization-exchange"
+    },
+    {
+      "level": 4,
+      "title": "How This Works in AI Applications",
+      "anchor": "how-this-works-in-ai-applications"
+    },
+    {
+      "level": 1,
+      "title": "Pseudo Code",
+      "anchor": "pseudo-code"
+    },
+    {
+      "level": 4,
+      "title": "Understanding the Tool Discovery Request",
+      "anchor": "understanding-the-tool-discovery-request"
+    },
+    {
+      "level": 4,
+      "title": "Understanding the Tool Discovery Response",
+      "anchor": "understanding-the-tool-discovery-response"
+    },
+    {
+      "level": 4,
+      "title": "How This Works in AI Applications",
+      "anchor": "how-this-works-in-ai-applications"
+    },
+    {
+      "level": 1,
+      "title": "Pseudo-code using MCP Python SDK patterns",
+      "anchor": "pseudo-code-using-mcp-python-sdk-patterns"
+    },
+    {
+      "level": 4,
+      "title": "Understanding the Tool Execution Request",
+      "anchor": "understanding-the-tool-execution-request"
+    },
+    {
+      "level": 4,
+      "title": "Key Elements of Tool Execution",
+      "anchor": "key-elements-of-tool-execution"
+    },
+    {
+      "level": 4,
+      "title": "Understanding the Tool Execution Response",
+      "anchor": "understanding-the-tool-execution-response"
+    },
+    {
+      "level": 4,
+      "title": "How This Works in AI Applications",
+      "anchor": "how-this-works-in-ai-applications"
+    },
+    {
+      "level": 1,
+      "title": "Pseudo-code for AI application tool execution",
+      "anchor": "pseudo-code-for-ai-application-tool-execution"
+    },
+    {
+      "level": 4,
+      "title": "Understanding Tool List Change Notifications",
+      "anchor": "understanding-tool-list-change-notifications"
+    },
+    {
+      "level": 4,
+      "title": "Key Features of MCP Notifications",
+      "anchor": "key-features-of-mcp-notifications"
+    },
+    {
+      "level": 4,
+      "title": "Client Response to Notifications",
+      "anchor": "client-response-to-notifications"
+    },
+    {
+      "level": 4,
+      "title": "Why Notifications Matter",
+      "anchor": "why-notifications-matter"
+    },
+    {
+      "level": 4,
+      "title": "How This Works in AI Applications",
+      "anchor": "how-this-works-in-ai-applications"
+    },
+    {
+      "level": 1,
+      "title": "Pseudo-code for AI application notification handling",
+      "anchor": "pseudo-code-for-ai-application-notification-handling"
+    }
+  ]
+}

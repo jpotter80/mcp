@@ -1,0 +1,114 @@
+{
+  "title": "Mojo structs",
+  "sidebar_position": 1,
+  "description": "Introduction to Mojo structures (structs).",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "structs/index.mdx",
+  "file_size": 15289,
+  "document_id": "structs-index",
+  "url": "https://docs.modular.com/mojo/manual/structs",
+  "content_hash": "4cb07df30acbbba08055495749da2e94",
+  "statistics": {
+    "char_count": 14980,
+    "word_count": 2243,
+    "line_count": 432,
+    "paragraph_count": 111,
+    "header_count": 18,
+    "code_block_count": 20,
+    "code_lines": 131
+  },
+  "processed_at": "2025-12-11T14:37:07.903280",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Struct definition",
+      "anchor": "struct-definition"
+    },
+    {
+      "level": 2,
+      "title": "Constructing a struct type",
+      "anchor": "constructing-a-struct-type"
+    },
+    {
+      "level": 1,
+      "title": "Construct a new instance",
+      "anchor": "construct-a-new-instance"
+    },
+    {
+      "level": 1,
+      "title": "Use the instance",
+      "anchor": "use-the-instance"
+    },
+    {
+      "level": 1,
+      "title": "Update the instance before further use",
+      "anchor": "update-the-instance-before-further-use"
+    },
+    {
+      "level": 2,
+      "title": "Mutating a struct",
+      "anchor": "mutating-a-struct"
+    },
+    {
+      "level": 2,
+      "title": "Making a struct Copyable {#making-a-struct-copyable-and-movable}",
+      "anchor": "making-a-struct-copyable-making-a-struct-copyable-and-movable"
+    },
+    {
+      "level": 1,
+      "title": "Implicit copy",
+      "anchor": "implicit-copy"
+    },
+    {
+      "level": 1,
+      "title": "Explicit copy",
+      "anchor": "explicit-copy"
+    },
+    {
+      "level": 1,
+      "title": "Move",
+      "anchor": "move"
+    },
+    {
+      "level": 3,
+      "title": "Movability",
+      "anchor": "movability"
+    },
+    {
+      "level": 3,
+      "title": "Copyability",
+      "anchor": "copyability"
+    },
+    {
+      "level": 3,
+      "title": "Implicit copyability",
+      "anchor": "implicit-copyability"
+    },
+    {
+      "level": 2,
+      "title": "Methods",
+      "anchor": "methods"
+    },
+    {
+      "level": 3,
+      "title": "`fn` versus `def` in struct methods",
+      "anchor": "fn-versus-def-in-struct-methods"
+    },
+    {
+      "level": 3,
+      "title": "Static methods",
+      "anchor": "static-methods"
+    },
+    {
+      "level": 2,
+      "title": "Structs compared to classes",
+      "anchor": "structs-compared-to-classes"
+    },
+    {
+      "level": 2,
+      "title": "Special methods",
+      "anchor": "special-methods"
+    }
+  ]
+}

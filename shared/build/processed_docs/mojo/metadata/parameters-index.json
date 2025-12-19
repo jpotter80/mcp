@@ -4,20 +4,20 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "parameters/index.mdx",
-  "file_size": 45772,
+  "file_size": 47912,
   "document_id": "parameters-index",
   "url": "https://docs.modular.com/mojo/manual/parameters",
-  "content_hash": "11389822d506935be8cbefd13d7e6357",
+  "content_hash": "51e247e3610a4e2992da8bb2281ecc9a",
   "statistics": {
-    "char_count": 44528,
-    "word_count": 6318,
-    "line_count": 1372,
-    "paragraph_count": 317,
-    "header_count": 34,
-    "code_block_count": 87,
-    "code_lines": 455
+    "char_count": 46612,
+    "word_count": 6582,
+    "line_count": 1434,
+    "paragraph_count": 332,
+    "header_count": 35,
+    "code_block_count": 89,
+    "code_lines": 482
   },
-  "processed_at": "2025-11-21T13:24:16.930444",
+  "processed_at": "2025-12-11T14:37:07.632973",
   "sections": [
     {
       "level": 2,
@@ -91,13 +91,13 @@
     },
     {
       "level": 2,
-      "title": "`alias`: named parameter expressions",
-      "anchor": "alias-named-parameter-expressions"
+      "title": "`comptime`: named parameter expressions",
+      "anchor": "comptime-named-parameter-expressions"
     },
     {
       "level": 3,
-      "title": "Parametric aliases",
-      "anchor": "parametric-aliases"
+      "title": "Parametric `comptime` values",
+      "anchor": "parametric-comptime-values"
     },
     {
       "level": 1,
@@ -108,6 +108,11 @@
       "level": 1,
       "title": "Works",
       "anchor": "works"
+    },
+    {
+      "level": 3,
+      "title": "Comptime members",
+      "anchor": "comptime-members"
     },
     {
       "level": 2,
