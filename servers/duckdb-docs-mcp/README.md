@@ -1,6 +1,6 @@
 # Duckdb Docs MCP Server
 
-Searchable Duckdb Docs documentation via MCP (Model Context Protocol).
+Searchable Duckdb documentation via MCP (Model Context Protocol).
 
 ## Quick Start
 
@@ -11,7 +11,7 @@ Searchable Duckdb Docs documentation via MCP (Model Context Protocol).
 git clone jpotter80/mcp
 cd /path/to/mcp/servers/duckdb-docs-mcp
 
-# Install dependencies in servers/mojo-manual-mcp
+# Install dependencies in servers/duckdb-docs-mcp
 pixi install
 ```
 
@@ -28,7 +28,7 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
       "env": {
         "MAX_SERVER_URL": "http://localhost:8000/v1",
         "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
-		    "AUTO_START_MAX": "1"
+		"AUTO_START_MAX": "1"
       }
     }
 	}
