@@ -1,6 +1,6 @@
-# Mcp Docs MCP Server
+# Model Context Protocol Documentation MCP Server
 
-Searchable Mcp Docs documentation via MCP (Model Context Protocol).
+Searchable MCP documentation via MCP (Model Context Protocol).
 
 ## Quick Start
 
@@ -9,9 +9,9 @@ Searchable Mcp Docs documentation via MCP (Model Context Protocol).
 ```bash
 # Clone the repo and navigate to the server directory
 git clone jpotter80/mcp
-cd /path/to/mcp/servers/mcp-docs-mcp-mcp
+cd /path/to/mcp/servers/mcp-docs-mcp
 
-# Install dependencies in servers/mojo-manual-mcp
+# Install dependencies in servers/mcp-docs-mcp
 pixi install
 ```
 
@@ -22,8 +22,9 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 {
   "servers": {
     "mcp-docs": {
+      "type": "stdio"
       "command": "pixi",
-      "args": ["/absolute/path/to/servers/mcp-docs-mcp/runtime/mcp-docs-mcp_mcp_server.py"],
+      "args": ["run", "serve"],
       "cwd": "/absolute/path/to/servers/mcp-docs-mcp/runtime",
       "env": {
         "MAX_SERVER_URL": "http://localhost:8000/v1",
@@ -59,8 +60,8 @@ pixi run mcp-index
 
 ## Resources
 
-- `runtime/mcp-docs-mcp_mcp_server.py` — MCP server entry point
+- `runtime/mcp_docs_mcp_server.py` — MCP server entry point
 - `runtime/search.py` — Hybrid search engine
-- `runtime/mcp-docs-mcp.db` — Indexed DuckDB database
+- `runtime/mcp_docs_mcp.db` — Indexed DuckDB database
 
 For more details, see the main project README.
