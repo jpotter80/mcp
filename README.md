@@ -153,6 +153,7 @@ Currently implemented:
 |--------|---------------------|--------|--------|
 | **mojo-manual-mcp** | [Mojo Manual](https://docs.modular.com/mojo/manual) | MDX | ✅ Production |
 | **duckdb-docs-mcp** | [DuckDB Docs](https://duckdb.org/docs/stable/) | MD | ✅ Production |
+| **mcp-docs-mcp** | [MCP Docs](https://modelcontextprotocol.io/docs/getting-started/intro) | MDX | ✅ Production |
 
 ## 🛠️ Key Technologies
 
