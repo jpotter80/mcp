@@ -1,0 +1,569 @@
+{
+  "processing_date": "2026-01-08T11:33:42.608025",
+  "source_directory": "/home/james/mcp/source-documentation/docling/docs",
+  "output_directory": "/home/james/mcp/shared/build/processed_docs/docling",
+  "total_documents": 92,
+  "total_chunks": 402,
+  "total_tokens": 60030,
+  "average_tokens_per_chunk": 149.33,
+  "chunks_with_code": 166,
+  "configuration": {
+    "chunk_size": 256,
+    "chunk_overlap": 50,
+    "preserve_code_blocks": true
+  },
+  "documents": [
+    {
+      "file_path": "concepts/architecture.md",
+      "document_id": "concepts-architecture",
+      "chunks_generated": 2,
+      "content_hash": "b55487deb8d701985fd401a56d16fcba"
+    },
+    {
+      "file_path": "concepts/architecture.md",
+      "document_id": "concepts-architecture",
+      "chunks_generated": 2,
+      "content_hash": "b55487deb8d701985fd401a56d16fcba"
+    },
+    {
+      "file_path": "concepts/chunking.md",
+      "document_id": "concepts-chunking",
+      "chunks_generated": 6,
+      "content_hash": "c36c4c2a818390f281354dcf918e1f9f"
+    },
+    {
+      "file_path": "concepts/chunking.md",
+      "document_id": "concepts-chunking",
+      "chunks_generated": 6,
+      "content_hash": "c36c4c2a818390f281354dcf918e1f9f"
+    },
+    {
+      "file_path": "concepts/confidence_scores.md",
+      "document_id": "concepts-confidence_scores",
+      "chunks_generated": 4,
+      "content_hash": "719501da6294f4a31c7a17d4e49873c6"
+    },
+    {
+      "file_path": "concepts/confidence_scores.md",
+      "document_id": "concepts-confidence_scores",
+      "chunks_generated": 4,
+      "content_hash": "719501da6294f4a31c7a17d4e49873c6"
+    },
+    {
+      "file_path": "concepts/docling_document.md",
+      "document_id": "concepts-docling_document",
+      "chunks_generated": 5,
+      "content_hash": "b3c2e9592e68099809fe73576ce92e5f"
+    },
+    {
+      "file_path": "concepts/docling_document.md",
+      "document_id": "concepts-docling_document",
+      "chunks_generated": 5,
+      "content_hash": "b3c2e9592e68099809fe73576ce92e5f"
+    },
+    {
+      "file_path": "concepts/index.md",
+      "document_id": "concepts-index",
+      "chunks_generated": 1,
+      "content_hash": "305251ec18072388f4323b1e0d48c9a2"
+    },
+    {
+      "file_path": "concepts/index.md",
+      "document_id": "concepts-index",
+      "chunks_generated": 1,
+      "content_hash": "305251ec18072388f4323b1e0d48c9a2"
+    },
+    {
+      "file_path": "concepts/plugins.md",
+      "document_id": "concepts-plugins",
+      "chunks_generated": 6,
+      "content_hash": "0faf74544acc90e10657ab419fd507f0"
+    },
+    {
+      "file_path": "concepts/plugins.md",
+      "document_id": "concepts-plugins",
+      "chunks_generated": 6,
+      "content_hash": "0faf74544acc90e10657ab419fd507f0"
+    },
+    {
+      "file_path": "concepts/serialization.md",
+      "document_id": "concepts-serialization",
+      "chunks_generated": 3,
+      "content_hash": "3a6135ffbe740f2a75ca4919a79a70d2"
+    },
+    {
+      "file_path": "concepts/serialization.md",
+      "document_id": "concepts-serialization",
+      "chunks_generated": 3,
+      "content_hash": "3a6135ffbe740f2a75ca4919a79a70d2"
+    },
+    {
+      "file_path": "faq/index.md",
+      "document_id": "faq-index",
+      "chunks_generated": 13,
+      "content_hash": "d6d4604f9b2cee820d1c688b4a126f41"
+    },
+    {
+      "file_path": "faq/index.md",
+      "document_id": "faq-index",
+      "chunks_generated": 13,
+      "content_hash": "d6d4604f9b2cee820d1c688b4a126f41"
+    },
+    {
+      "file_path": "getting_started/installation.md",
+      "document_id": "getting_started-installation",
+      "chunks_generated": 12,
+      "content_hash": "a600e4f061f1196b8378c5125b4940cb"
+    },
+    {
+      "file_path": "getting_started/installation.md",
+      "document_id": "getting_started-installation",
+      "chunks_generated": 12,
+      "content_hash": "a600e4f061f1196b8378c5125b4940cb"
+    },
+    {
+      "file_path": "getting_started/quickstart.md",
+      "document_id": "getting_started-quickstart",
+      "chunks_generated": 3,
+      "content_hash": "2d33cb2c7433bdffb09671f73906c273"
+    },
+    {
+      "file_path": "getting_started/quickstart.md",
+      "document_id": "getting_started-quickstart",
+      "chunks_generated": 3,
+      "content_hash": "2d33cb2c7433bdffb09671f73906c273"
+    },
+    {
+      "file_path": "getting_started/rtx.md",
+      "document_id": "getting_started-rtx",
+      "chunks_generated": 18,
+      "content_hash": "2a19fd1960b971ae0cca853d05f4b4f1"
+    },
+    {
+      "file_path": "getting_started/rtx.md",
+      "document_id": "getting_started-rtx",
+      "chunks_generated": 18,
+      "content_hash": "2a19fd1960b971ae0cca853d05f4b4f1"
+    },
+    {
+      "file_path": "index.md",
+      "document_id": "index",
+      "chunks_generated": 13,
+      "content_hash": "32af2ad0a94babd7214e3ad36fb23ede"
+    },
+    {
+      "file_path": "index.md",
+      "document_id": "index",
+      "chunks_generated": 13,
+      "content_hash": "32af2ad0a94babd7214e3ad36fb23ede"
+    },
+    {
+      "file_path": "integrations/.template.md",
+      "document_id": "integrations-.template",
+      "chunks_generated": 1,
+      "content_hash": "a2dc9f3febfa6f4c3515ed7ec9ee5562"
+    },
+    {
+      "file_path": "integrations/.template.md",
+      "document_id": "integrations-.template",
+      "chunks_generated": 1,
+      "content_hash": "a2dc9f3febfa6f4c3515ed7ec9ee5562"
+    },
+    {
+      "file_path": "integrations/apify.md",
+      "document_id": "integrations-apify",
+      "chunks_generated": 2,
+      "content_hash": "28b601862b787ec2b5d322c5d245472c"
+    },
+    {
+      "file_path": "integrations/apify.md",
+      "document_id": "integrations-apify",
+      "chunks_generated": 2,
+      "content_hash": "28b601862b787ec2b5d322c5d245472c"
+    },
+    {
+      "file_path": "integrations/arconia.md",
+      "document_id": "integrations-arconia",
+      "chunks_generated": 1,
+      "content_hash": "7f2914dc9dd9140fc6d593d19091c1fc"
+    },
+    {
+      "file_path": "integrations/arconia.md",
+      "document_id": "integrations-arconia",
+      "chunks_generated": 1,
+      "content_hash": "7f2914dc9dd9140fc6d593d19091c1fc"
+    },
+    {
+      "file_path": "integrations/bee.md",
+      "document_id": "integrations-bee",
+      "chunks_generated": 1,
+      "content_hash": "2bac47eae3b8838e3121af10790677a8"
+    },
+    {
+      "file_path": "integrations/bee.md",
+      "document_id": "integrations-bee",
+      "chunks_generated": 1,
+      "content_hash": "2bac47eae3b8838e3121af10790677a8"
+    },
+    {
+      "file_path": "integrations/cloudera.md",
+      "document_id": "integrations-cloudera",
+      "chunks_generated": 1,
+      "content_hash": "553f15afea1c30a5e48a426fa7fd97bd"
+    },
+    {
+      "file_path": "integrations/cloudera.md",
+      "document_id": "integrations-cloudera",
+      "chunks_generated": 1,
+      "content_hash": "553f15afea1c30a5e48a426fa7fd97bd"
+    },
+    {
+      "file_path": "integrations/crewai.md",
+      "document_id": "integrations-crewai",
+      "chunks_generated": 1,
+      "content_hash": "7034f3fda2c791c07db536a379e5f881"
+    },
+    {
+      "file_path": "integrations/crewai.md",
+      "document_id": "integrations-crewai",
+      "chunks_generated": 1,
+      "content_hash": "7034f3fda2c791c07db536a379e5f881"
+    },
+    {
+      "file_path": "integrations/data_prep_kit.md",
+      "document_id": "integrations-data_prep_kit",
+      "chunks_generated": 2,
+      "content_hash": "11c68e4c2bc0f71a0802095a1358666d"
+    },
+    {
+      "file_path": "integrations/data_prep_kit.md",
+      "document_id": "integrations-data_prep_kit",
+      "chunks_generated": 2,
+      "content_hash": "11c68e4c2bc0f71a0802095a1358666d"
+    },
+    {
+      "file_path": "integrations/docetl.md",
+      "document_id": "integrations-docetl",
+      "chunks_generated": 1,
+      "content_hash": "20478fc3f2ac6aff5e33ae7850f61155"
+    },
+    {
+      "file_path": "integrations/docetl.md",
+      "document_id": "integrations-docetl",
+      "chunks_generated": 1,
+      "content_hash": "20478fc3f2ac6aff5e33ae7850f61155"
+    },
+    {
+      "file_path": "integrations/haystack.md",
+      "document_id": "integrations-haystack",
+      "chunks_generated": 1,
+      "content_hash": "bbe90e5a5d0c03f3c989427c5467bf1d"
+    },
+    {
+      "file_path": "integrations/haystack.md",
+      "document_id": "integrations-haystack",
+      "chunks_generated": 1,
+      "content_hash": "bbe90e5a5d0c03f3c989427c5467bf1d"
+    },
+    {
+      "file_path": "integrations/hector.md",
+      "document_id": "integrations-hector",
+      "chunks_generated": 1,
+      "content_hash": "d896253372f5622ae4ad72f6e4d3d786"
+    },
+    {
+      "file_path": "integrations/hector.md",
+      "document_id": "integrations-hector",
+      "chunks_generated": 1,
+      "content_hash": "d896253372f5622ae4ad72f6e4d3d786"
+    },
+    {
+      "file_path": "integrations/index.md",
+      "document_id": "integrations-index",
+      "chunks_generated": 1,
+      "content_hash": "a9f50a63b62159b37345a6fcbe4be8a6"
+    },
+    {
+      "file_path": "integrations/index.md",
+      "document_id": "integrations-index",
+      "chunks_generated": 1,
+      "content_hash": "a9f50a63b62159b37345a6fcbe4be8a6"
+    },
+    {
+      "file_path": "integrations/instructlab.md",
+      "document_id": "integrations-instructlab",
+      "chunks_generated": 1,
+      "content_hash": "ebcba05bf315f42c5790890da477ae15"
+    },
+    {
+      "file_path": "integrations/instructlab.md",
+      "document_id": "integrations-instructlab",
+      "chunks_generated": 1,
+      "content_hash": "ebcba05bf315f42c5790890da477ae15"
+    },
+    {
+      "file_path": "integrations/kotaemon.md",
+      "document_id": "integrations-kotaemon",
+      "chunks_generated": 1,
+      "content_hash": "5a6e6567033fcc865ff1cb2bdf6435de"
+    },
+    {
+      "file_path": "integrations/kotaemon.md",
+      "document_id": "integrations-kotaemon",
+      "chunks_generated": 1,
+      "content_hash": "5a6e6567033fcc865ff1cb2bdf6435de"
+    },
+    {
+      "file_path": "integrations/langchain.md",
+      "document_id": "integrations-langchain",
+      "chunks_generated": 2,
+      "content_hash": "a96a4fe39f84f96b983da832ba27215c"
+    },
+    {
+      "file_path": "integrations/langchain.md",
+      "document_id": "integrations-langchain",
+      "chunks_generated": 2,
+      "content_hash": "a96a4fe39f84f96b983da832ba27215c"
+    },
+    {
+      "file_path": "integrations/langflow.md",
+      "document_id": "integrations-langflow",
+      "chunks_generated": 1,
+      "content_hash": "15872a9957d69fe2e3a0a44759149810"
+    },
+    {
+      "file_path": "integrations/langflow.md",
+      "document_id": "integrations-langflow",
+      "chunks_generated": 1,
+      "content_hash": "15872a9957d69fe2e3a0a44759149810"
+    },
+    {
+      "file_path": "integrations/llamaindex.md",
+      "document_id": "integrations-llamaindex",
+      "chunks_generated": 3,
+      "content_hash": "fb112122502dea1a0571bbbb06927f16"
+    },
+    {
+      "file_path": "integrations/llamaindex.md",
+      "document_id": "integrations-llamaindex",
+      "chunks_generated": 3,
+      "content_hash": "fb112122502dea1a0571bbbb06927f16"
+    },
+    {
+      "file_path": "integrations/nvidia.md",
+      "document_id": "integrations-nvidia",
+      "chunks_generated": 1,
+      "content_hash": "72ea7c54dd465827fb3539cebd38ef5e"
+    },
+    {
+      "file_path": "integrations/nvidia.md",
+      "document_id": "integrations-nvidia",
+      "chunks_generated": 1,
+      "content_hash": "72ea7c54dd465827fb3539cebd38ef5e"
+    },
+    {
+      "file_path": "integrations/opencontracts.md",
+      "document_id": "integrations-opencontracts",
+      "chunks_generated": 1,
+      "content_hash": "0857b47d9adb86d65172fbf3c46bb4a8"
+    },
+    {
+      "file_path": "integrations/opencontracts.md",
+      "document_id": "integrations-opencontracts",
+      "chunks_generated": 1,
+      "content_hash": "0857b47d9adb86d65172fbf3c46bb4a8"
+    },
+    {
+      "file_path": "integrations/openwebui.md",
+      "document_id": "integrations-openwebui",
+      "chunks_generated": 1,
+      "content_hash": "9c77205502f8940d18d741f8d599656c"
+    },
+    {
+      "file_path": "integrations/openwebui.md",
+      "document_id": "integrations-openwebui",
+      "chunks_generated": 1,
+      "content_hash": "9c77205502f8940d18d741f8d599656c"
+    },
+    {
+      "file_path": "integrations/prodigy.md",
+      "document_id": "integrations-prodigy",
+      "chunks_generated": 1,
+      "content_hash": "05f2176c1813754fffe0a517c281b470"
+    },
+    {
+      "file_path": "integrations/prodigy.md",
+      "document_id": "integrations-prodigy",
+      "chunks_generated": 1,
+      "content_hash": "05f2176c1813754fffe0a517c281b470"
+    },
+    {
+      "file_path": "integrations/quarkus.md",
+      "document_id": "integrations-quarkus",
+      "chunks_generated": 1,
+      "content_hash": "a8bfd7873fd96b6278c95b2900940d26"
+    },
+    {
+      "file_path": "integrations/quarkus.md",
+      "document_id": "integrations-quarkus",
+      "chunks_generated": 1,
+      "content_hash": "a8bfd7873fd96b6278c95b2900940d26"
+    },
+    {
+      "file_path": "integrations/rhel_ai.md",
+      "document_id": "integrations-rhel_ai",
+      "chunks_generated": 1,
+      "content_hash": "d4fdceb7f5826ceb6c34d95587fb2832"
+    },
+    {
+      "file_path": "integrations/rhel_ai.md",
+      "document_id": "integrations-rhel_ai",
+      "chunks_generated": 1,
+      "content_hash": "d4fdceb7f5826ceb6c34d95587fb2832"
+    },
+    {
+      "file_path": "integrations/spacy.md",
+      "document_id": "integrations-spacy",
+      "chunks_generated": 1,
+      "content_hash": "0f96d23bd537a32df3a8b62e85985c82"
+    },
+    {
+      "file_path": "integrations/spacy.md",
+      "document_id": "integrations-spacy",
+      "chunks_generated": 1,
+      "content_hash": "0f96d23bd537a32df3a8b62e85985c82"
+    },
+    {
+      "file_path": "integrations/txtai.md",
+      "document_id": "integrations-txtai",
+      "chunks_generated": 1,
+      "content_hash": "515dd59b61761b42ba312ded4507cd61"
+    },
+    {
+      "file_path": "integrations/txtai.md",
+      "document_id": "integrations-txtai",
+      "chunks_generated": 1,
+      "content_hash": "515dd59b61761b42ba312ded4507cd61"
+    },
+    {
+      "file_path": "integrations/vectara.md",
+      "document_id": "integrations-vectara",
+      "chunks_generated": 1,
+      "content_hash": "880dd5e1d0bcd5e6effe7d91b85769a3"
+    },
+    {
+      "file_path": "integrations/vectara.md",
+      "document_id": "integrations-vectara",
+      "chunks_generated": 1,
+      "content_hash": "880dd5e1d0bcd5e6effe7d91b85769a3"
+    },
+    {
+      "file_path": "usage/advanced_options.md",
+      "document_id": "usage-advanced_options",
+      "chunks_generated": 11,
+      "content_hash": "042ebd2a321d91e9947b6ef51166e011"
+    },
+    {
+      "file_path": "usage/advanced_options.md",
+      "document_id": "usage-advanced_options",
+      "chunks_generated": 11,
+      "content_hash": "042ebd2a321d91e9947b6ef51166e011"
+    },
+    {
+      "file_path": "usage/enrichments.md",
+      "document_id": "usage-enrichments",
+      "chunks_generated": 13,
+      "content_hash": "07e7754e55ef56e3b9e4fbb9bde75915"
+    },
+    {
+      "file_path": "usage/enrichments.md",
+      "document_id": "usage-enrichments",
+      "chunks_generated": 13,
+      "content_hash": "07e7754e55ef56e3b9e4fbb9bde75915"
+    },
+    {
+      "file_path": "usage/gpu.md",
+      "document_id": "usage-gpu",
+      "chunks_generated": 11,
+      "content_hash": "82fc97b636d79a4fc54cd7aa5908f10e"
+    },
+    {
+      "file_path": "usage/gpu.md",
+      "document_id": "usage-gpu",
+      "chunks_generated": 11,
+      "content_hash": "82fc97b636d79a4fc54cd7aa5908f10e"
+    },
+    {
+      "file_path": "usage/index.md",
+      "document_id": "usage-index",
+      "chunks_generated": 3,
+      "content_hash": "2d33cb2c7433bdffb09671f73906c273"
+    },
+    {
+      "file_path": "usage/index.md",
+      "document_id": "usage-index",
+      "chunks_generated": 3,
+      "content_hash": "2d33cb2c7433bdffb09671f73906c273"
+    },
+    {
+      "file_path": "usage/jobkit.md",
+      "document_id": "usage-jobkit",
+      "chunks_generated": 6,
+      "content_hash": "1953a8cd5dcc33dcf6ea16dc7884b4b9"
+    },
+    {
+      "file_path": "usage/jobkit.md",
+      "document_id": "usage-jobkit",
+      "chunks_generated": 6,
+      "content_hash": "1953a8cd5dcc33dcf6ea16dc7884b4b9"
+    },
+    {
+      "file_path": "usage/mcp.md",
+      "document_id": "usage-mcp",
+      "chunks_generated": 5,
+      "content_hash": "00e2d430f541b16e87cc2b1ae9870c63"
+    },
+    {
+      "file_path": "usage/mcp.md",
+      "document_id": "usage-mcp",
+      "chunks_generated": 5,
+      "content_hash": "00e2d430f541b16e87cc2b1ae9870c63"
+    },
+    {
+      "file_path": "usage/supported_formats.md",
+      "document_id": "usage-supported_formats",
+      "chunks_generated": 4,
+      "content_hash": "4462f2bb6b0f613c4707f73b5fb084e7"
+    },
+    {
+      "file_path": "usage/supported_formats.md",
+      "document_id": "usage-supported_formats",
+      "chunks_generated": 4,
+      "content_hash": "4462f2bb6b0f613c4707f73b5fb084e7"
+    },
+    {
+      "file_path": "usage/vision_models.md",
+      "document_id": "usage-vision_models",
+      "chunks_generated": 13,
+      "content_hash": "3e93d188b75a7c3d42414db3ae1095ef"
+    },
+    {
+      "file_path": "usage/vision_models.md",
+      "document_id": "usage-vision_models",
+      "chunks_generated": 13,
+      "content_hash": "3e93d188b75a7c3d42414db3ae1095ef"
+    },
+    {
+      "file_path": "v2.md",
+      "document_id": "v2",
+      "chunks_generated": 19,
+      "content_hash": "8a73524cf14ee911bc2f1e381b456a0e"
+    },
+    {
+      "file_path": "v2.md",
+      "document_id": "v2",
+      "chunks_generated": 19,
+      "content_hash": "8a73524cf14ee911bc2f1e381b456a0e"
+    }
+  ]
+}

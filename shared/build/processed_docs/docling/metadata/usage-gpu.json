@@ -1,0 +1,96 @@
+{
+  "file_name": "gpu.md",
+  "file_stem": "gpu",
+  "file_path": "usage/gpu.md",
+  "file_size": 5801,
+  "document_id": "usage-gpu",
+  "url": "/usage/gpu",
+  "content_hash": "82fc97b636d79a4fc54cd7aa5908f10e",
+  "statistics": {
+    "char_count": 5183,
+    "word_count": 689,
+    "line_count": 156,
+    "paragraph_count": 48,
+    "header_count": 15,
+    "code_block_count": 6,
+    "code_lines": 43
+  },
+  "processed_at": "2026-01-08T11:33:42.495352",
+  "sections": [
+    {
+      "level": 1,
+      "title": "GPU support",
+      "anchor": "gpu-support"
+    },
+    {
+      "level": 2,
+      "title": "Achieving Optimal GPU Performance with Docling",
+      "anchor": "achieving-optimal-gpu-performance-with-docling"
+    },
+    {
+      "level": 3,
+      "title": "Standard Pipeline",
+      "anchor": "standard-pipeline"
+    },
+    {
+      "level": 1,
+      "title": "Configure accelerator options for GPU",
+      "anchor": "configure-accelerator-options-for-gpu"
+    },
+    {
+      "level": 4,
+      "title": "Complete example",
+      "anchor": "complete-example"
+    },
+    {
+      "level": 4,
+      "title": "OCR engines",
+      "anchor": "ocr-engines"
+    },
+    {
+      "level": 3,
+      "title": "VLM Pipeline",
+      "anchor": "vlm-pipeline"
+    },
+    {
+      "level": 4,
+      "title": "Start the inference server",
+      "anchor": "start-the-inference-server"
+    },
+    {
+      "level": 4,
+      "title": "Configure Docling",
+      "anchor": "configure-docling"
+    },
+    {
+      "level": 4,
+      "title": "Complete example",
+      "anchor": "complete-example"
+    },
+    {
+      "level": 4,
+      "title": "Available models",
+      "anchor": "available-models"
+    },
+    {
+      "level": 2,
+      "title": "Performance results",
+      "anchor": "performance-results"
+    },
+    {
+      "level": 3,
+      "title": "Test data",
+      "anchor": "test-data"
+    },
+    {
+      "level": 3,
+      "title": "Test infrastructure",
+      "anchor": "test-infrastructure"
+    },
+    {
+      "level": 3,
+      "title": "Results",
+      "anchor": "results"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "file_name": "index.md",
+  "file_stem": "index",
+  "file_path": "usage/index.md",
+  "file_size": 1562,
+  "document_id": "usage-index",
+  "url": "/usage",
+  "content_hash": "2d33cb2c7433bdffb09671f73906c273",
+  "statistics": {
+    "char_count": 1556,
+    "word_count": 183,
+    "line_count": 45,
+    "paragraph_count": 16,
+    "header_count": 4,
+    "code_block_count": 3,
+    "code_lines": 9
+  },
+  "processed_at": "2026-01-08T11:33:42.511787",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Basic usage",
+      "anchor": "basic-usage"
+    },
+    {
+      "level": 3,
+      "title": "Python",
+      "anchor": "python"
+    },
+    {
+      "level": 3,
+      "title": "CLI",
+      "anchor": "cli"
+    },
+    {
+      "level": 2,
+      "title": "What's next",
+      "anchor": "whats-next"
+    }
+  ]
+}

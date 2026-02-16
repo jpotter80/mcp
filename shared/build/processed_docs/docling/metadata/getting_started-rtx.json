@@ -1,0 +1,196 @@
+{
+  "file_name": "rtx.md",
+  "file_stem": "rtx",
+  "file_path": "getting_started/rtx.md",
+  "file_size": 8480,
+  "document_id": "getting_started-rtx",
+  "url": "/getting_started/rtx",
+  "content_hash": "2a19fd1960b971ae0cca853d05f4b4f1",
+  "statistics": {
+    "char_count": 8187,
+    "word_count": 976,
+    "line_count": 253,
+    "paragraph_count": 83,
+    "header_count": 35,
+    "code_block_count": 11,
+    "code_lines": 81
+  },
+  "processed_at": "2026-01-08T11:33:42.320142",
+  "sections": [
+    {
+      "level": 1,
+      "title": "⚡ RTX GPU Acceleration",
+      "anchor": "-rtx-gpu-acceleration"
+    },
+    {
+      "level": 2,
+      "title": "Prerequisites",
+      "anchor": "prerequisites"
+    },
+    {
+      "level": 2,
+      "title": "Installation Steps",
+      "anchor": "installation-steps"
+    },
+    {
+      "level": 3,
+      "title": "1. Install NVIDIA GPU Drivers",
+      "anchor": "1-install-nvidia-gpu-drivers"
+    },
+    {
+      "level": 3,
+      "title": "2. Install CUDA Toolkit",
+      "anchor": "2-install-cuda-toolkit"
+    },
+    {
+      "level": 3,
+      "title": "3. Install cuDNN",
+      "anchor": "3-install-cudnn"
+    },
+    {
+      "level": 3,
+      "title": "4. Install PyTorch with CUDA Support",
+      "anchor": "4-install-pytorch-with-cuda-support"
+    },
+    {
+      "level": 1,
+      "title": "For CUDA 12.8 (current default for PyTorch)",
+      "anchor": "for-cuda-128-current-default-for-pytorch"
+    },
+    {
+      "level": 1,
+      "title": "For CUDA 13.0",
+      "anchor": "for-cuda-130"
+    },
+    {
+      "level": 3,
+      "title": "5. Install and Run Docling",
+      "anchor": "5-install-and-run-docling"
+    },
+    {
+      "level": 1,
+      "title": "Docling automatically uses GPU when available",
+      "anchor": "docling-automatically-uses-gpu-when-available"
+    },
+    {
+      "level": 1,
+      "title": "Explicitly configure GPU acceleration",
+      "anchor": "explicitly-configure-gpu-acceleration"
+    },
+    {
+      "level": 1,
+      "title": "Configure pipeline for optimal GPU performance",
+      "anchor": "configure-pipeline-for-optimal-gpu-performance"
+    },
+    {
+      "level": 1,
+      "title": "Create converter with custom settings",
+      "anchor": "create-converter-with-custom-settings"
+    },
+    {
+      "level": 1,
+      "title": "Convert documents",
+      "anchor": "convert-documents"
+    },
+    {
+      "level": 2,
+      "title": "GPU-Accelerated VLM Pipeline",
+      "anchor": "gpu-accelerated-vlm-pipeline"
+    },
+    {
+      "level": 3,
+      "title": "Linux: Using vLLM (Recommended)",
+      "anchor": "linux-using-vllm-recommended"
+    },
+    {
+      "level": 3,
+      "title": "Windows: Using llama-server",
+      "anchor": "windows-using-llama-server"
+    },
+    {
+      "level": 4,
+      "title": "Installation",
+      "anchor": "installation"
+    },
+    {
+      "level": 4,
+      "title": "Launch Command",
+      "anchor": "launch-command"
+    },
+    {
+      "level": 3,
+      "title": "Configure Docling for VLM Server",
+      "anchor": "configure-docling-for-vlm-server"
+    },
+    {
+      "level": 1,
+      "title": "Configure VLM options",
+      "anchor": "configure-vlm-options"
+    },
+    {
+      "level": 1,
+      "title": "when running with llama.cpp (llama-server), use the different model name.",
+      "anchor": "when-running-with-llamacpp-llama-server-use-the-different-model-name"
+    },
+    {
+      "level": 1,
+      "title": "vlm_options.params[\"model\"] = \"ibm-granite_granite-docling-258M-GGUF_granite-docling-258M-BF16.gguf\"",
+      "anchor": "vlm_optionsparamsmodel-ibm-granite_granite-docling-258m-gguf_granite-docling-258m-bf16gguf"
+    },
+    {
+      "level": 1,
+      "title": "Set page batch size to match or exceed concurrency",
+      "anchor": "set-page-batch-size-to-match-or-exceed-concurrency"
+    },
+    {
+      "level": 1,
+      "title": "Create converter with VLM pipeline",
+      "anchor": "create-converter-with-vlm-pipeline"
+    },
+    {
+      "level": 2,
+      "title": "Performance Optimization Tips",
+      "anchor": "performance-optimization-tips"
+    },
+    {
+      "level": 3,
+      "title": "Batch Size Tuning",
+      "anchor": "batch-size-tuning"
+    },
+    {
+      "level": 3,
+      "title": "Memory Management",
+      "anchor": "memory-management"
+    },
+    {
+      "level": 1,
+      "title": "Check GPU memory",
+      "anchor": "check-gpu-memory"
+    },
+    {
+      "level": 2,
+      "title": "Troubleshooting",
+      "anchor": "troubleshooting"
+    },
+    {
+      "level": 3,
+      "title": "CUDA Out of Memory",
+      "anchor": "cuda-out-of-memory"
+    },
+    {
+      "level": 3,
+      "title": "CUDA Not Available",
+      "anchor": "cuda-not-available"
+    },
+    {
+      "level": 3,
+      "title": "Performance Not Improving",
+      "anchor": "performance-not-improving"
+    },
+    {
+      "level": 2,
+      "title": "Additional Resources",
+      "anchor": "additional-resources"
+    }
+  ]
+}

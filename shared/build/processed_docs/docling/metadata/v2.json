@@ -1,0 +1,156 @@
+{
+  "file_name": "v2.md",
+  "file_stem": "v2",
+  "file_path": "v2.md",
+  "file_size": 8946,
+  "document_id": "v2",
+  "url": "/v2",
+  "content_hash": "8a73524cf14ee911bc2f1e381b456a0e",
+  "statistics": {
+    "char_count": 8690,
+    "word_count": 1019,
+    "line_count": 230,
+    "paragraph_count": 57,
+    "header_count": 27,
+    "code_block_count": 9,
+    "code_lines": 115
+  },
+  "processed_at": "2026-01-08T11:33:42.591137",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What's new",
+      "anchor": "whats-new"
+    },
+    {
+      "level": 2,
+      "title": "Changes in Docling v2",
+      "anchor": "changes-in-docling-v2"
+    },
+    {
+      "level": 3,
+      "title": "CLI",
+      "anchor": "cli"
+    },
+    {
+      "level": 1,
+      "title": "Convert a single file to Markdown (default)",
+      "anchor": "convert-a-single-file-to-markdown-default"
+    },
+    {
+      "level": 1,
+      "title": "Convert a single file to Markdown and JSON, without OCR",
+      "anchor": "convert-a-single-file-to-markdown-and-json-without-ocr"
+    },
+    {
+      "level": 1,
+      "title": "Convert PDF files in input directory to Markdown (default)",
+      "anchor": "convert-pdf-files-in-input-directory-to-markdown-default"
+    },
+    {
+      "level": 1,
+      "title": "Convert PDF and Word files in input directory to Markdown and JSON",
+      "anchor": "convert-pdf-and-word-files-in-input-directory-to-markdown-and-json"
+    },
+    {
+      "level": 1,
+      "title": "Convert all supported files in input directory to Markdown, but abort on first error",
+      "anchor": "convert-all-supported-files-in-input-directory-to-markdown-but-abort-on-first-error"
+    },
+    {
+      "level": 3,
+      "title": "Setting up a `DocumentConverter`",
+      "anchor": "setting-up-a-documentconverter"
+    },
+    {
+      "level": 2,
+      "title": "Default initialization still works as before:",
+      "anchor": "default-initialization-still-works-as-before"
+    },
+    {
+      "level": 1,
+      "title": "doc_converter = DocumentConverter()",
+      "anchor": "doc_converter-documentconverter"
+    },
+    {
+      "level": 1,
+      "title": "previous `PipelineOptions` is now `PdfPipelineOptions`",
+      "anchor": "previous-pipelineoptions-is-now-pdfpipelineoptions"
+    },
+    {
+      "level": 2,
+      "title": "Custom options are now defined per format.",
+      "anchor": "custom-options-are-now-defined-per-format"
+    },
+    {
+      "level": 3,
+      "title": "Converting documents",
+      "anchor": "converting-documents"
+    },
+    {
+      "level": 2,
+      "title": "Convert a single file (from URL or local path)",
+      "anchor": "convert-a-single-file-from-url-or-local-path"
+    },
+    {
+      "level": 2,
+      "title": "Convert several files at once:",
+      "anchor": "convert-several-files-at-once"
+    },
+    {
+      "level": 1,
+      "title": "Directly pass list of files or streams to `convert_all`",
+      "anchor": "directly-pass-list-of-files-or-streams-to-convert_all"
+    },
+    {
+      "level": 3,
+      "title": "Access document structures",
+      "anchor": "access-document-structures"
+    },
+    {
+      "level": 2,
+      "title": "Inspect the converted document:",
+      "anchor": "inspect-the-converted-document"
+    },
+    {
+      "level": 2,
+      "title": "Iterate the elements in reading order, including hierarchy level:",
+      "anchor": "iterate-the-elements-in-reading-order-including-hierarchy-level"
+    },
+    {
+      "level": 3,
+      "title": "Export into JSON, Markdown, Doctags",
+      "anchor": "export-into-json-markdown-doctags"
+    },
+    {
+      "level": 2,
+      "title": "Export to desired format:",
+      "anchor": "export-to-desired-format"
+    },
+    {
+      "level": 2,
+      "title": "Export legacy document representation to desired format, for v1 compatibility:",
+      "anchor": "export-legacy-document-representation-to-desired-format-for-v1-compatibility"
+    },
+    {
+      "level": 3,
+      "title": "Reload a `DoclingDocument` stored as JSON",
+      "anchor": "reload-a-doclingdocument-stored-as-json"
+    },
+    {
+      "level": 1,
+      "title": "Save to disk:",
+      "anchor": "save-to-disk"
+    },
+    {
+      "level": 1,
+      "title": "Load from disk:",
+      "anchor": "load-from-disk"
+    },
+    {
+      "level": 3,
+      "title": "Chunking",
+      "anchor": "chunking"
+    }
+  ]
+}

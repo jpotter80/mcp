@@ -1,0 +1,61 @@
+{
+  "file_name": "advanced_options.md",
+  "file_stem": "advanced_options",
+  "file_path": "usage/advanced_options.md",
+  "file_size": 5972,
+  "document_id": "usage-advanced_options",
+  "url": "/usage/advanced_options",
+  "content_hash": "042ebd2a321d91e9947b6ef51166e011",
+  "statistics": {
+    "char_count": 5914,
+    "word_count": 637,
+    "line_count": 162,
+    "paragraph_count": 47,
+    "header_count": 8,
+    "code_block_count": 10,
+    "code_lines": 72
+  },
+  "processed_at": "2026-01-08T11:33:42.439222",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Model prefetching and offline usage",
+      "anchor": "model-prefetching-and-offline-usage"
+    },
+    {
+      "level": 2,
+      "title": "Using remote services",
+      "anchor": "using-remote-services"
+    },
+    {
+      "level": 3,
+      "title": "List of remote model services",
+      "anchor": "list-of-remote-model-services"
+    },
+    {
+      "level": 2,
+      "title": "Adjust pipeline features",
+      "anchor": "adjust-pipeline-features"
+    },
+    {
+      "level": 3,
+      "title": "Control PDF table extraction options",
+      "anchor": "control-pdf-table-extraction-options"
+    },
+    {
+      "level": 2,
+      "title": "Impose limits on the document size",
+      "anchor": "impose-limits-on-the-document-size"
+    },
+    {
+      "level": 2,
+      "title": "Convert from binary PDF streams",
+      "anchor": "convert-from-binary-pdf-streams"
+    },
+    {
+      "level": 2,
+      "title": "Limit resource usage",
+      "anchor": "limit-resource-usage"
+    }
+  ]
+}

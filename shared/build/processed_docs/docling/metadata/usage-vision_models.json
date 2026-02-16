@@ -1,0 +1,36 @@
+{
+  "file_name": "vision_models.md",
+  "file_stem": "vision_models",
+  "file_path": "usage/vision_models.md",
+  "file_size": 5732,
+  "document_id": "usage-vision_models",
+  "url": "/usage/vision_models",
+  "content_hash": "3e93d188b75a7c3d42414db3ae1095ef",
+  "statistics": {
+    "char_count": 5462,
+    "word_count": 490,
+    "line_count": 121,
+    "paragraph_count": 30,
+    "header_count": 3,
+    "code_block_count": 4,
+    "code_lines": 55
+  },
+  "processed_at": "2026-01-08T11:33:42.559769",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Available local models",
+      "anchor": "available-local-models"
+    },
+    {
+      "level": 3,
+      "title": "Other models",
+      "anchor": "other-models"
+    },
+    {
+      "level": 2,
+      "title": "Remote models",
+      "anchor": "remote-models"
+    }
+  ]
+}

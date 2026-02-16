@@ -1,0 +1,56 @@
+{
+  "file_name": "plugins.md",
+  "file_stem": "plugins",
+  "file_path": "concepts/plugins.md",
+  "file_size": 3242,
+  "document_id": "concepts-plugins",
+  "url": "/concepts/plugins",
+  "content_hash": "0faf74544acc90e10657ab419fd507f0",
+  "statistics": {
+    "char_count": 3061,
+    "word_count": 336,
+    "line_count": 101,
+    "paragraph_count": 29,
+    "header_count": 7,
+    "code_block_count": 7,
+    "code_lines": 44
+  },
+  "processed_at": "2026-01-08T11:33:42.230060",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Plugin factories",
+      "anchor": "plugin-factories"
+    },
+    {
+      "level": 3,
+      "title": "OCR factory",
+      "anchor": "ocr-factory"
+    },
+    {
+      "level": 1,
+      "title": "Factory registration",
+      "anchor": "factory-registration"
+    },
+    {
+      "level": 2,
+      "title": "Third-party plugins",
+      "anchor": "third-party-plugins"
+    },
+    {
+      "level": 3,
+      "title": "Using the `docling` CLI",
+      "anchor": "using-the-docling-cli"
+    },
+    {
+      "level": 1,
+      "title": "Show the external plugins",
+      "anchor": "show-the-external-plugins"
+    },
+    {
+      "level": 1,
+      "title": "Run docling with the new plugin",
+      "anchor": "run-docling-with-the-new-plugin"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ generate-embeddings = "python embedding/generate_embeddings.py"
 consolidate = "python embedding/consolidate_data.py"
 load = "python embedding/load_to_ducklake.py"
 index = "python embedding/create_indexes.py"
-search = "python servers/mcp-docs-mcp/runtime/search.py"
+search = "python servers/docling-docs-mcp/runtime/search.py"
 mcp-dev = "mcp dev servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
@@ -32,6 +32,12 @@ mcp-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-
 mcp-consolidate = "python -m shared.embedding.consolidate_data --mcp-name mcp --doc-type docs"
 mcp-load = "python -m shared.embedding.load_to_ducklake --mcp-name mcp --doc-type docs"
 mcp-index = "python -m shared.embedding.create_indexes --mcp-name mcp --doc-type docs"
+
+docling-process = "python -m shared.preprocessing.src.pipeline --config servers/docling-docs-mcp/config/processing_config.yaml --doc-name 'Docling Docs'"
+docling-generate-embeddings = "python -m shared.embedding.generate_embeddings --mcp-name docling --doc-type docs --config servers/docling-docs-mcp/config/processing_config.yaml"
+docling-consolidate = "python -m shared.embedding.consolidate_data --mcp-name docling --doc-type docs"
+docling-load = "python -m shared.embedding.load_to_ducklake --mcp-name docling --doc-type docs"
+docling-index = "python -m shared.embedding.create_indexes --mcp-name docling --doc-type docs"
 
 mojo-build = """
 pixi run mojo-process && \
@@ -55,6 +61,14 @@ pixi run mcp-generate-embeddings && \
 pixi run mcp-consolidate && \
 pixi run mcp-load && \
 pixi run mcp-index
+"""
+
+docling-build = """
+pixi run docling-process && \
+pixi run docling-generate-embeddings && \
+pixi run docling-consolidate && \
+pixi run docling-load && \
+pixi run docling-index
 """
 
 # Demonstration: generic tasks with explicit mcp-name and doc-type

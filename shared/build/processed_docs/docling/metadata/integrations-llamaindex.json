@@ -1,0 +1,36 @@
+{
+  "file_name": "llamaindex.md",
+  "file_stem": "llamaindex",
+  "file_path": "integrations/llamaindex.md",
+  "file_size": 1453,
+  "document_id": "integrations-llamaindex",
+  "url": "/integrations/llamaindex",
+  "content_hash": "fb112122502dea1a0571bbbb06927f16",
+  "statistics": {
+    "char_count": 1432,
+    "word_count": 127,
+    "line_count": 21,
+    "paragraph_count": 9,
+    "header_count": 3,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.404093",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Components",
+      "anchor": "components"
+    },
+    {
+      "level": 3,
+      "title": "Docling Reader",
+      "anchor": "docling-reader"
+    },
+    {
+      "level": 3,
+      "title": "Docling Node Parser",
+      "anchor": "docling-node-parser"
+    }
+  ]
+}

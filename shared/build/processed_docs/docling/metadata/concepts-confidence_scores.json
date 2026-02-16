@@ -1,0 +1,61 @@
+{
+  "file_name": "confidence_scores.md",
+  "file_stem": "confidence_scores",
+  "file_path": "concepts/confidence_scores.md",
+  "file_size": 3154,
+  "document_id": "concepts-confidence_scores",
+  "url": "/concepts/confidence_scores",
+  "content_hash": "719501da6294f4a31c7a17d4e49873c6",
+  "statistics": {
+    "char_count": 3140,
+    "word_count": 376,
+    "line_count": 60,
+    "paragraph_count": 24,
+    "header_count": 8,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.202885",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Introduction",
+      "anchor": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Purpose",
+      "anchor": "purpose"
+    },
+    {
+      "level": 2,
+      "title": "Concepts",
+      "anchor": "concepts"
+    },
+    {
+      "level": 3,
+      "title": "Scores and grades",
+      "anchor": "scores-and-grades"
+    },
+    {
+      "level": 3,
+      "title": "Types of confidence calculated",
+      "anchor": "types-of-confidence-calculated"
+    },
+    {
+      "level": 3,
+      "title": "Summary grades",
+      "anchor": "summary-grades"
+    },
+    {
+      "level": 3,
+      "title": "Page-level vs document-level",
+      "anchor": "page-level-vs-document-level"
+    },
+    {
+      "level": 3,
+      "title": "Example",
+      "anchor": "example"
+    }
+  ]
+}

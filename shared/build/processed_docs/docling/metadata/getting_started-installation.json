@@ -1,0 +1,36 @@
+{
+  "file_name": "installation.md",
+  "file_stem": "installation",
+  "file_path": "getting_started/installation.md",
+  "file_size": 5961,
+  "document_id": "getting_started-installation",
+  "url": "/getting_started/installation",
+  "content_hash": "a600e4f061f1196b8378c5125b4940cb",
+  "statistics": {
+    "char_count": 5699,
+    "word_count": 702,
+    "line_count": 139,
+    "paragraph_count": 37,
+    "header_count": 3,
+    "code_block_count": 9,
+    "code_lines": 34
+  },
+  "processed_at": "2026-01-08T11:33:42.281535",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Available extras",
+      "anchor": "available-extras"
+    },
+    {
+      "level": 3,
+      "title": "OCR engines",
+      "anchor": "ocr-engines"
+    },
+    {
+      "level": 2,
+      "title": "Development setup",
+      "anchor": "development-setup"
+    }
+  ]
+}

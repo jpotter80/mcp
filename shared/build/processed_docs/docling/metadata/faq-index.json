@@ -1,0 +1,26 @@
+{
+  "file_name": "index.md",
+  "file_stem": "index",
+  "file_path": "faq/index.md",
+  "file_size": 11132,
+  "document_id": "faq-index",
+  "url": "/faq",
+  "content_hash": "d6d4604f9b2cee820d1c688b4a126f41",
+  "statistics": {
+    "char_count": 6136,
+    "word_count": 745,
+    "line_count": 147,
+    "paragraph_count": 51,
+    "header_count": 1,
+    "code_block_count": 14,
+    "code_lines": 48
+  },
+  "processed_at": "2026-01-08T11:33:42.255764",
+  "sections": [
+    {
+      "level": 1,
+      "title": "FAQ",
+      "anchor": "faq"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "file_name": "serialization.md",
+  "file_stem": "serialization",
+  "file_path": "concepts/serialization.md",
+  "file_size": 1816,
+  "document_id": "concepts-serialization",
+  "url": "/concepts/serialization",
+  "content_hash": "3a6135ffbe740f2a75ca4919a79a70d2",
+  "statistics": {
+    "char_count": 1811,
+    "word_count": 208,
+    "line_count": 40,
+    "paragraph_count": 14,
+    "header_count": 4,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.239701",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Introduction",
+      "anchor": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Base classes",
+      "anchor": "base-classes"
+    },
+    {
+      "level": 2,
+      "title": "Use in `DoclingDocument` export methods",
+      "anchor": "use-in-doclingdocument-export-methods"
+    },
+    {
+      "level": 2,
+      "title": "Examples",
+      "anchor": "examples"
+    }
+  ]
+}

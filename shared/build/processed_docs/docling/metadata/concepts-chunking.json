@@ -1,0 +1,41 @@
+{
+  "file_name": "chunking.md",
+  "file_stem": "chunking",
+  "file_path": "concepts/chunking.md",
+  "file_size": 3667,
+  "document_id": "concepts-chunking",
+  "url": "/concepts/chunking",
+  "content_hash": "c36c4c2a818390f281354dcf918e1f9f",
+  "statistics": {
+    "char_count": 3513,
+    "word_count": 460,
+    "line_count": 85,
+    "paragraph_count": 21,
+    "header_count": 4,
+    "code_block_count": 4,
+    "code_lines": 4
+  },
+  "processed_at": "2026-01-08T11:33:42.189599",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Introduction",
+      "anchor": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Base Chunker",
+      "anchor": "base-chunker"
+    },
+    {
+      "level": 2,
+      "title": "Hybrid Chunker",
+      "anchor": "hybrid-chunker"
+    },
+    {
+      "level": 2,
+      "title": "Hierarchical Chunker",
+      "anchor": "hierarchical-chunker"
+    }
+  ]
+}

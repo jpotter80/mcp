@@ -1,0 +1,26 @@
+{
+  "file_name": "mcp.md",
+  "file_stem": "mcp",
+  "file_path": "usage/mcp.md",
+  "file_size": 2079,
+  "document_id": "usage-mcp",
+  "url": "/usage/mcp",
+  "content_hash": "00e2d430f541b16e87cc2b1ae9870c63",
+  "statistics": {
+    "char_count": 2040,
+    "word_count": 210,
+    "line_count": 30,
+    "paragraph_count": 9,
+    "header_count": 1,
+    "code_block_count": 1,
+    "code_lines": 11
+  },
+  "processed_at": "2026-01-08T11:33:42.534331",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Docling MCP",
+      "anchor": "docling-mcp"
+    }
+  ]
+}

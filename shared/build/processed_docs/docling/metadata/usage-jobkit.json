@@ -1,0 +1,41 @@
+{
+  "file_name": "jobkit.md",
+  "file_stem": "jobkit",
+  "file_path": "usage/jobkit.md",
+  "file_size": 3071,
+  "document_id": "usage-jobkit",
+  "url": "/usage/jobkit",
+  "content_hash": "1953a8cd5dcc33dcf6ea16dc7884b4b9",
+  "statistics": {
+    "char_count": 2983,
+    "word_count": 363,
+    "line_count": 86,
+    "paragraph_count": 27,
+    "header_count": 4,
+    "code_block_count": 2,
+    "code_lines": 15
+  },
+  "processed_at": "2026-01-08T11:33:42.522128",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Usage",
+      "anchor": "usage"
+    },
+    {
+      "level": 3,
+      "title": "CLI",
+      "anchor": "cli"
+    },
+    {
+      "level": 2,
+      "title": "Connectors",
+      "anchor": "connectors"
+    },
+    {
+      "level": 3,
+      "title": "Google Drive",
+      "anchor": "google-drive"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "file_name": "enrichments.md",
+  "file_stem": "enrichments",
+  "file_path": "usage/enrichments.md",
+  "file_size": 7492,
+  "document_id": "usage-enrichments",
+  "url": "/usage/enrichments",
+  "content_hash": "07e7754e55ef56e3b9e4fbb9bde75915",
+  "statistics": {
+    "char_count": 7431,
+    "word_count": 748,
+    "line_count": 212,
+    "paragraph_count": 67,
+    "header_count": 13,
+    "code_block_count": 11,
+    "code_lines": 86
+  },
+  "processed_at": "2026-01-08T11:33:42.465936",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Enrichments details",
+      "anchor": "enrichments-details"
+    },
+    {
+      "level": 3,
+      "title": "Code understanding",
+      "anchor": "code-understanding"
+    },
+    {
+      "level": 3,
+      "title": "Formula understanding",
+      "anchor": "formula-understanding"
+    },
+    {
+      "level": 3,
+      "title": "Picture classification",
+      "anchor": "picture-classification"
+    },
+    {
+      "level": 3,
+      "title": "Picture description",
+      "anchor": "picture-description"
+    },
+    {
+      "level": 4,
+      "title": "Granite Vision model",
+      "anchor": "granite-vision-model"
+    },
+    {
+      "level": 4,
+      "title": "SmolVLM model",
+      "anchor": "smolvlm-model"
+    },
+    {
+      "level": 4,
+      "title": "Other vision models",
+      "anchor": "other-vision-models"
+    },
+    {
+      "level": 4,
+      "title": "Remote vision model",
+      "anchor": "remote-vision-model"
+    },
+    {
+      "level": 1,
+      "title": "Enable connections to remote services",
+      "anchor": "enable-connections-to-remote-services"
+    },
+    {
+      "level": 1,
+      "title": "Example using a model running locally, e.g. via VLLM",
+      "anchor": "example-using-a-model-running-locally-eg-via-vllm"
+    },
+    {
+      "level": 1,
+      "title": "$ vllm serve MODEL_NAME",
+      "anchor": "-vllm-serve-model_name"
+    },
+    {
+      "level": 2,
+      "title": "Develop new enrichment models",
+      "anchor": "develop-new-enrichment-models"
+    }
+  ]
+}

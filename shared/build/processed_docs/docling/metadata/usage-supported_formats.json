@@ -1,0 +1,31 @@
+{
+  "file_name": "supported_formats.md",
+  "file_stem": "supported_formats",
+  "file_path": "usage/supported_formats.md",
+  "file_size": 1456,
+  "document_id": "usage-supported_formats",
+  "url": "/usage/supported_formats",
+  "content_hash": "4462f2bb6b0f613c4707f73b5fb084e7",
+  "statistics": {
+    "char_count": 1453,
+    "word_count": 219,
+    "line_count": 36,
+    "paragraph_count": 8,
+    "header_count": 2,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.542736",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Supported input formats",
+      "anchor": "supported-input-formats"
+    },
+    {
+      "level": 2,
+      "title": "Supported output formats",
+      "anchor": "supported-output-formats"
+    }
+  ]
+}

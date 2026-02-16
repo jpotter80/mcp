@@ -1,0 +1,61 @@
+{
+  "file_name": "index.md",
+  "file_stem": "index",
+  "file_path": "index.md",
+  "file_size": 6155,
+  "document_id": "index",
+  "url": "/index",
+  "content_hash": "32af2ad0a94babd7214e3ad36fb23ede",
+  "statistics": {
+    "char_count": 5092,
+    "word_count": 431,
+    "line_count": 80,
+    "paragraph_count": 21,
+    "header_count": 8,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.349243",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Getting started",
+      "anchor": "getting-started"
+    },
+    {
+      "level": 2,
+      "title": "Features",
+      "anchor": "features"
+    },
+    {
+      "level": 3,
+      "title": "What's new",
+      "anchor": "whats-new"
+    },
+    {
+      "level": 3,
+      "title": "Coming soon",
+      "anchor": "coming-soon"
+    },
+    {
+      "level": 2,
+      "title": "What's next",
+      "anchor": "whats-next"
+    },
+    {
+      "level": 2,
+      "title": "Live assistant",
+      "anchor": "live-assistant"
+    },
+    {
+      "level": 2,
+      "title": "LF AI & Data",
+      "anchor": "lf-ai-data"
+    },
+    {
+      "level": 3,
+      "title": "IBM ❤️ Open Source AI",
+      "anchor": "ibm-open-source-ai"
+    }
+  ]
+}

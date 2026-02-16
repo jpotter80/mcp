@@ -1,0 +1,20 @@
+{
+  "file_name": "quarkus.md",
+  "file_stem": "quarkus",
+  "file_path": "integrations/quarkus.md",
+  "file_size": 321,
+  "document_id": "integrations-quarkus",
+  "url": "/integrations/quarkus",
+  "content_hash": "a8bfd7873fd96b6278c95b2900940d26",
+  "statistics": {
+    "char_count": 314,
+    "word_count": 20,
+    "line_count": 4,
+    "paragraph_count": 2,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.417297",
+  "sections": []
+}

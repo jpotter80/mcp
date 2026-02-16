@@ -1,0 +1,36 @@
+{
+  "file_name": "data_prep_kit.md",
+  "file_stem": "data_prep_kit",
+  "file_path": "integrations/data_prep_kit.md",
+  "file_size": 741,
+  "document_id": "integrations-data_prep_kit",
+  "url": "/integrations/data_prep_kit",
+  "content_hash": "11c68e4c2bc0f71a0802095a1358666d",
+  "statistics": {
+    "char_count": 728,
+    "word_count": 53,
+    "line_count": 10,
+    "paragraph_count": 3,
+    "header_count": 3,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.377328",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Components",
+      "anchor": "components"
+    },
+    {
+      "level": 3,
+      "title": "PDF ingestion to Parquet",
+      "anchor": "pdf-ingestion-to-parquet"
+    },
+    {
+      "level": 3,
+      "title": "Document chunking",
+      "anchor": "document-chunking"
+    }
+  ]
+}

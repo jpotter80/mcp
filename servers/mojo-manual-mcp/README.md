@@ -24,7 +24,7 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
       "type": "stdio",
       "command": "pixi",
       "args": ["run", "serve"],
-      "cwd": "/home/james/mcp/servers/mojo-manual-mcp",
+      "cwd": "/absolute/path/to/mojo-manual-mcp",
       "env": {
         "MAX_SERVER_URL": "http://localhost:8000/v1",
         "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",

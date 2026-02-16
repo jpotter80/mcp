@@ -250,7 +250,7 @@ class HybridSearcher:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="docs Documentation Hybrid Search")
+    parser = argparse.ArgumentParser(description="Documentation Hybrid Search")
     parser.add_argument("-q", "--query", type=str, required=True, help="Search query")
     parser.add_argument("-k", type=int, default=5, help="Number of results to return")
     parser.add_argument("--fts-weight", type=float, default=0.4, help="Weight for FTS results")

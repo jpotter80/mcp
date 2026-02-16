@@ -1,0 +1,20 @@
+{
+  "file_name": "langchain.md",
+  "file_stem": "langchain",
+  "file_path": "integrations/langchain.md",
+  "file_size": 700,
+  "document_id": "integrations-langchain",
+  "url": "/integrations/langchain",
+  "content_hash": "a96a4fe39f84f96b983da832ba27215c",
+  "statistics": {
+    "char_count": 679,
+    "word_count": 52,
+    "line_count": 14,
+    "paragraph_count": 4,
+    "header_count": 0,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.396821",
+  "sections": []
+}

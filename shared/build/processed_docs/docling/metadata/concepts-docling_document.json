@@ -1,0 +1,51 @@
+{
+  "file_name": "docling_document.md",
+  "file_stem": "docling_document",
+  "file_path": "concepts/docling_document.md",
+  "file_size": 3098,
+  "document_id": "concepts-docling_document",
+  "url": "/concepts/docling_document",
+  "content_hash": "b3c2e9592e68099809fe73576ce92e5f",
+  "statistics": {
+    "char_count": 3030,
+    "word_count": 429,
+    "line_count": 56,
+    "paragraph_count": 19,
+    "header_count": 6,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-01-08T11:33:42.214585",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Example document structures",
+      "anchor": "example-document-structures"
+    },
+    {
+      "level": 3,
+      "title": "Basic structure",
+      "anchor": "basic-structure"
+    },
+    {
+      "level": 3,
+      "title": "Grouping",
+      "anchor": "grouping"
+    },
+    {
+      "level": 3,
+      "title": "Tables",
+      "anchor": "tables"
+    },
+    {
+      "level": 3,
+      "title": "Pictures",
+      "anchor": "pictures"
+    },
+    {
+      "level": 3,
+      "title": "Provenance",
+      "anchor": "provenance"
+    }
+  ]
+}

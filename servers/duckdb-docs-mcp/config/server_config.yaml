@@ -4,7 +4,7 @@
 server:
   # MCP server identifier and description
   name: "duckdb-docs"
-  description: "Duckdb Docs documentation search via hybrid semantic/keyword search"
+  description: "Duckdb documentation search via hybrid semantic/keyword search"
 
 database:
   # Path to indexed DuckDB database (relative to runtime directory)
