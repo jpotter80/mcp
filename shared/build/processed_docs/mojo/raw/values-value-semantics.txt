@@ -18,7 +18,7 @@ a copy of the value. This is also known as "pass by value." For example,
 consider this code:
 
 ```mojo
-def main():
+def main() raises:
  var x = 1
  var y = x
  y += 1
@@ -56,14 +56,14 @@ default, so if the function wants to modify the value in the local scope, it
 needs to make a local copy:
 
 ```mojo
-fn add_two(y: Int):
+def add_two(y: Int):
  # y += 2 # This would cause a compiler error because `y` is immutable
  # We can instead make an explicit copy:
  var z = y
  z += 2
  print("z:", z)
 
-def main():
+def main() raises:
  var x = 1
  add_two(x)
  print("x:", x)

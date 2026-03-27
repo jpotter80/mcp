@@ -1,0 +1,214 @@
+{
+  "id": "generics",
+  "title": "Generics",
+  "description": "Write code that builds and runs across many types using generics.",
+  "file_name": "generics.mdx",
+  "file_stem": "generics",
+  "file_path": "generics/generics.mdx",
+  "file_size": 27230,
+  "document_id": "generics-generics",
+  "url": "https://docs.modular.com/mojo/manual/generics/generics",
+  "content_hash": "72c1f7f45c64fe1a78a51e739e351d57",
+  "statistics": {
+    "char_count": 26583,
+    "word_count": 3827,
+    "line_count": 785,
+    "paragraph_count": 191,
+    "header_count": 38,
+    "code_block_count": 30,
+    "code_lines": 174
+  },
+  "processed_at": "2026-03-27T07:11:28.043765",
+  "sections": [
+    {
+      "level": 1,
+      "title": "T is a type parameter, threshold is a value parameter",
+      "anchor": "t-is-a-type-parameter-threshold-is-a-value-parameter"
+    },
+    {
+      "level": 1,
+      "title": "Both are compile-time. values is a runtime argument.",
+      "anchor": "both-are-compile-time-values-is-a-runtime-argument"
+    },
+    {
+      "level": 2,
+      "title": "The value of generics",
+      "anchor": "the-value-of-generics"
+    },
+    {
+      "level": 2,
+      "title": "Type generics",
+      "anchor": "type-generics"
+    },
+    {
+      "level": 3,
+      "title": "Setting generic parameter bounds",
+      "anchor": "setting-generic-parameter-bounds"
+    },
+    {
+      "level": 2,
+      "title": "Basic generics: compare two lists",
+      "anchor": "basic-generics-compare-two-lists"
+    },
+    {
+      "level": 3,
+      "title": "How this works",
+      "anchor": "how-this-works"
+    },
+    {
+      "level": 3,
+      "title": "Type requirements",
+      "anchor": "type-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Generic parameter types",
+      "anchor": "generic-parameter-types"
+    },
+    {
+      "level": 2,
+      "title": "Generic types",
+      "anchor": "generic-types"
+    },
+    {
+      "level": 2,
+      "title": "Mixing type and value parameters",
+      "anchor": "mixing-type-and-value-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Downcasting safely: `conforms_to` + `trait_downcast()`",
+      "anchor": "downcasting-safely-conforms_to-trait_downcast"
+    },
+    {
+      "level": 2,
+      "title": "Type generics and explicit destruction",
+      "anchor": "type-generics-and-explicit-destruction"
+    },
+    {
+      "level": 2,
+      "title": "Value generics",
+      "anchor": "value-generics"
+    },
+    {
+      "level": 3,
+      "title": "When to use value generics",
+      "anchor": "when-to-use-value-generics"
+    },
+    {
+      "level": 3,
+      "title": "Basic example",
+      "anchor": "basic-example"
+    },
+    {
+      "level": 3,
+      "title": "Value parameters vs runtime arguments",
+      "anchor": "value-parameters-vs-runtime-arguments"
+    },
+    {
+      "level": 1,
+      "title": "size is compile-time: the compiler specializes",
+      "anchor": "size-is-compile-time-the-compiler-specializes"
+    },
+    {
+      "level": 1,
+      "title": "size is runtime: no specialization",
+      "anchor": "size-is-runtime-no-specialization"
+    },
+    {
+      "level": 2,
+      "title": "When generics get more complex",
+      "anchor": "when-generics-get-more-complex"
+    },
+    {
+      "level": 2,
+      "title": "Conditional trait conformance",
+      "anchor": "conditional-trait-conformance"
+    },
+    {
+      "level": 3,
+      "title": "Example: derived conformance",
+      "anchor": "example-derived-conformance"
+    },
+    {
+      "level": 1,
+      "title": "OK: only `Writable` conformance is unavailable",
+      "anchor": "ok-only-writable-conformance-is-unavailable"
+    },
+    {
+      "level": 1,
+      "title": "print(w_not_writable)  # Compile-time error:",
+      "anchor": "printw_not_writable-compile-time-error"
+    },
+    {
+      "level": 1,
+      "title": "invalid call to 'print': could not convert element of 'values' with",
+      "anchor": "invalid-call-to-print-could-not-convert-element-of-values-with"
+    },
+    {
+      "level": 1,
+      "title": "type 'Wrapper[NotWritable]' to expected type 'Writable'",
+      "anchor": "type-wrappernotwritable-to-expected-type-writable"
+    },
+    {
+      "level": 3,
+      "title": "Example: parts conformance",
+      "anchor": "example-parts-conformance"
+    },
+    {
+      "level": 1,
+      "title": "OK: only hashing is unavailable",
+      "anchor": "ok-only-hashing-is-unavailable"
+    },
+    {
+      "level": 1,
+      "title": "var hash2 = hash(pair2) # Compile time error",
+      "anchor": "var-hash2-hashpair2-compile-time-error"
+    },
+    {
+      "level": 3,
+      "title": "Example: conditional method access",
+      "anchor": "example-conditional-method-access"
+    },
+    {
+      "level": 1,
+      "title": "The instance can't be used as a boolean value due to the",
+      "anchor": "the-instance-cant-be-used-as-a-boolean-value-due-to-the"
+    },
+    {
+      "level": 1,
+      "title": "conditional method access for `__bool__()`.",
+      "anchor": "conditional-method-access-for-__bool__"
+    },
+    {
+      "level": 1,
+      "title": "Compiler error: the method condition is false",
+      "anchor": "compiler-error-the-method-condition-is-false"
+    },
+    {
+      "level": 3,
+      "title": "Conditional trait composition",
+      "anchor": "conditional-trait-composition"
+    },
+    {
+      "level": 3,
+      "title": "Conditional conformance with value parameters",
+      "anchor": "conditional-conformance-with-value-parameters"
+    },
+    {
+      "level": 1,
+      "title": "var s = SizedListWrapper[0, Int](42)",
+      "anchor": "var-s-sizedlistwrapper0-int42"
+    },
+    {
+      "level": 1,
+      "title": "print(s)          # Error: Writable not satisfied",
+      "anchor": "prints-error-writable-not-satisfied"
+    },
+    {
+      "level": 1,
+      "title": "print(s.first())  # Error: constraint is false",
+      "anchor": "printsfirst-error-constraint-is-false"
+    }
+  ]
+}

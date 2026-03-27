@@ -1,24 +1,24 @@
 {
-  "title": "Life of a value",
+  "title": "Value creation",
   "sidebar_position": 2,
   "description": "An explanation of when and how Mojo creates values.",
   "file_name": "life.mdx",
   "file_stem": "life",
   "file_path": "lifecycle/life.mdx",
-  "file_size": 24447,
+  "file_size": 22898,
   "document_id": "lifecycle-life",
   "url": "https://docs.modular.com/mojo/manual/lifecycle/life",
-  "content_hash": "9e5c881027bffa788638c28605755592",
+  "content_hash": "d8eefaf56356c5d70ca0e5d7cf75d08b",
   "statistics": {
-    "char_count": 23627,
-    "word_count": 3522,
-    "line_count": 665,
-    "paragraph_count": 150,
-    "header_count": 14,
-    "code_block_count": 28,
-    "code_lines": 181
+    "char_count": 22079,
+    "word_count": 3329,
+    "line_count": 636,
+    "paragraph_count": 143,
+    "header_count": 13,
+    "code_block_count": 27,
+    "code_lines": 178
   },
-  "processed_at": "2025-12-11T14:37:07.404088",
+  "processed_at": "2026-03-27T07:11:28.686789",
   "sections": [
     {
       "level": 2,
@@ -79,11 +79,6 @@
       "level": 2,
       "title": "Move-only and immovable types",
       "anchor": "move-only-and-immovable-types"
-    },
-    {
-      "level": 2,
-      "title": "Trivial types",
-      "anchor": "trivial-types"
     },
     {
       "level": 3,

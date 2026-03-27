@@ -23,11 +23,11 @@ struct MyPair:
     var first: Int
     var second: Int
 
-    fn __init__(out self, first: Int, second: Int):
+    def __init__(out self, first: Int, second: Int):
         self.first = first
         self.second = second
 
-    fn dump(self):
+    def dump(self):
         print(self.first, self.second)
 ```
 
@@ -41,7 +41,7 @@ that's in the same directory as `mymodule.mojo`:
 ```mojo title="main.mojo"
 from mymodule import MyPair
 
-fn main():
+def main():
     var mine = MyPair(2, 4)
     mine.dump()
 ```
@@ -52,7 +52,7 @@ through the module name. For example:
 ```mojo title="main.mojo"
 import mymodule
 
-fn main():
+def main():
     var mine = mymodule.MyPair(2, 4)
     mine.dump()
 ```
@@ -62,7 +62,7 @@ You can also create an alias for an imported member with `as`, like this:
 ```mojo title="main.mojo"
 import mymodule as my
 
-fn main():
+def main():
     var mine = my.MyPair(2, 4)
     mine.dump()
 ```
@@ -85,11 +85,11 @@ APIs to be imported and used in other Mojo programs.
 A Mojo package is just a collection of Mojo modules in a directory that
 includes an `__init__.mojo` file. By organizing modules together in a
 directory, you can then import all the modules together or individually.
-Optionally, you can also compile the package into a `.mojopkg` or `.📦` file
+Optionally, you can also compile the package into a `.mojopkg` file
 that's easier to share and still compatible with other system architectures.
 
 You can import a package and its modules either directly from source files or
-from a compiled `.mojopkg`/`.📦` file. It makes no real difference to Mojo
+from a compiled `.mojopkg` file. It makes no real difference to Mojo
 which way you import a package. When importing from source files, the directory
 name works as the package name, whereas when importing from a compiled package,
 the filename is the package name (which you specify with the [`mojo
@@ -121,7 +121,7 @@ name like this:
 ```mojo title="main.mojo"
 from mypackage.mymodule import MyPair
 
-fn main():
+def main():
     var mine = MyPair(2, 4)
     mine.dump()
 ```
@@ -179,7 +179,7 @@ mojo main.mojo
 :::note
 
 If you want to rename your package, you cannot simply edit the
-`.mojopkg` or `.📦` filename, because the package name is encoded in the file.
+`.mojopkg` filename, because the package name is encoded in the file.
 You must instead run `mojo package` again to specify a new name.
 
 :::
@@ -224,7 +224,7 @@ from mypackage import MyPair
 This feature explains why some members in the Mojo standard library can be
 imported from their package name, while others required the
 `<package_name>.<module_name>` notation. For example, the
-[`functional`](/mojo/stdlib/algorithm/functional/) module resides in the
+[`functional`](/mojo/std/algorithm/functional/) module resides in the
 `algorithm` package, so you can import members of that module (such as the
 `map()` function) like this:
 

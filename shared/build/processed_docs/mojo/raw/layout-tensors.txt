@@ -20,10 +20,10 @@ CPU-based algorithms.
 
 A `LayoutTensor` consists of three main properties:
 
-* A [layout](/mojo/manual/layout/layouts), defining how the elements are
+- A [layout](/mojo/manual/layout/layouts), defining how the elements are
  laid out in memory.
-* A `DType`, defining the data type stored in the tensor.
-* A pointer to memory where the data is stored.
+- A `DType`, defining the data type stored in the tensor.
+- A pointer to memory where the data is stored.
 
 Figure 1 shows the relationship between the layout and the storage.
 
@@ -147,9 +147,9 @@ been [*tiled*](#tiling-tensors), which yields a tensor with a simple layout.
 There are several ways to create a `LayoutTensor`, depending on where the tensor
 data resides:
 
-* On the CPU.
-* In GPU global memory.
-* In GPU shared or local memory.
+- On the CPU.
+- In GPU global memory.
+- In GPU shared or local memory.
 
 In addition to methods for creating a tensor from scratch, `LayoutTensor`
 provides a number of methods for producing a new view of an existing tensor.
@@ -169,7 +169,7 @@ tensors for use on the CPU.
 To create a `LayoutTensor` for use on the CPU, you need a `Layout` and a block of
 memory to store the tensor data. A common way to allocate memory for a
 `LayoutTensor` is to use an
-[`InlineArray`](/mojo/stdlib/collections/inline_array/InlineArray/):
+[`InlineArray`](/mojo/std/collections/inline_array/InlineArray/):
 
 ```mojo
 comptime rows = 8
@@ -196,7 +196,7 @@ memset(ptr, 0, buf_size)
 var tensor = LayoutTensor[DType.float32, layout](ptr)
 ```
 
-Note that this example uses [`memset()`](/mojo/stdlib/memory/memory/memset/)
+Note that this example uses [`memset()`](/mojo/std/memory/memory/memset/)
 instead of the `LayoutTensor` `fill()` method. The `fill()` method performs
 elementwise initialization of the tensor, so it may be slow for large tensors.
 
@@ -205,37 +205,37 @@ elementwise initialization of the tensor, so it may be slow for large tensors.
 When creating a `LayoutTensor` for use on the GPU, you need to consider which
 memory space the tensor data will be stored in:
 
-* GPU global memory can only be allocated from the host (CPU), as a
+- GPU global memory can only be allocated from the host (CPU), as a
  `DeviceBuffer`.
-* GPU shared or local memory can be statically allocated on the GPU.
+- GPU shared or local memory can be statically allocated on the GPU.
 
 #### Creating a `LayoutTensor` in global memory
 
 You must allocate global memory from the host side, by allocating a
-[`DeviceBuffer`](/mojo/stdlib/gpu/host/device_context/DeviceBuffer/). You can
+[`DeviceBuffer`](/mojo/std/gpu/host/device_context/DeviceBuffer/). You can
 either construct a `LayoutTensor` using this memory on the host side, before
 invoking a GPU kernel, or you can construct a LayoutTensor inside the kernel
 itself:
 
-* On the CPU, you can construct a `LayoutTensor` using a `DeviceBuffer` as its
+- On the CPU, you can construct a `LayoutTensor` using a `DeviceBuffer` as its
  storage. Although you can create this tensor on the CPU and pass it in to a
  kernel function, you can't directly modify its values on the CPU, since the
  memory is on the GPU.
-* On the GPU: When a `DeviceBuffer` is passed in to
- `enqueue_function_checked()`, the kernel receives a corresponding
+- On the GPU: When a `DeviceBuffer` is passed in to
+ `enqueue_function()`, the kernel receives a corresponding
  `UnsafePointer` in place of the `DeviceBuffer.` The kernel can then create a
  `LayoutTensor` using the `pointer`.
 
 In both cases, if you want to initialize data for the tensor from the CPU, you
 can call
-[`enqueue_copy()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_copy)
+[`enqueue_copy()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_copy)
 or
-[`enqueue_memset()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_memset)
+[`enqueue_memset()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_memset)
 on the buffer prior to invoking the kernel. The following example shows
 initializing a `LayoutTensor` from the CPU and passing it to a GPU kernel.
 
 ```mojo
-def initialize_tensor_from_cpu_example():
+def initialize_tensor_from_cpu_example() raises:
  comptime dtype = DType.float32
  comptime rows = 32
  comptime cols = 8
@@ -245,7 +245,7 @@ def initialize_tensor_from_cpu_example():
  comptime input_layout = Layout.row_major(rows, cols)
  comptime size: Int = rows * cols
 
- fn kernel(tensor: LayoutTensor[dtype, input_layout, MutAnyOrigin]):
+ def kernel(tensor: LayoutTensor[dtype, input_layout, MutAnyOrigin]):
  if global_idx.y < UInt(tensor.shape[0]()) and global_idx.x < UInt(
  tensor.shape[1]()
  ):
@@ -259,7 +259,7 @@ def initialize_tensor_from_cpu_example():
  var dev_buf = ctx.enqueue_create_buffer[dtype](size)
  ctx.synchronize()
 
- var expected_values = List[Scalar[dtype]](capacity=size)
+ var expected_values = List[Scalar[dtype]](length=size, fill=0)
 
  for i in range(size):
  host_buf[i] = Scalar[dtype](i)
@@ -267,7 +267,7 @@ def initialize_tensor_from_cpu_example():
  ctx.enqueue_copy(dev_buf, host_buf)
  var tensor = LayoutTensor[dtype, input_layout](dev_buf)
 
- ctx.enqueue_function_checked[kernel, kernel](
+ ctx.enqueue_function[kernel, kernel](
  tensor,
  grid_dim=(col_blocks, row_blocks),
  block_dim=(block_size, block_size),
@@ -303,17 +303,17 @@ var shared_tile = LayoutTensor[
  dtype,
  tile_layout,
  MutAnyOrigin,
- address_space = AddressSpace.SHARED,
+ address_space=AddressSpace.SHARED,
 ].stack_allocation()
 ```
 
 In the case of shared memory, all threads in a thread block see the same
 allocation. For local memory, each thread gets a separate allocation.
 
-There's no way to explicitly allocate _register_ memory. However, the
+There's no way to explicitly allocate *register* memory. However, the
 compiler can promote some local memory allocations to registers. To enable
 this optimization, keep the size of the tensor small, and all indexing into the
-tensor static—for example, using `@parameter for` loops.
+tensor static—for example, using `comptime for` loops.
 
 [note]
 The name `stack_allocation()` is misleading. It is a *static* allocation,
@@ -360,8 +360,8 @@ comptime tile_layout = Layout.row_major(tile_size, tile_size)
 comptime tiler_layout = Layout.row_major(rows, columns)
 comptime tiled_layout = blocked_product(tile_layout, tiler_layout)
 var storage = InlineArray[Float32, tiled_layout.size()](uninitialized=True)
-for i in range(tiled_layout.size()):
- storage[i] = i
+for i in range(comptime (tiled_layout.size())):
+ storage[i] = Float32(i)
 var tensor = LayoutTensor[DType.float32, tiled_layout](storage)
 var tile = tensor.tile[tile_size, tile_size](0, 1)
 ```
@@ -410,8 +410,8 @@ The [`LayoutTensorIter`](/mojo/kernels/layout/layout_tensor/LayoutTensorIter/)
 struct provides a way to iterate through a block of memory, generating a layout
 tensor for each position. There are two ways to use `LayoutTensorIter`:
 
-* Starting with a memory buffer, you can generate a series of tiles.
-* Given an existing layout tensor, you can extract a set of tiles along a given
+- Starting with a memory buffer, you can generate a series of tiles.
+- Given an existing layout tensor, you can extract a set of tiles along a given
  axis.
 
 #### Tiling a memory buffer
@@ -424,7 +424,7 @@ tiles.
 comptime buf_size = 128
 var storage = InlineArray[Int16, buf_size](uninitialized=True)
 for i in range(buf_size):
- storage[i] = i
+ storage[i] = Int16(i)
 comptime tile_layout = Layout.row_major(4, 4)
 var iter = LayoutTensorIter[
  DType.int16,
@@ -432,7 +432,7 @@ var iter = LayoutTensorIter[
  MutAnyOrigin
 ](storage.unsafe_ptr(), buf_size)
 
-for i in range(ceildiv(buf_size, tile_layout.size())):
+for i in range(ceildiv(buf_size, comptime (tile_layout.size()))):
  var tile = iter[]
  # ... do something with tile
  iter += 1
@@ -459,7 +459,7 @@ for i in range(num_tiles):
 ```
 
 `LayoutTensorIter` also has an optional boolean `circular` parameter. A
-`LayoutTensorIter `created with `circular=True` treats the memory buffer as
+`LayoutTensorIter`created with `circular=True` treats the memory buffer as
 circular; when it hits the end of the buffer, it starts over again at the
 beginning.
 
@@ -503,7 +503,9 @@ The [`vectorize()`](/mojo/kernels/layout/layout_tensor/LayoutTensor/#vectorize)
 method creates a new view of the tensor where each element of the tensor is a
 vector of values.
 
- var vectorized_tensor = tensor.vectorize[1, 4]()
+```mojo
+var vectorized_tensor = tensor.vectorize[1, 4]()
+```
 
 The vectorized tensor is a view of the original tensor, pointing to the same
 data. The underlying number of scalar values remains the same, but the tensor
@@ -567,10 +569,10 @@ can transform a tensor by copying it to a tensor with a different layout.
 
 `LayoutTensor` itself provides two methods for copying tensor data:
 
-* [`copy_from()`](/mojo/kernels/layout/layout_tensor/LayoutTensor/#copy_from)
+- [`copy_from()`](/mojo/kernels/layout/layout_tensor/LayoutTensor/#copy_from)
  copies data from a source tensor to the current tensor, which may be in a
  different memory space.
-* [`copy_from_async()`](/mojo/kernels/layout/layout_tensor/LayoutTensor/#copy_from_async)
+- [`copy_from_async()`](/mojo/kernels/layout/layout_tensor/LayoutTensor/#copy_from_async)
  is an optimized copy mechanism for asynchronously copying from GPU global
  memory to shared memory.
 
@@ -583,7 +585,7 @@ The following code sample demonstrates using both copy methods to copy data to
 and from shared memory.
 
 ```mojo
-fn copy_from_async_example():
+def copy_from_async_example():
  comptime dtype = DType.float32
  comptime rows = 128
  comptime cols = 128
@@ -593,7 +595,7 @@ fn copy_from_async_example():
  comptime input_layout = Layout.row_major(rows, cols)
  comptime simd_width = 4
 
- fn kernel(tensor: LayoutTensor[dtype, input_layout, MutAnyOrigin]):
+ def kernel(tensor: LayoutTensor[dtype, input_layout, MutAnyOrigin]):
  # extract a tile from the input tensor.
  var global_tile = tensor.tile[block_size, block_size](
  Int(block_idx.y), Int(block_idx.x)
@@ -603,7 +605,7 @@ fn copy_from_async_example():
  dtype,
  tile_layout,
  MutAnyOrigin,
- address_space = AddressSpace.SHARED,
+ address_space=AddressSpace.SHARED,
  ].stack_allocation()
 
  # Create thread layouts for copying
@@ -618,16 +620,16 @@ fn copy_from_async_example():
  ]().distribute[thread_layout](lane_id())
 
  shared_fragment.copy_from_async(global_fragment)
- @parameter
- if is_nvidia_gpu():
+ comptime if is_nvidia_gpu():
  async_copy_wait_all()
  barrier()
 
  # Put some data into the shared tile that we can verify on the host.
  if global_idx.y < rows and global_idx.x < cols:
- shared_tile[thread_idx.y, thread_idx.x] =
+ shared_tile[thread_idx.y, thread_idx.x] = (
  shared_tile[thread_idx.y, thread_idx.x] + 1
-
+ )
+ barrier()
  global_fragment.copy_from(shared_fragment)
 
  try:
@@ -635,10 +637,11 @@ fn copy_from_async_example():
  var host_buf = ctx.enqueue_create_host_buffer[dtype](rows * cols)
  var dev_buf = ctx.enqueue_create_buffer[dtype](rows * cols)
  for i in range(rows * cols):
- host_buf[i] = i
+ host_buf[i] = Float32(i)
  var tensor = LayoutTensor[dtype, input_layout](dev_buf)
+
  ctx.enqueue_copy(dev_buf, host_buf)
- ctx.enqueue_function_checked[kernel, kernel](
+ ctx.enqueue_function[kernel, kernel](
  tensor,
  grid_dim=(num_row_blocks, num_col_blocks),
  block_dim=(block_size, block_size),
@@ -646,7 +649,7 @@ fn copy_from_async_example():
  ctx.enqueue_copy(host_buf, dev_buf)
  ctx.synchronize()
  for i in range(rows * cols):
- if host_buf[i] != i + 1:
+ if host_buf[i] != Float32(i + 1):
  raise Error(
  String("Unexpected value ", host_buf[i], " at position ", i)
  )
@@ -695,4 +698,4 @@ These patterns provide the building blocks for writing efficient kernels in Mojo
 while maintaining clean, readable code.
 
 To see some practical examples of `LayoutTensor` in use, see [Optimize custom
-ops for GPUs with Mojo ](/max/tutorials/custom-ops-matmul/).
+ops for GPUs with Mojo](/max/tutorials/custom-ops-matmul/).

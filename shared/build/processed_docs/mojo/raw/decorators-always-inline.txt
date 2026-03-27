@@ -12,7 +12,7 @@ For example:
 
 ```mojo
 @always_inline
-fn add(a: Int, b: Int) -> Int:
+def add(a: Int, b: Int) -> Int:
  return a + b
 
 print(add(1, 2))
@@ -54,8 +54,8 @@ standard `@always_inline` decorator or the `"nodebug"` version, instead.
 This version of the decorator does everything that `"nodebug"` does, plus two
 other behaviors:
 
-- It checks the body of the function to validate that it doesn’t use
- anything that `@always_inline("builtin")` can’t handle-this checks that there
+- It checks the body of the function to validate that it doesn't use
+ anything that `@always_inline("builtin")` can't handle-this checks that there
  is no control flow, no function calls to functions that are not themselves
  `@always_inline("builtin")`, no use of unsupported MLIR operations, etc.
 
@@ -63,4 +63,4 @@ other behaviors:
  inlined.
 
 For more details and background, see
-[the `@always_inline("builtin") proposal](https://github.com/modularml/modular/blob/main/open-source/max/mojo/proposals/always_inline_builtin.md).
+[the `@always_inline("builtin") proposal](https://github.com/modular/modular/blob/main/mojo/proposals/always_inline_builtin.md).

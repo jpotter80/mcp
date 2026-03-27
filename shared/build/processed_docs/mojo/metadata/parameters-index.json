@@ -1,23 +1,23 @@
 {
-  "title": "Parameterization: compile-time metaprogramming",
-  "description": "An introduction to parameters and compile-time metaprogramming.",
+  "title": "Parameterization",
+  "description": "Creating and using parameterized structs and functions.",
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "parameters/index.mdx",
-  "file_size": 47912,
+  "file_size": 43594,
   "document_id": "parameters-index",
   "url": "https://docs.modular.com/mojo/manual/parameters",
-  "content_hash": "51e247e3610a4e2992da8bb2281ecc9a",
+  "content_hash": "f9b9a44476b5afeac6cb55c11a10af68",
   "statistics": {
-    "char_count": 46612,
-    "word_count": 6582,
-    "line_count": 1434,
-    "paragraph_count": 332,
+    "char_count": 42375,
+    "word_count": 5957,
+    "line_count": 1325,
+    "paragraph_count": 316,
     "header_count": 35,
-    "code_block_count": 89,
-    "code_lines": 482
+    "code_block_count": 79,
+    "code_lines": 440
   },
-  "processed_at": "2025-12-11T14:37:07.632973",
+  "processed_at": "2026-03-27T07:11:29.011473",
   "sections": [
     {
       "level": 2,
@@ -25,9 +25,14 @@
       "anchor": "parameterized-functions"
     },
     {
+      "level": 3,
+      "title": "Overloading on parameters",
+      "anchor": "overloading-on-parameters"
+    },
+    {
       "level": 2,
-      "title": "Anatomy of a parameter list",
-      "anchor": "anatomy-of-a-parameter-list"
+      "title": "Parameters at a glance",
+      "anchor": "parameters-at-a-glance"
     },
     {
       "level": 2,
@@ -41,18 +46,33 @@
     },
     {
       "level": 3,
-      "title": "Conditional conformance",
-      "anchor": "conditional-conformance"
+      "title": "Referencing struct parameters",
+      "anchor": "referencing-struct-parameters"
+    },
+    {
+      "level": 3,
+      "title": "`comptime` members",
+      "anchor": "comptime-members"
+    },
+    {
+      "level": 4,
+      "title": "`comptime` members as enumerations",
+      "anchor": "comptime-members-as-enumerations"
+    },
+    {
+      "level": 4,
+      "title": "`comptime` members as associated types",
+      "anchor": "comptime-members-as-associated-types"
+    },
+    {
+      "level": 3,
+      "title": "Struct methods",
+      "anchor": "struct-methods"
     },
     {
       "level": 3,
       "title": "Case study: the SIMD type",
       "anchor": "case-study-the-simd-type"
-    },
-    {
-      "level": 2,
-      "title": "Overloading on parameters",
-      "anchor": "overloading-on-parameters"
     },
     {
       "level": 2,
@@ -66,18 +86,23 @@
     },
     {
       "level": 2,
+      "title": "Parameter declarations",
+      "anchor": "parameter-declarations"
+    },
+    {
+      "level": 3,
       "title": "Optional parameters and keyword parameters",
       "anchor": "optional-parameters-and-keyword-parameters"
     },
     {
-      "level": 2,
-      "title": "Infer-only parameters",
-      "anchor": "infer-only-parameters"
-    },
-    {
-      "level": 2,
+      "level": 3,
       "title": "Variadic parameters",
       "anchor": "variadic-parameters"
+    },
+    {
+      "level": 3,
+      "title": "Infer-only parameters",
+      "anchor": "infer-only-parameters"
     },
     {
       "level": 2,
@@ -91,13 +116,8 @@
     },
     {
       "level": 2,
-      "title": "`comptime`: named parameter expressions",
-      "anchor": "comptime-named-parameter-expressions"
-    },
-    {
-      "level": 3,
-      "title": "Parametric `comptime` values",
-      "anchor": "parametric-comptime-values"
+      "title": "Parameterized `comptime` values",
+      "anchor": "parameterized-comptime-values"
     },
     {
       "level": 1,
@@ -110,11 +130,6 @@
       "anchor": "works"
     },
     {
-      "level": 3,
-      "title": "Comptime members",
-      "anchor": "comptime-members"
-    },
-    {
       "level": 2,
       "title": "Fully-bound, partially-bound, and unbound types",
       "anchor": "fully-bound-partially-bound-and-unbound-types"
@@ -123,11 +138,6 @@
       "level": 1,
       "title": "These two types are equivalent",
       "anchor": "these-two-types-are-equivalent"
-    },
-    {
-      "level": 1,
-      "title": "Unbind both pos_or_kw and kw_only parameters",
-      "anchor": "unbind-both-pos_or_kw-and-kw_only-parameters"
     },
     {
       "level": 3,
@@ -178,16 +188,6 @@
       "level": 1,
       "title": "ERROR: invalid call to 'eat': argument #0 cannot be converted from 'Fudge[12, 5, 7]' to 'Fudge[5, 5, 7]'",
       "anchor": "error-invalid-call-to-eat-argument-0-cannot-be-converted-from-fudge12-5-7-to-fudge5-5-7"
-    },
-    {
-      "level": 3,
-      "title": "Legacy syntax (omitted parameters)",
-      "anchor": "legacy-syntax-omitted-parameters"
-    },
-    {
-      "level": 1,
-      "title": "ERROR: invalid call to 'nibble': argument #0 cannot be converted from 'Fudge[5, 5, 9]' to 'Fudge[5, 5, 7]'",
-      "anchor": "error-invalid-call-to-nibble-argument-0-cannot-be-converted-from-fudge5-5-9-to-fudge5-5-7"
     },
     {
       "level": 2,

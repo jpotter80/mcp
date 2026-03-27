@@ -5,20 +5,20 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "lifecycle/index.mdx",
-  "file_size": 4360,
+  "file_size": 4312,
   "document_id": "lifecycle-index",
   "url": "https://docs.modular.com/mojo/manual/lifecycle",
-  "content_hash": "19d5ac9ba574b4890ac8c4f06b582ded",
+  "content_hash": "5d8a78ec8497ac452a74b51e215f29f4",
   "statistics": {
-    "char_count": 4223,
-    "word_count": 604,
+    "char_count": 4179,
+    "word_count": 601,
     "line_count": 76,
     "paragraph_count": 14,
     "header_count": 1,
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-12-11T14:37:07.394602",
+  "processed_at": "2026-03-27T07:11:28.676118",
   "sections": [
     {
       "level": 2,

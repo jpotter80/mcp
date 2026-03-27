@@ -5,19 +5,19 @@
   "file_name": "staticmethod.mdx",
   "file_stem": "staticmethod",
   "file_path": "decorators/staticmethod.mdx",
-  "file_size": 900,
+  "file_size": 824,
   "document_id": "decorators-staticmethod",
   "url": "https://docs.modular.com/mojo/manual/decorators/staticmethod",
-  "content_hash": "e1edab4411d5284828378b685296c3ae",
+  "content_hash": "587d791c8fefe64a76f074b5cdc95b6c",
   "statistics": {
-    "char_count": 750,
-    "word_count": 99,
-    "line_count": 30,
-    "paragraph_count": 9,
+    "char_count": 684,
+    "word_count": 89,
+    "line_count": 27,
+    "paragraph_count": 8,
     "header_count": 0,
     "code_block_count": 1,
-    "code_lines": 17
+    "code_lines": 14
   },
-  "processed_at": "2025-12-11T14:37:06.661198",
+  "processed_at": "2026-03-27T07:11:27.876778",
   "sections": []
 }

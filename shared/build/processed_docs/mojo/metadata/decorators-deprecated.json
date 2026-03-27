@@ -1,0 +1,54 @@
+{
+  "title": "@deprecated",
+  "description": "Mojo's `@deprecated` decorator marks outdated APIs and schedules them for removal. When used with the `use` parameter, it also provides migration suggestions.",
+  "codeTitle": true,
+  "file_name": "deprecated.mdx",
+  "file_stem": "deprecated",
+  "file_path": "decorators/deprecated.mdx",
+  "file_size": 3884,
+  "document_id": "decorators-deprecated",
+  "url": "https://docs.modular.com/mojo/manual/decorators/deprecated",
+  "content_hash": "6544e2d5de51053010f9dd3aa8fd66f1",
+  "statistics": {
+    "char_count": 3565,
+    "word_count": 519,
+    "line_count": 134,
+    "paragraph_count": 34,
+    "header_count": 6,
+    "code_block_count": 6,
+    "code_lines": 46
+  },
+  "processed_at": "2026-03-27T07:11:27.829067",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Deprecation information",
+      "anchor": "deprecation-information"
+    },
+    {
+      "level": 2,
+      "title": "How to deprecate",
+      "anchor": "how-to-deprecate"
+    },
+    {
+      "level": 1,
+      "title": "Mark function `a` as deprecated with a custom message",
+      "anchor": "mark-function-a-as-deprecated-with-a-custom-message"
+    },
+    {
+      "level": 1,
+      "title": "Mark function `b` as deprecated with alternative",
+      "anchor": "mark-function-b-as-deprecated-with-alternative"
+    },
+    {
+      "level": 1,
+      "title": "`c` is `b`'s recommended replacement after deprecation",
+      "anchor": "c-is-bs-recommended-replacement-after-deprecation"
+    },
+    {
+      "level": 3,
+      "title": "Items you can deprecate",
+      "anchor": "items-you-can-deprecate"
+    }
+  ]
+}

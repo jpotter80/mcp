@@ -1,0 +1,44 @@
+{
+  "title": "Materializing compile-time values at run time",
+  "sidebar_label": "Materialization",
+  "description": "How to use compile-time values at run time.",
+  "file_name": "materialization.mdx",
+  "file_stem": "materialization",
+  "file_path": "metaprogramming/materialization.mdx",
+  "file_size": 8054,
+  "document_id": "metaprogramming-materialization",
+  "url": "https://docs.modular.com/mojo/manual/metaprogramming/materialization",
+  "content_hash": "69d8fb9c37dac6723fef3c86bddd157e",
+  "statistics": {
+    "char_count": 7729,
+    "word_count": 1133,
+    "line_count": 229,
+    "paragraph_count": 59,
+    "header_count": 4,
+    "code_block_count": 14,
+    "code_lines": 70
+  },
+  "processed_at": "2026-03-27T07:11:28.827051",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Implicit and explicit materialization",
+      "anchor": "implicit-and-explicit-materialization"
+    },
+    {
+      "level": 2,
+      "title": "Global lookup tables",
+      "anchor": "global-lookup-tables"
+    },
+    {
+      "level": 2,
+      "title": "Using the `comptime` keyword",
+      "anchor": "using-the-comptime-keyword"
+    },
+    {
+      "level": 2,
+      "title": "Materializing literals",
+      "anchor": "materializing-literals"
+    }
+  ]
+}

@@ -7,19 +7,19 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "python/index.mdx",
-  "file_size": 2145,
+  "file_size": 2487,
   "document_id": "python-index",
   "url": "https://docs.modular.com/mojo/manual/python",
-  "content_hash": "fe7247d93a545bda297baafb70a85881",
+  "content_hash": "0b22dc529df81d834566859155e072e7",
   "statistics": {
-    "char_count": 1853,
-    "word_count": 253,
-    "line_count": 41,
-    "paragraph_count": 9,
+    "char_count": 1786,
+    "word_count": 245,
+    "line_count": 36,
+    "paragraph_count": 8,
     "header_count": 0,
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-12-11T14:37:07.818552",
+  "processed_at": "2026-03-27T07:11:29.200467",
   "sections": []
 }

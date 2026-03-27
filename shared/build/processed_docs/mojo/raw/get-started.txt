@@ -15,9 +15,12 @@ started so you can learn Mojo programming basics, including the following:
 
 There's a lot to learn, but we've tried to keep the explanations simple. If you
 just want to see the finished code, you can [get it on
-GitHub](https://github.com/modular/modular/tree/main/examples/mojo/life).
+GitHub](https://github.com/modular/modular/tree/main/mojo/examples/life).
 
-System requirements:
+note System requirements
+
+You can use Mac, Linux, or Windows with WSL. For details, see the
+[system requirements](/mojo/requirements).
 
 ## 1. Create a Mojo project
 
@@ -109,7 +112,7 @@ following lines of code:
 
 ```mojo title="life.mojo"
 # My first Mojo program!
-def main():
+def main() raises:
  print("Hello, World!")
 ```
 
@@ -132,7 +135,7 @@ If you've programmed in Python before, this should look familiar.
 - You can use any number of spaces or tabs for indentation as long as you use
  the same indentation for the entire code block. We'll follow the [Python style
  guide](https://peps.python.org/pep-0008/) and use 4 spaces.
-- This [`print()`](/mojo/stdlib/builtin/io/print) function is a Mojo built-in,
+- This [`print()`](/mojo/std/io/io/print) function is a Mojo built-in,
  so it doesn't require an import.
 
 An executable Mojo program *requires* you to define a no-argument `main()`
@@ -184,8 +187,8 @@ Hello, World!
 
 Let's extend this basic program by prompting the user for their name and
 including it in the greeting. The built-in
-[`input()`](/mojo/stdlib/io/io/input) function accepts an optional
-[`String`](/mojo/stdlib/collections/string/string/String) argument to use as a
+[`input()`](/mojo/std/io/io/input) function accepts an optional
+[`String`](/mojo/std/collections/string/string/String) argument to use as a
 prompt and returns a `String` consisting of the characters the user entered
 (with the newline character at the end stripped off).
 
@@ -193,7 +196,7 @@ Let's declare a variable, assign the return value from `input()` to it, and
 build a customized greeting.
 
 ```mojo title="life.mojo"
-def main():
+def main() raises:
  var name: String = input("Who are you? ")
  var greeting: String = "Hi, " + name + "!"
  print(greeting)
@@ -222,7 +225,7 @@ We can replace the code we just entered with the following, and it works
 exactly the same.
 
 ```mojo title="life.mojo"
-def main():
+def main() raises:
  name = input("Who are you? ")
  greeting = "Hi, " + name + "!"
  print(greeting)
@@ -248,7 +251,7 @@ come into play later when we implement the algorithm for calculating each
 subsequent generation.
 
 To keep track of the height and width of our grid, we'll use
-[`Int`](/mojo/stdlib/builtin/int/Int), which represents a signed integer of the
+[`Int`](/mojo/std/builtin/int/Int), which represents a signed integer of the
 [word size](https://en.wikipedia.org/wiki/Word_(computer_architecture)) of the
 CPU, typically 32 or 64 bits.
 
@@ -259,7 +262,7 @@ neighboring cells.
 
 To represent the state of the entire grid, we need a [collection
 type](/mojo/manual/types#collection-types). The most appropriate for this use
-case is [`List`](/mojo/stdlib/collections/list/List), which is a
+case is [`List`](/mojo/std/collections/list/List), which is a
 dynamically-sized sequence of values.
 
 All values in a Mojo `List` must be the same type so the Mojo compiler can
@@ -339,6 +342,14 @@ Let's update the `main()` function with the following code that defines an
 "[glider](https://en.wikipedia.org/wiki/Glider_(Conway%27s_Game_of_Life))"
 pattern.
 
+Notice that we've removed `raises` from `main()`. In our earlier steps,
+`main()` called `input()`, which can raise an error, so it needed the `raises`
+keyword. Mojo functions are non-raising by default—you only need
+`raises` when a function can propagate an error to its caller. Since
+`main()` no longer calls
+any raising functions, we can omit it. For more about error handling, see
+[Errors, error handling, and context managers](/mojo/manual/errors).
+
 ```mojo title="life.mojo"
 def main():
  num_rows = 8
@@ -361,7 +372,7 @@ Before we move on, let's take a moment to discuss how Mojo handles copying
 values. There's an important difference in Mojo between copying simple types
 like `Int` and `String` and more complex types like `List`:
 
-- An *explicitly copyable* type can be copied by calling its `copy()` method.
+- An *explicitly copyable* type can be copied by calling its copy initializer or `copy()`.
  `List` is explicitly copyable, so if `first` is a `List`, you can copy it like
  this:
 
@@ -373,8 +384,9 @@ like `Int` and `String` and more complex types like `List`:
  This leaves `first` unchanged and assigns `second` its own, uniquely owned
  copy of the list.
 
-- An *implicitly copyable* type can be copied without an explicit call to a
- `copy()` method. `Int` and `String` are implicitly copyable types, so if
+- An *implicitly copyable* type can be copied without an explicit call to
+ `copy()` or a
+ copy initializer. `Int` and `String` are implicitly copyable types, so if
  `one_value` is an `Int`, you can copy it like this:
 
  ```mojo
@@ -398,35 +410,31 @@ checking its API documentation to see what *traits* it conforms to. A Mojo
 implement, usually in the form of one or more method signatures.
 
 - The `List` type and other Mojo collection types like
- [`Dict`](/mojo/stdlib/collections/dict/Dict/) and
- [`Set`](/mojo/stdlib/collections/set/Set/) conform to the
- [`Copyable`](/mojo/stdlib/builtin/value/Copyable/) trait, which indicates that
+ [`Dict`](/mojo/std/collections/dict/Dict/) and
+ [`Set`](/mojo/std/collections/set/Set/) conform to the
+ [`Copyable`](/mojo/std/builtin/value/Copyable/) trait, which indicates that
  they are **explicitly copyable**.
 
 - The `String`, `Int` and other numeric types conform to the
- [`ImplicitlyCopyable`](/mojo/stdlib/builtin/value/ImplicitlyCopyable/) trait,
+ [`ImplicitlyCopyable`](/mojo/std/builtin/value/ImplicitlyCopyable/) trait,
  which indicates that they are **implicitly copyable**. Additionally, the
- `ImplicitlyCopyable` trait inherits from the `Copyable` and `Movable` traits, so you can also
+ `ImplicitlyCopyable` trait refines the `Copyable` and `Movable` traits, so you can also
  use types that conform to the `ImplicitlyCopyable` trait in the same way you
  can use types that conform to the other traits.
 
 ## 5. Create and use a function to print the grid
 
-Now let's create a function to generate a string representation of the game grid
-so we can print it to the terminal.
-
-There are actually two different keywords we can use to define functions in
-Mojo: `def` and `fn`. Using `fn` gives us finer-level control over the function
-definition, whereas `def` provides a good set of default behaviors for most use
-cases. See [Functions](/mojo/manual/functions) for more information about
-defining and using functions in Mojo.
+Now let's create a function using the `def` keyword to generate a
+string representation of the game grid so we can print it to the
+terminal. To learn more about defining functions in Mojo, see
+[Functions](/mojo/manual/functions).
 
 Let's add the following definition of a function named `grid_str()` to our
 program. The Mojo compiler doesn't care whether we add our function before or
 after `main()`, but the convention is to put `main()` at the end.
 
 ```mojo title="life.mojo"
-fn grid_str(rows: Int, cols: Int, grid: List[List[Int]]) -> String:
+def grid_str(rows: Int, cols: Int, grid: List[List[Int]]) -> String:
  # Create an empty String
  str = String()
 
@@ -460,7 +468,7 @@ In the body of the function, we generate a `String` by appending an asterisk for
 each populated cell and a space for each unpopulated cell, separating each row
 of the grid with a newline character. We use nested `for` loops to iterate
 through each row and column of the grid, using
-[`range()`](/mojo/stdlib/builtin/range/range) to generate a sequence of integers
+[`range()`](/mojo/std/builtin/range/range) to generate a sequence of integers
 from 0 up to (but not including) the given end value. Then we append the correct
 characters to the `String` representation. See [Control
 flow](/mojo/manual/control-flow) for more information about `if`, `for`, and
@@ -553,7 +561,7 @@ struct definition. Here's an example of how we *could* implement the
 constructor for `Grid`:
 
 ```mojo
- fn __init__(out self, rows: Int, cols: Int, var data: List[List[Int]]):
+ def __init__(out self, rows: Int, cols: Int, var data: List[List[Int]]):
  self.rows = rows
  self.cols = cols
  self.data = data^
@@ -595,9 +603,9 @@ structs support several different [lifecycle methods](/mojo/manual/lifecycle/)
 that define the behavior when an instance of the struct is created, moved,
 copied, and destroyed.
 
-Structs that conform to the [`Movable`](/mojo/stdlib/builtin/value/Movable/)
+Structs that conform to the [`Movable`](/mojo/std/builtin/value/Movable/)
 [trait](/mojo/manual/traits) denote a type whose value can be moved, and structs
-that conform to the [`Copyable`](/mojo/stdlib/builtin/value/Copyable/) trait
+that conform to the [`Copyable`](/mojo/std/builtin/value/Copyable/) trait
 denote a type whose value can be *explicitly* copied and/or moved. You can then
 implement custom move and copy constructors that perform the necessary
 operations to move or copy the instance.
@@ -610,7 +618,7 @@ compiler automatically generates the missing methods for you. For our simple
 `Grid` struct, indicating that it conforms to the `Copyable`
 trait is enough to have the Mojo compiler automatically generate the missing
 methods for us. The `Copyable` trait also provides a default implementation of
-the `copy()` method, so you don't need to implement it yourself.
+the copy initializer and `copy()`, so you don't need to implement it yourself.
 
 [note]
 If you define a simple struct where all fields are types that conform to the
@@ -631,7 +639,7 @@ code to use it.
 ```mojo title="life.mojo"
 from gridv1 import Grid
 
-fn grid_str(grid: Grid) -> String:
+def grid_str(grid: Grid) -> String:
  # Create an empty String
  str = String()
 
@@ -715,21 +723,24 @@ struct Grid(Copyable):
  var cols: Int
  var data: List[List[Int]]
 
- fn grid_str(self) -> String:
+ def grid_str(self) -> String:
  # Create an empty String
- str = String()
+ writer = String()
 
  # Iterate through rows 0 through rows-1
  for row in range(self.rows):
  # Iterate through columns 0 through cols-1
  for col in range(self.cols):
  if self.data[row][col] == 1:
- str += "*" # If cell is populated, append an asterisk
+ # If cell is populated, write an asterisk
+ writer.write_string("*")
  else:
- str += " " # If cell is not populated, append a space
+ # If cell is not populated, append a space
+ writer.write_string(" ")
  if row != self.rows - 1:
- str += "\n" # Add a newline between rows, but not at the end
- return str
+ # Add a newline between rows, but not at the end
+ writer.write_string("\n")
+ return writer
 ```
 
 Aside from moving the code from one source file to another, there are a few
@@ -774,7 +785,7 @@ def main():
 Once again, our refactoring has improved the structure of our code, but it still
 produces the same output. You can verify this by running the program again.
 
-## 9. Implement support for the `Stringable` trait
+## 9. Implement support for the `Writable` trait
 
 You can convert most Mojo types to `String` using `String(my_val)` to produce a
 `String` representation of that instance. However, you'll get an error if you
@@ -784,38 +795,44 @@ Because the Mojo compiler performs static type checking, a `String` constructor
 can accept a value only if its type implements some required behavior—in this
 case, it only accepts types that can generate a `String` representation.
 
-To enforce this, the `String()` constructors require a type to conform to either
-the [`Stringable`](/mojo/stdlib/builtin/str/Stringable) or
-[`StringableRaising`](/mojo/stdlib/builtin/str/StringableRaising) trait. (This
-type of function is sometimes referred to as a [*generic*
-function](/mojo/manual/parameters/#parameters-and-generics).) Each trait
-requires a conforming type to implement a `__str__()` method that returns a
-`String` representation. The only difference between the two traits is that
-`Stringable` requires that the method *cannot* raise an error, whereas
-`StringableRaising` indicates that the method *might* raise an error. (To learn
-more, read [The `Stringable`, `Representable`, and `Writable`
-traits](/mojo/manual/traits#the-stringable-representable-and-writable-traits).)
+To enforce this, the `String()` constructors require a type to conform to the
+[`Writable`] trait. (This type of function is sometimes referred to as a
+[*generic* function](/mojo/manual/parameters/#parameters-and-generics).) Each
+trait requires a conforming type to implement a `write_to()` method that writes
+its `String` representation. (To learn more, read [The `Writable` trait](/mojo/manual/traits#the-stringable-representable-and-writable-traits).)
 
-Our `grid_str()` method already returns a `String` representation, so it looks
-like we just have to rename it to `__str__()`. However, we also need to indicate
-which trait `Grid` conforms to. In our case, it must be `Stringable` instead of
-`StringableRaising` because we used `fn` to define the method. If you define
-a function or method with `def`, the compiler *always* assumes the
-function *can* raise an error. In contrast, an `fn` function is a [non-raising
-function](/mojo/manual/functions#raising-and-non-raising-functions) by default
-(though you can still declare that it might raise an error using the [`raises`
-keyword](/mojo/manual/errors#declare-a-raising-function)).
+Notice that `write_to()` takes a `mut writer: Some[Writer]` argument. The
+`Writer` trait represents anything that can be written to—`String` buffers,
+files, network streams, and so on. By writing to a generic `Writer` instead of
+building and returning a `String`, your type works with any output destination.
+
+Our `grid_str()` method already write our `String` representation, so it looks
+like we'll have to rename it to `write_to()` and add the `Writer` argument to
+the function, and remove the `String` return value. We also need to indicate
+which trait `Grid` conforms to. In our case, it must be `Writable`.
 
 In `gridv1.mojo`, we need to update the `Grid` declaration to indicate that
-the type conforms to `Stringable` and rename the `grid_str()` method to
-`__str__()`:
+the type conforms to `Writable` and update the `grid_str()` to `write_to()`.
 
 ```mojo title="gridv1.mojo"
 @fieldwise_init
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  ...
- fn __str__(self) -> String:
- ...
+
+ def write_to(self, mut writer: Some[Writer]):
+ # Iterate through rows 0 through rows-1
+ for row in range(self.rows):
+ # Iterate through columns 0 through cols-1
+ for col in range(self.cols):
+ if self[row, col] == 1:
+ # If cell is populated, write an asterisk
+ writer.write_string("*")
+ else:
+ # If cell is not populated, write a space
+ writer.write_string(" ")
+ if row != self.rows - 1:
+ # Add a newline between rows, but not at the end
+ writer.write_string("\n")
 ```
 
 Now let's verify that `String()` works with an instance of `Grid`.
@@ -843,7 +860,7 @@ mojo life.mojo
 
 ## 10. Implement methods to support indexing
 
-Looking at the implementation of `__str__()`, you'll notice that we use
+Looking at the implementation of `write_to()`, you'll notice that we use
 `self.data[row][col]` to retrieve the value of a cell in the grid. If
 `my_grid` is an instance of `Grid`, we would use `my_grid.data[row][col]` to
 refer to a cell in the grid. This breaks a fundamental principle of
@@ -869,12 +886,12 @@ built-in operators for a custom type by implementing special *dunder*
 
 ```mojo title="gridv1.mojo"
 @fieldwise_init
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  ...
- fn __getitem__(self, row: Int, col: Int) -> Int:
+ def __getitem__(self, row: Int, col: Int) -> Int:
  return self.data[row][col]
 
- fn __setitem__(mut self, row: Int, col: Int, value: Int) -> None:
+ def __setitem__(mut self, row: Int, col: Int, value: Int) -> None:
  self.data[row][col] = value
 ```
 
@@ -892,14 +909,14 @@ the `mut`
 state of the current instance. If we were to omit `mut`, we would get an error
 because the compiler would default to read-only access for the argument.
 
-Now that we've implemented these methods, we can update `__str__()` to use
+Now that we've implemented these methods, we can update `write_to()` to use
 indexing syntax to access the cell value.
 
 ```mojo title="gridv1.mojo"
 @fieldwise_init
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  ...
- fn __str__(self) -> String:
+ def write_to(self, mut writer: Some[Writer]):
  ...
  # Iterate through columns 0 through cols-1
  for col in range(self.cols):
@@ -912,31 +929,30 @@ struct Grid(Copyable, Stringable):
 
 ```mojo title="gridv1.mojo"
 @fieldwise_init
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  var rows: Int
  var cols: Int
  var data: List[List[Int]]
 
- fn __str__(self) -> String:
- # Create an empty String
- str = String()
-
+ def write_to(self, mut writer: Some[Writer]):
  # Iterate through rows 0 through rows-1
  for row in range(self.rows):
  # Iterate through columns 0 through cols-1
  for col in range(self.cols):
  if self[row, col] == 1:
- str += "*" # If cell is populated, append an asterisk
+ # If cell is populated, write an asterisk
+ writer.write_string("*")
  else:
- str += " " # If cell is not populated, append a space
+ # If cell is not populated, write a space
+ writer.write_string(" ")
  if row != self.rows - 1:
- str += "\n" # Add a newline between rows, but not at the end
- return str
+ # Write a newline between rows, but not at the end
+ writer.write_string("\n")
 
- fn __getitem__(self, row: Int, col: Int) -> Int:
+ def __getitem__(self, row: Int, col: Int) -> Int:
  return self.data[row][col]
 
- fn __setitem__(mut self, row: Int, col: Int, value: Int) -> None:
+ def __setitem__(mut self, row: Int, col: Int, value: Int) -> None:
  self.data[row][col] = value
 ```
 
@@ -958,13 +974,13 @@ function. We indicate that a method is static by using the
 `@staticmethod` decorator.
 
 ```mojo title="gridv1.mojo"
-import random
+import std.random
 
 @fieldwise_init
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  ...
  @staticmethod
- fn random(rows: Int, cols: Int) -> Self:
+ def random(rows: Int, cols: Int) -> Self:
  # Seed the random number generator using the current time.
  random.seed()
 
@@ -994,14 +1010,14 @@ unique value every time.
 
 Then we create `data` as an empty `List[List[Int]]`, which we'll populate with a
 random initial state. For each cell, we call
-[`random.random_si64()`](/mojo/stdlib/random/random/random_si64), which returns
+[`random.random_si64()`](/mojo/std/random/random/random_si64), which returns
 a random integer value from the provided minimum and maximum values of 0 and 1,
 respectively. This function actually returns a value of type `Int64`, which is a
 signed 64-bit integer value. As described in [Numeric
 types](/mojo/manual/types#numeric-types), this is *not* the same as the `Int`
 type, whose precision is dependent on the native word size of the system.
 Therefore, we're passing this value to the
-[`Int()`](/mojo/stdlib/builtin/int/Int/#__init__) constructor, which explicitly
+[`Int()`](/mojo/std/builtin/int/Int/#__init__) constructor, which explicitly
 converts a numeric value to an `Int`.
 
 After creating a complete row of random values, we append it to `data`. The
@@ -1063,9 +1079,9 @@ we'll have `evolve()` return a new instance of `Grid` for the next generation.
 
 ```mojo title="gridv1.mojo"
 ...
-struct Grid(Copyable, Stringable):
+struct Grid(Copyable, Writable):
  ...
- fn evolve(self) -> Self:
+ def evolve(self) -> Self:
  next_generation = List[List[Int]]()
 
  for row in range(self.rows):
@@ -1140,8 +1156,13 @@ Now that we can evolve the grid, let's use it in `life.mojo`. We'll add a
 - Break out of the loop if the user enters `q`
 - Otherwise, calculate the next generation and loop again
 
-Note that `run_display()` declares the `grid` argument with the `var` argument
-convention to take ownership of the `Grid` instance. If we used the default
+Notice that `run_display()` declares `raises` because it calls `input()`, which
+can raise an error. Since `main()` calls `run_display()` without handling the
+error, it also needs `raises`.
+
+Also note that `run_display()` declares the `grid` argument with the
+`var` argument convention to take ownership of the `Grid` instance. If
+we used the default
 `read` argument convention instead, `grid` would be an immutable reference
 binding to the original `Grid` instance. In that case, we'd get a compile-time
 error when we tried to assign the result of `grid.evolve()` to `grid` because
@@ -1156,244 +1177,12 @@ the updated version of `life.mojo`:
 ```mojo title="life.mojo"
 from gridv1 import Grid
 
-def run_display(var grid: Grid) -> None:
+def run_display(var grid: Grid) raises -> None:
  while True:
  print(String(grid))
  print()
- if input("Enter 'q' to quit or press <Enter> to continue: ") == "q":
- break
- grid = grid.evolve()
-
-def main():
- start = Grid.random(16, 16)
- run_display(start^)
-```
-
-Run the program and verify that each call to `evolve()` successfully produces a
-new generation.
-
-Now we have a working version of the Game of Life, but the terminal interface
-isn't very appealing. Let's spice things up with a nicer graphical user
-interface using a Python library.
-
-## 13. Import and use a Python package
-
-Mojo lets you import Python modules, call Python functions, and interact with
-Python objects from Mojo code. To demonstrate this capability, we'll
-use a Python package called [pygame](https://www.pygame.org) to create and
-manage a graphical user interface for our Game of Life program.
-
-First, we need to update our `pixi.toml` file to add a dependency on
-Python and the `pygame` package. In the project directory, execute the
-following command from the terminal:
-
-```bash
-pixi add "python>=3.11,<3.13" "pygame>=2.6.1,<3"
-```
-
-[note]
-When you use Python code and packages as part of your Mojo program, you create a
-run-time dependency on a compatible Python runtime and packages. Building an
-executable version of your program with `mojo build` does *not* incorporate a
-Python runtime or Python packages into the resulting executable file. These
-run-time Python dependencies must be provided by the environment where you run
-the executable. The easiest way to ensure this requirement is met is to deploy
-and run your Mojo executable in a virtual environment, such as one managed by
-[Pixi](https://pixi.sh/latest/) or [conda](https://docs.conda.io/).
-
-You can import a Python module in Mojo using
-[`Python.import_module()`](/mojo/stdlib/python/python/Python#import_module).
-This returns a reference to the module in the form of a `PythonObject` wrapper.
-You must store the reference in a variable so that you can then access the
-functions and objects in the module. For example:
-
-```mojo
-from python import Python
-
-def run_display():
- # This is roughly equivalent to Python's `import pygame`
- pygame = Python.import_module("pygame")
-
- # Initialize pygame modules
- pygame.init()
-```
-
-[note]
-Because Mojo doesn't support globally scoped variables, you must either import a
-Python module into each Mojo function that needs to use it or pass the
-`PythonObject`-wrapped module as an argument between functions.
-
-You can learn more about importing and using Python modules in Mojo by reading
-[Python integration](/mojo/manual/python/).
-
-Once we import `pygame`, we can call its APIs as if we were writing Python code.
-For this project, we'll use `pygame` to create a new window and draw the entire
-game UI. This requires a complete rewrite of the `run_display()` function. Take
-a look at the updated code for `life.mojo`, and we'll explain more below:
-
-```mojo title="life.mojo"
-import time
-
-from gridv1 import Grid
-from python import Python
-
-def run_display(
- var grid: Grid,
- window_height: Int = 600,
- window_width: Int = 600,
- background_color: String = "black",
- cell_color: String = "green",
- pause: Float64 = 0.1,
-) -> None:
- # Import the pygame Python package
- pygame = Python.import_module("pygame")
-
- # Initialize pygame modules
- pygame.init()
-
- # Create a window and set its title
- window = pygame.display.set_mode(Python.tuple(window_width, window_height))
- pygame.display.set_caption("Conway's Game of Life")
-
- cell_height = window_height / grid.rows
- cell_width = window_width / grid.cols
- border_size = 1
- cell_fill_color = pygame.Color(cell_color)
- background_fill_color = pygame.Color(background_color)
-
- running = True
- while running:
- # Poll for events
- event = pygame.event.poll()
- if event.type == pygame.QUIT:
- # Quit if the window is closed
- running = False
- elif event.type == pygame.KEYDOWN:
- # Also quit if the user presses <Escape> or 'q'
- if event.key == pygame.K_ESCAPE or event.key == pygame.K_q:
- running = False
-
- # Clear the window by painting with the background color
- window.fill(background_fill_color)
-
- # Draw each live cell in the grid
- for row in range(grid.rows):
- for col in range(grid.cols):
- if grid[row, col]:
- x = col * cell_width + border_size
- y = row * cell_height + border_size
- width = cell_width - border_size
- height = cell_height - border_size
- pygame.draw.rect(
- window,
- cell_fill_color,
- Python.tuple(x, y, width, height),
- )
-
- # Update the display
- pygame.display.flip()
-
- # Pause to let the user appreciate the scene
- time.sleep(pause)
-
- # Next generation
- grid = grid.evolve()
-
- # Shut down pygame cleanly
- pygame.quit()
-
-def main():
- start = Grid.random(128, 128)
- run_display(start^)
-```
-
-Each argument for `run_display()` other than `grid` has a default value
-associated with it (for example, the default `window_height` is 600 pixels). If
-you don't explicitly pass a value for an argument when you invoke
-`run_display()`, Mojo uses the default value specified in the function
-definition.
-
-After importing the `pygame` module, we call `pygame.init()` to initialize all
-pygame subsystems.
-
-The `set_mode()` function creates and initializes a window with the width and
-height passed as a Python tuple of two values. This returns a
-[`PythonObject`](/mojo/stdlib/python/python_object/PythonObject) wrapper for the
-window, which we can then use to call functions and set attributes to manipulate
-the window. (For more information about interacting with Python objects from
-Mojo, see [Python types](/mojo/manual/python/types).)
-
-The bulk of the `run_display()` function is a loop that uses `pygame` to poll
-for events like key presses and mouse clicks. If it detects that the user
-presses `q` or the `<Escape>` key or closes the display window, it ends the
-program with `pygame.quit()`. Otherwise, it clears the window and iterates
-through all cells in the grid to display the populated cells. After sleeping for
-`pause` seconds, it evolves the grid to the next generation and loops again.
-
-Now it's time to try it out.
-
-```bash
-mojo life.mojo
-```
-
-When you run the program, you should see a new window appear on screen
-displaying your evolving grid. We now have a fully functional implementation of
-the Game of Life with a nice interface. We've come quite a way from just
-displaying a few asterisks in the terminal!
-
-![game_of_life_screen.png](images/game-of-life-screen.png)
-
-To quit the program, press the `q` or `<Escape>` key, or close the window.
-
-Now that we're done with the tutorial, exit our project's virtual environment:
-
-```bash
-exit
-```
-
-## Summary
-
-Congratulations on writing a complete Mojo application from scratch! Along the
-way, you experienced:
-
-- Using Pixi to create, build, and run a Mojo program
-- Using Mojo built-in types like `Int`, `String`, and `List`
-- Manipulating explicitly and implicitly copyable types
-- Managing value ownership and references
-- Creating and using variables and functions
-- Using control structures like `if`, `while`, and `for`
-- Defining and using a custom Mojo struct
-- Creating and importing a Mojo module
-- Using modules from the Mojo standard library
-- Importing and using a Python module
-
-## Next steps
-
-Now that you've seen what Mojo can do, here are some suggestions for continuing
-your learning journey:
-
-export const Puzzles = {
- title: "GPU Puzzles",
- description: "Learn to program GPUs in Mojo by solving increasingly complex challenges",
- metadata: {
- permalink: "https://puzzles.modular.com/introduction.html"
- }
-};
-
-export const Examples = {
- title: "Code examples",
- description: "Browse a wide range of Mojo code examples on GitHub",
- metadata: {
- permalink: "https://github.com/modular/modular/tree/main/examples/mojo"
- }
-};
-
-export const nextSteps = [
- '../gpu/intro-tutorial',
- Puzzles,
- Examples,
-]
+ if input("Enter 'q' to quit or press
 
 [tip]
 **Tip:** To use AI coding assistants with Mojo, see our guide on
-[using AI coding assistants](/max/coding-assistants/).
+[using Mojo AI skills](/mojo/tools/skills/).

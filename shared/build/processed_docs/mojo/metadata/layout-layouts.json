@@ -5,12 +5,12 @@
   "file_name": "layouts.mdx",
   "file_stem": "layouts",
   "file_path": "layout/layouts.mdx",
-  "file_size": 16957,
+  "file_size": 16925,
   "document_id": "layout-layouts",
   "url": "https://docs.modular.com/mojo/manual/layout/layouts",
-  "content_hash": "168440354ede9224861c7785919e4a4c",
+  "content_hash": "c4864a88c12035b1d5a8ef87a515bf34",
   "statistics": {
-    "char_count": 16496,
+    "char_count": 16510,
     "word_count": 2570,
     "line_count": 467,
     "paragraph_count": 108,
@@ -18,11 +18,11 @@
     "code_block_count": 16,
     "code_lines": 103
   },
-  "processed_at": "2025-12-11T14:37:07.249127",
+  "processed_at": "2026-03-27T07:11:28.508718",
   "sections": [
     {
       "level": 2,
-      "title": "What’s a Layout?",
+      "title": "What's a Layout?",
       "anchor": "whats-a-layout"
     },
     {

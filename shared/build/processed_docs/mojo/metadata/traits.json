@@ -4,20 +4,20 @@
   "file_name": "traits.mdx",
   "file_stem": "traits",
   "file_path": "traits.mdx",
-  "file_size": 25801,
+  "file_size": 24436,
   "document_id": "traits",
   "url": "https://docs.modular.com/mojo/manual/traits",
-  "content_hash": "4c3344df461f68e59278ee7a8ff480a5",
+  "content_hash": "2d4ca541e27a09cf6c36a0bcbfc39704",
   "statistics": {
-    "char_count": 25183,
-    "word_count": 3314,
-    "line_count": 772,
-    "paragraph_count": 177,
-    "header_count": 24,
-    "code_block_count": 36,
-    "code_lines": 388
+    "char_count": 23855,
+    "word_count": 3243,
+    "line_count": 767,
+    "paragraph_count": 185,
+    "header_count": 25,
+    "code_block_count": 37,
+    "code_lines": 380
   },
-  "processed_at": "2025-12-11T14:37:07.984772",
+  "processed_at": "2026-03-27T07:11:29.447551",
   "sections": [
     {
       "level": 2,
@@ -66,13 +66,13 @@
     },
     {
       "level": 2,
-      "title": "Trait inheritance",
-      "anchor": "trait-inheritance"
+      "title": "Trait refinement {#trait-refinement}",
+      "anchor": "trait-refinement-trait-refinement"
     },
     {
       "level": 1,
-      "title": "Bird inherits from Animal",
-      "anchor": "bird-inherits-from-animal"
+      "title": "Bird refines Animal",
+      "anchor": "bird-refines-animal"
     },
     {
       "level": 2,
@@ -86,8 +86,8 @@
     },
     {
       "level": 1,
-      "title": "fn __init__(out self): ...",
-      "anchor": "fn-__init__out-self-"
+      "title": "def __init__(out self): ...",
+      "anchor": "def-__init__out-self-"
     },
     {
       "level": 1,
@@ -96,13 +96,13 @@
     },
     {
       "level": 1,
-      "title": "fn __moveinit__(out self, deinit existing: Self): ...",
-      "anchor": "fn-__moveinit__out-self-deinit-existing-self-"
+      "title": "def __init__(out self, *, deinit take: Self): ...",
+      "anchor": "def-__init__out-self-deinit-take-self-"
     },
     {
       "level": 3,
-      "title": "Register-passable traits",
-      "anchor": "register-passable-traits"
+      "title": "Register passable types and the RegisterPassable trait  {#register-passable}",
+      "anchor": "register-passable-types-and-the-registerpassable-trait-register-passable"
     },
     {
       "level": 2,
@@ -121,13 +121,18 @@
     },
     {
       "level": 3,
-      "title": "The `Stringable`, `Representable`, and `Writable` traits",
-      "anchor": "the-stringable-representable-and-writable-traits"
+      "title": "The `Writable` trait",
+      "anchor": "the-writable-trait"
+    },
+    {
+      "level": 1,
+      "title": "Another method. Overrides default implementation from Writable conformance",
+      "anchor": "another-method-overrides-default-implementation-from-writable-conformance"
     },
     {
       "level": 3,
-      "title": "The `AnyType` trait",
-      "anchor": "the-anytype-trait"
+      "title": "Lifetime management traits",
+      "anchor": "lifetime-management-traits"
     },
     {
       "level": 2,

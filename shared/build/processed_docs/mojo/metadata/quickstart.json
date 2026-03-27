@@ -1,0 +1,84 @@
+{
+  "title": "Mojo quickstart",
+  "description": "Get up and running fast with the Mojo programming language",
+  "sidebar_label": "Quickstart",
+  "file_name": "quickstart.mdx",
+  "file_stem": "quickstart",
+  "file_path": "quickstart.mdx",
+  "file_size": 8098,
+  "document_id": "quickstart",
+  "url": "https://docs.modular.com/mojo/manual/quickstart",
+  "content_hash": "e27403924e46f1cf7ff099476e6cacef",
+  "statistics": {
+    "char_count": 5150,
+    "word_count": 697,
+    "line_count": 234,
+    "paragraph_count": 72,
+    "header_count": 12,
+    "code_block_count": 26,
+    "code_lines": 122
+  },
+  "processed_at": "2026-03-27T07:11:29.320952",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Project setup",
+      "anchor": "project-setup"
+    },
+    {
+      "level": 2,
+      "title": "Try Mojo agent skills",
+      "anchor": "try-mojo-agent-skills"
+    },
+    {
+      "level": 2,
+      "title": "Hello Mojo",
+      "anchor": "hello-mojo"
+    },
+    {
+      "level": 2,
+      "title": "Variables and data",
+      "anchor": "variables-and-data"
+    },
+    {
+      "level": 2,
+      "title": "Loops",
+      "anchor": "loops"
+    },
+    {
+      "level": 2,
+      "title": "Functions",
+      "anchor": "functions"
+    },
+    {
+      "level": 2,
+      "title": "Conditionals",
+      "anchor": "conditionals"
+    },
+    {
+      "level": 2,
+      "title": "Raise errors",
+      "anchor": "raise-errors"
+    },
+    {
+      "level": 2,
+      "title": "Handle errors",
+      "anchor": "handle-errors"
+    },
+    {
+      "level": 2,
+      "title": "Python integration",
+      "anchor": "python-integration"
+    },
+    {
+      "level": 2,
+      "title": "Final code",
+      "anchor": "final-code"
+    },
+    {
+      "level": 2,
+      "title": "What you touched",
+      "anchor": "what-you-touched"
+    }
+  ]
+}

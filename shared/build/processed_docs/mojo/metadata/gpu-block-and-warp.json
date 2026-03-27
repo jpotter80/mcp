@@ -2,24 +2,24 @@
   "title": "GPU block and warp operations and synchronization",
   "sidebar_label": "Block and warp operations and synchronization",
   "description": "A description of GPU block and warp operations and synchronization.",
-  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/gpu-block-and-warp",
+  "github_url": "https://github.com/modular/modular/tree/main/mojo/examples/gpu-block-and-warp",
   "file_name": "block-and-warp.mdx",
   "file_stem": "block-and-warp",
   "file_path": "gpu/block-and-warp.mdx",
-  "file_size": 46729,
+  "file_size": 47688,
   "document_id": "gpu-block-and-warp",
   "url": "https://docs.modular.com/mojo/manual/gpu/block-and-warp",
-  "content_hash": "e83110dc3b53f4cde3ed822d48d6b96e",
+  "content_hash": "055333ad4e49fa89122be72f1b03ed40",
   "statistics": {
-    "char_count": 45614,
-    "word_count": 5846,
-    "line_count": 957,
-    "paragraph_count": 191,
+    "char_count": 46541,
+    "word_count": 5922,
+    "line_count": 1014,
+    "paragraph_count": 216,
     "header_count": 41,
     "code_block_count": 5,
-    "code_lines": 484
+    "code_lines": 544
   },
-  "processed_at": "2025-12-11T14:37:06.973959",
+  "processed_at": "2026-03-27T07:11:28.229275",
   "sections": [
     {
       "level": 2,

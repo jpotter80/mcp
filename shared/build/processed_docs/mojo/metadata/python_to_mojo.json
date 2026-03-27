@@ -1,0 +1,165 @@
+{
+  "id": "python-to-mojo",
+  "title": "Mojo tips for Python devs",
+  "sidebar_label": "Tips for Python devs",
+  "description": "Explore ways Mojo differs from Python as you prepare to migrate",
+  "file_name": "python_to_mojo.mdx",
+  "file_stem": "python_to_mojo",
+  "file_path": "python_to_mojo.mdx",
+  "file_size": 17776,
+  "document_id": "python_to_mojo",
+  "url": "https://docs.modular.com/mojo/manual/python_to_mojo",
+  "content_hash": "4730e71daca635a4195a230b77e79701",
+  "statistics": {
+    "char_count": 17285,
+    "word_count": 2837,
+    "line_count": 647,
+    "paragraph_count": 180,
+    "header_count": 28,
+    "code_block_count": 34,
+    "code_lines": 187
+  },
+  "processed_at": "2026-03-27T07:11:29.284239",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Mojo's core model for Python developers",
+      "anchor": "mojos-core-model-for-python-developers"
+    },
+    {
+      "level": 2,
+      "title": "Moving from Python to Mojo",
+      "anchor": "moving-from-python-to-mojo"
+    },
+    {
+      "level": 3,
+      "title": "Value semantics",
+      "anchor": "value-semantics"
+    },
+    {
+      "level": 1,
+      "title": "a changed because b and a both point to the same list",
+      "anchor": "a-changed-because-b-and-a-both-point-to-the-same-list"
+    },
+    {
+      "level": 3,
+      "title": "Mutability",
+      "anchor": "mutability"
+    },
+    {
+      "level": 2,
+      "title": "Numbers",
+      "anchor": "numbers"
+    },
+    {
+      "level": 3,
+      "title": "SIMD types",
+      "anchor": "simd-types"
+    },
+    {
+      "level": 3,
+      "title": "Int types",
+      "anchor": "int-types"
+    },
+    {
+      "level": 3,
+      "title": "Floating point types",
+      "anchor": "floating-point-types"
+    },
+    {
+      "level": 3,
+      "title": "Division and types",
+      "anchor": "division-and-types"
+    },
+    {
+      "level": 3,
+      "title": "Mojo division operators",
+      "anchor": "mojo-division-operators"
+    },
+    {
+      "level": 2,
+      "title": "Data structures: lists",
+      "anchor": "data-structures-lists"
+    },
+    {
+      "level": 2,
+      "title": "Data structures: dictionaries",
+      "anchor": "data-structures-dictionaries"
+    },
+    {
+      "level": 2,
+      "title": "Comprehensions",
+      "anchor": "comprehensions"
+    },
+    {
+      "level": 1,
+      "title": "[0, 4, 16], list",
+      "anchor": "0-4-16-list"
+    },
+    {
+      "level": 1,
+      "title": "[1, 2], list",
+      "anchor": "1-2-list"
+    },
+    {
+      "level": 1,
+      "title": "{0: 0, 1: 1, 2: 4}, dict",
+      "anchor": "0-0-1-1-2-4-dict"
+    },
+    {
+      "level": 1,
+      "title": "{1: ONE, 2: TWO}, dict",
+      "anchor": "1-one-2-two-dict"
+    },
+    {
+      "level": 1,
+      "title": "{0, 1, 2, 3, 4}, set",
+      "anchor": "0-1-2-3-4-set"
+    },
+    {
+      "level": 2,
+      "title": "Iteration",
+      "anchor": "iteration"
+    },
+    {
+      "level": 2,
+      "title": "Function definitions",
+      "anchor": "function-definitions"
+    },
+    {
+      "level": 2,
+      "title": "Error handling",
+      "anchor": "error-handling"
+    },
+    {
+      "level": 2,
+      "title": "Types: classes vs structs",
+      "anchor": "types-classes-vs-structs"
+    },
+    {
+      "level": 2,
+      "title": "Types: variable static typing",
+      "anchor": "types-variable-static-typing"
+    },
+    {
+      "level": 2,
+      "title": "Types and polymorphism: duck typing vs. traits",
+      "anchor": "types-and-polymorphism-duck-typing-vs-traits"
+    },
+    {
+      "level": 2,
+      "title": "Memory management",
+      "anchor": "memory-management"
+    },
+    {
+      "level": 2,
+      "title": "Python instincts that may surprise you in Mojo",
+      "anchor": "python-instincts-that-may-surprise-you-in-mojo"
+    },
+    {
+      "level": 2,
+      "title": "The Mojo mindset",
+      "anchor": "the-mojo-mindset"
+    }
+  ]
+}

@@ -5,12 +5,12 @@
   "file_name": "no-inline.mdx",
   "file_stem": "no-inline",
   "file_path": "decorators/no-inline.mdx",
-  "file_size": 726,
+  "file_size": 727,
   "document_id": "decorators-no-inline",
   "url": "https://docs.modular.com/mojo/manual/decorators/no-inline",
-  "content_hash": "9112d7c88e0382eec4245c79146a3819",
+  "content_hash": "d037dc903696ee1d2cf40639fbced1d8",
   "statistics": {
-    "char_count": 623,
+    "char_count": 624,
     "word_count": 84,
     "line_count": 18,
     "paragraph_count": 4,
@@ -18,6 +18,6 @@
     "code_block_count": 1,
     "code_lines": 3
   },
-  "processed_at": "2025-12-11T14:37:06.640462",
+  "processed_at": "2026-03-27T07:11:27.856951",
   "sections": []
 }

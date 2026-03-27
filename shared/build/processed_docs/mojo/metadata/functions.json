@@ -1,24 +1,24 @@
 {
   "title": "Functions",
   "sidebar_position": 2,
-  "description": "Introduction to Mojo `fn` and `def` functions.",
+  "description": "Introduction to Mojo functions.",
   "file_name": "functions.mdx",
   "file_stem": "functions",
   "file_path": "functions.mdx",
-  "file_size": 27121,
+  "file_size": 25383,
   "document_id": "functions",
   "url": "https://docs.modular.com/mojo/manual/functions",
-  "content_hash": "81a92e2d0db44be956df0938c9944b37",
+  "content_hash": "4cf0d8b8cd4b80222c0606618d6b765a",
   "statistics": {
-    "char_count": 26544,
-    "word_count": 3760,
-    "line_count": 805,
-    "paragraph_count": 195,
-    "header_count": 22,
-    "code_block_count": 39,
+    "char_count": 24818,
+    "word_count": 3500,
+    "line_count": 774,
+    "paragraph_count": 189,
+    "header_count": 25,
+    "code_block_count": 40,
     "code_lines": 218
   },
-  "processed_at": "2025-12-11T14:37:06.727394",
+  "processed_at": "2026-03-27T07:11:27.979915",
   "sections": [
     {
       "level": 2,
@@ -47,8 +47,8 @@
     },
     {
       "level": 2,
-      "title": "`def` and `fn` comparison",
-      "anchor": "def-and-fn-comparison"
+      "title": "Function requirements",
+      "anchor": "function-requirements"
     },
     {
       "level": 2,
@@ -84,6 +84,21 @@
       "level": 4,
       "title": "Variadic keyword arguments",
       "anchor": "variadic-keyword-arguments"
+    },
+    {
+      "level": 1,
+      "title": "prints:",
+      "anchor": "prints"
+    },
+    {
+      "level": 1,
+      "title": "`a = 7`",
+      "anchor": "a-7"
+    },
+    {
+      "level": 1,
+      "title": "`y = 8`",
+      "anchor": "y-8"
     },
     {
       "level": 3,

@@ -35,7 +35,7 @@ interop](/mojo/manual/python/).
 
 - **Struct-based types**: All data types—including basic types such as `String`
 and `Int`—are defined as structs. No types are built into the language itself.
-That means you can define your own types that have all the the same
+That means you can define your own types that have all the same
 capabilities as the standard library types. [Read about
 structs](/mojo/manual/structs).
 
@@ -53,7 +53,7 @@ semantics, multiple variables can point to the same instance (sometimes called
 an object), so changes made through one variable are visible through all others.
 Mojo-native types predominantly use value semantics, which prevents multiple
 variables from unexpectedly sharing the same data. Read about [value
-semantics](https://docs.modular.com/mojo/manual/values/value-semantics/).
+semantics](/mojo/manual/values/value-semantics/).
 
 - **Value ownership**: Mojo's ownership system ensures that only one variable
 "owns" a specific value at a given time—such that Mojo can safely deallocate
@@ -78,44 +78,8 @@ programming](/mojo/manual/gpu/fundamentals).
 
 ## Get started
 
-export const Puzzles ={
- title: "GPU Puzzles",
- description: "Learn to program GPUs in Mojo by solving increasingly complex challenges",
- metadata: {
- permalink: "<https://puzzles.modular.com/introduction.html>"
- }
-};
-
-export const getStarted = [
- 'get-started',
- 'gpu/intro-tutorial',
- Puzzles,
-]
-
 [tip]
 **Tip:** To use AI coding assistants with Mojo, see our guide for
-[using AI coding assistants](/max/coding-assistants/).
+[using Mojo AI skills](/mojo/tools/skills/).
 
 ## More resources
-
-export const Examples ={
- title: "Code examples",
- description: "Browse a wide range of Mojo code examples on GitHub",
- metadata: {
- permalink: "https://github.com/modular/modular/tree/main/examples/mojo"
- }
-};
-
-export const Community ={
- title: "Community",
- description: "Chat with us and the community in our forum and Discord channels",
- metadata: {
- permalink: "https://www.modular.com/community"
- }
-};
-
-export const resources = [
- '../lib',
- Examples,
- Community,
-]

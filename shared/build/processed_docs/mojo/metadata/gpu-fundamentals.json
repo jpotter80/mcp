@@ -5,20 +5,20 @@
   "file_name": "fundamentals.mdx",
   "file_stem": "fundamentals",
   "file_path": "gpu/fundamentals.mdx",
-  "file_size": 31568,
+  "file_size": 30919,
   "document_id": "gpu-fundamentals",
   "url": "https://docs.modular.com/mojo/manual/gpu/fundamentals",
-  "content_hash": "43a7b1641202ea7f689d1578f1c471ff",
+  "content_hash": "a4c98cd3f6201858fa9a14f06315d2d9",
   "statistics": {
-    "char_count": 30521,
-    "word_count": 4004,
-    "line_count": 722,
-    "paragraph_count": 142,
+    "char_count": 29874,
+    "word_count": 3950,
+    "line_count": 714,
+    "paragraph_count": 143,
     "header_count": 21,
     "code_block_count": 14,
-    "code_lines": 399
+    "code_lines": 397
   },
-  "processed_at": "2025-12-11T14:37:07.075470",
+  "processed_at": "2026-03-27T07:11:28.335961",
   "sections": [
     {
       "level": 2,

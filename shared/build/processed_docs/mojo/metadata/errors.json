@@ -4,20 +4,20 @@
   "file_name": "errors.mdx",
   "file_stem": "errors",
   "file_path": "errors.mdx",
-  "file_size": 22685,
+  "file_size": 38678,
   "document_id": "errors",
   "url": "https://docs.modular.com/mojo/manual/errors",
-  "content_hash": "a838cbab0da49f6a2779bbf776a6d53b",
+  "content_hash": "8638f2fd456f766a39be6d5a3001dd95",
   "statistics": {
-    "char_count": 21831,
-    "word_count": 2694,
-    "line_count": 604,
-    "paragraph_count": 118,
-    "header_count": 13,
-    "code_block_count": 34,
-    "code_lines": 192
+    "char_count": 36797,
+    "word_count": 4893,
+    "line_count": 1218,
+    "paragraph_count": 262,
+    "header_count": 46,
+    "code_block_count": 64,
+    "code_lines": 412
   },
-  "processed_at": "2025-12-11T14:37:06.663862",
+  "processed_at": "2026-03-27T07:11:27.880662",
   "sections": [
     {
       "level": 2,
@@ -25,29 +25,179 @@
       "anchor": "raise-an-error"
     },
     {
-      "level": 2,
-      "title": "Enable stack trace generation for errors",
-      "anchor": "enable-stack-trace-generation-for-errors"
-    },
-    {
-      "level": 2,
-      "title": "Declare a raising function",
-      "anchor": "declare-a-raising-function"
-    },
-    {
       "level": 1,
-      "title": "This function doesn't compile because of the unhandled error",
-      "anchor": "this-function-doesnt-compile-because-of-the-unhandled-error"
-    },
-    {
-      "level": 1,
-      "title": "This function compiles because it handles the possible error",
-      "anchor": "this-function-compiles-because-it-handles-the-possible-error"
+      "title": "These are equivalent",
+      "anchor": "these-are-equivalent"
     },
     {
       "level": 2,
       "title": "Handle an error",
       "anchor": "handle-an-error"
+    },
+    {
+      "level": 3,
+      "title": "How each clause works",
+      "anchor": "how-each-clause-works"
+    },
+    {
+      "level": 3,
+      "title": "Example",
+      "anchor": "example"
+    },
+    {
+      "level": 3,
+      "title": "Re-raise an error",
+      "anchor": "re-raise-an-error"
+    },
+    {
+      "level": 2,
+      "title": "Typed errors",
+      "anchor": "typed-errors"
+    },
+    {
+      "level": 3,
+      "title": "Define a custom error type",
+      "anchor": "define-a-custom-error-type"
+    },
+    {
+      "level": 3,
+      "title": "Raise a typed error",
+      "anchor": "raise-a-typed-error"
+    },
+    {
+      "level": 1,
+      "title": "This doesn't compile — validate_username() can raise",
+      "anchor": "this-doesnt-compile-validate_username-can-raise"
+    },
+    {
+      "level": 1,
+      "title": "This compiles — the error is handled",
+      "anchor": "this-compiles-the-error-is-handled"
+    },
+    {
+      "level": 3,
+      "title": "Catch a typed error",
+      "anchor": "catch-a-typed-error"
+    },
+    {
+      "level": 1,
+      "title": "Each try block handles one error type",
+      "anchor": "each-try-block-handles-one-error-type"
+    },
+    {
+      "level": 2,
+      "title": "Representing multiple error conditions",
+      "anchor": "representing-multiple-error-conditions"
+    },
+    {
+      "level": 3,
+      "title": "Enumerated error types",
+      "anchor": "enumerated-error-types"
+    },
+    {
+      "level": 3,
+      "title": "The `Variant` type",
+      "anchor": "the-variant-type"
+    },
+    {
+      "level": 2,
+      "title": "The `Never` type",
+      "anchor": "the-never-type"
+    },
+    {
+      "level": 3,
+      "title": "Functions that always raise",
+      "anchor": "functions-that-always-raise"
+    },
+    {
+      "level": 1,
+      "title": "Always raises, never returns",
+      "anchor": "always-raises-never-returns"
+    },
+    {
+      "level": 3,
+      "title": "Functions that never raise",
+      "anchor": "functions-that-never-raise"
+    },
+    {
+      "level": 1,
+      "title": "These two signatures are equivalent:",
+      "anchor": "these-two-signatures-are-equivalent"
+    },
+    {
+      "level": 2,
+      "title": "Parametric raises",
+      "anchor": "parametric-raises"
+    },
+    {
+      "level": 1,
+      "title": "...",
+      "anchor": ""
+    },
+    {
+      "level": 1,
+      "title": "ErrorType inferred as NetworkError",
+      "anchor": "errortype-inferred-as-networkerror"
+    },
+    {
+      "level": 1,
+      "title": "ErrorType inferred as ParseError",
+      "anchor": "errortype-inferred-as-parseerror"
+    },
+    {
+      "level": 1,
+      "title": "...",
+      "anchor": ""
+    },
+    {
+      "level": 1,
+      "title": "ErrorType inferred as Never — no try block needed",
+      "anchor": "errortype-inferred-as-never-no-try-block-needed"
+    },
+    {
+      "level": 2,
+      "title": "Typed errors and `Error` interaction",
+      "anchor": "typed-errors-and-error-interaction"
+    },
+    {
+      "level": 3,
+      "title": "Wrap `Error` at API boundaries",
+      "anchor": "wrap-error-at-api-boundaries"
+    },
+    {
+      "level": 3,
+      "title": "Avoid bare `raises` with typed errors",
+      "anchor": "avoid-bare-raises-with-typed-errors"
+    },
+    {
+      "level": 1,
+      "title": "Anti-pattern: bare raises erases type info at compile time",
+      "anchor": "anti-pattern-bare-raises-erases-type-info-at-compile-time"
+    },
+    {
+      "level": 3,
+      "title": "Don't mix error types in a single `try` block",
+      "anchor": "dont-mix-error-types-in-a-single-try-block"
+    },
+    {
+      "level": 1,
+      "title": "This doesn't compile",
+      "anchor": "this-doesnt-compile"
+    },
+    {
+      "level": 3,
+      "title": "Recommendations for mixed codebases",
+      "anchor": "recommendations-for-mixed-codebases"
+    },
+    {
+      "level": 2,
+      "title": "Enable stack trace generation for errors",
+      "anchor": "enable-stack-trace-generation-for-errors"
+    },
+    {
+      "level": 3,
+      "title": "Capture a stack trace programmatically",
+      "anchor": "capture-a-stack-trace-programmatically"
     },
     {
       "level": 2,
@@ -83,6 +233,21 @@
       "level": 3,
       "title": "Define a conditional `__exit__()` method",
       "anchor": "define-a-conditional-__exit__-method"
+    },
+    {
+      "level": 3,
+      "title": "Handle typed errors in `__exit__()`",
+      "anchor": "handle-typed-errors-in-__exit__"
+    },
+    {
+      "level": 1,
+      "title": "No error — calls __exit__(self)",
+      "anchor": "no-error-calls-__exit__self"
+    },
+    {
+      "level": 1,
+      "title": "Typed error, suppressed — __exit__[ErrType] returns True",
+      "anchor": "typed-error-suppressed-__exit__errtype-returns-true"
     }
   ]
 }

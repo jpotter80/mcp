@@ -1,0 +1,39 @@
+{
+  "title": "Intro to metaprogramming",
+  "sidebar_label": "Intro",
+  "description": "An overview of Mojo's metaprogramming features.",
+  "file_name": "index.mdx",
+  "file_stem": "index",
+  "file_path": "metaprogramming/index.mdx",
+  "file_size": 2777,
+  "document_id": "metaprogramming-index",
+  "url": "https://docs.modular.com/mojo/manual/metaprogramming",
+  "content_hash": "1a68c3f127f19ebd6ab6c1ba196a8459",
+  "statistics": {
+    "char_count": 2639,
+    "word_count": 353,
+    "line_count": 51,
+    "paragraph_count": 11,
+    "header_count": 3,
+    "code_block_count": 0,
+    "code_lines": 0
+  },
+  "processed_at": "2026-03-27T07:11:28.822664",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Compile-time statements and expressions",
+      "anchor": "compile-time-statements-and-expressions"
+    },
+    {
+      "level": 2,
+      "title": "Compile-time parameters",
+      "anchor": "compile-time-parameters"
+    },
+    {
+      "level": 2,
+      "title": "Traits and generics",
+      "anchor": "traits-and-generics"
+    }
+  ]
+}

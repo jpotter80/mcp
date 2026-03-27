@@ -2,12 +2,9 @@
 title: Get started with GPU programming
 sidebar_label: Get started with GPUs
 description: Learn the basics of GPU programming with Mojo
-github_url: https://github.com/modular/modular/tree/main/examples/mojo/gpu-intro
+github_url: https://github.com/modular/modular/tree/main/mojo/examples/gpu-intro
 image: /images/artwork/mojo-motorcycle.jpg
 ---
-
-import Requirements from '@site/src/components/Requirements';
-import { requirementsWithGPU } from '@site/docs/max/requirements';
 
 This tutorial introduces you to GPU programming with Mojo. You'll learn how to
 write a simple program that performs vector addition on a GPU, exploring
@@ -25,19 +22,21 @@ We'll build everything step-by-step, starting with the basics and gradually
 adding more complexity. The concepts you learn here will serve as a foundation
 for more advanced GPU programming with Mojo. If you just want to see the
 finished code, you can [get it on
-GitHub](https://github.com/modular/modular/tree/main/examples/mojo/gpu-intro).
+GitHub](https://github.com/modular/modular/tree/main/mojo/examples/gpu-intro).
 
 :::tip
 
 **Tip:** To use AI coding assistants with Mojo, see our guide for
-[using AI coding assistants](/max/coding-assistants/).
+[using Mojo AI skills](/mojo/tools/skills/).
 
 :::
 
-System requirements:
+:::note System requirements
 
-<Requirements requirementsData={requirementsWithGPU}
-url="/mojo/manual/install#system-requirements" />
+You can use Mac, Linux, or Windows with WSL. For details, see the
+[system requirements](/mojo/requirements).
+
+:::
 
 ## 1. Create a Mojo project
 
@@ -76,7 +75,7 @@ other options, see the [install guide](/mojo/manual/install)).
     pixi add mojo
     ```
 
-3. Verify the project is configured correctly by checking the version of Mojo
+4. Verify the project is configured correctly by checking the version of Mojo
     that's installed within our project's virtual environment:
 
     ```bash
@@ -86,7 +85,7 @@ other options, see the [install guide](/mojo/manual/install)).
     You should see a version string indicating the version of Mojo installed.
     By default, this should be the latest nightly version.
 
-4. Activate the project's virtual environment:
+5. Activate the project's virtual environment:
 
     ```bash
     pixi shell
@@ -96,16 +95,16 @@ other options, see the [install guide](/mojo/manual/install)).
 
 ## 2. Get a reference to the GPU device
 
-The [`DeviceContext`](/mojo/stdlib/gpu/host/device_context/DeviceContext/) type
+The [`DeviceContext`](/mojo/std/gpu/host/device_context/DeviceContext/) type
 represents a logical instance of a GPU device. It provides methods for
 allocating memory on the device, copying data between the host CPU and the GPU,
 and compiling and running functions (also known as *kernels*) on the device.
 
 Use the
-[`DeviceContext()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#__init__)
+[`DeviceContext()`](/mojo/std/gpu/host/device_context/DeviceContext#__init__)
 constructor to get a reference to the GPU device. The constructor raises an
 error if no compatible GPU is available. You can use the
-[`has_accelerator()`](/mojo/stdlib/sys/info/has_accelerator/) function to check
+[`has_accelerator()`](/mojo/std/sys/info/has_accelerator/) function to check
 if a compatible GPU is available.
 
 Let's start by writing a program that checks if a GPU is available and then
@@ -113,12 +112,11 @@ obtains a reference to the GPU device. Using any editor, create a file named
 `vector_addition.mojo` with the following code:
 
 ```mojo title="vector_addition.mojo"
-from gpu.host import DeviceContext
-from sys import has_accelerator
+from std.gpu.host import DeviceContext
+from std.sys import has_accelerator
 
-def main():
-    @parameter
-    if not has_accelerator():
+def main() raises:
+    comptime if not has_accelerator():
         print("No compatible GPU found")
     else:
         ctx = DeviceContext()
@@ -141,9 +139,10 @@ Found GPU: NVIDIA A10G
 :::note
 
 Mojo requires a [compatible GPU development
-environment](/max/faq/#gpu-requirements) to compile kernel functions, otherwise
+environment](/mojo/requirements/#gpu-compatibility) to compile kernel functions, otherwise
 it raises a compile-time error. In our code, we're using the
-[`@parameter`](/mojo/manual/decorators/parameter) decorator to evaluate the
+[`comptime if`](/mojo/manual/metaprogramming/comptime-evaluation/#comptime-if)
+statement to evaluate the
 `has_accelerator()` function at compile time and compile only the corresponding
 branch of the `if` statement. As a result, if you don't have a compatible GPU
 development environment, you'll see the following message when you run the
@@ -190,9 +189,9 @@ write a simple kernel function that prints the thread block and thread indices.
 Add the following code to your `vector_addition.mojo` file:
 
 ```mojo title="vector_addition.mojo"
-from gpu import block_idx, thread_idx
+from std.gpu import block_idx, thread_idx
 
-fn print_threads():
+def print_threads():
     """Print thread IDs."""
 
     print("Block index: [",
@@ -202,17 +201,6 @@ fn print_threads():
         "]"
     )
 ```
-
-:::note
-
-We're using `fn` here without the `raises` keyword because a kernel function is
-not allowed to raise an error condition. In contrast, when you define a Mojo
-function with `def`, the compiler always assumes that the function *can* raise
-an error condition. See the [Functions](/mojo/manual/functions) section of the
-Mojo Manual for more information on the difference between using `fn` and `def`
-to define functions in Mojo.
-
-:::
 
 ## 4. Compile and run the kernel
 
@@ -225,13 +213,13 @@ Modify the `main()` function and add `has_apple_gpu_accelerator()` to the list
 of imports from the `sys` module so that your program looks like this:
 
 ```mojo title="vector_addition.mojo"
-from sys import has_accelerator, has_apple_gpu_accelerator
+from std.sys import has_accelerator, has_apple_gpu_accelerator
 
-from gpu.host import DeviceContext
-from gpu import block_idx, thread_idx
+from std.gpu.host import DeviceContext
+from std.gpu import block_idx, thread_idx
 
 
-fn print_threads():
+def print_threads():
     """Print thread IDs."""
 
     print("Block index: [",
@@ -242,9 +230,8 @@ fn print_threads():
     )
 
 
-def main():
-    @parameter
-    if not has_accelerator():
+def main() raises:
+    comptime if not has_accelerator():
         print("No compatible GPU found")
     elif has_apple_gpu_accelerator():
         print(
@@ -253,7 +240,7 @@ def main():
         )
     else:
         ctx = DeviceContext()
-        ctx.enqueue_function_checked[print_threads, print_threads](
+        ctx.enqueue_function[print_threads, print_threads](
             grid_dim=2, block_dim=64
         )
         ctx.synchronize()
@@ -269,12 +256,12 @@ mojo vector_addition.mojo
 You should see something like the following output (which is abbreviated here):
 
 ```output
-Block index: [ 1 ]	Thread index: [ 32 ]
-Block index: [ 1 ]	Thread index: [ 33 ]
-Block index: [ 1 ]	Thread index: [ 34 ]
+Block index: [ 1 ] Thread index: [ 32 ]
+Block index: [ 1 ] Thread index: [ 33 ]
+Block index: [ 1 ] Thread index: [ 34 ]
 ...
-Block index: [ 0 ]	Thread index: [ 30 ]
-Block index: [ 0 ]	Thread index: [ 31 ]
+Block index: [ 0 ] Thread index: [ 30 ]
+Block index: [ 0 ] Thread index: [ 31 ]
 Program finished
 ```
 
@@ -302,7 +289,7 @@ stream of queued operations to execute on the GPU. Operations within a stream
 execute in the order they are issued.
 
 The
-[`enqueue_function_checked()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_function_checked)
+[`enqueue_function()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_function)
 method compiles a kernel function and enqueues it to run on the given device.
 You must provide the name of the kernel function as a compile-time Mojo
 parameter, and the following arguments:
@@ -317,27 +304,19 @@ information on Mojo function arguments and the
 [Parameters](/mojo/manual/parameters) section for more information on Mojo
 compile-time parameters and metaprogramming.)
 
-:::note
+:::note API variants
 
-`DeviceContext` also includes
-[`enqueue_function()`](/mojo/stdlib/gpu/host/device_context/DeviceContext/#enqueue_function)
-and
-[`compile_function()`](/mojo/stdlib/gpu/host/device_context/DeviceContext/#compile_function)
-methods. However, these methods currently don't typecheck the arguments to the
-compiled kernel function, which can lead to obscure run-time errors if the
-argument ordering, types, or count doesn't match the kernel function's
-definition. Additionally, these methods currently have known issues with Apple
-silicon GPUs.
+The `compile_function_unchecked()` and `enqueue_function_unchecked()` methods
+are deprecated and will be removed in a future release because they don't
+perform compile-time type checking of the kernel function arguments. You'll
+encounter run-time errors if the values you pass don't conform to the expected
+argument types.
 
-For compile-time typechecking, we recommend that you use the
-`enqueue_function_checked()` and `compile_function_checked()` methods, which
-also work correctly on Apple silicon GPUs.
-
-Note that `enqueue_function_checked()` and `compile_function_checked()`
-currently require the kernel function to be provided *twice* as parameters. This
-requirement will be removed in a future API update, when typechecking will
-become the default behavior for both `enqueue_function()` and
-`compile_function()`.
+The `compile_function_experimental()` and `enqueue_function_experimental()`
+methods perform compile-time type checking but require the kernel function as a
+parameter only once instead of twice. Once we verify these APIs work correctly,
+we'll rename them to `compile_function()` and `enqueue_function()` to make
+type-checking the default behavior.
 
 :::
 
@@ -396,7 +375,7 @@ that's ready to run.
 
 After enqueuing the kernel function, we want to ensure that the CPU waits for it
 to finish execution before exiting the program. We do this by calling the
-[`synchronize()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#synchronize)
+[`synchronize()`](/mojo/std/gpu/host/device_context/DeviceContext#synchronize)
 method of the `DeviceContext` object, which blocks until the device completes
 all operations in its queue.
 
@@ -427,7 +406,7 @@ modify our `print_threads()` kernel function to print the `x`, `y`, and `z`
 components of the thread block and thread indices for each thread.
 
 ```mojo title="vector_addition.mojo"
-fn print_threads():
+def print_threads():
     """Print thread IDs."""
 
     print("Block index: [",
@@ -442,7 +421,7 @@ Then, update `main()` to enqueue the kernel function with a 2x2x1 grid of
 thread blocks and a 16x4x2 arrangement of threads within each thread block:
 
 ```mojo title="vector_addition.mojo"
-        ctx.enqueue_function_checked[print_threads, print_threads](
+        ctx.enqueue_function[print_threads, print_threads](
             grid_dim=(2, 2, 1),
             block_dim=(16, 4, 2)
         )
@@ -457,12 +436,12 @@ mojo vector_addition.mojo
 You should see something like the following output (which is abbreviated here):
 
 ```output
-Block index: [ 1 1 0 ]	Thread index: [ 0 2 0 ]
-Block index: [ 1 1 0 ]	Thread index: [ 1 2 0 ]
-Block index: [ 1 1 0 ]	Thread index: [ 2 2 0 ]
+Block index: [ 1 1 0 ] Thread index: [ 0 2 0 ]
+Block index: [ 1 1 0 ] Thread index: [ 1 2 0 ]
+Block index: [ 1 1 0 ] Thread index: [ 2 2 0 ]
 ...
-Block index: [ 0 0 0 ]	Thread index: [ 14 1 0 ]
-Block index: [ 0 0 0 ]	Thread index: [ 15 1 0 ]
+Block index: [ 0 0 0 ] Thread index: [ 14 1 0 ]
+Block index: [ 0 0 0 ] Thread index: [ 15 1 0 ]
 Program finished
 ```
 
@@ -501,7 +480,7 @@ function. Similarly, if your kernel function produces data that you want the CPU
 to use later, you must explicitly copy it back to host memory.
 
 For this tutorial, we'll use the
-[`HostBuffer`](/mojo/stdlib/gpu/host/device_context/HostBuffer) type to
+[`HostBuffer`](/mojo/std/gpu/host/device_context/HostBuffer) type to
 represent our vectors on the host. A `HostBuffer` is a block of host memory
 associated with a particular `DeviceContext`. It supports methods for
 transferring data between host and device memory, as well as a basic set of
@@ -515,18 +494,17 @@ After making these changes, your `vector_addition.mojo` file should look like
 this:
 
 ```mojo title="vector_addition.mojo"
-from gpu.host import DeviceContext
-from gpu import block_idx, thread_idx
-from sys import has_accelerator
+from std.gpu.host import DeviceContext
+from std.gpu import block_idx, thread_idx
+from std.sys import has_accelerator
 
 # Vector data type and size
 comptime float_dtype = DType.float32
 comptime vector_size = 1000
 
 
-def main():
-    @parameter
-    if not has_accelerator():
+def main() raises:
+    comptime if not has_accelerator():
         print("No compatible GPU found")
     else:
         # Get the context for the attached GPU
@@ -544,14 +522,14 @@ def main():
         # Initialize the input vectors
         for i in range(vector_size):
             lhs_host_buffer[i] = Float32(i)
-            rhs_host_buffer[i] = Float32(i * 0.5)
+            rhs_host_buffer[i] = Float32(Float64(i) * 0.5)
 
         print("LHS buffer: ", lhs_host_buffer)
         print("RHS buffer: ", rhs_host_buffer)
 ```
 
 The
-[`enqueue_create_host_buffer()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_create_host_buffer)
+[`enqueue_create_host_buffer()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_create_host_buffer)
 method accepts the data type as a compile-time parameter and the size of the
 buffer as a run-time argument and returns a `HostBuffer`. As with all
 `DeviceContext` methods whose name starts with `enqueue_`, the method is
@@ -614,7 +592,7 @@ Add the following code to the end of the `main()` function:
         )
 ```
 
-The [`DeviceBuffer`](/mojo/stdlib/gpu/host/device_context/DeviceBuffer) type is
+The [`DeviceBuffer`](/mojo/std/gpu/host/device_context/DeviceBuffer) type is
 analogous to the `HostBuffer` type, but represents a block of device memory
 associated with a particular `DeviceContext`. Specifically, the buffer is
 located in the device's *global memory* space, which is accessible by all
@@ -624,13 +602,13 @@ it is no longer referenced in the program or until the `DeviceContext` itself
 is destroyed.
 
 The
-[`enqueue_create_buffer()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_create_buffer)
+[`enqueue_create_buffer()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_create_buffer)
 method accepts the data type as a compile-time parameter and the size of the
 buffer as a run-time argument and returns a `DeviceBuffer`. The operation is
 asynchronous, but we don't need to call the `synchronize()` method yet because
 we have more operations to add to the queue.
 
-The [`enqueue_copy()`](/mojo/stdlib/gpu/host/device_context/DeviceContext#enqueue_copy)
+The [`enqueue_copy()`](/mojo/std/gpu/host/device_context/DeviceContext#enqueue_copy)
 method is overloaded to support copying from host to device, device to host, or
 even device to device for systems that have multiple GPUs. In this example, we
 use it to copy the data in our `HostBuffer`s to the `DeviceBuffer`s.
@@ -638,9 +616,9 @@ use it to copy the data in our `HostBuffer`s to the `DeviceBuffer`s.
 :::note
 
 Both `DeviceBuffer` and `HostBuffer` also include
-[`enqueue_copy_to()`](/mojo/stdlib/gpu/host/device_context/DeviceBuffer#enqueue_copy_to)
+[`enqueue_copy_to()`](/mojo/std/gpu/host/device_context/DeviceBuffer#enqueue_copy_to)
 and
-[`enqueue_copy_from()`](/mojo/stdlib/gpu/host/device_context/DeviceBuffer#enqueue_copy_from)
+[`enqueue_copy_from()`](/mojo/std/gpu/host/device_context/DeviceBuffer#enqueue_copy_from)
 methods. These are simply convenience methods that call the `enqueue_copy()`
 method on their corresponding `DeviceContext`. Therefore, we could have written
 the copy operations in the previous example with the following equivalent code:
@@ -697,8 +675,8 @@ Now we're ready to write the kernel function. First, add the following imports
 (note that we've added `block_dim` to the list of imports from `gpu`):
 
 ```mojo title="vector_addition.mojo"
-from gpu import block_dim, block_idx, thread_idx
-from math import ceildiv
+from std.gpu import block_dim, block_idx, thread_idx
+from std.math import ceildiv
 ```
 
 Then, add the following code to `vector_addition.mojo` just before the
@@ -711,7 +689,7 @@ comptime block_size = 256
 comptime num_blocks = ceildiv(vector_size, block_size)
 
 
-fn vector_addition(
+def vector_addition(
     lhs_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
     rhs_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
     out_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
@@ -747,7 +725,7 @@ on.
 
 :::note
 
-As a convenience, the [`gpu`](/mojo/stdlib/gpu) package includes a `global_idx`
+As a convenience, the [`gpu`](/mojo/std/gpu) package includes a `global_idx`
 `comptime` value that contains the unique "global" `x`, `y`, and `z` indices of
 the thread within the grid of thread blocks. So for our one-dimensional grid of
 one-dimensional thread blocks, `global_idx.x` is equivalent to the value of
@@ -769,7 +747,7 @@ back to the CPU. Add the following code to the end of the `main()` function:
 
 ```mojo title="vector_addition.mojo"
         # Compile and enqueue the kernel
-        ctx.enqueue_function_checked[vector_addition, vector_addition](
+        ctx.enqueue_function[vector_addition, vector_addition](
             lhs_tensor,
             rhs_tensor,
             result_tensor,
@@ -797,11 +775,11 @@ back to the CPU. Add the following code to the end of the `main()` function:
   <summary>Click here to see the complete version of `vector_addition.mojo`.</summary>
 
 ```mojo title="vector_addition.mojo"
-from math import ceildiv
-from sys import has_accelerator
+from std.math import ceildiv
+from std.sys import has_accelerator
 
-from gpu.host import DeviceContext
-from gpu import block_dim, block_idx, thread_idx
+from std.gpu.host import DeviceContext
+from std.gpu import block_dim, block_idx, thread_idx
 from layout import Layout, LayoutTensor
 
 # Vector data type and size
@@ -815,7 +793,7 @@ comptime block_size = 256
 comptime num_blocks = ceildiv(vector_size, block_size)
 
 
-fn vector_addition(
+def vector_addition(
     lhs_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
     rhs_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
     out_tensor: LayoutTensor[float_dtype, layout, MutAnyOrigin],
@@ -830,9 +808,8 @@ fn vector_addition(
         out_tensor[tid] = lhs_tensor[tid] + rhs_tensor[tid]
 
 
-def main():
-    @parameter
-    if not has_accelerator():
+def main() raises:
+    comptime if not has_accelerator():
         print("No compatible GPU found")
     else:
         # Get the context for the attached GPU
@@ -874,7 +851,7 @@ def main():
         result_tensor = LayoutTensor[float_dtype, layout](result_device_buffer)
 
         # Compile and enqueue the kernel
-        ctx.enqueue_function_checked[vector_addition, vector_addition](
+        ctx.enqueue_function[vector_addition, vector_addition](
             lhs_tensor,
             rhs_tensor,
             result_tensor,
@@ -897,9 +874,10 @@ def main():
 
         print("Result vector:", result_host_buffer)
 ```
+
 </details>
 
-The `enqueue_function_checked()` method enqueues the compilation and invocation
+The `enqueue_function()` method enqueues the compilation and invocation
 of the `vector_addition()` kernel function, passing the input and output tensors
 as arguments. The `grid_dim` and `block_dim` arguments use the `num_blocks` and
 `block_size` `comptime` values we defined in the previous step.
@@ -954,28 +932,17 @@ covered:
 Now that you understand the basics of GPU programming with Mojo, here are some
 suggested next steps:
 
-import MDXListing from '@site/src/components/Listing/MDXListing';
+import ListingCard from '@site/src/components/Listing/ListingCard';
+import ListingCards from '@site/src/components/Listing/ListingCards';
 
-export const Puzzles = {
-    title: "GPU Puzzles",
-    description: "Learn to program GPUs in Mojo by solving increasingly complex challenges",
-    metadata: {
-        permalink: "https://puzzles.modular.com/introduction.html"
-    }
-};
-
-export const Examples = {
-    title: "GPU code examples",
-    description: "Check out some more examples for programming GPUs with Mojo",
-    metadata: {
-        permalink: "https://github.com/modular/modular/tree/main/examples/mojo/gpu-functions"
-    }
-};
-
-export const nextSteps = [
-    '../../layout/layouts',
-    Puzzles,
-    Examples,
-]
-
-<MDXListing mdxList={nextSteps} />
+<ListingCards>
+  <ListingCard title="Introduction to layouts"
+    url="/mojo/manual/layout/layouts"
+    description="Using layouts to describe multidimensional data." />
+  <ListingCard title="GPU Puzzles"
+    url="https://puzzles.modular.com/introduction.html"
+    description="Learn to program GPUs in Mojo by solving increasingly complex challenges" />
+  <ListingCard title="GPU code examples"
+    url="https://github.com/modular/modular/tree/main/mojo/examples/gpu-functions"
+    description="Check out some more examples for programming GPUs with Mojo" />
+</ListingCards>

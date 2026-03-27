@@ -1,0 +1,98 @@
+{
+  "title": "Reflection",
+  "description": "Compile-time reflection utilities for introspecting Mojo types and functions",
+  "file_name": "reflection.mdx",
+  "file_stem": "reflection",
+  "file_path": "reflection.mdx",
+  "file_size": 13655,
+  "document_id": "reflection",
+  "url": "https://docs.modular.com/mojo/manual/reflection",
+  "content_hash": "e67955e1cfcfd4fb915505a205ed0e0f",
+  "statistics": {
+    "char_count": 13041,
+    "word_count": 1709,
+    "line_count": 336,
+    "paragraph_count": 76,
+    "header_count": 15,
+    "code_block_count": 7,
+    "code_lines": 124
+  },
+  "processed_at": "2026-03-27T07:11:29.332009",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Why reflection matters",
+      "anchor": "why-reflection-matters"
+    },
+    {
+      "level": 2,
+      "title": "Static vs. dynamic reflection",
+      "anchor": "static-vs-dynamic-reflection"
+    },
+    {
+      "level": 2,
+      "title": "Example: Present a type",
+      "anchor": "example-present-a-type"
+    },
+    {
+      "level": 3,
+      "title": "Compile-time inputs",
+      "anchor": "compile-time-inputs"
+    },
+    {
+      "level": 3,
+      "title": "Reflection calls",
+      "anchor": "reflection-calls"
+    },
+    {
+      "level": 3,
+      "title": "Insights",
+      "anchor": "insights"
+    },
+    {
+      "level": 3,
+      "title": "Program output",
+      "anchor": "program-output"
+    },
+    {
+      "level": 2,
+      "title": "Example: Copying data",
+      "anchor": "example-copying-data"
+    },
+    {
+      "level": 3,
+      "title": "Insights",
+      "anchor": "insights"
+    },
+    {
+      "level": 3,
+      "title": "Create a struct",
+      "anchor": "create-a-struct"
+    },
+    {
+      "level": 3,
+      "title": "Use the copying functionality",
+      "anchor": "use-the-copying-functionality"
+    },
+    {
+      "level": 2,
+      "title": "Example: Testing equality",
+      "anchor": "example-testing-equality"
+    },
+    {
+      "level": 3,
+      "title": "Insights",
+      "anchor": "insights"
+    },
+    {
+      "level": 3,
+      "title": "Calling the tests",
+      "anchor": "calling-the-tests"
+    },
+    {
+      "level": 2,
+      "title": "Learn more",
+      "anchor": "learn-more"
+    }
+  ]
+}

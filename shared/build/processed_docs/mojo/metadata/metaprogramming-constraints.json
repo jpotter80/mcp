@@ -1,0 +1,164 @@
+{
+  "title": "Comptime constraints and assertions",
+  "sidebar_label": "Constraints",
+  "description": "How to use Mojo's constraint system to express program guarantees.",
+  "file_name": "constraints.mdx",
+  "file_stem": "constraints",
+  "file_path": "metaprogramming/constraints.mdx",
+  "file_size": 18688,
+  "document_id": "metaprogramming-constraints",
+  "url": "https://docs.modular.com/mojo/manual/metaprogramming/constraints",
+  "content_hash": "b1024f0704248fdf825e270718846985",
+  "statistics": {
+    "char_count": 18274,
+    "word_count": 2854,
+    "line_count": 535,
+    "paragraph_count": 141,
+    "header_count": 28,
+    "code_block_count": 19,
+    "code_lines": 103
+  },
+  "processed_at": "2026-03-27T07:11:28.782553",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Defining constraints",
+      "anchor": "defining-constraints"
+    },
+    {
+      "level": 2,
+      "title": "Symbolic propositions",
+      "anchor": "symbolic-propositions"
+    },
+    {
+      "level": 3,
+      "title": "Introducing knowledge",
+      "anchor": "introducing-knowledge"
+    },
+    {
+      "level": 3,
+      "title": "Satisfying constraints with knowledge",
+      "anchor": "satisfying-constraints-with-knowledge"
+    },
+    {
+      "level": 1,
+      "title": "We have a function that wants a non-empty list.",
+      "anchor": "we-have-a-function-that-wants-a-non-empty-list"
+    },
+    {
+      "level": 1,
+      "title": "A wrapper that wants a size >= 2 list.",
+      "anchor": "a-wrapper-that-wants-a-size-2-list"
+    },
+    {
+      "level": 2,
+      "title": "Compile-time assertions",
+      "anchor": "compile-time-assertions"
+    },
+    {
+      "level": 2,
+      "title": "Limited evaluation of propositions",
+      "anchor": "limited-evaluation-of-propositions"
+    },
+    {
+      "level": 3,
+      "title": "Simple implication",
+      "anchor": "simple-implication"
+    },
+    {
+      "level": 3,
+      "title": "Canonicalization",
+      "anchor": "canonicalization"
+    },
+    {
+      "level": 3,
+      "title": "Context-free folding",
+      "anchor": "context-free-folding"
+    },
+    {
+      "level": 2,
+      "title": "Best practices",
+      "anchor": "best-practices"
+    },
+    {
+      "level": 3,
+      "title": "Writing functions",
+      "anchor": "writing-functions"
+    },
+    {
+      "level": 4,
+      "title": "Q1: Does your function handle the entire domain of its input types?",
+      "anchor": "q1-does-your-function-handle-the-entire-domain-of-its-input-types"
+    },
+    {
+      "level": 4,
+      "title": "Q2: Is this limitation a central concept of your code?",
+      "anchor": "q2-is-this-limitation-a-central-concept-of-your-code"
+    },
+    {
+      "level": 4,
+      "title": "Q3: Is the constraint understandable and provable by the caller?",
+      "anchor": "q3-is-the-constraint-understandable-and-provable-by-the-caller"
+    },
+    {
+      "level": 4,
+      "title": "Summary",
+      "anchor": "summary"
+    },
+    {
+      "level": 3,
+      "title": "Calling functions",
+      "anchor": "calling-functions"
+    },
+    {
+      "level": 4,
+      "title": "Q1: Do the constrained parameters come from a parent parameter list?",
+      "anchor": "q1-do-the-constrained-parameters-come-from-a-parent-parameter-list"
+    },
+    {
+      "level": 4,
+      "title": "Q2: Does the same limitation apply to your function?",
+      "anchor": "q2-does-the-same-limitation-apply-to-your-function"
+    },
+    {
+      "level": 1,
+      "title": "This function is also only meaningful when size >= 0.",
+      "anchor": "this-function-is-also-only-meaningful-when-size-0"
+    },
+    {
+      "level": 1,
+      "title": "Make that part of the contract too.",
+      "anchor": "make-that-part-of-the-contract-too"
+    },
+    {
+      "level": 4,
+      "title": "Q3: Do you know that the parameter already satisfies this condition?",
+      "anchor": "q3-do-you-know-that-the-parameter-already-satisfies-this-condition"
+    },
+    {
+      "level": 1,
+      "title": "The constraint on hi & lo guarantees a valid size.",
+      "anchor": "the-constraint-on-hi-lo-guarantees-a-valid-size"
+    },
+    {
+      "level": 1,
+      "title": "Introduce this piece of knowledge explicitly.",
+      "anchor": "introduce-this-piece-of-knowledge-explicitly"
+    },
+    {
+      "level": 1,
+      "title": "This version does NOT have a constraint on its inputs.",
+      "anchor": "this-version-does-not-have-a-constraint-on-its-inputs"
+    },
+    {
+      "level": 1,
+      "title": "Branch on the computation to handle both cases.",
+      "anchor": "branch-on-the-computation-to-handle-both-cases"
+    },
+    {
+      "level": 2,
+      "title": "Summary",
+      "anchor": "summary"
+    }
+  ]
+}

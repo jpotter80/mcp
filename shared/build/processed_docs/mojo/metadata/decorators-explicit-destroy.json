@@ -1,0 +1,44 @@
+{
+  "title": "@explicit_destroy",
+  "description": "Prevents automatic destruction by a `__del__()` method and requires explicit cleanup through named destructor methods.",
+  "codeTitle": true,
+  "file_name": "explicit-destroy.mdx",
+  "file_stem": "explicit-destroy",
+  "file_path": "decorators/explicit-destroy.mdx",
+  "file_size": 3388,
+  "document_id": "decorators-explicit-destroy",
+  "url": "https://docs.modular.com/mojo/manual/decorators/explicit-destroy",
+  "content_hash": "8a27912357cc0928771417c66a6eea75",
+  "statistics": {
+    "char_count": 3129,
+    "word_count": 407,
+    "line_count": 86,
+    "paragraph_count": 22,
+    "header_count": 4,
+    "code_block_count": 3,
+    "code_lines": 25
+  },
+  "processed_at": "2026-03-27T07:11:27.836908",
+  "sections": [
+    {
+      "level": 2,
+      "title": "Implicit vs. explicit destruction",
+      "anchor": "implicit-vs-explicit-destruction"
+    },
+    {
+      "level": 2,
+      "title": "Basic usage",
+      "anchor": "basic-usage"
+    },
+    {
+      "level": 2,
+      "title": "Custom error messages",
+      "anchor": "custom-error-messages"
+    },
+    {
+      "level": 2,
+      "title": "Related",
+      "anchor": "related"
+    }
+  ]
+}

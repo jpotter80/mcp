@@ -1,25 +1,25 @@
 {
   "title": "Get started with Mojo",
   "description": "Install Mojo and learn the language basics by building a complete Mojo program",
-  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/life",
+  "github_url": "https://github.com/modular/modular/tree/main/mojo/examples/life",
   "image": "/images/artwork/mojo-get-started.jpg",
   "file_name": "get-started.mdx",
   "file_stem": "get-started",
   "file_path": "get-started.mdx",
-  "file_size": 53247,
+  "file_size": 54102,
   "document_id": "get-started",
   "url": "https://docs.modular.com/mojo/manual/get-started",
-  "content_hash": "45ae9f364188a3ab4498fcb81751b342",
+  "content_hash": "6647429e80ff657e2fd1a87975a54a27",
   "statistics": {
-    "char_count": 50294,
-    "word_count": 7729,
-    "line_count": 1399,
-    "paragraph_count": 275,
+    "char_count": 43245,
+    "word_count": 6705,
+    "line_count": 1188,
+    "paragraph_count": 230,
     "header_count": 21,
     "code_block_count": 59,
-    "code_lines": 669
+    "code_lines": 672
   },
-  "processed_at": "2025-12-11T14:37:06.826254",
+  "processed_at": "2026-03-27T07:11:28.102120",
   "sections": [
     {
       "level": 2,
@@ -93,8 +93,8 @@
     },
     {
       "level": 2,
-      "title": "9. Implement support for the `Stringable` trait",
-      "anchor": "9-implement-support-for-the-stringable-trait"
+      "title": "9. Implement support for the `Writable` trait",
+      "anchor": "9-implement-support-for-the-writable-trait"
     },
     {
       "level": 2,

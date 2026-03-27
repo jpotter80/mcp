@@ -5,20 +5,20 @@
   "file_name": "ownership.mdx",
   "file_stem": "ownership",
   "file_path": "values/ownership.mdx",
-  "file_size": 14874,
+  "file_size": 14507,
   "document_id": "values-ownership",
   "url": "https://docs.modular.com/mojo/manual/values/ownership",
-  "content_hash": "3359a026fd6f29bfae69af3d1d5267e1",
+  "content_hash": "334b6227d73c6d5b1ca1d4cb244ecb31",
   "statistics": {
-    "char_count": 14547,
-    "word_count": 2255,
-    "line_count": 405,
-    "paragraph_count": 96,
+    "char_count": 14189,
+    "word_count": 2204,
+    "line_count": 398,
+    "paragraph_count": 95,
     "header_count": 9,
     "code_block_count": 18,
     "code_lines": 94
   },
-  "processed_at": "2025-12-11T14:37:08.168258",
+  "processed_at": "2026-03-27T07:11:29.631825",
   "sections": [
     {
       "level": 2,

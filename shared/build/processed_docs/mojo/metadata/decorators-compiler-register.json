@@ -5,12 +5,12 @@
   "file_name": "compiler-register.mdx",
   "file_stem": "compiler-register",
   "file_path": "decorators/compiler-register.mdx",
-  "file_size": 4544,
+  "file_size": 4561,
   "document_id": "decorators-compiler-register",
   "url": "https://docs.modular.com/mojo/manual/decorators/compiler-register",
-  "content_hash": "51ab3039bcbb6679be506a6bc4fb60e5",
+  "content_hash": "d6d02ec948f4a92af9ec20252f853d5a",
   "statistics": {
-    "char_count": 4242,
+    "char_count": 4259,
     "word_count": 537,
     "line_count": 127,
     "paragraph_count": 30,
@@ -18,15 +18,15 @@
     "code_block_count": 3,
     "code_lines": 43
   },
-  "processed_at": "2025-12-11T14:37:06.616905",
+  "processed_at": "2026-03-27T07:11:27.818909",
   "sections": [
     {
-      "level": 3,
+      "level": 2,
       "title": "`execute()` function",
       "anchor": "execute-function"
     },
     {
-      "level": 3,
+      "level": 2,
       "title": "`shape()` function",
       "anchor": "shape-function"
     }

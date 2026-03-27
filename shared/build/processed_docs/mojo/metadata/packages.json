@@ -6,20 +6,20 @@
   "file_name": "packages.md",
   "file_stem": "packages",
   "file_path": "packages.md",
-  "file_size": 6986,
+  "file_size": 6959,
   "document_id": "packages",
   "url": "https://docs.modular.com/mojo/manual/packages",
-  "content_hash": "fd32b7a0770c09a9a663c5bf3d7fe5ec",
+  "content_hash": "ebbd4e52310be2ec030da078d11b52b4",
   "statistics": {
-    "char_count": 6701,
-    "word_count": 1023,
+    "char_count": 6683,
+    "word_count": 1019,
     "line_count": 234,
     "paragraph_count": 59,
     "header_count": 3,
     "code_block_count": 18,
     "code_lines": 106
   },
-  "processed_at": "2025-12-11T14:37:07.616672",
+  "processed_at": "2026-03-27T07:11:28.995107",
   "sections": [
     {
       "level": 2,

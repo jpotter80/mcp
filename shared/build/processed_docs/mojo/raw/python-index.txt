@@ -34,8 +34,3 @@ By embracing both directions of language interop, you can choose
 how to use Mojo with Python in a way that works best for your use case.
 
 **To learn more about bridging Python ↔ Mojo, continue reading**:
-
-export const docs = [
- 'python-from-mojo',
- 'mojo-from-python',
-]

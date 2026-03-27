@@ -5,20 +5,20 @@
   "file_name": "variables.mdx",
   "file_stem": "variables",
   "file_path": "variables.mdx",
-  "file_size": 13814,
+  "file_size": 14076,
   "document_id": "variables",
   "url": "https://docs.modular.com/mojo/manual/variables",
-  "content_hash": "39df08d76c2c4c582ce011918c498d97",
+  "content_hash": "02a7cd8450277437b9c10b04bd61e1f9",
   "statistics": {
-    "char_count": 13484,
-    "word_count": 2090,
-    "line_count": 433,
-    "paragraph_count": 109,
+    "char_count": 13752,
+    "word_count": 2127,
+    "line_count": 439,
+    "paragraph_count": 111,
     "header_count": 10,
     "code_block_count": 30,
-    "code_lines": 210
+    "code_lines": 215
   },
-  "processed_at": "2025-12-11T14:37:08.203947",
+  "processed_at": "2026-03-27T07:11:29.666937",
   "sections": [
     {
       "level": 2,

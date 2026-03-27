@@ -1,24 +1,24 @@
 {
   "title": "Operators, expressions, and dunder methods",
   "sidebar_label": "Operators and expressions",
-  "github_url": "https://github.com/modular/modular/tree/main/examples/mojo/operators",
+  "github_url": "https://github.com/modular/modular/tree/main/mojo/examples/operators",
   "file_name": "operators.mdx",
   "file_stem": "operators",
   "file_path": "operators.mdx",
-  "file_size": 55228,
+  "file_size": 54869,
   "document_id": "operators",
   "url": "https://docs.modular.com/mojo/manual/operators",
-  "content_hash": "668c635b57c87ad6237ce9444107b46f",
+  "content_hash": "d40ab73b62d20537ff4144b1abf4b3d2",
   "statistics": {
-    "char_count": 53542,
-    "word_count": 7937,
-    "line_count": 1623,
-    "paragraph_count": 338,
-    "header_count": 44,
+    "char_count": 53281,
+    "word_count": 7972,
+    "line_count": 1642,
+    "paragraph_count": 348,
+    "header_count": 46,
     "code_block_count": 102,
-    "code_lines": 598
+    "code_lines": 633
   },
-  "processed_at": "2025-12-11T14:37:07.465548",
+  "processed_at": "2026-03-27T07:11:28.844075",
   "sections": [
     {
       "level": 2,
@@ -62,6 +62,21 @@
     },
     {
       "level": 4,
+      "title": "Operating on non-boolean values with boolean-returning operators",
+      "anchor": "operating-on-non-boolean-values-with-boolean-returning-operators"
+    },
+    {
+      "level": 1,
+      "title": "Identity, Wrapped pointers",
+      "anchor": "identity-wrapped-pointers"
+    },
+    {
+      "level": 1,
+      "title": "Change the constraint to 0 to activate the error",
+      "anchor": "change-the-constraint-to-0-to-activate-the-error"
+    },
+    {
+      "level": 4,
       "title": "Elementwise comparisons",
       "anchor": "elementwise-comparisons"
     },
@@ -96,16 +111,6 @@
       "anchor": "string-replication"
     },
     {
-      "level": 1,
-      "title": "You must define the following function using `fn` because a comptime",
-      "anchor": "you-must-define-the-following-function-using-fn-because-a-comptime"
-    },
-    {
-      "level": 1,
-      "title": "initializer cannot call a function that can potentially raise an error.",
-      "anchor": "initializer-cannot-call-a-function-that-can-potentially-raise-an-error"
-    },
-    {
       "level": 4,
       "title": "String comparison",
       "anchor": "string-comparison"
@@ -134,6 +139,11 @@
       "level": 3,
       "title": "In-place assignment operators",
       "anchor": "in-place-assignment-operators"
+    },
+    {
+      "level": 3,
+      "title": "Conditional expressions",
+      "anchor": "conditional-expressions"
     },
     {
       "level": 3,
@@ -202,8 +212,8 @@
     },
     {
       "level": 3,
-      "title": "Implement the `Writable` and `Stringable` traits",
-      "anchor": "implement-the-writable-and-stringable-traits"
+      "title": "Implement the `Writable` trait",
+      "anchor": "implement-the-writable-trait"
     },
     {
       "level": 3,

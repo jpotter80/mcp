@@ -5,20 +5,20 @@
   "file_name": "types.mdx",
   "file_stem": "types",
   "file_path": "types.mdx",
-  "file_size": 31310,
+  "file_size": 32019,
   "document_id": "types",
   "url": "https://docs.modular.com/mojo/manual/types",
-  "content_hash": "cc0d857e0df90551ee092853e689acec",
+  "content_hash": "81335e38a8be3118c033de23c3b5be46",
   "statistics": {
-    "char_count": 30670,
-    "word_count": 4453,
-    "line_count": 876,
-    "paragraph_count": 197,
-    "header_count": 30,
-    "code_block_count": 55,
-    "code_lines": 162
+    "char_count": 31342,
+    "word_count": 4565,
+    "line_count": 939,
+    "paragraph_count": 224,
+    "header_count": 36,
+    "code_block_count": 59,
+    "code_lines": 194
   },
-  "processed_at": "2025-12-11T14:37:08.045707",
+  "processed_at": "2026-03-27T07:11:29.504863",
   "sections": [
     {
       "level": 2,
@@ -27,18 +27,43 @@
     },
     {
       "level": 3,
-      "title": "AI-optimized floating point formats",
-      "anchor": "ai-optimized-floating-point-formats"
+      "title": "Integers and unsigned integers",
+      "anchor": "integers-and-unsigned-integers"
     },
     {
-      "level": 3,
-      "title": "Signed and unsigned integers",
-      "anchor": "signed-and-unsigned-integers"
+      "level": 4,
+      "title": "Signed versus unsigned",
+      "anchor": "signed-versus-unsigned"
+    },
+    {
+      "level": 4,
+      "title": "Overflow behavior",
+      "anchor": "overflow-behavior"
+    },
+    {
+      "level": 4,
+      "title": "Mojo-supported fixed-width integer types",
+      "anchor": "mojo-supported-fixed-width-integer-types"
     },
     {
       "level": 3,
       "title": "Floating-point numbers",
       "anchor": "floating-point-numbers"
+    },
+    {
+      "level": 4,
+      "title": "Floating-point approximations and comparisons",
+      "anchor": "floating-point-approximations-and-comparisons"
+    },
+    {
+      "level": 4,
+      "title": "Mojo-supported floating-point types",
+      "anchor": "mojo-supported-floating-point-types"
+    },
+    {
+      "level": 4,
+      "title": "AI-optimized floating-point formats",
+      "anchor": "ai-optimized-floating-point-formats"
     },
     {
       "level": 3,
@@ -74,6 +99,21 @@
       "level": 2,
       "title": "Strings",
       "anchor": "strings"
+    },
+    {
+      "level": 3,
+      "title": "Construction",
+      "anchor": "construction"
+    },
+    {
+      "level": 3,
+      "title": "String formatting",
+      "anchor": "string-formatting"
+    },
+    {
+      "level": 3,
+      "title": "Raw strings",
+      "anchor": "raw-strings"
     },
     {
       "level": 3,
@@ -159,16 +199,6 @@
       "level": 1,
       "title": "Two ways to initialize an Optional with no value",
       "anchor": "two-ways-to-initialize-an-optional-with-no-value"
-    },
-    {
-      "level": 2,
-      "title": "Register-passable, memory-only, and trivial types",
-      "anchor": "register-passable-memory-only-and-trivial-types"
-    },
-    {
-      "level": 2,
-      "title": "`AnyType` and `AnyTrivialRegType`",
-      "anchor": "anytype-and-anytrivialregtype"
     }
   ]
 }

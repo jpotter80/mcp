@@ -5,12 +5,12 @@
   "file_name": "implicit.mdx",
   "file_stem": "implicit",
   "file_path": "decorators/implicit.mdx",
-  "file_size": 1860,
+  "file_size": 1866,
   "document_id": "decorators-implicit",
   "url": "https://docs.modular.com/mojo/manual/decorators/implicit",
-  "content_hash": "26fa88a802fa9ff933b0739795c1abd1",
+  "content_hash": "7448962e8464a87d76e10faf07497924",
   "statistics": {
-    "char_count": 1674,
+    "char_count": 1679,
     "word_count": 248,
     "line_count": 58,
     "paragraph_count": 15,
@@ -18,7 +18,7 @@
     "code_block_count": 4,
     "code_lines": 23
   },
-  "processed_at": "2025-12-11T14:37:06.636160",
+  "processed_at": "2026-03-27T07:11:27.851788",
   "sections": [
     {
       "level": 2,

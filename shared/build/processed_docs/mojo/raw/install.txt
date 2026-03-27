@@ -1,15 +1,4 @@
-You can install Mojo as a Python or Conda package. This page shows you how to
-install using `pixi`, `uv`, `pip`, and `conda`, but you can use other tools.
-
-note Start coding
-
-For a beginner's guide to Mojo, instead see the [get started
-tutorial](/mojo/manual/get-started), which includes installation steps.
-
-System requirements:
-
-
- </Tabs>
+export const tooltipNightly = (
 
 4. Enter the virtual environment so you can access the `mojo` CLI:
 
@@ -18,19 +7,6 @@ System requirements:
  ```
 
 </TabItem>
-
-
- </Tabs>
-
-</TabItem>
-
-
- </Tabs>
-
-</TabItem>
-
-
- </Tabs>
 
 </TabItem>
 </Tabs>
@@ -79,7 +55,7 @@ file with a `main()` function:
 1. Create a file named `hello.mojo` with this code:
 
  ```mojo title="hello.mojo"
- def main():
+ def main() raises:
  print("Hello, World!")
  ```
 
@@ -93,10 +69,19 @@ file with a `main()` function:
  Hello, World!
  ```
 
+### Try Mojo agent skills
+
+Use [Mojo agent skills](/mojo/tools/skills) with your AI tools
+to generate more accurate Mojo code while learning Mojo:
+
+```bash
+npx skills add modular/skills
+```
+
 ### Try some examples
 
 The
-[`examples/mojo/`](https://github.com/modular/modular/tree/main/examples/mojo)
+[`examples/mojo/`](https://github.com/modular/modular/tree/main/mojo/examples)
 directory of our public [GitHub](https://github.com/modular/modular) repository
 contains several examples of Mojo code that you can use to learn more about the
 language and its standard library. Here's how to download and use them.
@@ -115,7 +100,7 @@ language and its standard library. Here's how to download and use them.
  automation:
 
  ```sh
- cd modular/examples/mojo/life
+ cd modular/mojo/examples/life
  ```
 
 3. Use `pixi` to download and install the dependencies for the project and to
@@ -128,7 +113,30 @@ language and its standard library. Here's how to download and use them.
 
  This displays a window that shows an initial random state for the grid and
  then automatically updates it with subsequent generations. Quit the program
- by pressing the `q` or `
+ by pressing the <kbd>Q</kbd> or <kbd>Esc</kbd> key or by closing the window.
+
+ [note]
+ If you're using a package manager other than `pixi`, make sure `mojo` is
+ installed and accessible in your current shell environment. Consult the
+ `README.md` file in the example project subdirectory for information about
+ any other dependencies that need to be installed for that particular example
+ project. (The Game of Life example requires a compatible Python runtime and
+ the [pygame-ce](https://pyga.me/docs/index.html) library.) Then run the
+ example with the [`mojo`](/mojo/cli) CLI. For example, to run the reference
+ solution for the Game of Life tutorial project, use the following command:
+
+ ```sh
+ mojo lifev1.mojo
+ ```
+
+
+
+## Update
+
+The following commands should update your local `mojo` package if a new version
+is available that's compatible with the version you specified when you
+installed it or added it as a package dependency. For more information about
+updating packages, see the docs for your package manager.
 
 </Tabs>
 
@@ -138,56 +146,8 @@ Mojo is installed as a Python or Conda package, so the normal package removal
 process applies.
 
 
-
-
 </Tabs>
-
-## What's included
-
-We actually offer two Mojo packages: `mojo` and `mojo-compiler`.
-
-For most situation, you want `mojo` because it includes all the developer tools
-(it's a superset of the `mojo-compiler` package).
-
-### `mojo`
-
-This gives you everything you need for Mojo development.
-
-Includes:
-
-- [`mojo` CLI](/mojo/cli) (includes the Mojo compiler)
-- [Mojo standard library](/mojo/lib)
-- [`mojo` Python
- package](https://github.com/modular/modular/tree/main/mojo/python/mojo)
-- Mojo language server (LSP) for IDE/editor integration
-- [Mojo debugger](/mojo/tools/debugging) (includes LLDB)
-- [Mojo code formatter](/mojo/cli/format)
-- [Mojo REPL](/mojo/cli/repl)
-
-### `mojo-compiler`
-
-This package is smaller and is useful for environments where you only need to
-call or build existing Mojo code. For example, this is good if you're running
-Mojo in a production environment or when you're programming in Python and
-[calling a Mojo package](/mojo/manual/python/mojo-from-python)—situations where
-you don't need the LSP and debugger tools.
-
-Includes:
-
-- [`mojo` CLI](/mojo/cli) (includes the Mojo compiler)
-- [Mojo standard library](/mojo/lib)
-- [`mojo` Python
- package](https://github.com/modular/modular/tree/main/mojo/python/mojo)
 
 ## System requirements
 
-To install `mojo` or `mojo-compiler`, your system must meet these
-specifications.
-
-</Tabs>
-
-### GPU compatibility
-
-Mojo supports both CPUs and GPUs, so you don't need a GPU to program with Mojo.
-But if you do want to program for GPUs with Mojo, we recommend the following
-GPUs.
+Relocated to the [system requirements](/mojo/requirements) page.

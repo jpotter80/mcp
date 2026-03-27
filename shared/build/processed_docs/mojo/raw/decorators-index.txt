@@ -11,7 +11,3 @@ The creation of custom decorators is not yet supported. The available ones are
 built directly into the compiler.
 
 The following pages describe each built-in decorator with examples.
-
-export const decorators = [
- '*.mdx'
- ]

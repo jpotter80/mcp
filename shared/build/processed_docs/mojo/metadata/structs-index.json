@@ -5,20 +5,20 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "structs/index.mdx",
-  "file_size": 15289,
+  "file_size": 19122,
   "document_id": "structs-index",
   "url": "https://docs.modular.com/mojo/manual/structs",
-  "content_hash": "4cb07df30acbbba08055495749da2e94",
+  "content_hash": "48c1f04db44261874a079a92ff85228b",
   "statistics": {
-    "char_count": 14980,
-    "word_count": 2243,
-    "line_count": 432,
-    "paragraph_count": 111,
-    "header_count": 18,
-    "code_block_count": 20,
-    "code_lines": 131
+    "char_count": 18730,
+    "word_count": 2768,
+    "line_count": 539,
+    "paragraph_count": 134,
+    "header_count": 20,
+    "code_block_count": 25,
+    "code_lines": 179
   },
-  "processed_at": "2025-12-11T14:37:07.903280",
+  "processed_at": "2026-03-27T07:11:29.362238",
   "sections": [
     {
       "level": 2,
@@ -87,13 +87,23 @@
     },
     {
       "level": 2,
-      "title": "Methods",
-      "anchor": "methods"
+      "title": "Fields",
+      "anchor": "fields"
     },
     {
       "level": 3,
-      "title": "`fn` versus `def` in struct methods",
-      "anchor": "fn-versus-def-in-struct-methods"
+      "title": "Field requirements",
+      "anchor": "field-requirements"
+    },
+    {
+      "level": 3,
+      "title": "Field conventions",
+      "anchor": "field-conventions"
+    },
+    {
+      "level": 2,
+      "title": "Methods",
+      "anchor": "methods"
     },
     {
       "level": 3,

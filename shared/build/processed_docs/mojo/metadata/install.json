@@ -4,20 +4,20 @@
   "file_name": "install.mdx",
   "file_stem": "install",
   "file_path": "install.mdx",
-  "file_size": 13672,
+  "file_size": 8896,
   "document_id": "install",
   "url": "https://docs.modular.com/mojo/manual/install",
-  "content_hash": "79ca29751e9b45c8cb20fa559ae9bf71",
+  "content_hash": "66ece3bbce61dd2bbee8aa6547f979d2",
   "statistics": {
-    "char_count": 5345,
-    "word_count": 730,
-    "line_count": 193,
-    "paragraph_count": 58,
-    "header_count": 11,
-    "code_block_count": 40,
-    "code_lines": 112
+    "char_count": 4723,
+    "word_count": 662,
+    "line_count": 153,
+    "paragraph_count": 42,
+    "header_count": 8,
+    "code_block_count": 24,
+    "code_lines": 83
   },
-  "processed_at": "2025-12-11T14:37:07.238124",
+  "processed_at": "2026-03-27T07:11:28.498002",
   "sections": [
     {
       "level": 2,
@@ -36,6 +36,11 @@
     },
     {
       "level": 3,
+      "title": "Try Mojo agent skills",
+      "anchor": "try-mojo-agent-skills"
+    },
+    {
+      "level": 3,
       "title": "Try some examples",
       "anchor": "try-some-examples"
     },
@@ -51,28 +56,8 @@
     },
     {
       "level": 2,
-      "title": "What's included",
-      "anchor": "whats-included"
-    },
-    {
-      "level": 3,
-      "title": "`mojo`",
-      "anchor": "mojo"
-    },
-    {
-      "level": 3,
-      "title": "`mojo-compiler`",
-      "anchor": "mojo-compiler"
-    },
-    {
-      "level": 2,
       "title": "System requirements",
       "anchor": "system-requirements"
-    },
-    {
-      "level": 3,
-      "title": "GPU compatibility",
-      "anchor": "gpu-compatibility"
     }
   ]
 }

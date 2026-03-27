@@ -1,0 +1,54 @@
+{
+  "title": "Compile-time evaluation",
+  "sidebar_label": "Compile-time evaluation",
+  "description": "When and how code is executed at compile time.",
+  "file_name": "comptime-evaluation.mdx",
+  "file_stem": "comptime-evaluation",
+  "file_path": "metaprogramming/comptime-evaluation.mdx",
+  "file_size": 9243,
+  "document_id": "metaprogramming-comptime-evaluation",
+  "url": "https://docs.modular.com/mojo/manual/metaprogramming/comptime-evaluation",
+  "content_hash": "2fa173feb08b2bfbb177c5c03453d699",
+  "statistics": {
+    "char_count": 9032,
+    "word_count": 1349,
+    "line_count": 234,
+    "paragraph_count": 56,
+    "header_count": 6,
+    "code_block_count": 10,
+    "code_lines": 34
+  },
+  "processed_at": "2026-03-27T07:11:28.765305",
+  "sections": [
+    {
+      "level": 2,
+      "title": "`comptime` values",
+      "anchor": "comptime-values"
+    },
+    {
+      "level": 3,
+      "title": "Compile-time scope",
+      "anchor": "compile-time-scope"
+    },
+    {
+      "level": 2,
+      "title": "Compile-time flow control",
+      "anchor": "compile-time-flow-control"
+    },
+    {
+      "level": 3,
+      "title": "Compile-time conditionals {#comptime-if}",
+      "anchor": "compile-time-conditionals-comptime-if"
+    },
+    {
+      "level": 3,
+      "title": "Compile-time loop unrolling {#comptime-for}",
+      "anchor": "compile-time-loop-unrolling-comptime-for"
+    },
+    {
+      "level": 2,
+      "title": "How the compiler runs code",
+      "anchor": "how-the-compiler-runs-code"
+    }
+  ]
+}

@@ -16,10 +16,10 @@ ownership in Mojo](https://www.modular.com/blog/deep-dive-into-ownership-in-mojo
 In general, all modern programming languages divide a running program's memory
 into four segments:
 
-* Text. The compiled program.
-* Data. Global data, either initialized or uninitialized.
-* Stack. Local data, automatically managed during the program's runtime.
-* Heap. Dynamically-allocated data, managed by the programmer.
+- Text. The compiled program.
+- Data. Global data, either initialized or uninitialized.
+- Stack. Local data, automatically managed during the program's runtime.
+- Heap. Dynamically-allocated data, managed by the programmer.
 
 The text and data segments are statically sized, but the stack and heap change
 size as the program runs.
@@ -45,7 +45,7 @@ managed automatically—the code to push and pop stack frames is added by the
 compiler. Heap memory, on the other hand, is managed by the programmer
 explicitly allocating and deallocating memory. You may do this indirectly—by
 using standard library types like `List` and `String`—or directly, using the
-[`UnsafePointer`](/mojo/stdlib/memory/unsafe_pointer/UnsafePointer) API.
+[`UnsafePointer`](/mojo/std/memory/unsafe_pointer/UnsafePointer) API.
 
 Values that need to outlive the lifetime of a function (such as
 an array that's passed between functions and should not be copied) are stored

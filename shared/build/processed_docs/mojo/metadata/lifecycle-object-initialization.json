@@ -1,0 +1,100 @@
+{
+  "title": "Deep dive - Instance initialization",
+  "id": "initialization",
+  "sidebar_position": 2,
+  "description": "Understanding logical and fieldwise initialization is fundamental to working with structs.",
+  "file_name": "object-initialization.mdx",
+  "file_stem": "object-initialization",
+  "file_path": "lifecycle/object-initialization.mdx",
+  "file_size": 13015,
+  "document_id": "lifecycle-object-initialization",
+  "url": "https://docs.modular.com/mojo/manual/lifecycle/object-initialization",
+  "content_hash": "d1ae498d53c7da8ad9aac7dcf8a36fb1",
+  "statistics": {
+    "char_count": 12471,
+    "word_count": 1845,
+    "line_count": 406,
+    "paragraph_count": 99,
+    "header_count": 15,
+    "code_block_count": 19,
+    "code_lines": 131
+  },
+  "processed_at": "2026-03-27T07:11:28.740533",
+  "sections": [
+    {
+      "level": 2,
+      "title": "The basics",
+      "anchor": "the-basics"
+    },
+    {
+      "level": 2,
+      "title": "Fieldwise vs logical initialization",
+      "anchor": "fieldwise-vs-logical-initialization"
+    },
+    {
+      "level": 2,
+      "title": "Inside `__init__()`",
+      "anchor": "inside-__init__"
+    },
+    {
+      "level": 1,
+      "title": "Parameters can be used to initialize fields",
+      "anchor": "parameters-can-be-used-to-initialize-fields"
+    },
+    {
+      "level": 1,
+      "title": "Constants can be used to initialize fields",
+      "anchor": "constants-can-be-used-to-initialize-fields"
+    },
+    {
+      "level": 1,
+      "title": "External values can be used to initialize fields",
+      "anchor": "external-values-can-be-used-to-initialize-fields"
+    },
+    {
+      "level": 2,
+      "title": "Moving from fields",
+      "anchor": "moving-from-fields"
+    },
+    {
+      "level": 2,
+      "title": "Mojo's default destructor",
+      "anchor": "mojos-default-destructor"
+    },
+    {
+      "level": 2,
+      "title": "Destructors and moving fields",
+      "anchor": "destructors-and-moving-fields"
+    },
+    {
+      "level": 2,
+      "title": "The `deinit` convention",
+      "anchor": "the-deinit-convention"
+    },
+    {
+      "level": 2,
+      "title": "Explicit and implicit destructors",
+      "anchor": "explicit-and-implicit-destructors"
+    },
+    {
+      "level": 3,
+      "title": "Using `deinit` with other arguments",
+      "anchor": "using-deinit-with-other-arguments"
+    },
+    {
+      "level": 2,
+      "title": "Normal methods and moving fields",
+      "anchor": "normal-methods-and-moving-fields"
+    },
+    {
+      "level": 2,
+      "title": "Destroying instances",
+      "anchor": "destroying-instances"
+    },
+    {
+      "level": 2,
+      "title": "Object initialization summary",
+      "anchor": "object-initialization-summary"
+    }
+  ]
+}

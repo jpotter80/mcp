@@ -1,0 +1,84 @@
+{
+  "title": "@align",
+  "description": "Specifies a minimum alignment for a struct.",
+  "codeTitle": true,
+  "file_name": "align.mdx",
+  "file_stem": "align",
+  "file_path": "decorators/align.mdx",
+  "file_size": 7685,
+  "document_id": "decorators-align",
+  "url": "https://docs.modular.com/mojo/manual/decorators/align",
+  "content_hash": "c7cef0521f0deb1f758b716eb8f46c53",
+  "statistics": {
+    "char_count": 7436,
+    "word_count": 1044,
+    "line_count": 309,
+    "paragraph_count": 90,
+    "header_count": 12,
+    "code_block_count": 13,
+    "code_lines": 138
+  },
+  "processed_at": "2026-03-27T07:11:27.798979",
+  "sections": [
+    {
+      "level": 2,
+      "title": "What alignment means",
+      "anchor": "what-alignment-means"
+    },
+    {
+      "level": 2,
+      "title": "Basic usage",
+      "anchor": "basic-usage"
+    },
+    {
+      "level": 2,
+      "title": "Determining alignment",
+      "anchor": "determining-alignment"
+    },
+    {
+      "level": 2,
+      "title": "Stack and heap behavior",
+      "anchor": "stack-and-heap-behavior"
+    },
+    {
+      "level": 2,
+      "title": "Alignment and arrays",
+      "anchor": "alignment-and-arrays"
+    },
+    {
+      "level": 2,
+      "title": "Generic structs",
+      "anchor": "generic-structs"
+    },
+    {
+      "level": 2,
+      "title": "Interaction with RegisterPassable",
+      "anchor": "interaction-with-registerpassable"
+    },
+    {
+      "level": 2,
+      "title": "Requirements and errors",
+      "anchor": "requirements-and-errors"
+    },
+    {
+      "level": 2,
+      "title": "Special case: @align(1)",
+      "anchor": "special-case-align1"
+    },
+    {
+      "level": 2,
+      "title": "Real-world example: hardware descriptors",
+      "anchor": "real-world-example-hardware-descriptors"
+    },
+    {
+      "level": 1,
+      "title": "Verbose and error-prone",
+      "anchor": "verbose-and-error-prone"
+    },
+    {
+      "level": 2,
+      "title": "Parametric alignment",
+      "anchor": "parametric-alignment"
+    }
+  ]
+}

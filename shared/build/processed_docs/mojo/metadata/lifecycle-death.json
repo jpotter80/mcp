@@ -1,27 +1,27 @@
 {
-  "title": "Death of a value",
+  "title": "Value destruction",
   "sidebar_position": 3,
   "description": "An explanation of when and how Mojo destroys values.",
   "file_name": "death.mdx",
   "file_stem": "death",
   "file_path": "lifecycle/death.mdx",
-  "file_size": 14770,
+  "file_size": 22457,
   "document_id": "lifecycle-death",
   "url": "https://docs.modular.com/mojo/manual/lifecycle/death",
-  "content_hash": "04688d7578132463029651f1b0e3f986",
+  "content_hash": "d0dae5ee9e86ef8c367dee42db07d701",
   "statistics": {
-    "char_count": 14205,
-    "word_count": 2070,
-    "line_count": 386,
-    "paragraph_count": 86,
-    "header_count": 10,
-    "code_block_count": 11,
-    "code_lines": 144
+    "char_count": 21689,
+    "word_count": 3101,
+    "line_count": 593,
+    "paragraph_count": 129,
+    "header_count": 19,
+    "code_block_count": 19,
+    "code_lines": 216
   },
-  "processed_at": "2025-12-11T14:37:07.362238",
+  "processed_at": "2026-03-27T07:11:28.628047",
   "sections": [
     {
-      "level": 3,
+      "level": 2,
       "title": "Default destruction behavior",
       "anchor": "default-destruction-behavior"
     },
@@ -32,8 +32,53 @@
     },
     {
       "level": 2,
-      "title": "Destructor",
-      "anchor": "destructor"
+      "title": "Destructors {#destructor}",
+      "anchor": "destructors-destructor"
+    },
+    {
+      "level": 2,
+      "title": "Explicitly-destroyed types",
+      "anchor": "explicitly-destroyed-types"
+    },
+    {
+      "level": 3,
+      "title": "Using `@explicit_destroy`",
+      "anchor": "using-explicit_destroy"
+    },
+    {
+      "level": 3,
+      "title": "Building explicit destruction",
+      "anchor": "building-explicit-destruction"
+    },
+    {
+      "level": 3,
+      "title": "When to use explicit destruction",
+      "anchor": "when-to-use-explicit-destruction"
+    },
+    {
+      "level": 1,
+      "title": "Multiple cleanup paths",
+      "anchor": "multiple-cleanup-paths"
+    },
+    {
+      "level": 1,
+      "title": "Order matters",
+      "anchor": "order-matters"
+    },
+    {
+      "level": 1,
+      "title": "Cleanup is expensive",
+      "anchor": "cleanup-is-expensive"
+    },
+    {
+      "level": 3,
+      "title": "Explicit destruction in generic code",
+      "anchor": "explicit-destruction-in-generic-code"
+    },
+    {
+      "level": 2,
+      "title": "The `deinit` argument convention",
+      "anchor": "the-deinit-argument-convention"
     },
     {
       "level": 2,
@@ -42,8 +87,8 @@
     },
     {
       "level": 3,
-      "title": "Field lifetimes during destruct and move",
-      "anchor": "field-lifetimes-during-destruct-and-move"
+      "title": "Field lifetimes during move and destruction {#field-lifetimes-during-destruct-and-move}",
+      "anchor": "field-lifetimes-during-move-and-destruction-field-lifetimes-during-destruct-and-move"
     },
     {
       "level": 2,

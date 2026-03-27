@@ -11,7 +11,7 @@ consolidate = "python embedding/consolidate_data.py"
 load = "python embedding/load_to_ducklake.py"
 index = "python embedding/create_indexes.py"
 search = "python servers/docling-docs-mcp/runtime/search.py"
-mcp-dev = "mcp dev servers/mojo-manual-mcp/runtime/mojo_manual_mcp_server.py"
+mcp-dev = "mcp dev servers/docling-docs-mcp/runtime/docling_docs_mcp_server.py"
 max-serve = "max serve --model sentence-transformers/all-mpnet-base-v2"
 
 # MCP-specific build tasks - Updated paths to shared/

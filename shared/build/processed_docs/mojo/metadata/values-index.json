@@ -5,12 +5,12 @@
   "file_name": "index.mdx",
   "file_stem": "index",
   "file_path": "values/index.mdx",
-  "file_size": 6027,
+  "file_size": 6024,
   "document_id": "values-index",
   "url": "https://docs.modular.com/mojo/manual/values",
-  "content_hash": "699785b1e8e2fee0260e33dd31c5eec4",
+  "content_hash": "1951495f633402ca47401f73bdee0622",
   "statistics": {
-    "char_count": 5889,
+    "char_count": 5886,
     "word_count": 903,
     "line_count": 102,
     "paragraph_count": 18,
@@ -18,7 +18,7 @@
     "code_block_count": 0,
     "code_lines": 0
   },
-  "processed_at": "2025-12-11T14:37:08.121715",
+  "processed_at": "2026-03-27T07:11:29.584496",
   "sections": [
     {
       "level": 2,

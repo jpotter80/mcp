@@ -5,21 +5,26 @@
   "file_name": "parameter.mdx",
   "file_stem": "parameter",
   "file_path": "decorators/parameter.mdx",
-  "file_size": 3613,
+  "file_size": 2236,
   "document_id": "decorators-parameter",
   "url": "https://docs.modular.com/mojo/manual/decorators/parameter",
-  "content_hash": "7e871c83fb462f499f9c6cebae8fa137",
+  "content_hash": "af3047246d8c72ad459326e3425d8245",
   "statistics": {
-    "char_count": 3420,
-    "word_count": 516,
-    "line_count": 111,
-    "paragraph_count": 30,
+    "char_count": 2092,
+    "word_count": 266,
+    "line_count": 68,
+    "paragraph_count": 19,
     "header_count": 3,
-    "code_block_count": 6,
-    "code_lines": 39
+    "code_block_count": 4,
+    "code_lines": 17
   },
-  "processed_at": "2025-12-11T14:37:06.646114",
+  "processed_at": "2026-03-27T07:11:27.863286",
   "sections": [
+    {
+      "level": 2,
+      "title": "Parametric closure",
+      "anchor": "parametric-closure"
+    },
     {
       "level": 2,
       "title": "Parametric `if` statement",
@@ -29,11 +34,6 @@
       "level": 2,
       "title": "Parametric `for` statement",
       "anchor": "parametric-for-statement"
-    },
-    {
-      "level": 2,
-      "title": "Parametric closure",
-      "anchor": "parametric-closure"
     }
   ]
 }
