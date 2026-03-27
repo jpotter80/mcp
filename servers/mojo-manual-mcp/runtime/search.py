@@ -9,8 +9,11 @@ import sys
 _RUNTIME_DIR = os.path.dirname(os.path.abspath(__file__))
 _DEFAULT_DB_PATH = os.path.join(_RUNTIME_DIR, "mojo_manual_mcp.db")
 
-DB_PATH = os.getenv("MOJO_DB_PATH", _DEFAULT_DB_PATH)
-TABLE_NAME = os.getenv("MOJO_TABLE_NAME", "mojo_docs_indexed")
+DB_PATH = os.getenv("MOJO_MANUAL_MCP_DB_PATH", os.getenv("MOJO_DB_PATH", _DEFAULT_DB_PATH))
+TABLE_NAME = os.getenv(
+    "MOJO_MANUAL_MCP_TABLE_NAME",
+    os.getenv("MOJO_TABLE_NAME", "mojo_docs_indexed"),
+)
 MAX_SERVER_URL = os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1")
 MODEL_NAME = os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2")
 TOP_K = 5  # Default number of results to return
@@ -105,7 +108,10 @@ class HybridSearcher:
             # Graceful fallback: if embeddings aren't available (e.g., MAX not running),
             # return None and let callers skip vector search.
             try:
-                print(f"[WARN] Embedding generation failed, falling back to FTS only: {e}")
+                print(
+                    f"[WARN] Embedding generation failed, falling back to FTS only: {e}",
+                    file=sys.stderr,
+                )
             except Exception:
                 pass
             return None
@@ -156,14 +162,14 @@ class HybridSearcher:
         SELECT t.chunk_id,
                ({FTS_TITLE_WEIGHT} * COALESCE(
                     fts_main_{self.table_name}.match_bm25(
-                        input_id := t.chunk_id,
-                        query_string := CAST(? AS TEXT),
+                        t.chunk_id,
+                        CAST(? AS TEXT),
                         fields := 'title'
                     ), 0
                ) + {FTS_CONTENT_WEIGHT} * COALESCE(
                     fts_main_{self.table_name}.match_bm25(
-                        input_id := t.chunk_id,
-                        query_string := CAST(? AS TEXT),
+                        t.chunk_id,
+                        CAST(? AS TEXT),
                         fields := 'content'
                     ), 0
                )) AS score
@@ -185,8 +191,8 @@ class HybridSearcher:
             query_default = f"""
             SELECT t.chunk_id,
                    fts_main_{self.table_name}.match_bm25(
-                     input_id := t.chunk_id,
-                     query_string := CAST(? AS TEXT)
+                                         t.chunk_id,
+                                         CAST(? AS TEXT)
                    ) AS score
             FROM {self.table_name} AS t
             WHERE score IS NOT NULL

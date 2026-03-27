@@ -8,7 +8,7 @@ Searchable MCP documentation via MCP (Model Context Protocol).
 
 ```bash
 # Clone the repo and navigate to the server directory
-git clone jpotter80/mcp
+git clone https://github.com/jpotter80/mcp
 cd /path/to/mcp/servers/mcp-docs-mcp
 
 # Install dependencies in servers/mcp-docs-mcp
@@ -22,10 +22,10 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 {
   "servers": {
     "mcp-docs": {
-      "type": "stdio"
+      "type": "stdio",
       "command": "pixi",
       "args": ["run", "serve"],
-      "cwd": "/absolute/path/to/servers/mcp-docs-mcp/runtime",
+      "cwd": "/absolute/path/to/mcp/servers/mcp-docs-mcp",
       "env": {
         "MAX_SERVER_URL": "http://localhost:8000/v1",
         "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
@@ -50,7 +50,7 @@ You can override settings using environment variables:
 If you update documentation sources:
 ```bash
 pixi run mcp-process
-pixi run mcp-embed
+pixi run mcp-generate-embeddings
 pixi run mcp-consolidate
 pixi run mcp-load
 pixi run mcp-index

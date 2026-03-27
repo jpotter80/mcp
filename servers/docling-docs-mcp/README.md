@@ -8,10 +8,10 @@ Searchable Docling Docs documentation via MCP (Model Context Protocol).
 
 ```bash
 # Clone the repo and navigate to the server directory
-git clone jpotter80/mcp
+git clone https://github.com/jpotter80/mcp
 cd /path/to/mcp/servers/docling-docs-mcp
 
-# Install dependencies in servers/mojo-manual-mcp
+# Install dependencies for this server
 pixi install
 ```
 
@@ -51,7 +51,7 @@ You can override settings using environment variables:
 If you update documentation sources:
 ```bash
 pixi run docling-process
-pixi run docling-embed
+pixi run docling-generate-embeddings
 pixi run docling-consolidate
 pixi run docling-load
 pixi run docling-index

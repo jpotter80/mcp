@@ -61,6 +61,25 @@ HybridSearcher = search_mod.HybridSearcher
 TOP_K = search_mod.TOP_K
 
 
+def _load_server_id_default() -> str:
+    default_id = "{{TOOL_NAME}}-docs"
+    config_path = _SERVER_ROOT / "config" / "server_config.yaml"
+    if not config_path.exists():
+        return default_id
+    try:
+        cfg = load_config(str(config_path), server_root=_SERVER_ROOT)
+        return str(cfg.get("server", {}).get("name") or default_id)
+    except Exception as e:
+        try:
+            print(f"Warning: Failed to read server.name from {config_path}: {e}", file=sys.stderr)
+        except Exception:
+            pass
+        return default_id
+
+
+_SERVER_ID = _load_server_id_default()
+
+
 # Structured result model for tools
 class SearchResult(BaseModel):
     chunk_id: str
@@ -168,7 +187,10 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppState]:
     search_config = config.get("search", {})
     
     # Resolve DB path relative to runtime dir if not absolute
-    raw_db_path = db_config.get("path", os.getenv("{{MCP_NAME_UPPER}}_DB_PATH", "{{MCP_NAME}}.db"))
+    raw_db_path = db_config.get(
+        "path",
+        os.getenv("{{MCP_NAME_UPPER}}_DB_PATH", "{{TOOL_NAME}}_{{DOC_TYPE}}_mcp.db"),
+    )
     if not os.path.isabs(raw_db_path):
         if str(raw_db_path).startswith(str(_SERVER_ROOT)):
              db_path = raw_db_path
@@ -177,7 +199,10 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppState]:
     else:
         db_path = raw_db_path
 
-    table_name = db_config.get("table_name", os.getenv("{{MCP_NAME_UPPER}}_TABLE_NAME", "{{MCP_NAME}}_indexed"))
+    table_name = db_config.get(
+        "table_name",
+        os.getenv("{{MCP_NAME_UPPER}}_TABLE_NAME", "{{TOOL_NAME}}_{{DOC_TYPE}}_indexed"),
+    )
     
     base_url = embed_config.get("max_server_url", os.getenv("MAX_SERVER_URL", "http://localhost:8000/v1"))
     model_name = embed_config.get("model_name", os.getenv("EMBED_MODEL_NAME", "sentence-transformers/all-mpnet-base-v2"))
@@ -253,7 +278,7 @@ def search(
     return _make_results(state.searcher, query, k=k)
 
 
-@mcp.resource("{{MCP_NAME}}://search/{q}")
+@mcp.resource(f"{_SERVER_ID}://search/{{q}}")
 def search_resource(q: str, ctx: Optional[Context] = None) -> str:
     """Dynamic resource that returns a markdown view of top results for a query."""
     assert ctx is not None
@@ -270,7 +295,7 @@ def search_resource(q: str, ctx: Optional[Context] = None) -> str:
     return "\n".join(lines)
 
 
-@mcp.resource("{{MCP_NAME}}://chunk/{chunk_id}")
+@mcp.resource(f"{_SERVER_ID}://chunk/{{chunk_id}}")
 def chunk_resource(chunk_id: str, ctx: Optional[Context] = None) -> str:
     """Return a single chunk by id as markdown (title, section, content, url)."""
     assert ctx is not None

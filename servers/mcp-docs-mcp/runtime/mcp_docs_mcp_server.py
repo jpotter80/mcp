@@ -61,6 +61,25 @@ HybridSearcher = search_mod.HybridSearcher
 TOP_K = search_mod.TOP_K
 
 
+def _load_server_id_default() -> str:
+    default_id = "mcp-docs"
+    config_path = _SERVER_ROOT / "config" / "server_config.yaml"
+    if not config_path.exists():
+        return default_id
+    try:
+        cfg = load_config(str(config_path), server_root=_SERVER_ROOT)
+        return str(cfg.get("server", {}).get("name") or default_id)
+    except Exception as e:
+        try:
+            print(f"Warning: Failed to read server.name from {config_path}: {e}", file=sys.stderr)
+        except Exception:
+            pass
+        return default_id
+
+
+_SERVER_ID = _load_server_id_default()
+
+
 # Structured result model for tools
 class SearchResult(BaseModel):
     chunk_id: str
@@ -253,7 +272,7 @@ def search(
     return _make_results(state.searcher, query, k=k)
 
 
-@mcp.resource("mcp-docs-mcp://search/{q}")
+@mcp.resource(f"{_SERVER_ID}://search/{{q}}")
 def search_resource(q: str, ctx: Optional[Context] = None) -> str:
     """Dynamic resource that returns a markdown view of top results for a query."""
     assert ctx is not None
@@ -270,7 +289,7 @@ def search_resource(q: str, ctx: Optional[Context] = None) -> str:
     return "\n".join(lines)
 
 
-@mcp.resource("mcp-docs-mcp://chunk/{chunk_id}")
+@mcp.resource(f"{_SERVER_ID}://chunk/{{chunk_id}}")
 def chunk_resource(chunk_id: str, ctx: Optional[Context] = None) -> str:
     """Return a single chunk by id as markdown (title, section, content, url)."""
     assert ctx is not None

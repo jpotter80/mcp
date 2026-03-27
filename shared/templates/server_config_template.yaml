@@ -8,10 +8,10 @@ server:
 
 database:
   # Path to indexed DuckDB database (relative to runtime directory)
-  path: "${SERVER_ROOT}/runtime/{{MCP_NAME}}.db"
-  table_name: "{{MCP_NAME}}_indexed"
+  path: "${SERVER_ROOT}/runtime/{{TOOL_NAME}}_{{DOC_TYPE}}_mcp.db"
+  table_name: "{{TOOL_NAME}}_{{DOC_TYPE}}_indexed"
   # DuckLake catalog for versioning (if using version history)
-  ducklake_catalog: "${SERVER_ROOT}/runtime/{{MCP_NAME}}_catalog.ducklake"
+  ducklake_catalog: "${SERVER_ROOT}/runtime/{{TOOL_NAME}}_{{DOC_TYPE}}_catalog.ducklake"
 
 embedding:
   # Embedding server endpoint (MAX or OpenAI-compatible)

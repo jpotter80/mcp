@@ -8,10 +8,10 @@ Searchable {{DOC_TYPE_TITLE}} documentation via MCP (Model Context Protocol).
 
 ```bash
 # Clone the repo and navigate to the server directory
-git clone jpotter80/mcp
-cd /path/to/mcp/servers/{{MCP_NAME}}-mcp
+git clone https://github.com/jpotter80/mcp
+cd /path/to/mcp/servers/{{MCP_NAME}}
 
-# Install dependencies in servers/mojo-manual-mcp
+# Install dependencies for this server
 pixi install
 ```
 
@@ -22,9 +22,10 @@ Add to your VS Code `mcp.json` (User Settings → Settings JSON):
 {
   "servers": {
     "{{TOOL_NAME}}-docs": {
+      "type": "stdio",
       "command": "pixi",
-      "args": ["/absolute/path/to/servers/{{MCP_NAME}}/runtime/{{MCP_NAME}}_mcp_server.py"],
-      "cwd": "/absolute/path/to/servers/{{MCP_NAME}}/runtime",
+      "args": ["run", "serve"],
+      "cwd": "/absolute/path/to/mcp/servers/{{MCP_NAME}}",
       "env": {
         "MAX_SERVER_URL": "http://localhost:8000/v1",
         "EMBED_MODEL_NAME": "sentence-transformers/all-mpnet-base-v2",
@@ -48,8 +49,9 @@ You can override settings using environment variables:
 
 If you update documentation sources:
 ```bash
+# Run from the repo root (tasks are defined in the root pixi.toml)
 pixi run {{TOOL_NAME}}-process
-pixi run {{TOOL_NAME}}-embed
+pixi run {{TOOL_NAME}}-generate-embeddings
 pixi run {{TOOL_NAME}}-consolidate
 pixi run {{TOOL_NAME}}-load
 pixi run {{TOOL_NAME}}-index
@@ -61,6 +63,6 @@ pixi run {{TOOL_NAME}}-index
 
 - `runtime/{{MCP_NAME}}_mcp_server.py` — MCP server entry point
 - `runtime/search.py` — Hybrid search engine
-- `runtime/{{MCP_NAME}}.db` — Indexed DuckDB database
+- `runtime/{{TOOL_NAME}}_{{DOC_TYPE}}_mcp.db` — Indexed DuckDB database
 
 For more details, see the main project README.

@@ -8,7 +8,7 @@ Searchable Duckdb documentation via MCP (Model Context Protocol).
 
 ```bash
 # Clone the repo and navigate to the server directory
-git clone jpotter80/mcp
+git clone https://github.com/jpotter80/mcp
 cd /path/to/mcp/servers/duckdb-docs-mcp
 
 # Install dependencies in servers/duckdb-docs-mcp
@@ -49,7 +49,7 @@ You can override settings using environment variables:
 If you update documentation sources:
 ```bash
 pixi run duckdb-process
-pixi run duckdb-embed
+pixi run duckdb-generate-embeddings
 pixi run duckdb-consolidate
 pixi run duckdb-load
 pixi run duckdb-index

@@ -13,6 +13,7 @@ from openai import OpenAI
 import duckdb
 import os
 import argparse
+import sys
 
 # --- Configuration ---
 _RUNTIME_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -117,7 +118,7 @@ class HybridSearcher:
             # Graceful fallback: if embeddings aren't available (e.g., MAX not running),
             # return None and let callers skip vector search.
             try:
-                print(f"Warning: Failed to generate embedding: {e}")
+                print(f"Warning: Failed to generate embedding: {e}", file=sys.stderr)
             except Exception:
                 pass
             return None
@@ -134,9 +135,9 @@ class HybridSearcher:
             if DEBUG_EXPLAIN_VSS:
                 explain_query = f"EXPLAIN {query}"
                 explain_result = self.db_connection.execute(explain_query, [query_vector]).fetchall()
-                print("VSS EXPLAIN:")
+                print("VSS EXPLAIN:", file=sys.stderr)
                 for row in explain_result:
-                    print(row)
+                    print(row, file=sys.stderr)
             return self.db_connection.execute(query, [query_vector]).fetchall()
         except Exception:
             # Fallback to array_distance if operator not available
@@ -149,7 +150,13 @@ class HybridSearcher:
             return self.db_connection.execute(fallback, [query_vector]).fetchall()
 
     def full_text_search(self, query_text: str, limit: int):
-        """Performs full-text search with robust fallbacks and title boost."""
+        """Performs full-text search with robust fallbacks and title boost.
+
+        Strategy (in order):
+        1) match_bm25 per-field (title/content) weighted sum
+        2) match_bm25 default fields
+        3) LIKE-based keyword fallback (works even without FTS index)
+        """
         expanded = self._expand_fts_query(query_text)
 
         # Attempt weighted field search
@@ -157,14 +164,14 @@ class HybridSearcher:
         SELECT t.chunk_id,
                ({FTS_TITLE_WEIGHT} * COALESCE(
                     fts_main_{self.table_name}.match_bm25(
-                        input_id := t.chunk_id,
-                        query_string := CAST(? AS TEXT),
+                        t.chunk_id,
+                        CAST(? AS TEXT),
                         fields := 'title'
                     ), 0
                ) + {FTS_CONTENT_WEIGHT} * COALESCE(
                     fts_main_{self.table_name}.match_bm25(
-                        input_id := t.chunk_id,
-                        query_string := CAST(? AS TEXT),
+                        t.chunk_id,
+                        CAST(? AS TEXT),
                         fields := 'content'
                     ), 0
                )) AS score
@@ -175,30 +182,52 @@ class HybridSearcher:
         try:
             rows = self.db_connection.execute(query_weighted, [expanded, expanded]).fetchall()
             if DEBUG_LOG_FTS_PATH:
-                print("FTS: Using weighted field search")
+                print("FTS: Using weighted field search", file=sys.stderr)
             return rows
         except Exception:
             # Fallback to default fields
             query_default = f"""
             SELECT t.chunk_id,
                    fts_main_{self.table_name}.match_bm25(
-                       input_id := t.chunk_id,
-                       query_string := CAST(? AS TEXT)
+                       t.chunk_id,
+                       CAST(? AS TEXT)
                    ) AS score
             FROM {self.table_name} AS t
+            WHERE score IS NOT NULL
             ORDER BY score DESC
             LIMIT {limit};
             """
             try:
                 rows = self.db_connection.execute(query_default, [expanded]).fetchall()
                 if DEBUG_LOG_FTS_PATH:
-                    print("FTS: Using default field search")
+                    print("FTS: Using default field search", file=sys.stderr)
                 return rows
             except Exception:
-                # Final fallback: table function
+                # Final fallback: version-agnostic keyword fallback using LIKE presence scoring
+                # Build a simple heuristic score: title matches are weighted higher than content matches
+                tokens = [tok for tok in expanded.lower().split() if len(tok) >= 2]
+                tokens = list(dict.fromkeys(tokens))  # de-duplicate preserving order
+                if not tokens:
+                    return []
+
+                title_clauses = ["(CASE WHEN lower(t.title) LIKE '%' || ? || '%' THEN 1 ELSE 0 END)" for _ in tokens]
+                content_clauses = ["(CASE WHEN lower(t.content) LIKE '%' || ? || '%' THEN 1 ELSE 0 END)" for _ in tokens]
+
+                title_sum = " + ".join(title_clauses) if title_clauses else "0"
+                content_sum = " + ".join(content_clauses) if content_clauses else "0"
+
+                query_kw = f"""
+                SELECT t.chunk_id,
+                       ({FTS_TITLE_WEIGHT} * ({title_sum}) + {FTS_CONTENT_WEIGHT} * ({content_sum})) AS score
+                FROM {self.table_name} AS t
+                ORDER BY score DESC
+                LIMIT {limit};
+                """
+                params = tokens + tokens  # first for title LIKEs, then for content LIKEs
+                rows = self.db_connection.execute(query_kw, params).fetchall()
                 if DEBUG_LOG_FTS_PATH:
-                    print("FTS: Using table function fallback")
-                return []
+                    print("FTS: Using LIKE-based fallback", file=sys.stderr)
+                return rows
 
     def hybrid_search(self, query_text: str, k: int = TOP_K, fts_weight: float = 0.4, vss_weight: float = 0.6):
         """Performs hybrid search using Reciprocal Rank Fusion (RRF)."""

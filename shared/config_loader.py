@@ -101,19 +101,36 @@ def load_config_with_substitution(
     # Try to resolve relative paths
     if not config_file.is_absolute():
         # First try relative to current working directory
-        if Path(config_file).exists():
+        if config_file.exists():
             config_file = config_file.resolve()
         else:
-            # Try relative to project root (two levels up from shared/preprocessing/src)
-            project_root = Path(__file__).parent.parent.parent.parent
-            alternative = project_root / config_file
-            if alternative.exists():
-                config_file = alternative
+            # Try relative to a detected project root.
+            def _find_project_root(start: Path) -> Optional[Path]:
+                cur = start
+                while cur != cur.parent:
+                    if (cur / ".git").exists() or (cur / "shared").exists():
+                        return cur
+                    cur = cur.parent
+                return None
+
+            roots_to_try: list[Path] = []
+            cwd_root = _find_project_root(Path.cwd())
+            if cwd_root is not None:
+                roots_to_try.append(cwd_root)
+            file_root = _find_project_root(Path(__file__).resolve())
+            if file_root is not None and file_root not in roots_to_try:
+                roots_to_try.append(file_root)
+
+            for root in roots_to_try:
+                candidate = root / config_file
+                if candidate.exists():
+                    config_file = candidate
+                    break
             else:
                 raise FileNotFoundError(
                     f"Config file not found: {config_path}\n"
-                    f"  Tried: {config_file.resolve()}\n"
-                    f"  Tried: {alternative}"
+                    f"  Tried: {Path.cwd() / config_file}\n"
+                    + "".join([f"  Tried: {r / config_file}\n" for r in roots_to_try])
                 )
 
     if not config_file.exists():
@@ -127,7 +144,7 @@ def load_config_with_substitution(
             servers_idx = parts.index("servers")
             config_idx = parts.index("config")
             if config_idx > servers_idx + 1:
-                server_root = Path(*parts[: config_idx - 1])
+                server_root = Path(*parts[:config_idx])
 
     # Determine project root (parent of .git or shared/)
     project_root = config_file
